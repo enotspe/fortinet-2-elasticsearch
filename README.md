@@ -20,11 +20,11 @@ We will cover all the road for squeezing Fortinet logs on Elasticseach
 
 ## Products 
 Our focus is to cover security solutions
-* Fortigate (of course!)
-* Fortisandbox
-* Fortiweb
-* Fortimail.......someday
-* Forticlient (EMS).......someday
+- [x] Fortigate (of course!)
+- [x] Fortisandbox
+- [ ] Fortiweb
+- [ ] Fortimail.......someday
+- [ ] Forticlient (EMS).......someday
 
 ## ECS Translations
 All the Fortinet to ECS fields translation will be managed by product on a Google sheet.
