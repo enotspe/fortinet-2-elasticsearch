@@ -7,12 +7,13 @@ We want a full 360° monitoring:
 
 ## Scoope
 We will cover all the road for squeezing Fortinet logs on Elasticseach
-* Logstash pipelines
 * ECS translation
+* Logstash pipelines
 * Geo enrichment
 * Other manipulations (tenant enrichment, dropping guest networks, observer enrichment, etc.)
 * fields mappings
-* index templates strategy
+* index templates
+* index patterns
 * dashboards
 * event alerts
 * ML alerts
@@ -22,10 +23,16 @@ Our focus is to cover security solutions
 * Fortigate (of course!)
 * Fortisandbox
 * Fortiweb
-* Fortimail
-* Forticlient (EMS)
+* Fortimail.......someday
+* Forticlient (EMS).......someday
 
 ## ECS Translations
-All the Fortinet 2 ECS will be managed by product on a Google sheet.
+All the Fortinet to ECS fields translation will be managed by product on a Google sheet.
+ECS is a work in progress, a baby just starting to breathe, still lacks a lot of fields, specially for networking security. However, ECS is probably the best effort out there for log normalization. 
+So dont expect to have all fields translated to ECS, just Fortigate has 500+ unique fields and ECS is just reaching 400, do the math!!!
 
-Fortigate logs are quite complicated, and we have decided to attack them by splitting all the dataset by type, so there are 3 datasets: traffic, utm, event. Each of them has its own translation
+### Fortigate. Current dataset: [6.2.0][https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/be3d0e3d-4b62-11e9-94bf-00505692583a/FortiOS_6.2.0_Log_Reference.pdf]
+
+Fortigate logs are complicated, it is a very large dataset, fw can be utm or ngfw (this affects logs), no field description, no field examples provided, etc. So we have decided to attack them by splitting them by type, resulting in 3 datasets: traffic, utm and event. Each of them has its own translation.
+Altough Fortinet is moving all types logs to a connection oriented approach for source.ip and destination.ip fields, we are only considering client/source server/destination for traffic logs
+Right now only traffic and utm logs have been translated, because their usecase is the one which ECS have more coverage.
