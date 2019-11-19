@@ -5,7 +5,7 @@ We want a full 360° monitoring:
 * snmptraps
 * ping (via heartbeat)
 
-## Scoope
+## Scope
 We will cover all the road for squeezing Fortinet logs on Elasticseach
 * ECS translation
 * Logstash pipelines
