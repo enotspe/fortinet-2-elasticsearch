@@ -45,4 +45,5 @@ Right now only traffic and utm logs have been translated, because their usecase 
 
 ### Fortisandbox
 > Current dataset: [3.1.2](https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/8bd13f46-f447-11e9-8977-00505692583a/FortiSandbox-3.1.2-Log_Reference.pdf)
+
 **[FortiSandbox - Log Reference v3.1.2 - Public](https://docs.google.com/spreadsheets/d/1QlR_9d4TzLCeZ4SOzT8pFtPKtflupVsH0z3W7bDLtWc/edit?usp=sharing)**
