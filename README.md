@@ -39,7 +39,7 @@ So dont expect to have all fields translated to ECS, just Fortigate has 500+ uni
 
 Fortigate logs are complicated, it is a very large dataset, fw can be utm or ngfw (this affects logs), no field description, no field examples either, etc. So we have decided to attack them by splitting them by type, resulting in 3 datasets: traffic, utm and event. Each of them has its own translation.
 
-Altough Fortinet is moving all types logs to a connection oriented approach for source.ip and destination.ip fields, we are only considering client/source server/destination for traffic logs
+Although Fortinet is moving all types logs to a connection oriented approach for source.ip and destination.ip fields, we are only considering client/source server/destination for traffic logs
 
 Right now only traffic and utm logs have been translated, because their usecase is the one which ECS have more coverage.
 
