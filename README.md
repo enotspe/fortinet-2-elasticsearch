@@ -4,6 +4,8 @@ We want a full 360° monitoring:
 * snmp
 * snmptraps
 * ping (via heartbeat)
+* ssh commands output (diag sys top)
+* [streaming telemetry](http://www.openconfig.net/projects/telemetry/) ...someday it will be supported
 
 ## Scope
 We will cover all the road for squeezing Fortinet logs on Elasticseach
@@ -25,12 +27,15 @@ Our focus is to cover security solutions
 - [ ] Fortiweb
 - [ ] Fortimail.......someday
 - [ ] Forticlient (EMS).......someday
+- [ ] [enSilo (that would be great!)](https://www.fortinet.com/products/fortinet-acquires-ensilo.html)
 
 ## ECS Translations
-All the Fortinet to ECS fields translation will be managed by product on a Google sheet.
-
+### Disclaimer
 ECS is a work in progress, a baby just starting to breathe, still lacks a lot of fields, specially for networking security. However, ECS is probably the best effort out there for log normalization. 
 So dont expect to have all fields translated to ECS, just Fortigate has 500+ unique fields and ECS is just reaching 400, do the math!!!
+
+### Translations Sheets
+All the Fortinet to ECS fields translation will be managed by product on a Google sheet.
 
 ### Fortigate
 > Current dataset: [6.2.2](https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/ed572394-e556-11e9-8977-00505692583a/FortiOS_6.2.2_Log_Reference.pdf)
