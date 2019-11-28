@@ -1,0 +1,83 @@
+input {
+
+    pipeline {
+        address => "kv_syslog"
+    }
+
+}
+
+filter {
+
+    mutate{ copy => {"message" => "[event][original]"} }
+
+
+    # event created        when the event is created by logstash
+    
+    grok {
+        match => ["message", "%{SYSLOG5424PRI:syslog_index}%{GREEDYDATA:message}"]
+        overwrite => ["message"]
+        tag_on_failure => ["syslog_grok_failure"]
+        add_field => ["[event][created]", "%{@timestamp}"] 
+    }
+
+    if "syslog_grok_failure" not in [tag_on_failure]{
+        kv {
+          source => "message"
+          value_split => "="
+          field_split => " "
+        }
+        
+        mutate{
+            rename => {"syslog5424_pri" => "[log][syslog][priority]"}
+            replace => {"temp_time" => "%{date} %{time}"}
+        }
+        
+        # Just for avoid errors in timestamp field
+        if !([event][timezone]) {
+            mutate { 
+                add_field => {"[event][timezone]" => "America/Lima" }
+                add_field => {"[tags]" => "setting_default_timezone" }
+            }
+        }        
+
+        date {
+            match => ["temp_time", "yyyy-MM-dd HH:mm:ss"]
+            timezone => "%{[event][timezone]}"
+            target => "@timestamp"
+        }
+    
+        mutate{remove_field => ["temp_time","date","time","syslog_index","message"]}
+
+    }
+    
+}
+
+output {
+    
+    if [event][module]=="fortigate" {
+        pipeline{
+            send_to => "fortigate_2_ecs"
+        }
+    }
+    else if [event][module]=="fortiweb" {
+        pipeline{
+            send_to => "fortiweb_2_ecs"
+        }
+      }
+    else if [event][module]=="fortisandbox" {
+        pipeline{
+            send_to => "fortisandbox_2_ecs"
+        }
+    }
+    else if [event][module]=="fortimail" {
+        pipeline{
+            send_to => "fortimail_2_ecs"
+        }
+    }
+    else if [event][module]=="forticlient" {
+        pipeline{
+            send_to => "forticlient_2_ecs"
+        }
+    }
+    
+}
