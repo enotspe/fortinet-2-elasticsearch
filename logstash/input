@@ -27,7 +27,7 @@ input {
     udp {
         port => 5150
         codec => plain { charset => "ASCII" }
-        add_field => {"[event][module]" => "fortiauthenticator"}
+        add_field => {"[event][module]" => "forticlient"}
     }
 
 
