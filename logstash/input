@@ -1,0 +1,51 @@
+input {
+    
+    udp {
+        port => 5146
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortigate"}
+    }
+
+    udp {
+        port => 5147
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortiweb"}
+    }
+
+    udp {
+        port => 5148
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortisandbox"}
+    }
+
+    udp {
+        port => 5149
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortimail"}
+    }
+
+    udp {
+        port => 5150
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortiauthenticator"}
+    }
+
+
+
+}
+
+filter {
+
+    mutate {
+        rename => ["host", "[observer][ip]" ]
+    }
+
+}
+
+output {
+    
+    pipeline {
+        send_to => "observer_enrichment"
+    }
+
+}
