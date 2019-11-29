@@ -1,0 +1,52 @@
+input {
+
+    pipeline {
+        address => "output"
+    }
+
+}
+
+filter {
+
+    #for index creation
+    mutate {
+        lowercase => [ "[organization][name]" ]
+        strip => [ "[organization][name]" ]
+    }
+    
+}
+
+output {
+
+
+    if "send_index_error" in [tags] {
+        elasticsearch {
+            hosts => ["https://yourelasticsearchcluster.com:9243"]
+            user => "secretuser"
+            password => "secretpassword"
+            index => "idx_error-write"
+        }
+    } else if [event][module] in  [ "heartbeat" , "snmp" , "snmptrap" ]  {
+        elasticsearch {
+            hosts => ["https://yourelasticsearchcluster.com:9243"]
+            user => "secretuser"
+            password => "secretpassword"
+            index => "ecs-%{[event][module]}-write"
+        }
+    } else if [event][module] in ["fortigate", "fortisandbox", "fortiweb", "fortimail", "forticlient" ] and [organization][name] {
+        elasticsearch {
+            hosts => ["https://yourelasticsearchcluster.com:9243"]
+            user => "secretuser"
+            password => "secretpassword"
+            index => "ecs-%{[event][module]}-%{[organization][name]}-write"
+        }
+    } else {
+        elasticsearch {
+            hosts => ["https://yourelasticsearchcluster.com:9243"]
+            user => "secretuser"
+            password => "secretpassword"
+            index => "idx_error-write"
+        }
+    }
+
+}
