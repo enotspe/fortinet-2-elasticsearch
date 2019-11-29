@@ -18,6 +18,7 @@ filter {
         }
         
         if [obs_org_csv] == "default_obs_org_csv" {
+        #we are receiving logs from an unknown source
             mutate {
                 add_field => { "[tags]" => "error_observer_enrichment" }
                 add_field => { "[tags]" => "send_index_error" }
