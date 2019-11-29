@@ -1,0 +1,122 @@
+input {
+    pipeline {
+        address => "fortisandbox_2_ecs"
+    }
+}
+filter {
+
+#remove event.original for saving disk space
+    #mutate{ remove_field => ["[event][original]"]  }
+
+#validea "N/A" on ip fields
+    
+    if [cip]=="N/A" { mutate { remove_field => ["cip"] } }
+    if [dstip]=="N/A" { mutate { remove_field => ["dstip"] } }
+    if [ip]=="N/A" { mutate { remove_field => ["ip"] } }
+    if [sip]=="N/A" { mutate { remove_field => ["sip"] } }
+    if [srcip]=="N/A" { mutate { remove_field => ["srcip"] } }
+    if [trueclient]=="N/A" { mutate { remove_field => ["trueclient"] } }
+
+#rename fortisandbox fields that overlap with ECS.    
+    mutate {
+        rename => { "error" => "[fsa][error]" }
+        rename => { "host" => "[fsa][host]" }
+        rename => { "os" => "[fsa][os]" }
+        rename => { "service" => "[fsa][service]" }
+        rename => { "url" => "[fsa][url]" }
+        rename => { "user" => "[fsa][user]" }
+    }
+
+#ecs translation
+    mutate {
+        
+        add_field => { "[ecs][version]" => "1.2.0" }
+
+        copy =>{ "[dstip]"=> "[destination][ip]" }
+        copy =>{ "[dstport]"=> "[destination][port]" }
+        copy =>{ "[error]"=> "[error][message]" }
+        copy =>{ "[action]"=> "[event][action]" }
+        copy =>{ "[subtype]"=> "[event][category]" }
+        copy =>{ "[logid]"=> "[event][code]" }
+        copy =>{ "[type]"=> "[event][dataset]" }
+        copy =>{ "[etime]"=> "[event][end]" }
+        copy =>{ "[level]"=> "[event][kind]" }
+        copy =>{ "[jstatus]"=> "[event][outcome]" }
+        copy =>{ "[rsrc]"=> "[event][provider]" }
+        copy =>{ "[scanstart]"=> "[event][start]" }
+        copy =>{ "[sharename]"=> "[file][directory]" }
+        copy =>{ "[ftype]"=> "[file][extension]" }
+        copy =>{ "[md5]"=> "[file][hash][md5]" }
+        copy =>{ "[sha1]"=> "[file][hash][sha1]" }
+        copy =>{ "[sha256]"=> "[file][hash][sha256]" }
+        copy =>{ "[fname]"=> "[file][name]" }
+        copy =>{ "[filepath]"=> "[file][path]" }
+        copy =>{ "[sizebin]"=> "[file][size]" }
+        copy =>{ "[host]"=> "[host][name]" }
+        copy =>{ "[proto]"=> "[network][protocol]" }
+        copy =>{ "[ip]"=> "[network][type]" }
+        copy =>{ "[devid]"=> "[observer][serial_number]" }
+        copy =>{ "[pid]"=> "[process][pid]" }
+        copy =>{ "[cip]"=> "[source][ip]" }
+        copy =>{ "[cport]"=> "[source][port]" }
+        copy =>{ "[suser]"=> "[source][user][name]" }
+        copy =>{ "[hostname]"=> "[url][domain]" }
+        copy =>{ "[url]"=> "[url][original]" }
+        copy =>{ "[user]"=> "[user][name]" }
+
+    }
+    mutate {
+        copy =>{ "[sip]"=> "[destination][ip]" }
+        copy =>{ "[sport]"=> "[destination][port]" }
+        copy =>{ "[scaned]"=> "[event][end]" }
+        copy =>{ "[status]"=> "[event][outcome]" }
+        copy =>{ "[stime]"=> "[event][start]" }
+        copy =>{ "[service]"=> "[network][protocol]" }
+        copy =>{ "[srcip]"=> "[source][ip]" }
+        copy =>{ "[srcport]"=> "[source][port]" }
+        copy =>{ "[susr]"=> "[source][user][name]" }
+    }
+    mutate {
+        copy =>{ "[unauthuser]"=> "[source][user][name]" }
+    }
+
+    #### ecs best practices
+    if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
+    if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
+    
+
+    #convert scanstart, scanend, stime, etime
+    if [scanstart] {
+        date {
+            match => [ "scanstart", "UNIX" ]
+            timezone => "%{[event][timezone]}"
+            target => "[event][start]"
+        }
+    }
+    if [stime] {
+        date {
+            match => [ "stime", "UNIX" ]
+            timezone => "%{[event][timezone]}"
+            target => "[event][start]"
+        }
+    }
+    if [scanend] {
+        date {
+            match => [ "scanend", "UNIX" ]
+            timezone => "%{[event][timezone]}"
+            target => "[event][end]"
+        }
+    }
+    if [etime] {
+        date {
+            match => [ "etime", "UNIX" ]
+            timezone => "%{[event][timezone]}"
+            target => "[event][end]"
+        }
+    }
+}
+output {
+    #pipeline {
+    #    send_to => "geo_enrichment" 
+    #}
+}
