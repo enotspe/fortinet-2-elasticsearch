@@ -39,9 +39,9 @@ filter {
     }
 
     #we are receiving logs from an unknown source
-    if "send_index_error" in [tags] {
+    if "error_observer_enrichment" in [tags] {
         drop{
-            percentage => 50
+            #percentage => 50
         }
     }
 
