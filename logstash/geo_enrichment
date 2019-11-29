@@ -1,0 +1,107 @@
+input {
+    pipeline {
+        address => "geo_enrichment"
+    }
+}
+filter {
+
+######################### geo classification private or public #################################
+    if [source][ip] {
+        cidr {
+                add_field => {"[source][locality]" => "private"}
+                address => [ "%{[source][ip]}" ]
+                network => [ "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" ]
+        }
+    }
+    
+    if [source][nat][ip] {
+        cidr {
+                add_field => {"[source][nat][locality]" => "private"}
+                address => [ "%{[source][nat][ip]}" ]
+                network => [ "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" ]
+        }
+    }
+
+    if [destination][ip] {
+        cidr {
+                add_field => {"[destination][locality]" => "private"}
+                address => [ "%{[destination][ip]}" ]
+                network => [ "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" ]
+        }
+    }
+
+    if [destination][nat][ip] {
+        cidr {
+                add_field => {"[destination][nat][locality]" => "private"}
+                address => [ "%{[destination][nat][ip]}" ]
+                network => [ "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" ]
+        }
+    }
+
+    ##### Defining fields to apply geo pluging to source and destination fields
+    ## If [source][locality] not exists but exists [source][ip], then by default [source][locality] is "public"
+    if ([source][ip]) and ([source][locality] == "private") and [source][nat][ip] and ([source][nat][locality]!="private") {
+        mutate {
+            copy => { "[source][nat][ip]" => "[src_ip_geo_apply]"  }
+        }
+    }else if ([source][ip]) and !([source][locality]){
+        mutate {
+            copy => { "[source][ip]" => "[src_ip_geo_apply]" }
+            add_field => { "[source][locality]" => "public" }
+        }
+    }
+    
+    ## IF [destination][locality] not exists but exists [source][ip], then by default [destination][locality] is "public"
+    if ([destination][locality]) and ([destination][locality] == "private") and [destination][nat][ip] and ([destination][nat][locality]!="private") {
+        mutate {
+            copy => { "[destination][nat][ip]" => "[dest_ip_geo_apply]" }
+        }
+    }else if ([destination][ip]) and !([destination][locality]) {
+        mutate {
+            copy => { "[destination][ip]" => "[dest_ip_geo_apply]" }
+            add_field => { "[destination][locality]" => "public" }
+        }
+    }
+        
+    #### Appliying geo plugging to fields
+    if [src_ip_geo_apply] {
+        geoip {
+            source => "[src_ip_geo_apply]"
+            target => "[source][geo]"
+            fields => ["city_name", "continent_code", "country_code2", "country_name", "location", "region_code", "region_name"]
+        }
+    }
+    
+    if [dest_ip_geo_apply] {
+        geoip {
+            source => "[dest_ip_geo_apply]"
+            target => "[destination][geo]"
+            fields => ["city_name", "continent_code", "country_code2", "country_name", "location", "region_code", "region_name"]
+        }
+    }
+    
+    # "source_nat_locality", "destination_nat_locality"
+    mutate { remove_field => ["src_ip_geo_apply", "dest_ip_geo_apply" ] }
+
+    ############ drawing a line for use "Maps UI" ##############################
+    
+    if !([request_path]) and ( [source][location][lat] and [source][location][lon] and [destination][location][lat] and [destination][location][lon] ){
+        mutate {
+            add_field => {
+                "[request_path]" => [ 
+                    "%{[source][location][lon]}" , 
+                    "%{[source][location][lat]}" , 
+                    "%{[destination][location][lon]}" , 
+                    "%{[destination][location][lat]}" ] 
+            }
+        }
+    }
+
+
+}
+output {
+    pipeline {
+        send_to => "logstash_enrichment" 
+    }
+
+}
