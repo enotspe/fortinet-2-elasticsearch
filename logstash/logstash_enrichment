@@ -1,0 +1,53 @@
+input {
+
+    pipeline {
+        address => "logstash_enrichment"
+    }
+}
+
+filter {
+
+    mutate {
+        add_field => { "[logstash][enrichment]" => "logstash" }
+    }
+
+    
+    translate {
+        field => "[logstash][enrichment]"
+        destination => "[logstash_csv]"
+        dictionary_path => "/etc/logstash/agent.yml"
+        fallback => "default_logstash_csv"
+    }
+        
+    if [logstash_csv] != "default_logstash_csv" {
+        
+        #"ip" : "id,name,type,ephemeral_id,version,uuid"    
+        csv {
+            source => "logstash_csv"
+            separator => ","
+            columns => ["[logstash][ip]","[logstash][id]","[logstash][name]","[logstash][type]","[logstash][version]"]
+            skip_empty_columns => true
+        }
+    }
+
+    mutate{
+        remove_field => ["logstash_csv","[logstash][enrichment]","[logstash][id]","[logstash][version]"]
+    }
+    
+    
+
+    if [event][module]  in [ "snmp" , "snmptrap" ] {
+        mutate {
+            rename => { "[logstash]" => "[observer]" }
+        }
+    }
+    
+}
+
+output {
+    
+    pipeline {
+        send_to => "drop" 
+    }
+
+}
