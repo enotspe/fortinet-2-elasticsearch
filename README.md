@@ -30,11 +30,11 @@ Our focus is to cover security solutions
 - [ ] [enSilo (that would be great!)](https://www.fortinet.com/products/fortinet-acquires-ensilo.html)
 
 ## ECS Translations
-### Disclaimer
+*Disclaimer*
 ECS is a work in progress, a baby just starting to breathe, still lacks a lot of fields, specially for networking security. However, ECS is probably the best effort out there for log normalization. 
 So dont expect to have all fields translated to ECS, just Fortigate has 500+ unique fields and ECS is just reaching 400, do the math!!!
 
-### Translations Sheets
+**Translations Sheets**
 All the Fortinet to ECS fields translation will be managed by product on a Google sheet.
 
 ### Fortigate
@@ -52,3 +52,8 @@ Right now only traffic and utm logs have been translated, because their usecase 
 > Current dataset: [3.1.2](https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/8bd13f46-f447-11e9-8977-00505692583a/FortiSandbox-3.1.2-Log_Reference.pdf)
 
 **[FortiSandbox - Log Reference v3.1.2 - Public](https://docs.google.com/spreadsheets/d/1QlR_9d4TzLCeZ4SOzT8pFtPKtflupVsH0z3W7bDLtWc/edit?usp=sharing)**
+
+## Logstash
+
+
+input_syslog --> observer_enrichment --> kv_syslog --> fortiXXX_2_ecs --> geo_enrichment --> geo_enrichment --> drop --> output
