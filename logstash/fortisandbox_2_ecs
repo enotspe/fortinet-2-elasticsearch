@@ -116,7 +116,7 @@ filter {
     }
 }
 output {
-    #pipeline {
-    #    send_to => "geo_enrichment" 
-    #}
+    pipeline {
+        send_to => "geo_enrichment" 
+    }
 }
