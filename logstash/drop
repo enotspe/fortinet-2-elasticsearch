@@ -1,0 +1,54 @@
+input {
+
+    pipeline {
+        address => "drop"
+    }
+
+}
+filter {
+
+    if [source][ip] {
+        translate {
+            field => "[observer][ip]"
+            destination => "[networks_csv]"
+            dictionary_path => "/etc/logstash/drop_networks.yml"
+            fallback => "no_drop"
+        }
+            
+        if [networks_csv] != "no_drop" and [source][ip]{
+            
+            #"observer.ip" : "192.168.0.0/25,192.168.0.128/25" 
+            mutate {
+             split => { "networks_csv" => "," }
+            }
+            #tag guest networks traffic
+            
+            cidr {
+                add_tag => [ "guest_network" ]
+                address => [ "%{[source][ip]}" ]
+                network => "%{[networks_csv]}"
+            }
+        }
+    }
+
+    #drop guest networks traffic
+    if "guest_network" in [tags] {
+        drop { 
+            #percentage => 50
+        }
+    }
+
+    #we are receiving logs from an unknown source
+    if "send_index_error" in [tags] {
+        drop{
+            percentage => 50
+        }
+    }
+
+
+}
+output {
+    pipeline {
+        send_to => "output" 
+    }
+}
