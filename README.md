@@ -1,18 +1,9 @@
 # FortiUnicorn (fortinet-2-elasticsearch)
 
-## Inputs
-We want a full 360° view for monitoring and analysis: 
-* syslog
-* snmp
-* snmptraps
-* ping (via heartbeat)
-* ssh commands output (diag sys top)
-* [streaming telemetry](http://www.openconfig.net/projects/telemetry/) ...someday it will be supported
-
 ## Scope
 We will cover all the road for squeezing all posiible information out of Fortinet logs on Elasticseach:
-* ECS translation
 * Logstash pipelines
+* ECS translation
 * Geo enrichment
 * Other manipulations (tenant enrichment, dropping guest networks, observer enrichment, etc.)
 * fields mappings
@@ -30,6 +21,15 @@ Our focus is to cover security solutions
 - [ ] Fortimail.......someday
 - [ ] Forticlient (EMS).......someday
 - [ ] [enSilo](https://www.fortinet.com/products/fortinet-acquires-ensilo.html) (that would be great!)
+
+## Inputs
+We want a full 360° view for monitoring and analysis: 
+* syslog
+* snmp
+* snmptraps
+* ping (via heartbeat)
+* ssh commands output (diag sys top)
+* [streaming telemetry](http://www.openconfig.net/projects/telemetry/) ...someday it will be supported
 
 ## ECS Translations
 *Disclaimer*
