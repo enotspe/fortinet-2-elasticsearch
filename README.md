@@ -1,5 +1,7 @@
-# fortinet-2-elasticsearch
-We want a full 360° monitoring: 
+# FortiUnicorn (fortinet-2-elasticsearch)
+
+## Inputs
+We want a full 360° view for monitoring and analysis: 
 * syslog
 * snmp
 * snmptraps
@@ -8,7 +10,7 @@ We want a full 360° monitoring:
 * [streaming telemetry](http://www.openconfig.net/projects/telemetry/) ...someday it will be supported
 
 ## Scope
-We will cover all the road for squeezing Fortinet logs on Elasticseach
+We will cover all the road for squeezing all posiible information out of Fortinet logs on Elasticseach:
 * ECS translation
 * Logstash pipelines
 * Geo enrichment
@@ -27,7 +29,7 @@ Our focus is to cover security solutions
 - [ ] Fortiweb
 - [ ] Fortimail.......someday
 - [ ] Forticlient (EMS).......someday
-- [ ] [enSilo (that would be great!)](https://www.fortinet.com/products/fortinet-acquires-ensilo.html)
+- [ ] [enSilo](https://www.fortinet.com/products/fortinet-acquires-ensilo.html) (that would be great!)
 
 ## ECS Translations
 *Disclaimer*
@@ -35,6 +37,7 @@ ECS is a work in progress, a baby just starting to breathe, still lacks a lot of
 So dont expect to have all fields translated to ECS, just Fortigate has 500+ unique fields and ECS is just reaching 400, do the math!!!
 
 **Translations Sheets**
+We have got Log reference guides and turn them into sheets so we can process the data. We need to consolidate fields, verify fields mapping(data type), look for filed that overlap with ECS fields, tranlate fields to ECS, and make mapping and pipelines configs.  
 All the Fortinet to ECS fields translation will be managed by product on a Google sheet.
 
 ### Fortigate
@@ -42,9 +45,18 @@ All the Fortinet to ECS fields translation will be managed by product on a Googl
 
 **[FortiOS - Log Reference Version 6.2.2 - Public](https://docs.google.com/spreadsheets/d/1hZYIcozgZQhyXTekOJbXujFBAN-YnJ2cQFP_T0ejuio/edit?usp=sharing)**
 
-Fortigate logs are complicated, it is a very large dataset, fw can be utm or ngfw (this affects logs), no field description, no field examples either, etc. So we have decided to attack them by splitting them by type, resulting in 3 datasets: traffic, utm and event. Each of them has its own translation.
+Fortigate logs are an ugly beast, mainly because its lack of (good) documentation. Current log reference lacks of field description, no field examples either, logids gets added/removed without any notice, etc. Just from 6.2.1, there type "utm" was documented. On top of that, GTP events are part of the guide, causing some field mismatch mapping 
 
-Although Fortinet is moving all types logs to a connection oriented approach for source.ip and destination.ip fields, we are only considering client/source server/destination for traffic logs
+* checksum: string  | uint32
+* from: ip  | string
+* to: ip  | string
+* version: string  | uint32
+
+As far as we are concern, GTP is only part of Fortigate Carrier, which is a different product¿? How can Fortigate manage a field that has 2 different data types in its internal relational database? how does fortianalyzer do it?
+
+So we have decided to attack them by splitting them by type, resulting in 3 datasets: traffic, utm and event. Each of them has its own translation.
+
+Although Fortinet is moving utm type logs to a connection oriented approach, we are only considering client/source server/destination for traffic logs.
 
 Right now only traffic and utm logs have been translated, because their usecase is the one which ECS have more coverage.
 
@@ -55,5 +67,10 @@ Right now only traffic and utm logs have been translated, because their usecase 
 
 ## Logstash
 
+We have a multitenant deployment, with many logstash deployed all over, and no direct correlation between a logstash and a tenant ( logstash != tenant). So we need to have a very flexible pipeline architecture. 
+
+Therefore, we have tried to make our pipelines as modular as possible, and witout any "hardcoding" inside them. For enrichment, we manage "dictionaries", so we can dinamically enrich any data we want, and we can modify each dictionary on every logstash, which gives the flexibility we are looking for. This might not be your case, no problem, just use the pipelines you need!
+
+The overall pipeline flow is as follows:
 
 input_syslog --> observer_enrichment --> kv_syslog --> fortiXXX_2_ecs --> geo_enrichment --> geo_enrichment --> drop --> output
