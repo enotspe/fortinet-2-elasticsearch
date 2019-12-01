@@ -86,26 +86,34 @@ Depending on the IP of the firewall (IP sending logs), it looks up on 2 dictiona
 If not found in the dictionary, it means we are receiving logs from an unknown firewall and it tags it as so.
 
 **Properties Dictionary**
+
 "[observer][ip]" : "[observer][name]","[observer][hostname]","[observer][mac]","[observer][product]","[observer][serial_number]","[observer][type]","[observer][vendor]","[observer][version]","[organization][id]","[organization][name]"
 
 **Geo Dictionary**
+
 "[observer][ip]" : "[observer][geo][city_name]","[observer][geo][continent_name]","[observer][geo][country_iso_code]","[observer][geo][country_name]","[observer][geo][location][lon]","[observer][geo][location][lat]","[observer][geo][name]","[observer][geo][region_iso_code]","[observer][geo][region_name]","[event][timezone]","[observer][geo][site]","[observer][geo][building]","[observer][geo][floor]","[observer][geo][room]","[observer][geo][rack]","[observer][geo][rack_unit]"
 
 We have added some fields to ECS geo so we can have the exact location: site, building, floor, room, rack, rack_unit.
 Maybe, this is not very critical for firewalls, because you usually have just a couple of firewalls per site. However, we added it as a part of our inventory because we also manage switches and APs, and for those you do need the exact location.
 
 ### KV Syslog
+
 Splits the original log into key-value pairs, and sets the timestamp. Timezone is also dinamically obteined from a dictionary. Our firewalls live in different timezones.
 
 ### FortiXXX 2 ECS
+
 Based on the spreadsheet: 
 
 Validates nulls on IP fields (Fortinet loves to fill with "N/A" null fields, which turns into ingestion errors if your field has IP mapping)
+
 Renames fortinet fields that overlaps with ECS
-Translates fortinet field to ECS. We are doing ECS "enrichment", leacing original fortinet fields as well. If you want to replace fields, just change "copy" to "rename"
+
+Translates fortinet field to ECS. We are doing ECS "enrichment", leacing original fortinet fields as well. If you want to replace fields, just change "copy" to "rename".
+
 Populates other ECS fields based on ECS recommendations. (related ip, source.address, event.start, etc.)
 
 ### Geo Enrichment
+
 Geo  location for source.ip and destination.ip. 
 [.locality](https://github.com/elastic/ecs/pull/288)
 
