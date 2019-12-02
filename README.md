@@ -123,13 +123,13 @@ Security is a big data problem, the only issue is that you have to pay for it. H
 
 ### Output
 
-This is key for index strategy:
+This is crucial for index strategy:
 
 "ecs-%{[event][module]}-%{[organization][name]}-write"
 
 3 index templates rule it all:
 * [ecs-* template](https://github.com/elastic/ecs/blob/master/generated/elasticsearch/7/template.json): deals with ECS mapping.
 * fortiX* template: deals with fortiX mapping.
-* tenantX mapping: deals with ILM template, shard allocation.
+* tenantX template: deals with ILM template, shard allocation.
 
 Because we have a multitenant escenario, we manage different retention policies per tenant, while ECS mapping is the same for all indexes, and every Fortinet product has its own mapping for original fields.
