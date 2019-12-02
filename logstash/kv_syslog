@@ -28,7 +28,6 @@ filter {
         }
         
         mutate{
-            rename => {"syslog5424_pri" => "[log][syslog][priority]"}
             replace => {"temp_time" => "%{date} %{time}"}
         }
         
@@ -74,9 +73,9 @@ output {
             send_to => "fortimail_2_ecs"
         }
     }
-    else if [event][module]=="forticlient" {
+    else if [event][module]=="fortiauthenticator" {
         pipeline{
-            send_to => "forticlient_2_ecs"
+            send_to => "fortiauthenticator_2_ecs"
         }
     }
     
