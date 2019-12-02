@@ -31,10 +31,11 @@ filter {
     mutate {
         
         add_field => { "[ecs][version]" => "1.2.0" }
+        rename => {"syslog5424_pri" => "[log][syslog][priority]"}
 
         copy =>{ "[dstip]"=> "[destination][ip]" }
         copy =>{ "[dstport]"=> "[destination][port]" }
-        copy =>{ "[error]"=> "[error][message]" }
+        copy =>{ "[fsa][error]"=> "[error][message]" }
         copy =>{ "[action]"=> "[event][action]" }
         copy =>{ "[subtype]"=> "[event][category]" }
         copy =>{ "[logid]"=> "[event][code]" }
@@ -52,7 +53,7 @@ filter {
         copy =>{ "[fname]"=> "[file][name]" }
         copy =>{ "[filepath]"=> "[file][path]" }
         copy =>{ "[sizebin]"=> "[file][size]" }
-        copy =>{ "[host]"=> "[host][name]" }
+        copy =>{ "[fsa][host]"=> "[host][name]" }
         copy =>{ "[proto]"=> "[network][protocol]" }
         copy =>{ "[ip]"=> "[network][type]" }
         copy =>{ "[devid]"=> "[observer][serial_number]" }
@@ -61,8 +62,8 @@ filter {
         copy =>{ "[cport]"=> "[source][port]" }
         copy =>{ "[suser]"=> "[source][user][name]" }
         copy =>{ "[hostname]"=> "[url][domain]" }
-        copy =>{ "[url]"=> "[url][original]" }
-        copy =>{ "[user]"=> "[user][name]" }
+        copy =>{ "[fsa][url]"=> "[url][original]" }
+        copy =>{ "[fsa][user]"=> "[user][name]" }
 
     }
     mutate {
@@ -71,7 +72,7 @@ filter {
         copy =>{ "[scaned]"=> "[event][end]" }
         copy =>{ "[status]"=> "[event][outcome]" }
         copy =>{ "[stime]"=> "[event][start]" }
-        copy =>{ "[service]"=> "[network][protocol]" }
+        copy =>{ "[fsa][service]"=> "[network][protocol]" }
         copy =>{ "[srcip]"=> "[source][ip]" }
         copy =>{ "[srcport]"=> "[source][port]" }
         copy =>{ "[susr]"=> "[source][user][name]" }
