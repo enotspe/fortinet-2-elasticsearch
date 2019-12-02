@@ -128,7 +128,7 @@ Right now only traffic and utm logs have been translated, because their use case
 
 
 
-**[FortiSandbox - Log Reference v3.1.2 - Public](https://docs.google.com/spreadsheets/d/1QlR_9d4TzLCeZ4SOzT8pFtPKtflupVsH0z3W7bDLtWc/edit?usp=sharing)**
+**[FortiSandbox - Log Reference v3.1.2 - Public](https://docs.google.com/spreadsheets/d/1Dm8z1nnDI9G2ANJYn5Eaq2DVQhwiESFZPuFDro-JEHQ/edit?usp=sharing)**
 
 
 
