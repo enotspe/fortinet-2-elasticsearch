@@ -29,6 +29,9 @@ filter {
                 network => "%{[networks_csv]}"
             }
         }
+        mutate{
+            remove_field => ["networks_csv"]
+        }
     }
 
     #drop guest networks traffic
@@ -41,7 +44,7 @@ filter {
     #we are receiving logs from an unknown source
     if "error_observer_enrichment" in [tags] {
         drop{
-            #percentage => 50
+            percentage => 50
         }
     }
 
