@@ -87,11 +87,11 @@ If not found in the dictionary, it means we are receiving logs from an unknown f
 
 **Properties Dictionary**
 
-*"[observer][ip]"* : "[observer][name]","[observer][hostname]","[observer][mac]","[observer][product]","[observer][serial_number]","[observer][type]","[observer][vendor]","[observer][version]","[organization][id]","[organization][name]"
+**"[observer][ip]"** : "[observer][name]","[observer][hostname]","[observer][mac]","[observer][product]","[observer][serial_number]","[observer][type]","[observer][vendor]","[observer][version]","[organization][id]","[organization][name]"
 
 **Geo Dictionary**
 
-*"[observer][ip]"* : "[observer][geo][city_name]","[observer][geo][continent_name]","[observer][geo][country_iso_code]","[observer][geo][country_name]","[observer][geo][location][lon]","[observer][geo][location][lat]","[observer][geo][name]","[observer][geo][region_iso_code]","[observer][geo][region_name]","[event][timezone]","[observer][geo][site]","[observer][geo][building]","[observer][geo][floor]","[observer][geo][room]","[observer][geo][rack]","[observer][geo][rack_unit]"
+**"[observer][ip]"** : "[observer][geo][city_name]","[observer][geo][continent_name]","[observer][geo][country_iso_code]","[observer][geo][country_name]","[observer][geo][location][lon]","[observer][geo][location][lat]","[observer][geo][name]","[observer][geo][region_iso_code]","[observer][geo][region_name]","[event][timezone]","[observer][geo][site]","[observer][geo][building]","[observer][geo][floor]","[observer][geo][room]","[observer][geo][rack]","[observer][geo][rack_unit]"
 
 We have added some fields to ECS geo so we can have the exact location: site, building, floor, room, rack, rack_unit.
 Maybe, this is not very critical for firewalls, because you usually have just a couple of firewalls per site. However, we added it as a part of our inventory because we also manage switches and APs, and for those you do need the exact location.
