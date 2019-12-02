@@ -114,8 +114,22 @@ Based on the spreadsheet:
 
 ### Geo Enrichment
 
-Geo  location for source.ip and destination.ip. 
-[.locality](https://github.com/elastic/ecs/pull/288)
+source.ip/source.nat.ip and destination.ip/destination.nat.ip are inspected to determine wheter they are public or private adrress with the help of [.locality](https://github.com/elastic/ecs/pull/288) fields. 
+If they are public, then geo enrichment is applied.
+Finally, request_path is inserted, for use on Maps UI
 
+### Drop
+Security is a big data problem, the only issue is that you have to pay for it. Here, guest networks are dropped. There is no need, at least in our case, for ingesting guest networks logs. Guest networks are looked up dinamically from a dictionary.
 
-           
+### Output
+
+This is key for index strategy:
+
+"ecs-%{[event][module]}-%{[organization][name]}-write"
+
+3 index templates rule it all:
+* [ecs-* template](https://github.com/elastic/ecs/blob/master/generated/elasticsearch/7/template.json): deals with ECS mapping.
+* fortiX* template: deals with fortiX mapping.
+* tenantX mapping: deals with ILM template, shard allocation.
+
+Because we have a multitenant escenario, we manage different retention policies per tenant, while ECS mapping is the same for all indexes, and every Fortinet product has its own mapping for original fields.
