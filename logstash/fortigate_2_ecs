@@ -52,8 +52,8 @@ filter {
 
 #ecs translation
     mutate {
-        #add_field => { "[agent][enrichment]" => "logstash" }
         add_field => { "[ecs][version]" => "1.2.0" }
+        rename => {"syslog5424_pri" => "[log][syslog][priority]"}
     }
 
     if [type] == "traffic" {
