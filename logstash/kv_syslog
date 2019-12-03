@@ -11,7 +11,7 @@ filter {
     mutate{ copy => {"message" => "[event][original]"} }
 
 
-    # event created        when the event is created by logstash
+    # event.created        when the event is created by logstash
     
     grok {
         match => ["message", "%{SYSLOG5424PRI:syslog_index}%{GREEDYDATA:message}"]
@@ -26,9 +26,28 @@ filter {
           value_split => "="
           field_split => " "
         }
+
+        # fortisandbox 
+        if [tz] =~  /[A-Z]+/{
+            mutate {
+            replace => {"temp_time" => "%{date}T%{time}Z" }
+            add_field => {"tags" => "_tz_are_not_number"}
+            }
         
-        mutate{
+        }
+
+        # fortigate 6.2.X    
+        else if [tz]{
+            mutate{
+            replace => {"temp_time" => "%{date} %{time} %{tz}"}
+            }
+        } 
+        
+        # forti* without tz
+        else {
+            mutate{
             replace => {"temp_time" => "%{date} %{time}"}
+            }
         }
         
         # Just for avoid errors in timestamp field
@@ -40,12 +59,14 @@ filter {
         }        
 
         date {
-            match => ["temp_time", "yyyy-MM-dd HH:mm:ss"]
+            match => ["temp_time", "yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd HH:mm:ss Z", "ISO8601"]
             timezone => "%{[event][timezone]}"
             target => "@timestamp"
+            tag_on_failure => ["_dateparsefailure_kv_syslog"]
+            
         }
     
-        mutate{remove_field => ["temp_time","date","time","syslog_index","message"]}
+        mutate{remove_field => ["date","time","syslog_index","message","temp_time"]}
 
     }
     
