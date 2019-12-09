@@ -36,7 +36,7 @@ Our focus is to cover security solutions
 
 - [x] Fortisandbox
 
-- [ ] Fortiweb
+- [X] Fortiweb
 
 - [ ] Fortimail.......someday
 
