@@ -131,6 +131,14 @@ Right now only traffic and utm logs have been translated, because their use case
 **[FortiSandbox - Log Reference v3.1.2 - Public](https://docs.google.com/spreadsheets/d/1Dm8z1nnDI9G2ANJYn5Eaq2DVQhwiESFZPuFDro-JEHQ/edit?usp=sharing)**
 
 
+### Fortiweb
+
+> Current dataset: [6.2.0](https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/attachments/0d7bbf47-ee6d-11e9-8977-00505692583a/FortiWeb_6.2.0_Log_Reference.pdf)
+
+
+
+**[FortiWeb_6.2.0_Log_Reference - Public](https://docs.google.com/spreadsheets/d/19YpCfLGtaU3DnDRWTLKaQXOoVc4up7lFCu1SfCIofT4/edit?usp=sharing)**
+
 
 ## Logstash
 
