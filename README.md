@@ -88,7 +88,7 @@ All the Fortinet to ECS fields translation will be managed by product on a Googl
 
 
 
-**[FortiOS_6.2.2_Log_Reference - Public](https://docs.google.com/spreadsheets/d/1m4hHrjSSCvIMTNCliRDBL6cW_IlQCyhqOTfwHtjVHoQ/edit?usp=sharing)**
+**[FortiOS_6.2.X_Log_Reference - Public](https://docs.google.com/spreadsheets/d/1m4hHrjSSCvIMTNCliRDBL6cW_IlQCyhqOTfwHtjVHoQ/edit?usp=sharing)**
 
 
 
