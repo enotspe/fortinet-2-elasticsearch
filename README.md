@@ -114,7 +114,7 @@ So we have decided to attack them by splitting them by type, resulting in 3 data
 
 
 
-Although Fortinet is moving utm type logs to a connection oriented approach, we are only considering client/source server/destination for traffic logs.
+Although Fortinet is moving utm type logs to a [connection oriented approach](https://docs.fortinet.com/document/fortigate/6.2.0/new-features/199570/logging-session-versus-attack-direction), we are only considering client/source server/destination for traffic logs.
 
 
 
