@@ -6,25 +6,19 @@
 
 We will cover all the road for squeezing all possible information out of Fortinet logs on Elasticseach:
 
-* ECS translation
+- [x] ECS translation
 
-* fields mappings
+- [x] Logstash pipelines (including geo enrichment, other manipulations as tenant enrichment, dropping guest networks, observer enrichment, etc.)
 
-* Logstash pipelines
+- [ ] index templates
 
-* Geo enrichment
+- [ ] index patterns
 
-* Other manipulations (tenant enrichment, dropping guest networks, observer enrichment, etc.)
+- [ ] dashboards
 
-* index templates
+- [ ] event alerts
 
-* index patterns
-
-* dashboards
-
-* event alerts
-
-* ML alerts
+- [ ] ML alerts
 
 
 
@@ -276,7 +270,6 @@ This is crucial for index strategy:
 * fortiX* template: deals with fortiX mapping.
 
 * tenantX template: deals with ILM template, shard allocation.
-
 
 
 Because we have a multitenant scenario, we manage different retention policies per tenant, while ECS mapping is the same for all indexes, and every Fortinet product has its own mapping for original fields.
