@@ -1,0 +1,78 @@
+input {
+    pipeline {
+        address => "fortiweb_2_ecs"
+    }
+}
+
+filter {
+#remove event.original for saving disk space
+    #mutate{ remove_field => ["[event][original]"]  }
+
+#validate "N/A" on ip fields
+    if [dst]=="N/A" { mutate { remove_field => ["dst"] } }
+    if [src]=="N/A" { mutate { remove_field => ["src"] } }
+
+#rename fortios fields that overlap with ECS.    
+    mutate {
+        rename => { "[service]" => "[fortiweb][service]" }
+        rename => { "[user]" => "[fortiweb][user]" }
+    }
+
+#ecs translation
+    mutate {
+        
+        add_field => { "[ecs][version]" => "1.3.1" }
+        rename => {"syslog5424_pri" => "[log][syslog][priority]"}
+
+        copy =>{ "[action]"=> "[event][action]" }
+        copy =>{ "[cipher_suite]"=> "[tls][cipher]" }
+        copy =>{ "[device_id]"=> "[observer][serial_number]" }
+        copy =>{ "[dst]"=> "[destination][ip]" }
+        copy =>{ "[dst_port]"=> "[destination][port]" }
+        copy =>{ "[http_agent]"=> "[user_agent][original]" }
+        copy =>{ "[http_host]"=> "[url][domain]" }
+        copy =>{ "[http_method]"=> "[http][request][method]" }
+        copy =>{ "[http_refer]"=> "[http][request][referrer]" }
+        copy =>{ "[http_request_bytes]"=> "[http][request][bytes]" }
+        copy =>{ "[http_response_bytes]"=> "[http][response][bytes]" }
+        copy =>{ "[http_retcode]"=> "[http][response][status_code]" }
+        copy =>{ "[http_url]"=> "[url][path]" }
+        copy =>{ "[http_version]"=> "[http][version]" }
+        copy =>{ "[log_id]"=> "[event][code]" }
+        copy =>{ "[main_type]"=> "[event][category]" }
+        copy =>{ "[msg]"=> "[message]" }
+        copy =>{ "[msg_id]"=> "[event][sequence]" }
+        copy =>{ "[policy]"=> "[rule][name]" }
+        copy =>{ "[proto]"=> "[network][transport]" }
+        copy =>{ "[reason]"=> "[event][reason]" }
+        copy =>{ "[fortiweb][service]"=> "[network][protocol]" }
+        copy =>{ "[signature_cve_id]"=> "[vulnerability][id]" }
+        copy =>{ "[src]"=> "[source][ip]" }
+        copy =>{ "[src_port]"=> "[source][port]" }
+        copy =>{ "[status]"=> "[event][outcome]" }
+        copy =>{ "[threat_level]"=> "[vulnerability][severity]" }
+        copy =>{ "[type]"=> "[event][dataset]" }
+        copy =>{ "[fortiweb][user]"=> "[user][name]" }
+        
+
+    }
+    mutate {
+        copy =>{ "[user_name]"=> "[user][name]" }
+        copy =>{ "[subtype]"=> "[event][category]" }
+    }
+    
+
+    #### ecs best practices
+    if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
+    if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
+
+
+
+}
+
+output {
+    pipeline {
+        send_to => "geo_enrichment" 
+    }
+
+}
