@@ -1,6 +1,6 @@
 # FortiUnicorn (fortinet-2-elasticsearch)
 
-![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn_Supra_V4.png)
+![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn%20Fortinet-2-Elasticsearch.png)
 
 
 ## Scope
