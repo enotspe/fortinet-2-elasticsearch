@@ -144,12 +144,9 @@ Same logic as Fortigate. No type separation has been made tough.
 
 
 
-We have a multitenant deployment, with many logstash deployed all over, and no direct correlation between a logstash and a tenant ( logstash != tenant). So we need to have a very flexible pipeline architecture. 
+We have tried to make our pipelines as modular as possible, witout any "hardcoding" inside them. For enrichment, we manage "dictionaries", so we can dynamically enrich any data we want, and we can change each dictionary per logstash, which gives the flexibility we are looking for because we have a multitenant deployment, with many logstash deployed all over, and no direct correlation between a logstash and a tenant ( logstash != tenant). So we need to have a very flexible pipeline architecture. 
 
-
-
-Therefore, we have tried to make our pipelines as modular as possible, and witout any "hardcoding" inside them. For enrichment, we manage "dictionaries", so we can dynamically enrich any data we want, and we can change each dictionary on every logstash, which gives the flexibility we are looking for. This might not be your case, no problem, just use the pipelines you need!
-
+This might not be your case, no problem, just use the pipelines you need!
 
 
 The overall pipeline flow is as follows:
@@ -157,7 +154,7 @@ The overall pipeline flow is as follows:
 
 ![pipelien flow](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/pipeline%20flow.png)
 
-
+It is important the sequence of the pipelines, mainly for HA scenarios. We are doing some enrichments via dictionaries that then get overriden with log data. Take for example `observer.serial_number`: it gets populated on `Observer Enrichment` pipeline, but it gets overriden on `FortiXXX 2 ECS` with the translation of `devid` field. This is on purpose, because it allows to have just one entry on the dictionary (on HA both devices are exactly the same) but have accuarate data about the specefic properties of the devices on an HA pair (serial_number, name)
 
 ### Input Syslog
 
@@ -171,7 +168,7 @@ Just receives syslog logs and populated event.module depending on udp port.
 
 
 
-Depending on the IP of the firewall (IP sending logs), it looks up on 2 dictionaries. On the first it enriches observer (firewall) properties. On the second one it enrichs observer (firewall) location. This 2 dictionaries could be merged into one, because the key is the same: *"[observer][ip]"*. 
+Depending on the IP of the firewall (IP sending logs), it looks up on two dictionaries. On the first one, it enriches observer (firewall) properties. On the second one, it enrichs observer (firewall) location. This 2 dictionaries could be merged into one, because the key is the same: *"[observer][ip]"*. 
 
 
 
@@ -257,18 +254,17 @@ Here, guest networks (or any defined networks) are dropped. There is no need, at
 This is crucial for index strategy:
 
 
-
 "ecs-%{[event][module]}-%{[organization][name]}-write"
 
 
 
-3 index templates rule it all:
+3 index templates rule it all, each template points to its specific index pattern:
 
-* [ecs-* template](https://github.com/elastic/ecs/blob/master/generated/elasticsearch/7/template.json): deals with ECS mapping.
+* [ecs-](https://github.com/elastic/ecs/blob/master/generated/elasticsearch/7/template.json): deals with ECS mapping.
 
-* fortiX* template: deals with fortiX mapping.
+* %{[event][module]} which could be fortigate, fortisandbox, fortiweb: deals with fortiX mapping.
 
-* tenantX template: deals with ILM template, shard allocation.
+* %{[organization][name]}: deals with ILM template, shard allocation specific to the tenant.
 
 
 Because we have a multitenant scenario, we manage different retention policies per tenant, while ECS mapping is the same for all indexes, and every Fortinet product has its own mapping for original fields.
