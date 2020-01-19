@@ -268,3 +268,9 @@ This is crucial for index strategy:
 
 
 Because we have a multitenant scenario, we manage different retention policies per tenant, while ECS mapping is the same for all indexes, and every Fortinet product has its own mapping for original fields.
+
+## Dashboards
+
+All dashboards are connected via its header structure. Making it easy to navigate trough them.
+
+Dashboards follow a (max) 3 layer structure, going from more general to more specific.
