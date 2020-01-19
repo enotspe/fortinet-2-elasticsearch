@@ -155,8 +155,7 @@ Therefore, we have tried to make our pipelines as modular as possible, and witou
 The overall pipeline flow is as follows:
 
 
-
-input_syslog --> observer_enrichment --> kv_syslog --> fortiXXX_2_ecs --> geo_enrichment --> geo_enrichment --> drop --> output
+![pipelien flow](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/pipeline%20flow.png)
 
 
 
@@ -242,13 +241,12 @@ source.ip/source.nat.ip and destination.ip/destination.nat.ip are inspected to d
 
 If they are public, then geo enrichment is applied.
 
-Finally, request_path is inserted, for use on Maps UI.
-
 
 
 ### Drop
 
-Security is a big data problem, the only issue is that you have to pay for it. Here, guest networks are dropped. There is no need, at least in our case, for ingesting guest networks logs. Guest networks are looked up dynamically from a dictionary.
+Security is a big data problem, that you have to pay for it. 
+Here, guest networks (or any defined networks) are dropped. There is no need, at least in our case, for ingesting guest networks logs. Guest networks are looked up dynamically from a dictionary.
 
 
 
