@@ -288,6 +288,7 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 1. Top level reference Fortinet´s type field: traffic, utm or event. UTM is already disaggregated so it can be easier to go to an specif UTM type, just like in Fortigate´s Logs & Report section.
 
 2. Second level dives into *traffic direction* (if possible). For example: On traffic´s dashboard, we have `Outbound | Inbound | LAN 2 LAN | VPN | FW Local`. It makes total sense to analyze it separetly.
+
 *firewalls have been configured with `interface role` following this premise:*
 * *LAN interfaces = `LAN` interface role*
 * *WAN interfaces = `WAN` interface role*
@@ -297,14 +298,12 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 3. Third level refers to which metric are we using for exploring the dataset: We only use sessions and bytes.
 *we need to filter out [logid=20](https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912), so we dont get duplicate data when running aggregations. You can filter out this logid on the firewall itself, but we make sure we dont use it.
 
-`
+```
 config log fortianalyzer filter
-
         set filter "logid(00020)"
-        
         set filter-type exclude
-end
-`
+   end
+```
 
 * sessions: we consider each log as a unique session.
 
