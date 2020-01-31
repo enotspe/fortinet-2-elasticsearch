@@ -91,13 +91,13 @@ Fortigate logs are an ugly beast, mainly because its lack of (good) documentatio
 
 
 
-* checksum: string  | uint32
+* checksum: `string  | uint32`
 
-* from: ip  | string
+* from: `ip  | string`
 
-* to: ip  | string
+* to: `ip  | string`
 
-* version: string  | uint32
+* version: `string  | uint32`
 
 
 As far as we are concern, GTP is only part of Fortigate Carrier, which is a different product (¿?) How can Fortigate manage a field that has 2 different data types in its internal relational database? how does fortianalyzer do it? We have no idea, because we have never seent GTP events on a real scenario. In order to avoid any data type mismatch, GTP events are not going to be considered, and unless you use Fortigate Carrier, you are not going to see them either.
@@ -271,19 +271,49 @@ Because we have a multitenant scenario, we manage different retention policies p
 
 ## Dashboards
 
-Fortinet dataset has 500+ fields, so we need many dashboards for exploring the fields.
+Fortinet dataset has 500+ fields, so we need many dashboards for exploring it. 
+
+We have tried to follow Fortigate´s Logs & Report section. Main objective of these dashboards is to do an exploration of the dataset in order to spot anomalies on it, it is not intended to be a C-level report in any way. We would be using Canvas for C-level visualizations.
+
+There a lot of visualizations on each dashboars so keep in mind performance can be impacted (loading times)
 
 ### Structure
 
 All dashboards are connected via its header structure. Making it easy to navigate trough them.
 
+![header](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/header.png)
+
 Dashboards follow a (max) 3 layer structure, going from more general to more specific.
 
+1. Top level reference Fortinet´s type field: traffic, utm or event. UTM is already disaggregated so it can be easier to go to an specif UTM type, just like in Fortigate´s Logs & Report section.
+
+2. Second level dives into *traffic direction* (if possible). For example: On traffic´s dashboard, we have `Outbound | Inbound | LAN 2 LAN | VPN | FW Local`. It makes total sense to analyze it separetly.
+*firewalls have been configured with `interface role` following this premise:*
+* *LAN interfaces = `LAN` interface role*
+* *WAN interfaces = `WAN` interface role*
+* *VPN interfaces = `undefeined` interface role*
+* *MPLS interfaces = `LAN` interface role*
+
+3. Third level refers to which metric are we using for exploring the dataset: We only use sessions and bytes.
+*we need to filter out [logid=20](https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912), so we dont get duplicate data when running aggregations. You can filter out this logid on the firewall itself, but we make sure we dont use it.
+
+`
+config log fortianalyzer filter
+
+        set filter "logid(00020)"
+        
+        set filter-type exclude
+end
+`
+
+* sessions: we consider each log as a unique session.
+
+* bytes: we analyze `source.bytes` and `destination.bytes` by both sum and average.
 
 
 ## Authors
 
-Logstash and Elasticsearch [@hoat23](https://github.com/hoat23)
+Logstash pipelines and Elasticsearch config [@hoat23](https://github.com/hoat23)
 
 Dataset analysis and Kibana [@enotspe](https://github.com/enotspe)
 
