@@ -271,6 +271,19 @@ Because we have a multitenant scenario, we manage different retention policies p
 
 ## Dashboards
 
+Fortinet dataset has 500+ fields, so we need many dashboards for exploring the fields.
+
+### Structure
+
 All dashboards are connected via its header structure. Making it easy to navigate trough them.
 
 Dashboards follow a (max) 3 layer structure, going from more general to more specific.
+
+
+
+## Authors
+
+Logstash and Elasticsearch [@hoat23](https://github.com/hoat23)
+
+Dataset analysis and Kibana [@enotspe](https://github.com/enotspe)
+
