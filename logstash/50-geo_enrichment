@@ -43,6 +43,7 @@ filter {
     if ([source][ip]) and ([source][locality] == "private") and [source][nat][ip] and ([source][nat][locality]!="private") {
         mutate {
             copy => { "[source][nat][ip]" => "[src_ip_geo_apply]"  }
+            add_field => { "[source][nat][locality]" => "public" }
         }
     }else if ([source][ip]) and !([source][locality]){
         mutate {
@@ -55,6 +56,7 @@ filter {
     if ([destination][locality]) and ([destination][locality] == "private") and [destination][nat][ip] and ([destination][nat][locality]!="private") {
         mutate {
             copy => { "[destination][nat][ip]" => "[dest_ip_geo_apply]" }
+            add_field => { "[destination][nat][locality]" => "public" }
         }
     }else if ([destination][ip]) and !([destination][locality]) {
         mutate {
@@ -69,6 +71,7 @@ filter {
             source => "[src_ip_geo_apply]"
             target => "[source][geo]"
             fields => ["city_name", "continent_code", "country_code2", "country_name", "location", "region_code", "region_name"]
+#            tag_on_failure => ["_source_geoip_lookup_failure"]
         }
     }
     
@@ -77,26 +80,19 @@ filter {
             source => "[dest_ip_geo_apply]"
             target => "[destination][geo]"
             fields => ["city_name", "continent_code", "country_code2", "country_name", "location", "region_code", "region_name"]
+#            tag_on_failure => ["_destination_geoip_lookup_failure"]
         }
     }
     
-    # "source_nat_locality", "destination_nat_locality"
-    mutate { remove_field => ["src_ip_geo_apply", "dest_ip_geo_apply" ] }
-
-    ############ drawing a line for use "Maps UI" ##############################
-    
-    if !([request_path]) and ( [source][location][lat] and [source][location][lon] and [destination][location][lat] and [destination][location][lon] ){
-        mutate {
-            add_field => {
-                "[request_path]" => [ 
-                    "%{[source][location][lon]}" , 
-                    "%{[source][location][lat]}" , 
-                    "%{[destination][location][lon]}" , 
-                    "%{[destination][location][lat]}" ] 
-            }
-        }
+    # remove temp fields "source_nat_locality", "destination_nat_locality"
+    #rename iso code fields to match ECS
+    mutate { 
+        remove_field => ["src_ip_geo_apply", "dest_ip_geo_apply" ] 
+        rename => { "[source][geo][country_code2]" => "[source][geo][country_iso_code]" }
+        rename => { "[destination][geo][country_code2]" => "[destination][geo][country_iso_code]" }
+        rename => { "[source][geo][region_code]" => "[source][geo][region_iso_code]" }
+        rename => { "[destination][geo][region_code]" => "[destination][geo][region_iso_code]" }
     }
-
 
 }
 output {
