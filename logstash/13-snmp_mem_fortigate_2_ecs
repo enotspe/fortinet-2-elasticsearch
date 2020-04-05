@@ -1,0 +1,77 @@
+input {
+
+    pipeline {
+        address => "snmp_mem_fortigate_2_ecs"
+    }
+
+}
+
+filter {
+
+#dictionary verification
+    if [system][sysSerial] or [system][sysName] {
+        if [system][sysSerial] != [host][serial_number] or [system][sysName] != [host][name] {
+              mutate {
+                add_tag => [ "dictionary_error", "%{[host][name]}","%{[host][serial_number]}"]
+              }
+        }
+        mutate {
+            copy => { "[system][sysSerial]" => "[host][serial_number]" }
+            copy => { "[system][sysName]" => "[host][name]" }
+        }
+    }
+
+#ecs translation
+    mutate{
+        add_field => { "[ecs][version]" => "1.2.0" }
+    }
+    
+    if "mem" in [tags] {   
+        mutate {
+            add_field => { "[service][type]" => "system" }
+            add_field => { "[event][dataset]" => "system.memory" }
+            add_field => { "[metricset][name]" => "memory" }
+            add_field => { "[host][containerized]" => "false" }
+            
+            copy => { "[fgSystemInfo][fgSysVersion]" => "[host][os][full]" }
+            
+            copy => { "[fgSystemInfo][fgSysUpTime]" => "[system][uptime][duration][ms]" }
+            copy => { "[fgSystemInfo][fgSysMemCapacity]" => "[system][memory][total]" }
+        }
+        
+        ruby {
+          code => "event.set('[system][memory][used][pct]', (1.00 * event.get('[fgSystemInfo][fgSysMemUsage]').to_i / 100.0) )"
+        }
+    
+        ruby {
+          code => "event.set('[system][memory][used][bytes]', ( (event.get('[fgSystemInfo][fgSysMemCapacity]').to_i * event.get('[fgSystemInfo][fgSysMemUsage]').to_i / 100) ).to_i )"
+        }
+
+        ruby {
+          code => "event.set('[system][memory][free]', ( event.get('[system][memory][total]').to_i - event.get('[system][memory][used][bytes]').to_i ) )"
+        }
+
+        mutate {
+            remove_field => ["fgSystemInfo.fgSysCpuUsage",  "fgSystemInfo.fgSysDiskUSage", "fgSystemInfo.fgSysDiskCapacity"] 
+            
+            copy => { "[system][memory][used][bytes]" => "[system][memory][actual][used][bytes]" }
+            copy => { "[system][memory][used][pct]" => "[system][memory][actual][used][pct]" }
+            copy => { "[system][memory][total]" => "[system][memory][actual][total]" }
+        }
+
+    }else{
+        
+        drop {
+            #percentage => 50
+        }
+        
+    }
+}
+
+output {
+
+    pipeline {
+        send_to => "logstash_enrichment"
+    }
+
+}
