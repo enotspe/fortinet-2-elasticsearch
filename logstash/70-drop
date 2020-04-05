@@ -7,6 +7,14 @@ input {
 }
 filter {
 
+    # fortigate crash log. "msg" field is too big and creates ramdom fields
+    if [event][code] == "0100032546" {
+        prune {
+            whitelist_names => [ "^@timestamp$" , "observer", "organization", "event", "action", "ecs", "^subtype$" , "^type$" , "tags", "log" ]
+        }
+    }
+
+    # drop logs form guest IPs
     if [source][ip] {
         translate {
             field => "[observer][ip]"
