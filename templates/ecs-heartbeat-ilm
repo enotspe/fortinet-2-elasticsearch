@@ -1,0 +1,19 @@
+{
+    "order" : 2,
+    "index_patterns" : [
+      "ecs-heartbeat-*"
+    ],
+    "settings" : {
+      "index" : {
+        "lifecycle" : {
+          "name" : "policy_heartbeat",
+          "rollover_alias" : "ecs-heartbeat-write"
+        },
+        "refresh_interval" : "5s",
+        "number_of_shards" : "3",
+        "number_of_replicas" : "1"
+      }
+    },
+    "mappings" : { },
+    "aliases" : { }
+}
