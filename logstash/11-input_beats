@@ -1,0 +1,44 @@
+input {
+
+    pipeline {
+        address => "input_beats"
+    }
+
+}
+
+filter {
+
+    if "beats_input_raw_event" in [tags] {
+        mutate {
+            remove_tag => [ "beats_input_raw_event" ]
+        }
+    }
+
+
+    if !([event][module]) and ([monitor][ip]){
+        mutate {
+            add_field => {"[event][module]" => "heartbeat"}
+        }
+    }
+
+    if !([host][ip]) and ([monitor][ip]) {
+        mutate {
+            add_field => {"[host][ip]" => "%{[monitor][ip]}" }
+        }
+    }
+
+}
+
+output {
+
+    if [host][enrichment] == "disabled" {
+        pipeline {
+            send_to => "logstash_enrichment"
+        }
+    } else {
+        pipeline {
+            send_to => "observer_enrichment"
+        }
+    }
+    
+}
