@@ -1,0 +1,41 @@
+input {
+
+    pipeline {
+        address => "snmp_others"
+    }
+
+}
+
+filter {
+
+#dictionary verification
+    if [system][sysSerial] or [system][sysName] {
+        if [system][sysSerial] != [host][serial_number] or [system][sysName] != [host][name] {
+              mutate {
+                add_tag => [ "dictionary_error", "%{[host][name]}","%{[host][serial_number]}"]
+              }
+        }
+        mutate {
+            copy => { "[system][sysSerial]" => "[host][serial_number]" }
+            copy => { "[system][sysName]" => "[host][name]" }
+        }
+    }
+
+#ecs translation
+    mutate{
+        add_field => { "[ecs][version]" => "1.2.0" }
+    }
+
+#remove other fields
+    mutate {
+        remove_field => ["fgSystemInfo.fgSysCpuUsage", "fgSystemInfo.fgSysMemUsage", "fgSystemInfo.fgSysMemCapacity", "fgSystemInfo.fgSysLowMemUsage", "fgSystemInfo.fgSysLowMemCapacity"] 
+    }
+}
+
+output {
+
+    pipeline {
+        send_to => "logstash_enrichment"
+    }
+
+}
