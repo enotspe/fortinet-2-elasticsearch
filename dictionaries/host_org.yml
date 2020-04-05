@@ -1,4 +1,4 @@
-#"[host][name]","[host][hostname]","[host][mac]","[host][product]","[host][serial_number]","[host][type]","[host][vendor]","[host][version]","[organization][id]","[organization][name]"
+#"[host][ip]": "[host][name]","[host][hostname]","[host][mac]","[host][product]","[host][serial_number]","[host][type]","[host][vendor]","[host][version]","[organization][id]","[organization][name]"
 "192.109.110.198": "FW-PER-LIM-01,,,Fortigate,FG3H0E6728905002,Firewall,Fortinet,3000E,203241352456,cliente_01"
-"192.108.103.194": "FW-PER-ARQ-01,,,Fortigate,FG3H0E6728905003,Firewall,Fortinet,3000E,203241352456,cliente_02"
-"192.128.204.191": "FW-PER-CAJ-01,,,Fortigate,FG3H0E6728905004,Firewall,Fortinet,3000E,203241352456,cliente_03"
+"192.108.103.194": "FW-PER-LIM-02,,,Fortigate,FG3H0E6728905003,Firewall,Fortinet,3000E,203241352456,cliente_02"
+"192.128.204.191": "FW-PER-LIM-03,,,Fortigate,FG3H0E6728905004,Firewall,Fortinet,3000E,203241352456,cliente_03"
