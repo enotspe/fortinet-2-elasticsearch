@@ -31,7 +31,7 @@ filter {
         if [tz] =~  /[A-Z]+/{
             mutate {
             replace => {"temp_time" => "%{date}T%{time}Z" }
-            add_field => {"tags" => "_tz_are_not_number"}
+            add_field => {"tags" => "_tz_is_not_number"}
             }
         
         }
