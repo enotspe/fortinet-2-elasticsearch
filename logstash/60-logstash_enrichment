@@ -38,7 +38,7 @@ filter {
 
     if [event][module]  in [ "snmp" , "snmptrap" ] {
         mutate {
-            rename => { "[logstash]" => "[observer]" }
+            copy => { "[logstash]" => "[observer]" }
         }
     }
     
