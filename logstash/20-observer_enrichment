@@ -8,28 +8,26 @@ input {
 
 filter {
 
-    if [observer][ip] {
+    if [host][ip] {
         ############### OBSERVER #####################
         translate {
-            field => "[observer][ip]"
-            destination => "[obs_org_csv]"
+            field => "[host][ip]"
+            destination => "[datafeed_org_csv]"
             dictionary_path => "/etc/logstash/host_org.yml"
-            fallback => "default_obs_org_csv"
+            fallback => "default_datafeed_org_csv"
         }
         
-        if [obs_org_csv] == "default_obs_org_csv" {
-        #we are receiving logs from an unknown source
+        if [datafeed_org_csv] == "default_datafeed_org_csv" {
             mutate {
-                add_field => { "[tags]" => "error_observer_enrichment" }
+                add_field => { "[tags]" => "error_datafeed_enrichment" }
                 add_field => { "[tags]" => "send_index_error" }
             }
 
         } else {
-            #columns => ["[observer][name]","[observer][hostname]","[observer][mac]","[observer][product]","[observer][serial_number]","[observer][type]","[observer][vendor]","[observer][version]","[organization][id]","[organization][name]"]
             csv {
-                source => "obs_org_csv"
+                source => "datafeed_org_csv"
                 separator => ","
-                columns => ["[observer][name]","[observer][hostname]","[observer][mac]","[observer][product]","[observer][serial_number]","[observer][type]","[observer][vendor]","[observer][version]","[organization][id]","[organization][name]"]
+                columns => ["[host][name]","[host][hostname]","[host][mac]","[host][product]","[host][serial_number]","[host][type]","[host][vendor]","[host][version]","[organization][id]","[organization][name]"]
                 skip_empty_columns => true
             }
         }
@@ -37,21 +35,25 @@ filter {
         
 
         mutate{
-            remove_field => ["obs_org_csv"]
+            remove_field => ["datafeed_org_csv"]
         }
         ################# G E O ###################
         translate {
-            field => "[observer][ip]"
+            field => "[host][ip]"
             destination => "[geo_csv]"
             dictionary_path => "/etc/logstash/geo.yml"
             fallback => "default_geo"
         }
         
-        if [geo_csv] != "default_geo" {
+        if [geo_csv] == "default_geo" {
+            mutate {
+                add_field => { "[tags]" => "error_geo_file" }
+            }
+        }else{
             csv {
             source => "geo_csv"
             separator => ","
-            columns => ["[observer][geo][city_name]","[observer][geo][continent_name]","[observer][geo][country_iso_code]","[observer][geo][country_name]","[observer][geo][location][lon]","[observer][geo][location][lat]","[observer][geo][name]","[observer][geo][region_iso_code]","[observer][geo][region_name]","[event][timezone]","[observer][geo][site]","[observer][geo][building]","[observer][geo][floor]","[observer][geo][room]","[observer][geo][rack]","[observer][geo][rack_unit]"]
+            columns => ["[host][name]","[host][geo][city_name]","[host][geo][continent_name]","[host][geo][country_iso_code]","[host][geo][country_name]","[host][geo][location][lon]","[host][geo][location][lat]","[host][geo][name]","[host][geo][region_iso_code]","[host][geo][region_name]","[event][timezone]","[host][geo][site]","[host][geo][building]","[host][geo][floor]","[host][geo][room]","[host][geo][rack]","[host][geo][rack_unit]","[host][os][family]","[host][os][full]","[host][os][kernel]","[host][os][name]","[host][os][platform]","[host][os][version]","[host][product]","[network][alias]","[network][role]"]
             skip_empty_columns => true
             }
         }
@@ -61,16 +63,39 @@ filter {
         }
     }
 
-
+    if "syslog" in [tags] {
+        mutate {
+            rename => {"[host]" => "[observer]"}
+        }
+    }
 }
 
 output {
     
-    if "error_observer_enrichment" in [tags] {
+    if "error_datafeed_enrichment" in [tags] {
         pipeline {
             send_to => "drop" 
         }
-    } else {
+    } else if [event][module] == "snmp"  {
+
+        if "interface" in [tags] {
+            pipeline {
+                send_to => ["snmp_network_fortigate_2_ecs"]
+            }
+        }else if "vpn" in [tags] {
+            pipeline {
+                send_to => ["snmp_others"]
+            }
+        }else{
+            pipeline {
+                send_to => ["snmp_mem_fortigate_2_ecs","snmp_cpu_fortigate_2_ecs", "snmp_others"]
+            }
+        }
+    } else if [event][module] == "heartbeat" {
+        pipeline {
+            send_to => "logstash_enrichment" 
+        }
+    } else if "syslog" in [tags] {
         pipeline {
             send_to => "kv_syslog" 
         }
