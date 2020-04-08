@@ -171,6 +171,7 @@ filter {
             copy =>{ "[filetype]"=> "[file][extension]" }
             copy =>{ "[fortios][group]"=> "[source][user][group][name]" }
             copy =>{ "[hostname]"=> "[url][domain]" }
+            split => { "ipaddr" => ", " }
             copy =>{ "[ipaddr]"=> "[dns][resolved_ip]" }
             
             copy =>{ "[msg]"=> "[message]" }
