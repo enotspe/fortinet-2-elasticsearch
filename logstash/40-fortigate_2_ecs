@@ -39,13 +39,18 @@ filter {
         rename => { "[group]" => "[fortios][group]" }
         rename => { "[hash]" => "[fortios][hash]" }
         rename => { "[host]" => "[fortios][host]" }
+		rename => { "[interface]" => "[fortios][interface]" }
         rename => { "[log]" => "[fortios][log]" }
         rename => { "[process]" => "[fortios][process]" }
         rename => { "[server]" => "[fortios][server]" }
         rename => { "[service]" => "[fortios][service]" }
         rename => { "[url]" => "[fortios][url]" }
         rename => { "[user]" => "[fortios][user]" }
-        remove_field => [ "agent", "error", "file", "group", "hash", "host", "log", "process", "server", "service", "url", "user" ]
+        remove_field => [ "agent", "error", "file", "group", "hash", "host", "interface", "log", "process", "server", "service", "url", "user" ]
+		
+		#session_id not numeric on event-wad logs
+        rename => { "[session_id]" => "[fortios][session_id]" }
+        remove_field => [ "session_id" ]
     }
 
 #dictionary verification
