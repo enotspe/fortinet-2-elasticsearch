@@ -39,7 +39,7 @@ filter {
         rename => { "[group]" => "[fortios][group]" }
         rename => { "[hash]" => "[fortios][hash]" }
         rename => { "[host]" => "[fortios][host]" }
-		rename => { "[interface]" => "[fortios][interface]" }
+	rename => { "[interface]" => "[fortios][interface]" }
         rename => { "[log]" => "[fortios][log]" }
         rename => { "[process]" => "[fortios][process]" }
         rename => { "[server]" => "[fortios][server]" }
