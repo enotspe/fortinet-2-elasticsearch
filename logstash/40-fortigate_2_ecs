@@ -48,7 +48,7 @@ filter {
         rename => { "[user]" => "[fortios][user]" }
         remove_field => [ "agent", "error", "file", "group", "hash", "host", "interface", "log", "process", "server", "service", "url", "user" ]
 		
-		#session_id not numeric on event-wad logs
+	#session_id not numeric on event-wad logs
         rename => { "[session_id]" => "[fortios][session_id]" }
         remove_field => [ "session_id" ]
     }
@@ -203,7 +203,13 @@ filter {
             copy =>{ "[srcmac]"=> "[source][mac]" }
             
             copy =>{ "[unauthuser]"=> "[source][user][name]" }
-            copy =>{ "[fortios][url]"=> "[url][path]" }
+#            copy =>{ "[fortios][url]"=> "[url][path]" }
+	    if [subtype] =="virus" {
+		mutate { copy =>{ "[fortios][url]"=> "[url][full]" }}
+	    } 
+	    else if [fortios][url] {
+		mutate { copy =>{ "[fortios][url]"=> "[url][path]" }}
+	    }
             
             copy =>{ "[vrf]"=> "[network][vrf]" }
             copy =>{ "[xid]"=> "[dns][id]" }
