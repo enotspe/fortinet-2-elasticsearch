@@ -123,7 +123,8 @@ filter {
     # ECS categorization fields
         mutate {
             add_field => { "[event][kind]" => "event" }
-            add_field => { "[event][category]" => "network" }
+            #add_field => { "[event][category]" => "network" } this should be the correct value once SIEM UI gets aligned with ECS event.category allowed values
+            add_field => { "[event][category]" => "network_traffic" }
             add_field => { "[event][type]" => "connection" }
         }
         if [action] == "deny" or [utmaction] == "block" {
