@@ -11,11 +11,11 @@ We will cover all the road for squeezing all possible information out of Fortine
 
 - [x] Logstash pipelines (including geo enrichment, other manipulations as tenant enrichment, dropping guest networks, observer enrichment, etc.)
 
-- [ ] index templates
+- [x] index templates
 
-- [ ] index patterns
+- [x] index patterns
 
-- [ ] dashboards
+- [x] dashboards
 
 - [ ] event alerts
 
