@@ -39,18 +39,20 @@ filter {
         rename => { "[group]" => "[fortios][group]" }
         rename => { "[hash]" => "[fortios][hash]" }
         rename => { "[host]" => "[fortios][host]" }
-		rename => { "[interface]" => "[fortios][interface]" }
+        rename => { "[interface]" => "[fortios][interface]" }
         rename => { "[log]" => "[fortios][log]" }
         rename => { "[process]" => "[fortios][process]" }
         rename => { "[server]" => "[fortios][server]" }
         rename => { "[service]" => "[fortios][service]" }
         rename => { "[url]" => "[fortios][url]" }
         rename => { "[user]" => "[fortios][user]" }
+
         remove_field => [ "agent", "error", "file", "group", "hash", "host", "interface", "log", "process", "server", "service", "url", "user" ]
-		
-		#session_id not numeric on event-wad logs
+
+        #session_id not numeric on event-wad logs
         rename => { "[session_id]" => "[fortios][session_id]" }
         remove_field => [ "session_id" ]
+
     }
 
 #dictionary verification
@@ -77,6 +79,7 @@ filter {
 
     if [type] == "traffic" {
         mutate {
+            copy => { "[action]"=> "[event][action]" }
             copy => { "[app]"=> "[network][application]" }
             copy => { "[collectedemail]"=> "[source][user][email]" }
             copy => { "[comment]"=> "[rule][description]" }
@@ -123,7 +126,8 @@ filter {
     # ECS categorization fields
         mutate {
             add_field => { "[event][kind]" => "event" }
-            add_field => { "[event][category]" => "network" }
+            #add_field => { "[event][category]" => "network" } this should be the correct value once SIEM UI gets aligned with ECS event.category allowed values
+            add_field => { "[event][category]" => "network_traffic" }
             add_field => { "[event][type]" => "connection" }
         }
         if [action] == "deny" or [utmaction] == "block" {
@@ -149,7 +153,7 @@ filter {
 
     # type=dns for version 6.0 and below. On 6.2, dns is subtype of utm
 
-    else if [type] == "utm" or [type] == "dns" {
+    else if [type]  in [ "utm" , "dns" ] {
         mutate {
             copy =>{ "[fortios][agent]"=> "[user_agent][original]" }
             copy =>{ "[app]"=> "[network][application]" }
@@ -189,7 +193,7 @@ filter {
             copy =>{ "[qtype]"=> "[dns][question][type]" }
             copy =>{ "[rcvdbyte]"=> "[destination][bytes]" }
             copy =>{ "[reason]"=> "[event][reason]" }
-            
+            copy =>{ "[ref]"=> "[event][reference]" }
             copy =>{ "[sentbyte]"=> "[source][bytes]" }
             copy =>{ "[fortios][service]"=> "[network][protocol]" }
 #            copy =>{ "[session_id]"=> "[network][session_id]" }
@@ -203,7 +207,6 @@ filter {
             copy =>{ "[srcmac]"=> "[source][mac]" }
             
             copy =>{ "[unauthuser]"=> "[source][user][name]" }
-            copy =>{ "[fortios][url]"=> "[url][path]" }
             
             copy =>{ "[vrf]"=> "[network][vrf]" }
             copy =>{ "[xid]"=> "[dns][id]" }
@@ -230,13 +233,60 @@ filter {
             copy =>{ "[dstport]" => "[destination][port]" }
             copy =>{ "[srcport]" => "[source][port]" }
         }
-    }    
+
+        if [subtype] =="virus" {
+        	mutate { copy =>{ "[fortios][url]"=> "[url][full]" } }
+        } 
+        else {
+        	mutate { copy =>{ "[fortios][url]"=> "[url][path]" }}
+        }
+        
+
+    # ECS categorization fields
+        mutate {
+            add_field => { "[event][kind]" => "alert" }
+            add_field => { "[event][type]" => "connection" }
+        }
+        if [subtype] == "virus" {
+            mutate { add_field => { "[event][category]" => "malware" } }
+        }
+        else if [subtype] in [ "webfilter" , "waf" ] {
+            mutate { add_field => { "[event][category]" => "web" } }
+        }
+        else if [subtype] == "ips" {
+            mutate { add_field => { "[event][category]" => "intrusion_detection" } }
+        }
+        else if [subtype] == "ssl" {
+            mutate { add_field => { "[event][category]" => "certifcate" } }
+        }
+        else if [subtype] in [ "dlp" , "filefilter" , "cifs" ] {
+            mutate { add_field => { "[event][category]" => "file" } }
+        }
+        else if [subtype] == "emailfilter" {
+            mutate { add_field => { "[event][category]" => "email" } }
+        }
+
+        if [action] in [ "pass" , "passthrough"  , "permit" ] {
+            mutate { add_field => { "[event][type]" => "allowed" } }
+        }
+        else if [action] in [ "block" , "blocked" , "dropped" ] {
+            mutate { add_field => { "[event][type]" => "denied" } }
+        }
+        #other actions redirect analytics monitored dropped redirect detected content-disarmed
+
+        #just some categories will trigger alert
+        if [subtype] in [ "webfilter" , "app-ctrl" ] {
+            mutate {remove_field => [ "[event][kind]" ] }
+        }
+
+    }  
+
     else if [type] == "event" {
         mutate{
 
              copy =>{ "[fortios][agent]"=> "[user_agent][original]" }
              copy =>{ "[daddr]"=> "[destination][address]" }
-
+             copy =>{ "[dir]"=> "[network][direction]" }
              copy =>{ "[direction]"=> "[network][direction]" }
              copy =>{ "[dstip]"=> "[destination][ip]" }
              copy =>{ "[dstport]"=> "[destination][port]" }
@@ -345,5 +395,6 @@ output {
     pipeline {
         send_to => "geo_enrichment"
     }
+
 
 }
