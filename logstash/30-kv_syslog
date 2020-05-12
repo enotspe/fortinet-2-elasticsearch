@@ -8,16 +8,16 @@ input {
 
 filter {
 
-    mutate{ copy => {"message" => "[event][original]"} }
-
-
-    # event.created        when the event is created by logstash
+    mutate  { 
+        copy => {"message" => "[event][original]"} 
+        add_field => ["[event][created]", "%{@timestamp}"] # event.created: when the event is created by logstash
+    }
     
     grok {
         match => ["message", "%{SYSLOG5424PRI:syslog_index}%{GREEDYDATA:message}"]
         overwrite => ["message"]
         tag_on_failure => ["syslog_grok_failure"]
-        add_field => ["[event][created]", "%{@timestamp}"] 
+#        add_field => ["[event][created]", "%{@timestamp}"] 
     }
 
     if "syslog_grok_failure" not in [tag_on_failure]{
@@ -27,21 +27,53 @@ filter {
           field_split => " "
         }
 
-        # fortisandbox 
-        if [tz] =~  /[A-Z]+/{
-            mutate {
-            replace => {"temp_time" => "%{date}T%{time}Z" }
-            add_field => {"tags" => "_tz_is_not_number"}
-            }
+        if [event][module]=="fortigate" {
+            # 6.2 
+            if [tz] {
+                mutate  {
+                    replace => {"temp_time" => "%{date} %{time} %{tz}"}
+                }
+            } 
         
+            # 6.0 and below
+            else {
+                mutate{
+                replace => {"temp_time" => "%{date} %{time}"}
+                }
+            }
+
         }
 
-        # fortigate 6.2.X    
-        else if [tz]{
-            mutate{
-            replace => {"temp_time" => "%{date} %{time} %{tz}"}
+#        # fortigate 6.2.X    
+#        else if [tz]{
+#            mutate{
+#            replace => {"temp_time" => "%{date} %{time} %{tz}"}
+#            }
+#        } 
+
+
+        else if [event][module]=="fortisandbox" {
+            # type=event 
+            if [tzone] {
+#                ruby { 
+#                    code => "event.set('[tz_sdx]', event.get('[tzone]').to_i / 3600 *100 )" # for tzone=-18000 returns tz_sdx=-500, and it should be -0500
+#                }
+#
+                mutate  {
+#                    replace => {"temp_time" => "%{date} %{time} %{tz_sdx}"}
+#                    replace => {"temp_time" => "%{date} %{time}"}
+                    replace => {"temp_time" => "%{date}T%{time}Z" }
+                }
+            } 
+#        
+#            # type=alert
+            else {
+                mutate{
+                replace => {"temp_time" => "%{date}T%{time}Z" }
+                }
             }
-        } 
+        }
+
         
         # forti* without tz
         else {
