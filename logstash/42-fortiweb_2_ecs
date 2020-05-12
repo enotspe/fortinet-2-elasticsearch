@@ -11,6 +11,8 @@ filter {
 #validate "N/A" on ip fields
     if [dst]=="N/A" { mutate { remove_field => ["dst"] } }
     if [src]=="N/A" { mutate { remove_field => ["src"] } }
+    # Add some other field that may contain N/A
+    if [signature_id]=="N/A" { mutate { remove_field => ["signature_id"] } }
 
 #rename fortios fields that overlap with ECS.    
     mutate {
@@ -40,9 +42,14 @@ filter {
         copy =>{ "[http_version]"=> "[http][version]" }
         copy =>{ "[log_id]"=> "[event][code]" }
         copy =>{ "[main_type]"=> "[event][category]" }
-        copy =>{ "[msg]"=> "[message]" }
+        # copied msg field to [rule][description]
+        copy =>{ "[msg]"=> "[rule][description]" }
         copy =>{ "[msg_id]"=> "[event][sequence]" }
-        copy =>{ "[policy]"=> "[rule][name]" }
+        # change policy to rule.rulset (according to ECS docs : Name of the ruleset, policy, group, or parent category in which the rule used to generate this event is a member.)
+        # This will lead to more depth in categorization fields:
+        copy =>{ "[policy]"=> "[rule][ruleset]" }
+        # Added signature_id as rule.id
+        copy =>{ "[signature_id]"=> "[rule][id]" }
         copy =>{ "[proto]"=> "[network][transport]" }
         copy =>{ "[reason]"=> "[event][reason]" }
         copy =>{ "[fortiweb][service]"=> "[network][protocol]" }
@@ -58,9 +65,38 @@ filter {
     }
     mutate {
         copy =>{ "[user_name]"=> "[user][name]" }
-        copy =>{ "[subtype]"=> "[event][category]" }
+        # copy subtype to [rule][name] instead of [event][category]
+        copy =>{ "[subtype]"=> "[rule][name]" }
     }
     
+    if "attack" in [event][dataset] {
+        ############### ATTACK EVENT ID MAPPING #####################
+        translate {
+            field => "[event][code]"
+            destination => "[datafeed_org_csv]"
+            dictionary_path => "/etc/logstash/fortiweb_attack_logid.yml"
+            fallback => "default_datafeed_org_csv"
+        }
+
+        if [datafeed_org_csv] == "default_datafeed_org_csv" {
+            mutate {
+                add_field => { "[tags]" => "error_datafeed_enrichment" }
+                add_field => { "[tags]" => "send_index_error" }
+            }
+
+        } else {
+            csv {
+                source => "datafeed_org_csv"
+                separator => ","
+                columns => ["[event][category]","[event][kind]"]
+                skip_empty_columns => true
+            }
+        }
+        
+        mutate{
+            remove_field => ["datafeed_org_csv"]
+        }
+    }
 
     #### ecs best practices
     if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
