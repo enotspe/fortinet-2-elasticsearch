@@ -274,9 +274,21 @@ filter {
         }
         #other actions redirect analytics monitored dropped redirect detected content-disarmed
 
-        #just some categories will trigger alert
-        if [subtype] in [ "webfilter" , "app-ctrl" ] {
-            mutate {remove_field => [ "[event][kind]" ] }
+#        #just some categories will trigger alert
+#        if [subtype] in [ "webfilter" , "app-ctrl" ] {
+#            mutate {remove_field => [ "[event][kind]" ] }
+#        }
+
+        if [subtype] == "webfilter" {
+            if [catdesc] not in ["Alcohol","Discrimination","Drug Abuse","Dynamic DNS","Explicit Violence","Extremist Groups","Freeware and Software Downloads","Gambling","Hacking","Illegal or Unethical","Malicious Websites","Marijuana","Newly Observed Domain","Newly Registered Domain","Nudity and Risque","Other Adult Materials","Peer-to-peer file sharing","Phishing","Plagiarism","Pornography","Proxy Avoidance","Remote Access","Spam URLs","Tobacco","Weapons (sales)"]{
+                mutate {remove_field => [ "[event][kind]" ] }
+            }
+        }
+
+        if [subtype] == "app-ctrl" {
+            if [appcat] not in ["Botnet","P2P","Proxy","Remote.Access"]{    
+                mutate {remove_field => [ "[event][kind]" ] }
+            }
         }
 
     }  
@@ -344,9 +356,12 @@ filter {
         mutate { add_field => { "[source][address]" => "%{[source][ip]}" }    }    
     }
 
-    #### related.ip  ############################################################################
+    #### related.*  ############################################################################
     if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
     if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
+
+    if [source][user] { mutate { add_field => { "[related][user]" => "%{[source][user]}" }    }    }
+    if [destination][user] { mutate { add_field => { "[related][user]" => "%{[destination][user]}" }    }    }
 
 
     #### network.bytes, network.packets  ############################################################################
