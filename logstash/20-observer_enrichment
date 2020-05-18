@@ -1,3 +1,5 @@
+### All lookups should be migrated to enrich processor
+
 input {
 
     pipeline {
@@ -9,61 +11,63 @@ input {
 filter {
 
     if [host][ip] {
-        ############### OBSERVER #####################
+        ############### HOST/OBSERVER #####################
         translate {
             field => "[host][ip]"
-            destination => "[datafeed_org_csv]"
+            destination => "[@metadata][datafeed_org_csv]"
             dictionary_path => "/etc/logstash/host_org.yml"
             fallback => "default_datafeed_org_csv"
         }
         
-        if [datafeed_org_csv] == "default_datafeed_org_csv" {
+        if [@metadata][datafeed_org_csv] == "default_datafeed_org_csv" {
+            #we are receiving logs from an unknown source
+            drop { percentage => 50 }
             mutate {
-                add_field => { "[tags]" => "error_datafeed_enrichment" }
-                add_field => { "[tags]" => "send_index_error" }
+                add_field => { "[tags]" => ["error_datafeed_enrichment","send_index_error"] }
+                #add_field => { "[tags]" => "send_index_error" }
             }
 
         } else {
             csv {
-                source => "datafeed_org_csv"
+                source => "[@metadata][datafeed_org_csv]"
                 separator => ","
                 columns => ["[host][name]","[host][hostname]","[host][mac]","[host][product]","[host][serial_number]","[host][type]","[host][vendor]","[host][version]","[organization][id]","[organization][name]"]
                 skip_empty_columns => true
             }
         }
-        
-        
 
-        mutate{
-            remove_field => ["datafeed_org_csv"]
-        }
+        #mutate{
+            #remove_field => ["datafeed_org_csv"]
+        #}
+
+
         ################# G E O ###################
         translate {
             field => "[host][ip]"
-            destination => "[geo_csv]"
+            destination => "[@metadata][geo_csv]"
             dictionary_path => "/etc/logstash/geo.yml"
             fallback => "default_geo"
         }
         
-        if [geo_csv] == "default_geo" {
+        if [@metadata][geo_csv] == "default_geo" {
             mutate {
                 add_field => { "[tags]" => "error_geo_file" }
             }
         }else{
             csv {
-            source => "geo_csv"
+            source => "[@metadata][geo_csv]"
             separator => ","
             columns => ["[host][name]","[host][geo][city_name]","[host][geo][continent_name]","[host][geo][country_iso_code]","[host][geo][country_name]","[host][geo][location][lon]","[host][geo][location][lat]","[host][geo][name]","[host][geo][region_iso_code]","[host][geo][region_name]","[event][timezone]","[host][geo][site]","[host][geo][building]","[host][geo][floor]","[host][geo][room]","[host][geo][rack]","[host][geo][rack_unit]","[host][os][family]","[host][os][full]","[host][os][kernel]","[host][os][name]","[host][os][platform]","[host][os][version]","[host][product]","[network][alias]","[network][role]"]
             skip_empty_columns => true
             }
         }
         
-        mutate{
-            remove_field => ["geo_csv"]
-        }
+        #mutate{
+        #    remove_field => ["geo_csv"]
+        #}
     }
 
-    if "syslog" in [tags] {
+    if [event][module] == "fortinet"  {
         mutate {
             rename => {"[host]" => "[observer]"}
         }
@@ -72,9 +76,9 @@ filter {
 
 output {
     
-    if "error_datafeed_enrichment" in [tags] {
+    if "send_index_error" in [tags] {
         pipeline {
-            send_to => "drop" 
+            send_to => "output" 
         }
     } else if [event][module] == "snmp"  {
 
@@ -95,10 +99,11 @@ output {
         pipeline {
             send_to => "logstash_enrichment" 
         }
-    } else if "syslog" in [tags] {
+    } else if [event][module] == "fortinet" {
         pipeline {
             send_to => "kv_syslog" 
         }
     }
+
 
 }
