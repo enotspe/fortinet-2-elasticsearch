@@ -1,3 +1,5 @@
+### All lookups should be migrated to enrich processor
+
 input {
 
     pipeline {
@@ -5,14 +7,8 @@ input {
     }
 
 }
-filter {
 
-    # fortigate crash log. "msg" field is too big and creates ramdom fields
-    if [event][code] == "0100032546" {
-        prune {
-            whitelist_names => [ "^@timestamp$" , "observer", "organization", "event", "action", "ecs", "^subtype$" , "^type$" , "tags", "log" ]
-        }
-    }
+filter {
 
     # drop logs form guest IPs
     if [source][ip] {
@@ -49,15 +45,8 @@ filter {
         }
     }
 
-    #we are receiving logs from an unknown source
-    if "error_observer_enrichment" in [tags] {
-        drop{
-            percentage => 50
-        }
-    }
-
-
 }
+
 output {
     pipeline {
         send_to => "output" 
