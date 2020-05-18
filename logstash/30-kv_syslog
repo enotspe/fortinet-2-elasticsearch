@@ -16,43 +16,34 @@ filter {
     grok {
         match => ["message", "%{SYSLOG5424PRI:syslog_index}%{GREEDYDATA:message}"]
         overwrite => ["message"]
-        tag_on_failure => ["syslog_grok_failure"]
-#        add_field => ["[event][created]", "%{@timestamp}"] 
+        tag_on_failure => ["fortinet_grok_failure"]
     }
 
-    if "syslog_grok_failure" not in [tag_on_failure]{
+    if "fortinet_grok_failure" not in [tags] {
         kv {
           source => "message"
           value_split => "="
           field_split => " "
         }
 
-        if [event][module]=="fortigate" {
+        if [event][dataset]=="fortinet.fortigate" {
             # 6.2 
             if [tz] {
                 mutate  {
-                    replace => {"temp_time" => "%{date} %{time} %{tz}"}
+                    replace => {"[@metadata][timestamp]" => "%{date} %{time} %{tz}"}
                 }
             } 
         
             # 6.0 and below
             else {
                 mutate{
-                replace => {"temp_time" => "%{date} %{time}"}
+                replace => {"[@metadata][timestamp]" => "%{date} %{time}"}
                 }
             }
 
         }
 
-#        # fortigate 6.2.X    
-#        else if [tz]{
-#            mutate{
-#            replace => {"temp_time" => "%{date} %{time} %{tz}"}
-#            }
-#        } 
-
-
-        else if [event][module]=="fortisandbox" {
+        else if [event][dataset]=="fortinet.fortisandbox" {
             # type=event 
             if [tzone] {
 #                ruby { 
@@ -60,16 +51,16 @@ filter {
 #                }
 #
                 mutate  {
-#                    replace => {"temp_time" => "%{date} %{time} %{tz_sdx}"}
-#                    replace => {"temp_time" => "%{date} %{time}"}
-                    replace => {"temp_time" => "%{date}T%{time}Z" }
+#                    replace => {"[@metadata][timestamp]" => "%{date} %{time} %{tz_sdx}"}
+#                    replace => {"[@metadata][timestamp]" => "%{date} %{time}"}
+                    replace => {"[@metadata][timestamp]" => "%{date}T%{time}Z" }
                 }
             } 
 #        
 #            # type=alert
             else {
                 mutate{
-                replace => {"temp_time" => "%{date}T%{time}Z" }
+                replace => {"[@metadata][timestamp]" => "%{date}T%{time}Z" }
                 }
             }
         }
@@ -78,7 +69,7 @@ filter {
         # forti* without tz
         else {
             mutate{
-            replace => {"temp_time" => "%{date} %{time}"}
+            replace => {"[@metadata][timestamp]" => "%{date} %{time}"}
             }
         }
         
@@ -91,14 +82,14 @@ filter {
         }        
 
         date {
-            match => ["temp_time", "yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd HH:mm:ss Z", "ISO8601"]
+            match => ["[@metadata][timestamp]", "yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd HH:mm:ss Z", "ISO8601"]
             timezone => "%{[event][timezone]}"
             target => "@timestamp"
             tag_on_failure => ["_dateparsefailure_kv_syslog"]
             
         }
     
-        mutate{remove_field => ["date","time","syslog_index","message","temp_time"]}
+        mutate{remove_field => ["date","time","syslog_index","message"]}
 
     }
     
@@ -106,27 +97,27 @@ filter {
 
 output {
     
-    if [event][module]=="fortigate" {
+    if [event][dataset]=="fortinet.fortigate" {
         pipeline{
             send_to => "fortigate_2_ecs"
         }
     }
-    else if [event][module]=="fortiweb" {
+    else if [event][dataset]=="fortinet.fortiweb" {
         pipeline{
             send_to => "fortiweb_2_ecs"
         }
       }
-    else if [event][module]=="fortisandbox" {
+    else if [event][dataset]=="fortinet.fortisandbox" {
         pipeline{
             send_to => "fortisandbox_2_ecs"
         }
     }
-    else if [event][module]=="fortimail" {
+    else if [event][dataset]=="fortinet.fortimail" {
         pipeline{
             send_to => "fortimail_2_ecs"
         }
     }
-    else if [event][module]=="fortiauthenticator" {
+    else if [event][dataset]=="fortinet.fortiauthenticator" {
         pipeline{
             send_to => "fortiauthenticator_2_ecs"
         }
