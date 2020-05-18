@@ -1,3 +1,5 @@
+### All lookups should be migrated to enrich processor
+
 input {
 
     pipeline {
@@ -11,7 +13,6 @@ filter {
         add_field => { "[logstash][enrichment]" => "logstash" }
     }
 
-    
     translate {
         field => "[logstash][enrichment]"
         destination => "[logstash_csv]"
@@ -31,16 +32,11 @@ filter {
     }
 
     mutate{
-        remove_field => ["logstash_csv","[logstash][enrichment]","[logstash][id]","[logstash][version]"]
+        remove_field => ["logstash_csv","[logstash][enrichment]","[logstash][id]","[logstash][type]","[logstash][version]"]
     }
-    
-    
 
-    if [event][module]  in [ "snmp" , "snmptrap" ] {
-        mutate {
-            copy => { "[logstash]" => "[observer]" }
-        }
-    }
+#   this line should replace all the pipeline, but it is not working for me yet
+    mutate { add_field => { "[logstash_name]" => "${HOSTNAME:no_logstash_hostname}" }   }
     
 }
 
