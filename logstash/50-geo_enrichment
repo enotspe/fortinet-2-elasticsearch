@@ -5,7 +5,7 @@ input {
 }
 filter {
 
-######################### geo classification private or public #################################
+######################### GEO #################################
     if [source][ip] {
         cidr {
                 add_field => {"[source][locality]" => "private"}
@@ -39,60 +39,109 @@ filter {
     }
 
     ##### Defining fields to apply geo pluging to source and destination fields
-    ## If [source][locality] not exists but exists [source][ip], then by default [source][locality] is "public"
-    if ([source][ip]) and ([source][locality] == "private") and [source][nat][ip] and ([source][nat][locality]!="private") {
+
+    if [source][locality] != "private" {
         mutate {
-            copy => { "[source][nat][ip]" => "[src_ip_geo_apply]"  }
-            add_field => { "[source][nat][locality]" => "public" }
-        }
-    }else if ([source][ip]) and !([source][locality]){
-        mutate {
-            copy => { "[source][ip]" => "[src_ip_geo_apply]" }
+            copy => { "[source][ip]" => "[@metadata][src_ip_geo_apply]"  }
             add_field => { "[source][locality]" => "public" }
+        }
+    }   else if [source][nat][locality] != "private" {
+        mutate {
+            copy => { "[source][nat][ip]" => "[@metadata][src_ip_geo_apply]" }
+            add_field => { "[source][nat][locality]" => "public" }
         }
     }
     
-    ## IF [destination][locality] not exists but exists [source][ip], then by default [destination][locality] is "public"
-    if ([destination][locality]) and ([destination][locality] == "private") and [destination][nat][ip] and ([destination][nat][locality]!="private") {
+    if [destination][locality] != "private" {
         mutate {
-            copy => { "[destination][nat][ip]" => "[dest_ip_geo_apply]" }
-            add_field => { "[destination][nat][locality]" => "public" }
-        }
-    }else if ([destination][ip]) and !([destination][locality]) {
-        mutate {
-            copy => { "[destination][ip]" => "[dest_ip_geo_apply]" }
+            copy => { "[destination][ip]" => "[@metadata][dest_ip_geo_apply]" }
             add_field => { "[destination][locality]" => "public" }
+        }
+    }   else if [destination][nat][locality] != "private" {
+        mutate {
+            copy => { "[destination][nat][ip]" => "[@metadata][dest_ip_geo_apply]" }
+            add_field => { "[destination][nat][locality]" => "public" }
         }
     }
         
     #### Appliying geo plugging to fields
-    if [src_ip_geo_apply] {
+    if [@metadata][src_ip_geo_apply] {
         geoip {
-            source => "[src_ip_geo_apply]"
+            source => "[@metadata][src_ip_geo_apply]"
             target => "[source][geo]"
             fields => ["city_name", "continent_code", "country_code2", "country_name", "location", "region_code", "region_name"]
 #            tag_on_failure => ["_source_geoip_lookup_failure"]
         }
     }
     
-    if [dest_ip_geo_apply] {
+    if [@metadata][dest_ip_geo_apply] {
         geoip {
-            source => "[dest_ip_geo_apply]"
+            source => "[@metadata][dest_ip_geo_apply]"
             target => "[destination][geo]"
             fields => ["city_name", "continent_code", "country_code2", "country_name", "location", "region_code", "region_name"]
 #            tag_on_failure => ["_destination_geoip_lookup_failure"]
         }
     }
     
-    # remove temp fields "source_nat_locality", "destination_nat_locality"
+
     #rename iso code fields to match ECS
     mutate { 
-        remove_field => ["src_ip_geo_apply", "dest_ip_geo_apply" ] 
         rename => { "[source][geo][country_code2]" => "[source][geo][country_iso_code]" }
         rename => { "[destination][geo][country_code2]" => "[destination][geo][country_iso_code]" }
         rename => { "[source][geo][region_code]" => "[source][geo][region_iso_code]" }
         rename => { "[destination][geo][region_code]" => "[destination][geo][region_iso_code]" }
     }
+
+    #### related.*  ############################################################################
+    if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
+    if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
+
+    if [source][user] { mutate { add_field => { "[related][user]" => "%{[source][user]}" }    }    }
+    if [destination][user] { mutate { add_field => { "[related][user]" => "%{[destination][user]}" }    }    }
+
+
+    #### network.bytes, network.packets  ############################################################################
+    
+    if ([source][bytes] and [destination][bytes]) {
+        ruby {
+            code => "event.set('[network][bytes]', event.get('[source][bytes]').to_i + event.get('[destination][bytes]').to_i )"
+        }
+    }
+
+    if ([source][packets] and [destination][packets]) {
+        ruby {
+            code => "event.set('[network][packets]', event.get('[source][packets]').to_i + event.get('[destination][packets]').to_i )"
+        }
+    }
+
+   ### network.bytes_delta = source.bytes - destination.bytes (for catching upload data exfiltration) #################################
+
+     if ([source][bytes] and [destination][bytes]){
+        ruby {
+            code => "event.set('[network][bytes_delta]', event.get('[source][bytes]').to_i - event.get('[destination][bytes]').to_i )"
+        }
+    }
+    
+    ##### network.community_id (just tcp/udp) ###########################################################################
+    # should be migrated to the community-id processor    
+    #https://www.elastic.co/guide/en/beats/filebeat/master/community-id.html
+
+    if ([source][ip] and [destination][ip] and [source][port] and [destination][port] and [network][iana_number]){
+        fingerprint {
+    		method => "SHA1"
+            base64encode => "true"
+        	source => ["[source][ip]","[detination][ip]","[source][port]","[destination][port]","[network][iana_number]"]
+            concatenate_sources => true
+            target => "[network][community_id]"
+    	}
+        
+          mutate {
+            update => { "[network][community_id]" => "1:%{[network][community_id]}" }
+          }
+    }
+
+    ##### nregistered domain ###########################################################################
+    #https://www.elastic.co/guide/en/beats/heartbeat/current/processor-registered-domain.html
 
 }
 output {
