@@ -7,10 +7,9 @@ input {
 }
 
 filter {
-
-    #for index creation
+	#for building the index
     mutate {
-        lowercase => [ "[organization][name]" ]
+        lowercase => [ "[organization][name]" ,"[observer][type]" ]
         strip => [ "[organization][name]" ]
     }
     
@@ -21,30 +20,37 @@ output {
 
     if "send_index_error" in [tags] {
         elasticsearch {
-            hosts => ["https://yourelasticsearchcluster.com:9243"]
-            user => "secretuser"
-            password => "secretpassword"
+            hosts => ["https://mycluster.io:9243"]
+            user => "user"
+            password => "pass"
             index => "idx_error-write"
         }
-    } else if [event][module] in  [ "heartbeat" , "snmp" , "snmptrap" ]  {
+    } 
+    else if [event][module] in  [ "heartbeat" , "snmptrap", "snmp" ] {
         elasticsearch {
-            hosts => ["https://yourelasticsearchcluster.com:9243"]
-            user => "secretuser"
-            password => "secretpassword"
+            hosts => ["https://mycluster.io:9243"]
+            user => "user"
+            password => "pass"
             index => "ecs-%{[event][module]}-write"
         }
-    } else if [event][module] in ["fortigate", "fortisandbox", "fortiweb", "fortimail", "forticlient" ] and [organization][name] {
+    } 
+    else if [event][module] == "fortinet" and [organization][name] {
+
+        
+        #stdout { codec => json  }
+
         elasticsearch {
-            hosts => ["https://yourelasticsearchcluster.com:9243"]
-            user => "secretuser"
-            password => "secretpassword"
-            index => "ecs-%{[event][module]}-%{[organization][name]}-write"
+            hosts => ["https://mycluster.io:9243"]
+            user => "user"
+            password => "pass"
+            index => "ecs-%{[@metadata][idx]}-%{[organization][name]}-write"
         }
-    } else {
+    } 
+    else {
         elasticsearch {
-            hosts => ["https://yourelasticsearchcluster.com:9243"]
-            user => "secretuser"
-            password => "secretpassword"
+            hosts => ["https://mycluster.io:9243"]
+            user => "user"
+            password => "pass"
             index => "idx_error-write"
         }
     }
