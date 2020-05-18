@@ -73,7 +73,7 @@ filter {
         copy => { "[eventtime]"=> "[event][start]" }
         copy => { "[level]"=> "[log][level]" }
         copy => { "[logid]" => "[event][code]" }
-        copy => { "[type]"=> "[event][dataset]" }
+#        copy => { "[type]"=> "[event][dataset]" }
         copy => { "[tz]"=> "[event][timezone]" }
     }
 
@@ -355,52 +355,21 @@ filter {
     else if [source][ip] {
         mutate { add_field => { "[source][address]" => "%{[source][ip]}" }    }    
     }
-
-    #### related.*  ############################################################################
-    if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
-    if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
-
-    if [source][user] { mutate { add_field => { "[related][user]" => "%{[source][user]}" }    }    }
-    if [destination][user] { mutate { add_field => { "[related][user]" => "%{[destination][user]}" }    }    }
-
-
-    #### network.bytes, network.packets  ############################################################################
     
-    if ([source][bytes] and [destination][bytes]) and !([network][bytes]){
-        ruby {
-            code => "event.set('[network][bytes]', event.get('[source][bytes]').to_i + event.get('[destination][bytes]').to_i )"
+#   fortigate crash log. "msg" field is too big and creates ramdom fields
+#   https://github.com/enotspe/fortinet-2-elasticsearch/issues/4
+    if  [event][code] == "0100032546" {
+        prune {
+            whitelist_names => [ "^@timestamp$" , "observer", "organization", "event", "action", "ecs", "^subtype$" , "^type$" , "tags", "log" ]
         }
     }
 
-    if ([source][packets] and [destination][packets]) and !([network][packets]){
-        ruby {
-            code => "event.set('[network][packets]', event.get('[source][packets]').to_i + event.get('[destination][packets]').to_i )"
+#   "interim" logs for long live sessions, they are generated every 2 minutes and they are identified in the logs by logid=20
+#   https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912
+    else if [event][code] == "0000000020" {
+        drop { 
+            #percentage => 50
         }
-    }
-
-   ### network.bytes_delta = source.bytes - destination.bytes (for catching upload data exfiltration) #################################
-
-     if ([source][bytes] and [destination][bytes]){
-        ruby {
-            code => "event.set('[network][bytes_delta]', event.get('[source][bytes]').to_i - event.get('[destination][bytes]').to_i )"
-        }
-    }
-    
-    ##### network.community_id (just tcp/udp) ###########################################################################
-
-
-    if ([source][ip] and [destination][ip] and [source][port] and [destination][port] and [network][iana_number]){
-        fingerprint {
-    		method => "SHA1"
-            base64encode => "true"
-        	source => ["[source][ip]","[detination][ip]","[source][port]","[destination][port]","[network][iana_number]"]
-            concatenate_sources => true
-            target => "[network][community_id]"
-    	}
-        
-          mutate {
-            update => { "[network][community_id]" => "1:%{[network][community_id]}" }
-          }
     }
     
 }
