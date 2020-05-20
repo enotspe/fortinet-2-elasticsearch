@@ -58,7 +58,7 @@ filter {
         copy =>{ "[src_port]"=> "[source][port]" }
         copy =>{ "[status]"=> "[event][outcome]" }
         copy =>{ "[threat_level]"=> "[vulnerability][severity]" }
-        copy =>{ "[type]"=> "[event][dataset]" }
+        #copy =>{ "[type]"=> "[event][dataset]" }
         copy =>{ "[fortiweb][user]"=> "[user][name]" }
         
 
@@ -69,7 +69,7 @@ filter {
         copy =>{ "[subtype]"=> "[rule][name]" }
     }
     
-    if "attack" in [event][dataset] {
+    if "attack" in [type] {
         ############### ATTACK EVENT ID MAPPING #####################
         translate {
             field => "[event][code]"
@@ -99,8 +99,8 @@ filter {
     }
 
     #### ecs best practices
-    if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
-    if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
+    #if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
+    #if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
 
 
 
