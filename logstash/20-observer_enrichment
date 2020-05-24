@@ -51,7 +51,7 @@ filter {
         
         if [@metadata][geo_csv] == "default_geo" {
             mutate {
-                add_field => { "[tags]" => "error_geo_file" }
+                #add_field => { "[tags]" => "error_geo_file" }
             }
         }else{
             csv {
@@ -95,9 +95,9 @@ output {
                 send_to => ["snmp_mem_fortigate_2_ecs","snmp_cpu_fortigate_2_ecs", "snmp_others"]
             }
         }
-    } else if [event][module] == "heartbeat" {
+    } else if [@metadata][beat] {
         pipeline {
-            send_to => "logstash_enrichment" 
+            send_to => "drop" 
         }
     } else if [event][module] == "fortinet" {
         pipeline {
