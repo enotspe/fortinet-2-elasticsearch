@@ -57,8 +57,11 @@ filter {
     mutate {
         # ip from the host(observer) we are reciving logs. It will be changed to observer on next pipeline
         rename => ["host", "[host][ip]" ]
-
     }
+
+#   https://github.com/elastic/logstash/issues/9007
+#   add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
+    mutate { add_field => { "[logstash][hostname]" => "${HOSTNAME:no_logstash_hostname}" }   }
 
 }
 
