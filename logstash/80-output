@@ -7,7 +7,7 @@ input {
 }
 
 filter {
-	#for building the index
+    #for building the index pattern
     mutate {
         lowercase => [ "[organization][name]" ,"[observer][type]" ]
         strip => [ "[organization][name]" ]
@@ -20,18 +20,26 @@ output {
 
     if "send_index_error" in [tags] {
         elasticsearch {
-            hosts => ["https://mycluster.io:9243"]
-            user => "user"
-            password => "pass"
+            hosts => ["https://1a73070e08904a8d842d7b43e7be8c1f.us-east-1.aws.found.io:9243"]
+            user => "ingest"
+            password => "8f22b470fe57c1f4949a91ce6b1a305f0ccab38d"
             index => "idx_error-write"
         }
     } 
-    else if [event][module] in  [ "heartbeat" , "snmptrap", "snmp" ] {
+    else if [event][module] in  [ "snmptrap", "snmp" ] {
         elasticsearch {
-            hosts => ["https://mycluster.io:9243"]
-            user => "user"
-            password => "pass"
+            hosts => ["https://1a73070e08904a8d842d7b43e7be8c1f.us-east-1.aws.found.io:9243"]
+            user => "ingest"
+            password => "8f22b470fe57c1f4949a91ce6b1a305f0ccab38d"
             index => "ecs-%{[event][module]}-write"
+        }
+    } 
+    else if [@metadata][beat] {
+        elasticsearch {
+            hosts => ["https://1a73070e08904a8d842d7b43e7be8c1f.us-east-1.aws.found.io:9243"]
+            user => "ingest"
+            password => "8f22b470fe57c1f4949a91ce6b1a305f0ccab38d"
+            index => "ecs-%{[@metadata][beat]}-write"
         }
     } 
     else if [event][module] == "fortinet" and [organization][name] {
@@ -40,17 +48,17 @@ output {
         #stdout { codec => json  }
 
         elasticsearch {
-            hosts => ["https://mycluster.io:9243"]
-            user => "user"
-            password => "pass"
+            hosts => ["https://1a73070e08904a8d842d7b43e7be8c1f.us-east-1.aws.found.io:9243"]
+            user => "ingest"
+            password => "8f22b470fe57c1f4949a91ce6b1a305f0ccab38d"
             index => "ecs-%{[@metadata][idx]}-%{[organization][name]}-write"
         }
     } 
     else {
         elasticsearch {
-            hosts => ["https://mycluster.io:9243"]
-            user => "user"
-            password => "pass"
+            hosts => ["https://1a73070e08904a8d842d7b43e7be8c1f.us-east-1.aws.found.io:9243"]
+            user => "ingest"
+            password => "8f22b470fe57c1f4949a91ce6b1a305f0ccab38d"
             index => "idx_error-write"
         }
     }
