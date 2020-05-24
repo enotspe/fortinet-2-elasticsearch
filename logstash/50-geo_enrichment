@@ -140,13 +140,14 @@ filter {
           }
     }
 
-    ##### nregistered domain ###########################################################################
+    ##### registered domain ###########################################################################
     #https://www.elastic.co/guide/en/beats/heartbeat/current/processor-registered-domain.html
 
 }
 output {
     pipeline {
-        send_to => "logstash_enrichment" 
+        #send_to => "logstash_enrichment" 
+        send_to => "drop" 
     }
 
 }
