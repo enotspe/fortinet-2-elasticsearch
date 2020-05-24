@@ -1,43 +1,40 @@
 input {
+    #heartbeat
+    beats {
+        port => 5044
+        ssl => false
+    }
 
     pipeline {
         address => "input_beats"
     }
-
 }
 
 filter {
 
-    if "beats_input_raw_event" in [tags] {
-        mutate {
-            remove_tag => [ "beats_input_raw_event" ]
-        }
+    mutate {
+        # for pretty visualization on UPTIME UI
+        remove_tag => [ "beats_input_raw_event" ]
+
+        # for host enrichment
+        copy => { "[monitor][ip]" => "[host][ip]"}
     }
 
-
-    if !([event][module]) and ([monitor][ip]){
-        mutate {
-            add_field => {"[event][module]" => "heartbeat"}
-        }
-    }
-
-    if !([host][ip]) and ([monitor][ip]) {
-        mutate {
-            add_field => {"[host][ip]" => "%{[monitor][ip]}" }
-        }
-    }
+#   https://github.com/elastic/logstash/issues/9007
+#   add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
+    mutate { add_field => { "[logstash][hostname]" => "${HOSTNAME:no_logstash_hostname}" }   }
 
 }
 
 output {
 
-    if [host][enrichment] == "disabled" {
+    if [host][enrichment] == "enabled"  {
         pipeline {
-            send_to => "logstash_enrichment"
+            send_to => "observer_enrichment"
         }
     } else {
         pipeline {
-            send_to => "observer_enrichment"
+            send_to => "drop"
         }
     }
     
