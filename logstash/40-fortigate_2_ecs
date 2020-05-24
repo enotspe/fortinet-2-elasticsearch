@@ -159,7 +159,7 @@ filter {
             copy =>{ "[app]"=> "[network][application]" }
             copy =>{ "[appcat]"=> "[rule][category]" }
             copy =>{ "[applist]"=> "[rule][ruleset]" }
-            
+            copy =>{ "[ccertissuer]"=> "[tls][client][issuer]" }
             copy =>{ "[dir]"=> "[network][direction]" }
             
             copy =>{ "[dst_int]"=> "[observer][egress][interface][name]" }
@@ -194,7 +194,10 @@ filter {
             copy =>{ "[rcvdbyte]"=> "[destination][bytes]" }
             copy =>{ "[reason]"=> "[event][reason]" }
             copy =>{ "[ref]"=> "[event][reference]" }
+            copy =>{ "[scertcname]"=> "[tls][client][server_name]" }
+            copy =>{ "[scertissuer]"=> "[tls][server][issuer]" }
             copy =>{ "[sentbyte]"=> "[source][bytes]" }
+            
             copy =>{ "[fortios][service]"=> "[network][protocol]" }
 #            copy =>{ "[session_id]"=> "[network][session_id]" }
             
