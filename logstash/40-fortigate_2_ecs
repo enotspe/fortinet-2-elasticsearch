@@ -221,6 +221,7 @@ filter {
             copy =>{ "[direction]"=> "[network][direction]" }
             copy =>{ "[dstintf]"=> "[observer][egress][interface][name]" }
             copy =>{ "[eventid]"=> "[event][id]" }
+            copy =>{ "[hostname]"=> "[url][domain]" }
             copy =>{ "[locip]"=> "[source][ip]" }
             copy =>{ "[locport]"=> "[source][port]" }
             copy =>{ "[policyid]"=> "[rule][id]" }
