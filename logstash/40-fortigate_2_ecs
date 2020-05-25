@@ -115,7 +115,7 @@ filter {
             copy => { "[transip]"=> "[source][nat][ip]" }
             copy => { "[transport]"=> "[source][nat][port]" }
             copy => { "[unauthuser]"=> "[source][user][name]" }
-            copy => { "[fortios][url]"=> "[url][path]" }
+            copy => { "[fortios][url]"=> "[url][full]" }
         }
 
         mutate {
