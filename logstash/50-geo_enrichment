@@ -142,6 +142,11 @@ filter {
 
     ##### registered domain ###########################################################################
     #https://www.elastic.co/guide/en/beats/heartbeat/current/processor-registered-domain.html
+    
+    #### tls.client.server_name recomendation https://www.elastic.co/guide/en/ecs/current/ecs-tls.html
+    mutate {
+        copy =>{ "[tls][client][server_name]"=> "[destination][domain]" }
+    }
 
 }
 output {
