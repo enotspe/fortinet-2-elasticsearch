@@ -5,12 +5,22 @@ input {
 }
 filter {
 
-######################### GEO #################################
+######################### locality #################################
     if [source][ip] {
         cidr {
                 add_field => {"[source][locality]" => "private"}
                 address => [ "%{[source][ip]}" ]
                 network => [ "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" ]
+        }
+        cidr {
+                add_field => {"[source][locality]" => "loopback"}
+                address => [ "%{[source][ip]}" ]
+                network => [ "127.0.0.0/8" ]
+        }
+        cidr {
+                add_field => {"[source][locality]" => "link-local"}
+                address => [ "%{[source][ip]}" ]
+                network => [ "169.254.0.0/16" ]
         }
     }
     
@@ -28,6 +38,16 @@ filter {
                 address => [ "%{[destination][ip]}" ]
                 network => [ "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" ]
         }
+        cidr {
+                add_field => {"[destination][locality]" => "loopback"}
+                address => [ "%{[destination][ip]}" ]
+                network => [ "127.0.0.0/8" ]
+        }
+        cidr {
+                add_field => {"[destination][locality]" => "link-local"}
+                address => [ "%{[destination][ip]}" ]
+                network => [ "169.254.0.0/16" ]
+        }
     }
 
     if [destination][nat][ip] {
@@ -38,9 +58,13 @@ filter {
         }
     }
 
+    #::1 -- ipv6 loopback
+    #fe80::/10 -- ipv6 link local
+    #fd00::/8 -- ipv6 private networking
+
     ##### Defining fields to apply geo pluging to source and destination fields
 
-    if [source][locality] != "private" {
+    if [source][locality] not in [ "private", "loopback" , "link-local" ] {
         mutate {
             copy => { "[source][ip]" => "[@metadata][src_ip_geo_apply]"  }
             add_field => { "[source][locality]" => "public" }
@@ -52,7 +76,7 @@ filter {
         }
     }
     
-    if [destination][locality] != "private" {
+    if [destination][locality] not in [ "private", "loopback" , "link-local" ] {
         mutate {
             copy => { "[destination][ip]" => "[@metadata][dest_ip_geo_apply]" }
             add_field => { "[destination][locality]" => "public" }
@@ -95,9 +119,11 @@ filter {
     #### related.*  ############################################################################
     if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
     if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
+    if [source][nat][ip] { mutate { add_field => { "[related][ip]" => "%{[source][nat][ip]}" }    }    }
+    if [destination][nat][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][nat][ip]}" }    }    }
 
-    if [source][user] { mutate { add_field => { "[related][user]" => "%{[source][user]}" }    }    }
-    if [destination][user] { mutate { add_field => { "[related][user]" => "%{[destination][user]}" }    }    }
+    if [source][user][name] { mutate { add_field => { "[related][user]" => "%{[source][user]}" }    }    }
+    if [destination][user][name] { mutate { add_field => { "[related][user]" => "%{[destination][user]}" }    }    }
 
 
     #### network.bytes, network.packets  ############################################################################
@@ -121,10 +147,17 @@ filter {
             code => "event.set('[network][bytes_delta]', event.get('[source][bytes]').to_i - event.get('[destination][bytes]').to_i )"
         }
     }
-    
+
+    #### fortinet duration is on seconds, and ecs specifies it should be on nanoseconds
+     if ([source][bytes] and [destination][bytes]){
+        ruby {
+            code => "event.set('[event][duration]', event.get('[event][duration]').to_i * 1000000000 )"
+        }
+    }
+
     ##### network.community_id (just tcp/udp) ###########################################################################
-    # should be migrated to the community-id processor    
-    #https://www.elastic.co/guide/en/beats/filebeat/master/community-id.html
+    # community-id processor    
+    # https://www.elastic.co/guide/en/beats/filebeat/master/community-id.html
 
     if ([source][ip] and [destination][ip] and [source][port] and [destination][port] and [network][iana_number]){
         fingerprint {
@@ -141,18 +174,65 @@ filter {
     }
 
     ##### registered domain ###########################################################################
-    #https://www.elastic.co/guide/en/beats/heartbeat/current/processor-registered-domain.html
+    # for installing tld filter plugin
+    # cd /usr/share/logstash
+    # sudo bin/logstash-plugin install logstash-filter-tld
+    # dns.question.name #########################################
+    tld {
+        source => "[dns][question][name]"
+        target => "[@metadata][domain_dns]"
+    }
+    if [@metadata][domain_dns][trd]{
+        mutate {
+            join =>  { "[@metadata][domain_dns][trd]" => "." }
+         }
+    }
+    mutate {
+        rename =>    { "[@metadata][domain_dns][domain]" => "[dns][question][registered_domain]"  }
+        rename =>    { "[@metadata][domain_dns][trd]" => "[dns][question][subdomain]"  }
+        rename =>    { "[@metadata][domain_dns][tld]" => "[dns][question][top_level_domain]" }
+    }
+
+    # url.domain #########################################
+    tld {
+        source => "[url][domain]"
+        target => "[@metadata][domain_url]"
+    }
+    if [@metadata][domain_url][trd]{
+        mutate {
+            join =>  { "[@metadata][domain_url][trd]" => "." }
+         }
+    }
+    mutate {
+        rename =>    { "[@metadata][domain_url][domain]" => "[url][registered_domain]"  }
+        #rename =>    { "[@metadata][domain_url][trd]" => "[url][subdomain]"  }
+        rename =>    { "[@metadata][domain_url][tld]" => "[url][top_level_domain]" }
+    }
+
+
     
     #### tls.client.server_name recomendation https://www.elastic.co/guide/en/ecs/current/ecs-tls.html
     mutate {
         copy =>{ "[tls][client][server_name]"=> "[destination][domain]" }
     }
 
-}
-output {
-    pipeline {
-        #send_to => "logstash_enrichment" 
-        send_to => "drop" 
+    #for "if" of output
+    mutate {
+        lowercase => [ "[organization][name]" ,"[observer][type]" ]
+        strip => [ "[organization][name]" ]
     }
 
+}
+output {
+    if [organization][name]=="some_org" {
+        pipeline {
+            #send_to => "%{[organization][name]}_networks_lookup"
+            send_to => "some_org_networks_lookup"
+        }
+    }
+    else {
+        pipeline {
+            send_to => "output"
+        }
+    }
 }
