@@ -1,0 +1,11 @@
+PUT _ingest/pipeline/add_event_ingested
+{
+  "processors": [
+    {
+      "set": {
+        "field": "event.ingested",
+        "value": "{{_ingest.timestamp}}"
+      }
+    }
+  ]
+}
