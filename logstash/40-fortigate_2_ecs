@@ -47,7 +47,7 @@ filter {
         rename => { "[url]" => "[fortios][url]" }
         rename => { "[user]" => "[fortios][user]" }
 
-        remove_field => [ "agent", "error", "file", "group", "hash", "host", "interface", "log", "process", "server", "service", "url", "user" ]
+#        remove_field => [ "agent", "error", "file", "group", "hash", "host", "interface", "log", "process", "server", "service", "url", "user" ]
 
         #session_id not numeric on event-wad logs
         rename => { "[session_id]" => "[fortios][session_id]" }
@@ -56,11 +56,11 @@ filter {
     }
 
 #dictionary verification
-    if [devid] != [observer][serial_number] or [observer][name] != [devname] {
-          mutate {
-            add_tag => [ "dictionary_error", "%{[observer][name]}","%{[observer][serial_number]}"]
-          }
-    }
+#    if [devid] != [observer][serial_number] or [observer][name] != [devname] {
+#          mutate {
+#            add_tag => [ "dictionary_error", "%{[observer][name]}","%{[observer][serial_number]}"]
+#          }
+#    }
 
 
 #ecs translation
@@ -70,7 +70,7 @@ filter {
 
         copy => { "[devid]" => "[observer][serial_number]" }
         copy => { "[devname]" => "[observer][name]" }
-        copy => { "[eventtime]"=> "[event][start]" }
+#        copy => { "[eventtime]"=> "[event][start]" }
         copy => { "[level]"=> "[log][level]" }
         copy => { "[logid]" => "[event][code]" }
 #        copy => { "[type]"=> "[event][dataset]" }
@@ -121,6 +121,19 @@ filter {
         mutate {
             copy => { "[dstunauthuser]"=> "[destination][user][name]" }
             copy => { "[fortios][user]"=> "[source][user][name]" }
+        }
+
+        # user and host, for SIEM UI ######################################################################
+        # we use undefined for vpn interfaces
+        # not very accuarated :(
+        if [observer][ingress][interface][role] in ["lan","dmz","undefined"] {
+            mutate {
+                copy => { "[source][user][name]" => "[user][name]" }
+                copy => { "[srcname]" => "[host][name]" }
+                copy => { "[mastersrcmac]" => "[host][mac]" }
+                copy => { "[osname]" => "[host][os][name]" }
+                copy => { "[srcswversion]" => "[host][os][version]" }
+            }
         }
 
     # ECS categorization fields
@@ -221,7 +234,7 @@ filter {
             copy =>{ "[direction]"=> "[network][direction]" }
             copy =>{ "[dstintf]"=> "[observer][egress][interface][name]" }
             copy =>{ "[eventid]"=> "[event][id]" }
-            copy =>{ "[hostname]"=> "[url][domain]" }
+            copy =>{ "[hostname]"=> "[destination][domain]" }
             copy =>{ "[locip]"=> "[source][ip]" }
             copy =>{ "[locport]"=> "[source][port]" }
             copy =>{ "[policyid]"=> "[rule][id]" }
@@ -279,11 +292,8 @@ filter {
         #other actions redirect analytics monitored dropped redirect detected content-disarmed
 
 #        #just some categories will trigger alert
-#        if [subtype] in [ "webfilter" , "app-ctrl" ] {
-#            mutate {remove_field => [ "[event][kind]" ] }
-#        }
 
-        if [subtype] == "webfilter" {
+        if [subtype] in [ "webfilter" , "dns" ] {
             if [catdesc] not in ["Alcohol","Discrimination","Drug Abuse","Dynamic DNS","Explicit Violence","Extremist Groups","Freeware and Software Downloads","Gambling","Hacking","Illegal or Unethical","Malicious Websites","Marijuana","Newly Observed Domain","Newly Registered Domain","Nudity and Risque","Other Adult Materials","Peer-to-peer file sharing","Phishing","Plagiarism","Pornography","Proxy Avoidance","Remote Access","Spam URLs","Tobacco","Weapons (sales)"]{
                 mutate {remove_field => [ "[event][kind]" ] }
             }
@@ -291,6 +301,12 @@ filter {
 
         if [subtype] == "app-ctrl" {
             if [appcat] not in ["Botnet","P2P","Proxy","Remote.Access"]{    
+                mutate {remove_field => [ "[event][kind]" ] }
+            }
+        }
+
+        if [subtype] == "voip" {
+            if [action] == "permit" {    
                 mutate {remove_field => [ "[event][kind]" ] }
             }
         }
@@ -335,16 +351,35 @@ filter {
             copy =>{ "[srcmac]"=> "[source][mac]" }
             copy =>{ "[srcport]"=> "[source][port]" }
         } 
-         mutate{
+        mutate{
             copy =>{ "[srcip]"=> "[source][ip]" }
-        }  
+        } 
+
+        if [subtype] == "vpn" {
+            mutate{
+                copy =>{ "[remip]"=> "[source][ip]" }
+            }
+        }
     }
 
 
     #### event.start ############################################################################
+    # https://docs.fortinet.com/document/fortigate/6.2.0/technical-tip-event-time-display-in-the-logs/21/fd47787
+    # In 6.0.x ver and below versions event time view was in seconds.
+    # In 6.2.x versions the display has been changed to Nano seconds.
+
+
     if [eventtime] {
+        ruby  {
+          code => '
+            timevar = event.get("eventtime")
+            event.set("eventtime", timevar[0...13])
+           '
+        }
+
+
         date {
-            match => [ "eventtime", "UNIX" ]
+            match => [ "eventtime", "UNIX", "UNIX_MS" ]
             timezone => "%{[event][timezone]}"
             target => "[event][start]"
             tag_on_failure => ["_dateparsefailure_eventtime"]
