@@ -36,11 +36,7 @@ filter {
             }
         }
 
-        #mutate{
-            #remove_field => ["datafeed_org_csv"]
-        #}
-
-
+        
         ################# G E O ###################
         translate {
             field => "[host][ip]"
@@ -62,9 +58,6 @@ filter {
             }
         }
         
-        #mutate{
-        #    remove_field => ["geo_csv"]
-        #}
     }
 
     if [event][module] == "fortinet"  {
@@ -97,7 +90,7 @@ output {
         }
     } else if [@metadata][beat] {
         pipeline {
-            send_to => "drop" 
+            send_to => "output" 
         }
     } else if [event][module] == "fortinet" {
         pipeline {
