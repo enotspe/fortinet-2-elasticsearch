@@ -122,5 +122,9 @@ output {
             send_to => "fortiauthenticator_2_ecs"
         }
     }
-    
+#    else if [event][dataset]=="fortinet.forticlient" {
+#        pipeline{
+#            send_to => "output"
+#        }
+#    }
 }
