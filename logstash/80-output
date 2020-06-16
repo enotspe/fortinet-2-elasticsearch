@@ -20,44 +20,46 @@ output {
 
     if "send_index_error" in [tags] {
         elasticsearch {
-            hosts => ["https://my-cluster:9243"]
-            user => "myuserelk"
+            hosts => ["https://myelkcluster:9243"]
+            user => "myelkuser"
             password => "password"
             index => "idx_error-write"
         }
     } 
     else if [event][module] in  [ "snmptrap", "snmp" ] {
         elasticsearch {
-            hosts => ["https://my-cluster:9243"]
-            user => "myuserelk"
+            hosts => ["https://myelkcluster:9243"]
+            user => "myelkuser"
             password => "password"
             index => "ecs-%{[event][module]}-write"
+            pipeline => "add_snmp_timestamp"
         }
     } 
     else if [@metadata][beat] {
         elasticsearch {
-            hosts => ["https://my-cluster:9243"]
-            user => "myuserelk"
+            hosts => ["https://myelkcluster:9243"]
+            user => "myelkuser"
             password => "password"
             index => "ecs-%{[@metadata][beat]}-write"
+            pipeline => "add_event_ingested"
         }
     } 
     else if [event][module] == "fortinet" and [organization][name] {
 
-        
         #stdout { codec => json  }
 
         elasticsearch {
-            hosts => ["https://my-cluster:9243"]
-            user => "myuserelk"
+            hosts => ["https://myelkcluster:9243"]
+            user => "myelkuser"
             password => "password"
             index => "ecs-%{[@metadata][idx]}-%{[organization][name]}-write"
+            pipeline => "add_event_ingested"
         }
     } 
     else {
         elasticsearch {
-            hosts => ["https://my-cluster:9243"]
-            user => "myuserelk"
+            hosts => ["https://myelkcluster:9243"]
+            user => "myelkuser"
             password => "password"
             index => "idx_error-write"
         }
