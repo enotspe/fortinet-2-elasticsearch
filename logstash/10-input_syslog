@@ -48,6 +48,13 @@ input {
         add_field => {"[@metadata][idx]" => "fortiauthenticator"}
     }
 
+    udp {
+        port => 5151
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortinet"}
+        add_field => {"[event][dataset]" => "fortinet.forticlient"}
+        add_field => {"[@metadata][idx]" => "forticlient"}
+    }
 
 
 }
