@@ -1,0 +1,75 @@
+input {
+    
+    udp {
+        port => 5140
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortinet"}
+        add_field => {"[event][dataset]" => "fortinet.fortigate"}
+        add_field => {"[@metadata][idx]" => "fortigate"}
+    }
+    
+    udp {
+        port => 5146
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortinet"}
+        add_field => {"[event][dataset]" => "fortinet.fortigate"}
+        add_field => {"[@metadata][idx]" => "fortigate"}
+    }
+
+    udp {
+        port => 5147
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortinet"}
+        add_field => {"[event][dataset]" => "fortinet.fortiweb"}
+        add_field => {"[@metadata][idx]" => "fortiweb"}
+        #add_field => {"[org]" => "promperu"}
+    }
+
+    udp {
+        port => 5148
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortinet"}
+        add_field => {"[event][dataset]" => "fortinet.fortisandbox"}
+        add_field => {"[@metadata][idx]" => "fortisandbox"}
+        #add_field => {"[org]" => "auna"}
+    }
+
+    udp {
+        port => 5149
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortinet"}
+        add_field => {"[event][dataset]" => "fortinet.fortimail"}
+        add_field => {"[@metadata][idx]" => "fortimail"}
+    }
+
+    udp {
+        port => 5150
+        codec => plain { charset => "ASCII" }
+        add_field => {"[event][module]" => "fortinet"}
+        add_field => {"[event][dataset]" => "fortinet.forticlient"}
+        add_field => {"[@metadata][idx]" => "forticlient"}
+    }
+
+
+}
+
+filter {
+
+    mutate {
+       rename => ["host", "[observer][ip]" ]
+    }
+
+#   https://github.com/elastic/logstash/issues/9007
+#   add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
+    mutate { add_field => { "[logstash][hostname]" => "${HOSTNAME:no_logstash_hostname}" }   }
+
+}
+
+output {
+
+    pipeline {
+        
+        send_to => "kv_syslog" 
+    }
+
+}
