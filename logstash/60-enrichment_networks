@@ -1,0 +1,77 @@
+### It should be migrated to custom maxmind plugin
+### https://www.youtube.com/watch?v=8yf9DJ_TO6o
+
+input {
+
+    pipeline {
+        address => "enrichment_networks"
+    }
+
+}
+
+filter {
+
+    if [source][ip]{
+            cidr {
+                    add_field => {"[source][role]" => "datos"}
+                    address => [ "%{[source][ip]}" ]
+                    network => [ "10.41.0.0/16", "10.42.0.0/16" ]
+            }
+        
+            cidr {
+                    add_field => {"[source][role]" => "dmz"}
+                    address => [ "%{[source][ip]}" ]
+                    network => [ "172.100.100.0/24", "172.20.20.0/24" ]
+            }
+        
+            cidr {
+                    add_field => {"[source][role]" => "videoconferencia"}
+                    address => [ "%{[source][ip]}" ]
+                    network => [ "10.20.10.0/24" ]
+            }
+        
+            cidr {
+                    add_field => {"[source][role]" => "comerciales"}
+                    address => [ "%{[source][ip]}" ]
+                    network => [ "198.198.0.0/16" ]
+            }
+        
+            cidr {
+                    add_field => {"[source][role]" => "medicos"}
+                    address => [ "%{[source][ip]}" ]
+                    network => [ "192.9.0.0/16" ]
+            }
+        
+            cidr {
+                    add_field => {"[source][role]" => "invitados"}
+                    address => [ "%{[source][ip]}" ]
+                    network => [ "129.0.0.0/8" ]
+            }
+       
+            cidr {
+                    add_field => {"[source][role]" => "voz"}
+                    address => [ "%{[source][ip]}" ]
+                    network => [ "10.151.0.0/16" ]
+            }
+        
+            cidr {
+                    add_field => {"[source][role]" => "videocamaras"}
+                    address => [ "%{[source][ip]}" ]
+                    network => [ "10.10.0.0/16" ]
+            }
+        
+    }
+
+    if [source][role] == "invitados" {
+        drop { 
+            #percentage => 50
+        }
+    }
+
+}
+
+output {
+    pipeline {
+        send_to => "output" 
+    }
+}
