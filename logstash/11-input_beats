@@ -5,9 +5,6 @@ input {
         ssl => false
     }
 
-    pipeline {
-        address => "input_beats"
-    }
 }
 
 filter {
@@ -30,11 +27,12 @@ output {
 
     if [host][enrichment] == "enabled"  {
         pipeline {
-            send_to => "observer_enrichment"
+            #send_to => "observer_enrichment"
+            send_to => "output"
         }
     } else {
         pipeline {
-            send_to => "drop"
+            send_to => "output"
         }
     }
     
