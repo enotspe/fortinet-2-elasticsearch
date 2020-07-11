@@ -306,28 +306,7 @@ filter {
 }
 output {
 
-    #### "org" is taken from syslog. We definied manually on firewalls
-    #config log custom-field
-    #    edit "3"
-    #        set name "org"
-    #        set value "some_organization_name"
-    #    next
-    #end
-    #
-    #config log setting
-    #    set log-policy-comment enable
-    #    set log-policy-name enable
-    #    set custom-log-fields "3"
-    #end
-
-    if [org]=="auna" {
-        pipeline {
-            send_to => "enrichment_auna"
+    pipeline {
+            send_to => "enrichment_networks"
         }
-    }
-    else {
-        pipeline {
-            send_to => "output"
-        }
-    }
 }
