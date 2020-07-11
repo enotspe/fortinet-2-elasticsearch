@@ -55,14 +55,6 @@ filter {
 
     }
 
-#dictionary verification
-#    if [devid] != [observer][serial_number] or [observer][name] != [devname] {
-#          mutate {
-#            add_tag => [ "dictionary_error", "%{[observer][name]}","%{[observer][serial_number]}"]
-#          }
-#    }
-
-
 #ecs translation
     mutate {
         add_field => { "[ecs][version]" => "1.5.0" }
@@ -91,7 +83,7 @@ filter {
             copy => { "[dstname]"=> "[destination][address]" }
             copy => { "[dstport]"=> "[destination][port]" }
             copy => { "[duration]"=> "[event][duration]" }
-            copy => { "[group]"=> "[source][user][group][name]" }
+            copy => { "[fortios][group]"=> "[source][user][group][name]" }
             copy => { "[msg]"=> "[message]" }
             copy => { "[policyid]"=> "[rule][id]" }
             copy => { "[policyname]"=> "[rule][name]" }
@@ -243,7 +235,8 @@ filter {
             copy =>{ "[fortios][user]"=> "[source][user][name]" }
             copy =>{ "[remip]"=> "[destination][ip]" }
             copy =>{ "[remport]"=> "[destination][port]" }
-
+            copy =>{ "[voip_proto]"=> "[network][protocol]" }
+            
         }
 
         mutate {
@@ -416,7 +409,7 @@ filter {
 output {
     
     pipeline {
-        send_to => "geo_enrichment"
+        send_to => "common_ecs"
     }
 
 
