@@ -25,15 +25,8 @@ filter {
 
 output {
 
-    if [host][enrichment] == "enabled"  {
-        pipeline {
-            #send_to => "observer_enrichment"
+    pipeline {
             send_to => "output"
         }
-    } else {
-        pipeline {
-            send_to => "output"
-        }
-    }
     
 }
