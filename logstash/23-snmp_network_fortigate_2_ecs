@@ -7,6 +7,11 @@ input {
 }
 
 filter {
+
+    mutate {
+            copy => { "[system][sysSerial]" => "[host][serial_number]" }
+            copy => { "[system][sysName]" => "[host][name]" }
+        }
  
     if "interface" in [tags] {   
 
@@ -36,7 +41,7 @@ filter {
 output {
 
     pipeline {
-        send_to => "logstash_enrichment"
+        send_to => "output"
     }
 
 }
