@@ -1,4 +1,0 @@
-#"[logstash]" : "[ip][id],[name],[type],[version]"
-"logstash": "192.168.64.23,aws_192.168.61.1,aws_logstash,logstash,7.2.1"
-#"logstash": "192.168.23.22,peru_192.168.25.57,peru_logstash,logstash,7.2.1"
-#"logstash": "192.168.32.09,usa_172.16.80.16,usa_logstash,7.2.1"
