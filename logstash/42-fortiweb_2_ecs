@@ -8,7 +8,7 @@ filter {
 #remove event.original for saving disk space
     #mutate{ remove_field => ["[event][original]"]  }
 
-#validate "N/A" on ip fields
+#validate "N/A" on ip fields for avoiding mapping mismatch
     if [dst]=="N/A" { mutate { remove_field => ["dst"] } }
     if [src]=="N/A" { mutate { remove_field => ["src"] } }
     # Add some other field that may contain N/A
@@ -23,7 +23,7 @@ filter {
 #ecs translation
     mutate {
         
-        add_field => { "[ecs][version]" => "1.3.1" }
+        add_field => { "[ecs][version]" => "1.5.0" }
         rename => {"syslog5424_pri" => "[log][syslog][priority]"}
 
         copy =>{ "[action]"=> "[event][action]" }
@@ -45,7 +45,7 @@ filter {
         # copied msg field to [rule][description]
         copy =>{ "[msg]"=> "[rule][description]" }
         copy =>{ "[msg_id]"=> "[event][sequence]" }
-        # change policy to rule.rulset (according to ECS docs : Name of the ruleset, policy, group, or parent category in which the rule used to generate this event is a member.)
+        # change policy to rule.ruleset (according to ECS docs : Name of the ruleset, policy, group, or parent category in which the rule used to generate this event is a member.)
         # This will lead to more depth in categorization fields:
         copy =>{ "[policy]"=> "[rule][ruleset]" }
         # Added signature_id as rule.id
@@ -56,7 +56,7 @@ filter {
         copy =>{ "[signature_cve_id]"=> "[vulnerability][id]" }
         copy =>{ "[src]"=> "[source][ip]" }
         copy =>{ "[src_port]"=> "[source][port]" }
-        copy =>{ "[status]"=> "[event][outcome]" }
+        #copy =>{ "[status]"=> "[event][outcome]" }
         copy =>{ "[threat_level]"=> "[vulnerability][severity]" }
         #copy =>{ "[type]"=> "[event][dataset]" }
         copy =>{ "[fortiweb][user]"=> "[user][name]" }
@@ -73,42 +73,34 @@ filter {
         ############### ATTACK EVENT ID MAPPING #####################
         translate {
             field => "[event][code]"
-            destination => "[datafeed_org_csv]"
+            destination => "[@metadata][attack_csv]"
             dictionary_path => "/etc/logstash/fortiweb_attack_logid.yml"
-            fallback => "default_datafeed_org_csv"
+            fallback => "default_attack"
         }
 
-        if [datafeed_org_csv] == "default_datafeed_org_csv" {
+        if [@metadata][attack_csv] == "default_attack" {
             mutate {
-                add_field => { "[tags]" => "error_datafeed_enrichment" }
-                add_field => { "[tags]" => "send_index_error" }
+                add_field => { "[tags]" => "error_attack_enrichment" }
+                #add_field => { "[tags]" => "send_index_error" }
             }
 
         } else {
             csv {
-                source => "datafeed_org_csv"
+                source => "[@metadata][attack_csv]"
                 separator => ","
                 columns => ["[event][category]","[event][kind]"]
                 skip_empty_columns => true
             }
         }
         
-        mutate{
-            remove_field => ["datafeed_org_csv"]
-        }
+
     }
-
-    #### ecs best practices
-    #if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
-    #if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
-
-
 
 }
 
 output {
     pipeline {
-        send_to => "geo_enrichment" 
+        send_to => "common_ecs" 
     }
 
 }
