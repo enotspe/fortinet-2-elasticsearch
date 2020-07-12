@@ -27,6 +27,7 @@ filter {
         rename => { "user" => "[fsa][user]" }
     }
 
+
 #ecs translation
     mutate {
         
@@ -39,7 +40,7 @@ filter {
         copy =>{ "[action]"=> "[event][action]" }
         copy =>{ "[subtype]"=> "[event][category]" }
         copy =>{ "[logid]"=> "[event][code]" }
-        copy =>{ "[type]"=> "[event][dataset]" }
+#        copy =>{ "[type]"=> "[event][dataset]" }
         copy =>{ "[etime]"=> "[event][end]" }
         copy =>{ "[level]"=> "[event][kind]" }
         copy =>{ "[jstatus]"=> "[event][outcome]" }
@@ -57,6 +58,7 @@ filter {
         copy =>{ "[proto]"=> "[network][protocol]" }
         copy =>{ "[ip]"=> "[network][type]" }
         copy =>{ "[devid]"=> "[observer][serial_number]" }
+        copy =>{ "[devhost]"=> "[observer][name]" }
         copy =>{ "[pid]"=> "[process][pid]" }
         copy =>{ "[cip]"=> "[source][ip]" }
         copy =>{ "[cport]"=> "[source][port]" }
@@ -81,17 +83,13 @@ filter {
         copy =>{ "[unauthuser]"=> "[source][user][name]" }
     }
 
-    #### ecs best practices
-    if [source][ip] { mutate { add_field => { "[related][ip]" => "%{[source][ip]}" }    }    }
-    if [destination][ip] { mutate { add_field => { "[related][ip]" => "%{[destination][ip]}" }    }    }
-    
-
     #convert scanstart, scanend, stime, etime
     if [scanstart] {
         date {
             match => [ "scanstart", "UNIX" ]
             timezone => "%{[event][timezone]}"
             target => "[event][start]"
+            tag_on_failure => ["_dateparsefailure_scanstart"]
         }
     }
     if [stime] {
@@ -99,6 +97,7 @@ filter {
             match => [ "stime", "UNIX" ]
             timezone => "%{[event][timezone]}"
             target => "[event][start]"
+            tag_on_failure => ["_dateparsefailure_scanstart"]
         }
     }
     if [scanend] {
@@ -106,6 +105,7 @@ filter {
             match => [ "scanend", "UNIX" ]
             timezone => "%{[event][timezone]}"
             target => "[event][end]"
+            tag_on_failure => ["_dateparsefailure_scanend"]
         }
     }
     if [etime] {
@@ -113,11 +113,12 @@ filter {
             match => [ "etime", "UNIX" ]
             timezone => "%{[event][timezone]}"
             target => "[event][end]"
+            tag_on_failure => ["_dateparsefailure_scanend"]
         }
     }
 }
 output {
     pipeline {
-        send_to => "geo_enrichment" 
+        send_to => "common_ecs" 
     }
 }
