@@ -4,7 +4,7 @@
 
 ## Update !!!
 
-Turns out that our use case (many fw, many logstash, many clients) was far way more complicated than most use cases (just one fw). So we have simplified the pipelines logic (no more dictionaties) to make it easier for everybody to implement the pipelines. 
+Turns out that our use case (many fw, many logstash, many clients) was far way more complicated than normal use cases (just one fw). So we have simplified the pipelines logic (no more dictionaties) to make it easier for everybody to implement the pipelines. 
 
 Now it is just
 
