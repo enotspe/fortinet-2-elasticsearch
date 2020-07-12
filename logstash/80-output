@@ -7,11 +7,7 @@ input {
 }
 
 filter {
-    #for building the index pattern
-    mutate {
-        lowercase => [ "[organization][name]" ,"[observer][type]" ]
-        strip => [ "[organization][name]" ]
-    }
+
     
 }
 
@@ -20,47 +16,48 @@ output {
 
     if "send_index_error" in [tags] {
         elasticsearch {
-            hosts => ["https://myelkcluster:9243"]
-            user => "myelkuser"
-            password => "password"
+            hosts => ["https://myelkcluster.io:9243"]
+            user => "ingest"
+            password => "mysecretpassword"
             index => "idx_error-write"
         }
     } 
     else if [event][module] in  [ "snmptrap", "snmp" ] {
         elasticsearch {
-            hosts => ["https://myelkcluster:9243"]
-            user => "myelkuser"
-            password => "password"
+            hosts => ["https://myelkcluster.io:9243"]
+            user => "ingest"
+            password => "mysecretpassword"
             index => "ecs-%{[event][module]}-write"
-            pipeline => "add_snmp_timestamp"
+            pipeline => "add_event_ingested"
         }
     } 
     else if [@metadata][beat] {
         elasticsearch {
-            hosts => ["https://myelkcluster:9243"]
-            user => "myelkuser"
-            password => "password"
+            hosts => ["https://myelkcluster.io:9243"]
+            user => "ingest"
+            password => "mysecretpassword"
             index => "ecs-%{[@metadata][beat]}-write"
             pipeline => "add_event_ingested"
         }
     } 
-    else if [event][module] == "fortinet" and [organization][name] {
+    else if [event][module] == "fortinet" {
 
         #stdout { codec => json  }
 
         elasticsearch {
-            hosts => ["https://myelkcluster:9243"]
-            user => "myelkuser"
-            password => "password"
-            index => "ecs-%{[@metadata][idx]}-%{[organization][name]}-write"
+            hosts => ["https://myelkcluster.io:9243"]
+            user => "ingest"
+            password => "mysecretpassword"
+            index => "ecs-%{[@metadata][idx]}-write"
             pipeline => "add_event_ingested"
+			#pipeline => "fortinet_pipeline"
         }
     } 
     else {
         elasticsearch {
-            hosts => ["https://myelkcluster:9243"]
-            user => "myelkuser"
-            password => "password"
+            hosts => ["https://myelkcluster.io:9243"]
+            user => "ingest"
+            password => "mysecretpassword"
             index => "idx_error-write"
         }
     }
