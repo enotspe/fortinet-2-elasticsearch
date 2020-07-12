@@ -2,6 +2,15 @@
 
 ![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn%20Fortinet-2-Elasticsearch.png)
 
+## Update !!!
+
+Turns out that our use case (many fw, many logstash, many clients) was far way more complicated than most use cases (just one fw). So we have simplified the pipelines logic (no more dictionaties) to make it easier for everybody to implement the pipelines. 
+
+Now it is just
+
+Input --> kv --> fortigate_2_ecs --> common_ecs --> enrichment_networks (optional) --> output 
+
+We will be updating docs!
 
 ## Scope
 
@@ -37,7 +46,7 @@ Our focus is to cover security solutions
 
 - [ ] Forticlient (EMS).......is there even a way to get syslog from Forticlients?
 
-- [ ] [enSilo](https://www.fortinet.com/products/fortinet-acquires-ensilo.html) (that would be great!)
+- [ ] FortiEDR ([enSilo](https://www.fortinet.com/products/fortinet-acquires-ensilo.html)) that would be great!
 
 
 
@@ -45,17 +54,17 @@ Our focus is to cover security solutions
 
 We want a full 360° view for monitoring and analysis: 
 
-* syslog
+- [x] syslog
 
-* snmp
+- [x] snmp
 
-* snmptraps
+- [x] snmptraps
 
-* ping (via heartbeat)
+- [x] ping (via heartbeat)
 
-* ssh commands output (diag sys top) ...someday
+- [ ] ssh commands output (diag sys top) ...someday
 
-* [streaming telemetry](http://www.openconfig.net/projects/telemetry/) ...someday it will be supported
+- [ ] [streaming telemetry](http://www.openconfig.net/projects/telemetry/) ...someday it will be supported
 
 
 
