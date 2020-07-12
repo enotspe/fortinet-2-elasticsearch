@@ -1,0 +1,12 @@
+input {
+    pipeline {
+        address => "forticlient_2_ecs"
+    }
+}
+filter {
+}
+output {
+    pipeline {
+        send_to => "common_ecs"
+    }
+}
