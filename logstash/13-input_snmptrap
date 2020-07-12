@@ -19,8 +19,12 @@ filter {
 
 output {
 
+    #stdout {
+    #    codec => rubydebug { metadata => true }
+    #}
+
     pipeline {
-        send_to => "observer_enrichment"
+        send_to => "output" 
     }
 
 }
