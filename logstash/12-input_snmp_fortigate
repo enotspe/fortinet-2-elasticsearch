@@ -1,26 +1,50 @@
 input {
-    
+
+# 192.168.0.1 => Fortinet IP
+
+
+    ##################################### TABLE SSL #########################################################
+    snmp {
+        hosts => [
+                  { host => "udp:192.168.0.1/161" community => "logstash" version => "2c" retries => 3 }
+                 ]
+        tables => [
+            {
+                "name" => "fgVpnSsl"
+                "columns" => [
+                    "1.3.6.1.4.1.12356.101.12.2.4.1.1","1.3.6.1.4.1.12356.101.12.2.4.1.2","1.3.6.1.4.1.12356.101.12.2.4.1.3",
+                    "1.3.6.1.4.1.12356.101.12.2.4.1.4","1.3.6.1.4.1.12356.101.12.2.4.1.5","1.3.6.1.4.1.12356.101.12.2.4.1.6",
+                    "1.3.6.1.4.1.12356.101.12.2.4.1.7","1.3.6.1.4.1.12356.101.12.2.4.1.8",
+                    "1.3.6.1.4.1.12356.101.12.2.3.1.1","1.3.6.1.4.1.12356.101.12.2.3.1.2","1.3.6.1.4.1.12356.101.12.2.3.1.3",
+                    "1.3.6.1.4.1.12356.101.12.2.3.1.4","1.3.6.1.4.1.12356.101.12.2.3.1.5","1.3.6.1.4.1.12356.101.12.2.3.1.6",
+                    "1.3.6.1.4.1.12356.101.12.2.3.1.7"
+                ]
+            }
+        ]
+        get  => ["1.3.6.1.4.1.12356.100.1.1.1.0","1.3.6.1.2.1.1.5.0"]
+        oid_root_skip => 7
+        tags => ["vpn","ssl"]
+        add_field => { "[host][ip]" => "%{[@metadata][host_address]}"}
+        interval => 60
+    }
+
     ##################################### SNMPWALK #########################################################
     snmp {
         hosts => [
-                  { host => "udp:192.109.110.198/161" community => "logstash" version => "2c" retries => 3 },
-                  { host => "udp:192.108.103.194/161" community => "logstash" version => "2c" retries => 3 },
-                  { host => "udp:192.128.204.191/161" community => "logstash" version => "2c" retries => 3 }
+                  { host => "udp:192.168.0.1/161" community => "logstash" version => "2c" retries => 3 }
                  ]
         walk => ["1.3.6.1.2.1.1","1.3.6.1.4.1.12356.101.4.1"]
         get  => ["1.3.6.1.4.1.12356.100.1.1.1.0"]
         tags => ["snmp","cpu","mem","systeminfo"]
         oid_root_skip => 7
-        #mib_paths => ["/etc/logstash/FORTINET-FORTIGATE-MIB.dic"]
+        mib_paths => ["/etc/logstash/FORTINET-FORTIGATE-MIB.dic"]
         add_field => { "[host][ip]" => "%{[@metadata][host_address]}"}
-        interval => 30
+        interval => 60
     }
-    ##################################### TABLES ###########################################################
+    ##################################### TABLES INTERFACES ###########################################################
     snmp {
         hosts => [
-                  { host => "udp:192.109.110.198/161" community => "logstash" version => "2c" retries => 3 },
-                  { host => "udp:192.108.103.194/161" community => "logstash" version => "2c" retries => 3 },
-                  { host => "udp:192.128.204.191/161" community => "logstash" version => "2c" retries => 3 }
+                  { host => "udp:192.168.0.1/161" community => "logstash" version => "2c" retries => 3 }
                  ]
         tables => [
             {
@@ -35,15 +59,22 @@ input {
         oid_root_skip => 7
         tags => ["snmp","interface"]
         add_field => { "[host][ip]" => "%{[@metadata][host_address]}"}
-        interval => 30
+        interval => 60
     }
-    
+
+
 }
 
 filter {
 
+#   https://github.com/elastic/logstash/issues/9007
+#   add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
+    mutate { 
+        add_field => { "[logstash][hostname]" => "${HOSTNAME:no_logstash_hostname}" }
+    }
+
     mutate {
-        add_field => {"[agent][enrichment]" => "logstash"}
+  
         add_field => {"[event][module]" => "snmp"}
     }
     
@@ -125,8 +156,21 @@ filter {
 
 output {
 
-    pipeline {
-        send_to => ["observer_enrichment"]
+    if [event][module] == "snmp"  {
+
+        if "interface" in [tags] {
+            pipeline {
+                send_to => ["snmp_network_fortigate_2_ecs"]
+            }
+        }else if "vpn" in [tags] {
+            pipeline {
+                send_to => ["snmp_others"]
+            }
+        }else{
+            pipeline {
+                send_to => ["snmp_mem_fortigate_2_ecs","snmp_cpu_fortigate_2_ecs", "snmp_others"]
+            }
+        }
     }
 }
 
