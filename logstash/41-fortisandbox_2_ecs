@@ -69,6 +69,7 @@ filter {
 
     }
     mutate {
+        copy =>{ "[device_id]"=> "[observer][serial_number]" }
         copy =>{ "[sip]"=> "[destination][ip]" }
         copy =>{ "[sport]"=> "[destination][port]" }
         copy =>{ "[scaned]"=> "[event][end]" }
