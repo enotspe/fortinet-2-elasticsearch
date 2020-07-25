@@ -8,10 +8,23 @@ PUT _template/ecs-1.5.0?include_type_name
   "aliases": {},
   "mappings": {
     "_doc": {
+      "_routing": {
+        "required": false
+      },
+      "numeric_detection": true,
+      "dynamic_date_formats": [
+        "strict_date_optional_time",
+        "yyyy/MM/dd HH:mm:ss Z||yyyy/MM/dd Z"
+      ],
       "_meta": {
         "version": "1.5.0"
       },
-      "_source": {},
+      "dynamic": true,
+      "_source": {
+        "excludes": [],
+        "includes": [],
+        "enabled": true
+      },
       "dynamic_templates": [
         {
           "strings_as_keyword": {
@@ -23,7 +36,7 @@ PUT _template/ecs-1.5.0?include_type_name
           }
         }
       ],
-      "date_detection": false,
+      "date_detection": true,
       "properties": {
         "server": {
           "type": "object",
