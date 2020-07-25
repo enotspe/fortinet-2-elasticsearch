@@ -4,612 +4,96 @@ PUT _template/fortigate-6.2.2?include_type_name
   "index_patterns": [
     "*-fortigate-*"
   ],
-  "settings": {
-    "index": {
-      "mapping": {
-        "total_fields": {
-          "limit": "10000"
-        }
-      }
-    }
-  },
+  "settings": {},
   "aliases": {},
   "mappings": {
     "_doc": {
       "_routing": {
         "required": false
       },
-      "numeric_detection": false,
+      "numeric_detection": true,
+      "dynamic_date_formats": [
+        "strict_date_optional_time",
+        "yyyy/MM/dd HH:mm:ss Z||yyyy/MM/dd Z"
+      ],
       "_meta": {
         "observer": {
           "product": "Fortigate",
           "vendor": "Fortinet"
         },
-        "fields_removed": [
-          "session_id:long,version:long"
-        ],
         "version": "6.2.2"
       },
+      "dynamic": true,
       "_source": {
         "excludes": [],
         "includes": [],
         "enabled": true
       },
-      "dynamic": true,
-      "dynamic_templates": [
-        {
-          "labels": {
-            "path_match": "labels.*",
-            "mapping": {
-              "type": "keyword"
-            },
-            "match_mapping_type": "string"
-          }
-        },
-        {
-          "fields": {
-            "path_match": "fields.*",
-            "mapping": {
-              "type": "keyword"
-            },
-            "match_mapping_type": "string"
-          }
-        },
-        {
-          "strings_as_keyword": {
-            "mapping": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            },
-            "match_mapping_type": "string"
-          }
-        },
-        {
-          "undefined_string_fields": {
-            "mapping": {
-              "type": "keyword"
-            },
-            "match_mapping_type": "string"
-          }
-        },
-        {
-          "no_doc_values": {
-            "mapping": {
-              "type": "{dynamic_type}"
-            },
-            "match_mapping_type": "*"
-          }
-        }
-      ],
-      "date_detection": false,
+      "dynamic_templates": [],
+      "date_detection": true,
       "properties": {
-        "vcluster": {
-          "type": "long"
-        },
-        "iaid": {
-          "type": "long"
-        },
-        "infectedfilelevel": {
-          "type": "long"
-        },
-        "domainctrlip": {
-          "type": "ip"
-        },
-        "sentdelta": {
-          "type": "long"
-        },
-        "dstport": {
-          "type": "long"
-        },
-        "channel": {
-          "type": "long"
-        },
-        "mgmtcnt": {
-          "type": "long"
-        },
-        "sessionid": {
-          "type": "long"
-        },
-        "remote": {
-          "type": "ip"
-        },
-        "ha_group": {
-          "type": "long"
-        },
-        "aptype": {
-          "type": "long"
-        },
-        "remport": {
-          "type": "long"
-        },
-        "virusid": {
-          "type": "long"
-        },
-        "translationid": {
-          "type": "long"
-        },
-        "cfgtid": {
-          "type": "long"
-        },
-        "scanned": {
-          "type": "long"
-        },
-        "countff": {
-          "type": "long"
-        },
-        "eapolcnt": {
-          "type": "long"
-        },
-        "portend": {
-          "type": "long"
-        },
-        "dstip": {
-          "type": "ip"
-        },
         "nat": {
           "type": "ip"
-        },
-        "identifier": {
-          "type": "long"
-        },
-        "vwpvlanid": {
-          "type": "long"
-        },
-        "newchannel": {
-          "type": "long"
-        },
-        "ip": {
-          "type": "ip"
-        },
-        "srcserver": {
-          "type": "long"
-        },
-        "fams_pause": {
-          "type": "long"
-        },
-        "ovrdid": {
-          "type": "long"
-        },
-        "received": {
-          "type": "long"
-        },
-        "botnetip": {
-          "type": "ip"
-        },
-        "vrf": {
-          "type": "long"
-        },
-        "centralnatid": {
-          "type": "long"
-        },
-        "scantime": {
-          "type": "long"
-        },
-        "chassisid": {
-          "type": "long"
-        },
-        "filteridx": {
-          "type": "long"
-        },
-        "nextstat": {
-          "type": "long"
-        },
-        "setuprate": {
-          "type": "long"
-        },
-        "countweb": {
-          "type": "long"
-        },
-        "remip": {
-          "type": "ip"
-        },
-        "alarmid": {
-          "type": "long"
-        },
-        "apstatus": {
-          "type": "long"
-        },
-        "assigned": {
-          "type": "ip"
-        },
-        "ha-prio": {
-          "type": "long"
-        },
-        "locip": {
-          "type": "ip"
-        },
-        "highcount": {
-          "type": "long"
-        },
-        "domainctrlauthstate": {
-          "type": "long"
-        },
-        "quotaused": {
-          "type": "long"
-        },
-        "stacount": {
-          "type": "long"
-        },
-        "countssh": {
-          "type": "long"
-        },
-        "epoch": {
-          "type": "long"
-        },
-        "filesize": {
-          "type": "long"
-        },
-        "oldchannel": {
-          "type": "long"
-        },
-        "sentpkt": {
-          "type": "long"
-        },
-        "countssl": {
-          "type": "long"
-        },
-        "local": {
-          "type": "ip"
-        },
-        "from_vcluster": {
-          "type": "long"
-        },
-        "ddnsserver": {
-          "type": "ip"
-        },
-        "policyid": {
-          "type": "long"
-        },
-        "sess_duration": {
-          "type": "long"
-        },
-        "sysuptime": {
-          "type": "long"
-        },
-        "encrypt": {
-          "type": "long"
-        },
-        "noise": {
-          "type": "long"
-        },
-        "oldchassisid": {
-          "type": "long"
-        },
-        "disklograte": {
-          "type": "long"
-        },
-        "countapp": {
-          "type": "long"
-        },
-        "infected": {
-          "type": "long"
-        },
-        "lanin": {
-          "type": "long"
-        },
-        "rssi": {
-          "type": "long"
-        },
-        "radioidclosest": {
-          "type": "long"
-        },
-        "column": {
-          "type": "long"
-        },
-        "portbegin": {
-          "type": "long"
-        },
-        "countdns": {
-          "type": "long"
-        },
-        "session_id": {
-          "type": "long"
-        },
-        "domainctrlauthtype": {
-          "type": "long"
-        },
-        "shapingpolicyid": {
-          "type": "long"
-        },
-        "countips": {
-          "type": "long"
-        },
-        "wanout": {
-          "type": "long"
-        },
-        "@timestamp": {
-          "type": "date"
-        },
-        "countemail": {
-          "type": "long"
-        },
-        "event_id": {
-          "type": "long"
-        },
-        "oldslot": {
-          "type": "long"
-        },
-        "quotamax": {
-          "type": "long"
-        },
-        "stage": {
-          "type": "long"
-        },
-        "appid": {
-          "type": "long"
-        },
-        "passedcount": {
-          "type": "long"
-        },
-        "dst_port": {
-          "type": "long"
-        },
-        "lease": {
-          "type": "long"
-        },
-        "rcvddelta": {
-          "type": "long"
-        },
-        "tranport": {
-          "type": "long"
-        },
-        "rcvdbyte": {
-          "type": "long"
-        },
-        "attackid": {
-          "type": "long"
-        },
-        "dstserver": {
-          "type": "long"
-        },
-        "shaperdroprcvdbyte": {
-          "type": "long"
-        },
-        "srcip": {
-          "type": "ip"
-        },
-        "newchassisid": {
-          "type": "long"
-        },
-        "eventtime": {
-          "type": "long"
-        },
-        "pid": {
-          "type": "long"
-        },
-        "used": {
-          "type": "long"
-        },
-        "vwlid": {
-          "type": "long"
-        },
-        "radioiddetected": {
-          "type": "long"
-        },
-        "xid": {
-          "type": "long"
-        },
-        "countav": {
-          "type": "long"
-        },
-        "crscore": {
-          "type": "long"
-        },
-        "newslot": {
-          "type": "long"
-        },
-        "limit": {
-          "type": "long"
-        },
-        "infectedfilesize": {
-          "type": "long"
-        },
-        "qtypeval": {
-          "type": "long"
-        },
-        "processtime": {
-          "type": "long"
-        },
-        "signal": {
-          "type": "long"
-        },
-        "auditid": {
-          "type": "long"
         },
         "assignip": {
           "type": "ip"
         },
-        "vulnid": {
-          "type": "long"
+        "locip": {
+          "type": "ip"
         },
-        "audittime": {
-          "type": "long"
+        "srcip": {
+          "type": "ip"
         },
-        "transid": {
-          "type": "long"
+        "domainctrlip": {
+          "type": "ip"
         },
-        "cfgtxpower": {
-          "type": "long"
-        },
-        "groupid": {
-          "type": "long"
-        },
-        "count": {
-          "type": "long"
-        },
-        "cpu": {
-          "type": "long"
-        },
-        "countdlp": {
-          "type": "long"
+        "ip": {
+          "type": "ip"
         },
         "transip": {
           "type": "ip"
         },
-        "freediskstorage": {
-          "type": "long"
-        },
-        "suspicious": {
-          "type": "long"
-        },
-        "to_vcluster": {
-          "type": "long"
-        },
-        "vcluster_member": {
-          "type": "long"
-        },
-        "craction": {
-          "type": "long"
-        },
-        "mtu": {
-          "type": "long"
-        },
-        "lowcount": {
-          "type": "integer"
-        },
-        "disk": {
-          "type": "long"
-        },
-        "unit": {
-          "type": "long"
-        },
-        "wanin": {
-          "type": "long"
-        },
-        "port": {
-          "type": "long"
-        },
-        "used_for_type": {
-          "type": "long"
-        },
-        "proto": {
-          "type": "long"
-        },
-        "tunnelid": {
-          "type": "long"
-        },
-        "tunnelip": {
+        "botnetip": {
           "type": "ip"
         },
-        "countwaf": {
-          "type": "long"
+        "remote": {
+          "type": "ip"
         },
-        "lanout": {
-          "type": "long"
-        },
-        "eventid": {
-          "type": "long"
-        },
-        "policy_id": {
-          "type": "long"
-        },
-        "fazlograte": {
-          "type": "long"
-        },
-        "slot": {
-          "type": "long"
-        },
-        "domainfilteridx": {
-          "type": "long"
-        },
-        "urlfilteridx": {
-          "type": "long"
-        },
-        "incidentserialno": {
-          "type": "long"
-        },
-        "duration": {
-          "type": "long"
-        },
-        "total": {
-          "type": "long"
-        },
-        "mem": {
-          "type": "long"
-        },
-        "rate": {
-          "type": "long"
-        },
-        "cat": {
-          "type": "long"
-        },
-        "@version": {
-          "type": "keyword"
-        },
-        "countcifs": {
-          "type": "long"
-        },
-        "live": {
-          "type": "long"
-        },
-        "criticalcount": {
-          "type": "long"
-        },
-        "domainctrlprotocoltype": {
-          "type": "long"
-        },
-        "sentbyte": {
-          "type": "long"
-        },
-        "receivedsignature": {
-          "type": "long"
-        },
-        "radioid": {
-          "type": "long"
-        },
-        "mediumcount": {
-          "type": "long"
-        },
-        "transport": {
-          "type": "long"
-        },
-        "shaperdropsentbyte": {
-          "type": "long"
-        },
-        "malform_data": {
-          "type": "long"
-        },
-        "src_port": {
-          "type": "long"
+        "local": {
+          "type": "ip"
         },
         "trueclntip": {
           "type": "ip"
         },
-        "locport": {
-          "type": "long"
+        "@timestamp": {
+          "type": "date"
         },
-        "opertxpower": {
-          "type": "long"
+        "ddnsserver": {
+          "type": "ip"
         },
         "tranip": {
           "type": "ip"
         },
-        "serial": {
-          "type": "long"
+        "remip": {
+          "type": "ip"
         },
-        "shaperperipdropbyte": {
-          "type": "long"
+        "@version": {
+          "type": "keyword"
         },
-        "expectedsignature": {
-          "type": "long"
+        "assigned": {
+          "type": "ip"
         },
-        "srcport": {
-          "type": "long"
+        "logid": {
+          "type": "keyword"
         },
-        "category": {
-          "type": "long"
+        "dstip": {
+          "type": "ip"
         },
-        "age": {
-          "type": "long"
+        "tunnelip": {
+          "type": "ip"
         },
         "gateway": {
           "type": "ip"
-        },
-        "rcvdpkt": {
-          "type": "long"
-        },
-        "totalsession": {
-          "type": "long"
         }
       }
     }
