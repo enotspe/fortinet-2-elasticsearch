@@ -404,6 +404,23 @@ filter {
         }
     }
     
+    # ECS categorization fields for network transport from network protocol
+    if [network][protocol]  {
+        mutate {
+            lowercase => [ "[network][protocol]" ]
+        }
+        grok {
+            match => {
+                "[network][protocol]" => "(?<[network][transport]>(^tcp)|(^udp))"
+           }
+        }
+    }
+    if [network][transport] {
+        mutate {
+            remove_field => ["[network][protocol]"] 
+        }
+    }
+    
 }
 
 output {
