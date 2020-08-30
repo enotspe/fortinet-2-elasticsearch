@@ -305,6 +305,6 @@ filter {
 output {
 
     pipeline {
-            send_to => "enrichment_networks"
+            send_to => "output"
         }
 }
