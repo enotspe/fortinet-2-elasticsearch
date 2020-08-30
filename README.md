@@ -44,7 +44,7 @@ Our focus is to cover security solutions
 
 - [ ] Fortimail.......someday
 
-- [ ] Forticlient (EMS).......is there even a way to get syslog from Forticlients?
+- [X] Forticlient (via FAZ forwarding)
 
 - [ ] FortiEDR ([enSilo](https://www.fortinet.com/products/fortinet-acquires-ensilo.html)) that would be great!
 
