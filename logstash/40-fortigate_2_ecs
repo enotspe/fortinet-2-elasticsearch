@@ -116,8 +116,8 @@ filter {
             copy => { "[fortios][group]" => "[source][user][group][name]" }
         }
 
-        # user and host, for SIEM UI ######################################################################
-        # only for src* fields 
+        # host for SIEM UI ######################################################################
+        # only for src* fields is taken into account
         # https://kb.fortinet.com/kb/viewContent.do?externalId=FD40598&sliceId=1
         #  The data of "dstname" is obtained by a reverse DNS query for the IP address of "dstip"
        
@@ -289,7 +289,7 @@ filter {
         else if [action] in [ "block" , "blocked" , "dropped" ] {
             mutate { add_field => { "[event][type]" => "denied" } }
         }
-        #other actions redirect analytics monitored dropped redirect detected content-disarmed
+        #other actions: redirect analytics monitored dropped redirect detected content-disarmed
 
 #        #just some categories will trigger alert
 
