@@ -113,20 +113,27 @@ filter {
         mutate {
             copy => { "[dstunauthuser]"=> "[destination][user][name]" }
             copy => { "[fortios][user]"=> "[source][user][name]" }
+            copy => { "[fortios][group]" => "[source][user][group][name]" }
         }
 
         # user and host, for SIEM UI ######################################################################
-        # we use undefined for vpn interfaces
-        # not very accuarated :(
-        if [observer][ingress][interface][role] in ["lan","dmz","undefined"] {
-            mutate {
-                copy => { "[source][user][name]" => "[user][name]" }
-                copy => { "[srcname]" => "[host][name]" }
-                copy => { "[mastersrcmac]" => "[host][mac]" }
-                copy => { "[osname]" => "[host][os][name]" }
-                copy => { "[srcswversion]" => "[host][os][version]" }
-            }
+        # only for src* fields 
+        # https://kb.fortinet.com/kb/viewContent.do?externalId=FD40598&sliceId=1
+        #  The data of "dstname" is obtained by a reverse DNS query for the IP address of "dstip"
+       
+        mutate {
+            copy => { "[srcname]" => "[host][name]" }
+            copy => { "[fortios][user]" => "[host][user][name]" }
+            copy => { "[fortios][group]" => "[host][user][group][name]" }
+            copy => { "[srcip]" => "[host][ip]" }
+            copy => { "[mastersrcmac]" => "[host][mac]" }
+            copy => { "[osname]" => "[host][os][name]" }
+            copy => { "[srcswversion]" => "[host][os][version]" }
+            copy => { "[srcfamily]" => "[host][os][family]" }
+            copy => { "[devtype]" => "[host][type]" }
+            copy => { "[srchwvendor]" => "[host][vendor]" }
         }
+        
 
     # ECS categorization fields
         mutate {
