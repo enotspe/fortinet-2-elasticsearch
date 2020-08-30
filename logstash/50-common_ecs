@@ -1,4 +1,4 @@
-input {
+iinput {
     pipeline {
         address => "common_ecs"
     }
@@ -22,6 +22,12 @@ filter {
                 address => [ "%{[source][ip]}" ]
                 network => [ "169.254.0.0/16" ]
         }
+        if ![source][locality] {
+            mutate {
+                copy => { "[source][ip]" => "[@metadata][src_ip_geo_apply]"  }
+                add_field => { "[source][locality]" => "public" }
+            }
+        }
     }
     
     if [source][nat][ip] {
@@ -29,6 +35,12 @@ filter {
                 add_field => {"[source][nat][locality]" => "private"}
                 address => [ "%{[source][nat][ip]}" ]
                 network => [ "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" ]
+        }
+        if ![source][nat][locality] {
+            mutate {
+                copy => { "[source][nat][ip]" => "[@metadata][src_ip_geo_apply]"  }
+                add_field => { "[source][nat][locality]" => "public" }
+            }
         }
     }
 
@@ -48,6 +60,12 @@ filter {
                 address => [ "%{[destination][ip]}" ]
                 network => [ "169.254.0.0/16" ]
         }
+        if ![destination][locality] {
+            mutate {
+                copy => { "[destination][ip]" => "[@metadata][dst_ip_geo_apply]"  }
+                add_field => { "[destination][locality]" => "public" }
+            }
+        }
     }
 
     if [destination][nat][ip] {
@@ -56,37 +74,17 @@ filter {
                 address => [ "%{[destination][nat][ip]}" ]
                 network => [ "10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16" ]
         }
+        if ![destination][nat][locality] {
+            mutate {
+                copy => { "[destination][nat][ip]" => "[@metadata][dst_ip_geo_apply]"  }
+                add_field => { "[destination][nat][locality]" => "public" }
+            }
+        }
     }
 
     #::1 -- ipv6 loopback
     #fe80::/10 -- ipv6 link local
     #fd00::/8 -- ipv6 private networking
-
-    ##### Defining fields to apply geo pluging to source and destination fields
-
-    if [source][locality] not in [ "private", "loopback" , "link-local" ] {
-        mutate {
-            copy => { "[source][ip]" => "[@metadata][src_ip_geo_apply]"  }
-            add_field => { "[source][locality]" => "public" }
-        }
-    }   else if [source][nat][locality] != "private" {
-        mutate {
-            copy => { "[source][nat][ip]" => "[@metadata][src_ip_geo_apply]" }
-            add_field => { "[source][nat][locality]" => "public" }
-        }
-    }
-    
-    if [destination][locality] not in [ "private", "loopback" , "link-local" ] {
-        mutate {
-            copy => { "[destination][ip]" => "[@metadata][dest_ip_geo_apply]" }
-            add_field => { "[destination][locality]" => "public" }
-        }
-    }   else if [destination][nat][locality] != "private" {
-        mutate {
-            copy => { "[destination][nat][ip]" => "[@metadata][dest_ip_geo_apply]" }
-            add_field => { "[destination][nat][locality]" => "public" }
-        }
-    }
         
     #### Appliying geo plugging to fields
     if [@metadata][src_ip_geo_apply] {
