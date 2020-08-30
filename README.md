@@ -8,7 +8,7 @@ Turns out that our use case (many fw, many logstash, many clients) was far way m
 
 Now it is just
 
-Input --> kv --> fortigate_2_ecs --> common_ecs --> enrichment_networks (optional) --> output 
+Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
 
 We will be updating docs!
 
