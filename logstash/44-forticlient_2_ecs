@@ -4,6 +4,58 @@ input {
     }
 }
 filter {
+#remove event.original for saving disk space
+    #mutate{ remove_field => ["[event][original]"]  }
+
+#validea "N/A" on ip fields
+#    if [assigned]=="N/A" { mutate { remove_field => ["assigned"] } }
+
+#ecs translation
+    mutate {
+        add_field => { "[ecs][version]" => "1.5.0" }
+        rename => {"syslog5424_pri" => "[log][syslog][priority]"}
+
+        rename => { "[file]" => "[fortios][file]" }
+        rename => { "[service]" => "[fortios][service]" }
+        rename => { "[url]" => "[fortios][url]" }
+        rename => { "[user]" => "[fortios][user]" }
+
+
+        copy => { "[emsserial]" => "[observer][serial_number]" }
+        copy => { "[emshostname]" => "[observer][hostname]" }
+
+        copy => { "[devid]" => "[agent][id]" }
+        copy => { "[devname]" => "[agent][name]" }
+        copy => { "[fctver]" => "[agent][version]" }
+
+        copy => { "[deviceip]" => "[host][ip]" }
+        copy => { "[devicemac]" => "[host][mac]" }
+        copy => { "[hostname]" => "[host][hostname]" }
+        copy => { "[pcdomain]" => "[host][domain]" }
+        copy => { "[os]" => "[host][os][full]" }
+        copy => { "[fortios][user]" => "[host][user][name]" }
+
+        copy => { "[direction]"=> "[network][direction]" }
+        copy => { "[dstip]"=> "[destination][ip]" }
+        copy => { "[dstport]"=> "[destination][port]" }
+        copy => { "[proto]"=> "[network][iana_number]" }
+        copy => { "[rcvdbyte]"=> "[destination][bytes]" }
+        copy => { "[sentbyte]"=> "[source][bytes]" }
+        copy => { "[fortios][service]"=> "[network][protocol]" }
+        copy => { "[srcip]"=> "[source][ip]" }
+        copy => { "[srcport]"=> "[source][port]" }
+        copy => { "[fortios][url]"=> "[url][full]" }
+        copy => { "[usingpolicy]"=> "[rule][name]" }
+        copy => { "[utmaction]"=> "[event][action]" }
+        copy => { "[msg]"=> "[message]" }
+        copy => { "[error_code]"=> "[error][code]" }
+        copy => { "[fortios][file]"=> "[file][path]" }
+        copy => { "[srcname]"=> "[process][executable]" }
+        copy => { "[srproduct]"=> "[process][name]" }
+        
+
+    }
+
 }
 output {
     pipeline {
