@@ -1,4 +1,4 @@
-iinput {
+input {
     pipeline {
         address => "common_ecs"
     }
@@ -21,6 +21,11 @@ filter {
                 add_field => {"[source][locality]" => "link-local"}
                 address => [ "%{[source][ip]}" ]
                 network => [ "169.254.0.0/16" ]
+        }
+        cidr {
+                add_field => {"[source][locality]" => "multicast"}
+                address => [ "%{[source][ip]}" ]
+                network => [ "224.0.0.0/4" ]
         }
         if ![source][locality] {
             mutate {
@@ -59,6 +64,11 @@ filter {
                 add_field => {"[destination][locality]" => "link-local"}
                 address => [ "%{[destination][ip]}" ]
                 network => [ "169.254.0.0/16" ]
+        }
+        cidr {
+                add_field => {"[destination][locality]" => "multicast"}
+                address => [ "%{[destination][ip]}" ]
+                network => [ "224.0.0.0/4" ]
         }
         if ![destination][locality] {
             mutate {
