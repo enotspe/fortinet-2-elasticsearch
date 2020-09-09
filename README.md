@@ -12,7 +12,7 @@ Input --> kv --> fortigate_2_ecs --> common_ecs --> output
 
 We will be updating docs!
 
-Discord Channel: https://discord.gg/9qn4enV
+Discord Channel:: https://discord.gg/9qn4enV
 
 ## Scope
 
