@@ -21,12 +21,19 @@ filter {
 
     if "fortinet_grok_failure" not in [tags] {
         kv {
-          source => "message"
-          value_split => "="
-          field_split => " "
+            source => "message"
+            value_split => "="
+            field_split => " "
+            #prefix => "fortios." 
+        }
+        
+        if "fortianalyzer" in [tags] {
+            mutate{
+                replace => {"[@metadata][timestamp]" => "%{date} %{time}"}
+            }
         }
 
-        if [event][dataset]=="fortinet.fortigate" {
+        else if [event][dataset]=="fortinet.fortigate" {
             # 6.2 
             if [tz] {
                 mutate  {
