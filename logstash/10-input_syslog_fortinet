@@ -6,6 +6,7 @@ input {
         add_field => {"[event][module]" => "fortinet"}
         add_field => {"[event][dataset]" => "fortinet.fortigate"}
         add_field => {"[@metadata][idx]" => "fortigate"}
+        #tags => [ "fortianalyzer" ]
     }
     
     udp {
@@ -14,6 +15,7 @@ input {
         add_field => {"[event][module]" => "fortinet"}
         add_field => {"[event][dataset]" => "fortinet.fortigate"}
         add_field => {"[@metadata][idx]" => "fortigate"}
+        #tags => [ "fortianalyzer" ]
     }
 
     udp {
@@ -22,7 +24,7 @@ input {
         add_field => {"[event][module]" => "fortinet"}
         add_field => {"[event][dataset]" => "fortinet.fortiweb"}
         add_field => {"[@metadata][idx]" => "fortiweb"}
-        #add_field => {"[org]" => "promperu"}
+        #tags => [ "fortianalyzer" ]
     }
 
     udp {
@@ -31,7 +33,7 @@ input {
         add_field => {"[event][module]" => "fortinet"}
         add_field => {"[event][dataset]" => "fortinet.fortisandbox"}
         add_field => {"[@metadata][idx]" => "fortisandbox"}
-        #add_field => {"[org]" => "auna"}
+        #tags => [ "fortianalyzer" ]
     }
 
     udp {
@@ -40,6 +42,7 @@ input {
         add_field => {"[event][module]" => "fortinet"}
         add_field => {"[event][dataset]" => "fortinet.fortimail"}
         add_field => {"[@metadata][idx]" => "fortimail"}
+        #tags => [ "fortianalyzer" ]
     }
 
     udp {
@@ -48,6 +51,7 @@ input {
         add_field => {"[event][module]" => "fortinet"}
         add_field => {"[event][dataset]" => "fortinet.forticlient"}
         add_field => {"[@metadata][idx]" => "forticlient"}
+        tags => [ "fortianalyzer" ]
     }
 
 
