@@ -19,71 +19,70 @@ filter {
 
 #rename fortisandbox fields that overlap with ECS.    
     mutate {
-        rename => { "error" => "[fsa][error]" }
-        rename => { "host" => "[fsa][host]" }
+        #rename => { "error" => "[fsa][error]" }
+        #rename => { "host" => "[fsa][host]" }
         rename => { "os" => "[fsa][os]" }
-        rename => { "service" => "[fsa][service]" }
-        rename => { "url" => "[fsa][url]" }
-        rename => { "user" => "[fsa][user]" }
+        #rename => { "service" => "[fsa][service]" }
+        #rename => { "url" => "[fsa][url]" }
+        #rename => { "user" => "[fsa][user]" }
     }
 
 
 #ecs translation
     mutate {
         
-        add_field => { "[ecs][version]" => "1.5.0" }
-        rename => {"syslog5424_pri" => "[log][syslog][priority]"}
+        add_field => { "[ecs][version]" => "1.6.0" }
 
-        copy =>{ "[dstip]"=> "[destination][ip]" }
-        copy =>{ "[dstport]"=> "[destination][port]" }
-        copy =>{ "[fsa][error]"=> "[error][message]" }
-        copy =>{ "[action]"=> "[event][action]" }
-        copy =>{ "[subtype]"=> "[event][category]" }
-        copy =>{ "[logid]"=> "[event][code]" }
-#        copy =>{ "[type]"=> "[event][dataset]" }
-        copy =>{ "[etime]"=> "[event][end]" }
-        copy =>{ "[level]"=> "[event][kind]" }
-        copy =>{ "[jstatus]"=> "[event][outcome]" }
-        copy =>{ "[rsrc]"=> "[event][provider]" }
-        copy =>{ "[scanstart]"=> "[event][start]" }
-        copy =>{ "[sharename]"=> "[file][directory]" }
-        copy =>{ "[ftype]"=> "[file][extension]" }
-        copy =>{ "[md5]"=> "[file][hash][md5]" }
-        copy =>{ "[sha1]"=> "[file][hash][sha1]" }
-        copy =>{ "[sha256]"=> "[file][hash][sha256]" }
-        copy =>{ "[fname]"=> "[file][name]" }
-        copy =>{ "[filepath]"=> "[file][path]" }
-        copy =>{ "[sizebin]"=> "[file][size]" }
-        copy =>{ "[fsa][host]"=> "[host][name]" }
-        copy =>{ "[proto]"=> "[network][protocol]" }
-        copy =>{ "[ip]"=> "[network][type]" }
-        copy =>{ "[devid]"=> "[observer][serial_number]" }
-        copy =>{ "[devhost]"=> "[observer][name]" }
-        copy =>{ "[pid]"=> "[process][pid]" }
-        copy =>{ "[cip]"=> "[source][ip]" }
-        copy =>{ "[cport]"=> "[source][port]" }
-        copy =>{ "[suser]"=> "[source][user][name]" }
-        copy =>{ "[hostname]"=> "[url][domain]" }
-        copy =>{ "[fsa][url]"=> "[url][original]" }
-        copy =>{ "[fsa][user]"=> "[user][name]" }
+        rename => {
+            "syslog5424_pri" => "[log][syslog][priority]"
+            "[dstip]"=> "[destination][ip]"
+            "[dstport]"=> "[destination][port]"
+            "[error]"=> "[error][message]"
+            "[action]"=> "[event][action]"
+            "[logid]"=> "[event][code]"
+            "[rsrc]"=> "[event][provider]"
+            "[sharename]"=> "[file][directory]"
+            "[ftype]"=> "[file][extension]"
+            "[md5]"=> "[file][hash][md5]"
+            "[sha1]"=> "[file][hash][sha1]"
+            "[sha256]"=> "[file][hash][sha256]"
+            "[fname]"=> "[file][name]"
+            "[filepath]"=> "[file][path]"
+            "[sizebin]"=> "[file][size]"
+            "[host]"=> "[host][name]"
+            "[proto]"=> "[network][protocol]"
+            "[ip]"=> "[network][type]" 
+            "[devid]"=> "[observer][serial_number]"
+            "[devhost]"=> "[observer][name]"
+            "[pid]"=> "[process][pid]"
+            "[cip]"=> "[source][ip]"
+            "[cport]"=> "[source][port]"
+            "[suser]"=> "[source][user][name]"
+            "[hostname]"=> "[url][domain]"
+            "[url]"=> "[url][original]"
+            "[user]"=> "[user][name]"
+            "[level]"=> "[log][level]"
+        }
+
+        rename => {
+            "[device_id]"=> "[observer][serial_number]"
+            "[devname]"=> "[observer][name]"
+            "[sip]"=> "[destination][ip]"
+            "[sport]"=> "[destination][port]"
+            "[scaned]"=> "[event][end]"
+            "[service]"=> "[network][protocol]"
+            "[srcip]"=> "[source][ip]"
+            "[srcport]"=> "[source][port]"
+            "[susr]"=> "[source][user][name]"
+            "[sid]"=> "[source][user][id]"
+        }
+
+        rename =>{ 
+            "[unauthuser]"=> "[source][user][name]"
+        }
 
     }
-    mutate {
-        copy =>{ "[device_id]"=> "[observer][serial_number]" }
-        copy =>{ "[devname]"=> "[observer][name]" }
-        copy =>{ "[sip]"=> "[destination][ip]" }
-        copy =>{ "[sport]"=> "[destination][port]" }
-        copy =>{ "[scaned]"=> "[event][end]" }
-        copy =>{ "[status]"=> "[event][outcome]" }
-        copy =>{ "[stime]"=> "[event][start]" }
-        copy =>{ "[fsa][service]"=> "[network][protocol]" }
-        copy =>{ "[srcip]"=> "[source][ip]" }
-        copy =>{ "[srcport]"=> "[source][port]" }
-        copy =>{ "[susr]"=> "[source][user][name]" }
-    }
-    mutate {
-        copy =>{ "[unauthuser]"=> "[source][user][name]" }
-    }
+    
 
     #convert scanstart, scanend, stime, etime
     if [scanstart] {
@@ -92,6 +91,7 @@ filter {
             timezone => "%{[event][timezone]}"
             target => "[event][start]"
             tag_on_failure => ["_dateparsefailure_scanstart"]
+            remove_field => [ "scanstart" ]
         }
     }
     if [stime] {
@@ -99,7 +99,8 @@ filter {
             match => [ "stime", "UNIX" ]
             timezone => "%{[event][timezone]}"
             target => "[event][start]"
-            tag_on_failure => ["_dateparsefailure_scanstart"]
+            tag_on_failure => ["_dateparsefailure_stime"]
+            remove_field => [ "stime" ]
         }
     }
     if [scanend] {
@@ -108,6 +109,7 @@ filter {
             timezone => "%{[event][timezone]}"
             target => "[event][end]"
             tag_on_failure => ["_dateparsefailure_scanend"]
+            remove_field => [ "scanend" ]
         }
     }
     if [etime] {
@@ -115,7 +117,8 @@ filter {
             match => [ "etime", "UNIX" ]
             timezone => "%{[event][timezone]}"
             target => "[event][end]"
-            tag_on_failure => ["_dateparsefailure_scanend"]
+            tag_on_failure => ["_dateparsefailure_etime"]
+            remove_field => [ "etime" ]
         }
     }
 }
