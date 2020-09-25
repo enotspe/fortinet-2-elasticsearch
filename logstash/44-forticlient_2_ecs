@@ -8,53 +8,72 @@ filter {
     #mutate{ remove_field => ["[event][original]"]  }
 
 #validea "N/A" on ip fields
-#    if [assigned]=="N/A" { mutate { remove_field => ["assigned"] } }
+    #if [assigned]=="N/A" { mutate { remove_field => ["assigned"] } }
+
+    # browsetime can cause parsing errors
+    if [browsetime] { mutate { remove_field => ["browsetime"] } }
+
+    # sometimes emsserial is not provided on the event, it has to be inputed manually
+    if ![emsserial] { 
+        mutate { 
+            add_field => { "[emsserial]" => "FCTEMS0000107615" }
+            add_tag => [ "added_emsserial_%{emsserial}" ]
+        }
+    }
 
 #ecs translation
     mutate {
-        add_field => { "[ecs][version]" => "1.5.0" }
-        rename => {"syslog5424_pri" => "[log][syslog][priority]"}
+        add_field => { "[ecs][version]" => "1.6.0" }
 
-        rename => { "[file]" => "[fortios][file]" }
-        rename => { "[service]" => "[fortios][service]" }
-        rename => { "[url]" => "[fortios][url]" }
-        rename => { "[user]" => "[fortios][user]" }
+        rename => {
+            "syslog5424_pri" => "[log][syslog][priority]"
+            "[threat]" => "[fortios][threat]"
+            "[emsserial]" => "[observer][serial_number]" 
+            "[emshostname]" => "[observer][hostname]"
+            "[devid]" => "[agent][id]"
+            "[devname]" => "[agent][name]"
+            "[fctver]" => "[agent][version]"
+            "[deviceip]" => "[host][ip]"
+            "[devicemac]" => "[host][mac]"
+            "[error_code]" => "[error][code]"
+            "[hostname]" => "[host][hostname]"
+            "[pcdomain]" => "[host][domain]"
+            "[os]" => "[host][os][full]"
+            "[user]" => "[host][user][name]"
+            "[direction]"=> "[network][direction]" 
+            "[dstip]"=> "[destination][ip]"
+            "[dstport]"=> "[destination][port]"
+            "[proto]"=> "[network][iana_number]"
+            "[rcvdbyte]"=> "[destination][bytes]"
+            "[remotename]"=> "[destination][domain]"
+            "[sentbyte]"=> "[source][bytes]"
+            "[service]"=> "[network][protocol]"
+            "[srcip]"=> "[source][ip]"
+            "[srcport]"=> "[source][port]"
+            "[url]"=> "[url][full]"
+            "[usingpolicy]"=> "[rule][name]"
+            "[utmaction]"=> "[event][action]"
+            "[msg]"=> "[message]"
+            "[file]"=> "[file][path]"
+            "[srcname]"=> "[process][executable]"
+            "[srcproduct]"=> "[process][name]"
+            "[id]"=> "[event][id]"
+            "[level]"=> "[log][level]"
+        }
 
-
-        copy => { "[emsserial]" => "[observer][serial_number]" }
-        copy => { "[emshostname]" => "[observer][hostname]" }
-
-        copy => { "[devid]" => "[agent][id]" }
-        copy => { "[devname]" => "[agent][name]" }
-        copy => { "[fctver]" => "[agent][version]" }
-
-        copy => { "[deviceip]" => "[host][ip]" }
-        copy => { "[devicemac]" => "[host][mac]" }
-        copy => { "[hostname]" => "[host][hostname]" }
-        copy => { "[pcdomain]" => "[host][domain]" }
-        copy => { "[os]" => "[host][os][full]" }
-        copy => { "[fortios][user]" => "[host][user][name]" }
-
-        copy => { "[direction]"=> "[network][direction]" }
-        copy => { "[dstip]"=> "[destination][ip]" }
-        copy => { "[dstport]"=> "[destination][port]" }
-        copy => { "[proto]"=> "[network][iana_number]" }
-        copy => { "[rcvdbyte]"=> "[destination][bytes]" }
-        copy => { "[sentbyte]"=> "[source][bytes]" }
-        copy => { "[fortios][service]"=> "[network][protocol]" }
-        copy => { "[srcip]"=> "[source][ip]" }
-        copy => { "[srcport]"=> "[source][port]" }
-        copy => { "[fortios][url]"=> "[url][full]" }
-        copy => { "[usingpolicy]"=> "[rule][name]" }
-        copy => { "[utmaction]"=> "[event][action]" }
-        copy => { "[msg]"=> "[message]" }
-        copy => { "[error_code]"=> "[error][code]" }
-        copy => { "[fortios][file]"=> "[file][path]" }
-        copy => { "[srcname]"=> "[process][executable]" }
-        copy => { "[srproduct]"=> "[process][name]" }
-        
+        copy => {
+            "[destination][domain]"=> "[url][domain]"
+        }
 
     }
+
+    if [utmevent]=="appfirewall" {
+        mutate { rename => { "[fortios][threat]" => "[network][application]" }   }
+    }
+    else if [utmevent]=="webfilter" {
+        mutate { rename => { "[fortios][threat]" => "[url][category]" }   }
+    }
+
 
 }
 output {
