@@ -44,76 +44,74 @@ filter {
         rename => { "[process]" => "[fortios][process]" }
         rename => { "[server]" => "[fortios][server]" }
         rename => { "[service]" => "[fortios][service]" }
+        rename => { "[threat]" => "[fortios][threat]" }
         rename => { "[url]" => "[fortios][url]" }
         rename => { "[user]" => "[fortios][user]" }
 
-#        remove_field => [ "agent", "error", "file", "group", "hash", "host", "interface", "log", "process", "server", "service", "url", "user" ]
-
         #session_id not numeric on event-wad logs
         rename => { "[session_id]" => "[fortios][session_id]" }
-        remove_field => [ "session_id" ]
 
     }
 
 #ecs translation
     mutate {
-        add_field => { "[ecs][version]" => "1.5.0" }
-        rename => {"syslog5424_pri" => "[log][syslog][priority]"}
+        add_field => { "[ecs][version]" => "1.6.0" }
+        rename => {
+            "syslog5424_pri" => "[log][syslog][priority]"
+            "[devid]" => "[observer][serial_number]"
+            "[devname]" => "[observer][name]"
+            "[level]"=> "[log][level]"
+            "[logid]" => "[event][code]"
+            "[tz]"=> "[event][timezone]"
+        }
 
-        copy => { "[devid]" => "[observer][serial_number]" }
-        copy => { "[devname]" => "[observer][name]" }
-#        copy => { "[eventtime]"=> "[event][start]" }
-        copy => { "[level]"=> "[log][level]" }
-        copy => { "[logid]" => "[event][code]" }
-#        copy => { "[type]"=> "[event][dataset]" }
-        copy => { "[tz]"=> "[event][timezone]" }
     }
 
     if [type] == "traffic" {
         mutate {
-            copy => { "[action]"=> "[event][action]" }
-            copy => { "[app]"=> "[network][application]" }
-            copy => { "[collectedemail]"=> "[source][user][email]" }
-            copy => { "[comment]"=> "[rule][description]" }
-            copy => { "[dstcollectedemail]"=> "[destination][user][email]" }
-            copy => { "[dstintf]"=> "[observer][egress][interface][name]" }
-            copy => { "[dstintfrole]"=> "[observer][egress][interface][role]" }
-            copy => { "[dstip]"=> "[destination][ip]" }
-            copy => { "[dstmac]"=> "[destination][mac]" }
-            copy => { "[dstname]"=> "[destination][address]" }
-            copy => { "[dstport]"=> "[destination][port]" }
-            copy => { "[duration]"=> "[event][duration]" }
-            copy => { "[fortios][group]"=> "[source][user][group][name]" }
-            copy => { "[msg]"=> "[message]" }
-            copy => { "[policyid]"=> "[rule][id]" }
-            copy => { "[policyname]"=> "[rule][name]" }
-            copy => { "[policytype]"=> "[rule][ruleset]" }
-            copy => { "[poluuid]"=> "[rule][uuid]" }
-            copy => { "[proto]"=> "[network][iana_number]" }
-            copy => { "[rcvdbyte]"=> "[destination][bytes]" }
-            copy => { "[rcvdpkt]"=> "[destination][packets]" }
-            copy => { "[sentbyte]"=> "[source][bytes]" }
-            copy => { "[sentpkt]"=> "[source][packets]" }
-            copy => { "[fortios][service]"=> "[network][protocol]" }
-            copy => { "[sessionid]"=> "[network][session_id]" }
-            copy => { "[srcdomain]"=> "[source][domain]" }
-            copy => { "[srcintf]"=> "[observer][ingress][interface][name]" }
-            copy => { "[srcintfrole]"=> "[observer][ingress][interface][role]" }
-            copy => { "[srcip]"=> "[source][ip]" }
-            copy => { "[srcmac]"=> "[source][mac]" }
-            copy => { "[srcport]"=> "[source][port]" }
-            copy => { "[tranip]"=> "[destination][nat][ip]" }
-            copy => { "[tranport]"=> "[destination][nat][port]" }
-            copy => { "[transip]"=> "[source][nat][ip]" }
-            copy => { "[transport]"=> "[source][nat][port]" }
-            copy => { "[unauthuser]"=> "[source][user][name]" }
-            copy => { "[fortios][url]"=> "[url][full]" }
-        }
+            rename => {
+                "[action]"=> "[event][action]"
+                "[app]"=> "[network][application]"
+                "[collectedemail]"=> "[source][user][email]"
+                "[dstcollectedemail]"=> "[destination][user][email]"
+                "[dstintf]"=> "[observer][egress][interface][name]"
+                "[dstintfrole]"=> "[observer][egress][interface][role]"
+                "[dstip]"=> "[destination][ip]"
+                "[dstmac]"=> "[destination][mac]"
+                "[dstname]"=> "[destination][address]"
+                "[dstport]"=> "[destination][port]"
+                "[duration]"=> "[event][duration]"
+                "[fortios][group]"=> "[source][user][group][name]"
+                "[msg]"=> "[message]"
+                "[policyid]"=> "[rule][id]"
+                "[policyname]"=> "[rule][name]"
+                "[poluuid]"=> "[rule][uuid]"
+                "[proto]"=> "[network][iana_number]"
+                "[rcvdbyte]"=> "[destination][bytes]"
+                "[rcvdpkt]"=> "[destination][packets]"
+                "[sentbyte]"=> "[source][bytes]"
+                "[sentpkt]"=> "[source][packets]"
+                "[fortios][service]"=> "[network][protocol]"
+                "[srcdomain]"=> "[source][domain]"
+                "[srcintf]"=> "[observer][ingress][interface][name]"
+                "[srcintfrole]"=> "[observer][ingress][interface][role]"
+                "[srcip]"=> "[source][ip]"
+                "[srcmac]"=> "[source][mac]"
+                "[srcport]"=> "[source][port]"
+                "[tranip]"=> "[destination][nat][ip]"
+                "[tranport]"=> "[destination][nat][port]"
+                "[transip]"=> "[source][nat][ip]"
+                "[transport]"=> "[source][nat][port]"
+                "[fortios][user]"=> "[source][user][name]"
+                "[fortios][url]"=> "[url][full]"
+                "[vrf]"=> "[network][vrf]"
+                "[crscore]"=> "[event][risk_score]"
+            }
+            copy => {
+                "[type]" => "[rule][ruleset]"
+                "[subtype]" => "[rule][category]"
+            }
 
-        mutate {
-            copy => { "[dstunauthuser]"=> "[destination][user][name]" }
-            copy => { "[fortios][user]"=> "[source][user][name]" }
-            copy => { "[fortios][group]" => "[source][user][group][name]" }
         }
 
         # host for SIEM UI ######################################################################
@@ -122,16 +120,21 @@ filter {
         #  The data of "dstname" is obtained by a reverse DNS query for the IP address of "dstip"
        
         mutate {
-            copy => { "[srcname]" => "[host][name]" }
-            copy => { "[fortios][user]" => "[host][user][name]" }
-            copy => { "[fortios][group]" => "[host][user][group][name]" }
-            copy => { "[srcip]" => "[host][ip]" }
-            copy => { "[mastersrcmac]" => "[host][mac]" }
-            copy => { "[osname]" => "[host][os][name]" }
-            copy => { "[srcswversion]" => "[host][os][version]" }
-            copy => { "[srcfamily]" => "[host][os][family]" }
-            copy => { "[devtype]" => "[host][type]" }
-            copy => { "[srchwvendor]" => "[host][vendor]" }
+            rename => {
+                "[srcname]" => "[host][name]"
+                "[mastersrcmac]" => "[host][mac]"
+                "[osname]" => "[host][os][name]"
+                "[srcswversion]" => "[host][os][version]"
+                "[srcfamily]" => "[host][os][family]"
+                "[devtype]" => "[host][type]"
+                "[srchwvendor]" => "[host][vendor]"
+            }
+
+            copy => {
+                "[source][user][name]" => "[host][user][name]"
+                "[source][user][group][name]" => "[host][user][group][name]"
+                "[source][ip]" => "[host][ip]"
+            }
         }
         
 
@@ -160,108 +163,101 @@ filter {
         if [network][application] {
             mutate { add_field => { "[event][type]" => "protocol" } }
         }
+        
+        if [event][risk_score] { mutate { replace => { "[event][kind]" => "alert" } } }
     }
 
 
-    # type=dns for version 6.0 and below. On 6.2, dns is subtype of utm
+    # type=dns for version 6.0 and below. From 6.2, dns is subtype of utm
 
     else if [type]  in [ "utm" , "dns" ] {
         mutate {
-            copy =>{ "[fortios][agent]"=> "[user_agent][original]" }
-            copy =>{ "[app]"=> "[network][application]" }
-            copy =>{ "[appcat]"=> "[rule][category]" }
-            copy =>{ "[applist]"=> "[rule][ruleset]" }
-            copy =>{ "[ccertissuer]"=> "[tls][client][issuer]" }
-            copy =>{ "[dir]"=> "[network][direction]" }
-            
-            copy =>{ "[dst_int]"=> "[observer][egress][interface][name]" }
-            copy =>{ "[dst_port]"=> "[destination][port]" }
-            
-            copy =>{ "[dstintfrole]"=> "[observer][egress][interface][role]" }
-            copy =>{ "[dstip]"=> "[destination][ip]" }
-            
-            copy =>{ "[duration]"=> "[event][duration]" }
-            copy =>{ "[fortios][error]"=> "[error][message]" }
-            copy =>{ "[errorcode]"=> "[error][code]" }
-            copy =>{ "[event_id]"=> "[event][id]" }
-            
-            copy =>{ "[eventtype]"=> "[event][action]" }
-            copy =>{ "[filehash]"=> "[file][hash][crc32]" }
-            copy =>{ "[filename]"=> "[file][name]" }
-            copy =>{ "[filesize]"=> "[file][size]" }
-            copy =>{ "[filetype]"=> "[file][extension]" }
-            copy =>{ "[fortios][group]"=> "[source][user][group][name]" }
-            copy =>{ "[hostname]"=> "[url][domain]" }
             split => { "ipaddr" => ", " }
-            copy =>{ "[ipaddr]"=> "[dns][resolved_ip]" }
-            
-            copy =>{ "[msg]"=> "[message]" }
-            copy =>{ "[policy_id]"=> "[rule][id]" }
-            
-            copy =>{ "[profile]"=> "[rule][ruleset]" }
-            copy =>{ "[proto]"=> "[network][iana_number]" }
-            copy =>{ "[qclass]"=> "[dns][question][class]" }
-            copy =>{ "[qname]"=> "[dns][question][name]" }
-            copy =>{ "[qtype]"=> "[dns][question][type]" }
-            copy =>{ "[rcvdbyte]"=> "[destination][bytes]" }
-            copy =>{ "[reason]"=> "[event][reason]" }
-            copy =>{ "[ref]"=> "[event][reference]" }
-            copy =>{ "[scertcname]"=> "[tls][client][server_name]" }
-            copy =>{ "[scertissuer]"=> "[tls][server][issuer]" }
-            copy =>{ "[sentbyte]"=> "[source][bytes]" }
-            
-            copy =>{ "[fortios][service]"=> "[network][protocol]" }
-#            copy =>{ "[session_id]"=> "[network][session_id]" }
-            
-            copy =>{ "[src_int]"=> "[observer][ingress][interface][name]" }
-            copy =>{ "[src_port]"=> "[source][port]" }
-            copy =>{ "[srcdomain]"=> "[source][domain]" }
-            
-            copy =>{ "[srcintfrole]"=> "[observer][ingress][interface][role]" }
-            copy =>{ "[srcip]"=> "[source][ip]" }
-            copy =>{ "[srcmac]"=> "[source][mac]" }
-            
-            copy =>{ "[unauthuser]"=> "[source][user][name]" }
-            
-            copy =>{ "[vrf]"=> "[network][vrf]" }
-            copy =>{ "[xid]"=> "[dns][id]" }
-
+            rename => {
+                "[fortios][agent]"=> "[user_agent][original]"
+                "[app]"=> "[network][application]"
+                "[applist]"=> "[rule][name]"
+                "[ccertissuer]"=> "[tls][client][issuer]"
+                "[dir]"=> "[network][direction]"
+                "[dst_int]"=> "[observer][egress][interface][name]"
+                "[dst_port]"=> "[destination][port]"
+                "[dstintfrole]"=> "[observer][egress][interface][role]"
+                "[dstip]"=> "[destination][ip]"
+                "[duration]"=> "[event][duration]"
+                "[fortios][error]"=> "[error][message]"
+                "[errorcode]"=> "[error][code]"
+                "[event_id]"=> "[event][id]"
+                "[eventtype]"=> "[event][action]"
+                "[filehash]"=> "[file][hash][crc32]"
+                "[filename]"=> "[file][name]"
+                "[filesize]"=> "[file][size]"
+                "[filetype]"=> "[file][extension]"
+                "[fortios][group]"=> "[source][user][group][name]"
+                "[hostname]"=> "[url][domain]"
+                "[ipaddr]"=> "[dns][resolved_ip]"
+                "[msg]"=> "[message]"
+                "[policy_id]"=> "[rule][id]"
+                "[profile]"=> "[rule][name]"
+                "[proto]"=> "[network][iana_number]"
+                "[qclass]"=> "[dns][question][class]"
+                "[qname]"=> "[dns][question][name]"
+                "[qtype]"=> "[dns][question][type]"
+                "[rcvdbyte]"=> "[destination][bytes]"
+                "[reason]"=> "[event][reason]"
+                "[ref]"=> "[event][reference]"
+                "[scertcname]"=> "[tls][client][server_name]"
+                "[scertissuer]"=> "[tls][server][issuer]"
+                "[sentbyte]"=> "[source][bytes]"
+                "[fortios][service]"=> "[network][protocol]"
+                "[src_int]"=> "[observer][ingress][interface][name]"
+                "[src_port]"=> "[source][port]"
+                "[srcdomain]"=> "[source][domain]"
+                "[srcintfrole]"=> "[observer][ingress][interface][role]"
+                "[srcip]"=> "[source][ip]"
+                "[srcmac]"=> "[source][mac]"
+                "[fortios][user]"=> "[source][user][name]"
+                "[vrf]"=> "[network][vrf]"
+                "[xid]"=> "[dns][id]"
+                "[fortios][url]"=> "[url][path]"
+                "[crscore]"=> "[event][risk_score]"
+            }
+            copy => {
+                "[type]" => "[rule][ruleset]"
+                "[subtype]" => "[rule][category]"
+            }
         }
         
         mutate{
-            copy =>{ "[catdesc]"=> "[rule][category]" }
-            copy =>{ "[direction]"=> "[network][direction]" }
-            copy =>{ "[dstintf]"=> "[observer][egress][interface][name]" }
-            copy =>{ "[eventid]"=> "[event][id]" }
-            copy =>{ "[hostname]"=> "[destination][domain]" }
-            copy =>{ "[locip]"=> "[source][ip]" }
-            copy =>{ "[locport]"=> "[source][port]" }
-            copy =>{ "[policyid]"=> "[rule][id]" }
-            copy =>{ "[sessionid]"=> "[network][session_id]" }
-            copy =>{ "[srcintf]"=> "[observer][ingress][interface][name]" }
-            copy =>{ "[fortios][user]"=> "[source][user][name]" }
-            copy =>{ "[remip]"=> "[destination][ip]" }
-            copy =>{ "[remport]"=> "[destination][port]" }
-            copy =>{ "[voip_proto]"=> "[network][protocol]" }
-            
+            rename => {
+                "[direction]"=> "[network][direction]"
+                "[dstintf]"=> "[observer][egress][interface][name]"
+                "[eventid]"=> "[event][id]"
+                "[hostname]"=> "[destination][domain]"
+                "[locip]"=> "[source][ip]"
+                "[locport]"=> "[source][port]"
+                "[policyid]"=> "[rule][id]"
+                "[srcintf]"=> "[observer][ingress][interface][name]"
+                "[remip]"=> "[destination][ip]"
+                "[remport]"=> "[destination][port]"
+                "[voip_proto]"=> "[network][protocol]"
+            }
         }
 
         mutate {
-            copy =>{ "[dstport]" => "[destination][port]" }
-            copy =>{ "[srcport]" => "[source][port]" }
+            rename =>{ 
+                "[dstport]" => "[destination][port]"
+                "[srcport]" => "[source][port]"
+            }
         }
 
         if [subtype] =="virus" {
-        	mutate { copy =>{ "[fortios][url]"=> "[url][full]" } }
+        	mutate { rename =>{ "[url][path]"=> "[url][full]" } }
         } 
-        else {
-        	mutate { copy =>{ "[fortios][url]"=> "[url][path]" }}
-        }
         
 
     # ECS categorization fields
         mutate {
-            add_field => { "[event][kind]" => "alert" }
+            add_field => { "[event][kind]" => "event" }
             add_field => { "[event][type]" => "connection" }
         }
         if [subtype] == "virus" {
@@ -291,58 +287,61 @@ filter {
         }
         #other actions: redirect analytics monitored dropped redirect detected content-disarmed
 
+        if [event][risk_score] { mutate { replace => { "[event][kind]" => "alert" } } }
 #        #just some categories will trigger alert
-
-        if [subtype] in [ "webfilter" , "dns" ] {
-            if [catdesc] not in ["Alcohol","Discrimination","Drug Abuse","Dynamic DNS","Explicit Violence","Extremist Groups","Freeware and Software Downloads","Gambling","Hacking","Illegal or Unethical","Malicious Websites","Marijuana","Newly Observed Domain","Newly Registered Domain","Nudity and Risque","Other Adult Materials","Peer-to-peer file sharing","Phishing","Plagiarism","Pornography","Proxy Avoidance","Remote Access","Spam URLs","Tobacco","Weapons (sales)"]{
-                mutate {remove_field => [ "[event][kind]" ] }
-            }
-        }
-
-        if [subtype] == "app-ctrl" {
-            if [appcat] not in ["Botnet","P2P","Proxy","Remote.Access"]{    
-                mutate {remove_field => [ "[event][kind]" ] }
-            }
-        }
-
-        if [subtype] == "voip" {
-            if [action] == "permit" {    
-                mutate {remove_field => [ "[event][kind]" ] }
-            }
-        }
+#
+#        if [subtype] in [ "webfilter" , "dns" ] {
+#            if [catdesc] not in ["Alcohol","Discrimination","Drug Abuse","Dynamic DNS","Explicit Violence","Extremist Groups","Freeware and Software Downloads","Gambling","Hacking","Illegal or Unethical","Malicious Websites","Marijuana","Newly Observed Domain","Newly Registered Domain","Nudity and Risque","Other Adult Materials","Peer-to-peer file sharing","Phishing","Plagiarism","Pornography","Proxy Avoidance","Remote Access","Spam URLs","Tobacco","Weapons (sales)"]{
+#                mutate { replace => { "[event][kind]" => "event" } }
+#            }
+#        }
+#
+#        if [subtype] == "app-ctrl" {
+#            if [appcat] not in ["Botnet","P2P","Proxy","Remote.Access"]{    
+#                mutate { replace => { "[event][kind]" => "event" } }
+#            }
+#        }
+#
+#        if [subtype] == "voip" {
+#            if [action] == "permit" {    
+#                utate { replace => { "[event][kind]" => "event" } }
+#            }
+#        }
 
     }  
 
     else if [type] == "event" {
         mutate{
 
-             copy =>{ "[fortios][agent]"=> "[user_agent][original]" }
-             copy =>{ "[daddr]"=> "[destination][address]" }
-             copy =>{ "[dir]"=> "[network][direction]" }
-             copy =>{ "[direction]"=> "[network][direction]" }
-             copy =>{ "[dstip]"=> "[destination][ip]" }
-             copy =>{ "[dstport]"=> "[destination][port]" }
-             copy =>{ "[duration]"=> "[event][duration]" }
-             copy =>{ "[fortios][error]"=> "[error][message]" }
-             copy =>{ "[error_num]"=> "[error][code]" }
+            copy =>{ "[fortios][agent]"=> "[user_agent][original]" }
+            copy =>{ "[daddr]"=> "[destination][address]" }
+            copy =>{ "[dir]"=> "[network][direction]" }
+            copy =>{ "[direction]"=> "[network][direction]" }
+            copy =>{ "[dstip]"=> "[destination][ip]" }
+            copy =>{ "[dstport]"=> "[destination][port]" }
+            copy =>{ "[duration]"=> "[event][duration]" }
+            copy =>{ "[fortios][error]"=> "[error][message]" }
+            copy =>{ "[error_num]"=> "[error][code]" }
              
-             copy =>{ "[fortios][file]"=> "[file][name]" }
-             copy =>{ "[filesize]"=> "[file][size]" }
-             copy =>{ "[fortios][group]"=> "[user][group][name]" }
-             copy =>{ "[hostname]"=> "[url][domain]" }
+            copy =>{ "[fortios][file]"=> "[file][name]" }
+            copy =>{ "[filesize]"=> "[file][size]" }
+            copy =>{ "[fortios][group]"=> "[user][group][name]" }
+            copy =>{ "[hostname]"=> "[url][domain]" }
              
-             copy =>{ "[msg]"=> "[message]" }
-             copy =>{ "[policyid]"=> "[rule][id]" }
-             copy =>{ "[proto]"=> "[network][iana_number]" }
-             copy =>{ "[rcvdbyte]"=> "[destination][bytes]" }
-             copy =>{ "[saddr]"=> "[source][address]" }
-             copy =>{ "[sentbyte]"=> "[source][bytes]" }
-             copy =>{ "[fortios][service]"=> "[network][protocol]" }
-             copy =>{ "[sess_duration]"=> "[event][duration]" }
-             copy =>{ "[source_mac]"=> "[source][mac]" }
+            copy =>{ "[msg]"=> "[message]" }
+            copy =>{ "[policyid]"=> "[rule][id]" }
+            copy =>{ "[proto]"=> "[network][iana_number]" }
+            copy =>{ "[rcvdbyte]"=> "[destination][bytes]" }
+            copy =>{ "[saddr]"=> "[source][address]" }
+            copy =>{ "[sentbyte]"=> "[source][bytes]" }
+            copy =>{ "[fortios][service]"=> "[network][protocol]" }
+            copy =>{ "[sess_duration]"=> "[event][duration]" }
+            copy =>{ "[source_mac]"=> "[source][mac]" }
 
-             copy =>{ "[fortios][user]"=> "[user][name]" }
-             copy =>{ "[fortios][url]"=> "[url][path]" }
+            copy =>{ "[fortios][user]"=> "[user][name]" }
+            copy =>{ "[fortios][url]"=> "[url][path]" }
+
+            copy =>{ "[observer]"=> "[host]" }
         }
 
         mutate{
@@ -383,17 +382,17 @@ filter {
             timezone => "%{[event][timezone]}"
             target => "[event][start]"
             tag_on_failure => ["_dateparsefailure_eventtime"]
+            remove_field => [ "eventtime" ]
         }
     }
 
-    ##### source.address ###########################################################################
-
-    if [source][user][name] {
-        mutate { add_field => { "[source][address]" => "%{[source][user][name]}" }    }    
-    }
-    else if [source][ip] {
-        mutate { add_field => { "[source][address]" => "%{[source][ip]}" }    }    
-    }
+#    source.address
+#    if [source][user][name] {
+#        mutate { add_field => { "[source][address]" => "%{[source][user][name]}" }    }    
+#    }
+#    else if [source][ip] {
+#        mutate { add_field => { "[source][address]" => "%{[source][ip]}" }    }    
+#    }
     
 #   fortigate crash log. "msg" field is too big and creates ramdom fields
 #   https://github.com/enotspe/fortinet-2-elasticsearch/issues/4
@@ -418,6 +417,5 @@ output {
     pipeline {
         send_to => "common_ecs"
     }
-
 
 }
