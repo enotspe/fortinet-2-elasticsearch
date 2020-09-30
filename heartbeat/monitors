@@ -1,1 +1,16 @@
-#
+# Monitor naming convention
+- hosts:
+  - 1.1.1.1
+  name: SITE - WAN INTERFACE - FIREWALL_NAME
+  id: icmp1.1.1.18-SITE-WAN_INTERFACE-FIREWALL_NAME
+  tags: ["SITE","Internet"]
+  type: icmp
+  schedule: '@every 30s'
+  timeout: 3s
+  enabled: true
+  fields_under_root: true
+  fields:
+    host:
+      name: FIREWALL_NAME
+    organization:
+       name: my_org
