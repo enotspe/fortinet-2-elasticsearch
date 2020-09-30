@@ -173,6 +173,8 @@ filter {
     else if [type]  in [ "utm" , "dns" ] {
         mutate {
             split => { "ipaddr" => ", " }
+        }
+        mutate {
             rename => {
                 "[fortios][agent]"=> "[user_agent][original]"
                 "[app]"=> "[network][application]"
@@ -417,5 +419,6 @@ output {
     pipeline {
         send_to => "common_ecs"
     }
+
 
 }
