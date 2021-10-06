@@ -358,8 +358,8 @@ filter {
     # https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml
     if [network][iana_number] and ![network][transport] {
         translate {
-            field => "[network][iana_number]"
-            destination => "[network][transport]"
+            source => "[network][iana_number]"
+            target => "[network][transport]"
             dictionary => {
                 "0"=>"HOPOPT"
                 "1"=>"ICMP"
