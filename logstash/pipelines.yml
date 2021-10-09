@@ -1,0 +1,18 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+- pipeline.id: input
+  path.config: "/etc/logstash/conf.d/input.conf"
+- pipeline.id: kv
+  path.config: "/etc/logstash/conf.d/kv_syslog.conf"
+- pipeline.id: fortigate
+  path.config: "/etc/logstash/conf.d/fortigate_2_ecs.conf"
+- pipeline.id: fortimail
+  path.config: "/etc/logstash/conf.d/fortimail_2_ecs.conf"
+- pipeline.id: forticlient
+  path.config: "/etc/logstash/conf.d/forticlient_2_ecs.conf"
+- pipeline.id: common_ecs
+  path.config: "/etc/logstash/conf.d/common_ecs.conf"
+- pipeline.id: output
+  path.config: "/etc/logstash/conf.d/output.conf"
