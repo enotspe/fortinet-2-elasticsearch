@@ -255,7 +255,28 @@ filter {
         if [subtype] =="virus" {
         	mutate { rename =>{ "[url][path]"=> "[url][full]" } }
         } 
+
+        ### extended logging on webfilter
+        # https://docs.fortinet.com/document/fortigate/6.2.4/fortios-log-message-reference/496081/enabling-extended-logging
+        #config webfilter profile
+        #    edit "test-webfilter"
+        #        set extended-log enable
+        #        set web-extended-all-action-log enable
+        #    next
+        #end
+
+        kv { 
+            source => "rawdata"
+            field_split => "|"
+        }
         
+        mutate {
+            rename =>{ 
+                "[Method]" => "[http][request][method]"
+                "[User-Agent]" => "[user_agent][original]"
+                "[Referer]" => "[http][request][referrer]"
+            }
+        }
 
     # ECS categorization fields
         mutate {
