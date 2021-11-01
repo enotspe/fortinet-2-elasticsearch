@@ -1,4 +1,4 @@
-# FortiUnicorn (fortinet-2-elasticsearch)
+# FortiDragon (fortinet-2-elasticsearch)
 
 ![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn%20Fortinet-2-Elasticsearch.png)
 
