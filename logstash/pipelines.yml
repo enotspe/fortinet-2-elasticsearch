@@ -12,6 +12,10 @@
   path.config: "/etc/logstash/conf.d/fortimail_2_ecs.conf"
 - pipeline.id: forticlient
   path.config: "/etc/logstash/conf.d/forticlient_2_ecs.conf"
+- pipeline.id: fortisandbox
+  path.config: "/etc/logstash/conf.d/fortisandbox_2_ecs.conf"
+- pipeline.id: fortiweb
+  path.config: "/etc/logstash/conf.d/fortiweb_2_ecs.conf"
 - pipeline.id: common_ecs
   path.config: "/etc/logstash/conf.d/common_ecs.conf"
 - pipeline.id: output
