@@ -1,0 +1,30 @@
+PUT _index_template/logs-fortinet.fortigate.traffic
+{
+  "priority": 200,
+  "index_patterns": [
+    "logs-fortinet.fortigate.traffic*"
+  ],
+  "data_stream": {
+    "hidden": false
+  },
+  "composed_of": [
+    "ecs_1.12.0_base",
+    "ecs_1.12.0_user",
+    "ecs_1.12.0_observer",
+    "ecs_1.12.0_destination",
+    "ecs_1.12.0_source",
+    "ecs_1.12.0_network",
+    "ecs_1.12.0_event",
+    "ecs_1.12.0_url",
+    "ecs_1.12.0_log",
+    "ecs_1.12.0_rule",
+    "ecs_1.12.0_data_stream",
+    "ecs_1.12.0_organization",
+    "ecs_1.12.0_ecs",
+    "ecs_1.12.0_host",
+    "fortigate-6.2.2",
+    "strings_as_keywords_mapping",
+    "logs-fortinet.fortigate-settings",
+    "logs-fortinet.fortigate.traffic-ilm"
+  ]
+}
