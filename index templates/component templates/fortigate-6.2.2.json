@@ -559,6 +559,12 @@
         },
         "totalsession": {
           "type": "long"
+        },
+        "jitter": {
+          "type": "long"
+        },
+        "latency": {
+          "type": "long"
         }
       }
     }
