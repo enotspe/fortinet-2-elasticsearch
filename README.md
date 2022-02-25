@@ -16,19 +16,18 @@ Discord Channel:: https://discord.gg/9qn4enV
 
 ## Scope
 
+We want to make sense out of Fortinet logs,
 We will cover all the road for squeezing all possible information out of Fortinet logs on Elasticseach:
 
-- [x] ECS translation
+- [x] Dataset analisys & ECS translation
 
-- [x] Logstash pipelines (including geo enrichment, other manipulations as tenant enrichment, dropping guest networks, observer enrichment, etc.)
+- [x] Logstash pipelines
 
-- [x] index templates
+- [x] Datastreams (ILM, index component, index template)
 
-- [x] index patterns
+- [x] Dashboards
 
-- [x] dashboards
-
-- [ ] event alerts
+- [ ] Transforms
 
 - [ ] ML alerts
 
@@ -36,7 +35,7 @@ We will cover all the road for squeezing all possible information out of Fortine
 
 ## Products 
 
-Our focus is to cover security solutions
+Our focus is to cover security solutions, but we are mainly focused on Fortigate logs
 
 - [x] Fortigate (of course!)
 
@@ -48,25 +47,11 @@ Our focus is to cover security solutions
 
 - [X] Forticlient (via FAZ forwarding)
 
-- [ ] FortiEDR ([enSilo](https://www.fortinet.com/products/fortinet-acquires-ensilo.html)) that would be great!
+- [ ] FortiEDR
 
 
 
-## Inputs
 
-We want a full 360° view for monitoring and analysis: 
-
-- [x] syslog
-
-- [x] snmp
-
-- [x] snmptraps
-
-- [x] ping (via heartbeat)
-
-- [ ] ssh commands output (diag sys top) ...someday
-
-- [ ] [streaming telemetry](http://www.openconfig.net/projects/telemetry/) ...someday it will be supported
 
 
 
@@ -154,6 +139,8 @@ Same logic as Fortigate. No type separation has been made tough.
 ## Logstash
 
 
+Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
+
 
 We have tried to make our pipelines as modular as possible, witout any "hardcoding" inside them. For enrichment, we manage "dictionaries", so we can dynamically enrich any data we want, and we can change each dictionary per logstash, which gives the flexibility we are looking for because we have a multitenant deployment, with many logstash deployed all over, and no direct correlation between a logstash and a tenant ( logstash != tenant). So we need to have a very flexible pipeline architecture. 
 
@@ -162,8 +149,7 @@ This might not be your case, no problem, just use the pipelines you need!
 
 The overall pipeline flow is as follows:
 
-
-![pipelien flow](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/pipeline%20flow.png)
+Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
 
 It is important the sequence of the pipelines, mainly for HA scenarios. We are doing some enrichments via dictionaries that then get overriden with log data. Take for example `observer.serial_number`: it gets populated on `Observer Enrichment` pipeline, but it gets overriden on `FortiXXX 2 ECS` with the translation of `devid` field. This is on purpose, because it allows to have just one entry on the dictionary (on HA both devices are exactly the same) but have accuarate data about the specefic properties of the devices on an HA pair (serial_number, name)
 
@@ -172,40 +158,6 @@ It is important the sequence of the pipelines, mainly for HA scenarios. We are d
 
 
 Just receives syslog logs and populated event.module depending on udp port.
-
-
-
-### Observer Enrichment
-
-
-
-Depending on the IP of the firewall (IP sending logs), it looks up on two dictionaries. On the first one, it enriches observer (firewall) properties. On the second one, it enrichs observer (firewall) location. This 2 dictionaries could be merged into one, because the key is the same: *"[observer][ip]"*. 
-
-
-
-If not found in the dictionary, it means we are receiving logs from an unknown firewall and it tags it as so.
-
-
-
-**Properties Dictionary**
-
-
-
-**"[observer][ip]"** : "[observer][name]","[observer][hostname]","[observer][mac]","[observer][product]","[observer][serial_number]","[observer][type]","[observer][vendor]","[observer][version]","[organization][id]","[organization][name]"
-
-
-
-**Geo Dictionary**
-
-
-
-**"[observer][ip]"** : "[observer][geo][city_name]","[observer][geo][continent_name]","[observer][geo][country_iso_code]","[observer][geo][country_name]","[observer][geo][location][lon]","[observer][geo][location][lat]","[observer][geo][name]","[observer][geo][region_iso_code]","[observer][geo][region_name]","[event][timezone]","[observer][geo][site]","[observer][geo][building]","[observer][geo][floor]","[observer][geo][room]","[observer][geo][rack]","[observer][geo][rack_unit]"
-
-
-
-We have added some fields to ECS geo so we can have the exact location: site, building, floor, room, rack, rack_unit.
-
-Maybe, this is not very critical for firewalls, because you usually have just a couple of firewalls per site. However, we added it as a part of our inventory because we also manage switches and APs, and for those you do need the exact location.
 
 
 
@@ -241,20 +193,6 @@ Based on the spreadsheet:
 
 
 
-### Geo Enrichment
-
-
-
-source.ip/source.nat.ip and destination.ip/destination.nat.ip are inspected to decide whether they are public or private address with the help of [.locality](https://github.com/elastic/ecs/pull/288) fields. 
-
-If they are public, then geo enrichment is applied.
-
-
-
-### Drop
-
-Security is a big data problem, that you have to pay for it. 
-Here, guest networks (or any defined networks) are dropped. There is no need, at least in our case, for ingesting guest networks logs. Guest networks are looked up dynamically from a dictionary.
 
 
 
@@ -265,20 +203,8 @@ Here, guest networks (or any defined networks) are dropped. There is no need, at
 This is crucial for index strategy:
 
 
-"ecs-%{[event][module]}-%{[organization][name]}-write"
 
 
-
-3 index templates rule it all, each template points to its specific index pattern:
-
-* [ecs-](https://github.com/elastic/ecs/blob/master/generated/elasticsearch/7/template.json): deals with ECS mapping.
-
-* %{[event][module]} which could be fortigate, fortisandbox, fortiweb: deals with fortiX mapping.
-
-* %{[organization][name]}: deals with ILM template, shard allocation specific to the tenant.
-
-
-Because we have a multitenant scenario, we manage different retention policies per tenant, while ECS mapping is the same for all indexes, and every Fortinet product has its own mapping for original fields.
 
 ## Dashboards
 
@@ -323,7 +249,7 @@ config log fortianalyzer filter
 
 ## Authors
 
-Logstash pipelines and Elasticsearch config [@hoat23](https://github.com/hoat23)
+Logstash pipelines and Elasticsearch config [@hoat23](https://github.com/hoat23) and [@enotspe](https://github.com/enotspe)
 
 Dataset analysis and Kibana [@enotspe](https://github.com/enotspe)
 
