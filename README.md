@@ -6,21 +6,21 @@
 
 So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!
 
-But wait! Doesn't Elastic provide a Filebeat module for Fortinet???
+But wait! Doesn't Elastic provide a [Filebeat module for Fortinet](https://github.com/elastic/beats/pull/17890)???
 
 Why should you go with all the logstash hassle??
 
-Well, Filebeatm module and Fortidragon are like causins. Filebeat module logic for Fortigate was based on FortiDragon, we colaborated with Elastic when they built that module.
+Well, Filebeat module and Fortidragon are like causins. Filebeat module logic for Fortigate was based on FortiDragon, we colaborated with Elastic when they built that module.
 
 The main differences would be
 
 | Category | FortiDragon | Filebeat |
 | -------- | ----------- | ---------|
-| Dashboard | We got super cool Dashboards!!! | None yet :( |
-| Updates | Much more often | Dependant to Elastic updates |
+| Dashboard | We got super cool dashboards!!! | None yet :( |
+| Updates | Much more often | Dependant to Elastic releases |
 | Installation | Harder| Easier |
 
-The real reason behind is that we use FortiDragon on our day to day operations for threat hunting, so the updates and constant evolution is more fluid.
+The real reason behind is that we use FortiDragon on our day to day operations for threat hunting, so updates and constant evolution is more fluid.
 
 If you can handle the hassle of logstash installation, it is worth the effort.
 
@@ -28,17 +28,44 @@ If you can handle the hassle of logstash installation, it is worth the effort.
 
 Let's get this party on!!!
 
-Fortigate
+### On Fortigate
 
-Configure syslog
-extendend logging
+1. Configure syslog
 
+```
+    config log syslogd setting
+        set status enable
+        set server "logstash_IP"
+        set port 5140
+    end
+```
 
-Install Logstash
-Put the pipelines on conf.d
-Install plugin
+2. [Extendend logging on webfilter](https://docs.fortinet.com/document/fortigate/7.2.0/fortios-log-message-reference/496081/enabling-extended-logging) **OPTIONAL**
 
+```
+    config webfilter profile
+        edit "test-webfilter"
+            set extended-log enable
+            set web-extended-all-action-log enable
+        next
+    end
+```
+    No need for syslogd on mode reliable
 
+### On Logstash
+
+1. [Install Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html)
+
+2. A good idea would be to setup your ES password as a [secret](https://www.elastic.co/guide/en/logstash/current/keystore.html#add-keys-to-keystore)
+
+2. Install tld filter plugin
+
+    cd /usr/share/logstash
+    sudo bin/logstash-plugin install logstash-filter-tld
+
+3. Copy [pipelines.yml](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/logstash/pipelines.yml) to your logstash folder
+4. Copy [conf.d](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder
+5. Start logstash
 
 
 ## Update !!!
@@ -177,6 +204,13 @@ Same logic as Fortigate. No type separation has been made tough.
 
 ## Logstash
 
+```mermaid
+graph TD;
+    Input-->kv;
+    kv-->fortigate_2_ecs;
+    fortigate_2_ecs-->common_ecs;
+    common_ecs-->output;
+```
 
 Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
 
