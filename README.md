@@ -205,7 +205,7 @@ Same logic as Fortigate. No type separation has been made tough.
 ## Logstash
 
 ```mermaid
-graph TD;
+graph LR;
     Input-->kv;
     kv-->fortigate_2_ecs;
     fortigate_2_ecs-->common_ecs;
