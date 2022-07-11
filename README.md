@@ -2,6 +2,24 @@
 
 ![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn%20Fortinet-2-Elasticsearch.png)
 
+So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!
+
+But wait! Doesn't Elastic provide a Filebeat module for Fortinet???
+
+Why should you go with all the logstash hassle??
+
+Well, Filebeatm module and Fortidragon are like causins. Filebeat module logic for Fortigate was based on FortiDragon, we colaborated with Elastic when they built that module.
+
+The main differences would be
+
+| Category | FortiDragon | Filebeat |
+| -------- | ----------- | ---------|
+| Dashboard | We got super cool Dashboards!!! | None yet :( |
+| Updates | Much more often | Dependant to Elastic updates |
+| Installation | Harder| Easier |
+
+The real reason behind is that we use FortiDragon on our day to day operations for threat hunting, so the updated and constant evolution is more fluid.
+
 ## Update !!!
 
 Turns out that our use case (many fw, many logstash, many clients) was far way more complicated than normal use cases (just one fw). So we have simplified the pipelines logic (no more dictionaries) to make it easier for everybody to implement the pipelines. 
