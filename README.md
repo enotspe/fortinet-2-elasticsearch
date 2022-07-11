@@ -2,6 +2,8 @@
 
 ![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn%20Fortinet-2-Elasticsearch.png)
 
+## FortiDragon vs Filebeat
+
 So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!
 
 But wait! Doesn't Elastic provide a Filebeat module for Fortinet???
@@ -18,7 +20,26 @@ The main differences would be
 | Updates | Much more often | Dependant to Elastic updates |
 | Installation | Harder| Easier |
 
-The real reason behind is that we use FortiDragon on our day to day operations for threat hunting, so the updated and constant evolution is more fluid.
+The real reason behind is that we use FortiDragon on our day to day operations for threat hunting, so the updates and constant evolution is more fluid.
+
+If you can handle the hassle of logstash installation, it is worth the effort.
+
+## TL;DR
+
+Let's get this party on!!!
+
+Fortigate
+
+Configure syslog
+extendend logging
+
+
+Install Logstash
+Put the pipelines on conf.d
+Install plugin
+
+
+
 
 ## Update !!!
 
