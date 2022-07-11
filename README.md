@@ -202,27 +202,26 @@ Same logic as Fortigate. No type separation has been made tough.
 **[FortiWeb_6.2.0_Log_Reference - Public](https://docs.google.com/spreadsheets/d/19YpCfLGtaU3DnDRWTLKaQXOoVc4up7lFCu1SfCIofT4/edit?usp=sharing)**
 
 
-## Logstash
+## Pipelines sequence
+
+The overall pipeline flow is as follows:
 
 ```mermaid
 graph LR;
     Input-->kv;
     kv-->fortigate_2_ecs;
+    kv-->forticlient_2_ecs;
+    kv-->fortimail_2_ecs;
+    kv-->fortisandbox_2_ecs;
+    kv-->fortiweb_2_ecs;
     fortigate_2_ecs-->common_ecs;
+    forticlient_2_ecs-->common_ecs;
+    fortimail_2_ecs-->common_ecs;
+    fortisandbox_2_ecs-->common_ecs;
+    fortiweb_2_ecs-->common_ecs;
     common_ecs-->output;
 ```
 
-Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
-
-
-We have tried to make our pipelines as modular as possible, witout any "hardcoding" inside them. For enrichment, we manage "dictionaries", so we can dynamically enrich any data we want, and we can change each dictionary per logstash, which gives the flexibility we are looking for because we have a multitenant deployment, with many logstash deployed all over, and no direct correlation between a logstash and a tenant ( logstash != tenant). So we need to have a very flexible pipeline architecture. 
-
-This might not be your case, no problem, just use the pipelines you need!
-
-
-The overall pipeline flow is as follows:
-
-Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
 
 It is important the sequence of the pipelines, mainly for HA scenarios. We are doing some enrichments via dictionaries that then get overriden with log data. Take for example `observer.serial_number`: it gets populated on `Observer Enrichment` pipeline, but it gets overriden on `FortiXXX 2 ECS` with the translation of `devid` field. This is on purpose, because it allows to have just one entry on the dictionary (on HA both devices are exactly the same) but have accuarate data about the specefic properties of the devices on an HA pair (serial_number, name)
 
