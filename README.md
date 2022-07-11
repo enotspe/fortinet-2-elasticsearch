@@ -209,14 +209,14 @@ The overall pipeline flow is as follows:
 ```mermaid
 graph LR;
     Input-->kv;
-    kv-->fortigate_2_ecs;
-    kv-->forticlient_2_ecs;
     kv-->fortimail_2_ecs;
+    kv-->forticlient_2_ecs;
+    kv-->fortigate_2_ecs;
     kv-->fortisandbox_2_ecs;
     kv-->fortiweb_2_ecs;
-    fortigate_2_ecs-->common_ecs;
     forticlient_2_ecs-->common_ecs;
     fortimail_2_ecs-->common_ecs;
+    fortigate_2_ecs-->common_ecs;
     fortisandbox_2_ecs-->common_ecs;
     fortiweb_2_ecs-->common_ecs;
     common_ecs-->output;
