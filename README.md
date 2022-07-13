@@ -2,6 +2,18 @@
 
 ![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn%20Fortinet-2-Elasticsearch.png)
 
+## Engage
+
+Join our commuty on [Discord](https://discord.gg/9qn4enV)
+
+You are already saving a lot of money by using Fortinet+Elastic, so consider making a contribution to the project
+
+[Paypal](paypal.me/fortidragon)
+
+[Buy me a coffee](https://www.buymeacoffee.com/fortidragon)
+
+Patreon: soon
+
 ## FortiDragon vs Filebeat
 
 So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!
@@ -16,7 +28,7 @@ The main differences would be
 
 | Category | FortiDragon | Filebeat |
 | -------- | ----------- | ---------|
-| Dashboard | We got super cool dashboards!!! | None yet :( |
+| Dashboard | We got super cool dashboards!!! | None yet 😢 |
 | Updates | Much more often | Dependant to Elastic releases |
 | Installation | Harder| Easier |
 
@@ -50,7 +62,71 @@ Let's get this party on!!!
         next
     end
 ```
-    No need for syslogd on mode reliable
+No need for syslogd on mode reliable, at least on v6.2 and v.6.4
+
+### On Kibana
+
+1. Load ingest pipeline
+
+```
+PUT _ingest/pipeline/add_event_ingested
+{
+  "processors": [
+    {
+      "set": {
+        "field": "event.ingested",
+        "value": "{{_ingest.timestamp}}"
+      }
+    }
+  ]
+}
+```
+
+2. Create ILM policies according to your needs. You can use these [examples](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/ilm). Make sure you name them:
+
+- logs-fortinet.fortigate.traffic
+- logs-fortinet.fortigate.utm
+- logs-fortinet.fortigate.event
+
+In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs.
+
+3. Load [component templates](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). You can use this [script](https://github.com/elastic/ecs/tree/main/generated/elasticsearch#instructions) or do it manually one by one:
+
+```
+PUT _component_template/ecs-base
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-base.html",
+    "ecs_version": "8.3.1"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "labels": {
+          "type": "object"
+        },
+        "message": {
+          "type": "match_only_text"
+        },
+        "tags": {
+          "ignore_above": 1024,
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
+```
+
+4. Load index templates
+
+Load ILM
+Load componen templates
+Create templates
+Load dashboards
 
 ### On Logstash
 
@@ -59,10 +135,10 @@ Let's get this party on!!!
 2. A good idea would be to setup your ES password as a [secret](https://www.elastic.co/guide/en/logstash/current/keystore.html#add-keys-to-keystore)
 
 2. Install tld filter plugin
-
+```
     cd /usr/share/logstash
     sudo bin/logstash-plugin install logstash-filter-tld
-
+```
 3. Copy [pipelines.yml](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/logstash/pipelines.yml) to your logstash folder
 4. Copy [conf.d](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder
 5. Start logstash
