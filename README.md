@@ -121,12 +121,9 @@ PUT _component_template/ecs-base
 }
 ```
 
-4. Load index templates
+4. Load [index templates](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/index%20templates)
 
-Load ILM
-Load componen templates
-Create templates
-Load dashboards
+5. Load [Dashboards](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/kibana): Go to Management --> Stack Management --> saved Objects --> Import
 
 ### On Logstash
 
@@ -141,7 +138,7 @@ Load dashboards
 ```
 3. Copy [pipelines.yml](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/logstash/pipelines.yml) to your logstash folder
 4. Copy [conf.d](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder
-5. Start logstash
+5. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
 
 
 ## Update !!!
