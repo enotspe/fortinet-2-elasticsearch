@@ -4,9 +4,9 @@
 
 ## Engage
 
-Join our commuty on [Discord](https://discord.gg/9qn4enV)
+Join our community on [Discord](https://discord.gg/9qn4enV). Feel free to ask about anything on the channel.
 
-You are already saving a lot of money by using Fortinet+Elastic, so consider making a contribution to the project
+You are already saving a lot of money by using Fortinet+Elastic, so consider making a contribution to the project. (It is **NOT** a must for asking for help)
 
 [Paypal](paypal.me/fortidragon)
 
@@ -16,13 +16,13 @@ Patreon: soon
 
 ## FortiDragon vs Filebeat
 
-So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!
+So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!!
 
 But wait! Doesn't Elastic provide a [Filebeat module for Fortinet](https://github.com/elastic/beats/pull/17890)???
 
 Why should you go with all the logstash hassle??
 
-Well, Filebeat module and Fortidragon are like causins. Filebeat module logic for Fortigate was based on FortiDragon, we colaborated with Elastic when they built that module.
+Well, Filebeat module and Fortidragon are like cousins. The logic for Filebeat module  for Fortigate was based on FortiDragon, we colaborated together with Elastic when they built the module.
 
 The main differences would be
 
@@ -140,54 +140,77 @@ PUT _component_template/ecs-base
 4. Copy [conf.d](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder
 5. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
 
+Hopefully you should be enjoying the dashboards by now.
 
-## Update !!!
+## Pipelines sequence
 
-Turns out that our use case (many fw, many logstash, many clients) was far way more complicated than normal use cases (just one fw). So we have simplified the pipelines logic (no more dictionaries) to make it easier for everybody to implement the pipelines. 
+The overall pipeline flow is as follows:
 
-Now it is just
+```mermaid
+graph LR;
+    Input-->kv;
+    kv-->fortimail_2_ecs;
+    kv-->forticlient_2_ecs;
+    kv-->fortigate_2_ecs;
+    kv-->fortisandbox_2_ecs;
+    kv-->fortiweb_2_ecs;
+    forticlient_2_ecs-->common_ecs;
+    fortimail_2_ecs-->common_ecs;
+    fortigate_2_ecs-->common_ecs;
+    fortisandbox_2_ecs-->common_ecs;
+    fortiweb_2_ecs-->common_ecs;
+    common_ecs-->output;
+```
 
-Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
 
-We will be updating docs!
-
-Discord Channel:: https://discord.gg/9qn4enV
-
-## Scope
-
-We want to make sense out of Fortinet logs,
-We will cover all the road for squeezing all possible information out of Fortinet logs on Elasticseach:
-
-- [x] Dataset analisys & ECS translation
-
-- [x] Logstash pipelines
-
-- [x] Datastreams (ILM, index component, index template)
-
-- [x] Dashboards
-
-- [ ] Transforms
-
-- [ ] ML alerts
+### Input Syslog
 
 
 
-## Products 
+Just receives syslog logs and populated event.module depending on udp port.
 
-Our focus is to cover security solutions, but we are mainly focused on Fortigate logs
 
-- [x] Fortigate (of course!)
 
-- [x] Fortisandbox
+### KV Syslog
 
-- [X] Fortiweb
 
-- [ ] Fortimail.......someday
 
-- [X] Forticlient (via FAZ forwarding)
+Splits the original log into key-value pairs, and sets the timestamp. Timezone is also dynamically obtained from a dictionary. Our firewalls live in different timezones.
 
-- [ ] FortiEDR
 
+
+### FortiXXX 2 ECS
+
+
+
+Based on the spreadsheet:
+
+
+
+* Validates nulls on IP fields (Fortinet loves to fill with "N/A" null fields, which turns into ingestion errors if your field has IP mapping)
+
+
+
+* Renames fortinet fields that overlaps with ECS
+
+
+
+* Translates fortinet field to ECS. We are doing ECS "enrichment", leaving original fortinet fields as well. If you want to replace fields, just change "copy" to "rename".
+
+
+
+* Populates other ECS fields based on ECS recommendations. (related ip, source.address, event.start, etc.)
+
+
+
+
+
+
+### Output
+
+
+
+This is crucial for index strategy:
 
 
 
@@ -275,77 +298,7 @@ Same logic as Fortigate. No type separation has been made tough.
 **[FortiWeb_6.2.0_Log_Reference - Public](https://docs.google.com/spreadsheets/d/19YpCfLGtaU3DnDRWTLKaQXOoVc4up7lFCu1SfCIofT4/edit?usp=sharing)**
 
 
-## Pipelines sequence
 
-The overall pipeline flow is as follows:
-
-```mermaid
-graph LR;
-    Input-->kv;
-    kv-->fortimail_2_ecs;
-    kv-->forticlient_2_ecs;
-    kv-->fortigate_2_ecs;
-    kv-->fortisandbox_2_ecs;
-    kv-->fortiweb_2_ecs;
-    forticlient_2_ecs-->common_ecs;
-    fortimail_2_ecs-->common_ecs;
-    fortigate_2_ecs-->common_ecs;
-    fortisandbox_2_ecs-->common_ecs;
-    fortiweb_2_ecs-->common_ecs;
-    common_ecs-->output;
-```
-
-
-It is important the sequence of the pipelines, mainly for HA scenarios. We are doing some enrichments via dictionaries that then get overriden with log data. Take for example `observer.serial_number`: it gets populated on `Observer Enrichment` pipeline, but it gets overriden on `FortiXXX 2 ECS` with the translation of `devid` field. This is on purpose, because it allows to have just one entry on the dictionary (on HA both devices are exactly the same) but have accuarate data about the specefic properties of the devices on an HA pair (serial_number, name)
-
-### Input Syslog
-
-
-
-Just receives syslog logs and populated event.module depending on udp port.
-
-
-
-### KV Syslog
-
-
-
-Splits the original log into key-value pairs, and sets the timestamp. Timezone is also dynamically obtained from a dictionary. Our firewalls live in different timezones.
-
-
-
-### FortiXXX 2 ECS
-
-
-
-Based on the spreadsheet: 
-
-
-
-* Validates nulls on IP fields (Fortinet loves to fill with "N/A" null fields, which turns into ingestion errors if your field has IP mapping)
-
-
-
-* Renames fortinet fields that overlaps with ECS
-
-
-
-* Translates fortinet field to ECS. We are doing ECS "enrichment", leaving original fortinet fields as well. If you want to replace fields, just change "copy" to "rename".
-
-
-
-* Populates other ECS fields based on ECS recommendations. (related ip, source.address, event.start, etc.)
-
-
-
-
-
-
-### Output
-
-
-
-This is crucial for index strategy:
 
 
 
