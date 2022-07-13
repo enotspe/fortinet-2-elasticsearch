@@ -2,6 +2,145 @@
 
 ![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn%20Fortinet-2-Elasticsearch.png)
 
+## Engage
+
+Join our commuty on [Discord](https://discord.gg/9qn4enV)
+
+You are already saving a lot of money by using Fortinet+Elastic, so consider making a contribution to the project
+
+[Paypal](paypal.me/fortidragon)
+
+[Buy me a coffee](https://www.buymeacoffee.com/fortidragon)
+
+Patreon: soon
+
+## FortiDragon vs Filebeat
+
+So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!
+
+But wait! Doesn't Elastic provide a [Filebeat module for Fortinet](https://github.com/elastic/beats/pull/17890)???
+
+Why should you go with all the logstash hassle??
+
+Well, Filebeat module and Fortidragon are like causins. Filebeat module logic for Fortigate was based on FortiDragon, we colaborated with Elastic when they built that module.
+
+The main differences would be
+
+| Category | FortiDragon | Filebeat |
+| -------- | ----------- | ---------|
+| Dashboard | We got super cool dashboards!!! | None yet 😢 |
+| Updates | Much more often | Dependant to Elastic releases |
+| Installation | Harder| Easier |
+
+The real reason behind is that we use FortiDragon on our day to day operations for threat hunting, so updates and constant evolution is more fluid.
+
+If you can handle the hassle of logstash installation, it is worth the effort.
+
+## TL;DR
+
+Let's get this party on!!!
+
+### On Fortigate
+
+1. Configure syslog
+
+```
+    config log syslogd setting
+        set status enable
+        set server "logstash_IP"
+        set port 5140
+    end
+```
+
+2. [Extendend logging on webfilter](https://docs.fortinet.com/document/fortigate/7.2.0/fortios-log-message-reference/496081/enabling-extended-logging) **OPTIONAL**
+
+```
+    config webfilter profile
+        edit "test-webfilter"
+            set extended-log enable
+            set web-extended-all-action-log enable
+        next
+    end
+```
+No need for syslogd on mode reliable, at least on v6.2 and v.6.4
+
+### On Kibana
+
+1. Load ingest pipeline
+
+```
+PUT _ingest/pipeline/add_event_ingested
+{
+  "processors": [
+    {
+      "set": {
+        "field": "event.ingested",
+        "value": "{{_ingest.timestamp}}"
+      }
+    }
+  ]
+}
+```
+
+2. Create ILM policies according to your needs. You can use these [examples](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/ilm). Make sure you name them:
+
+- logs-fortinet.fortigate.traffic
+- logs-fortinet.fortigate.utm
+- logs-fortinet.fortigate.event
+
+In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs.
+
+3. Load [component templates](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). You can use this [script](https://github.com/elastic/ecs/tree/main/generated/elasticsearch#instructions) or do it manually one by one:
+
+```
+PUT _component_template/ecs-base
+{
+  "_meta": {
+    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-base.html",
+    "ecs_version": "8.3.1"
+  },
+  "template": {
+    "mappings": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "labels": {
+          "type": "object"
+        },
+        "message": {
+          "type": "match_only_text"
+        },
+        "tags": {
+          "ignore_above": 1024,
+          "type": "keyword"
+        }
+      }
+    }
+  }
+}
+```
+
+4. Load [index templates](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/index%20templates)
+
+5. Load [Dashboards](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/kibana): Go to Management --> Stack Management --> saved Objects --> Import
+
+### On Logstash
+
+1. [Install Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html)
+
+2. A good idea would be to setup your ES password as a [secret](https://www.elastic.co/guide/en/logstash/current/keystore.html#add-keys-to-keystore)
+
+2. Install tld filter plugin
+```
+    cd /usr/share/logstash
+    sudo bin/logstash-plugin install logstash-filter-tld
+```
+3. Copy [pipelines.yml](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/logstash/pipelines.yml) to your logstash folder
+4. Copy [conf.d](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder
+5. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
+
+
 ## Update !!!
 
 Turns out that our use case (many fw, many logstash, many clients) was far way more complicated than normal use cases (just one fw). So we have simplified the pipelines logic (no more dictionaries) to make it easier for everybody to implement the pipelines. 
@@ -136,20 +275,26 @@ Same logic as Fortigate. No type separation has been made tough.
 **[FortiWeb_6.2.0_Log_Reference - Public](https://docs.google.com/spreadsheets/d/19YpCfLGtaU3DnDRWTLKaQXOoVc4up7lFCu1SfCIofT4/edit?usp=sharing)**
 
 
-## Logstash
-
-
-Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
-
-
-We have tried to make our pipelines as modular as possible, witout any "hardcoding" inside them. For enrichment, we manage "dictionaries", so we can dynamically enrich any data we want, and we can change each dictionary per logstash, which gives the flexibility we are looking for because we have a multitenant deployment, with many logstash deployed all over, and no direct correlation between a logstash and a tenant ( logstash != tenant). So we need to have a very flexible pipeline architecture. 
-
-This might not be your case, no problem, just use the pipelines you need!
-
+## Pipelines sequence
 
 The overall pipeline flow is as follows:
 
-Input --> kv --> fortigate_2_ecs --> common_ecs --> output 
+```mermaid
+graph LR;
+    Input-->kv;
+    kv-->fortimail_2_ecs;
+    kv-->forticlient_2_ecs;
+    kv-->fortigate_2_ecs;
+    kv-->fortisandbox_2_ecs;
+    kv-->fortiweb_2_ecs;
+    forticlient_2_ecs-->common_ecs;
+    fortimail_2_ecs-->common_ecs;
+    fortigate_2_ecs-->common_ecs;
+    fortisandbox_2_ecs-->common_ecs;
+    fortiweb_2_ecs-->common_ecs;
+    common_ecs-->output;
+```
+
 
 It is important the sequence of the pipelines, mainly for HA scenarios. We are doing some enrichments via dictionaries that then get overriden with log data. Take for example `observer.serial_number`: it gets populated on `Observer Enrichment` pipeline, but it gets overriden on `FortiXXX 2 ECS` with the translation of `devid` field. This is on purpose, because it allows to have just one entry on the dictionary (on HA both devices are exactly the same) but have accuarate data about the specefic properties of the devices on an HA pair (serial_number, name)
 
