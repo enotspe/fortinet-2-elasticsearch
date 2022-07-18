@@ -16,11 +16,9 @@ You are already saving a lot of money by using Fortinet+Elastic, so consider mak
 
 So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!! 👍
 
-But wait! Doesn't Elastic provide a [Filebeat module for Fortinet](https://github.com/elastic/beats/pull/17890)???
+But wait! Doesn't Elastic provide a [Filebeat module for Fortinet](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-fortinet.html)??? Why should you go with all the logstash hassle?? 🤷
 
-Why should you go with all the logstash hassle?? 🤷
-
-Well, Filebeat module and Fortidragon are like cousins 👪. The logic for Filebeat module for Fortigate was based on FortiDragon, we colaborated together with Elastic when they made it.
+Well, Filebeat module and Fortidragon are like cousins 👪. The logic for Filebeat module for Fortigate was based on FortiDragon, [we colaborated together with Elastic when they made it](https://github.com/elastic/beats/pull/17890).
 
 The main differences would be
 
@@ -86,7 +84,7 @@ PUT _ingest/pipeline/add_event_ingested
 - logs-fortinet.fortigate.utm
 - logs-fortinet.fortigate.event
 
-In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs. Other slicing ideas can be found below.
+In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs. Other slicing ideas can be found [below](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master#output).
 
 3. Load [component templates](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). You can use this [script](https://github.com/elastic/ecs/tree/main/generated/elasticsearch#instructions) or do it manually one by one:
 
@@ -121,9 +119,9 @@ PUT _component_template/ecs-base
 
 4. Load [index templates](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/index%20templates)
 
-5. Load [Dashboards](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/kibana): Go to Management --> Stack Management --> saved Objects --> Import
+5. Load [Dashboards](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/kibana): Go to Management --> Stack Management --> Saved Objects --> Import
 
-6. Enable dashboard controls Go to Management --> Kibana Advanced Settings --> Presentation Labs --> Enable dashboard controls
+6. Enable dashboard controls: Go to Management --> Kibana Advanced Settings --> Presentation Labs --> Enable dashboard controls
 
 ### On Logstash
 
@@ -139,7 +137,7 @@ Add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a se
 echo $HOSTNAME | tee  -a /etc/default/logstash
 ```
 
-It is very useful is you run several logstash.
+It is very useful if you run several logstash instances.
 
 4. Install tld filter plugin
 ```
@@ -185,8 +183,8 @@ Splits the original log into key-value pairs and sets the timestamp. Timezone is
 
 ### Fortigate 2 ECS
 
-* Validates nulls on IP fields (Fortinet loves to fill with "N/A" null fields, which turns into ingestion errors if your field has IP mapping)
-* Renames Fortigate fields that overlaps with ECS
+* Validates nulls on IP fields (Fortinet loves to fill with "N/A" null fields, which turns into ingestion errors if your field has IP mapping).
+* Renames Fortigate fields that overlaps with ECS.
 * Translates Fortigate field to ECS by `type` of logs.
 * Introduces `network.protocol_category` used on dashboards controls.
 * Populates other ECS fields based on ECS recommendations, like `event.kind`, `event.category`, `event.type`.
@@ -196,17 +194,17 @@ Splits the original log into key-value pairs and sets the timestamp. Timezone is
 
 Populates several ECS fields based on other present fields.
 
-- `*.locality` for private, loopback, link-local, multicast and public addresses. **These fields and not ECS official fields**
-- Geo localitzation of IPs 🌎
-- `related.ip` and `related.user`
-- `network.bytes` and `network.packets`
-- `event.duration` ⌛
+- `*.locality` for private, loopback, link-local, multicast and public addresses. **These fields and not ECS official fields**.
+- Geo localitzation of IPs. 🌎
+- `related.ip` and `related.user`.
+- `network.bytes` and `network.packets`.
+- `event.duration`. ⌛
 - `event.hour_of_day` and `event.day_of_week`. **These fields and not ECS official fields**.
 - Calcualtes `network.community_id` just for tcp/udp.
-- Registered domain
-- Url parsing
-- `user_agent.*`
-- `network.transport`
+- Registered domain.
+- Url parsing.
+- `user_agent.*`.
+- `network.transport`.
 
 ### Output
 
@@ -222,7 +220,7 @@ We need your help for getting the datasets for versions 6.2 and forward. Current
 
 ### Translations Sheets
 
-Once we got the Log Reference guides turned into spreadsheets we could process the data. We had to denormalize data, merge fields, verify fields mapping (data type), look for filed that overlap with ECS fields, translate fields to ECS, make mappings and pipelines configs.
+Once we got the Log Reference guides turned into spreadsheets we could process the data. We had to denormalize data, merge fields, verify fields mapping (data type), look for fileds that overlap with ECS fields, translate fields to ECS, make mappings and pipelines configs.
 
 We plan to consolidate datasets per major version in a single spreadsheet.
 
@@ -234,7 +232,9 @@ We plan to consolidate datasets per major version in a single spreadsheet.
 
 
 
-Fortigate logs are an ugly beast, mainly because its lack of (good) documentation. Current log reference lacks of field description, no field examples either, logids gets removed without any notice, etc. Starting from 6.2.1, type "utm" was documented, altough it existed long ago. On top of that, GTP events cause some field mismatch mapping like:
+Fortigate logs are an ugly beast, mainly because its lack of (good) documentation. Altough it has been improving, it is still far from being coherent. For example, starting from 6.2.1, type "utm" was documented, altough it existed long ago.
+
+On top of that, GTP events cause some field mismatch mapping like:
 
 
 
@@ -249,6 +249,7 @@ Fortigate logs are an ugly beast, mainly because its lack of (good) documentatio
 
 As far as we are concern, GTP is only part of Fortigate Carrier, which is a different product (¿?) How can Fortigate manage a field that has 2 different data types in its internal relational database? how does fortianalyzer do it? We have no idea because we have never seen GTP events on a real scenario. In order to avoid any data type mismatch, GTP events are not going to be considered, and unless you use Fortigate Carrier, you are not going to see them either.
 
+The spreadsheet goes like:
 
 1. `Data 6.2.X` is the denormalized data set obtained from the Log Reference Guide of version 6.2.X. This is the raw dataset of every version.
 
@@ -295,9 +296,9 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 
 1. Top level reference Fortinet´s type field: traffic, utm or event. UTM is already disaggregated so it can be easier to go to an specif UTM type, just like in Fortigate´s Logs & Report section.
 
-2. Second level dives into *traffic direction* (if possible). For example: On traffic´s dashboard, we have `Outbound | Inbound | LAN 2 LAN`. It makes total sense to analyze it separetly.
+2. Second level dives into *traffic direction* (if possible). For example: on traffic dashboard, we have `Outbound | Inbound | LAN 2 LAN`. It makes total sense to analyze it separetly.
 
-3. Third level refers to which metric are we using for exploring the dataset: We only use sessions and bytes.
+3. Third level refers to which metric are we using for exploring the dataset: we only use sessions and bytes.
 
 * sessions: we consider each log as a unique session.
 
