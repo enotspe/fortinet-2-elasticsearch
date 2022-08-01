@@ -58,7 +58,7 @@ Let's get this party on!!! 🤩
         next
     end
 ```
-No need for syslogd on mode reliable, at least on v6.2 and v.6.4
+You may get a warning that you need to change to reliable syslogd. Remember that "The full rawdata field of 20KB is only sent to reliable Syslog servers. Other logging devices, such as disk, FortiAnalyzer, and UDP Syslog servers, receive the information, but only keep a maximum of 2KB total log length, including the rawdata field, and discard the rest of the extended log information."
 
 ### On Kibana
 
