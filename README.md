@@ -61,7 +61,7 @@ Let's get this party on!!! 🤩
 You may get a warning that you need to change to reliable syslogd. Remember that "The full rawdata field of 20KB is only sent to reliable Syslog servers. Other logging devices, such as disk, FortiAnalyzer, and UDP Syslog servers, receive the information, but only keep a maximum of 2KB total log length, including the rawdata field, and discard the rest of the extended log information."
 
 3. You can also pump your own fields into Fortigate syslog **OPTIONAL**
-    ```
+```
     config log custom-field
         edit "3"
             set name "org"
@@ -74,7 +74,7 @@ You may get a warning that you need to change to reliable syslogd. Remember that
         set log-policy-name enable
         set custom-log-fields "3"
     end
-    ```
+```
 
 ### On Kibana
 
