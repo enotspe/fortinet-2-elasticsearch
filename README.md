@@ -8,7 +8,7 @@ Join our community on [Discord](https://discord.gg/9qn4enV) 🤓. Feel free to a
 
 You are already saving a lot of money by using Fortinet+Elastic, so consider making a contribution to the project. 💰💰💰 (It is **NOT** a must for asking for help)
 
-- [Paypal](paypal.me/fortidragon)
+- [Paypal](paypal.me/fortidragon) 🤑
 - [Buy me a coffee](https://www.buymeacoffee.com/fortidragon) ☕
 - Patreon: soon
 
