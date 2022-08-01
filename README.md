@@ -32,7 +32,7 @@ The real reason behind is that we use FortiDragon on our day to day operations f
 
 If you can handle the hassle of logstash installation, it is worth the effort.
 
-## TL;DR
+## Installation
 
 Let's get this party on!!! 🤩
 
