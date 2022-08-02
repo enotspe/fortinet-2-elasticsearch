@@ -150,7 +150,7 @@ PUT _component_template/ecs-base
 Add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
 
 ```
-echo $HOSTNAME | tee  -a /etc/default/logstash
+echo HOSTNAME=\""$HOSTNAME"\" | tee  -a /etc/default/logstash
 ```
 
 It is very useful if you run several logstash instances.
