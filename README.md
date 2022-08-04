@@ -78,7 +78,7 @@ You may get a warning that you need to change to reliable syslogd. Remember that
 
 ### On Kibana
 
-1. Load ingest pipeline
+1. Load ingest pipeline **OPTIONAL** Remember to comment out on the output pipeline if you decide not to use it.
 
 ```
 PUT _ingest/pipeline/add_event_ingested
@@ -165,7 +165,7 @@ It is very useful if you run several logstash instances.
 7. [Disable ECS Compatibility](). (FrotiDragon pipelines were created back on logstash v7, so some filters might be incompatible with how renames expect source fields names. It should be fixed soon).
 8. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
 
-Hopefully you should be enjoying your logs by now. 🕺💃
+Hopefully you should be dancing with your logs by now. 🕺💃
 
 ## Pipelines sequence
 
@@ -200,9 +200,9 @@ Splits the original log into key-value pairs and sets the timestamp. Timezone is
 ### Fortigate 2 ECS
 
 * Validates nulls on IP fields (Fortinet loves to fill with "N/A" null fields, which turns into ingestion errors if your field has IP mapping).
-* Renames Fortigate fields that overlaps with ECS.
+* Renames Fortigate fields that overlaps with ECS. In the future this will be done on the kv filter stage, to be more ECS compliant.
 * Translates Fortigate field to ECS by `type` of logs.
-* Introduces `network.protocol_category` used on dashboards controls.
+* Introduces `network.protocol_category` used on dashboards controls. Mega useful!!!
 * Populates other ECS fields based on ECS recommendations, like `event.kind`, `event.category`, `event.type`.
 
 
@@ -349,7 +349,7 @@ We have not tested it yet on FortiOS v7+
 
 ## Roadmap 🛣️
 
-- ECS compatibility for pipelines.
+- ECS compatibility for pipelines. WIP
 - More dashboards: SD-WAN, traffic shapping, consolidated risk-score, etc.
 - Canvas for reports and C-level presentations.
 - Explore other ingest options: [Kafka](https://www.youtube.com/watch?v=KMbRoBbQUVw&feature=youtu.be) and [Rsyslog](https://github.com/enotspe/fortinet-2-elasticsearch/issues/37)
