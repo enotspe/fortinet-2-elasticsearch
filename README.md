@@ -173,27 +173,23 @@ The overall pipeline flow is as follows:
 
 ```mermaid
 graph LR;
-    Input-->kv;
-    kv-->fortimail_2_ecs;
-    kv-->forticlient_2_ecs;
-    kv-->fortigate_2_ecs;
-    kv-->fortisandbox_2_ecs;
-    kv-->fortiweb_2_ecs;
-    forticlient_2_ecs-->common_ecs;
-    fortimail_2_ecs-->common_ecs;
-    fortigate_2_ecs-->common_ecs;
-    fortisandbox_2_ecs-->common_ecs;
-    fortiweb_2_ecs-->common_ecs;
-    common_ecs-->output;
+    fortimail-input-kv-->fortimail_2_ecs;
+    fortiweb-input-kv-->fortiweb_2_ecs;
+    fortigate-input-kv-->fortigate_2_ecs;
+    forticlient-input-kv-->forticlient_2_ecs;
+    fortisandbox-input-kv-->fortisandbox_2_ecs;
+    fortimail_2_ecs-->common_ecs-output;
+    fortiweb_2_ecs-->common_ecs-output;
+    fortigate_2_ecs-->common_ecs-output;
+    forticlient_2_ecs-->common_ecs-output;
+    fortisandbox_2_ecs-->common_ecs-output;
 ```
 
 
-### Input Syslog
+### Input Syslog / KV
 
 Just receives syslog logs and populates `event.module` and `event.dataset` fields depending on udp port.
 You can also uncomment Fortianalyzer tags is you are using it for syslog forwarding. Fortianalyzer stamps its own date format to the log, so it needs to be treated different on next pipeline.
-
-### KV Syslog
 
 Splits the original log into key-value pairs and sets the timestamp. Timezone is also obtained from the log itself if FortiOS v6.2+.
 
@@ -206,7 +202,7 @@ Splits the original log into key-value pairs and sets the timestamp. Timezone is
 * Populates other ECS fields based on ECS recommendations, like `event.kind`, `event.category`, `event.type`.
 
 
-### Common ECS
+### Common ECS / Output
 
 Populates several ECS fields based on other present fields.
 
@@ -221,8 +217,6 @@ Populates several ECS fields based on other present fields.
 - Url parsing.
 - `user_agent.*`.
 - `network.transport`.
-
-### Output
 
 This is crucial for index strategy 🤯. On Fortigate datastreams are split by `type`.
 
