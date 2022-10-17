@@ -245,7 +245,11 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 
 ### Visualizations
 
-Dashboards have 2 sections, the upper visualizations are specific fields for the dataset that it is been analyzed on the dashboard: on webfilter we would see `catdesc` and `url.domain` for example. The lower visualizations are entity specific, on the first row there will always be `source.ip`, `destination.ip`, `network.protocol` which are fields that are present on all logs. The second raw has entities that might be useful on the analysis of that specific dashboard.
+Dashboards have 2 sections:
+
+1. The upper visualizations are specific fields for the dataset that it is been analyzed on the dashboard: on webfilter we would see `catdesc` and `url.domain` for example. The lower visualizations are entity specific, on the first row there will always be `source.ip`, `destination.ip`, `network.protocol` which are fields that are present on all logs.
+
+2. The second raw has entities that might be useful on the analysis of that specific dashboard.
 
 ## Datasets and ECS Translations
 
