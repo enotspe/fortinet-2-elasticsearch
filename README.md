@@ -340,9 +340,9 @@ Ingestion should be about fortifying raw logs as much as possible, so we can mor
 
 ### Plataform
 
-One of the benefits of FortiDragon is that we are not limited to Elastic, we can use any tool we would like. Altough we like ELK, there are some other tools that can be used on specific areas such as Jupyter Notebooks or Google Colab for ML analytics, or Neo4j for relational analysis.
+One of the benefits of FortiDragon is that we are not limited to Elastic, we can use any tool we would like. Altough we love ELK, there are some other tools that can be used on specific areas such as Jupyter Notebooks or Google Colab for ML analytics, or Neo4j for graph analysis.
 
-On the near future, we would like to integrate Loki/Grafana. Logstash already has a [Loki output plugin](https://grafana.com/docs/loki/latest/clients/logstash/), so it should not be very diffult to start testing it.
+On the near future, we would like to integrate Loki/Grafana. Logstash already has a [Loki output plugin](https://grafana.com/docs/loki/latest/clients/logstash/), so it should not be very diffult to start testing it. We want to explore other visualization and alerting options.
 
 ```mermaid
 graph LR;
@@ -353,13 +353,20 @@ graph LR;
     Loki-->Grafana;
 ```
 
-### Analytics
+### Analytics 💡💡💡
 
-- **Transforms: go from logs to Key Security Indicators (KSI)** 💡💡💡
+We got our super enriched logs 🦾, now what 😕?? Well, firewall logs are just firewall logs: lots of them, very few value on each of them. We need to pivot from just logs to datapoints, by defining entities and  features about the behaivor of those entities.
+
+For example, let's say in a period of 1 hour, we see an IP that has had connecions to a thousand different DNS servers, that is really weird, right?
+
+What have we done? We have definied `source.ip` as our entity, and we had definied `unique destination.ip on UDP/53 over 1 hour` as a feature of that entity, transforming all those 1k logs into a single document. We can define many features that can be relevant to take a look at. Those features is what we call Key Security Indicators (KSI) and they will be the foundation for making sense of our network logs. Once we got our KSIs for our entities, we can then profile them just by checking how these KSI evolve over time, or in comparisson to other entities on our infraestructure. We can use Transforms and ML of Elasticsearch for such purpose.
+
+Another particular topic that has always had me wonder is P(A-->B), meaning the probability of A talking to B. We already got all the connections that are running on the network, so obtaining that probability should be trivial. More complex to calculate would be P(A-->B-->C). What we are trying to get is the relations that the different assets of our network have. If we mix this with the KSI of every individual asset, we can have a very powerful analysis. This seems particular useful for lateral movement and beaconing. For such analytics we need a graph database like Neo4j.
 
 ### Visualization
 
 - More dashboards: SD-WAN, traffic shapping, consolidated risk-score, etc.
+- Vega visualiations.
 - Canvas for reports and C-level presentations. 🖌
 
 ## Authors
