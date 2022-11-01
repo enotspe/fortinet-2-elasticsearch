@@ -8,9 +8,7 @@ Join our community on [Discord](https://discord.gg/9qn4enV) 🤓. Feel free to a
 
 You are already saving a lot of money by using Fortinet+Elastic, so consider making a contribution to the project. 💰💰💰 (It is **NOT** a must for asking for help)
 
-- [Paypal](paypal.me/fortidragon) 🤑
-- [Buy me a coffee](https://www.buymeacoffee.com/fortidragon) ☕
-- Patreon: soon
+- [Paypal](https://www.paypal.com/paypalme/fortidragon) 🤑
 
 ## FortiDragon 🆚 Filebeat
 
@@ -24,13 +22,11 @@ The main differences would be
 
 | Category | FortiDragon | Filebeat |
 | -------- | ----------- | ---------|
-| Dashboard | We got super cool dashboards!!! | None yet 😢 |
+| Dashboard | We got super cool dashboards!!! | Just one for now 😢 |
 | Updates | Much more often | Dependant to Elastic releases |
 | Installation | Harder| Easier |
 
-The real reason behind is that we use FortiDragon on our day to day operations for threat hunting, so updates and constant evolution is more fluid.
-
-If you can handle the hassle of logstash installation, it is worth the effort.
+We use FortiDragon on our day to day operations for threat hunting, so updates and constant evolution is more fluid. If you can handle the hassle of logstash installation, it is worth the effort.
 
 ## Installation
 
@@ -70,8 +66,6 @@ You may get a warning that you need to change to reliable syslogd. Remember that
     end
     
     config log setting
-        set log-policy-comment enable
-        set log-policy-name enable
         set custom-log-fields "3"
     end
 ```
@@ -94,15 +88,15 @@ PUT _ingest/pipeline/add_event_ingested
 }
 ```
 
-2. Create ILM policies according to your needs. You can use these [examples](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/ilm). Make sure you name them:
+2. Create ILM policies according to your needs. You can use these [examples](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/ilm). Make sure you name them accordingly your index strategy. For our case, that would be:
 
 - logs-fortinet.fortigate.traffic
 - logs-fortinet.fortigate.utm
 - logs-fortinet.fortigate.event
 
-In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs. Other slicing ideas can be found [below](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master#output).
+In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs. Other slicing ideas can be found [below](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master#common-ecs--output).
 
-3. Load [component templates](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). You can use this [script](https://github.com/elastic/ecs/tree/main/generated/elasticsearch#instructions) or do it manually one by one:
+3. Load component templates both from [Elastic ECS] (https://github.com/elastic/ecs/tree/main/generated/elasticsearch/composable/component) and [FortiDragon specific](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). Do it manually one by one:
 
 ```
 PUT _component_template/ecs-base
@@ -137,7 +131,7 @@ PUT _component_template/ecs-base
 
 5. Load [Dashboards](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/kibana): Go to Management --> Stack Management --> Saved Objects --> Import
 
-6. Enable dashboard controls: Go to Management --> Kibana Advanced Settings --> Presentation Labs --> Enable dashboard controls
+6. Make sure dashboard controls are enabled: Go to Management --> Kibana Advanced Settings --> Presentation Labs --> Enable dashboard controls
 
 ### On Logstash
 
@@ -162,8 +156,7 @@ It is very useful if you run several logstash instances.
 ```
 5. Copy [pipelines.yml](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/logstash/pipelines.yml) to your logstash folder.
 6. Copy [conf.d](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder.
-7. [Disable ECS Compatibility](). (FrotiDragon pipelines were created back on logstash v7, so some filters might be incompatible with how renames expect source fields names. It should be fixed soon).
-8. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
+7. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
 
 Hopefully you should be dancing with your logs by now. 🕺💃
 
@@ -188,8 +181,8 @@ graph LR;
 
 ### Input Syslog / KV
 
-Just receives syslog logs and populates `event.module` and `event.dataset` fields depending on udp port.
-You can also uncomment Fortianalyzer tags is you are using it for syslog forwarding. Fortianalyzer stamps its own date format to the log, so it needs to be treated different on next pipeline.
+Just receives syslog logs and populates `data_stream` fields depending on udp port.
+You can also uncomment Fortianalyzer tags is you are using it for syslog forwarding. Fortianalyzer stamps its own date format to the log, so it needs to be treated different.
 
 Splits the original log into key-value pairs and sets the timestamp. Timezone is also obtained from the log itself if FortiOS v6.2+.
 
@@ -218,9 +211,45 @@ Populates several ECS fields based on other present fields.
 - `user_agent.*`.
 - `network.transport`.
 
-This is crucial for index strategy 🤯. On Fortigate datastreams are split by `type`.
+Output is based on index strategy, which is crucial for large ingestion cases 🤯. On Fortigate datastreams are split by `type`.
 
 In our experience, `type=traffic` generates lots of logs, while `type=event` very few. Even inside `type=traffic` you might have that most of your logs have `action=denied`, so you may want to split them even further. Splitting into several datastreams allows to assign different ILMs policies and also will be faster for searching.
+
+## Dashboards
+
+We have tried to follow Fortigate´s Logs & Report section. Main objective of these dashboards is to analyze key KPIs in order to spot anomalies on it.
+
+We have migrated eveythigh to Lens now, so that has helped a lot on performance, but still it is very recommended to fine tune the dashboards with the relevant info to your needs. There a lot of visualizations on each dashboard so keep in mind performance can be impacted (loading times).
+
+### Structure
+
+All dashboards are connected via its header structure. Making it easy to navigate trough them.
+
+![header](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/header.png)
+
+Dashboards follow a (max) 3 layer structure, going from more general to more specific.
+
+1. Top level reference Fortinet´s type field: traffic, utm or event. UTM is already disaggregated so it can be easier to go to an specif UTM type, just like in Fortigate´s Logs & Report section.
+
+2. Second level dives into *traffic direction* (if possible). For example: on traffic dashboard, we have `Outbound | Inbound | LAN 2 LAN`. It makes total sense to analyze it separetly.
+
+3. Third level refers to which metric are we using for exploring the dataset: we only use sessions and bytes.
+
+* sessions: we consider each log as a unique session.
+
+* bytes: we analyze `source.bytes` and `destination.bytes` by both sum and average.
+
+[logid=20](https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912) introduces duplicate data when doing aggregations (sum of bytes for a particular source.ip). That is why it is filtered out on all dashboards. It is recommended not to drop this logs as they might be useful for troubleshooting or forensic analysis.
+
+4. Controls, above header structure, let you quickly filter your data.
+
+### Visualizations
+
+Dashboards have 2 sections:
+
+1. The upper visualizations are specific fields for the dataset that it is been analyzed on the dashboard: on webfilter we would see `catdesc` and `url.domain` for example. The lower visualizations are entity specific, on the first row there will always be `source.ip`, `destination.ip`, `network.protocol` which are fields that are present on all logs.
+
+2. The second raw has entities that might be useful on the analysis of that specific dashboard.
 
 ## Datasets and ECS Translations
 
@@ -290,52 +319,7 @@ The spreadsheet goes like:
 
 **Not updated in a while** 😕
 
-## Dashboards
 
-We have tried to follow Fortigate´s Logs & Report section. Main objective of these dashboards is to analyze key KPIs in order to spot anomalies on it.
-
-We have migrated eveythigh to Lens now, so that has helped a lot on performance, but still it is very recommended to fine tune the dashboards with the relevant info to your needs. There a lot of visualizations on each dashboard so keep in mind performance can be impacted (loading times).
-
-### Structure
-
-All dashboards are connected via its header structure. Making it easy to navigate trough them.
-
-![header](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/header.png)
-
-Dashboards follow a (max) 3 layer structure, going from more general to more specific.
-
-1. Top level reference Fortinet´s type field: traffic, utm or event. UTM is already disaggregated so it can be easier to go to an specif UTM type, just like in Fortigate´s Logs & Report section.
-
-2. Second level dives into *traffic direction* (if possible). For example: on traffic dashboard, we have `Outbound | Inbound | LAN 2 LAN`. It makes total sense to analyze it separetly.
-
-3. Third level refers to which metric are we using for exploring the dataset: we only use sessions and bytes.
-
-* sessions: we consider each log as a unique session.
-
-* bytes: we analyze `source.bytes` and `destination.bytes` by both sum and average.
-
-
-We need to filter out [logid=20](https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912), so we dont get duplicate data when running aggregations.
-
-You can do it on the firewall itself
-
-```
-config log syslogd filter
-        set filter "logid(00020)"
-        set filter-type exclude
-   end
-```
-
-We have filter it out on [logstash](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/logstash/conf.d/fortigate_2_ecs.conf#L529).
-
-You could also do it on Kibana itself.
-
-
-4. Controls, above header structure, let you quickly filter your data.
-
-### Visualizations
-
-Dashboards have 2 sections, the upper visualizations are specific fields for the dataset that it is been analyzed on the dashboard: on webfilter we would see `catdesc` and `url.domain` for example. The lower visualizations are entity specific, on the first row there will always be `source.ip`, `destination.ip`, `network.protocol` which are fields that are present on all logs. The second raw has entities that might be useful on the analysis of that specific dashboard.
 
 ## Limitations
 
@@ -343,14 +327,51 @@ We have not tested it yet on FortiOS v7+
 
 ## Roadmap 🛣️
 
-- ECS compatibility for pipelines. WIP
-- More dashboards: SD-WAN, traffic shapping, consolidated risk-score, etc.
-- Canvas for reports and C-level presentations.
-- Explore other ingest options: [Kafka](https://www.youtube.com/watch?v=KMbRoBbQUVw&feature=youtu.be) and [Rsyslog](https://github.com/enotspe/fortinet-2-elasticsearch/issues/37)
-- Explore other visualization alternatives: Grafana
-- [IoC enrichment](https://www.youtube.com/watch?v=8yf9DJ_TO6o). IoC in general has 2 sides: enriching a log that is currently being ingested, and enriching a log that has already been ingested. Both approachs are needed, and both have very different challenges.
-- **Transforms: go from logs to Key Security Indicators (KSI)** 💡💡💡
+We can divide the whole project into these phases:
 
+### Ingestion
+
+- Parsing (DONE ✅)
+- ECS normalization (DONE ✅)
+- Common enrichements (GeoIP, network.community_id, etc.) (DONE ✅)
+- Fortigate v7 support, specially Syslog RFC5424 format. (WIP 🏗)
+- Palo Alto support (WIP 🏗)
+- [Asset Enrichment](https://www.youtube.com/watch?v=8yf9DJ_TO6o): Fortigate can map user identity inside the logs, but that is not enough. We need to map networks funtionality, assets risk and group. For example, we might have a critical application that may have several web servers, sveral backends and a distributed DB; we need to know in our logs that all those IPs belong to the same application, which is a critical asset for business. If an alert gets generated, we can treat it with more priority. 🧠
+- IoC enrichment: IoC in general has 2 sides: enriching a log that is currently being ingested, and enriching a log that has already been ingested. Both approachs are needed, and both have very different challenges. For the first one, we can tweak the geoip filter for such purpose, [like these guys do for assets](https://www.youtube.com/watch?v=8yf9DJ_TO6o).
+- Explore other ingest options: [Kafka](https://www.youtube.com/watch?v=KMbRoBbQUVw&feature=youtu.be) and [Rsyslog](https://github.com/enotspe/fortinet-2-elasticsearch/issues/37)
+
+Ingestion should be about fortifying raw logs as much as possible, so we can more input for doing analysis.
+
+### Plataform
+
+One of the benefits of FortiDragon is that we are not limited to Elastic, we can use any tool we would like. Altough we love ELK, there are some other tools that can be used on specific areas such as Jupyter Notebooks or Google Colab for ML analytics, or Neo4j for graph analysis.
+
+On the near future, we would like to integrate Loki/Grafana. Logstash already has a [Loki output plugin](https://grafana.com/docs/loki/latest/clients/logstash/), so it should not be very diffult to start testing it. We want to explore other visualization and alerting options.
+
+```mermaid
+graph LR;
+    Fortigate-->Logstash;
+    Logstash-->Elasticsearch;
+    Logstash-->Loki;
+    Elasticsearch-->Kibana;
+    Loki-->Grafana;
+```
+
+### Analytics 💡💡💡
+
+We got our super enriched logs 🦾, now what 😕?? Well, firewall logs are just firewall logs: lots of them, very few value on each of them. We need to pivot from just logs to datapoints, by defining entities and  features about the behaivor of those entities.
+
+For example, let's say in a period of 1 hour, we see an IP that has had connecions to a thousand different DNS servers, that is really weird, right?
+
+What have we done? We have definied `source.ip` as our entity, and we had definied `unique destination.ip on UDP/53 over 1 hour` as a feature of that entity, transforming all those 1k logs into a single document. We can define many features that can be relevant to take a look at. Those features is what we call Key Security Indicators (KSI) and they will be the foundation for making sense of our network logs. Once we got our KSIs for our entities, we can then profile them just by checking how these KSI evolve over time, or in comparisson to other entities on our infraestructure. We can use Transforms and ML of Elasticsearch for such purpose.
+
+Another particular topic that has always had me wonder is P(A-->B), meaning the probability of A talking to B. We already got all the connections that are running on the network, so obtaining that probability should be trivial. More complex to calculate would be P(A-->B-->C). What we are trying to get is the relations that the different assets of our network have. If we mix this with the KSI of every individual asset, we can have a very powerful analysis. This seems particular useful for lateral movement and beaconing. For such analytics we need a graph database like Neo4j.
+
+### Visualization
+
+- More dashboards: SD-WAN, traffic shapping, consolidated risk-score, etc.
+- Vega visualiations.
+- Canvas for reports and C-level presentations. 🖌
 
 ## Authors
 
