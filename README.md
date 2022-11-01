@@ -96,7 +96,7 @@ PUT _ingest/pipeline/add_event_ingested
 
 In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs. Other slicing ideas can be found [below](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master#common-ecs--output).
 
-3. Load component templates both from [Elastic ECS] (https://github.com/elastic/ecs/tree/main/generated/elasticsearch/composable/component) and [FortiDragon specific](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). Do it manually one by one:
+3. Load component templates both from [Elastic ECS](https://github.com/elastic/ecs/tree/main/generated/elasticsearch/composable/component) and [FortiDragon specific](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). Do it manually one by one:
 
 ```
 PUT _component_template/ecs-base
