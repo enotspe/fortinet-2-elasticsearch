@@ -343,7 +343,7 @@ We can divide the whole project into these phases:
 
 Ingestion should be about fortifying raw logs as much as possible, so we can have more inputs for doing analysis.
 
-### Plataform
+### Platform
 
 One of the benefits of FortiDragon is that we are not limited to Elastic, we can use any tool we would like. Altough we love ELK, there are some other tools that can be used on specific areas such as Jupyter Notebooks or Google Colab for ML analytics, or Neo4j for graph analysis.
 
