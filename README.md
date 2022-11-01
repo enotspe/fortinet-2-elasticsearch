@@ -248,9 +248,9 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 Dashboards have 2 sections:
 
 1. The upper visualizations are specific fields for the dataset that it is been analyzed on the dashboard: on webfilter we would see `catdesc` and `url.domain` for example. 
-![upper](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/common.png)
+![upper](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/specific.png)
 2. The lower visualizations are entity specific, on the first row there will always be `source.ip`, `destination.ip`, `network.protocol` which are fields that are present on all logs. The second raw has entities that might be useful on the analysis of that specific dashboard.
-![lower](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/specific.png)
+![lower](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/common.png)
 
 ## Datasets and ECS Translations
 
