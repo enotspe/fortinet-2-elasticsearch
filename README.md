@@ -199,12 +199,12 @@ Splits the original log into key-value pairs and sets the timestamp. Timezone is
 
 Populates several ECS fields based on other present fields.
 
-- `*.locality` for private, loopback, link-local, multicast and public addresses. **These fields and not ECS official fields**.
+- `*.locality` for private, loopback, link-local, multicast and public addresses. **These fields are not ECS official fields**.
 - Geo localitzation of IPs. 🌎
 - `related.ip` and `related.user`.
 - `network.bytes` and `network.packets`.
 - `event.duration`. ⌛
-- `event.hour_of_day` and `event.day_of_week`. **These fields and not ECS official fields**.
+- `event.hour_of_day` and `event.day_of_week`. **These fields are not ECS official fields**.
 - Calcualtes `network.community_id` just for tcp/udp.
 - Registered domain.
 - Url parsing.
