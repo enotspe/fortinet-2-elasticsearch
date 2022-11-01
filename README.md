@@ -217,7 +217,7 @@ In our experience, `type=traffic` generates lots of logs, while `type=event` ver
 
 ## Dashboards
 
-We have tried to follow Fortigate´s Logs & Report section. Main objective of these dashboards is to analyze key KPIs in order to spot anomalies on it.
+We have tried to follow Fortigate´s Logs & Report section. Main objective of these dashboards is to analyze KPIs in order to spot anomalies on it.
 
 We have migrated eveythigh to Lens now, so that has helped a lot on performance, but still it is very recommended to fine tune the dashboards with the relevant info to your needs. There a lot of visualizations on each dashboard so keep in mind performance can be impacted (loading times).
 
