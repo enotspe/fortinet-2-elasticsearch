@@ -239,7 +239,7 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 
 * bytes: we analyze `source.bytes` and `destination.bytes` by both sum and average.
 
-[logid=20](https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912) introduces duplicate data when doing aggregations (sum of bytes for a particular source.ip). That is why it is filtered out on all dashboards. It is recommended not to drop this logs as they might be useful for troubleshooting or forensic analysis.
+  [logid=20](https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912) introduces duplicate data when doing aggregations (sum of bytes for a particular source.ip). That is why it is filtered out on all dashboards. It is recommended not to drop this logs as they might be useful for troubleshooting or forensic analysis.
 
 4. Controls, above header structure, let you quickly filter your data.
 
