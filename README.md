@@ -247,9 +247,10 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 
 Dashboards have 2 sections:
 
-1. The upper visualizations are specific fields for the dataset that it is been analyzed on the dashboard: on webfilter we would see `catdesc` and `url.domain` for example. The lower visualizations are entity specific, on the first row there will always be `source.ip`, `destination.ip`, `network.protocol` which are fields that are present on all logs.
-
-2. The second raw has entities that might be useful on the analysis of that specific dashboard.
+1. The upper visualizations are specific fields for the dataset that it is been analyzed on the dashboard: on webfilter we would see `catdesc` and `url.domain` for example. 
+![upper](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/common.png)
+2. The lower visualizations are entity specific, on the first row there will always be `source.ip`, `destination.ip`, `network.protocol` which are fields that are present on all logs. The second raw has entities that might be useful on the analysis of that specific dashboard.
+![lower](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/specific.png)
 
 ## Datasets and ECS Translations
 
@@ -340,7 +341,7 @@ We can divide the whole project into these phases:
 - IoC enrichment: IoC in general has 2 sides: enriching a log that is currently being ingested, and enriching a log that has already been ingested. Both approachs are needed, and both have very different challenges. For the first one, we can tweak the geoip filter for such purpose, [like these guys do for assets](https://www.youtube.com/watch?v=8yf9DJ_TO6o).
 - Explore other ingest options: [Kafka](https://www.youtube.com/watch?v=KMbRoBbQUVw&feature=youtu.be) and [Rsyslog](https://github.com/enotspe/fortinet-2-elasticsearch/issues/37)
 
-Ingestion should be about fortifying raw logs as much as possible, so we can more input for doing analysis.
+Ingestion should be about fortifying raw logs as much as possible, so we can have more inputs for doing analysis.
 
 ### Plataform
 
@@ -359,7 +360,7 @@ graph LR;
 
 ### Analytics 💡💡💡
 
-We got our super enriched logs 🦾, now what 😕?? Well, firewall logs are just firewall logs: lots of them, very few value on each of them. We need to pivot from just logs to datapoints, by defining entities and  features about the behaivor of those entities.
+We got our super enriched logs 🦾, now what 😕?? Well, firewall logs are just firewall logs: lots of them, very few value on each of them. We need to pivot from just logs to datapoints, by defining entities and features about the behaivor of those entities.
 
 For example, let's say in a period of 1 hour, we see an IP that has had connecions to a thousand different DNS servers, that is really weird, right?
 
