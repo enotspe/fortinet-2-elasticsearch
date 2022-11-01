@@ -352,6 +352,7 @@ On the near future, we would like to integrate Loki/Grafana. Logstash already ha
 ```mermaid
 graph LR;
     Fortigate-->Logstash;
+    Palo Alto-->Logstash;
     Logstash-->Elasticsearch;
     Logstash-->Loki;
     Elasticsearch-->Kibana;
