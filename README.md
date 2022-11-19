@@ -54,7 +54,7 @@ Let's get this party on!!! 🤩
         next
     end
 ```
-You may get a warning that you need to change to reliable syslogd. Remember that "The full rawdata field of 20KB is only sent to reliable Syslog servers. Other logging devices, such as disk, FortiAnalyzer, and UDP Syslog servers, receive the information, but only keep a maximum of 2KB total log length, including the rawdata field, and discard the rest of the extended log information."
+  You may get a warning that you need to change to reliable syslogd. Remember that "The full rawdata field of 20KB is only sent to reliable Syslog servers. Other logging devices, such as disk, FortiAnalyzer, and UDP Syslog servers, receive the information, but only keep a maximum of 2KB total log length, including the rawdata field, and discard the rest of the extended log information."
 
 3. You can also pump your own fields into Fortigate's syslog **OPTIONAL**
 ```
@@ -88,13 +88,13 @@ PUT _ingest/pipeline/add_event_ingested
 }
 ```
 
-2. Create ILM policies according to your needs. You can use these [examples](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/ilm). Make sure you name them accordingly your index strategy. For our case, that would be:
+2. Create ILM policies according to your needs. You can use these [examples](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/ilm). Make sure you name them accordingly to your index strategy. For our case, that would be:
 
 - logs-fortinet.fortigate.traffic
 - logs-fortinet.fortigate.utm
 - logs-fortinet.fortigate.event
 
-In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs. Other slicing ideas can be found [below](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master#common-ecs--output).
+  In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs. Other slicing ideas can be found [below](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master#common-ecs--output).
 
 3. Load component templates both from [Elastic ECS](https://github.com/elastic/ecs/tree/main/generated/elasticsearch/composable/component) and [FortiDragon specific](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). Do it manually one by one:
 
@@ -141,15 +141,15 @@ PUT _component_template/ecs-base
 
 3. Logstash Hostname **OPTIONAL**
 
-Add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
+  Add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
 
 ```
-echo HOSTNAME=\""$HOSTNAME"\" | tee  -a /etc/default/logstash
+echo HOSTNAME=\""$HOSTNAME"\" | sudo tee  -a /etc/default/logstash
 ```
 
-It is very useful if you run several logstash instances.
+  It is very useful if you run several logstash instances.
 
-4. Install tld filter plugin
+4. Install tld filter plugin (You should do it every time you upgrade logstash version as well)
 ```
     cd /usr/share/logstash
     sudo bin/logstash-plugin install logstash-filter-tld
@@ -181,14 +181,14 @@ graph LR;
 
 ### Input Syslog / KV
 
-Just receives syslog logs and populates `data_stream` fields depending on udp port.
+Receives syslog logs and populates `data_stream` fields depending on udp port.
 You can also uncomment Fortianalyzer tags is you are using it for syslog forwarding. Fortianalyzer stamps its own date format to the log, so it needs to be treated different.
 
 Splits the original log into key-value pairs and sets the timestamp. Timezone is also obtained from the log itself if FortiOS v6.2+.
 
 ### Fortigate 2 ECS
 
-* Validates nulls on IP fields (Fortinet loves to fill with "N/A" null fields, which turns into ingestion errors if your field has IP mapping).
+* Validates nulls on IP fields. Fortinet loves to fill with "N/A" null fields, which turns into ingestion errors if your field has IP mapping. We could do it with grok.
 * Renames Fortigate fields that overlaps with ECS. In the future this will be done on the kv filter stage, to be more ECS compliant.
 * Translates Fortigate field to ECS by `type` of logs.
 * Introduces `network.protocol_category` used on dashboards controls. Mega useful!!!
@@ -215,11 +215,13 @@ Output is based on index strategy, which is crucial for large ingestion cases �
 
 In our experience, `type=traffic` generates lots of logs, while `type=event` very few. Even inside `type=traffic` you might have that most of your logs have `action=denied`, so you may want to split them even further. Splitting into several datastreams allows to assign different ILMs policies and also will be faster for searching.
 
+Elasticseach has a "statical" approach to datastream definition because we have to somehow map our strategy to the datastream fields. If we would like to add a couple of fields to our splitting decision, like `action` and `source.locality`, we would need to insert those fields into `data_stream.dataset` and we might impact index template and ILM. Surely if we want to benefit from a faster searching on those fields we would need to change their mapping to `constant_keyword`. We don't know in advance how our data is distributed, and even if we knew, that might change on the future. On the other hand, [Grafana Loki](https://grafana.com/docs/loki/latest/fundamentals/labels/) provides a more "flexible" approach, we just index the fields that should "split" our data, and their are treated as labels. This looks really cool and we will be exploring Grafana Loki on the near future.
+
 ## Dashboards
 
-We have tried to follow Fortigate´s Logs & Report section. Main objective of these dashboards is to analyze KPIs in order to spot anomalies on it.
+We have tried to follow Fortigate´s Logs & Report section. Main objective of these dashboards is to do threat hunting by checking some critical KPIs in order to spot anomalies on them.
 
-We have migrated eveythigh to Lens now, so that has helped a lot on performance, but still it is very recommended to fine tune the dashboards with the relevant info to your needs. There a lot of visualizations on each dashboard so keep in mind performance can be impacted (loading times).
+We have migrated eveythigh to Lens now, so that has helped a lot on performance, but still it is very recommended to fine tune the dashboards with the relevant info to your needs. There a lot of visualizations on each dashboard so keep in mind performance can be impacted (slow loading times or even failures when loading).
 
 ### Structure
 
@@ -235,11 +237,11 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 
 3. Third level refers to which metric are we using for exploring the dataset: we only use sessions and bytes.
 
-* sessions: we consider each log as a unique session.
+* sessions: we consider each log as a unique session. Be careful is you have connections that go through several firewalls or vdoms.
 
 * bytes: we analyze `source.bytes` and `destination.bytes` by both sum and average.
 
-  [logid=20](https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912) introduces duplicate data when doing aggregations (sum of bytes for a particular source.ip). That is why it is filtered out on all dashboards. It is recommended not to drop this logs as they might be useful for troubleshooting or forensic analysis.
+  [logid=20](https://kb.fortinet.com/kb/documentLink.do?externalID=FD43912) introduces duplicate data when doing aggregations (sum of bytes for a particular `source.ip`). That is why it is filtered out on all dashboards. It is recommended not to drop this logs as they might be useful for troubleshooting or forensic analysis.
 
 4. Controls, above header structure, let you quickly filter your data.
 
@@ -247,7 +249,7 @@ Dashboards follow a (max) 3 layer structure, going from more general to more spe
 
 Dashboards have 2 sections:
 
-1. The upper visualizations are specific fields for the dataset that it is been analyzed on the dashboard: e.g., on webfilter we would see `catdesc` and `url.domain` for example. 
+1. The upper visualizations show specific fields for the dataset that it is been analyzed. We split the most meaningful fields by `action`, because that is why you bought a firewall in first place, to allow/block stuff.
 ![upper](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/specific.png)
 2. The lower visualizations are entity specific, on the first row there will always be `source.ip`, `destination.ip`, `network.protocol` which are fields that are present on all logs. The second raw has entities that might be useful on the analysis of that specific dashboard.
 ![lower](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/common.png)
@@ -359,9 +361,11 @@ graph LR;
     Loki-->Grafana;
 ```
 
-### Analytics 💡💡💡
+### Analytics 🧠🧠🧠
 
 We got our super enriched logs 🦾, now what 😕?? Well, firewall logs are just firewall logs: lots of them, very few value on each of them. We need to pivot from just logs to datapoints, by defining entities and features about the behaivor of those entities.
+
+Traditionally we have used the [5 tuple concept](https://www.ietf.org/rfc/rfc6146.txt) to identify connections, meaning the components of the tuple are the important entities of any given connection. However, with next generation application firewalls we now have more relevant information, like application or user. We can define a "new" 5 tuple, composed of `source.ip`, `source.user`, `destination.ip`, `service` (destination port + protocol) and `application`. These are the entities on the NGFW world that are present on all connecions and we should analyze KPIs of them and the interation between them. 💡💡💡
 
 For example, let's say in a period of 1 hour, we see an IP that has had connecions to a thousand different DNS servers. That is really weird, right?
 
@@ -374,6 +378,7 @@ Another particular topic that has always had me wonder is P(A-->B), meaning the 
 - More dashboards: SD-WAN, traffic shapping, consolidated risk-score, etc.
 - Vega visualiations.
 - Canvas for reports and C-level presentations. 🖌
+- Grafana
 
 ## Authors
 
