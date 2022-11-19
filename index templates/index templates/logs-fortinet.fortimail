@@ -1,0 +1,24 @@
+PUT _index_template/logs-fortinet.fortimail
+{
+  "priority": 300,
+  "index_patterns": [
+    "logs-fortinet.fortimail*"
+  ],
+  "data_stream": {
+    "hidden": false,
+    "allow_custom_routing": false
+  },
+  "composed_of": [
+    "ecs-base",
+    "ecs-data_stream",
+    "ecs-organization",
+    "ecs-ecs",
+    "strings_as_keywords@mapping",
+    "logs-fortinet.fortimail@ilm",
+    "logs-fortinet.fortimail@settings",
+    "ecs-source",
+    "ecs-destination",
+    "ecs-observer",
+    "ecs-email"
+  ]
+}
