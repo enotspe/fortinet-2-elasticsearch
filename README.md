@@ -36,28 +36,61 @@ Let's get this party on!!! 🤩
 
 1. Configure syslog
 
-```
+  ```
     config log syslogd setting
         set status enable
         set server "logstash_IP"
         set port 5140
     end
-```
+  ```
+
+
+  Or if you run FortiOS v7, you can use syslog5424. **RECOMMENDED**
+
+  ```
+    config log syslogd setting
+        set status enable
+        set server "logstash_IP"
+        set port 5141
+        set format rfc5424
+    end
+  ```
 
 2. [Extendend logging on webfilter](https://docs.fortinet.com/document/fortigate/7.2.0/fortios-log-message-reference/496081/enabling-extended-logging) **OPTIONAL**
 
-```
+  ```
     config webfilter profile
         edit "test-webfilter"
             set extended-log enable
             set web-extended-all-action-log enable
         next
     end
-```
+  ```
+
   You may get a warning that you need to change to reliable syslogd. Remember that "The full rawdata field of 20KB is only sent to reliable Syslog servers. Other logging devices, such as disk, FortiAnalyzer, and UDP Syslog servers, receive the information, but only keep a maximum of 2KB total log length, including the rawdata field, and discard the rest of the extended log information."
 
+1. If you also would like to have metrics about your SDWAN Performance SLAs and view them in the SDWAN dashboard, you need to set both `sla-fail-log-period` and `sla-pass-log-period` on your healthchecks.
+
+  ```
+    config health-check
+        edit "Google"
+            set server "8.8.8.8" "8.8.4.4"
+            set sla-fail-log-period 10
+            set sla-pass-log-period 30
+            set members 0
+            config sla
+                edit 1
+                    set latency-threshold 100
+                    set jitter-threshold 10
+                    set packetloss-threshold 5
+                next
+            end
+        next
+    end
+  ```
+
 3. You can also pump your own fields into Fortigate's syslog **OPTIONAL**
-```
+  ```
     config log custom-field
         edit "3"
             set name "org"
@@ -68,7 +101,8 @@ Let's get this party on!!! 🤩
     config log setting
         set custom-log-fields "3"
     end
-```
+  ```
+
 
 ### On Kibana
 
