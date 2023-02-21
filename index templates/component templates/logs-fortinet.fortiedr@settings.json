@@ -1,0 +1,16 @@
+PUT _component_template/logs-fortinet.fortiedr@settings
+{
+  "template": {
+    "settings": {
+      "index": {
+        "number_of_shards": "1",
+        "number_of_replicas": "0",
+        "mapping": {
+          "total_fields": {
+            "limit": "1000"
+          }
+        }
+      }
+    }
+  }
+}
