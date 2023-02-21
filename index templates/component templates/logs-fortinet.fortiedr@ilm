@@ -1,0 +1,12 @@
+PUT _component_template/logs-fortinet.fortiedr@ilm
+{
+  "template": {
+    "settings": {
+      "index": {
+        "lifecycle": {
+          "name": "logs-fortinet.fortiedr"
+        }
+      }
+    }
+  }
+}
