@@ -1,6 +1,4 @@
 
-34 lines (34 sloc)  714 Bytes
-
 PUT _ilm/policy/logs-fortinet.fortiedr
 {
     "policy" : {
