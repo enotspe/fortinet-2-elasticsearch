@@ -14,6 +14,8 @@
   path.config: "/etc/logstash/conf.d/syslog-fortinet-forticlient-input-kv.conf"
 - pipeline.id: syslog-fortinet-fortisandbox-input-kv
   path.config: "/etc/logstash/conf.d/syslog-fortinet-fortisandbox-input-kv.conf"
+- pipeline.id: syslog-fortinet-fortiedr-input-kv
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortiedr-input-kv.conf"
 - pipeline.id: syslog-fortinet-fortigate_2_ecs
   path.config: "/etc/logstash/conf.d/syslog-fortinet-fortigate_2_ecs.conf"
 - pipeline.id: syslog-fortinet-fortigate_2_ecsv2
@@ -26,5 +28,7 @@
   path.config: "/etc/logstash/conf.d/syslog-fortinet-forticlient_2_ecs.conf"
 - pipeline.id: syslog-fortinet-fortisandbox_2_ecs
   path.config: "/etc/logstash/conf.d/syslog-fortinet-fortisandbox_2_ecs.conf"
+- pipeline.id: syslog-fortinet-fortiedr_2_ecs
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortiedr_2_ecs.conf"
 - pipeline.id: syslog-fortinet-common_ecs-output
   path.config: "/etc/logstash/conf.d/syslog-fortinet-common_ecs-output.conf"
