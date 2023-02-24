@@ -104,7 +104,7 @@ Let's get this party on!!! 🤩
   ```
 
 
-### On Kibana
+### On Kibana (Dev Tools)
 
 1. Load ingest pipeline **OPTIONAL** Remember to comment out on the output pipeline if you decide not to use it.
 
