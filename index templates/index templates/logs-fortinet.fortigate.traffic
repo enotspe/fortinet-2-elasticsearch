@@ -22,7 +22,7 @@ PUT _index_template/logs-fortinet.fortigate.traffic
     "ecs-organization",
     "ecs-ecs",
     "ecs-host",
-    "fortigate@mapping",
+    "logs-fortinet.fortigate@mappings",
     "strings_as_keywords@mapping",
     "logs-fortinet.fortigate@settings",
     "logs-fortinet.fortigate.traffic@ilm"
