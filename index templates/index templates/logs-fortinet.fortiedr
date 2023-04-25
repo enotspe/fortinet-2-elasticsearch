@@ -24,6 +24,6 @@ PUT _index_template/logs-fortinet.fortiedr
     "strings_as_keywords@mapping",
     "ecs-destination",
     "ecs-source",
-    "fortiedr@mappings"
+    "logs-fortinet.fortiedr@mappings"
   ]
 }
