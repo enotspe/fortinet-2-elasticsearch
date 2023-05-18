@@ -62,6 +62,7 @@ Let's get this party on!!! 🤩
   You have to be very careful with your firewall name when usinng syslog5424 format
   
   `MY_FIREWALL_SITEA` will not work
+  
   `MY-FIREWALL-SITEA` will work
 
 
