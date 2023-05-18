@@ -18,15 +18,20 @@ But wait! Doesn't Elastic provide a [Filebeat module for Fortinet](https://www.e
 
 Well, Filebeat module and Fortidragon are like cousins 👪. The logic for Filebeat module for Fortigate was based on FortiDragon, [we colaborated together with Elastic when they made it](https://github.com/elastic/beats/pull/17890).
 
-The main differences would be
+The main difference is that FortiDragon is a full anayltics platform for threat hunting with Fortinet datasources, we do not restrict it to just the "ingestion" of logs. 
+
+We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. That is why we created it on the first place, after 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkbox on their datasheet. Full parsing and performance for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best out there.
+
+Some notable differences are with Filebeat:
 
 | Category | FortiDragon | Filebeat |
 | -------- | ----------- | ---------|
 | Dashboard | We got super cool dashboards!!! | Just one for now 😢 |
+| Other platforms | FortiEDR, Forticlient, Fortimail, Fortiweb | Just Fortigate |
 | Updates | Much more often | Dependant to Elastic releases |
 | Installation | Harder| Easier |
 
-We use FortiDragon on our day to day operations for threat hunting, so updates and constant evolution is more fluid. If you can handle the hassle of logstash installation, it is worth the effort.
+If you can handle the hassle of logstash installation, it is worth the effort.
 
 ## Installation
 
@@ -44,7 +49,6 @@ Let's get this party on!!! 🤩
     end
   ```
 
-
   Or if you run FortiOS v7, you can use syslog5424. **RECOMMENDED**
 
   ```
@@ -55,6 +59,11 @@ Let's get this party on!!! 🤩
         set format rfc5424
     end
   ```
+  You have to be very careful with your firewall name when usinng syslog5424 format
+  
+  `MY_FIREWALL_SITEA` will not work
+  `MY-FIREWALL-SITEA` will work
+
 
 2. [Extendend logging on webfilter](https://docs.fortinet.com/document/fortigate/7.2.0/fortios-log-message-reference/496081/enabling-extended-logging) **OPTIONAL**
 
@@ -69,7 +78,7 @@ Let's get this party on!!! 🤩
 
   You may get a warning that you need to change to reliable syslogd. Remember that "The full rawdata field of 20KB is only sent to reliable Syslog servers. Other logging devices, such as disk, FortiAnalyzer, and UDP Syslog servers, receive the information, but only keep a maximum of 2KB total log length, including the rawdata field, and discard the rest of the extended log information."
 
-1. If you also would like to have metrics about your SDWAN Performance SLAs and view them in the SDWAN dashboard, you need to set both `sla-fail-log-period` and `sla-pass-log-period` on your healthchecks.
+3. If you also would like to have metrics about your SDWAN Performance SLAs and view them in the SDWAN dashboard, you need to set both `sla-fail-log-period` and `sla-pass-log-period` on your healthchecks.
 
   ```
     config health-check
@@ -89,7 +98,7 @@ Let's get this party on!!! 🤩
     end
   ```
 
-3. You can also pump your own fields into Fortigate's syslog **OPTIONAL**
+4. You can also pump your own fields into Fortigate's syslog **OPTIONAL**
   ```
     config log custom-field
         edit "3"
