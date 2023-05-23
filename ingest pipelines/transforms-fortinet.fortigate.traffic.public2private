@@ -1,0 +1,61 @@
+PUT _ingest/pipeline/transforms-fortinet.fortigate.traffic.public2private
+{
+  "processors": [
+    {
+      "set": {
+        "field": "data_stream.type",
+        "value": "transforms"
+      }
+    },
+    {
+      "set": {
+        "field": "data_stream.dataset",
+        "value": "fortinet.fortigate.traffic"
+      }
+    },
+    {
+      "set": {
+        "field": "fgt.type",
+        "value": "traffic"
+      }
+    },
+    {
+      "set": {
+        "field": "fgt.subtype",
+        "value": "forward"
+      }
+    },
+    {
+      "set": {
+        "field": "fgt.policytype",
+        "value": "policy"
+      }
+    },
+    {
+      "set": {
+        "field": "source.locality",
+        "value": "public"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.locality",
+        "value": "private"
+      }
+    },
+    {
+      "geoip": {
+        "field": "source.ip",
+        "target_field": "source.geo",
+        "ignore_missing": true
+      }
+    },
+    {
+      "date_index_name": {
+        "field": "@timestamp",
+        "date_rounding": "M",
+        "index_name_prefix": "{{{_index}}}"
+      }
+    }
+  ]
+}
