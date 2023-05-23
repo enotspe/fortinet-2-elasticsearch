@@ -110,7 +110,7 @@ PUT _transform/transforms-fortinet.fortigate.traffic.public2private_1m
   "sync": {
     "time": {
       "field": "@timestamp",
-      "delay": "5m"
+      "delay": "1m"
     }
   },
   "pivot": {
