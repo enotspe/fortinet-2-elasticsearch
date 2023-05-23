@@ -5,7 +5,8 @@ PUT _index_template/logs-fortinet.fortigate.utm
     "logs-fortinet.fortigate.utm*"
   ],
   "data_stream": {
-    "hidden": false
+    "hidden": false,
+    "allow_custom_routing": false
   },
   "composed_of": [
     "ecs-base",
@@ -14,9 +15,7 @@ PUT _index_template/logs-fortinet.fortigate.utm
     "ecs-destination",
     "ecs-source",
     "ecs-network",
-    "ecs-event",
     "ecs-url",
-    "ecs-log",
     "ecs-rule",
     "ecs-data_stream",
     "ecs-organization",
@@ -25,12 +24,16 @@ PUT _index_template/logs-fortinet.fortigate.utm
     "ecs-http",
     "ecs-user_agent",
     "ecs-dns",
-    "ecs-file",
+    "ecs-file-modified",
     "ecs-error",
-    "ecs-tls",
+    "ecs-tls-modified",
+    "logs-fortinet.fortigate.utm@ilm",
+    "strings_as_keywords@mappings",
+    "auto_expand_replicas@settings",
+    "refresh_interval@settings",
     "logs-fortinet.fortigate@mappings",
-    "strings_as_keywords@mapping",
-    "logs-fortinet.fortigate@settings",
-    "logs-fortinet.fortigate.utm@ilm"
+    "ecs-event-modified",
+    "ecs-log-modified",
+    "synthetic_source@mappings"
   ]
 }
