@@ -3,6 +3,7 @@
     "mappings": {
       "properties": {
         "fgt": {
+          "type": "object",
           "properties": {
             "vcluster": {
               "ignore_malformed": true,
@@ -63,13 +64,13 @@
               "ignore_malformed": true,
               "type": "long"
             },
-            "virusid": {
-              "ignore_above": 1024,
-              "type": "keyword"
-            },
             "pdstport": {
               "ignore_malformed": true,
               "type": "long"
+            },
+            "virusid": {
+              "ignore_above": 1024,
+              "type": "keyword"
             },
             "translationid": {
               "ignore_above": 1024,
@@ -131,11 +132,11 @@
               "ignore_above": 1024,
               "type": "keyword"
             },
-            "received": {
+            "rcode": {
               "ignore_malformed": true,
               "type": "long"
             },
-            "rcode": {
+            "received": {
               "ignore_malformed": true,
               "type": "long"
             },
@@ -271,11 +272,11 @@
               "ignore_malformed": true,
               "type": "long"
             },
-            "noise": {
+            "member": {
               "ignore_malformed": true,
               "type": "long"
             },
-            "member": {
+            "noise": {
               "ignore_malformed": true,
               "type": "long"
             },
@@ -347,15 +348,15 @@
               "ignore_malformed": true,
               "type": "long"
             },
+            "dstreputation": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
             "event_id": {
               "ignore_above": 1024,
               "type": "keyword"
             },
             "oldslot": {
-              "ignore_malformed": true,
-              "type": "long"
-            },
-            "dstreputation": {
               "ignore_malformed": true,
               "type": "long"
             },
@@ -407,13 +408,13 @@
               "ignore_malformed": true,
               "type": "long"
             },
-            "shaperdroprcvdbyte": {
-              "ignore_malformed": true,
-              "type": "long"
-            },
             "logid_message": {
               "ignore_above": 1024,
               "type": "keyword"
+            },
+            "shaperdroprcvdbyte": {
+              "ignore_malformed": true,
+              "type": "long"
             },
             "srcip": {
               "ignore_malformed": true,
@@ -634,11 +635,11 @@
               "ignore_malformed": true,
               "type": "long"
             },
-            "rate": {
+            "psrcport": {
               "ignore_malformed": true,
               "type": "long"
             },
-            "psrcport": {
+            "rate": {
               "ignore_malformed": true,
               "type": "long"
             },
@@ -718,15 +719,15 @@
               "ignore_malformed": true,
               "type": "ip"
             },
+            "in_spi": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
             "serial": {
               "ignore_malformed": true,
               "type": "long"
             },
             "shaperperipdropbyte": {
-              "ignore_malformed": true,
-              "type": "long"
-            },
-            "in_spi": {
               "ignore_malformed": true,
               "type": "long"
             },
@@ -766,8 +767,5 @@
         }
       }
     }
-  },
-  "_meta": {
-    "fortigate_version": "6.2"
   }
 }
