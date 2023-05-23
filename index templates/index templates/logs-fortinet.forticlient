@@ -13,9 +13,7 @@ PUT _index_template/logs-fortinet.forticlient
     "ecs-data_stream",
     "ecs-organization",
     "ecs-ecs",
-    "strings_as_keywords@mapping",
     "logs-fortinet.forticlient@ilm",
-    "logs-fortinet.forticlient@settings",
     "ecs-source",
     "ecs-destination",
     "ecs-observer",
@@ -29,6 +27,9 @@ PUT _index_template/logs-fortinet.forticlient
     "ecs-rule",
     "ecs-event",
     "ecs-log",
-    "ecs-vulnerability"
+    "ecs-vulnerability",
+    "strings_as_keywords@mappings",
+    "auto_expand_replicas@settings",
+    "refresh_interval@settings"
   ]
 }
