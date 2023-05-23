@@ -19,9 +19,10 @@ PUT _index_template/logs-fortinet.fortiedr
     "ecs-user",
     "ecs-agent",
     "ecs-observer",
-    "logs-fortinet.fortiedr@settings",
     "ecs-event",
-    "strings_as_keywords@mapping",
+    "strings_as_keywords@mappings",
+    "auto_expand_replicas@settings",
+    "refresh_interval@settings",
     "ecs-destination",
     "ecs-source",
     "logs-fortinet.fortiedr@mappings"
