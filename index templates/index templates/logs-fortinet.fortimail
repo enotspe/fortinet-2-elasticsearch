@@ -13,12 +13,15 @@ PUT _index_template/logs-fortinet.fortimail
     "ecs-data_stream",
     "ecs-organization",
     "ecs-ecs",
-    "strings_as_keywords@mapping",
     "logs-fortinet.fortimail@ilm",
-    "logs-fortinet.fortimail@settings",
     "ecs-source",
     "ecs-destination",
     "ecs-observer",
-    "ecs-email"
+    "ecs-email",
+    "strings_as_keywords@mappings",
+    "auto_expand_replicas@settings",
+    "refresh_interval@settings",
+    "ecs-event",
+    "ecs-log"
   ]
 }
