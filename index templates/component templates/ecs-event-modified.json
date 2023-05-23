@@ -109,9 +109,5 @@
         }
       }
     }
-  },
-  "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-event.html",
-    "ecs_version": "8.4.0"
   }
 }
