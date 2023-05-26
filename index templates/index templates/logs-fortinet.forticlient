@@ -28,7 +28,7 @@ PUT _index_template/logs-fortinet.forticlient
     "ecs-event",
     "ecs-log",
     "ecs-vulnerability",
-    "strings_as_keywords@mappings",
+    "strings_as_keyword@mappings",
     "auto_expand_replicas@settings",
     "refresh_interval@settings"
   ]
