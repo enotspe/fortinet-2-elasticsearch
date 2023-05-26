@@ -4,16 +4,16 @@ PUT _index_template/transforms-fortinet.fortigate.traffic
     "transforms-fortinet.fortigate.traffic*"
   ],
   "composed_of": [
-    "ecs-destination-transform",
-    "ecs-network-transform",
-    "ecs-source-transform",
+    "ecs-destination-transforms",
+    "ecs-network-transforms",
+    "ecs-source-transforms",
     "ecs-data_stream",
-    "ecs-event-transform",
+    "ecs-event-transforms",
     "transforms-fortinet.fortigate@mappings",
     "ecs-base",
     "ecs-observer",
     "synthetic_source@mappings",
-    "ecs-rule-transform",
+    "ecs-rule-transforms",
     "auto_expand_replicas@settings"
   ]
 }
