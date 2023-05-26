@@ -18,7 +18,7 @@ PUT _index_template/logs-fortinet.fortimail
     "ecs-destination",
     "ecs-observer",
     "ecs-email",
-    "strings_as_keywords@mappings",
+    "strings_as_keyword@mappings",
     "auto_expand_replicas@settings",
     "refresh_interval@settings",
     "ecs-event",
