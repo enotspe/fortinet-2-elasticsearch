@@ -24,7 +24,7 @@ PUT _index_template/logs-fortinet.fortigate.traffic
     "ecs-ecs",
     "ecs-host",
     "logs-fortinet.fortigate.traffic@ilm",
-    "strings_as_keywords@mappings",
+    "strings_as_keyword@mappings",
     "logs-fortinet.fortigate@mappings",
     "auto_expand_replicas@settings",
     "refresh_interval@settings",
