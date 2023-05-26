@@ -1,0 +1,405 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "fgt": {
+          "type": "object",
+          "properties": {
+            "dstswversion": {
+              "type": "keyword"
+            },
+            "countssh": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "sessionid": {
+              "type": "object",
+              "properties": {
+                "value_count": {
+                  "type": "long"
+                }
+              }
+            },
+            "type": {
+              "type": "keyword"
+            },
+            "countssl": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "dstswvendor": {
+              "type": "keyword"
+            },
+            "dstname": {
+              "type": "keyword"
+            },
+            "dsthwversion": {
+              "type": "keyword"
+            },
+            "countav": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "dstosname": {
+              "type": "keyword"
+            },
+            "subtype": {
+              "type": "keyword"
+            },
+            "countff": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "action": {
+              "type": "keyword"
+            },
+            "countcifs": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "osname": {
+              "type": "keyword"
+            },
+            "countapp": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "utmaction": {
+              "type": "keyword"
+            },
+            "dstfamily": {
+              "type": "keyword"
+            },
+            "policytype": {
+              "type": "keyword"
+            },
+            "dsthwvendor": {
+              "type": "keyword"
+            },
+            "countdns": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "countdlp": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "srcfamily": {
+              "type": "keyword"
+            },
+            "countips": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "vd": {
+              "type": "keyword"
+            },
+            "appcat": {
+              "type": "keyword"
+            },
+            "devtype": {
+              "type": "keyword"
+            },
+            "countemail": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "srcname": {
+              "type": "keyword"
+            },
+            "countweb": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            },
+            "srcswversion": {
+              "type": "keyword"
+            },
+            "srchwvendor": {
+              "type": "keyword"
+            },
+            "countwaf": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "long"
+                    },
+                    "min": {
+                      "type": "long"
+                    },
+                    "max": {
+                      "type": "long"
+                    },
+                    "count": {
+                      "type": "long"
+                    },
+                    "sum": {
+                      "type": "long"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
