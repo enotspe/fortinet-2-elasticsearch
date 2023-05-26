@@ -28,7 +28,7 @@ PUT _index_template/logs-fortinet.fortigate.utm
     "ecs-error",
     "ecs-tls-modified",
     "logs-fortinet.fortigate.utm@ilm",
-    "strings_as_keywords@mappings",
+    "strings_as_keyword@mappings",
     "auto_expand_replicas@settings",
     "refresh_interval@settings",
     "logs-fortinet.fortigate@mappings",
