@@ -1,0 +1,36 @@
+PUT _index_template/logs-fortinet.fortigate.event
+{
+  "priority": 200,
+  "index_patterns": [
+    "logs-fortinet.fortigate.event*"
+  ],
+  "data_stream": {
+    "hidden": false,
+    "allow_custom_routing": false
+  },
+  "composed_of": [
+    "ecs-base",
+    "ecs-user",
+    "ecs-user_agent",
+    "ecs-observer",
+    "ecs-destination",
+    "ecs-source",
+    "ecs-network",
+    "ecs-error",
+    "ecs-url",
+    "ecs-rule",
+    "ecs-data_stream",
+    "ecs-organization",
+    "ecs-ecs",
+    "ecs-host",
+    "logs-fortinet.fortigate.event@ilm",
+    "strings_as_keyword@mappings",
+    "auto_expand_replicas@settings",
+    "refresh_interval@settings",
+    "logs-fortinet.fortigate@mappings",
+    "ecs-log-modified",
+    "ecs-event-modified",
+    "ecs-file-modified",
+    "synthetic_source@mappings"
+  ]
+}

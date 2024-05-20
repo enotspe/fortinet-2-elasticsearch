@@ -1,0 +1,67 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "event": {
+          "type": "object",
+          "properties": {
+            "duration": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "double"
+                    },
+                    "min": {
+                      "type": "double"
+                    },
+                    "max": {
+                      "type": "double"
+                    },
+                    "count": {
+                      "type": "double"
+                    },
+                    "sum": {
+                      "type": "double"
+                    }
+                  }
+                }
+              }
+            },
+            "risk_score": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "stats": {
+                  "type": "object",
+                  "properties": {
+                    "avg": {
+                      "type": "double"
+                    },
+                    "min": {
+                      "type": "double"
+                    },
+                    "max": {
+                      "type": "double"
+                    },
+                    "count": {
+                      "type": "double"
+                    },
+                    "sum": {
+                      "type": "double"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
