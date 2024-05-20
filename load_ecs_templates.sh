@@ -46,9 +46,10 @@ check_repo_cloned() {
     else
       return 0
     fi
+  else
+    return 1
   fi
 }
-
 
 # Check if the ECS repository is already cloned
 check_repo_cloned
@@ -68,15 +69,10 @@ if [ $? -ne 0 ]; then
   fi
 fi
 
-# Proceed with updating component templates
-version=$(git -C ecs describe --tags)
-echo -e "\nStarting the update process with version: $version"
-# Add the update process here...
-
 # Get user input
 get_user_input
 
-version="$(cat ecs/version)"
+version=$(git -C ecs describe --tags)
 echo -e "\nStarting the update process with version: $version"
 
 for file in ecs/generated/elasticsearch/composable/component/*.json
@@ -109,5 +105,4 @@ do
 done
 
 echo -e "\nUpdate process completed."
-
 
