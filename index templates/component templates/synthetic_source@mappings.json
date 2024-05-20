@@ -1,9 +1,0 @@
-{
-  "template": {
-    "mappings": {
-      "_source": {
-        "mode": "synthetic"
-      }
-    }
-  }
-}
