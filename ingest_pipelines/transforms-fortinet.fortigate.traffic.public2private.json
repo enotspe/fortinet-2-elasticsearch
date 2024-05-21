@@ -1,4 +1,3 @@
-PUT _ingest/pipeline/transforms-fortinet.fortigate.traffic.public2private
 {
   "processors": [
     {

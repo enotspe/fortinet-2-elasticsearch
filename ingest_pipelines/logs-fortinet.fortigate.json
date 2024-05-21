@@ -1,5 +1,5 @@
 {
-  "description": "session.id from https://github.com/elastic/ecs/blob/main/rfcs/text/0004-session.md",
+
   "processors": [
     {
       "set": {
@@ -304,7 +304,8 @@
       "set": {
         "field": "session.id",
         "ignore_empty_value": true,
-        "copy_from": "fgt.sessionid"
+        "copy_from": "fgt.sessionid",
+        "description": "session.id from https://github.com/elastic/ecs/blob/main/rfcs/text/0004-session.md"
       }
     },
     {

@@ -138,5 +138,22 @@ do
   upload_template "$file" "$component_name" "$api" "index template"
 done
 
+# Upload ingest pipelines from ingest_pipelines/
+for file in ingest_pipelines/*.json
+do
+  component_name=$(basename "$file" .json)
+  api="_ingest/pipeline/${component_name}"
+  upload_template "$file" "$component_name" "$api" "ingest pipeline"
+done
+
+# Upload transforms from transforms/
+for file in transforms/*.json
+do
+  component_name=$(basename "$file" .json)
+  api="_transform/${component_name}"
+  upload_template "$file" "$component_name" "$api" "transforms"
+done
+
+
 echo -e "\nLoading process completed."
 
