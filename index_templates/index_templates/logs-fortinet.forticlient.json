@@ -1,12 +1,10 @@
-PUT _index_template/logs-fortinet.forticlient
 {
   "priority": 300,
   "index_patterns": [
     "logs-fortinet.forticlient*"
   ],
   "data_stream": {
-    "hidden": false,
-    "allow_custom_routing": false
+
   },
   "composed_of": [
     "ecs-base",

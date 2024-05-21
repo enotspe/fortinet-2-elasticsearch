@@ -1,12 +1,9 @@
-PUT _index_template/logs-fortinet.fortigate.utm
 {
   "priority": 200,
   "index_patterns": [
     "logs-fortinet.fortigate.utm*"
   ],
   "data_stream": {
-    "hidden": false,
-    "allow_custom_routing": false
   },
   "composed_of": [
     "ecs-base",

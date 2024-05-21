@@ -73,13 +73,14 @@ fi
 get_user_input
 
 version=$(git -C ecs describe --tags)
-echo -e "\nStarting the update process with version: $version"
+echo -e "\nStarting the loading process with version: $version"
 
-for file in ecs/generated/elasticsearch/composable/component/*.json
-do
-  fieldset=$(basename "$file" .json | tr '[:upper:]' '[:lower:]')
-  component_name="ecs-${fieldset}"
-  api="_component_template/${component_name}"
+# Function to upload a JSON template to Elasticsearch
+upload_template() {
+  local file=$1
+  local component_name=$2
+  local api=$3
+  local template_type=$4
 
   echo -e "\nProcessing file: $file"
   echo "Target API endpoint: $url/$api"
@@ -95,14 +96,47 @@ do
 
   if [ "$http_status" -eq 200 ]; then
     if echo $body | grep -q '"acknowledged":true'; then
-      echo -e "Successfully updated component template: $component_name\nAcknowledgment: true"
+      echo -e "Successfully loaded $template_type: $component_name\nAcknowledgment: true"
     else
-      echo -e "Successfully updated component template: $component_name\nAcknowledgment: false"
+      echo -e "Successfully loaded $template_type: $component_name\nAcknowledgment: false"
     fi
   else
-    echo -e "Failed to update component template: $component_name\nHTTP status: $http_status\nResponse body: $body"
+    echo -e "Failed to loaded $template_type: $component_name\nHTTP status: $http_status\nResponse body: $body"
   fi
+}
+
+# Upload ECS component templates
+for file in ecs/generated/elasticsearch/composable/component/*.json
+do
+  fieldset=$(basename "$file" .json | tr '[:upper:]' '[:lower:]')
+  component_name="ecs-${fieldset}"
+  api="_component_template/${component_name}"
+  upload_template "$file" "$component_name" "$api" "component template"
 done
 
-echo -e "\nUpdate process completed."
+# Upload additional component templates from index_templates/component_templates/
+for file in index_templates/component_templates/*.json
+do
+  component_name=$(basename "$file" .json)
+  api="_component_template/${component_name}"
+  upload_template "$file" "$component_name" "$api" "component template"
+done
+
+# Upload ilm policies from index_templates/ilm/
+for file in index_templates/ilm/*.json
+do
+  component_name=$(basename "$file" .json)
+  api="_ilm/policy/${component_name}"
+  upload_template "$file" "$component_name" "$api" "ILM policy"
+done
+
+# Upload index templates from index_templates/index_templates/
+for file in index_templates/index_templates/*.json
+do
+  component_name=$(basename "$file" .json)
+  api="_index_template/${component_name}"
+  upload_template "$file" "$component_name" "$api" "index template"
+done
+
+echo -e "\nLoading process completed."
 

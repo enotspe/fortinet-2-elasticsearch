@@ -1,4 +1,3 @@
-PUT _ilm/policy/logs-fortinet.fortigate.traffic
 {
     "policy" : {
       "phases" : {

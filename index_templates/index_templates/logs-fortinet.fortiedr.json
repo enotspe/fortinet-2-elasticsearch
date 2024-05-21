@@ -1,12 +1,10 @@
-PUT _index_template/logs-fortinet.fortiedr
 {
   "priority": 300,
   "index_patterns": [
     "logs-fortinet.fortiedr*"
   ],
   "data_stream": {
-    "hidden": false,
-    "allow_custom_routing": false
+
   },
   "composed_of": [
     "ecs-base",

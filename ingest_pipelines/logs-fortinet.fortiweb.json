@@ -1,0 +1,299 @@
+{
+  "processors": [
+    {
+      "set": {
+        "field": "event.ingested",
+        "value": "{{_ingest.timestamp}}"
+      }
+    },
+    {
+      "remove": {
+        "field": [
+          "host",
+          "cloud",
+          "agent"
+        ],
+        "ignore_missing": true
+      }
+    },
+    {
+      "grok": {
+        "field": "message",
+        "patterns": [
+          "%{SYSLOG5424PRI}%{GREEDYDATA:_ingest.message}"
+        ],
+        "pattern_definitions": {
+          "SYSLOG5424PRI": "<%{NONNEGINT:log.syslog.priority:int}>"
+        },
+        "ignore_missing": true
+      }
+    },
+    {
+      "json": {
+        "field": "_ingest.message",
+        "target_field": "fwb",
+        "ignore_failure": true
+      }
+    },
+    {
+      "set": {
+        "field": "observer.serial_number",
+        "copy_from": "fwb.device_id",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "destination.ip",
+        "copy_from": "fwb.dst",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "destination.port",
+        "copy_from": "fwb.dst_port",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "convert": {
+        "field": "fwb.http_response_bytes",
+        "type": "long",
+        "target_field": "http.response.bytes",
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "convert": {
+        "field": "fwb.http_request_bytes",
+        "type": "long",
+        "target_field": "http.request.bytes",
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "convert": {
+        "field": "fwb.http_response_time",
+        "type": "long",
+        "target_field": "http.response.duration",
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "convert": {
+        "field": "fwb.http_request_time",
+        "type": "long",
+        "target_field": "http.request.duration",
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "set": {
+        "field": "network.transport",
+        "copy_from": "fwb.proto",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "network.protocol",
+        "copy_from": "fwb.service",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "source.ip",
+        "copy_from": "fwb.src",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "source.port",
+        "copy_from": "fwb.src_port",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "user.name",
+        "copy_from": "fwb.user_name",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "user_agent.original",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_agent"
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.method",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_method"
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.referrer",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_refer"
+      }
+    },
+    {
+      "set": {
+        "field": "http.response.status_code",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_retcode"
+      }
+    },
+    {
+      "set": {
+        "field": "http.version",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_version"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.address",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_host"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.domain",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_host"
+      }
+    },
+    {
+      "set": {
+        "field": "url.domain",
+        "copy_from": "fwb.http_host",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.id",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_session_id"
+      }
+    },
+    {
+      "set": {
+        "field": "url.original",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.http_url"
+      }
+    },
+    {
+      "set": {
+        "field": "x509.subject.common_name",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.x509_cert_subject"
+      }
+    },
+    {
+      "set": {
+        "field": "tls.cipher",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.cipher_suite"
+      }
+    },
+    {
+      "set": {
+        "field": "rule.name",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.policy"
+      }
+    },
+    {
+      "set": {
+        "field": "event.code",
+        "ignore_empty_value": true,
+        "copy_from": "fwb.log_id"
+      }
+    },
+    {
+      "user_agent": {
+        "field": "user_agent.original",
+        "extract_device_type": true,
+        "ignore_missing": true
+      }
+    },
+    {
+      "geoip": {
+        "field": "source.ip",
+        "target_field": "source.geo",
+        "ignore_missing": true
+      }
+    },
+    {
+      "geoip": {
+        "field": "destination.ip",
+        "target_field": "destination.geo",
+        "ignore_missing": true
+      }
+    },
+    {
+      "network_direction": {
+        "internal_networks_field": "internal_networks"
+      }
+    },
+    {
+      "append": {
+        "field": "related.ip",
+        "value": [
+          "{{source.ip}}",
+          "{{destination.ip}}"
+        ]
+      }
+    },
+    {
+      "registered_domain": {
+        "field": "url.domain",
+        "target_field": "url"
+      }
+    },
+    {
+      "user_agent": {
+        "field": "user_agent.original",
+        "extract_device_type": true,
+        "ignore_missing": true
+      }
+    },
+    {
+      "append": {
+        "field": "related.user",
+        "value": [
+          "{{user.name}}"
+        ]
+      }
+    },
+
+    {
+      "set": {
+        "field": "_ingest.new_dataset",
+        "value": "{{data_stream.dataset}}.{{fwb.type}}"
+      }
+    },
+    {
+      "reroute": {
+        "dataset": [
+          "{{_ingest.new_dataset}}"
+        ]
+      }
+    }
+  ]
+}

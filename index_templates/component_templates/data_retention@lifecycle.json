@@ -1,7 +1,0 @@
-{
-  "template": {
-      "lifecyle": {
-	"data_retention": "180d"
-      }
-  }
-}

@@ -1,0 +1,730 @@
+{
+  "description": "session.id from https://github.com/elastic/ecs/blob/main/rfcs/text/0004-session.md",
+  "processors": [
+    {
+      "set": {
+        "field": "event.ingested",
+        "value": "{{_ingest.timestamp}}"
+      }
+    },
+    {
+      "remove": {
+        "field": [
+          "host",
+          "cloud",
+          "agent"
+        ],
+        "ignore_missing": true
+      }
+    },
+    {
+      "set": {
+        "field": "observer.hostname",
+        "ignore_empty_value": true,
+        "copy_from": "log.syslog.hostname"
+      }
+    },
+    {
+      "kv": {
+        "field": "message",
+        "field_split": "\\s(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)",
+        "value_split": "=",
+        "target_field": "fgt",
+        "strip_brackets": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "set": {
+        "field": "event.timezone",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.timezone"
+      }
+    },
+    {
+      "set": {
+        "field": "event.code",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.logid"
+      }
+    },
+    {
+      "set": {
+        "field": "source.user.email",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.collectedemail"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.user.email",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dstcollectedemail"
+      }
+    },
+    {
+      "set": {
+        "field": "observer.egress.interface.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dstintf"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.ip",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dstip"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.mac",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dstmac"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.address",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dstname"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.port",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dstport"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.user.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dstuser"
+      }
+    },
+    {
+      "script": {
+        "lang": "painless",
+        "source": "ctx.event.duration = Long.parseLong(ctx.fgt.duration) * 1000000000",
+        "if": "ctx.fgt?.duration != null"
+      }
+    },
+    {
+      "set": {
+        "field": "source.user.group.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.group"
+      }
+    },
+    {
+      "set": {
+        "field": "rule.id",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.policyid"
+      }
+    },
+    {
+      "set": {
+        "field": "rule.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.policyname"
+      }
+    },
+    {
+      "set": {
+        "field": "rule.ruleset",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.policytype"
+      }
+    },
+    {
+      "set": {
+        "field": "rule.uuid",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.poluuid"
+      }
+    },
+    {
+      "convert": {
+        "field": "fgt.rcvdbyte",
+        "type": "long",
+        "target_field": "destination.bytes",
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "convert": {
+        "ignore_failure": true,
+        "field": "fgt.rcvdpkt",
+        "type": "long",
+        "target_field": "destination.packets",
+        "ignore_missing": true
+      }
+    },
+    {
+      "convert": {
+        "field": "fgt.sentbyte",
+        "type": "long",
+        "target_field": "source.bytes",
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "convert": {
+        "ignore_failure": true,
+        "field": "fgt.sentpkt",
+        "type": "long",
+        "target_field": "source.packets",
+        "ignore_missing": true
+      }
+    },
+    {
+      "script": {
+        "source": "if (ctx.source?.bytes != null && ctx.destination?.bytes != null)\n{ long sourceBytes = (ctx['source']['bytes']);\n  long destinationBytes = (ctx['destination']['bytes']);\n  ctx['network'] = ['bytes': sourceBytes + destinationBytes];\n}\nif (ctx.source?.packets != null && ctx.destination?.packets != null)\n{ ctx.network.packets = ctx.source.packets + ctx.destination.packets;\n}",
+        "ignore_failure": true
+      }
+    },
+    {
+      "set": {
+        "field": "network.iana_number",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.proto"
+      }
+    },
+    {
+      "set": {
+        "field": "source.domain",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.srcdomain"
+      }
+    },
+    {
+      "set": {
+        "field": "observer.ingress.interface.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.srcintf"
+      }
+    },
+    {
+      "set": {
+        "field": "source.ip",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.srcip"
+      }
+    },
+    {
+      "set": {
+        "field": "source.mac",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.srcmac"
+      }
+    },
+    {
+      "set": {
+        "field": "source.address",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.srcname"
+      }
+    },
+    {
+      "set": {
+        "field": "source.port",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.srcport"
+      }
+    },
+    {
+      "set": {
+        "field": "source.risk.static_score",
+        "copy_from": "fgt.crscore",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "source.risk.static_level",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.crlevel"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.nat.ip",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.tranip"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.nat.port",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.tranport"
+      }
+    },
+    {
+      "set": {
+        "field": "source.nat.ip",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.transip"
+      }
+    },
+    {
+      "set": {
+        "field": "source.nat.port",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.transport"
+      }
+    },
+    {
+      "set": {
+        "field": "source.user.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.user"
+      }
+    },
+    {
+      "set": {
+        "field": "url.original",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.url"
+      }
+    },
+    {
+      "set": {
+        "field": "network.vrf",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.vrf"
+      }
+    },
+    {
+      "set": {
+        "field": "session.id",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.sessionid"
+      }
+    },
+    {
+      "set": {
+        "field": "session.id",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.session_id"
+      }
+    },
+    {
+      "kv": {
+        "field": "fgt.rawdata",
+        "field_split": "\\|",
+        "value_split": "=",
+        "target_field": "fgt.ext_log",
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.method",
+        "copy_from": "fgt.ext_log.Method",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "user_agent.original",
+        "copy_from": "fgt.ext_log.User-Agent",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.referrer",
+        "copy_from": "fgt.ext_log.Referer",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.mime_type",
+        "copy_from": "fgt.ext_log.Request-Content-Type",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.response.mime_type",
+        "copy_from": "fgt.ext_log.Response-Content-Type",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "user_agent.original",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.agent"
+      }
+    },
+    {
+      "set": {
+        "field": "tls.client.issuer",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.ccertissuer"
+      }
+    },
+    {
+      "set": {
+        "field": "observe.egress.interface.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dst_int"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.port",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.dst_port"
+      }
+    },
+    {
+      "set": {
+        "field": "error.message",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.error"
+      }
+    },
+    {
+      "set": {
+        "field": "error.code",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.errorcode"
+      }
+    },
+    {
+      "set": {
+        "field": "file.hash,crc32",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.filehash"
+      }
+    },
+    {
+      "set": {
+        "field": "file.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.filename"
+      }
+    },
+    {
+      "set": {
+        "field": "file.type",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.filesize"
+      }
+    },
+    {
+      "set": {
+        "field": "file.extension",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.filetype"
+      }
+    },
+    {
+      "set": {
+        "field": "url.domain",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.hostname"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.domain",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.hostname"
+      }
+    },
+    {
+      "set": {
+        "field": "dns.resolved_ip",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.ipaddr"
+      }
+    },
+    {
+      "set": {
+        "field": "rule.id",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.policy_id"
+      }
+    },
+    {
+      "split": {
+        "field": "fgt.ipaddr",
+        "separator": ",",
+        "target_field": "dns.resolved_ip",
+        "ignore_missing": true
+      }
+    },
+    {
+      "set": {
+        "field": "dns.question.class",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.qclass"
+      }
+    },
+    {
+      "set": {
+        "field": "dns.question.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.qname"
+      }
+    },
+    {
+      "set": {
+        "field": "dns.question.type",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.qtype"
+      }
+    },
+    {
+      "set": {
+        "field": "event.reason",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.reason"
+      }
+    },
+    {
+      "set": {
+        "field": "event.reference",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.ref"
+      }
+    },
+    {
+      "set": {
+        "field": "tls.client.server_name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.scertcname"
+      }
+    },
+    {
+      "set": {
+        "field": "tls.server.issuer",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.scertissuer"
+      }
+    },
+    {
+      "set": {
+        "field": "observer.ingress.interface.name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.src_int"
+      }
+    },
+    {
+      "set": {
+        "field": "source.port",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.src_port"
+      }
+    },
+    {
+      "set": {
+        "field": "dns.id",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.xid"
+      }
+    },
+    {
+      "set": {
+        "field": "source.ip",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.locip"
+      }
+    },
+    {
+      "set": {
+        "field": "source.port",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.locport"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.ip",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.remip"
+      }
+    },
+    {
+      "set": {
+        "field": "destination.port",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.remport"
+      }
+    },
+    {
+      "set": {
+        "field": "network.protocol",
+        "copy_from": "fgt.voip_proto",
+        "override": false,
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "http.request.method",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.httpmethod"
+      }
+    },
+    {
+      "set": {
+        "field": "tls.client.server_name",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.sni"
+      }
+    },
+    {
+      "set": {
+        "field": "tls.version",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.tlsver"
+      }
+    },
+    {
+      "set": {
+        "field": "source.ip",
+        "ignore_empty_value": true,
+        "copy_from": "fgt.remip"
+      }
+    },
+    {
+      "split": {
+        "field": "fgt.seq",
+        "separator": ",",
+        "ignore_missing": true
+      }
+    },
+    {
+      "set": {
+        "field": "rule.id-name",
+        "value": "{{rule.id}} - {{rule.name}}",
+        "if": "ctx?.fgt?.type == 'traffic'"
+      }
+    },
+    {
+      "set": {
+        "field": "network.application",
+        "copy_from": "fgt.app",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "network.protocol",
+        "copy_from": "fgt.service",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "user_agent": {
+        "field": "user_agent.original",
+        "extract_device_type": true,
+        "ignore_missing": true
+      }
+    },
+    {
+      "geoip": {
+        "field": "source.ip",
+        "target_field": "source.geo",
+        "ignore_missing": true
+      }
+    },
+    {
+      "geoip": {
+        "field": "destination.ip",
+        "target_field": "destination.geo",
+        "ignore_missing": true
+      }
+    },
+    {
+      "geoip": {
+        "field": "source.nat.ip",
+        "target_field": "source.nat.geo",
+        "ignore_missing": true
+      }
+    },
+    {
+      "geoip": {
+        "field": "detination.nat.ip",
+        "target_field": "detination.nat.geo",
+        "ignore_missing": true
+      }
+    },
+    {
+      "community_id": {
+        "icmp_type": "fgt.icmptype",
+        "icmp_code": "fgt.icmpcode",
+        "ignore_failure": true
+      }
+    },
+    {
+      "network_direction": {
+        "internal_networks_field": "internal_networks"
+      }
+    },
+    {
+      "append": {
+        "field": "related.ip",
+        "value": [
+          "{{source.ip}}",
+          "{{source.nat.ip}}",
+          "{{destination.ip}}",
+          "{{destination.nat.ip}}"
+        ]
+      }
+    },
+    {
+      "registered_domain": {
+        "field": "dns.question.name",
+        "target_field": "dns.question"
+      }
+    },
+    {
+      "registered_domain": {
+        "field": "url.domain",
+        "target_field": "url"
+      }
+    },
+    {
+      "user_agent": {
+        "field": "user_agent.original",
+        "extract_device_type": true,
+        "ignore_missing": true
+      }
+    },
+    {
+      "append": {
+        "field": "related.user",
+        "value": [
+          "{{source.user.name}}",
+          "{{destination.user.name}}"
+        ]
+      }
+    },
+    {
+      "set": {
+        "field": "_ingest.new_dataset",
+        "value": "{{data_stream.dataset}}.{{fgt.type}}.{{fgt.subtype}}"
+      }
+    },
+    {
+      "reroute": {
+        "dataset": [
+          "{{_ingest.new_dataset}}"
+        ]
+      }
+    }
+  ]
+}

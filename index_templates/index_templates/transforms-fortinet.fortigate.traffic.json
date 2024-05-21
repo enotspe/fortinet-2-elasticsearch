@@ -1,4 +1,3 @@
-PUT _index_template/transforms-fortinet.fortigate.traffic
 {
   "index_patterns": [
     "transforms-fortinet.fortigate.traffic*"

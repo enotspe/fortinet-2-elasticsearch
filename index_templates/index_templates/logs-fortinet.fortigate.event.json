@@ -1,12 +1,9 @@
-PUT _index_template/logs-fortinet.fortigate.event
 {
   "priority": 200,
   "index_patterns": [
     "logs-fortinet.fortigate.event*"
   ],
   "data_stream": {
-    "hidden": false,
-    "allow_custom_routing": false
   },
   "composed_of": [
     "ecs-base",
