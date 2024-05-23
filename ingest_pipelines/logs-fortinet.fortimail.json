@@ -1,0 +1,167 @@
+{
+  "processors": [
+    {
+      "set": {
+        "field": "event.ingested",
+        "value": "{{_ingest.timestamp}}"
+      }
+    },
+    {
+      "remove": {
+        "field": [
+          "host",
+          "cloud",
+          "agent"
+        ],
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "grok": {
+        "field": "message",
+        "patterns": [
+          "%{SYSLOG5424PRI}%{GREEDYDATA:message}"
+        ],
+        "pattern_definitions": {
+          "SYSLOG5424PRI": "<%{NONNEGINT:log.syslog.priority:int}>"
+        },
+        "trace_match": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "kv": {
+        "field": "message",
+        "field_split": "\\s+(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)",
+        "value_split": "\\=(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)",
+        "target_field": "fml",
+        "strip_brackets": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "kv": {
+        "field": "fml.msg",
+        "field_split": ",\\s(?![^\\[\\]()]*[\\]\\)])",
+        "value_split": "=",
+        "target_field": "fml",
+        "strip_brackets": true,
+        "if": "ctx?.fml?.subtype == 'smtp'",
+        "ignore_failure": true
+      }
+    },
+    {
+      "set": {
+        "field": "event.timezone",
+        "ignore_empty_value": true,
+        "copy_from": "fml.tz"
+      }
+    },
+    {
+      "set": {
+        "field": "observer.serial_number",
+        "copy_from": "fml.device_id",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "grok": {
+        "ignore_failure": true,
+        "field": "fml.dst_ip",
+        "patterns": [
+          "%{IP:destination.ip}"
+        ],
+        "trace_match": true,
+        "ignore_missing": true
+      }
+    },
+    {
+      "grok": {
+        "field": "fml.client_ip",
+        "patterns": [
+          "%{IP:source.ip}"
+        ],
+        "trace_match": true,
+        "ignore_missing": true,
+        "ignore_failure": true
+      }
+    },
+    {
+      "set": {
+        "field": "source.domain",
+        "copy_from": "fml.client_name",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "email.from.address",
+        "copy_from": "fml.hfrom",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "email.sender.address",
+        "copy_from": "fml.from",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "email.to.address",
+        "copy_from": "fml.to",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "email.subject",
+        "copy_from": "fml.subject",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "email.x_mailer",
+        "copy_from": "fml.mailer",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "email.direction",
+        "copy_from": "fml.direction",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "email.message_id",
+        "copy_from": "fml.message_id",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "email.local_id",
+        "copy_from": "fml.session_id",
+        "ignore_empty_value": true
+      }
+    },
+    {
+      "set": {
+        "field": "_ingest.new_dataset",
+        "value": "{{data_stream.dataset}}.{{fml.type}}"
+      }
+    },
+    {
+      "reroute": {
+        "dataset": [
+          "{{_ingest.new_dataset}}"
+        ]
+      }
+    }
+  ]
+}
