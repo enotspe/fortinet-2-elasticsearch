@@ -151,6 +151,22 @@
       }
     },
     {
+      "split": {
+        "field": "fml.disposition",
+        "separator": ";",
+        "ignore_missing": true
+      }
+    },
+    {
+      "append": {
+        "field": "related.ip",
+        "value": [
+          "{{source.ip}}",
+          "{{destination.ip}}"
+        ]
+      }
+    },
+    {
       "set": {
         "field": "_ingest.new_dataset",
         "value": "{{data_stream.dataset}}.{{fml.type}}"
