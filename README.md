@@ -1,6 +1,6 @@
 # FortiDragon (fortinet-2-elasticsearch) 🐉
 
-![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/FortiUnicorn%20Fortinet-2-Elasticsearch.png)
+![logo](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/fortidragon%20logo.jpeg)
 
 ## Engage
 
