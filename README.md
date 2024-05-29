@@ -39,17 +39,7 @@ Let's get this party on!!! 🤩
 
 ### On Fortigate
 
-1. Configure syslog
-
-  ```
-    config log syslogd setting
-        set status enable
-        set server "logstash_IP"
-        set port 5140
-    end
-  ```
-
-  Or if you run FortiOS v7, you can use syslog5424. **RECOMMENDED**
+1. Configure syslog, you should use syslog5424. **RECOMMENDED**
 
   ```
     config log syslogd setting
@@ -79,7 +69,7 @@ Let's get this party on!!! 🤩
 
   You may get a warning that you need to change to reliable syslogd. Remember that "The full rawdata field of 20KB is only sent to reliable Syslog servers. Other logging devices, such as disk, FortiAnalyzer, and UDP Syslog servers, receive the information, but only keep a maximum of 2KB total log length, including the rawdata field, and discard the rest of the extended log information."
 
-3. If you also would like to have metrics about your SDWAN Performance SLAs and view them in the SDWAN dashboard, you need to set both `sla-fail-log-period` and `sla-pass-log-period` on your healthchecks.
+3. If you also would like to have metrics about your SDWAN Performance SLAs, you need to set both `sla-fail-log-period` and `sla-pass-log-period` on your healthchecks.
 
   ```
     config health-check
@@ -114,70 +104,36 @@ Let's get this party on!!! 🤩
   ```
 
 
-### On Kibana (Dev Tools)
+### On Elastic
 
-1. Load ingest pipeline **OPTIONAL** Remember to comment out on the output pipeline if you decide not to use it.
+We got a script!!!!
 
-```
-PUT _ingest/pipeline/add_event_ingested
-{
-  "processors": [
-    {
-      "set": {
-        "field": "event.ingested",
-        "value": "{{_ingest.timestamp}}"
-      }
-    }
-  ]
-}
-```
+1. clone the repo.
 
-2. Create ILM policies according to your needs. You can use these [examples](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/ilm). Make sure you name them accordingly to your index strategy. For our case, that would be:
+2. Give execute priviligies to `load.sh`.
 
-- logs-fortinet.fortigate.traffic
-- logs-fortinet.fortigate.utm
-- logs-fortinet.fortigate.event
+  ```
+  chmod +x load.sh
 
-  In our experience, `type=traffic` generates lots of logs, while `type=event` very few. So it makes sense to have different lifecycles for differente types of logs. Other slicing ideas can be found [below](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master#common-ecs--output).
+  ```
+3. Run `load.sh`.
 
-3. Load component templates both from [Elastic ECS](https://github.com/elastic/ecs/tree/main/generated/elasticsearch/composable/component) and [FortiDragon specific](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/component%20templates). Do it manually one by one:
+  ```
+  ./load.sh
 
-```
-PUT _component_template/ecs-base
-{
-  "_meta": {
-    "documentation": "https://www.elastic.co/guide/en/ecs/current/ecs-base.html",
-    "ecs_version": "8.3.1"
-  },
-  "template": {
-    "mappings": {
-      "properties": {
-        "@timestamp": {
-          "type": "date"
-        },
-        "labels": {
-          "type": "object"
-        },
-        "message": {
-          "type": "match_only_text"
-        },
-        "tags": {
-          "ignore_above": 1024,
-          "type": "keyword"
-        }
-      }
-    }
-  }
-}
-```
+  ```
+4. Follow instructions.
 
-4. Load [index templates](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/index%20templates/index%20templates)
-
-5. Load [Dashboards](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/kibana): Go to Management --> Stack Management --> Saved Objects --> Import
+5. In Kibana, load [Dashboards](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/kibana): Go to Management --> Stack Management --> Saved Objects --> Import
 
 6. Make sure dashboard controls are enabled: Go to Management --> Kibana Advanced Settings --> Presentation Labs --> Enable dashboard controls
 
-### On Logstash
+
+### Deploy Elastic Agent
+
+
+
+### On Logstash **DEPRECATED**
 
 1. [Install Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html)
 
@@ -204,7 +160,9 @@ echo HOSTNAME=\""$HOSTNAME"\" | sudo tee  -a /etc/default/logstash
 
 Hopefully you should be dancing with your logs by now. 🕺💃
 
-## Pipelines sequence
+## Pipelines sequence **DEPRECATED**
+
+Although we do not use logstash pipelines anymore, the logic is very similar on ingest pipelines.
 
 The overall pipeline flow is as follows:
 
