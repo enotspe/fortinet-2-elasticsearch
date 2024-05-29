@@ -1,5 +1,11 @@
 {
   "priority": 200,
+  "template": {
+    "lifecycle": {
+      "enabled": true,
+      "data_retention": "180d"
+    }
+  },
   "index_patterns": [
     "logs-fortinet.fortigate.utm*"
   ],
@@ -10,7 +16,7 @@
     "ecs-user",
     "ecs-observer",
     "ecs-destination",
-    "ecs-source",
+    "ecs-source-modified",
     "ecs-network",
     "ecs-url",
     "ecs-rule",
