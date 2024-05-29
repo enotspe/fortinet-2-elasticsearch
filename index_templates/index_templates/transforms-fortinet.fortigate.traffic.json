@@ -6,6 +6,7 @@
     "ecs-destination-transforms",
     "ecs-network-transforms",
     "ecs-source-transforms",
+    "ecs-session-transforms",
     "ecs-data_stream",
     "ecs-event-transforms",
     "transforms-fortinet.fortigate@mappings",

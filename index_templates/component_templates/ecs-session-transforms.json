@@ -1,0 +1,23 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "session": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "dynamic": true,
+              "type": "object",
+              "enabled": true,
+              "properties": {
+                "value_count": {
+                      "type": "double"
+                    }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
