@@ -156,7 +156,7 @@ We got a script!!!!
 
 4. Save Integration
 
-5. [Permance tunning settings](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings)
+5. [Performance tunning settings](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings)
 - Use "Optimized for throughput" or "Custom" with larger settings.
 - Run `watch -d "column -t cat /proc/net/snmp | grep -w Udp"` on your Elastic Agent host to check if you are dropping any logs.
 
