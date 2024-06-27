@@ -21,11 +21,11 @@ FortiDragon is a full anayltics platform for threat hunting with Fortinet dataso
 
 ## How it all began
 
-We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. That is why we created it on the first place. After 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkbox on their datasheets. Full parsing and performance for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best out there.
+We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. That is why we created it on the first place. After 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkmark on their datasheets. Full parsing and performance for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best out there.
 
 ## Key Benefits of FortiDragon
 1. **Parsing**
-- Full parsing of all Fortinet log fields: Extracts and maps all relevant fields from Fortinet logs.
+- Full parsing: Extracts and maps all relevant fields from Fortinet logs.
 - ECS Naming Standardization: Translates Fortinet fields to Elastic Common Schema (ECS) for consistent field naming.
 - Enrichment: Enhances log data with additional contextual information.
 
@@ -39,8 +39,8 @@ We actually use FortiDragon on our day to day operations for threat hunting, so 
 - We expose all filters at dashboard level, so you can always know what data you are quering. If you ever tried to debug a FortiAnalyzer query, you will know how valuable this is.
 
 5. **Multiplatform Support**
-- We already provide dashboards for Palo Alto firewall and Cortex XDR.
-- FortiDragon will support Grafana and Quickwit in future releases.
+- We already provide dashboards for Palo Alto firewalls and Cortex XDR.
+- FortiDragon will support Grafana and [Quickwit](https://quickwit.io/) in future releases.
 
 ## Installation
 
@@ -48,12 +48,12 @@ Let's get this party on!!! 🤩
 
 ### On Fortigate
 
-1. Configure syslog, you ~~should~~must use syslog5424.
+1. Configure syslog, you ~~should~~ must use syslog5424.
 
   ```
     config log syslogd setting
         set status enable
-        set server "logstash_IP"
+        set server "elastic_agent_IP"
         set port 5141
         set format rfc5424
     end
@@ -117,7 +117,7 @@ Let's get this party on!!! 🤩
 
 We got a script!!!!
 
-1. clone the repo.
+1. Clone the repo.
 
 2. Give execute priviligies to `load.sh`.
 
@@ -156,6 +156,10 @@ We got a script!!!!
 
 4. Save Integration
 
+5. [Permance tunning settings](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings)
+- Use "Optimized for throughput" or "Custom" with larger settings.
+- Run `watch -d "column -t cat /proc/net/snmp | grep -w Udp"` on your Elastic Agent host to check if you are dropping any logs.
+
 **Hopefully you should be dancing with your logs by now.** 🕺💃
 
 If you have deployed [standalone Elastic Agent](https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html), you should add UDP under your `inputs` in your `elastic-agent.yml`:
@@ -190,7 +194,7 @@ If you have deployed [standalone Elastic Agent](https://www.elastic.co/guide/en/
             - link_local_multicast
 ```
 
-### On Logstash **DEPRECATED**
+### ~~On Logstash~~ **DEPRECATED**
 
 Do not deploy Logstash
 
@@ -218,7 +222,7 @@ echo HOSTNAME=\""$HOSTNAME"\" | sudo tee  -a /etc/default/logstash
 7. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
 
 
-## Pipelines sequence **DEPRECATED**
+## ~~Pipelines sequence~~ **DEPRECATED**
 
 Although we do not use logstash pipelines anymore, the logic is very similar on ingest pipelines.
 
