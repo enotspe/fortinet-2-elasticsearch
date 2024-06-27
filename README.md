@@ -401,7 +401,7 @@ We can split the whole project into these phases:
 - Parsing (DONE ✅)
 - ECS normalization (DONE ✅)
 - Common enrichements (GeoIP, network.community_id, etc.) (DONE ✅)
-- Fortigate v7 support, specially Syslog RFC5424 format. (WIP 🏗)
+- Fortigate v7 support, specially Syslog RFC5424 format. ((DONE ✅)
 - Palo Alto support (WIP 🏗)
 - [Asset Enrichment](https://www.youtube.com/watch?v=8yf9DJ_TO6o): Fortigate can map user identity inside the logs, but that is not enough. We need to map networks funtionality, assets risk and group. For example, we might have a critical application that may have several web servers, sveral backends and a distributed DB; we need to know in our logs that all those IPs belong to the same application, which is a critical asset for business. If an alert gets generated, we can treat it with more priority. 🧠
 - IoC enrichment: IoC in general has 2 sides: enriching a log that is currently being ingested, and enriching a log that has already been ingested. Both approachs are needed, and both have very different challenges. For the first one, we can tweak the geoip filter for such purpose, [like these guys do for assets](https://www.youtube.com/watch?v=8yf9DJ_TO6o).
