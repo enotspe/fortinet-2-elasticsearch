@@ -3,7 +3,7 @@
 <div align="center"><img src="https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/logo_with_name_small.jpg" alt="FortiDragon" /></div>
 
 
-So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!! 👍
+So you want to take your Fortinet logs to Elasticseach??? You have come to the right place!!! 👍
 
 Welcome to FortiDragon! This project is designed to seamlessly integrate Fortinet logs with Elastic Stack (Grafana and Quickwit on the way!).
 
