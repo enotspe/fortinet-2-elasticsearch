@@ -4,6 +4,7 @@
 
 
 So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!! 👍
+
 Welcome to FortiDragon! This project is designed to seamlessly integrate Fortinet logs with Elastic Stack (Grafana and Quickwit on the way!).
 
 ## Engage
@@ -16,28 +17,28 @@ You are already saving a lot of money by using Fortinet+Elastic, so consider mak
 
 ## Overview
 
-FortiDragon is a full anayltics platform for threat hunting with Fortinet datasources. It leverages the Elastic Stack for efficient indexing, searching, visualizing and analyzisng log data. This repository provides scripts and configurations to set up this integration.
+FortiDragon is a full anayltics platform for threat hunting with Fortinet datasources. It leverages the Elastic Stack for efficient indexing, searching, visualizing and analyzing log data. This repository provides scripts and configurations to set up this integration.
 
 ## How it all began
 
-We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. That is why we created it on the first place, after 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkbox on their datasheet. Full parsing and performance for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best out there.
+We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. That is why we created it on the first place. After 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkbox on their datasheets. Full parsing and performance for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best out there.
 
 ## Key Benefits of FortiDragon
-1. Parsing
-- *Full parsing of all Fortinet log fields:* Extracts and maps all relevant fields from Fortinet logs.
-- *ECS Naming Standardization:* Translates Fortinet fields to Elastic Common Schema (ECS) for consistent field naming.
-- *Enrichment:* Enhances log data with additional contextual information.
+1. **Parsing**
+- Full parsing of all Fortinet log fields: Extracts and maps all relevant fields from Fortinet logs.
+- ECS Naming Standardization: Translates Fortinet fields to Elastic Common Schema (ECS) for consistent field naming.
+- Enrichment: Enhances log data with additional contextual information.
 
-2. Analytics
+2. **Analytics**
 - FortiDragon provides deep visibility into your network traffic. With its comprehensive dashboards for threat hunting, you can easily monitor Fortinet logs in real-time. Here is where we shine! No other paid or free plataform has such an in depth analysis of Fortinet data
 
-3. Quick Setup
+3. **Quick Setup**
 - No more logstash hassle, simply run the provided script to install and configure all Elasticseach components.
 
-4. Transparency
+4. **Transparency**
 - We expose all filters at dashboard level, so you can always know what data you are quering. If you ever tried to debug a FortiAnalyzer query, you will know how valuable this is.
 
-5. Multiplatform Support
+5. **Multiplatform Support**
 - We already provide dashboards for Palo Alto firewall and Cortex XDR.
 - FortiDragon will support Grafana and Quickwit in future releases.
 
@@ -137,7 +138,7 @@ We got a script!!!!
 6. Make sure dashboard controls are enabled: Go to Management --> Kibana Advanced Settings --> Presentation Labs --> Enable dashboard controls
 
 
-### Elastic Agent
+### Deploy Elastic Agent
 
 1. [Install Elastic Agent](https://www.elastic.co/guide/en/fleet/current/elastic-agent-installation.html)
 
@@ -155,9 +156,9 @@ We got a script!!!!
 
 4. Save Integration
 
-Hopefully you should be dancing with your logs by now. 🕺💃
+**Hopefully you should be dancing with your logs by now.** 🕺💃
 
-If you have deployed [standalone Elastic Agent](https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html), you should add udp input to your `elastic-agent.yml`:
+If you have deployed [standalone Elastic Agent](https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html), you should add UDP under your `inputs` in your `elastic-agent.yml`:
 
 ```
   - id: fortigate-udp5141
