@@ -390,11 +390,11 @@ The spreadsheet goes like:
 
 ## Limitations
 
-We have not tested it yet on FortiOS v7+
+The sky is the limit!
 
 ## Roadmap 🛣️
 
-We can divide the whole project into these phases:
+We can split the whole project into these phases:
 
 ### Ingestion
 
