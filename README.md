@@ -23,7 +23,7 @@ FortiDragon is a full anayltics platform for threat hunting with Fortinet dataso
 
 We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. That is why we created it on the first place. After 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkmark on their datasheets. Full parsing and performance for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best out there.
 
-## Key Benefits of FortiDragon
+## Key Benefits
 1. **Parsing**
 - Full parsing: Extracts and maps all relevant fields from Fortinet logs.
 - ECS Naming Standardization: Translates Fortinet fields to Elastic Common Schema (ECS) for consistent field naming.
