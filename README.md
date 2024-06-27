@@ -2,6 +2,10 @@
 
 <div align="center"><img src="https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/logo_with_name_small.jpg" alt="FortiDragon" /></div>
 
+
+So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!! 👍
+Welcome to FortiDragon! This project is designed to seamlessly integrate Fortinet logs with Elastic Stack (Grafana and Quickwit on the way!).
+
 ## Engage
 
 Join our community on [Discord](https://discord.gg/9qn4enV) 🤓. Feel free to ask about anything on the channel.
@@ -10,28 +14,32 @@ You are already saving a lot of money by using Fortinet+Elastic, so consider mak
 
 - [Paypal](https://www.paypal.com/paypalme/fortidragon) 🤑
 
-## FortiDragon 🆚 Filebeat
+## Overview
 
-So you want to take you Fortinet logs to Elasticseach??? You have come to the right place!!! 👍
+FortiDragon is a full anayltics platform for threat hunting with Fortinet datasources. It leverages the Elastic Stack for efficient indexing, searching, visualizing and analyzisng log data. This repository provides scripts and configurations to set up this integration.
 
-But wait! Doesn't Elastic provide a [Filebeat module for Fortinet](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-fortinet.html)??? Why should you go with all the logstash hassle?? 🤷
-
-Well, Filebeat module and Fortidragon are like cousins 👪. The logic for Filebeat module for Fortigate was based on FortiDragon, [we colaborated together with Elastic when they made it](https://github.com/elastic/beats/pull/17890).
-
-The main difference is that FortiDragon is a full anayltics platform for threat hunting with Fortinet datasources, we do not restrict it to just the "ingestion" of logs. 
+## How it all began
 
 We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. That is why we created it on the first place, after 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkbox on their datasheet. Full parsing and performance for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best out there.
 
-Some notable differences are with Filebeat:
+## Key Benefits of FortiDragon
+1. Parsing
+- *Full parsing of all Fortinet log fields:* Extracts and maps all relevant fields from Fortinet logs.
+- *ECS Naming Standardization:* Translates Fortinet fields to Elastic Common Schema (ECS) for consistent field naming.
+- *Enrichment:* Enhances log data with additional contextual information.
 
-| Category | FortiDragon | Filebeat |
-| -------- | ----------- | ---------|
-| Dashboard | We got super cool dashboards!!! | Just one for now 😢 |
-| Other platforms | FortiEDR, Forticlient, Fortimail, Fortiweb | Just Fortigate |
-| Updates | Much more often | Dependant to Elastic releases |
-| Installation | Harder| Easier |
+2. Analytics
+- FortiDragon provides deep visibility into your network traffic. With its comprehensive dashboards for threat hunting, you can easily monitor Fortinet logs in real-time. Here is where we shine! No other paid or free plataform has such an in depth analysis of Fortinet data
 
-If you can handle the hassle of logstash installation, it is worth the effort.
+3. Quick Setup
+- No more logstash hassle, simply run the provided script to install and configure all Elasticseach components.
+
+4. Transparency
+- We expose all filters at dashboard level, so you can always know what data you are quering. If you ever tried to debug a FortiAnalyzer query, you will know how valuable this is.
+
+5. Multiplatform Support
+- We already provide dashboards for Palo Alto firewall and Cortex XDR.
+- FortiDragon will support Grafana and Quickwit in future releases.
 
 ## Installation
 
@@ -39,7 +47,7 @@ Let's get this party on!!! 🤩
 
 ### On Fortigate
 
-1. Configure syslog, you should use syslog5424. **RECOMMENDED**
+1. Configure syslog, you ~~should~~must use syslog5424.
 
   ```
     config log syslogd setting
@@ -69,7 +77,7 @@ Let's get this party on!!! 🤩
 
   You may get a warning that you need to change to reliable syslogd. Remember that "The full rawdata field of 20KB is only sent to reliable Syslog servers. Other logging devices, such as disk, FortiAnalyzer, and UDP Syslog servers, receive the information, but only keep a maximum of 2KB total log length, including the rawdata field, and discard the rest of the extended log information."
 
-3. If you also would like to have metrics about your SDWAN Performance SLAs, you need to set both `sla-fail-log-period` and `sla-pass-log-period` on your healthchecks.
+3. If you also would like to have metrics about your SDWAN Performance SLAs, you need to set both `sla-fail-log-period` and `sla-pass-log-period` on your healthchecks. **OPTIONAL**
 
   ```
     config health-check
@@ -129,11 +137,61 @@ We got a script!!!!
 6. Make sure dashboard controls are enabled: Go to Management --> Kibana Advanced Settings --> Presentation Labs --> Enable dashboard controls
 
 
-### Deploy Elastic Agent
+### Elastic Agent
 
+1. [Install Elastic Agent](https://www.elastic.co/guide/en/fleet/current/elastic-agent-installation.html)
 
+2. Create an Agent Policy
+![create_policy](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/create_policy.png)
+
+2. Add Integration
+![add_integration](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/add_integration.png)
+
+2. Select Custom UDP Logs
+![custom_udp_logs](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/custom_udp_logs.png)
+
+3. Configure Custom UDP Logs integration
+![integration_parameters](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/integration_parameters.png)
+
+4. Save Integration
+
+Hopefully you should be dancing with your logs by now. 🕺💃
+
+If you have deployed [standalone Elastic Agent](https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html), you should add udp input to your `elastic-agent.yml`:
+
+```
+  - id: fortigate-udp5141
+    name: fortigate-udp5141
+    type: udp
+    use_output: default
+    meta:
+      package:
+        name: udp
+        version: 1.19.0
+    data_stream:
+      namespace: default
+    streams:
+      - id: udp5141-fortinet.fortigate
+        data_stream:
+          dataset: fortinet.fortigate
+        host: '0.0.0.0:5141'
+        pipeline: logs-fortinet.fortigate
+        max_message_size: 50KiB
+        processors:
+          - syslog:
+              field: message
+        fields_under_root: true
+        fields:
+          internal_networks:
+            - private
+            - loopback
+            - link_local_unicast
+            - link_local_multicast
+```
 
 ### On Logstash **DEPRECATED**
+
+Do not deploy Logstash
 
 1. [Install Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html)
 
@@ -158,7 +216,6 @@ echo HOSTNAME=\""$HOSTNAME"\" | sudo tee  -a /etc/default/logstash
 6. Copy [conf.d](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder.
 7. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
 
-Hopefully you should be dancing with your logs by now. 🕺💃
 
 ## Pipelines sequence **DEPRECATED**
 
@@ -381,6 +438,9 @@ Another particular topic that has always had me wonder is P(A-->B), meaning the 
 - Vega visualiations.
 - Canvas for reports and C-level presentations. 🖌
 - Grafana
+
+## Contributing
+We welcome contributions from the community! If you have suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
 ## Authors
 
