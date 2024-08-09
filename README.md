@@ -157,22 +157,23 @@ Just use one of the options provided.
 2. Create an Agent Policy
 ![create_policy](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/create_policy.png)
 
-2. Add Integration
+3. Add Integration
 ![add_integration](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/add_integration.png)
 
-2. Select Custom UDP Logs
+4. Select Custom UDP Logs
 ![custom_udp_logs](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/custom_udp_logs.png)
 
-3. Configure Custom UDP Logs integration
+5. Configure Custom UDP Logs integration
 ![integration_parameters](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/integration_parameters.png)
 
-4. Make sure to add your own private networks under custom configurations. It is recommended to add your own public facing IP address scope as well.
+6. Make sure to add your own private networks under custom configurations. It is recommended to add your own public facing IP address scope as well.
 
-5. Save Integration
+7. Save Integration
 
-6. If you deployed Fleet-managed agent, just [apply your new policy to your agent](https://www.elastic.co/guide/en/fleet/current/agent-policy.html#apply-a-policy).
+8. Deploy you policy.
+- If you deployed Fleet-managed agent, just [apply your new policy to your agent](https://www.elastic.co/guide/en/fleet/current/agent-policy.html#apply-a-policy).
 
-7. If you deployed standalone agent, [take your generated policy](https://www.elastic.co/guide/en/fleet/current/create-standalone-agent-policy.html) and modify your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) accordinly.
+- If you deployed standalone agent, [take your generated policy](https://www.elastic.co/guide/en/fleet/current/create-standalone-agent-policy.html) and modify your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) accordinly.
 
 You should end up with something like:
 
@@ -214,13 +215,22 @@ You should end up with something like:
             - link_local_multicast
 ```
 
-7. Performance tunning settings
-- Use `Optimized for throughput` (should work for most setups) or `Custom` with larger settings (for very large EPS). You should modify it accordinly for [Fleet-managed agent](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings) or [standalone agent](https://www.elastic.co/guide/en/fleet/current/elasticsearch-output.html#output-elasticsearch-performance-tuning-settings)
+9. Performance tunning settings
+
+Firewalls are very chatty, so it may overwhelm buffers on your syslog collector, leading to dropping logs. Modify your `Elasticsearch output settings` for `Optimized for throughput`.
+
+- If you deployed Fleet-managed agent, modify your Elaticsearch output `Perfomance Tunnig` setting for [`Throughput`](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings) directly under your [output configuration] (https://www.elastic.co/guide/en/fleet/current/fleet-settings.html#output-settings).
+- If you deployed standalone agent, modify your Elaticsearch output preset setting for [`throughput`](https://www.elastic.co/guide/en/fleet/current/elasticsearch-output.html#output-elasticsearch-performance-tuning-settings) on your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) directly.
+
+Depending on your Events per Second (EPS) volume, you may need to increase performance tuning settings even further.
+
 - Run `watch -d "column -t cat /proc/net/snmp | grep -w Udp"` on your Elastic Agent host to check if you are dropping any logs.
 
 **Hopefully you should be dancing with your logs by now.** 🕺💃
 
 #### Vector
+
+To be added soon
 
 
 ### ~~On Logstash~~ **DEPRECATED**
