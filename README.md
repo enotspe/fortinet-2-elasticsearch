@@ -146,7 +146,7 @@ Some options are:
 
 - Elastic Agent
 - Vector
-- Rsyslog
+- [Rsyslog](https://www.rsyslog.com/doc/configuration/modules/omelasticsearch.html)
 
 Just use one of the options provided.
 
