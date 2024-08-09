@@ -17,11 +17,11 @@ You are already saving a lot of money by using Fortinet+Elastic, so consider mak
 
 ## Overview
 
-FortiDragon is a full anayltics platform for threat hunting with Fortinet datasources. It leverages the Elastic Stack for efficient indexing, searching, visualizing and analyzing log data. This repository provides scripts and configurations to set up this integration.
+FortiDragon aims to be a full anayltics platform for threat hunting with Fortinet datasources. It leverages the Elastic Stack for efficient indexing, searching, visualizing and analyzing log data. This repository provides scripts and configurations to set up this integration.
 
 ## How it all began
 
-We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. That is why we created it on the first place. After 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkmark on their datasheets. Full parsing and performance for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best out there.
+We actually use FortiDragon on our day to day operations for threat hunting, so we undestand all the painpoints of a security analyst. After 10+ years experience with Fortinet we could not find a solution that could extract all the juice out of Fortinet logs. We tried several SIEMs along the way and found out that firewall logs are just a checkmark on their datasheets. Full parsing and performance tunning for such volume of logs was not carefully considered by any SIEM vendor. Finally we decided we needed to build it ourselves and chose Elastic because of its flexibility, performance and cost. FortiDragon is by far the best option out there.
 
 ## Key Benefits
 1. **Parsing**
@@ -39,8 +39,8 @@ We actually use FortiDragon on our day to day operations for threat hunting, so 
 - We expose all filters at dashboard level, so you can always know what data you are quering. If you ever tried to debug a FortiAnalyzer query, you will know how valuable this is.
 
 5. **Multiplatform Support**
-- We already provide dashboards for Palo Alto firewalls and Cortex XDR.
-- FortiDragon will support Grafana and [Quickwit](https://quickwit.io/) in future releases.
+- We already provide dashboards for [Palo Alto firewalls](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/kibana/panw%20panos%20ELK%208143.ndjson) and [Cortex XDR](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/kibana/panw%20cortex%20ELK%208132.ndjson).
+- FortiDragon will support [Grafana](https://grafana.com/) and [Quickwit](https://quickwit.io/) in future releases.
 
 ## Installation
 
@@ -54,7 +54,7 @@ Let's get this party on!!! 🤩
     config log syslogd setting
         set status enable
         set server "elastic_agent_IP"
-        set port 5141
+        set port 5140
         set format rfc5424
     end
   ```
@@ -138,9 +138,21 @@ We got a script!!!!
 6. Make sure dashboard controls are enabled: Go to Management --> Kibana Advanced Settings --> Presentation Labs --> Enable dashboard controls
 
 
-### Deploy Elastic Agent
+### Syslog Collector
 
-1. [Install Elastic Agent](https://www.elastic.co/guide/en/fleet/current/elastic-agent-installation.html)
+All the procecesing is done via ingest pipelines in Elasticsearch, so we can use any lightweight collector for receiving syslog logs from firewalls and sending them to our Elastic cluster.
+
+Some options are:
+
+- Elastic Agent
+- Vector
+- Rsyslog
+
+Just use one of the options provided.
+
+#### Elastic Agent
+
+1. [Install Elastic Agent](https://www.elastic.co/guide/en/fleet/current/elastic-agent-installation.html) either [Fleet-managed](https://www.elastic.co/guide/en/fleet/current/install-fleet-managed-elastic-agent.html) or [standalone](https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html)
 
 2. Create an Agent Policy
 ![create_policy](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/create_policy.png)
@@ -154,35 +166,43 @@ We got a script!!!!
 3. Configure Custom UDP Logs integration
 ![integration_parameters](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/integration_parameters.png)
 
-4. Save Integration
+4. Make sure to add your own private networks under custom configurations. It is recommended to add your own public facing IP address scope as well.
 
-5. [Performance tunning settings](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings)
-- Use `Optimized for throughput` or `Custom` with larger settings.
-- Run `watch -d "column -t cat /proc/net/snmp | grep -w Udp"` on your Elastic Agent host to check if you are dropping any logs.
+5. Save Integration
 
-**Hopefully you should be dancing with your logs by now.** 🕺💃
+6. If you deployed Fleet-managed agent, just [apply your new policy to your agent](https://www.elastic.co/guide/en/fleet/current/agent-policy.html#apply-a-policy).
 
-If you have deployed [standalone Elastic Agent](https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html), you should add UDP under your `inputs` in your `elastic-agent.yml`:
+7. If you deployed standalone agent, [take your generated policy](https://www.elastic.co/guide/en/fleet/current/create-standalone-agent-policy.html) and modify your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) accordinly.
+
+You should end up with something like:
 
 ```
-  - id: fortigate-udp5141
-    name: fortigate-udp5141
+  - id: udp-udp-af7f0dce-57c0-498f-bc09-96ba51fd76a4
+    name: fortinet.fortigate-1
+    revision: 1
     type: udp
     use_output: default
     meta:
       package:
         name: udp
-        version: 1.19.0
+        version: 1.19.1
     data_stream:
       namespace: default
+    package_policy_id: af7f0dce-57c0-498f-bc09-96ba51fd76a4
     streams:
-      - id: udp5141-fortinet.fortigate
+      - id: udp-udp.generic-af7f0dce-57c0-498f-bc09-96ba51fd76a4
         data_stream:
           dataset: fortinet.fortigate
-        host: '0.0.0.0:5141'
+        host: '0.0.0.0:5140'
         pipeline: logs-fortinet.fortigate
         max_message_size: 50KiB
+        tags:
+          - preserve_original_event
         processors:
+          - copy_fields:
+              fields:
+                - from: message
+                  to: event.original
           - syslog:
               field: message
         fields_under_root: true
@@ -193,6 +213,15 @@ If you have deployed [standalone Elastic Agent](https://www.elastic.co/guide/en/
             - link_local_unicast
             - link_local_multicast
 ```
+
+7. Performance tunning settings
+- Use `Optimized for throughput` (should work for most setups) or `Custom` with larger settings (for very large EPS). You should modify it accordinly for [Fleet-managed agent](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings) or [standalone agent](https://www.elastic.co/guide/en/fleet/current/elasticsearch-output.html#output-elasticsearch-performance-tuning-settings)
+- Run `watch -d "column -t cat /proc/net/snmp | grep -w Udp"` on your Elastic Agent host to check if you are dropping any logs.
+
+**Hopefully you should be dancing with your logs by now.** 🕺💃
+
+#### Vector
+
 
 ### ~~On Logstash~~ **DEPRECATED**
 
