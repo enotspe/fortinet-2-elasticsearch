@@ -25,12 +25,12 @@ We actually use FortiDragon on our day to day operations for threat hunting, so 
 
 ## Key Benefits
 1. **Parsing**
-- Full parsing: Extracts and maps all relevant fields from Fortinet logs.
-- ECS Naming Standardization: Translates Fortinet fields to Elastic Common Schema (ECS) for consistent field naming.
+- Full field parsing: Extracts all fields and values from Fortinet logs.
+- ECS Naming Standardization: Translates Fortinet fields to [Elastic Common Schema (ECS)](https://www.elastic.co/guide/en/ecs/current/index.html) for consistent field naming.
 - Enrichment: Enhances log data with additional contextual information.
 
 2. **Analytics**
-- FortiDragon provides deep visibility into your network traffic. With its comprehensive dashboards for threat hunting, you can easily monitor Fortinet logs in real-time. Here is where we shine! No other paid or free plataform has such an in depth analysis of Fortinet data
+- FortiDragon provides deep visibility into your network traffic. With comprehensive dashboards for threat hunting, you can easily monitor Fortinet logs in real-time. Here is where we shine! No other paid or free tool has such an in depth analysis of Fortinet logs.
 
 3. **Quick Setup**
 - No more logstash hassle, simply run the provided script to install and configure all Elasticseach components.
