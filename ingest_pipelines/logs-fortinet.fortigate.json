@@ -26,7 +26,7 @@
     {
       "kv": {
         "field": "message",
-        "field_split": "\\s(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)",
+        "field_split": "\\s+(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)",
         "value_split": "=",
         "target_field": "fgt",
         "strip_brackets": true,
@@ -36,8 +36,8 @@
     {
       "set": {
         "field": "event.timezone",
-        "ignore_empty_value": true,
-        "copy_from": "fgt.timezone"
+        "copy_from": "fgt.tz",
+        "ignore_empty_value": true
       }
     },
     {
@@ -403,9 +403,9 @@
     },
     {
       "set": {
-        "field": "file.hash,crc32",
-        "ignore_empty_value": true,
-        "copy_from": "fgt.filehash"
+        "field": "file.hash.crc32",
+        "copy_from": "fgt.filehash",
+        "ignore_empty_value": true
       }
     },
     {
@@ -417,9 +417,9 @@
     },
     {
       "set": {
-        "field": "file.type",
-        "ignore_empty_value": true,
-        "copy_from": "fgt.filesize"
+        "field": "file.size",
+        "copy_from": "fgt.filesize",
+        "ignore_empty_value": true
       }
     },
     {
@@ -462,6 +462,12 @@
         "field": "fgt.ipaddr",
         "separator": ",",
         "target_field": "dns.resolved_ip",
+        "ignore_missing": true
+      }
+    },
+    {
+      "trim": {
+        "field": "dns.resolved_ip",
         "ignore_missing": true
       }
     },
@@ -593,16 +599,15 @@
       }
     },
     {
-      "set": {
-        "field": "source.ip",
-        "ignore_empty_value": true,
-        "copy_from": "fgt.remip"
-      }
-    },
-    {
       "split": {
         "field": "fgt.seq",
         "separator": ",",
+        "ignore_missing": true
+      }
+    },
+    {
+      "trim": {
+        "field": "fgt.seq",
         "ignore_missing": true
       }
     },

@@ -45,12 +45,12 @@ get_user_input() {
   fi
 }
 
-# Function to verify Elasticsearch connection
+ Function to verify Elasticsearch connection
 verify_connection() {
   if [ "$auth_choice" == "u" ]; then
-    response=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" --user "$username:$password" -XGET "$url/_cluster/health")
+    response=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" --user "$username:$password" -XGET "$url")
   elif [ "$auth_choice" == "a" ]; then
-    response=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" -H "Authorization: ApiKey $api_key" -XGET "$url/_cluster/health")
+    response=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" -H "Authorization: ApiKey $api_key" -XGET "$url")
   fi
 
   http_status=$(echo $response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')

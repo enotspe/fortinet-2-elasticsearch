@@ -34,7 +34,7 @@
     {
       "kv": {
         "field": "message",
-        "field_split": "\\s(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)",
+        "field_split": "\\s+(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)",
         "value_split": "=",
         "target_field": "fct",
         "strip_brackets": true,
