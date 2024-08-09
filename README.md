@@ -219,7 +219,7 @@ You should end up with something like:
 
 Firewalls are very chatty, so it may overwhelm buffers on your syslog collector, leading to dropping logs. Modify your `Elasticsearch output settings` for `Optimized for throughput`.
 
-- If you deployed Fleet-managed agent, modify your Elaticsearch output `Perfomance Tunnig` setting for [`Throughput`](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings) directly under your [output configuration] (https://www.elastic.co/guide/en/fleet/current/fleet-settings.html#output-settings).
+- If you deployed Fleet-managed agent, modify your Elaticsearch output `Perfomance Tunnig` setting for [`Throughput`](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings) directly under your [output configuration](https://www.elastic.co/guide/en/fleet/current/fleet-settings.html#output-settings).
 - If you deployed standalone agent, modify your Elaticsearch output preset setting for [`throughput`](https://www.elastic.co/guide/en/fleet/current/elasticsearch-output.html#output-elasticsearch-performance-tuning-settings) on your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) directly.
 
 Depending on your Events per Second (EPS) volume, you may need to increase performance tuning settings even further.
