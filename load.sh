@@ -19,8 +19,10 @@ echo "4. Load only ILM (Index Lyfecycle Policy)."
 echo "5. Load only index templates."
 echo "6. Load only ingest pipelines."
 echo "7. Load only transforms."
+echo "8. Test ES credentials."
 
-read -p "Enter your choice (1/2/3/4/5/6/7): " load_choice
+
+read -p "Enter your choice (1/2/3/4/5/6/7/8): " load_choice
 
 # Function to get input from the user
 get_user_input() {
@@ -33,6 +35,7 @@ get_user_input() {
   read -p "Authentication method (u/a): " auth_choice
   auth_choice=$(echo "$auth_choice" | tr '[:upper:]' '[:lower:]')
 
+
   if [ "$auth_choice" == "u" ]; then
     read -p "Username: " username
     read -sp "Password: " password
@@ -43,23 +46,38 @@ get_user_input() {
     echo "Invalid choice. Please enter 'u' for user/pass or 'a' for API key."
     exit 1
   fi
+
+  echo "Do you want to add the --insecure flag to bypass SSL certificate validation? (y/n)"
+  read -p "Enter your choice: " insecure_choice
+  insecure_choice=$(echo "$insecure_choice" | tr '[:upper:]' '[:lower:]')
+
+  if [ "$insecure_choice" == "y" ]; then
+    insecure_flag="--insecure"
+  else
+    insecure_flag=""
+  fi
 }
 
- Function to verify Elasticsearch connection
+# Function to verify Elasticsearch connection
 verify_connection() {
   if [ "$auth_choice" == "u" ]; then
-    response=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" --user "$username:$password" -XGET "$url")
+    response=$(curl $insecure_flag --silent --write-out "HTTPSTATUS:%{http_code}" --user "$username:$password" -XGET "$url")
   elif [ "$auth_choice" == "a" ]; then
-    response=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" -H "Authorization: ApiKey $api_key" -XGET "$url")
+    response=$(curl $insecure_flag --silent --write-out "HTTPSTATUS:%{http_code}" -H "Authorization: ApiKey $api_key" -XGET "$url")
   fi
 
   http_status=$(echo $response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
+  body=$(echo $response | sed -e 's/HTTPSTATUS:.*//')
 
   if [ "$http_status" -ne 200 ]; then
     echo "Failed to connect to Elasticsearch. Please check your credentials and try again."
+    echo -e "Response body:"
+    echo "$body" | jq .
     exit 1
   else
-    echo "Successfully connected to Elasticsearch."
+    echo -e "Successfully connected to Elasticsearch."
+    echo -e "Response body:"
+    echo "$body" | jq .
   fi
 }
 
@@ -101,9 +119,9 @@ upload_template() {
   echo "Target API endpoint: $url/$api"
 
   if [ "$auth_choice" == "u" ]; then
-    response=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" --user "$username:$password" -XPUT "$url/$api" --header "Content-Type: application/json" -d @"$file")
+    response=$(curl $insecure_flag --silent --write-out "HTTPSTATUS:%{http_code}" --user "$username:$password" -XPUT "$url/$api" --header "Content-Type: application/json" -d @"$file")
   elif [ "$auth_choice" == "a" ]; then
-    response=$(curl --silent --write-out "HTTPSTATUS:%{http_code}" -H "Authorization: ApiKey $api_key" -XPUT "$url/$api" --header "Content-Type: application/json" -d @"$file")
+    response=$(curl $insecure_flag --silent --write-out "HTTPSTATUS:%{http_code}" -H "Authorization: ApiKey $api_key" -XPUT "$url/$api" --header "Content-Type: application/json" -d @"$file")
   fi
 
   http_status=$(echo $response | tr -d '\n' | sed -e 's/.*HTTPSTATUS://')
@@ -212,7 +230,7 @@ done
 get_user_input
 
 # Verify Elasticsearch connection
-verify_connection
+#verify_connection
 
 # Load templates based on user choice
 case $load_choice in
@@ -249,11 +267,15 @@ case $load_choice in
     echo -e "\nLoading only transforms..."
     upload_transforms
     ;;
+  8)
+    echo -e "\nVerifying credentials..."
+    verify_connection
+    ;;
   *)
     echo "Invalid choice. Exiting."
     exit 1
     ;;
 esac
 
-echo -e "\nLoading process completed."
+echo -e "\Bye!"
 
