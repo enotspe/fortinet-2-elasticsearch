@@ -145,10 +145,11 @@ All the procecesing is done via ingest pipelines in Elasticsearch, so we can use
 Some options are:
 
 - Elastic Agent
-- Vector
+- [Vector](https://vector.dev/docs/reference/configuration/sinks/elasticsearch/)
 - [Rsyslog](https://www.rsyslog.com/doc/configuration/modules/omelasticsearch.html)
+- [Syslog-ng](https://www.syslog-ng.com/community/b/blog/posts/elasticsearch-8-and-syslog-ng)
 
-Just use one of the options provided.
+We will only cover Elastic Agent and Vector configurations. Just use one of the options provided.
 
 #### Elastic Agent
 
@@ -230,8 +231,64 @@ Depending on your Events per Second (EPS) volume, you may need to increase perfo
 
 #### Vector
 
-To be added soon
+Vector is a great option, super lightweight, easy and fast. Very good replacement of logstash. The only drawback would be that you have to manage it independently.
 
+Considering you got a linux with YUM package manager:
+
+1. Install [Vector](https://vector.dev/docs/setup/installation/package-managers/yum/)
+
+2. Edit your `/etc/vector/vector.yaml`
+
+```
+sources:
+
+  fortigate_syslog:
+    type: "syslog"
+    address: 0.0.0.0:5140
+    mode: "udp"
+
+transforms:
+  remap_elastic:
+    type: "remap"
+    inputs: ["fortigate_syslog"]
+    source: |
+
+      # Rename syslog fields from "."
+      .log.syslog.facility.name = del(.facility)
+      .log.source.address = del(.source_ip)
+      .log.syslog.hostname = del(.hostname)
+      .log.syslog.severity.name = del(.severity)
+      .log.syslog.version = del(.version)
+      .log.logger = del(.source_type)
+      .@timestamp = del(.timestamp)
+
+      #internal networks
+      .internal_networks = ["link_local_multicast","link_local_unicast","loopback","private"]
+
+sinks:
+
+  elastic:
+    type: elasticsearch
+    inputs:
+      - remap_elastic
+    auth:
+      strategy: "basic"
+      user: "YOUR_USER"
+      password: "YOUR_PASSWORD"
+    endpoints:
+      - https://your_elasticsearch_endpoint
+    mode: "data_stream"
+    data_stream:
+      type: "logs"
+      dataset: "fortinet.fortigate"
+      namespace: "default"
+    pipeline: "logs-fortinet.fortigate"
+
+```
+
+3. [Start Vector](https://vector.dev/docs/administration/management/#apt-dpkg-rpm-yum-pacman)
+
+**Hopefully you should be dancing with your logs by now.** 🕺💃
 
 ### ~~On Logstash~~ **DEPRECATED**
 
