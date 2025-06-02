@@ -1,0 +1,603 @@
+#                                    __   __  __
+#                                    \ \ / / / /
+#                                     \ V / / /
+#                                      \_/  \/
+#
+#                                    V E C T O R
+#                                   Configuration
+#
+# ------------------------------------------------------------------------------
+# Website: https://vector.dev
+# Docs: https://vector.dev/docs
+# Chat: https://chat.vector.dev
+# ------------------------------------------------------------------------------
+
+# Change this to use a non-default directory for Vector data storage:
+# data_dir: "/var/lib/vector"
+
+# Random Syslog-formatted logs
+sources:
+
+  syslog_fortigate:
+    type: "syslog"
+    address: 0.0.0.0:${FORTIGATE_SYSLOG_UDP_PORT:-6140}
+    mode: "udp"
+
+enrichment_tables:
+  iana_number:
+    type: "file"
+    file:
+      path: "/etc/vector/iana_number.csv"
+      encoding:
+        type: "csv"
+    schema:
+      Decimal: "integer"
+      Keyword: "string"
+      
+transforms:
+
+  remap_kv:
+    type: "remap"
+    inputs: ["syslog_fortigate" ]
+    source: | 
+      # Rename syslog fields from "."
+      .log.syslog.facility.name = del(.facility)
+      .log.source.address = del(.source_ip)
+      .log.syslog.hostname = del(.hostname)
+      .log.syslog.host = del(.host)
+      .log.syslog.severity.name = del(.severity)
+      .log.syslog.version = del(.version)
+      .log.logger = del(.source_type)
+      
+      # For Elasticsearch
+      #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
+     
+      .log.syslog.appname = "fortigate"
+
+      # Pase key-value from message
+      .fgt = parse_logfmt(.message) ?? {}
+      #del(.message)
+  
+  route:
+    inputs:
+      - remap_kv
+    type: exclusive_route
+    routes:
+      - name: "traffic"
+        condition: '.fgt.type == "traffic"'
+      - name: "utm"
+        condition: '.fgt.type == "utm"'
+      - name: "event"
+        condition: '.fgt.type == "event"'
+
+  remap_traffic:
+    type: "remap"
+    inputs: ["route.traffic"]
+    source: |
+
+      # Populate ECS fields
+      # event
+      .event.timezone = .fgt.tz
+      .event.code = .fgt.logid
+      .event.duration = to_int(string(.fgt.duration)?? "nonum") * 1000000000  ?? null # fortinet duration is on seconds, and ECS specifies it should be on nanoseconds
+
+      # source
+      .source.ip = .fgt.srcip
+      .source.port = to_int( string(.fgt.srcport) ?? "nonum" ) ?? null 
+      .source.mac = .fgt.srcmac
+      .source.nat.ip = .fgt.transip
+      .source.nat.port = .fgt.transport
+      .source.user.name[0] = .fgt.user 
+      .source.user.name[1] = .fgt.unauthuser
+      .source.user.group.name[0] = .fgt.group
+      .source.user.group.name[1] = .fgt.unauthusersource
+      .source.risk.static_score = .fgt.crscore
+      .source.risk.static_level = .fgt.crlevel
+      .source.bytes = .fgt.sentbyte
+      .source.packets = .fgt.sentpkt
+      .source.domain = .fgt.srcdomain
+      .source.address = .fgt.srcname
+      # psrcport: pinhole source port
+
+      # Function to classify an IP address based on its type (IPv4 & IPv6)
+      if ip_cidr_contains(["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fc00::/7"], .source.ip) ?? false {
+          .source.ip_type = "private"
+      } else if ip_cidr_contains(["127.0.0.0/8", "::1/128"], .source.ip) ?? false {
+          .source.ip_type = "loopback"
+      } else if ip_cidr_contains(["169.254.0.0/16", "fe80::/10"], .source.ip) ?? false {
+          .source.ip_type = "link_local"
+      } else if ip_cidr_contains(["224.0.0.0/4", "ff00::/8"], .source.ip) ?? false {
+          .source.ip_type = "multicast"
+      } else if ip_cidr_contains(["100.64.0.0/10"], .source.ip) ?? false {
+          .source.ip_type = "carrier_nat"
+      } else if ip_cidr_contains(["192.0.0.0/24", "192.0.2.0/24", "198.51.100.0/24", "203.0.113.0/24", "2001:db8::/32"], .source.ip) ?? false {
+          .source.ip_type = "documentation"
+      } else if ip_cidr_contains(["240.0.0.0/4", "2001::/23", "4000::/2"], .source.ip) ?? false {
+          .source.ip_type = "reserved"
+      } else if ip_cidr_contains(["100::/64"], .source.ip) ?? false {
+          .source.ip_type = "discard" # IPv6 discard prefix (RFC 6666)
+      } else if ip_cidr_contains(["2002::/16"], .source.ip) ?? false {
+          .source.ip_type = "6to4_tunnel" # IPv6 6to4 tunneling
+      } else if ip_cidr_contains(["::ffff:0:0/96"], .source.ip) ?? false {
+          .source.ip_type = "ipv4_mapped" # IPv4-mapped IPv6
+      } else if ip_cidr_contains(["::/128"], .source.ip) ?? false {
+          .source.ip_type = "unspecified" # Unspecified address (::)
+      } else if ip_cidr_contains(["::ffff:0:0:0/96"], .source.ip) ?? false {
+          .source.ip_type = "ipv4_translated" # IPv4-translated IPv6
+      } else if !is_null(.source.ip) {
+          .source.ip_type = "public"
+      } #else {
+      #    .source.ip_type = "unknown"
+      #}
+
+      # destination
+      .destination.ip = .fgt.dstip
+      .destination.port = to_int( string(.fgt.dstport) ?? "nonum" ) ?? null
+      .destination.mac = .fgt.dstmac
+      .destination.nat.ip = .fgt.tranip
+      .destination.nat.port = .fgt.tranport
+      .destination.user.name[0] = .fgt.dstuser 
+      .destination.user.name[1] = .fgt.dstunauthuser
+      .destination.user.group.name = .fgt.dstunauthusersource
+      .destination.bytes = .fgt.rcvdbyte
+      .destination.packets = .fgt.rcvdpkt
+      .destination.address = .fgt.dstname
+      # pdstport: pinhole destination port
+      
+      # Function to classify an IP address based on its type (IPv4 & IPv6)
+      if ip_cidr_contains(["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fc00::/7"], .destination.ip) ?? false {
+          .destination.ip_type = "private"
+      } else if ip_cidr_contains(["127.0.0.0/8", "::1/128"], .destination.ip) ?? false {
+          .destination.ip_type = "loopback"
+      } else if ip_cidr_contains(["169.254.0.0/16", "fe80::/10"], .destination.ip) ?? false {
+          .destination.ip_type = "link_local"
+      } else if ip_cidr_contains(["224.0.0.0/4", "ff00::/8"], .destination.ip) ?? false {
+          .destination.ip_type = "multicast"
+      } else if ip_cidr_contains(["100.64.0.0/10"], .destination.ip) ?? false {
+          .destination.ip_type = "carrier_nat"
+      } else if ip_cidr_contains(["192.0.0.0/24", "192.0.2.0/24", "198.51.100.0/24", "203.0.113.0/24", "2001:db8::/32"], .destination.ip) ?? false {
+          .destination.ip_type = "documentation"
+      } else if ip_cidr_contains(["240.0.0.0/4", "2001::/23", "4000::/2"], .destination.ip) ?? false {
+          .destination.ip_type = "reserved"
+      } else if ip_cidr_contains(["100::/64"], .destination.ip) ?? false {
+          .destination.ip_type = "discard" # IPv6 discard prefix (RFC 6666)
+      } else if ip_cidr_contains(["2002::/16"], .destination.ip) ?? false {
+          .destination.ip_type = "6to4_tunnel" # IPv6 6to4 tunneling
+      } else if ip_cidr_contains(["::ffff:0:0/96"], .destination.ip) ?? false {
+          .destination.ip_type = "ipv4_mapped" # IPv4-mapped IPv6
+      } else if ip_cidr_contains(["::/128"], .destination.ip) ?? false {
+          .destination.ip_type = "unspecified" # Unspecified address (::)
+      } else if ip_cidr_contains(["::ffff:0:0:0/96"], .destination.ip) ?? false {
+          .destination.ip_type = "ipv4_translated" # IPv4-translated IPv6
+      } else if !is_null(.destination.ip) {
+          .destination.ip_type = "public"
+      } #else {
+      #    .destination.ip_type = "unknown"
+      #}
+
+      # observer
+      .observer.egress.interface.name = .fgt.dstintf
+      .observer.ingress.interface.name = .fgt.srcintf
+
+      #network
+      .network.bytes = to_int( string(.source.bytes) ?? "nonum" ) + to_int( string(.destination.bytes) ?? "nonum" ) ?? null
+      .network.packets = to_int( string(.source.packets) ?? "nonum" ) + to_int( string(.destination.packets) ?? "nonum" ) ?? null
+      .network.vrf = .fgt.vrf
+      .network.protocol = .fgt.service
+      .network.application = .fgt.app
+      ## network.transport
+      .network.iana_number = to_int( string(.fgt.proto) ?? "nonum" ) ?? null
+      iana = get_enrichment_table_record("iana_number", { "Decimal": .network.iana_number }) ?? null 
+      .network.transport = downcase(iana.Keyword) ?? null
+      .network.transport_port = to_string(.network.transport) + "/" + to_string(.destination.port)
+      #.network.transport_port = join([to_string(.network.transport),.fgt.dstport ], separator: "/") ?? null
+      ## community_id
+      .network.community_id = community_id(source_ip: .source.ip, destination_ip: .destination.ip, source_port: .source.port, destination_port: .destination.port, protocol: .network.iana_number) ??  null
+
+      ## network.direction
+      if ip_cidr_contains($INTERNAL_NETWORKS , .source.ip) ?? false {
+          .source.isInternal = true
+      } else if !is_null(.source.ip) {
+          .source.isInternal = false
+      }
+
+      if ip_cidr_contains($INTERNAL_NETWORKS , .destination.ip) ?? false {
+          .destination.isInternal = true
+      } else if !is_null(.destination.ip) {
+          .destination.isInternal = false
+      }
+
+      if !exists(.source.isInternal) || !exists(.destination.isInternal) {
+        .network.direction = null
+      } else if ((.source.isInternal) && (.destination.isInternal) ) ?? false {
+        .network.direction = "internal"
+      } else if ((.source.isInternal) && !to_bool(.destination.isInternal) ) ?? false {
+        .network.direction = "outbound"
+      } else if (!to_bool(.source.isInternal) && (.destination.isInternal) ) ?? false {
+        .network.direction = "inbound"
+      } else if (!to_bool(.source.isInternal) && !to_bool(.destination.isInternal) ) ?? false {
+        .network.direction = "external"
+      } else {
+        .network.direction = "unknown"
+      }
+
+      # rule
+      .rule.id = .fgt.policyid
+      .rule.name = .fgt.policyname
+      .rule.ruleset = .fgt.policytype
+      .rule.uuid = .fgt.poluuid
+      .rule.comment = .fgt.comment
+      .rule.id_name = {to_string(.rule.id) + " - " + to_string(.rule.name)} ?? null
+      
+      # session
+      .session.id = .fgt.sessionid
+
+      # user_agent
+      .user_agent = parse_user_agent(.fgt.agent) ?? null
+      .user_agent.original = .fgt.agent
+
+      # geo
+      #
+
+      # delete null fields
+      . = compact(.)
+
+  remap_utm:
+    type: "remap"
+    inputs: ["route.utm"]
+    source: |
+
+      # Populate ECS fields
+      # event
+      .event.timezone = .fgt.tz
+      .event.code = .fgt.logid
+
+      # source
+      .source.user.name[0] = .fgt.user
+      .source.user.name[1] = .fgt.unauthuser
+      .source.user.group.name[0] = .fgt.group
+      .source.user.group.name[1] = .fgt.unauthusersource
+      .source.bytes = .fgt.sentbyte
+      .source.domain = .fgt.srcdomain
+      .source.ip = .fgt.srcip
+      .source.mac = .fgt.srcmac
+      .source.port = to_int( string(.fgt.srcport) ??  string(.fgt.src_port) ?? "nonum" ) ?? null #VoIP uses src_port instead of srcport
+      .source.risk.static_score = .fgt.crscore
+      .source.risk.static_level = .fgt.crlevel
+
+      # Function to classify an IP address based on its type (IPv4 & IPv6)
+      if ip_cidr_contains(["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fc00::/7"], .source.ip) ?? false {
+          .source.ip_type = "private"
+      } else if ip_cidr_contains(["127.0.0.0/8", "::1/128"], .source.ip) ?? false {
+          .source.ip_type = "loopback"
+      } else if ip_cidr_contains(["169.254.0.0/16", "fe80::/10"], .source.ip) ?? false {
+          .source.ip_type = "link_local"
+      } else if ip_cidr_contains(["224.0.0.0/4", "ff00::/8"], .source.ip) ?? false {
+          .source.ip_type = "multicast"
+      } else if ip_cidr_contains(["100.64.0.0/10"], .source.ip) ?? false {
+          .source.ip_type = "carrier_nat"
+      } else if ip_cidr_contains(["192.0.0.0/24", "192.0.2.0/24", "198.51.100.0/24", "203.0.113.0/24", "2001:db8::/32"], .source.ip) ?? false {
+          .source.ip_type = "documentation"
+      } else if ip_cidr_contains(["240.0.0.0/4", "2001::/23", "4000::/2"], .source.ip) ?? false {
+          .source.ip_type = "reserved"
+      } else if ip_cidr_contains(["100::/64"], .source.ip) ?? false {
+          .source.ip_type = "discard" # IPv6 discard prefix (RFC 6666)
+      } else if ip_cidr_contains(["2002::/16"], .source.ip) ?? false {
+          .source.ip_type = "6to4_tunnel" # IPv6 6to4 tunneling
+      } else if ip_cidr_contains(["::ffff:0:0/96"], .source.ip) ?? false {
+          .source.ip_type = "ipv4_mapped" # IPv4-mapped IPv6
+      } else if ip_cidr_contains(["::/128"], .source.ip) ?? false {
+          .source.ip_type = "unspecified" # Unspecified address (::)
+      } else if ip_cidr_contains(["::ffff:0:0:0/96"], .source.ip) ?? false {
+          .source.ip_type = "ipv4_translated" # IPv4-translated IPv6
+      } else if !is_null(.source.ip) {
+          .source.ip_type = "public"
+      } #else {
+      #    .source.ip_type = "unknown"
+      #}
+
+      # destination
+      .destination.user.name = .fgt.dstuser
+      .destination.bytes = .fgt.rcvdbyte
+      .destination.ip = .fgt.dstip
+      .destination.port = to_int( string(.fgt.dstport) ??  string(.fgt.dst_port) ?? "nonum" ) ?? null #VoIP uses dst_port instead of dstport
+
+      # dns
+      .fgt.ipaddr = split(.fgt.ipaddr, ",") ?? [null]
+      .fgt.ipaddr = map_values(.fgt.ipaddr) -> |value| { strip_whitespace(value) ?? null } 
+      .dns.resolved_ip = .fgt.ipaddr
+      .dns.question.class = .fgt.qclass
+      .dns.question.name = .fgt.qname
+      .dns.question.type = .fgt.qtype
+      .dns.id = .fgt.xid
+
+      # Function to classify an IP address based on its type (IPv4 & IPv6)
+      if ip_cidr_contains(["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fc00::/7"], .destination.ip) ?? false {
+          .destination.ip_type = "private"
+      } else if ip_cidr_contains(["127.0.0.0/8", "::1/128"], .destination.ip) ?? false {
+          .destination.ip_type = "loopback"
+      } else if ip_cidr_contains(["169.254.0.0/16", "fe80::/10"], .destination.ip) ?? false {
+          .destination.ip_type = "link_local"
+      } else if ip_cidr_contains(["224.0.0.0/4", "ff00::/8"], .destination.ip) ?? false {
+          .destination.ip_type = "multicast"
+      } else if ip_cidr_contains(["100.64.0.0/10"], .destination.ip) ?? false {
+          .destination.ip_type = "carrier_nat"
+      } else if ip_cidr_contains(["192.0.0.0/24", "192.0.2.0/24", "198.51.100.0/24", "203.0.113.0/24", "2001:db8::/32"], .destination.ip) ?? false {
+          .destination.ip_type = "documentation"
+      } else if ip_cidr_contains(["240.0.0.0/4", "2001::/23", "4000::/2"], .destination.ip) ?? false {
+          .destination.ip_type = "reserved"
+      } else if ip_cidr_contains(["100::/64"], .destination.ip) ?? false {
+          .destination.ip_type = "discard" # IPv6 discard prefix (RFC 6666)
+      } else if ip_cidr_contains(["2002::/16"], .destination.ip) ?? false {
+          .destination.ip_type = "6to4_tunnel" # IPv6 6to4 tunneling
+      } else if ip_cidr_contains(["::ffff:0:0/96"], .destination.ip) ?? false {
+          .destination.ip_type = "ipv4_mapped" # IPv4-mapped IPv6
+      } else if ip_cidr_contains(["::/128"], .destination.ip) ?? false {
+          .destination.ip_type = "unspecified" # Unspecified address (::)
+      } else if ip_cidr_contains(["::ffff:0:0:0/96"], .destination.ip) ?? false {
+          .destination.ip_type = "ipv4_translated" # IPv4-translated IPv6
+      } else if !is_null(.destination.ip) {
+          .destination.ip_type = "public"
+      } #else {
+      #    .destination.ip_type = "unknown"
+      #}
+
+
+      # observer
+      .observer.egress.interface.name = string(.fgt.dstintf) ??  string(.fgt.dst_int) ?? null #VoIP uses dst_int instead of dstintf
+      .observer.ingress.interface.name = string(.fgt.srcintf) ??  string(.fgt.src_int) ?? null #VoIP uses src_int instead of srcintf
+
+      # rule
+      .rule.id = string(.fgt.policyid) ?? string(.fgt.policy_id) ?? null # VoIP uses policy_id instead of policyid
+      .rule.ruleset = .fgt.policytype
+      .rule.uuid = .fgt.poluuid
+
+      # network
+      .network.bytes = to_int( string(.source.bytes) ?? "nonum" ) + to_int( string(.destination.bytes) ?? "nonum" ) ?? null
+      .network.vrf = .fgt.vrf
+      .network.protocol = string(.fgt.service) ?? string(.fgt.voip_proto) ?? null # VoIP uses voip_proto instead of service
+      .network.application = .fgt.app
+      
+      .network.iana_number = to_int( string(.fgt.proto) ?? "nonum" ) ?? null
+      iana = get_enrichment_table_record("iana_number", { "Decimal": .network.iana_number }) ?? null 
+      .network.transport = downcase(iana.Keyword) ?? null
+      .network.transport_port = to_string(.network.transport) + "/" + to_string(.destination.port)
+      #.network.transport_port = join([to_string(.network.transport),.fgt.dstport ], separator: "/") ?? null
+      ## community_id
+      .network.community_id = community_id(source_ip: .source.ip, destination_ip: .destination.ip, source_port: .source.port, destination_port: .destination.port, protocol: .network.iana_number) ??  null
+
+      ## network.direction
+      if ip_cidr_contains($INTERNAL_NETWORKS , .source.ip) ?? false {
+          .source.isInternal = true
+      } else if !is_null(.source.ip) {
+          .source.isInternal = false
+      }
+
+      if ip_cidr_contains($INTERNAL_NETWORKS , .destination.ip) ?? false {
+          .destination.isInternal = true
+      } else if !is_null(.destination.ip) {
+          .destination.isInternal = false
+      }
+
+      if !exists(.source.isInternal) || !exists(.destination.isInternal) {
+        .network.direction = null
+      } else if ((.source.isInternal) && (.destination.isInternal) ) ?? false {
+        .network.direction = "internal"
+      } else if ((.source.isInternal) && !to_bool(.destination.isInternal) ) ?? false {
+        .network.direction = "outbound"
+      } else if (!to_bool(.source.isInternal) && (.destination.isInternal) ) ?? false {
+        .network.direction = "inbound"
+      } else if (!to_bool(.source.isInternal) && !to_bool(.destination.isInternal) ) ?? false {
+        .network.direction = "external"
+      } else {
+        .network.direction = "unknown"
+      }
+
+      # url
+      .url.original = .fgt.url
+      .url.domain = .fgt.hostname
+      .url |= parse_url(.fgt.url) ?? {}
+
+
+      # session.id
+      .session.id = string(.fgt.sessionid) ?? string(.fgt.session_id) ?? null # VoIP uses session_id instead of sessionid
+
+      # tls
+      .tls.client.issuer = .fgt.ccertissuer
+      .tls.client.server_name = .fgt.scertcname
+      .tls.server.issuer = .fgt.scertissuer
+      .tls.client.server_name = .fgt.sni
+      .tls.version = .fgt.tlsver
+
+      # file
+      .file.hash.crc32 = .fgt.filehash
+      .file.name = .fgt.filename
+      .file.size = .fgt.filesize
+      .file.extension = .fgt.filetype
+
+      # http
+      # Pase key-value from fgt.rawdata      
+      .fgt.ext_log = parse_key_value(.fgt.rawdata, field_delimiter: "|") ?? {}
+      .fgt.ext_log =  map_keys(.fgt.ext_log) -> |key| { replace(key, "-", "_") } 
+      #del(.fgt.rawdata)
+
+      .http.request.method = string(.fgt.httpmethod) ?? string(.fgt.ext_log.Method) ?? null
+      .http.request.referrer = .fgt.ext_log.Referer
+      .http.request.mime_type = .fgt.ext_log.Request_Content_Type
+      .http.response.mime_type = .fgt.ext_log.Response_Content_Type
+
+      # user_agent
+      .user_agent.original = string(.fgt.ext_log.User_Agent) ?? string(.fgt.agent) ?? null
+      .user_agent |= parse_user_agent(.user_agent.original) ?? {}
+      
+      # delete null fields
+      . = compact(.)
+
+  remap_event:
+    type: "remap"
+    inputs: ["route.event"]
+    source: |
+
+      # Populate ECS fields
+      # event
+      .event.timezone = .fgt.tz
+      .event.code = .fgt.logid
+      .event.duration = to_int(string(.fgt.duration)?? "nonum") * 1000000000  ?? null # fortinet duration is on seconds, and ecs specifies it should be on nanoseconds
+
+      # source
+      .source.address = .fgt.saddr
+      .source.ip = .fgt.srcip
+      .source.mac = .fgt.srcmac
+      .source.bytes = .fgt.sentbyte
+      .source.port = to_int( string(.fgt.srcport) ?? "nonum") ?? null
+
+      # destination
+      .destination.address = .fgt.daddr
+      .destination.ip = .fgt.dstip
+      .destination.bytes = .fgt.rcvdbyte
+      .destination.port = to_int( string(.fgt.dstport) ??  "nonum" ) ?? null
+      
+      # file
+      .file.name = .fgt.filename
+      .file.size = .fgt.filesize
+
+      # network
+      .network.protocol = .fgt.service
+      .network.iana_number = to_int( string(.fgt.proto) ?? "nonum" ) ?? null
+      iana = get_enrichment_table_record("iana_number", { "Decimal": .network.iana_number }) ?? null
+      .network.transport = downcase(iana.Keyword) ?? null
+      #.network.transport_port = to_string(.network.transport) + "/" + to_string(.destination.port)
+      .network.transport_port = join([to_string(.network.transport),.fgt.dstport ], separator: "/") ?? null
+
+      # user_agent
+      .user_agent.original = .fgt.agent
+      .user_agent |= parse_user_agent(.user_agent.original) ?? {}
+
+      # delete null fields
+      . = compact(.)
+
+# Print parsed logs to stdout
+sinks:
+#  print:
+#   type: "console"
+#   inputs: ["route._unmatched"]
+#   encoding:
+#        #      codec: "raw_message"
+#     codec: "json"
+#     json:
+#        pretty: true
+ 
+  vlogs_fortigate:
+    inputs:
+      - remap_traffic
+      - remap_utm
+      - remap_event
+      - route._unmatched
+    type: elasticsearch
+    endpoints:
+      - ${VICTORIA_LOGS_ENDPOINT:-http://localhost:9428}/insert/elasticsearch/
+    api_version: v8
+    compression: gzip
+    healthcheck:
+      enabled: false
+    query:
+      _msg_field: message
+      _time_field: timestamp
+      _stream_fields: log.syslog.appname,log.syslog.hostname,fgt.vd,fgt.type,fgt.subtype,fgt.policytype,network.direction,fgt.eventtype
+    request:
+      headers:
+        AccountID: "0"
+        ProjectID: "0"
+    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest. 
+    buffer:
+    - type: memory
+      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+      #when_full: drop_newest #default block
+    batch:
+      #max_bytes:
+      max_events: 1600 # default 1000
+      timeout_secs: 5 # default 1
+
+  elastic_fortigate:
+    type: elasticsearch
+    inputs:
+      - remap_traffic
+      - remap_utm
+      - remap_event
+    auth:
+      strategy: "basic"
+      user: "${ELASTICSEARCH_USER:-elastic}"
+      password: "${ELASTICSEARCH_PASS:-myelasticsearchpassword}"
+    endpoints:
+      - ${ELASTICSEARCH_ENDPOINT:-https://localhost:9200}
+    encoding:
+      except_fields:
+        - url.query
+    mode: "data_stream"
+    bulk:
+      action: "create"
+    data_stream:
+      type: "logs"
+      dataset: "fortinet.fortigate.{{fgt.type}}"
+      namespace: "default"
+    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest.
+    buffer:
+    - type: memory
+      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+      #when_full: drop_newest #default block
+    batch:
+      #max_bytes:
+      max_events: 1600 # default 1000
+      timeout_secs: 5 # default 1
+
+#  quickwit_fortigate:
+#    type: "http"
+#    method: "post"
+#    inputs:
+#      - remap_traffic
+#      - remap_utm
+#      - remap_event
+#    encoding:
+#      codec: "json"
+#    framing:
+#      method: "newline_delimited"
+#    uri: "${QUICKWIT_ENDPOINT:-http://localhost:7280}/api/v1/logs-fortinet.fortigate.{{fgt.type}}/ingest"
+
+#  loki_fortigate:
+#    type: loki
+#    inputs:
+#      - remap_traffic
+#      - remap_utm
+#      - remap_event
+#      - route._unmatched
+#    endpoint: ${LOKI_ENDPOINT:-http://localhost:3100}
+#    auth:
+#      strategy: "basic"
+#      user: "${LOKI_USER:-loki_user}"
+#      password: "${LOKI_PASS:-mylokipassword}"
+#    encoding:
+#      codec: "json"
+#    compression: "snappy"
+#    labels:
+#      "syslog_appname": "{{.log.syslog.appname}}"
+#      "syslog_hostname": "{{.log.syslog.hostname}}"
+#      "fg_vdom": "{{.fgt.vd}}"
+#      "fgt_type": "{{.fgt.type}}"
+#      "fgt_subtype": "{{.fgt.subtype}}"
+#      #"fgt_policytype": "{{.fgt.policytype}}"
+#      #"fgt_eventtype": "{{.fgt.eventtype}}"
+#      #"network_direction": "{{.network.direction}}"
+#    #structured_metadata:
+#     # "source_ip": "{{source.ip}}"
+#     # "destination_ip": "{{destination.ip}}"
+#     # "destination_port": "{{destination.port}}"
+#     # "network_transport_port": "{{network.transport_port}}"
+#    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest. 
+#    buffer:
+#    - type: memory
+#      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+#      #when_full: drop_newest #default block
+#    batch:
+#      #max_bytes:
+#      max_events: 1600 # default 1000
+#      timeout_secs: 5 # default 1
