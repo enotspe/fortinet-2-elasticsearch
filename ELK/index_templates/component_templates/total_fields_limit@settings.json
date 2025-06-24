@@ -1,0 +1,13 @@
+{
+  "template": {
+    "settings": {
+      "index": {
+        "mapping": {
+          "total_fields": {
+            "limit": "1500"
+          }
+        }
+      }
+    }
+  }
+}

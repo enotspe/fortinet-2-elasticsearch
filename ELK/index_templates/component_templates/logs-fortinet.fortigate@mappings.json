@@ -1,0 +1,771 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "fgt": {
+          "type": "object",
+          "properties": {
+            "vcluster": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "iaid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "infectedfilelevel": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "domainctrlip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "sentdelta": {
+              "ignore_malformed": true,
+              "type": "double"
+            },
+            "dstport": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "channel": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "mgmtcnt": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "dstswversion": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "sessionid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "remote": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "type": {
+              "type": "constant_keyword"
+            },
+            "ha_group": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "aptype": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "remport": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "pdstport": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "virusid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "translationid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "cfgtid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "scanned": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "countff": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "eapolcnt": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "portend": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "dstip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "nat": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "identifier": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "vwpvlanid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "newchannel": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "ip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "srcserver": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "fams_pause": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "ovrdid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "rcode": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "received": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "botnetip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "vrf": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "centralnatid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "scantime": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "chassisid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "filteridx": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "jitter": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "nextstat": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "setuprate": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "countweb": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "remip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "alarmid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "apstatus": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "assigned": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "ha-prio": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "locip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "highcount": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "domainctrlauthstate": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "quotaused": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "stacount": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "countssh": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "epoch": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "filesize": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "oldchannel": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "sentpkt": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "countssl": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "local": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "from_vcluster": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "ddnsserver": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "policyid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "sess_duration": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "sysuptime": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "encrypt": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "member": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "noise": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "oldchassisid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "disklograte": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "countapp": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "infected": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "lanin": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "rssi": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "radioidclosest": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "auditscore": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "column": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "portbegin": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "countdns": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "session_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "domainctrlauthtype": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "shapingpolicyid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "countips": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "wanout": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "countemail": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "dstreputation": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "event_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "oldslot": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "quotamax": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "stage": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "appid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "passedcount": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "dst_port": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "logid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "lease": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "rcvddelta": {
+              "ignore_malformed": true,
+              "type": "double"
+            },
+            "tranport": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "rcvdbyte": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "attackid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "dstserver": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "logid_message": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "shaperdroprcvdbyte": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "srcip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "newchassisid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "eventtime": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "pid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "used": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "vwlid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "radioiddetected": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "xid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "countav": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "crscore": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "newslot": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "limit": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "infectedfilesize": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "qtypeval": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "processtime": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "signal": {
+              "type": "long"
+            },
+            "auditid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "assignip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "vulnid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "audittime": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "transid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "cfgtxpower": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "groupid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "count": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "cpu": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "countdlp": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "transip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "freediskstorage": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "suspicious": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "to_vcluster": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "vcluster_member": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "craction": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "mtu": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "lowcount": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "disk": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "unit": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "wanin": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "port": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "used_for_type": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "proto": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "tunnelid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "tunnelip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "countwaf": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "lanout": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "eventid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "policy_id": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "latency": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "fazlograte": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "slot": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "domainfilteridx": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "urlfilteridx": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "incidentserialno": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "duration": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "total": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "mem": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "psrcport": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "rate": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "cat": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "checksum": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "countcifs": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "live": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "criticalcount": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "domainctrlprotocoltype": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "sentbyte": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "receivedsignature": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "packetloss": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "radioid": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "mediumcount": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "transport": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "shaperdropsentbyte": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "malform_data": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "src_port": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "trueclntip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "locport": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "opertxpower": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "tranip": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "in_spi": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "serial": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "shaperperipdropbyte": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "expectedsignature": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "srcport": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "srcswversion": {
+              "ignore_above": 1024,
+              "type": "keyword"
+            },
+            "category": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "age": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "gateway": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "rcvdpkt": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "totalsession": {
+              "ignore_malformed": true,
+              "type": "long"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,350 @@
+PUT _transform/transforms-fortinet.fortigate.traffic.private2private_1m
+{
+  "source": {
+    "index": [
+      "logs-fortinet.fortigate.traffic*"
+    ],
+    "query": {
+      "bool": {
+        "filter": [
+          {
+            "bool": {
+              "should": [
+                {
+                  "range": {
+                    "@timestamp": {
+                      "gte": "now-5m/m",
+                      "lte": "now/m"
+                    }
+                  }
+                }
+              ],
+              "minimum_should_match": 1
+            }
+          },
+          {
+            "bool": {
+              "should": [
+                {
+                  "term": {
+                    "fgt.type": "traffic"
+                  }
+                }
+              ],
+              "minimum_should_match": 1
+            }
+          },
+          {
+            "bool": {
+              "should": [
+                {
+                  "term": {
+                    "fgt.subtype": "forward"
+                  }
+                }
+              ],
+              "minimum_should_match": 1
+            }
+          },
+          {
+            "bool": {
+              "should": [
+                {
+                  "term": {
+                    "fgt.policytype": "policy"
+                  }
+                }
+              ],
+              "minimum_should_match": 1
+            }
+          },
+          {
+            "bool": {
+              "should": [
+                {
+                  "term": {
+                    "source.locality": "private"
+                  }
+                }
+              ],
+              "minimum_should_match": 1
+            }
+          },
+          {
+            "bool": {
+              "should": [
+                {
+                  "term": {
+                    "destination.locality": "private"
+                  }
+                }
+              ],
+              "minimum_should_match": 1
+            }
+          },
+          {
+            "bool": {
+              "must_not": {
+                "bool": {
+                  "should": [
+                    {
+                      "term": {
+                        "fgt.logid": "0000000020"
+                      }
+                    }
+                  ],
+                  "minimum_should_match": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "dest": {
+    "index": "transforms-fortinet.fortigate.traffic-1m-",
+    "pipeline": "transforms-fortinet.fortigate.traffic.private2private"
+  },
+  "frequency": "2m",
+  "sync": {
+    "time": {
+      "field": "@timestamp",
+      "delay": "1m"
+    }
+  },
+  "pivot": {
+    "group_by": {
+      "@timestamp": {
+        "date_histogram": {
+          "field": "@timestamp",
+          "calendar_interval": "minute"
+        }
+      },
+      "source.ip": {
+        "terms": {
+          "field": "source.ip",
+          "missing_bucket": true
+        }
+      },
+      "source.user.name": {
+        "terms": {
+          "field": "source.user.name",
+          "missing_bucket": true
+        }
+      },
+      "source.user.group.name": {
+        "terms": {
+          "field": "source.user.group.name",
+          "missing_bucket": true
+        }
+      },
+      "fgt.srcname": {
+        "terms": {
+          "field": "fgt.srcname",
+          "missing_bucket": true
+        }
+      },
+      "fgt.srchwvendor": {
+        "terms": {
+          "field": "fgt.srchwvendor",
+          "missing_bucket": true
+        }
+      },
+      "observer.ingress.interface.name": {
+        "terms": {
+          "field": "observer.ingress.interface.name",
+          "missing_bucket": true
+        }
+      },
+      "destination.ip": {
+        "terms": {
+          "field": "destination.ip",
+          "missing_bucket": true
+        }
+      },
+      "destination.user.name": {
+        "terms": {
+          "field": "destination.user.name",
+          "missing_bucket": true
+        }
+      },
+      "fgt.dsthwvendor": {
+        "terms": {
+          "field": "fgt.dsthwvendor",
+          "missing_bucket": true
+        }
+      },
+      "observer.egress.interface.name": {
+        "terms": {
+          "field": "observer.egress.interface.name",
+          "missing_bucket": true
+        }
+      },
+      "rule.id-name": {
+        "terms": {
+          "field": "rule.id-name",
+          "missing_bucket": true
+        }
+      },
+      "network.protocol": {
+        "terms": {
+          "field": "network.protocol",
+          "missing_bucket": true
+        }
+      },
+      "network.protocol_category": {
+        "terms": {
+          "field": "network.protocol_category",
+          "missing_bucket": true
+        }
+      },
+      "network.application": {
+        "terms": {
+          "field": "network.application",
+          "missing_bucket": true
+        }
+      },
+      "fgt.appcat": {
+        "terms": {
+          "field": "fgt.appcat",
+          "missing_bucket": true
+        }
+      },
+      "fgt.action": {
+        "terms": {
+          "field": "fgt.action",
+          "missing_bucket": true
+        }
+      },
+      "fgt.utmaction": {
+        "terms": {
+          "field": "fgt.utmaction",
+          "missing_bucket": true
+        }
+      },
+      "observer.hostname": {
+        "terms": {
+          "field": "observer.hostname",
+          "missing_bucket": true
+        }
+      },
+      "fgt.vd": {
+        "terms": {
+          "field": "fgt.vd",
+          "missing_bucket": true
+        }
+      }
+    },
+    "aggregations": {
+      "fgt.sessionid.value_count": {
+        "value_count": {
+          "field": "fgt.sessionid"
+        }
+      },
+      "event.risk_score.stats": {
+        "stats": {
+          "field": "event.risk_score"
+        }
+      },
+      "network.bytes.stats": {
+        "stats": {
+          "field": "network.bytes"
+        }
+      },
+      "source.bytes.stats": {
+        "stats": {
+          "field": "source.bytes"
+        }
+      },
+      "destination.bytes.stats": {
+        "stats": {
+          "field": "destination.bytes"
+        }
+      },
+      "network.packets.stats": {
+        "stats": {
+          "field": "network.packets"
+        }
+      },
+      "source.packets.stats": {
+        "stats": {
+          "field": "source.packets"
+        }
+      },
+      "destination.packets.stats": {
+        "stats": {
+          "field": "destination.packets"
+        }
+      },
+      "event.duration.stats": {
+        "stats": {
+          "field": "event.duration"
+        }
+      },
+      "fgt.countapp.stats": {
+        "stats": {
+          "field": "fgt.countapp"
+        }
+      },
+      "fgt.countweb.stats": {
+        "stats": {
+          "field": "fgt.countweb"
+        }
+      },
+      "fgt.countips.stats": {
+        "stats": {
+          "field": "fgt.countips"
+        }
+      },
+      "fgt.countav.stats": {
+        "stats": {
+          "field": "fgt.countav"
+        }
+      },
+      "fgt.countssl.stats": {
+        "stats": {
+          "field": "fgt.countssl"
+        }
+      },
+      "fgt.countcifs.stats": {
+        "stats": {
+          "field": "fgt.countcifs"
+        }
+      },
+      "fgt.countdlp.stats": {
+        "stats": {
+          "field": "fgt.countdlp"
+        }
+      },
+      "fgt.countdns.stats": {
+        "stats": {
+          "field": "fgt.countdns"
+        }
+      },
+      "fgt.countemail.stats": {
+        "stats": {
+          "field": "fgt.countemail"
+        }
+      },
+      "fgt.countwaf.stats": {
+        "stats": {
+          "field": "fgt.countwaf"
+        }
+      },
+      "fgt.countff.stats": {
+        "stats": {
+          "field": "fgt.countff"
+        }
+      },
+      "fgt.countssh.stats": {
+        "stats": {
+          "field": "fgt.countssh"
+        }
+      }
+    }
+  },
+  "settings": {
+    "max_page_search_size": 5000
+  }
+}

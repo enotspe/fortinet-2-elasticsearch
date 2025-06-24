@@ -1,0 +1,28 @@
+{
+  "priority": 300,
+  "index_patterns": [
+    "logs-fortinet.fortiedr*"
+  ],
+  "data_stream": {
+
+  },
+  "composed_of": [
+    "ecs-base",
+    "ecs-data_stream",
+    "ecs-organization",
+    "ecs-ecs",
+    "logs-fortinet.fortiedr@ilm",
+    "ecs-process",
+    "ecs-host",
+    "ecs-user",
+    "ecs-agent",
+    "ecs-observer",
+    "ecs-event",
+    "strings_as_keyword@mappings",
+    "auto_expand_replicas@settings",
+    "refresh_interval@settings",
+    "ecs-destination",
+    "ecs-source",
+    "logs-fortinet.fortiedr@mappings"
+  ]
+}

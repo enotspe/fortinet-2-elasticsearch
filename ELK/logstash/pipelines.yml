@@ -1,0 +1,34 @@
+# This file is where you define your pipelines. You can define multiple.
+# For more information on multiple pipelines, see the documentation:
+#   https://www.elastic.co/guide/en/logstash/current/multiple-pipelines.html
+
+- pipeline.id: syslog-fortinet-fortigate-input-kv
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortigate-input-kv.conf"
+- pipeline.id: syslog-fortinet-fortigate-input5424-kv
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortigate-input5424-kv.conf"
+- pipeline.id: syslog-fortinet-fortimail-input-kv
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortimail-input-kv.conf"
+- pipeline.id: syslog-fortinet-fortiweb-input-kv
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortiweb-input-kv.conf"
+- pipeline.id: syslog-fortinet-forticlient-input-kv
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-forticlient-input-kv.conf"
+- pipeline.id: syslog-fortinet-fortisandbox-input-kv
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortisandbox-input-kv.conf"
+- pipeline.id: syslog-fortinet-fortiedr-input-kv
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortiedr-input-kv.conf"
+- pipeline.id: syslog-fortinet-fortigate_2_ecs
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortigate_2_ecs.conf"
+- pipeline.id: syslog-fortinet-fortigate_2_ecsv2
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortigate_2_ecsv2.conf"
+- pipeline.id: syslog-fortinet-fortiweb_2_ecs
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortiweb_2_ecs.conf"
+- pipeline.id: syslog-fortinet-fortimail_2_ecs
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortimail_2_ecs.conf"
+- pipeline.id: syslog-fortinet-forticlient_2_ecs
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-forticlient_2_ecs.conf"
+- pipeline.id: syslog-fortinet-fortisandbox_2_ecs
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortisandbox_2_ecs.conf"
+- pipeline.id: syslog-fortinet-fortiedr_2_ecs
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-fortiedr_2_ecs.conf"
+- pipeline.id: syslog-fortinet-common_ecs-output
+  path.config: "/etc/logstash/conf.d/syslog-fortinet-common_ecs-output.conf"

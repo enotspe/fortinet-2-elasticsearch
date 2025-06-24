@@ -1,0 +1,36 @@
+{
+  "priority": 200,
+  "template": {
+    "lifecycle": {
+      "enabled": true,
+      "data_retention": "180d"
+    }
+  },
+  "index_patterns": [
+    "logs-fortinet.fortigate.traffic*"
+  ],
+  "data_stream": {
+  },
+  "composed_of": [
+    "ecs-base",
+    "ecs-user",
+    "ecs-observer",
+    "ecs-destination",
+    "ecs-source-modified",
+    "ecs-network",
+    "ecs-event-modified",
+    "ecs-url",
+    "ecs-log-modified",
+    "ecs-rule",
+    "ecs-data_stream",
+    "ecs-organization",
+    "ecs-ecs",
+    "ecs-host",
+    "logs-fortinet.fortigate.traffic@ilm",
+    "strings_as_keyword@mappings",
+    "logs-fortinet.fortigate@mappings",
+    "auto_expand_replicas@settings",
+    "refresh_interval@settings",
+    "synthetic_source@mappings"
+  ]
+}
