@@ -1,4 +1,4 @@
-Install Victorialogs as systemd service
+# Install Victorialogs as systemd service
 
 set version architecture and SO
 ```
