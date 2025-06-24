@@ -1,0 +1,10 @@
+version: 0.8
+index_id: logs-fortinet.fortigate.utm
+doc_mapping:
+    # If you have a timestamp field, it is important to tell quickwit about it.
+    timestamp_field: timestamp
+    # mode: dynamic #< Commented out, as dynamic is the default mode.
+    field_mappings:
+    - name: timestamp
+      type: datetime
+      fast: true
