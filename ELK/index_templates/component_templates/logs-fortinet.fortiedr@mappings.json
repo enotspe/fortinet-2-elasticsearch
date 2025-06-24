@@ -1,0 +1,40 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "fedr": {
+          "properties": {
+            "DateandTime": {
+              "format": "dd-MMM-yyyy, HH:mm:ss",
+              "ignore_malformed": true,
+              "type": "date"
+            },
+            "SourceIP": {
+              "ignore_malformed": true,
+              "type": "ip"
+            },
+            "FirstSeen": {
+              "format": "dd-MMM-yyyy, HH:mm:ss",
+              "ignore_malformed": true,
+              "type": "date"
+            },
+            "Count": {
+              "ignore_malformed": true,
+              "type": "long"
+            },
+            "LastSeen": {
+              "format": "dd-MMM-yyyy, HH:mm:ss",
+              "ignore_malformed": true,
+              "type": "date"
+            },
+            "Date": {
+              "format": "dd-MMM-yyyy, HH:mm:ss",
+              "ignore_malformed": true,
+              "type": "date"
+            }
+          }
+        }
+      }
+    }
+  }
+}
