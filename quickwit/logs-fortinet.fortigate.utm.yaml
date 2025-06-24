@@ -1,0 +1,167 @@
+version: 0.8
+index_id: logs-fortinet.fortigate.utm
+retention:
+  period: 180 days
+  schedule: daily
+doc_mapping:
+    # If you have a timestamp field, it is important to tell quickwit about it.
+    timestamp_field: timestamp
+    # mode: dynamic #< Commented out, as dynamic is the default mode.
+    tag_fields: ["fgt.subtype","log.syslog.hostname"]
+    field_mappings:
+    - name: timestamp
+      type: datetime
+      fast: true
+    - name: log
+      type: object
+      field_mappings:
+        - name: syslog
+          type: object
+          field_mappings:
+            - name: hostname # dynamic mapping
+              type: text
+              tokenizer: raw
+              fast: true
+    - name: event
+      type: object
+      field_mappings:
+        - name: duration
+          type: u64
+          fast: true
+    - name: source
+      type: object
+      field_mappings:
+        - name: ip
+          type: ip
+          fast: true
+        - name: port
+          type: u64
+          fast: true
+        - name: bytes
+          type: u64
+          fast: true
+        - name: risk
+          type: object
+          field_mappings:
+            - name: static_score
+              type: u64
+              fast: true
+    - name: destination
+      type: object
+      field_mappings:
+        - name: ip
+          type: ip
+          fast: true
+        - name: port
+          type: u64
+          fast: true
+        - name: bytes
+          type: u64
+          fast: true
+    - name: dns
+      type: object
+      field_mappings:
+        - name: resolved_ip
+          type: ip
+          fast: true
+    - name: file
+      type: object
+      field_mappings:
+        - name: size
+          type: u64
+          fast: true
+    - name: network
+      type: object
+      field_mappings:
+        - name: bytes
+          type: u64
+          fast: true
+        - name: iana_number
+          type: u64
+          fast: true
+    - name: fgt
+      type: object
+      field_mappings:
+        - name: subtype #dynamic mapping
+          type: text
+          tokenizer: raw
+          fast: true
+        - name: logid
+          type: text
+          tokenizer: default
+          fast: true
+        - name: cat
+          type: u64
+          fast: true
+        - name: count
+          type: u64
+          fast: true
+        - name: craction
+          type: u64
+          fast: true
+        - name: crscore
+          type: u64
+          fast: true
+        - name: dstip
+          type: ip
+          fast: true
+        - name: dstport
+          type: u64
+          fast: true
+        - name: dst_port
+          type: u64
+          fast: true
+        - name: duration
+          type: u64
+          fast: true
+        - name: epoch
+          type: u64
+          fast: true
+        - name: eventtime
+          type: datetime
+          input_formats:
+            - unix_timestamp
+          fast: true
+        - name: filesize
+          type: u64
+          fast: true
+        - name: infectedfilesize
+          type: u64
+          fast: true
+        - name: pdstport
+          type: u64
+          fast: true
+        - name: psrcport
+          type: u64
+          fast: true
+        - name: rcvdbyte
+          type: u64
+          fast: true
+        - name: sentbyte
+          type: u64
+          fast: true
+        - name: srcip
+          type: ip
+          fast: true
+        - name: srcport
+          type: u64
+          fast: true
+        - name: src_port
+          type: u64
+          fast: true
+        - name: trueclntip
+          type: ip
+          fast: true
+        - name: qtypeval
+          type: u64
+          fast: true
+        - name: quotamax
+          type: u64
+          fast: true
+        - name: quotaused
+          type: u64
+          fast: true
+        - name: vrf
+          type: u64
+          fast: true
+
