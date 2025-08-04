@@ -1,0 +1,179 @@
+#                                    __   __  __
+#                                    \ \ / / / /
+#                                     \ V / / /
+#                                      \_/  \/
+#
+#                                    V E C T O R
+#                                   Configuration
+#
+# ------------------------------------------------------------------------------
+# Website: https://vector.dev
+# Docs: https://vector.dev/docs
+# Chat: https://chat.vector.dev
+# ------------------------------------------------------------------------------
+
+# Change this to use a non-default directory for Vector data storage:
+# data_dir: "/var/lib/vector"
+
+# Random Syslog-formatted logs
+sources:
+
+  syslog_fortimail:
+    #type: "syslog"
+    #address: 0.0.0.0:${FORTIMAIL_SYSLOG_UDP_PORT:-6140}
+    #mode: "udp"
+    type: "socket"
+    address: 0.0.0.0:${FORTIMAIL_SYSLOG_UDP_PORT:-6140}
+    mode: "udp"
+
+
+transforms:
+
+  remap_fortimail:
+    type: "remap"
+    inputs: ["syslog_fortimail" ]
+    source: | 
+      # Rename syslog fields from "."
+      #.log.syslog.facility.name = del(.facility)
+      #.log.source.address = del(.source_ip)
+      #.log.syslog.hostname = del(.hostname)
+      .log.syslog.host = del(.host)
+      #.log.syslog.severity.name = del(.severity)
+      #.log.syslog.version = del(.version)
+      .log.logger = del(.source_type)
+      
+      # For Elasticsearch
+      #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
+     
+      .log.syslog.appname = "fortimail"
+
+      # Parse
+      . |= parse_grok(.message,"<%{NONNEGINT:log.syslog.priority:int}>%{GREEDYDATA:message}") ?? {}
+      .fml = parse_logfmt(.message) ?? {}
+      #del(.message)
+
+      .event.timezone = .fml.tz
+      .source.domain = .fml.client_name
+      .email.from.address = .fml.hfrom
+      .email.sender.address = .fml.from
+      .email.to.address = .fml.to
+      .email.subject = .fml.subject
+      .email.x_mailer = .fml.mailer
+      .email.direction = .fml.direction
+      .email.message_id = .fml.message_id
+      .email.local_id = .fml.session_id
+
+      . |= parse_grok(.fml.dst_ip,"%{IP:destination.ip}") ?? {}
+      . |= parse_grok(.fml.client_ip,"%{IP:source.ip}") ?? {}
+
+      # delete null fields
+      . = compact(.)
+
+sinks:
+#  print:
+#   type: "console"
+#   inputs: ["remap_fortimail"]
+#   encoding:
+#        #      codec: "raw_message"
+#     codec: "json"
+#     json:
+#        pretty: true
+ 
+  vlogs_fortimail:
+    inputs:
+      - remap_fortimail
+    type: elasticsearch
+    endpoints:
+      - ${VICTORIA_LOGS_ENDPOINT:-http://localhost:9428}/insert/elasticsearch/
+    api_version: v8
+    compression: gzip
+    healthcheck:
+      enabled: false
+    query:
+      _msg_field: message
+      _time_field: timestamp
+      _stream_fields: log.syslog.appname,log.syslog.hostname,fml.type,fml.subtype
+    request:
+      headers:
+        AccountID: "0"
+        ProjectID: "0"
+#    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest. 
+#    buffer:
+#    - type: memory
+#      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+#      #when_full: drop_newest #default block
+#    batch:
+#      #max_bytes:
+#      max_events: 1600 # default 1000
+#      timeout_secs: 5 # default 1
+
+#  elastic_fortimail:
+#    type: elasticsearch
+#    inputs:
+#      - remap_fortimail
+#    auth:
+#      strategy: "basic"
+#      user: "${ELASTICSEARCH_USER:-elastic}"
+#      password: "${ELASTICSEARCH_PASS:-myelasticsearchpassword}"
+#    endpoints:
+#      - ${ELASTICSEARCH_ENDPOINT:-https://localhost:9200}
+#    encoding:
+#      except_fields:
+#        - url.query
+#    mode: "data_stream"
+#    bulk:
+#      action: "create"
+#    data_stream:
+#      type: "logs"
+#      dataset: "fortinet.fortimail.{{fml.type}}"
+#      namespace: "default"
+#    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest.
+#    buffer:
+#    - type: memory
+#      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+#      #when_full: drop_newest #default block
+#    batch:
+#      #max_bytes:
+#      max_events: 1600 # default 1000
+#      timeout_secs: 5 # default 1
+
+#  quickwit_fortimail:
+#    type: "http"
+#    method: "post"
+#    inputs:
+#      - remap_fortimail
+#    encoding:
+#      codec: "json"
+#    framing:
+#      method: "newline_delimited"
+#    uri: "${QUICKWIT_ENDPOINT:-http://localhost:7280}/api/v1/logs-fortinet.fortimail.{{fml.type}}/ingest"
+
+#  loki_fortimail:
+#    type: loki
+#    inputs:
+#      - remap_fortimail
+#    endpoint: ${LOKI_ENDPOINT:-http://localhost:3100}
+#    auth:
+#      strategy: "basic"
+#      user: "${LOKI_USER:-loki_user}"
+#      password: "${LOKI_PASS:-mylokipassword}"
+#    encoding:
+#      codec: "json"
+#    compression: "snappy"
+#    labels:
+#      "syslog_appname": "{{.log.syslog.appname}}"
+#      "syslog_hostname": "{{.log.syslog.hostname}}"
+#      "fml_type": "{{.fml.type}}"
+#    #structured_metadata:
+#     # "source_ip": "{{source.ip}}"
+#     # "destination_ip": "{{destination.ip}}"
+#    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest. 
+#    buffer:
+#    - type: memory
+#      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+#      #when_full: drop_newest #default block
+#    batch:
+#      #max_bytes:
+#      max_events: 1600 # default 1000
+#      timeout_secs: 5 # default 1
+

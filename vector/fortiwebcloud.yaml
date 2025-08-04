@@ -1,0 +1,194 @@
+#                                    __   __  __
+#                                    \ \ / / / /
+#                                     \ V / / /
+#                                      \_/  \/
+#
+#                                    V E C T O R
+#                                   Configuration
+#
+# ------------------------------------------------------------------------------
+# Website: https://vector.dev
+# Docs: https://vector.dev/docs
+# Chat: https://chat.vector.dev
+# ------------------------------------------------------------------------------
+
+# Change this to use a non-default directory for Vector data storage:
+# data_dir: "/var/lib/vector"
+
+# Random Syslog-formatted logs
+sources:
+
+  syslog_fortiweb:
+    type: "syslog"
+    address: 0.0.0.0:${FORTIWEB_SYSLOG_UDP_PORT:-6160}
+    mode: "udp"
+    #type: "socket"
+    #address: 0.0.0.0:${FORTIWEB_SYSLOG_UDP_PORT:-6160}
+    #mode: "udp"
+
+
+transforms:
+
+  remap_fortiweb:
+    type: "remap"
+    inputs: ["syslog_fortiweb" ]
+    source: | 
+      # Rename syslog fields from "."
+      .log.syslog.facility.name = del(.facility)
+      .log.source.address = del(.source_ip)
+      .log.syslog.hostname = del(.hostname)
+      .log.syslog.host = del(.host)
+      .log.syslog.severity.name = del(.severity)
+      .log.syslog.version = del(.version)
+      .log.logger = del(.source_type)
+      .log.syslog.procid = del(.procid)
+      
+      # For Elasticsearch
+      #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
+     
+      .log.syslog.appname = "fortiweb"
+
+      #Parse
+      .fwb = parse_logfmt(.message) ?? {}
+      #del(.message)
+
+      .observer.serial_number = .fwb.device_id
+      .destination.ip = .fwb.dst
+      .destination.port = .fwb.dst_port
+      .http.response.bytes = .fwb.http_response_bytes
+      .http.request.bytes = .fwb.http_request_bytes
+      .http.response.duration = .fwb.http_response_time
+      .http.request.duration = .fwb.http_request_time
+      .network.transport = .fwb.proto
+      .network.protocol = .fwb.service
+      .source.ip = .fwb.src_ip
+      .source.port = .fwb.src_port
+      .user.name = .fwb.user_name
+      .user_agent.original = .fwb.http_agent
+      .http.request.method = .fwb.http_method
+      .http.request.referrer = .fwb.http_refer
+      .http.response.status_code = .fwb.http_retcode
+      .http.version = .fwb.http_version
+      .destination.address = .fwb.http_host
+      .destination.domain = .fwb.http_host
+      .url.domain = .fwb.http_host
+      .http.request.id = .fwb.http_session_id
+      .url.original = .fwb.http_url
+      .x509.subject.common_name = .fwb.x509_cert_subject
+      .tls.cipher = .fwb.cipher_suite
+      .rule.name = .fwb.policy
+      .event.code = .fwb.log_id
+
+      .user_agent |= parse_user_agent(.user_agent.original) ?? {}
+     
+      # delete null fields
+      . = compact(.)
+
+sinks:
+#  print:
+#   type: "console"
+#   inputs: ["remap_fortiweb"]
+#   encoding:
+#        #      codec: "raw_message"
+#     codec: "json"
+#     json:
+#        pretty: true
+ 
+  vlogs_fortiweb:
+    inputs:
+      - remap_fortiweb
+    type: elasticsearch
+    endpoints:
+      - ${VICTORIA_LOGS_ENDPOINT:-http://localhost:9428}/insert/elasticsearch/
+    api_version: v8
+    compression: gzip
+    healthcheck:
+      enabled: false
+    query:
+      _msg_field: message
+      _time_field: timestamp
+      _stream_fields: log.syslog.appname,log.syslog.hostname,fwb.type,fwb.subtype
+    request:
+      headers:
+        AccountID: "0"
+        ProjectID: "0"
+#    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest. 
+#    buffer:
+#    - type: memory
+#      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+#      #when_full: drop_newest #default block
+#    batch:
+#      #max_bytes:
+#      max_events: 1600 # default 1000
+#      timeout_secs: 5 # default 1
+
+#  elastic_fortiweb:
+#    type: elasticsearch
+#    inputs:
+#      - remap_fortimail
+#    auth:
+#      strategy: "basic"
+#      user: "${ELASTICSEARCH_USER:-elastic}"
+#      password: "${ELASTICSEARCH_PASS:-myelasticsearchpassword}"
+#    endpoints:
+#      - ${ELASTICSEARCH_ENDPOINT:-https://localhost:9200}
+#    encoding:
+#      except_fields:
+#        - url.query
+#    mode: "data_stream"
+#    bulk:
+#      action: "create"
+#    data_stream:
+#      type: "logs"
+#      dataset: "fortinet.fortiweb}"
+#      namespace: "default"
+#    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest.
+#    buffer:
+#    - type: memory
+#      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+#      #when_full: drop_newest #default block
+#    batch:
+#      #max_bytes:
+#      max_events: 1600 # default 1000
+#      timeout_secs: 5 # default 1
+
+#  quickwit_fortiweb:
+#    type: "http"
+#    method: "post"
+#    inputs:
+#      - remap_fortimail
+#    encoding:
+#      codec: "json"
+#    framing:
+#      method: "newline_delimited"
+#    uri: "${QUICKWIT_ENDPOINT:-http://localhost:7280}/api/v1/logs-fortiweb/ingest"
+
+#  loki_fortiweb:
+#    type: loki
+#    inputs:
+#      - remap_fortimail
+#    endpoint: ${LOKI_ENDPOINT:-http://localhost:3100}
+#    auth:
+#      strategy: "basic"
+#      user: "${LOKI_USER:-loki_user}"
+#      password: "${LOKI_PASS:-mylokipassword}"
+#    encoding:
+#      codec: "json"
+#    compression: "snappy"
+#    labels:
+#      "syslog_appname": "{{.log.syslog.appname}}"
+#      "syslog_hostname": "{{.log.syslog.hostname}}"
+#      "fml_type": "{{.fml.type}}"
+#    #structured_metadata:
+#     # "source_ip": "{{source.ip}}"
+#     # "destination_ip": "{{destination.ip}}"
+#    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest. 
+#    buffer:
+#    - type: memory
+#      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+#      #when_full: drop_newest #default block
+#    batch:
+#      #max_bytes:
+#      max_events: 1600 # default 1000
+#      timeout_secs: 5 # default 1
+
