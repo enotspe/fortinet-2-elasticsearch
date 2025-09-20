@@ -46,11 +46,21 @@ transforms:
       .log.syslog.hostname = del(.hostname)
       .log.syslog.host = del(.host)
       .log.syslog.severity.name = del(.severity)
+      .log.syslog.version = del(.version)
       .log.logger = del(.source_type)
-      #.log.syslog.appname = del(.appname)
-      .log.syslog.appname = "panos"
-      del(.appname)
+      .log.syslog.procid = del(.procid)
+      .log.syslog.appname = del(.appname)
 
+      # For Elasticsearch
+      #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
+
+      .observer.hostname = .log.syslog.hostname
+      .observer.name = .log.syslog.host
+      .observer.product = "PanOS"
+      .observer.type = "firewall"
+      .observer.vendor = "Palo Alto"
+
+      # parse values from message
       panos_values_array = parse_csv(.message) ?? null
 
       # https://docs.paloaltonetworks.com/pan-os/10-2/pan-os-admin/monitoring/use-syslog-for-monitoring/syslog-field-descriptions/traffic-log-fields
@@ -229,13 +239,13 @@ transforms:
       #.network.community_id = community_id(source_ip: .source.ip, destination_ip: .destination.ip, source_port: .source.port, destination_port: .destination.port, protocol: .network.iana_number) ??  null
 
       ## network.direction
-      if ip_cidr_contains(["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fc00::/7"], .source.ip) ?? false {
+      if ip_cidr_contains($INTERNAL_NETWORKS , .source.ip) ?? false {
           .source.isInternal = true
       } else if !is_null(.source.ip) {
           .source.isInternal = false
       }
 
-      if ip_cidr_contains(["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fc00::/7"], .destination.ip) ?? false {
+      if ip_cidr_contains($INTERNAL_NETWORKS , .destination.ip) ?? false {
           .destination.isInternal = true
       } else if !is_null(.destination.ip) {
           .destination.isInternal = false
@@ -301,7 +311,7 @@ sinks:
     query:
       _msg_field: message
       _time_field: timestamp
-      _stream_fields: log.syslog.appname,log.syslog.hostname,panos.device_name,panos.virtual_system,panos.type,panos.threat/content_type,network.direction
+      _stream_fields: observer.product,observer.type,observer.vendor,observer.name,log.syslog.hostname,panos.device_name,panos.virtual_system,panos.type,panos.threat/content_type,network.direction
     request:
       headers:
         AccountID: "0"

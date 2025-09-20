@@ -1,0 +1,119 @@
+#                                    __   __  __
+#                                    \ \ / / / /
+#                                     \ V / / /
+#                                      \_/  \/
+#
+#                                    V E C T O R
+#                                   Configuration
+#
+# ------------------------------------------------------------------------------
+# Website: https://vector.dev
+# Docs: https://vector.dev/docs
+# Chat: https://chat.vector.dev
+# ------------------------------------------------------------------------------
+
+# Change this to use a non-default directory for Vector data storage:
+# data_dir: "/var/lib/vector"
+
+# Random Syslog-formatted logs
+sources:
+
+  syslog_fortiedr:
+    type: "syslog"
+    address: 0.0.0.0:${FORTIEDR_SYSLOG_UDP_PORT:-5180}
+    mode: "udp"
+
+transforms:
+
+  remap_fortiedr:
+    type: "remap"
+    inputs: ["syslog_fortiedr" ]
+    source: |
+      # Rename syslog fields from "."
+      .log.syslog.facility.name = del(.facility)
+      .log.source.address = del(.source_ip)
+      .log.syslog.hostname = del(.hostname)
+      .log.syslog.host = del(.host)
+      .log.syslog.severity.name = del(.severity)
+      .log.syslog.version = del(.version)
+      .log.logger = del(.source_type)
+      .log.syslog.procid = del(.procid)
+      .log.syslog.appname = del(.appname)
+
+      # For Elasticsearch
+      #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
+
+      #.log.syslog.appname = "fortigate"
+      .observer.hostname = .log.syslog.hostname
+      .observer.name = .log.syslog.host
+      .observer.product = "FortiEDR"
+      .observer.type = "edr"
+      .observer.vendor = "Fortinet"
+
+      # Pase key-value from message
+      .fedr = parse_key_value(.message,field_delimiter: ";",key_value_delimiter: ":") ?? {}
+      #del(.message)
+      #
+
+      #map_keys(.fedr) -> |key| { strip_whitespace(key) }
+
+
+      . |= parse_grok(.fedr.Destination,"%{IP:destination.ip}") ?? {}
+      . |= parse_grok(.fedr."Source IP","%{IP:source.ip}") ?? {}
+
+      .fedr."Rules List" = split(.fedr."Rules List", ",") ?? {}
+      .fedr."MAC Address" = split(.fedr."MAC Address", ",") ?? {}
+      .fedr."MITRE techniques" = split(.fedr."MITRE techniques", ",") ?? {}
+      .fedr.Target = split(.fedr.Target, ",") ?? {}
+      .fedr."Command line" = split(.fedr."Command line", ",") ?? {}
+      .fedr."Remediation Processes" = split(.fedr."Remediation Processes", ",") ?? {}
+      .fedr."Remediation Files" = split(.fedr."Remediation Files", ",") ?? {}
+      .fedr."Stack Hashes" = split(.fedr."Stack Hashes", ",") ?? {}
+      .fedr."Stack Certificates" = split(.fedr."Stack Certificates", ",") ?? {}
+
+      .host.ip = .source.ip
+      .process.hash.md5 = .fedr."Process Hash"
+      .process.name = .fedr."Process Name"
+      .process.executable = .fedr."Process Path"
+      .process.type = .fedr."Process Type"
+      .process.command_line = .fedr."Command line"
+      .process.hash.md5 = .fedr."Process Hash"
+      .host.name = .fedr."Device Name"
+      .host.mac = .fedr."MAC Address"
+      .host.user.name = .fedr.Users
+      .host.os.name = .fedr."Operating System"
+      .organization.name = .fedr.Organization
+      .organization.id = .fedr."Organization ID"
+      .rule.name = .fedr."Rules List"
+
+      # delete null fields
+      . = compact(.)
+
+sinks:
+#  print:
+#   type: "console"
+#   inputs: ["remap_fortiedr"]
+#   encoding:
+#        #      codec: "raw_message"
+#     codec: "json"
+#     json:
+#        pretty: true
+
+  vlogs_fortiedr:
+    inputs:
+      - remap_fortiedr
+    type: elasticsearch
+    endpoints:
+      - ${VICTORIA_LOGS_ENDPOINT:-http://localhost:9428}/insert/elasticsearch/
+    api_version: v8
+    compression: gzip
+    healthcheck:
+      enabled: false
+    query:
+      _msg_field: message
+      _time_field: timestamp
+      _stream_fields: observer.product,observer.type,observer.vendor,log.syslog.hostname,fedr.Message Type
+    request:
+      headers:
+        AccountID: "0"
+        ProjectID: "0"

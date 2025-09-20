@@ -48,11 +48,18 @@ transforms:
       .log.syslog.severity.name = del(.severity)
       .log.syslog.version = del(.version)
       .log.logger = del(.source_type)
+      .log.syslog.procid = del(.procid)
+      .log.syslog.appname = del(.appname)
       
       # For Elasticsearch
       #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
      
-      .log.syslog.appname = "fortigate"
+      #.log.syslog.appname = "fortigate"
+      .observer.hostname = .log.syslog.hostname
+      .observer.name = .log.syslog.host
+      .observer.product = "FortiGate"
+      .observer.type = "firewall"
+      .observer.vendor = "Fortinet"
 
       # Pase key-value from message
       .fgt = parse_logfmt(.message) ?? {}
@@ -310,6 +317,10 @@ transforms:
       .dns.question.name = .fgt.qname
       .dns.question.type = .fgt.qtype
       .dns.id = .fgt.xid
+      
+      etld_dns = parse_etld(.dns.question.name, plus_parts: 1) ?? {}
+      .dns.question.registered_domain = etld_dns.etld_plus
+      .dns.question.top_level_domain = etld_dns.etld
 
       # Function to classify an IP address based on its type (IPv4 & IPv6)
       if ip_cidr_contains(["10.0.0.0/8", "172.16.0.0/12", "192.168.0.0/16", "fc00::/7"], .destination.ip) ?? false {
@@ -397,6 +408,10 @@ transforms:
       .url.original = .fgt.url
       .url.domain = .fgt.hostname
       .url |= parse_url(.fgt.url) ?? {}
+
+      etld_url = parse_etld(.url.domain, plus_parts: 1) ?? {}
+      .url.registered_domain = etld_url.etld_plus
+      .url.top_level_domain = etld_url.etld
 
 
       # session.id
@@ -486,10 +501,39 @@ sinks:
 #     codec: "json"
 #     json:
 #        pretty: true
- 
-  vlogs_fortigate:
+
+  vlogs_fortigate_traffic:
     inputs:
       - remap_traffic
+    type: elasticsearch
+    endpoints:
+      - ${VICTORIA_LOGS_ENDPOINT:-http://localhost:9428}/insert/elasticsearch/
+    api_version: v8
+    compression: gzip
+    healthcheck:
+      enabled: false
+    query:
+      _msg_field: message
+      _time_field: timestamp
+      _stream_fields: observer.product,observer.type,observer.vendor,observer.name,log.syslog.hostname,fgt.vd,fgt.type,fgt.subtype,fgt.policytype,network.direction,fgt.logid
+    request:
+      headers:
+        AccountID: "0"
+        ProjectID: "0"
+    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest.
+    buffer:
+    - type: memory
+      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+      #when_full: drop_newest #default block
+    batch:
+      #max_bytes:
+      max_events: 1600 # default 1000
+      timeout_secs: 5 # default 1
+
+
+  vlogs_fortigate:
+    inputs:
+      #- remap_traffic
       - remap_utm
       - remap_event
       - route._unmatched
@@ -503,7 +547,7 @@ sinks:
     query:
       _msg_field: message
       _time_field: timestamp
-      _stream_fields: log.syslog.appname,log.syslog.hostname,fgt.vd,fgt.type,fgt.subtype,fgt.policytype,network.direction,fgt.eventtype
+      _stream_fields: observer.product,observer.type,observer.vendor,observer.name,log.syslog.hostname,fgt.vd,fgt.type,fgt.subtype,fgt.policytype,network.direction
     request:
       headers:
         AccountID: "0"
@@ -518,37 +562,37 @@ sinks:
       max_events: 1600 # default 1000
       timeout_secs: 5 # default 1
 
-  elastic_fortigate:
-    type: elasticsearch
-    inputs:
-      - remap_traffic
-      - remap_utm
-      - remap_event
-    auth:
-      strategy: "basic"
-      user: "${ELASTICSEARCH_USER:-elastic}"
-      password: "${ELASTICSEARCH_PASS:-myelasticsearchpassword}"
-    endpoints:
-      - ${ELASTICSEARCH_ENDPOINT:-https://localhost:9200}
-    encoding:
-      except_fields:
-        - url.query
-    mode: "data_stream"
-    bulk:
-      action: "create"
-    data_stream:
-      type: "logs"
-      dataset: "fortinet.fortigate.{{fgt.type}}"
-      namespace: "default"
-    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest.
-    buffer:
-    - type: memory
-      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
-      #when_full: drop_newest #default block
-    batch:
-      #max_bytes:
-      max_events: 1600 # default 1000
-      timeout_secs: 5 # default 1
+        #  elastic_fortigate:
+        #    type: elasticsearch
+        #    inputs:
+        #      - remap_traffic
+        #      - remap_utm
+        #      - remap_event
+        #    auth:
+        #      strategy: "basic"
+        #      user: "${ELASTICSEARCH_USER:-elastic}"
+        #      password: "${ELASTICSEARCH_PASS:-myelasticsearchpassword}"
+        #    endpoints:
+        #      - ${ELASTICSEARCH_ENDPOINT:-https://localhost:9200}
+        #    encoding:
+        #      except_fields:
+        #        - url.query
+        #    mode: "data_stream"
+        #    bulk:
+        #      action: "create"
+        #    data_stream:
+        #      type: "logs"
+        #      dataset: "fortinet.fortigate.{{fgt.type}}"
+        #      namespace: "default"
+        #    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest.
+        #    buffer:
+        #    - type: memory
+        #      max_events: 12800 # default 500 https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings
+        #      #when_full: drop_newest #default block
+        #    batch:
+        #      #max_bytes:
+        #      max_events: 1600 # default 1000
+        #      timeout_secs: 5 # default 1
 
 #  quickwit_fortigate:
 #    type: "http"

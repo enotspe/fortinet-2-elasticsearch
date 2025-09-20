@@ -34,21 +34,27 @@ transforms:
     inputs: ["syslog_fortimail" ]
     source: | 
       # Rename syslog fields from "."
-      #.log.syslog.facility.name = del(.facility)
-      #.log.source.address = del(.source_ip)
-      #.log.syslog.hostname = del(.hostname)
+      .log.syslog.facility.name = del(.facility)
+      .log.source.address = del(.source_ip)
+      .log.syslog.hostname = del(.hostname)
       .log.syslog.host = del(.host)
-      #.log.syslog.severity.name = del(.severity)
-      #.log.syslog.version = del(.version)
+      .log.syslog.severity.name = del(.severity)
+      .log.syslog.version = del(.version)
       .log.logger = del(.source_type)
+      .log.syslog.procid = del(.procid)
+      .log.syslog.appname = del(.appname)
       
       # For Elasticsearch
       #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
      
       .log.syslog.appname = "fortimail"
+      .observer.product = "FortiMail"
+      .observer.type = "antispam"
+      .observer.vendor = "Fortinet"
+
 
       # Parse
-      . |= parse_grok(.message,"<%{NONNEGINT:log.syslog.priority:int}>%{GREEDYDATA:message}") ?? {}
+      . |= parse_grok(.message,"<%{NONNEGINT:log.syslog.priority}>%{GREEDYDATA:message}") ?? {}
       .fml = parse_logfmt(.message) ?? {}
       #del(.message)
 
@@ -65,6 +71,8 @@ transforms:
 
       . |= parse_grok(.fml.dst_ip,"%{IP:destination.ip}") ?? {}
       . |= parse_grok(.fml.client_ip,"%{IP:source.ip}") ?? {}
+
+      .observer.serial_number = .fml.device_id
 
       # delete null fields
       . = compact(.)
@@ -92,7 +100,7 @@ sinks:
     query:
       _msg_field: message
       _time_field: timestamp
-      _stream_fields: log.syslog.appname,log.syslog.hostname,fml.type,fml.subtype
+      _stream_fields: observer.product,observer.type,observer.vendor,log.syslog.hostname,fml.type,fml.subtype
     request:
       headers:
         AccountID: "0"
