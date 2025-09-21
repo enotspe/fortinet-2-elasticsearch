@@ -43,7 +43,6 @@ transforms:
       # For Elasticsearch
       #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
 
-      #.log.syslog.appname = "fortigate"
       .observer.hostname = .log.syslog.hostname
       .observer.name = .log.syslog.host
       .observer.product = "FortiEDR"
