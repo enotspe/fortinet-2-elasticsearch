@@ -1,9 +1,9 @@
 {
-  "apiVersion": "dashboard.grafana.app/v2alpha1",
+  "apiVersion": "dashboard.grafana.app/v2beta1",
   "kind": "Dashboard",
   "metadata": {
     "name": "madbs2d",
-    "generation": 38,
+    "generation": 45,
     "creationTimestamp": "2025-06-20T22:41:43Z",
     "labels": {},
     "annotations": {}
@@ -17,7 +17,13 @@
           "enable": true,
           "hide": true,
           "iconColor": "rgba(0, 211, 255, 1)",
-          "name": "Annotations & Alerts"
+          "name": "Annotations & Alerts",
+          "query": {
+            "group": "grafana",
+            "kind": "DataQuery",
+            "spec": {},
+            "version": "v0"
+          }
         }
       }
     ],
@@ -35,19 +41,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action) count() results",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action) count() results",
                         "legendFormat": "{{fgt.action}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -63,7 +70,8 @@
           "title": "fgt.action",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -132,9 +140,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -148,18 +156,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql",
                         "queryType": "instant"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -213,7 +222,8 @@
           "title": "",
           "transparent": true,
           "vizConfig": {
-            "kind": "table",
+            "group": "table",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -257,9 +267,9 @@
                     "displayName": "Time"
                   }
                 ]
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -273,19 +283,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "legendFormat": "{{fgt.action}}",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -301,7 +312,8 @@
           "title": "fgt.action",
           "transparent": true,
           "vizConfig": {
-            "kind": "piechart",
+            "group": "piechart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -339,9 +351,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -355,18 +367,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,fgt.user) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,fgt.user) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -403,7 +416,8 @@
           "title": "fgt.user by fgt.action",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -469,9 +483,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -485,18 +499,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,fgt.cfgpath) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,fgt.cfgpath) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -533,7 +548,8 @@
           "title": "fgt.cfgpath by fgt.action",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -599,9 +615,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -615,18 +631,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.mem) avg_mem",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.mem) avg_mem",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -641,7 +658,8 @@
           "links": [],
           "title": "$firewall",
           "vizConfig": {
-            "kind": "stat",
+            "group": "stat",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -685,9 +703,9 @@
                 "showPercentChange": false,
                 "textMode": "auto",
                 "wideLayout": true
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.2.0-17610496912"
           }
         }
       },
@@ -701,18 +719,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -749,7 +768,8 @@
           "title": "log.syslog.hostname by fgt.action",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -815,9 +835,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -838,7 +858,8 @@
           "title": "",
           "transparent": true,
           "vizConfig": {
-            "kind": "text",
+            "group": "text",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {},
@@ -895,9 +916,9 @@
                 },
                 "content": "# LOG_ID_ADMIN*\n\n- 0100032001: LOG_ID_ADMIN_LOGIN_SUCC\n- 0100032002: LOG_ID_ADMIN_LOGIN_FAIL\n- 0100032003: LOG_ID_ADMIN_LOGOUT\n- 0100032005: LOG_ID_ADMIN_OVERIDE_VDOM\n- 0100032006: LOG_ID_ADMIN_ENTER_VDOM\n- 0100032007: LOG_ID_ADMIN_LEFT_VDOM\n- 0100032021: LOG_ID_ADMIN_LOGIN_DISABLE\n- 0100032024: LOG_ID_ADMIN_PASSWD_EXPIRE\n- 0100032053: LOG_ID_ADMIN_MTNER_LOGIN_SUCC\n- 0100032054: LOG_ID_ADMIN_MTNER_LOGOUT\n- 0100032561: LOG_ID_ADMIN_LOGOUT_DISCONNECT\n- 0100032570: LOG_ID_ADMIN_MTNER_LOGOUT_DISCONNECT",
                 "mode": "markdown"
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -911,18 +932,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.method:*\n| stats by (fgt.logdesc,fgt.method) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.method:*\n| stats by (fgt.logdesc,fgt.method) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -959,7 +981,8 @@
           "title": "fgt.method by fgt.logdesc",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1086,9 +1109,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -1102,18 +1125,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc,fgt.reason) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc,fgt.reason) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1150,7 +1174,8 @@
           "title": "fgt.reason by fgt.logdesc",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1277,9 +1302,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -1293,18 +1318,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1341,7 +1367,8 @@
           "title": "log.syslog.hostname by fgt.logdesc",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1468,9 +1495,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -1484,18 +1511,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.mem) avg_mem",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.mem) avg_mem",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1510,7 +1538,8 @@
           "links": [],
           "title": "$firewall",
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1541,6 +1570,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1583,9 +1613,9 @@
                   "mode": "single",
                   "sort": "none"
                 }
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.2.0-17610496912"
           }
         }
       },
@@ -1599,18 +1629,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.srcip) unique_fgt.srcip, count_uniq(fgt.user) successful_login_user",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.srcip) unique_fgt.srcip, count_uniq(fgt.user) successful_login_user",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1626,7 +1657,8 @@
           "title": "",
           "transparent": true,
           "vizConfig": {
-            "kind": "stat",
+            "group": "stat",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1666,9 +1698,9 @@
                 "showPercentChange": false,
                 "textMode": "auto",
                 "wideLayout": true
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -1682,19 +1714,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:in(\n  _stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n  AND fgt.user:*\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n  AND fgt.user:*\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1710,7 +1743,8 @@
           "title": "All Users",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1779,9 +1813,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -1795,19 +1829,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:in(\n  _stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n  AND fgt.logdesc:\"Admin login successful\"\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n  AND fgt.logdesc:\"Admin login successful\"\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1823,7 +1858,8 @@
           "title": "Successfull Login Users",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1892,9 +1928,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -1908,18 +1944,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:*\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:*\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1956,7 +1993,8 @@
           "title": "fgt.user",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2094,9 +2132,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -2110,18 +2148,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.cpu) avg_cpu",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.cpu) avg_cpu",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2136,7 +2175,8 @@
           "links": [],
           "title": "$firewall",
           "vizConfig": {
-            "kind": "stat",
+            "group": "stat",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2181,9 +2221,9 @@
                 "showPercentChange": false,
                 "textMode": "auto",
                 "wideLayout": true
-              },
-              "pluginVersion": "12.1.0-88106"
-            }
+              }
+            },
+            "version": "12.1.0-88106"
           }
         }
       },
@@ -2197,18 +2237,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.ui:*\n| stats by (fgt.ui,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.ui:*\n| stats by (fgt.ui,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2245,7 +2286,8 @@
           "title": "fgt.ui",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2383,9 +2425,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -2399,18 +2441,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.logdesc:\"Admin login successful\"\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.logdesc:\"Admin login successful\"\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2447,7 +2490,8 @@
           "title": "fgt.user",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2585,9 +2629,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -2601,18 +2645,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.logdesc:\"Admin login successful\"\n| stats by (fgt.ui,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.logdesc:\"Admin login successful\"\n| stats by (fgt.ui,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2649,7 +2694,8 @@
           "title": "fgt.ui",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2787,9 +2833,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -2803,19 +2849,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc) count() results",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc) count() results",
                         "legendFormat": "{{fgt.logdesc}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2831,7 +2878,8 @@
           "title": "fgt.logdesc",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2961,9 +3009,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       },
@@ -2977,18 +3025,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.cpu) avg_cpu",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.cpu) avg_cpu",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3003,7 +3052,8 @@
           "links": [],
           "title": "$firewall",
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3076,9 +3126,9 @@
                   "mode": "single",
                   "sort": "none"
                 }
-              },
-              "pluginVersion": "12.1.0-88106"
-            }
+              }
+            },
+            "version": "12.1.0-88106"
           }
         }
       },
@@ -3092,18 +3142,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.totalsession) avg_concurrent_sessions\n#| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.totalsession) avg_concurrent_sessions\n#| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3118,7 +3169,8 @@
           "links": [],
           "title": "$firewall",
           "vizConfig": {
-            "kind": "stat",
+            "group": "stat",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3158,9 +3210,9 @@
                 "showPercentChange": false,
                 "textMode": "value_and_name",
                 "wideLayout": true
-              },
-              "pluginVersion": "12.1.0-88106"
-            }
+              }
+            },
+            "version": "12.1.0-88106"
           }
         }
       },
@@ -3174,18 +3226,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3200,7 +3253,8 @@
           "links": [],
           "title": "$firewall",
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3282,9 +3336,9 @@
                   "mode": "single",
                   "sort": "none"
                 }
-              },
-              "pluginVersion": "12.1.0-88106"
-            }
+              }
+            },
+            "version": "12.1.0-88106"
           }
         }
       },
@@ -3298,18 +3352,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=fortigate,fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.cfgpath) unique_cfgpath",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.cfgpath) unique_cfgpath",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3325,7 +3380,8 @@
           "title": "",
           "transparent": true,
           "vizConfig": {
-            "kind": "stat",
+            "group": "stat",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3365,9 +3421,9 @@
                 "showPercentChange": false,
                 "textMode": "auto",
                 "wideLayout": true
-              },
-              "pluginVersion": "12.1.0-89781"
-            }
+              }
+            },
+            "version": "12.1.0-16426244399"
           }
         }
       }
@@ -3413,7 +3469,7 @@
                                           }
                                         }
                                       ],
-                                      "maxColumnCount": 3,
+                                      "maxColumnCount": 2,
                                       "rowHeightMode": "short"
                                     }
                                   },
@@ -4010,7 +4066,8 @@
         "tags": [
           "fortinet",
           "fortigate",
-          "ingest"
+          "ingest",
+          "template"
         ],
         "targetBlank": false,
         "title": "Ingest",
@@ -4026,7 +4083,8 @@
         "tags": [
           "fortinet",
           "fortigate",
-          "traffic"
+          "traffic",
+          "template"
         ],
         "targetBlank": false,
         "title": "Traffic",
@@ -4042,7 +4100,8 @@
         "tags": [
           "fortinet",
           "fortigate",
-          "utm"
+          "utm",
+          "template"
         ],
         "targetBlank": false,
         "title": "UTM",
@@ -4058,7 +4117,8 @@
         "tags": [
           "fortinet",
           "fortigate",
-          "event"
+          "event",
+          "template"
         ],
         "targetBlank": false,
         "title": "Event",
@@ -4072,7 +4132,8 @@
     "tags": [
       "fortinet",
       "fortigate",
-      "event"
+      "event",
+      "template"
     ],
     "timeSettings": {
       "autoRefresh": "",
@@ -4089,12 +4150,12 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-1h",
+      "from": "now-24h",
       "hideTimepicker": false,
       "timezone": "America/Lima",
       "to": "now"
     },
-    "title": "System v2",
+    "title": "System [FortiOS] v2",
     "variables": [
       {
         "kind": "DatasourceVariable",
@@ -4116,14 +4177,14 @@
         }
       },
       {
+        "datasource": {
+          "name": "${datasource}"
+        },
+        "group": "victoriametrics-logs-datasource",
         "kind": "AdhocVariable",
         "spec": {
           "allowCustomValue": true,
           "baseFilters": [],
-          "datasource": {
-            "type": "victoriametrics-logs-datasource",
-            "uid": "${datasource}"
-          },
           "defaultKeys": [],
           "filters": [],
           "hide": "dontHide",
@@ -4140,25 +4201,26 @@
             "text": "",
             "value": ""
           },
-          "datasource": {
-            "type": "victoriametrics-logs-datasource",
-            "uid": "${datasource}"
-          },
-          "definition": "_stream: {log.syslog.appname=fortigate,fgt.type=$type}",
+          "definition": "_stream: {fgt.type=$type}",
           "hide": "dontHide",
           "includeAll": true,
           "multi": true,
           "name": "firewall",
           "options": [],
           "query": {
-            "kind": "victoriametrics-logs-datasource",
+            "datasource": {
+              "name": "${datasource}"
+            },
+            "group": "victoriametrics-logs-datasource",
+            "kind": "DataQuery",
             "spec": {
               "field": "log.syslog.hostname",
               "limit": 25,
-              "query": "_stream: {log.syslog.appname=fortigate,fgt.type=$type}",
+              "query": "_stream: {fgt.type=$type}",
               "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
               "type": "fieldValue"
-            }
+            },
+            "version": "v0"
           },
           "refresh": "onDashboardLoad",
           "regex": "",
@@ -4175,25 +4237,26 @@
             "text": "",
             "value": ""
           },
-          "datasource": {
-            "type": "victoriametrics-logs-datasource",
-            "uid": "${datasource}"
-          },
-          "definition": "_stream: {log.syslog.appname=fortigate,fgt.type=$type,log.syslog.hostname in ($firewall)}",
+          "definition": "_stream: {fgt.type=$type,log.syslog.hostname in ($firewall)}",
           "hide": "dontHide",
           "includeAll": true,
           "multi": true,
           "name": "vdom",
           "options": [],
           "query": {
-            "kind": "victoriametrics-logs-datasource",
+            "datasource": {
+              "name": "${datasource}"
+            },
+            "group": "victoriametrics-logs-datasource",
+            "kind": "DataQuery",
             "spec": {
               "field": "fgt.vd",
               "limit": 25,
-              "query": "_stream: {log.syslog.appname=fortigate,fgt.type=$type,log.syslog.hostname in ($firewall)}",
+              "query": "_stream: {fgt.type=$type,log.syslog.hostname in ($firewall)}",
               "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
               "type": "fieldValue"
-            }
+            },
+            "version": "v0"
           },
           "refresh": "onDashboardLoad",
           "regex": "",

@@ -1,9 +1,9 @@
 {
-  "apiVersion": "dashboard.grafana.app/v2alpha1",
+  "apiVersion": "dashboard.grafana.app/v2beta1",
   "kind": "Dashboard",
   "metadata": {
     "name": "mazgmth",
-    "generation": 83,
+    "generation": 85,
     "creationTimestamp": "2025-06-19T04:06:13Z",
     "labels": {},
     "annotations": {}
@@ -17,7 +17,13 @@
           "enable": true,
           "hide": true,
           "iconColor": "rgba(0, 211, 255, 1)",
-          "name": "Annotations & Alerts"
+          "name": "Annotations & Alerts",
+          "query": {
+            "group": "grafana",
+            "kind": "DataQuery",
+            "spec": {},
+            "version": "v0"
+          }
         }
       }
     ],
@@ -35,18 +41,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.source_country) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.source_country) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "panos.source_country"
                   }
@@ -54,18 +61,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.destination_country) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.destination_country) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "panos.destination_country"
                   }
@@ -91,7 +99,8 @@
           "title": "",
           "transparent": true,
           "vizConfig": {
-            "kind": "geomap",
+            "group": "geomap",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -186,9 +195,9 @@
                   "lon": 0,
                   "zoom": 1
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -202,19 +211,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND network.application:in(\n  _stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (network.application)\n    | keep network.application\n  )\n  | by (network.application) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND network.application:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (network.application)\n    | keep network.application\n  )\n  | by (network.application) count() results",
                         "legendFormat": "{{network.application}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -230,7 +240,8 @@
           "title": "network.application",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -299,9 +310,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -315,19 +326,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND panos.application_category:in(\n  _stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (panos.application_category)\n    | keep panos.application_category\n  )\n  | by (panos.application_category) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND panos.application_category:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (panos.application_category)\n    | keep panos.application_category\n  )\n  | by (panos.application_category) count() results",
                         "legendFormat": "{{panos.application_category}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -343,7 +355,8 @@
           "title": "panos.application_category",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -412,9 +425,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -428,18 +441,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (network.transport_port,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (network.transport_port,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -476,7 +490,8 @@
           "title": "network.transport_port",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -659,9 +674,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -675,18 +690,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (network.application,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (network.application,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -723,7 +739,8 @@
           "title": "network.application",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -906,9 +923,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -922,18 +939,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND panos.application_container:* \n| stats by (panos.application_container,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND panos.application_container:* \n| stats by (panos.application_container,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -970,7 +988,8 @@
           "title": "panos.application_container",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1153,9 +1172,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -1169,18 +1188,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_category,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_category,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1217,7 +1237,8 @@
           "title": "panos.application_category",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1400,9 +1421,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -1416,18 +1437,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_subcategory,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_subcategory,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1464,7 +1486,8 @@
           "title": "panos.application_subcategory",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1647,9 +1670,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -1670,7 +1693,8 @@
           "title": "threat/content_type of traffic log",
           "transparent": true,
           "vizConfig": {
-            "kind": "text",
+            "group": "text",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {},
@@ -1684,9 +1708,9 @@
                 },
                 "content": "- **Start—session** started\n- **End—session** ended\n- **Drop—session** dropped before the application is identified and there is no rule that allows the session.\n- **Deny—session** dropped after the application is identified and there is a rule to block or no rule that allows the session.",
                 "mode": "markdown"
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.2.0-17610496912"
           }
         }
       },
@@ -1700,19 +1724,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type) count() results",
                         "legendFormat": "{{panos.threat/content_type}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1728,7 +1753,8 @@
           "title": "panos.threat/content_type %",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -1759,6 +1785,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1857,9 +1884,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.2.0-17610496912"
           }
         }
       },
@@ -1873,18 +1900,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.action,panos.session_end_reason) count() results \n| sort by (results) desc \n#| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.action,panos.session_end_reason) count() results \n| sort by (results) desc \n#| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -1926,7 +1954,8 @@
           "links": [],
           "title": "",
           "vizConfig": {
-            "kind": "netsage-sankey-panel",
+            "group": "netsage-sankey-panel",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2035,9 +2064,9 @@
                 "nodePadding": 30,
                 "nodeWidth": 30,
                 "valueField": "results"
-              },
-              "pluginVersion": "1.1.3"
-            }
+              }
+            },
+            "version": "1.1.4"
           }
         }
       },
@@ -2051,18 +2080,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.action) count() results \n| sort by (results) desc",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.action) count() results \n| sort by (results) desc",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2099,7 +2129,8 @@
           "title": "panos.threat/content_type by panos.action",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2271,9 +2302,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -2287,18 +2318,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.session_end_reason) count() results \n| sort by (results) desc \n#| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.session_end_reason) count() results \n| sort by (results) desc \n#| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2335,7 +2367,8 @@
           "title": "panos.threat/content_type by panos.session_end_reason",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2401,9 +2434,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -2417,19 +2450,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.source_country) count() results \n| sort by (results) desc \n| limit 5",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.source_country) count() results \n| sort by (results) desc \n| limit 5",
                         "legendFormat": "{{panos.source_country}}",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2445,7 +2479,8 @@
           "title": "panos.source_country",
           "transparent": true,
           "vizConfig": {
-            "kind": "piechart",
+            "group": "piechart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2492,9 +2527,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -2508,19 +2543,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.destination_country) count() results \n| sort by (results) desc \n| limit 5",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.destination_country) count() results \n| sort by (results) desc \n| limit 5",
                         "legendFormat": "{{panos.destination_country}}",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2536,7 +2572,8 @@
           "title": "panos.destination_country",
           "transparent": true,
           "vizConfig": {
-            "kind": "piechart",
+            "group": "piechart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2583,9 +2620,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -2599,18 +2636,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (observer.ingress.zone.name,observer.egress.zone.name) count() results \n| sort by (results) desc \n| limit 50",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (observer.ingress.zone.name,observer.egress.zone.name) count() results \n| sort by (results) desc \n| limit 50",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "srccountry"
                   }
@@ -2636,7 +2674,8 @@
           "title": "observer.ingress.zone.name by observer.egress.zone.name",
           "transparent": true,
           "vizConfig": {
-            "kind": "marcusolsson-treemap-panel",
+            "group": "marcusolsson-treemap-panel",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2663,9 +2702,9 @@
                 "sizeField": "results",
                 "textField": "observer.ingress.zone.name",
                 "tiling": "treemapSquarify"
-              },
-              "pluginVersion": "2.1.1"
-            }
+              }
+            },
+            "version": "2.1.1"
           }
         }
       },
@@ -2679,18 +2718,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (observer.ingress.interface.name,observer.egress.interface.name) count() results \n| sort by (results) desc \n| limit 50",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (observer.ingress.interface.name,observer.egress.interface.name) count() results \n| sort by (results) desc \n| limit 50",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "srccountry"
                   }
@@ -2716,7 +2756,8 @@
           "title": "observer.ingress.interface.name by observer.egress.interface.name",
           "transparent": true,
           "vizConfig": {
-            "kind": "marcusolsson-treemap-panel",
+            "group": "marcusolsson-treemap-panel",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2743,9 +2784,9 @@
                 "sizeField": "results",
                 "textField": "observer.ingress.interface.name",
                 "tiling": "treemapSquarify"
-              },
-              "pluginVersion": "2.1.1"
-            }
+              }
+            },
+            "version": "2.1.1"
           }
         }
       },
@@ -2759,18 +2800,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_technology,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_technology,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -2807,7 +2849,8 @@
           "title": "panos.application_technology",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -2990,9 +3033,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -3006,18 +3049,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (rule.name,panos.device_name) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (rule.name,panos.device_name) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3054,7 +3098,8 @@
           "title": "rule.name by panos.device_name",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3130,9 +3175,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -3146,18 +3191,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\nAND panos.action:($action) AND $Logsql\n| stats count() total_logs, count_uniq(source.ip) unique_source.ip, count_uniq(destination.ip) unique_destination.ip, count_uniq(network.transport_port) unique_service, count_uniq(network.application) unique_application",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\nAND panos.action:($action) AND $Logsql\n| stats count() total_logs, count_uniq(source.ip) unique_source.ip, count_uniq(destination.ip) unique_destination.ip, count_uniq(network.transport_port) unique_service, count_uniq(network.application) unique_application",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3173,7 +3219,8 @@
           "title": "Total Logs",
           "transparent": true,
           "vizConfig": {
-            "kind": "stat",
+            "group": "stat",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3213,9 +3260,9 @@
                 "showPercentChange": false,
                 "textMode": "auto",
                 "wideLayout": true
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.2.0-17610496912"
           }
         }
       },
@@ -3229,19 +3276,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type) count() results",
                         "legendFormat": "{{panos.threat/content_type}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3257,7 +3305,8 @@
           "title": "sessions by panos.threat/content_type",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3288,6 +3337,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -3387,9 +3437,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.2.0-17610496912"
           }
         }
       },
@@ -3403,19 +3453,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.ip:in(\n  _stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (source.ip)\n    | keep source.ip\n  )\n  | by (source.ip) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.ip:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (source.ip)\n    | keep source.ip\n  )\n  | by (source.ip) count() results",
                         "legendFormat": "{{source.ip}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3431,7 +3482,8 @@
           "title": "source.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3500,9 +3552,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -3516,19 +3568,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.ip:in(\n  _stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (destination.ip)\n    | keep destination.ip\n  )\n  | by (destination.ip) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.ip:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (destination.ip)\n    | keep destination.ip\n  )\n  | by (destination.ip) count() results",
                         "legendFormat": "{{destination.ip}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3544,7 +3597,8 @@
           "title": "destination.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3613,9 +3667,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -3629,18 +3683,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3677,7 +3732,8 @@
           "title": "source.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -3865,9 +3921,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -3881,18 +3937,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip:/24,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip:/24,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -3929,7 +3986,8 @@
           "title": "source.ip/24",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -4101,9 +4159,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -4117,18 +4175,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.nat.ip:*\n| stats by (source.nat.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.nat.ip:*\n| stats by (source.nat.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -4165,7 +4224,8 @@
           "title": "source.nat.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -4353,9 +4413,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -4369,18 +4429,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -4417,7 +4478,8 @@
           "title": "destination.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -4605,9 +4667,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -4621,18 +4683,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip:/24,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip:/24,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -4669,7 +4732,8 @@
           "title": "destination.ip/24",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -4841,9 +4905,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -4857,18 +4921,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.nat.ip:*\n| stats by (destination.nat.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.nat.ip:*\n| stats by (destination.nat.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -4905,7 +4970,8 @@
           "title": "destination.nat.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -5093,9 +5159,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -5109,18 +5175,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count_uniq(destination.ip) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count_uniq(destination.ip) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -5157,7 +5224,8 @@
           "title": "unique destination.ip by source.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -5345,9 +5413,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -5361,18 +5429,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -5409,7 +5478,8 @@
           "title": "unique network.transport_port by source.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -5597,9 +5667,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -5613,18 +5683,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count_uniq(source.ip) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count_uniq(source.ip) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -5661,7 +5732,8 @@
           "title": "unique source.ip by destination.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -5849,9 +5921,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -5865,18 +5937,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -5913,7 +5986,8 @@
           "title": "unique network.transport_port by destination.ip",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -6101,9 +6175,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -6117,18 +6191,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.user.name:*\n| stats by (source.user.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.user.name:*\n| stats by (source.user.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -6165,7 +6240,8 @@
           "title": "source.user.name",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -6348,9 +6424,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -6364,18 +6440,19 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.user.name:*\n| stats by (destination.user.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.user.name:*\n| stats by (destination.user.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -6412,7 +6489,8 @@
           "title": "destination.user.name",
           "transparent": true,
           "vizConfig": {
-            "kind": "barchart",
+            "group": "barchart",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -6595,9 +6673,9 @@
                 },
                 "xTickLabelRotation": 0,
                 "xTickLabelSpacing": 0
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       },
@@ -6611,19 +6689,20 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
-                    "datasource": {
-                      "type": "victoriametrics-logs-datasource",
-                      "uid": "${datasource}"
-                    },
                     "hidden": false,
                     "query": {
-                      "kind": "victoriametrics-logs-datasource",
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND network.transport_port:in(\n  _stream:{log.syslog.appname=panos,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (network.transport_port)\n    | keep network.transport_port\n  )\n  | by (network.transport_port) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND network.transport_port:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (network.transport_port)\n    | keep network.transport_port\n  )\n  | by (network.transport_port) count() results",
                         "legendFormat": "{{network.transport_port}}",
                         "queryType": "statsRange"
-                      }
+                      },
+                      "version": "v0"
                     },
                     "refId": "A"
                   }
@@ -6639,7 +6718,8 @@
           "title": "network.transport_port",
           "transparent": true,
           "vizConfig": {
-            "kind": "timeseries",
+            "group": "timeseries",
+            "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
@@ -6708,9 +6788,9 @@
                   "mode": "multi",
                   "sort": "desc"
                 }
-              },
-              "pluginVersion": "12.1.0-89256.patch1-89350"
-            }
+              }
+            },
+            "version": "12.1.0-89256.patch1-89350"
           }
         }
       }
@@ -7309,7 +7389,8 @@
         "tags": [
           "palo alto",
           "panos",
-          "performance"
+          "performance",
+          "template"
         ],
         "targetBlank": false,
         "title": "PERFORMANCE",
@@ -7325,7 +7406,8 @@
         "tags": [
           "traffic",
           "palo alto",
-          "panos"
+          "panos",
+          "template"
         ],
         "targetBlank": false,
         "title": "TRAFFIC",
@@ -7341,7 +7423,8 @@
         "tags": [
           "threat",
           "palo alto",
-          "panos"
+          "panos",
+          "template"
         ],
         "targetBlank": false,
         "title": "THREAT",
@@ -7355,7 +7438,8 @@
     "tags": [
       "traffic",
       "palo alto",
-      "panos"
+      "panos",
+      "template"
     ],
     "timeSettings": {
       "autoRefresh": "",
@@ -7374,7 +7458,7 @@
       "fiscalYearStartMonth": 0,
       "from": "now-15m",
       "hideTimepicker": false,
-      "timezone": "America/Lima",
+      "timezone": "America/Lima=true",
       "to": "now"
     },
     "title": "Traffic [PAN-OS] v2",
@@ -7399,14 +7483,14 @@
         }
       },
       {
+        "datasource": {
+          "name": "${datasource}"
+        },
+        "group": "victoriametrics-logs-datasource",
         "kind": "AdhocVariable",
         "spec": {
           "allowCustomValue": true,
           "baseFilters": [],
-          "datasource": {
-            "type": "victoriametrics-logs-datasource",
-            "uid": "${datasource}"
-          },
           "defaultKeys": [],
           "filters": [],
           "hide": "dontHide",
@@ -7423,25 +7507,26 @@
             "text": "",
             "value": ""
           },
-          "datasource": {
-            "type": "victoriametrics-logs-datasource",
-            "uid": "${datasource}"
-          },
-          "definition": "_stream:{log.syslog.appname=panos,panos.type=$type}",
+          "definition": "_stream:{panos.type=$type}",
           "hide": "dontHide",
           "includeAll": true,
           "multi": true,
           "name": "firewall",
           "options": [],
           "query": {
-            "kind": "victoriametrics-logs-datasource",
+            "datasource": {
+              "name": "${datasource}"
+            },
+            "group": "victoriametrics-logs-datasource",
+            "kind": "DataQuery",
             "spec": {
               "field": "panos.device_name",
               "limit": 25,
-              "query": "_stream:{log.syslog.appname=panos,panos.type=$type}",
+              "query": "_stream:{panos.type=$type}",
               "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
               "type": "fieldValue"
-            }
+            },
+            "version": "v0"
           },
           "refresh": "onDashboardLoad",
           "regex": "",
@@ -7458,25 +7543,26 @@
             "text": "",
             "value": ""
           },
-          "datasource": {
-            "type": "victoriametrics-logs-datasource",
-            "uid": "${datasource}"
-          },
-          "definition": "_stream: {log.syslog.appname=panos,panos.type=$type,panos.device_name in(${firewall:doublequote})}",
+          "definition": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote})}",
           "hide": "dontHide",
           "includeAll": true,
           "multi": true,
           "name": "virtual_system",
           "options": [],
           "query": {
-            "kind": "victoriametrics-logs-datasource",
+            "datasource": {
+              "name": "${datasource}"
+            },
+            "group": "victoriametrics-logs-datasource",
+            "kind": "DataQuery",
             "spec": {
               "field": "panos.virtual_system",
               "limit": 25,
-              "query": "_stream: {log.syslog.appname=panos,panos.type=$type,panos.device_name in(${firewall:doublequote})}",
+              "query": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote})}",
               "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
               "type": "fieldValue"
-            }
+            },
+            "version": "v0"
           },
           "refresh": "onDashboardLoad",
           "regex": "",
@@ -7516,11 +7602,7 @@
             "text": "",
             "value": ""
           },
-          "datasource": {
-            "type": "victoriametrics-logs-datasource",
-            "uid": "${datasource}"
-          },
-          "definition": "_stream: {log.syslog.appname=panos,panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote})}",
+          "definition": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote})}",
           "hide": "dontHide",
           "includeAll": true,
           "label": "threat/content_type",
@@ -7528,14 +7610,19 @@
           "name": "subtype",
           "options": [],
           "query": {
-            "kind": "victoriametrics-logs-datasource",
+            "datasource": {
+              "name": "${datasource}"
+            },
+            "group": "victoriametrics-logs-datasource",
+            "kind": "DataQuery",
             "spec": {
               "field": "panos.threat/content_type",
               "limit": 25,
-              "query": "_stream: {log.syslog.appname=panos,panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote})}",
+              "query": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote})}",
               "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
               "type": "fieldValue"
-            }
+            },
+            "version": "v0"
           },
           "refresh": "onDashboardLoad",
           "regex": "",
@@ -7591,11 +7678,7 @@
             "text": "",
             "value": ""
           },
-          "datasource": {
-            "type": "victoriametrics-logs-datasource",
-            "uid": "${datasource}"
-          },
-          "definition": "_stream: {log.syslog.appname=panos,panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.threat/content_type in(${subtype:doublequote})}",
+          "definition": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.threat/content_type in(${subtype:doublequote})}",
           "description": "",
           "hide": "dontHide",
           "includeAll": true,
@@ -7603,14 +7686,19 @@
           "name": "action",
           "options": [],
           "query": {
-            "kind": "victoriametrics-logs-datasource",
+            "datasource": {
+              "name": "${datasource}"
+            },
+            "group": "victoriametrics-logs-datasource",
+            "kind": "DataQuery",
             "spec": {
               "field": "panos.action",
               "limit": 25,
-              "query": "_stream: {log.syslog.appname=panos,panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.threat/content_type in(${subtype:doublequote})}",
+              "query": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.threat/content_type in(${subtype:doublequote})}",
               "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
               "type": "fieldValue"
-            }
+            },
+            "version": "v0"
           },
           "refresh": "onDashboardLoad",
           "regex": "",
