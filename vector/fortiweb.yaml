@@ -18,20 +18,22 @@
 # Random Syslog-formatted logs
 sources:
 
-  syslog_fortimail:
+  syslog_fortiweb:
     #type: "syslog"
-    #address: 0.0.0.0:${FORTIMAIL_SYSLOG_UDP_PORT:-6140}
+    #address: 0.0.0.0:${FORTIWEB_SYSLOG_UDP_PORT:-5160}
     #mode: "udp"
     type: "socket"
-    address: 0.0.0.0:${FORTIMAIL_SYSLOG_UDP_PORT:-6140}
-    mode: "udp"
+    address: 0.0.0.0:${FORTIWEB_SYSLOG_TCP_PORT:-5160}
+    mode: "tcp"
+    #decoding:
+      #codec: "native_json"
 
 
 transforms:
 
-  remap_fortimail:
+  remap_fortiweb:
     type: "remap"
-    inputs: ["syslog_fortimail" ]
+    inputs: [ "syslog_fortiweb" ]
     source: | 
       # Rename syslog fields from "."
       .log.syslog.facility.name = del(.facility)
@@ -43,54 +45,72 @@ transforms:
       .log.logger = del(.source_type)
       .log.syslog.procid = del(.procid)
       .log.syslog.appname = del(.appname)
-      
+      .log.source_port = del(.port)
+
       # For Elasticsearch
       #.@timestamp = del(.timestamp) # not necessary https://vector.dev/docs/reference/configuration/sinks/elasticsearch/#mode
      
-      #.log.syslog.appname = "fortimail"
-      .observer.product = "FortiMail"
-      .observer.type = "antispam"
+      #.log.syslog.appname = "fortiweb"
+      .observer.product = "FortiWeb"
+      .observer.type = "waf"
       .observer.vendor = "Fortinet"
       .observer.hostname = .log.syslog.hostname
       .observer.name = .log.syslog.host
 
-      # Parse
-      . |= parse_grok(.message,"<%{NONNEGINT:log.syslog.priority}>%{GREEDYDATA:message}") ?? {}
-      .fml = parse_logfmt(.message) ?? {}
-      #del(.message)
+      #Parse
+      . |= parse_grok(.message, "%{SYSLOG5424PRI}%{GREEDYDATA:json_message}") ?? {}
+      .fwb = parse_json(.json_message) ?? {}
+      del(.json_message)
+      .log.syslog.priority = del(.syslog5424_pri)
 
-      .event.timezone = .fml.tz
-      .source.domain = .fml.client_name
-      .email.from.address = .fml.hfrom
-      .email.sender.address = .fml.from
-      .email.to.address = .fml.to
-      .email.subject = .fml.subject
-      .email.x_mailer = .fml.mailer
-      .email.direction = .fml.direction
-      .email.message_id = .fml.message_id
-      .email.local_id = .fml.session_id
+      .observer.serial_number = .fwb.device_id
+      .destination.ip = .fwb.dst
+      .destination.port = .fwb.dst_port
+      .http.response.bytes = .fwb.http_response_bytes
+      .http.request.bytes = .fwb.http_request_bytes
+      .http.response.duration = .fwb.http_response_time
+      .http.request.duration = .fwb.http_request_time
+      .network.transport = .fwb.proto
+      .network.protocol = .fwb.service
+      .source.ip = .fwb.src
+      .source.port = .fwb.src_port
+      .user.name = .fwb.user_name
+      .user_agent.original = .fwb.http_agent
+      .http.request.method = .fwb.http_method
+      .http.request.referrer = .fwb.http_refer
+      .http.response.status_code = .fwb.http_retcode
+      .http.version = .fwb.http_version
+      .destination.ip = .fwb.dst
+      .destination.port = .fwb.dst_port
+      .destination.address = .fwb.http_host
+      .destination.domain = .fwb.http_host
+      .url.domain = .fwb.http_host
+      .http.request.id = .fwb.http_session_id
+      .url.original = .fwb.http_url
+      .x509.subject.common_name = .fwb.x509_cert_subject
+      .tls.cipher = .fwb.cipher_suite
+      .rule.name = .fwb.policy
+      .event.code = .fwb.log_id
 
-      . |= parse_grok(.fml.dst_ip,"%{IP:destination.ip}") ?? {}
-      . |= parse_grok(.fml.client_ip,"%{IP:source.ip}") ?? {}
-
-      .observer.serial_number = .fml.device_id
-
+      .user_agent |= parse_user_agent(.user_agent.original) ?? {}
+     
       # delete null fields
       . = compact(.)
 
 sinks:
-#  print:
-#   type: "console"
-#   inputs: ["remap_fortimail"]
-#   encoding:
-#        #      codec: "raw_message"
-#     codec: "json"
-#     json:
-#        pretty: true
+  #  print:
+  #   type: "console"
+  #   inputs: ["remap_fortiweb"]
+  #   encoding:
+  #        #      codec: "raw_message"
+  #     codec: "json"
+  #     json:
+  #        pretty: true
  
-  vlogs_fortimail:
+  vlogs_fortiweb:
     inputs:
-      - remap_fortimail
+      - remap_fortiweb
+      #- syslog_fortiweb
     type: elasticsearch
     endpoints:
       - ${VICTORIA_LOGS_ENDPOINT:-http://localhost:9428}/insert/elasticsearch/
@@ -101,7 +121,7 @@ sinks:
     query:
       _msg_field: message
       _time_field: timestamp
-      _stream_fields: observer.product,observer.type,observer.vendor,log.syslog.hostname,fml.type,fml.subtype
+      _stream_fields: observer.product,observer.type,observer.vendor,log.syslog.appname,log.syslog.hostname,fwb.type,fwb.subtype
     request:
       headers:
         AccountID: "0"
@@ -116,10 +136,10 @@ sinks:
 #      max_events: 1600 # default 1000
 #      timeout_secs: 5 # default 1
 
-#  elastic_fortimail:
+#  elastic_fortiweb:
 #    type: elasticsearch
 #    inputs:
-#      - remap_fortimail
+#      - remap_fortiweb
 #    auth:
 #      strategy: "basic"
 #      user: "${ELASTICSEARCH_USER:-elastic}"
@@ -134,7 +154,7 @@ sinks:
 #      action: "create"
 #    data_stream:
 #      type: "logs"
-#      dataset: "fortinet.fortimail.{{fml.type}}"
+#      dataset: "fortinet.fortiweb.{{fwb.type}}"
 #      namespace: "default"
 #    ### For performance optimization. Vector works really well with defaults. Don't use it unless you really need to fine-tune yor ingest.
 #    buffer:
@@ -185,4 +205,5 @@ sinks:
 #      #max_bytes:
 #      max_events: 1600 # default 1000
 #      timeout_secs: 5 # default 1
+
 
