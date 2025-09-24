@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+monitor-type,Health Monitor Name,string,32,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+reason,Reason,string,256,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+name,Display Name of the Connection,string,128,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+logdesc,Log Description,string,4096,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+tz,Time zone,string,5,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+eventtime,Event time,uint64,20,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+vd,Virtual Domain Name,string,32,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+devid,Device ID,string,16,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+level,Log Level,string,11,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+subtype,Log Subtype,string,20,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+type,Log Type,string,16,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+logid,Log ID,string,10,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+time,Time,string,8,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4
+date,Date,string,10,22942 - LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,22942,LOG_ID_EVENT_LINK_MONITOR_BUILD_ERR,Link monitor build failed,Event,system,Notice,7.6.4

@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+time,Time,string,8,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+logid,Log ID,string,10,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+type,Log Type,string,16,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+subtype,Log Subtype,string,20,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+level,Log Level,string,11,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+devid,Device ID,string,16,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+vd,Virtual Domain Name,string,32,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+eventtime,Event time,uint64,20,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+tz,Time zone,string,5,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+logdesc,Log Description,string,4096,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+msg,Log Message,string,4096,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5
+vcluster,Virtual cluster,uint32,10,37889 - MESGID_VC_DELETE,37889,MESGID_VC_DELETE,Virtual cluster deleted,Event,ha,Notice,7.4.5

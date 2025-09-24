@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+time,Time,string,8,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+logid,Log ID,string,10,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+type,Log Type,string,16,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+subtype,Log Subtype,string,20,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+level,Log Level,string,11,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+devid,Device ID,string,16,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+vd,Virtual Domain Name,string,32,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+eventtime,Event time,uint64,20,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+tz,Time zone,string,5,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+logdesc,Log Description,string,4096,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+action,Policy Action,string,65,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+msg,Log Message,string,4096,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+saddr,Source Address IP,string,80,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6
+poolname,IP Pool Name,string,36,22013 - LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,22013,LOG_ID_IPPOOLPBA_BLOCK_EXHAUSTED,IP pool PBA block exhausted,Event,system,Alert,7.2.6

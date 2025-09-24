@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+time,Time,string,8,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+logid,Log ID,string,10,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+type,Log Type,string,16,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+subtype,Log Subtype,string,20,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+level,Log Level,string,11,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+devid,Device ID,string,16,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+vd,Virtual Domain Name,string,32,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+eventtime,Event time,uint64,20,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+tz,Time zone,string,5,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+logdesc,Log Description,string,4096,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+action,Policy Action,string,65,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+msg,Log Message,string,4096,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+ssid,WiFi Service Set ID,string,33,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+radioband,The operating radio band,string,64,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+stamac,The MAC address of wifi station,string,17,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+stacount,The count of wifi stations,uint32,10,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+sn,Serial Number,string,64,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+ap,Access Point,string,36,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+reason,Reason,string,256,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3
+vap,Virtual Access Point,string,36,43596 - LOG_ID_EVENT_WIRELESS_CLB_RETRY,43596,LOG_ID_EVENT_WIRELESS_CLB_RETRY,Wireless client load balancing retry,Event,wireless,Notice,7.2.3

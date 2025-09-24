@@ -1,0 +1,41 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,,string,11,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+date,,string,10,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+devid,,string,16,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+dstintf,,string,32,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+dstintfrole,,string,10,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+dstip,,ip,39,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+dstport,,uint16,5,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+dstuser,,string,256,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+eventtime,,uint64,20,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+eventtype,,string,32,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+group,,string,512,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+hostname,,string,256,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+httpmethod,,string,20,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+level,,string,11,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+logid,,string,10,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+msg,,string,512,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+policyid,,uint32,10,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+profile,,string,64,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+proto,,uint8,3,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+referralurl,Referrer URI,string,512,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+service,,string,36,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+sessionid,,uint32,10,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+srcintf,,string,32,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+srcintfrole,,string,10,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+srcip,,ip,39,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+srcport,,uint16,5,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+subtype,,string,20,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+time,,string,8,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+type,,string,16,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+tz,,string,5,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+url,,string,512,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+user,,string,256,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+vd,,string,32,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+videocategoryid,,uint32,10,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+videocategoryname,,string,256,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+videochannelid,,string,512,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+videoid,,string,512,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+videoinfosource,,string,10,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1
+vrf,,uint8,3,13680 - LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,13680,LOG_ID_VIDEOFILTER_CHANNEL_BLOCK,Video channel is blocked.,Webfilter,videofilter-channel,Warning,7.2.1

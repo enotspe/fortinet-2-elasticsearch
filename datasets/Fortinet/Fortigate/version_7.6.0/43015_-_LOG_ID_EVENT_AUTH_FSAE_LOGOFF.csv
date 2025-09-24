@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+time,Time,string,8,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+logid,Log ID,string,10,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+type,Log Type,string,16,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+subtype,Log Subtype,string,20,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+level,Log Level,string,11,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+devid,Device ID,string,16,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+vd,Virtual Domain Name,string,32,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+eventtime,Event time,uint64,20,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+tz,Time zone,string,5,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+logdesc,Log Description,string,4096,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+user,User name of authenticated user,string,256,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+action,Policy Action,string,65,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+msg,Log Message,string,4096,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+srcip,Source IP,ip,39,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0
+server,AD server FQDN or IP,string,64,43015 - LOG_ID_EVENT_AUTH_FSAE_LOGOFF,43015,LOG_ID_EVENT_AUTH_FSAE_LOGOFF,FSSO log off authentication status,Event,user,Notice,7.6.0

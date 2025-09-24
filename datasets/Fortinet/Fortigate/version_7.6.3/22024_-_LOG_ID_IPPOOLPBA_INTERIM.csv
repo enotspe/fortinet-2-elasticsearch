@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+duration,Duration,uint32,10,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+portend,Port Number to End,uint16,5,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+portbegin,Port Number to Begin,uint16,5,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+poolname,IP Pool Name,string,36,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+saddr,Source Address IP,string,80,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+nat,NAT IP Address,ip,39,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+msg,Log Message,string,4096,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+action,Policy Action,string,65,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+logdesc,Log Description,string,4096,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+tz,Time zone,string,5,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+eventtime,Event time,uint64,20,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+vd,Virtual Domain Name,string,32,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+devid,Device ID,string,16,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+level,Log Level,string,11,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+subtype,Log Subtype,string,20,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+type,Log Type,string,16,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+logid,Log ID,string,10,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+time,Time,string,8,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3
+date,Date,string,10,22024 - LOG_ID_IPPOOLPBA_INTERIM,22024,LOG_ID_IPPOOLPBA_INTERIM,IP pool PBA interim log,Event,system,Notice,7.6.3

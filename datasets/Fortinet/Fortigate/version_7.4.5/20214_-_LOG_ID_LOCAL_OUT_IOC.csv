@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+time,Time,string,8,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+logid,Log ID,string,10,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+type,Log Type,string,16,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+subtype,Log Subtype,string,20,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+level,Log Level,string,11,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+devid,Device ID,string,16,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+vd,Virtual Domain Name,string,32,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+eventtime,Event time,uint64,20,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+tz,Time zone,string,5,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+logdesc,Log Description,string,4096,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+proto,Protocol Number,uint8,3,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+srcip,Source IP,ip,39,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+srcport,Source port,uint16,5,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+dstip,Destination IP,ip,39,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+dstport,Destination Protocol Port,uint16,5,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5
+session_id,Session ID,uint32,10,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.4.5

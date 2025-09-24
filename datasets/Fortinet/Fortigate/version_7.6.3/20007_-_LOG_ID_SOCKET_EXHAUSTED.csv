@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+dstport,Destination Protocol Port,uint16,5,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+dstip,Destination IP,ip,39,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+nat,NAT IP Address,ip,39,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+srcport,Source port,uint16,5,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+srcip,Source IP,ip,39,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+vrf,,uint16,3,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+proto,Protocol Number,uint8,3,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+service,Name of Service,string,64,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+msg,Log Message,string,4096,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+status,Status,string,23,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+logdesc,Log Description,string,4096,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+tz,Time zone,string,5,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+eventtime,Event time,uint64,20,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+vd,Virtual Domain Name,string,32,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+devid,Device ID,string,16,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+level,Log Level,string,11,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+subtype,Log Subtype,string,20,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+type,Log Type,string,16,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+logid,Log ID,string,10,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+time,Time,string,8,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3
+date,Date,string,10,20007 - LOG_ID_SOCKET_EXHAUSTED,20007,LOG_ID_SOCKET_EXHAUSTED,Socket is exhausted,Event,system,Critical,7.6.3

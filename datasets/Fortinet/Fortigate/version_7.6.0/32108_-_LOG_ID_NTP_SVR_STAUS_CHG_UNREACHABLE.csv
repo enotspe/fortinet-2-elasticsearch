@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+time,Time,string,8,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+logid,Log ID,string,10,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+type,Log Type,string,16,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+subtype,Log Subtype,string,20,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+level,Log Level,string,11,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+devid,Device ID,string,16,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+vd,Virtual Domain Name,string,32,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+eventtime,Event time,uint64,20,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+tz,Time zone,string,5,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+logdesc,Log Description,string,4096,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+user,User name of authenticated user,string,256,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+ui,User Interface,string,64,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+msg,Log Message,string,4096,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0
+field,NTP date-time field,string,32,32108 - LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,32108,LOG_ID_NTP_SVR_STAUS_CHG_UNREACHABLE,NTP server status changes to unreachable,Event,system,Notice,7.6.0

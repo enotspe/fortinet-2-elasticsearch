@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+time,Time,string,8,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+logid,Log ID,string,10,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+type,Log Type,string,16,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+subtype,Log Subtype,string,20,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+level,Log Level,string,11,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+devid,Device ID,string,16,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+vd,Virtual Domain Name,string,32,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+eventtime,Event time,uint64,20,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+tz,Time zone,string,5,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+logdesc,Log Description,string,4096,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+user,User name of authenticated user,string,256,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+ui,User Interface,string,64,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+action,Policy Action,string,65,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+status,Status,string,23,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9
+msg,Log Message,string,4096,32097 - LOG_ID_DELETE_CAPTURE_PKT,32097,LOG_ID_DELETE_CAPTURE_PKT,Policy packet capture file deleted,Event,system,Warning,7.2.9

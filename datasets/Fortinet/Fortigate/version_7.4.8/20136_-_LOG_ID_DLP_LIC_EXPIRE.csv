@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+logdesc,Log Description,string,4096,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+tz,Time zone,string,5,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+eventtime,Event time,uint64,20,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+vd,Virtual Domain Name,string,32,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+devid,Device ID,string,16,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+level,Log Level,string,11,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+subtype,Log Subtype,string,20,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+type,Log Type,string,16,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+logid,Log ID,string,10,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+time,Time,string,8,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8
+date,Date,string,10,20136 - LOG_ID_DLP_LIC_EXPIRE,20136,LOG_ID_DLP_LIC_EXPIRE,FortiGuard Data loss prevention (DLP) server license expiring,Event,system,Warning,7.4.8

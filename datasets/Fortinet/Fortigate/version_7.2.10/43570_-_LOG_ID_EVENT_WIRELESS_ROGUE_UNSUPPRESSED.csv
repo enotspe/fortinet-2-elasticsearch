@@ -1,0 +1,37 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+time,Time,string,8,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+logid,Log ID,string,10,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+type,Log Type,string,16,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+subtype,Log Subtype,string,20,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+level,Log Level,string,11,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+devid,Device ID,string,16,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+vd,Virtual Domain Name,string,32,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+eventtime,Event time,uint64,20,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+tz,Time zone,string,5,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+logdesc,Log Description,string,4096,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+action,Policy Action,string,65,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+msg,Log Message,string,4096,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+ssid,WiFi Service Set ID,string,33,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+bssid,Basic service set ID,string,17,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+aptype,The AP type is Ad-hoc mode or regular AP mode,uint8,3,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+rate,WiFi band width rate,uint16,6,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+radioband,The operating radio band,string,64,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+channel,Channel,uint8,3,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+manuf,Manufacturer name,string,20,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+security,Security,string,40,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+encryption,The encryption type of detected rogue AP,string,12,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+signal,The signal value of SSID or client,int8,4,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+noise,WiFi signal noise level,int8,4,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+live,Time in seconds,uint32,10,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+age,Time in seconds - time passed since last seen,uint32,10,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+onwire,The rogue ap is onwire or not,string,3,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+detectionmethod,Detection Method,string,21,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+stamac,The MAC address of wifi station,string,17,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+apscan,The name of AP to detect rogue ap,string,36,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+sndetected,SN of the AP which detected the rogue AP,string,36,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+radioiddetected,The radio ID on the AP which detected the rogue ap,uint8,3,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+stacount,The count of wifi stations,uint32,10,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+snclosest,SN of the AP closest to the rogue AP,string,36,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+radioidclosest,The radio ID on the AP closest with the detected rogue ap,uint8,3,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10
+apstatus,"Rogue AP status like unclassify(0), rogue(1), accept(2), suppress(3)",uint8,3,43570 - LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,43570,LOG_ID_EVENT_WIRELESS_ROGUE_UNSUPPRESSED,Rogue AP unsuppressed,Event,wireless,Warning,7.2.10

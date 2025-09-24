@@ -1,0 +1,49 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+apn,Access Point Name,string,128,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+c-gsn,Control Plane GSN,ip,39,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+cgsn6,,ip,39,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+cpteid,Control Plane teid (either downlink or uplink),uint32,10,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+date,Date,string,10,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+deny_cause,Deny Cause,string,25,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+devid,Device ID,string,16,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+dstport,Destination Port,uint16,5,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+dtlexp,Detailed Explanation,string,64,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+end-usr-address,End user IP Address,ip,39,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+endusraddress6,,ip,39,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+eventtime,Event time line,uint64,20,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+from,From,ip,128,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+from6,,ip,39,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+headerteid,Tunnel Endpoint ID Header,uint32,10,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+ietype,Malformed GTP IE number,uint8,3,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+imei-sv,IMEI(International Mobile Equipment Identity) Software Version,string,32,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+imsi,International mobile subscriber ID,string,16,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+level,Log Level,string,11,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+linked-nsapi,Linked Netscape Server Application Programming Interface,uint8,3,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+logid,Log ID,string,10,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+msg-type,Message Type,uint8,3,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+msgtypename,,string,50,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+msisdn,Mobile Subscriber Integrated Services Digital Network-Number (telephone # to a SIM card),string,16,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+nsapi,Netscape Server Application Programming Interface,uint8,3,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+profile,Profile Name,string,64,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+rai,Routing Area Identifier,string,32,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+rat-type,Radio Access Technology type,string,7,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+selection,"APN selection, which is one IE in gtp packet",string,14,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+seqnum,GTP packet sequence number,uint32,10,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+srcport,Source Port,uint16,5,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+status,Status,string,23,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+subtype,Log Subtype,string,20,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+time,Time,string,8,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+timeoutdelete,,uint8,3,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+to,To,ip,512,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+to6,,ip,39,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+tunnel-idx,"Tunnel serial number, internally assigned",uint32,10,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+type,Log Type,string,16,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+tz,Time zone,string,5,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+u-gsn,User Plane GSN,ip,39,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+ugsn6,,ip,39,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+uli,User Location Information,string,120,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+ulimcc,,uint16,3,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+ulimnc,,uint16,3,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+upteid,,uint32,10,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+vd,Virtual Domain Name,string,32,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7
+version,Version,uint32,64,41218 - LOGID_GTP_RATE_LIMIT,41218,LOGID_GTP_RATE_LIMIT,GTP rate limit,GTP,gtp-all,Information,7.2.7

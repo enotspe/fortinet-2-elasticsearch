@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+time,,string,8,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+logid,,string,10,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+type,,string,16,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+subtype,,string,20,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+level,,string,11,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+devid,,string,16,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+vd,,string,32,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+eventtime,,uint64,20,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+tz,,string,5,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+logdesc,,string,4096,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+user,,string,256,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+ui,,string,64,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+action,,string,65,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+msg,,string,4096,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+sn,,string,64,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9
+name,,string,128,22853 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,22853,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_MISS,User quarantine MAC bounce port miss,Event,switch-controller,Warning,7.2.9

@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+time,Time,string,8,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+logid,Log ID,string,10,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+type,Log Type,string,16,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+subtype,Log Subtype,string,20,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+level,Log Level,string,11,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+devid,Device ID,string,16,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+vd,Virtual Domain Name,string,32,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+eventtime,Event time,uint64,20,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+tz,Time zone,string,5,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+logdesc,Log Description,string,4096,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+auditid,Security Rating ID,uint64,20,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+audittime,Security Rating time,uint64,20,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+auditscore,Security Rating score,string,20,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+auditreporttype,Security Rating report type,string,20,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+criticalcount,Critical level threat count,int32,10,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+highcount,Security Rating result failed count for high severity,int32,10,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+mediumcount,Security Rating result failed count for medium severity,int32,10,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+lowcount,Security Rating result failed count for low severity,int32,10,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3
+passedcount,Security Rating result passed count,int32,10,52001 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,52001,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_CHANGE,Security Rating result change,Event,security-rating,Notice,7.4.3

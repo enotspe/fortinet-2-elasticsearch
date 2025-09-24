@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+time,Time,string,8,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+logid,Log ID,string,10,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+type,Log Type,string,16,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+subtype,Log Subtype,string,20,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+level,Log Level,string,11,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+devid,Device ID,string,16,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+vd,Virtual Domain Name,string,32,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+eventtime,Event time,uint64,20,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+tz,Time zone,string,5,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+logdesc,Log Description,string,4096,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+action,Policy Action,string,65,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10
+msg,Log Message,string,4096,22815 - LOG_ID_SCANUNIT_AVDB_LOAD,22815,LOG_ID_SCANUNIT_AVDB_LOAD,Scanunit loaded AV Database,Event,system,Notice,7.2.10

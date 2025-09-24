@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+time,Time,string,8,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+logid,Log ID,string,10,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+type,Log Type,string,16,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+subtype,Log Subtype,string,20,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+level,Log Level,string,11,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+devid,Device ID,string,16,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+vd,Virtual Domain Name,string,32,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+eventtime,Event time,uint64,20,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+tz,Time zone,string,5,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+logdesc,Log Description,string,4096,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+user,User name of authenticated user,string,256,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+authproto,The protocol that initiated the authentication,string,512,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+action,Policy Action,string,65,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+status,Status,string,23,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5
+msg,Log Message,string,4096,38010 - LOG_ID_FIPS_ENCRY_FAIL,38010,LOG_ID_FIPS_ENCRY_FAIL,FIPS CC encryption failed,Event,user,Alert,7.2.5

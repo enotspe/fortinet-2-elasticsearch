@@ -1,0 +1,57 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"Security action of the email filter. Eg. blocked, tagged, allow",string,8,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+agent,,string,1024,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+attachment,"Possible values: yes , no",string,3,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+authserver,,string,64,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+banword,Banned word,string,128,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+cc,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,4096,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+date,Date,string,10,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+devid,Device ID,string,16,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+direction,Direction of packets,string,8,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+dstauthserver,,string,64,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+dstcountry,,string,64,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+dstintf,Destination Interface,string,64,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+dstintfrole,"Destination interface Role, ex: LAN, WAN, etc",string,10,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+dstip,Destination IP,ip,39,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+dstport,Destination Port,uint16,5,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+dstuser,,string,256,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+dstuuid,,string,37,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+eventtime,the time of the event,uint64,20,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+eventtype,Email Filter event type,string,32,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+fctuid,FortiClient ID,string,32,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+fortiguardresp,,string,512,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+from,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,128,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+group,User group name,string,512,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+level,Log Level,string,11,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+logid,Log ID,string,10,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+msg,Log Message,string,512,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+policyid,Policy ID,uint32,10,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+policymode,,string,8,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+policytype,,string,24,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+poluuid,,string,37,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+profile,Email Filter profile name,string,64,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+proto,Protocol number,uint8,3,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+recipient,Email addresses from the SMTP envelope,string,512,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+sender,Email addresses from the SMTP envelope,string,128,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+service,"SMTP, POP3, IMAP, etc.",string,36,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+sessionid,Session ID,uint32,10,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+size,Email size in Bytes?,string,16,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+srccountry,,string,64,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+srcdomain,,string,255,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+srcintf,Source Interface,string,64,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+srcintfrole,"Source interface Role, ex: LAN, WAN, etc",string,10,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+srcip,Source IP,ip,39,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+srcport,Source Port,uint16,5,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+srcuuid,,string,37,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+subject,The subject title of the email message,string,256,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+subtype,Log subtype,string,20,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+time,Time,string,8,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+type,Log type,string,16,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+tz,,string,5,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+unauthuser,,string,66,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+unauthusersource,,string,66,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+user,User name,string,256,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+vd,Virtual Domain,string,32,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+vrf,Virtual router forwarding,uint8,3,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1
+webmailprovider,,string,32,20509 - LOGID_ANTISPAM_FTGD_ERR,20509,LOGID_ANTISPAM_FTGD_ERR,FortiGuard error message,Email,ftgd_err,Notice,7.2.1

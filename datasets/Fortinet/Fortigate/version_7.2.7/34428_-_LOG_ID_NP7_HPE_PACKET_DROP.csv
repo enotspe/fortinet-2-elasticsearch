@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+time,Time,string,8,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+logid,Log ID,string,10,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+type,Log Type,string,16,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+subtype,Log Subtype,string,20,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+level,Log Level,string,11,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+devid,Device ID,string,16,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+vd,Virtual Domain Name,string,32,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+eventtime,Event time,uint64,20,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+tz,Time zone,string,5,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+logdesc,Log Description,string,4096,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7
+msg,Log Message,string,4096,34428 - LOG_ID_NP7_HPE_PACKET_DROP,34428,LOG_ID_NP7_HPE_PACKET_DROP,NPU HPE is dropping packets,Event,system,Warning,7.2.7

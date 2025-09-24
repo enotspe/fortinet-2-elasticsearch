@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+time,Time,string,8,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+logid,Log ID,string,10,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+type,Log Type,string,16,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+subtype,Log Subtype,string,20,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+level,Log Level,string,11,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+devid,Device ID,string,16,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+vd,Virtual Domain Name,string,32,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+eventtime,Event time,uint64,20,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+tz,Time zone,string,5,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+logdesc,Log Description,string,4096,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+auditid,Security Rating ID,uint64,20,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+audittime,Security Rating time,uint64,20,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+auditscore,Security Rating score,string,20,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+auditreporttype,Security Rating report type,string,20,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+criticalcount,Critical level threat count,int32,10,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+highcount,Security Rating result failed count for high severity,int32,10,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+mediumcount,Security Rating result failed count for medium severity,int32,10,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+lowcount,Security Rating result failed count for low severity,int32,10,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6
+passedcount,Security Rating result passed count,int32,10,52000 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,52000,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_SUMMARY,Security Rating summary,Event,security-rating,Notice,7.2.6

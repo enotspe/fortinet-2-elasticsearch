@@ -1,0 +1,30 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+out_spi,Out SPI,string,16,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+in_spi,SPI for incoming traffic,string,16,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+advpnsc,,uint8,3,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+vpntunnel,IPsec VPN Tunnel Name,string,128,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+xauthgroup,IPsec VPN Xauth user group name,string,128,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+xauthuser,IPsec VPN Xauth user name,string,256,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+useralt,,string,256,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+cookies,Cookie,string,64,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+outintf,IPsec VPN binding interface,string,32,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+locport,Local Port,uint16,5,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+remport,Remote Port,uint16,5,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+locip,IPsec VPN local gateway IP address,ip,39,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+msg,Log Message,string,4096,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+group,User group Name,string,512,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+user,User name of authenticated user,string,256,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+remip,IPsec VPN remote gateway IP address,ip,39,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+action,Policy Action,string,65,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+logdesc,Log Description,string,4096,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+tz,Time zone,string,5,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+eventtime,Event time,uint64,20,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+vd,Virtual Domain Name,string,32,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+devid,Device ID,string,16,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+level,Log Level,string,11,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+subtype,Log Subtype,string,20,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+type,Log Type,string,16,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+logid,Log ID,string,10,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+time,Time,string,8,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11
+date,Date,string,10,37135 - MESGID_DELETE_P2_SA,37135,MESGID_DELETE_P2_SA,IPsec phase 2 SA deleted,Event,vpn,Notice,7.2.11

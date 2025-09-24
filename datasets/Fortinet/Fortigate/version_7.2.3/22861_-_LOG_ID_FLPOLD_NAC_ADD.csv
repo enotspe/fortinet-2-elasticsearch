@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+time,,string,8,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+logid,,string,10,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+type,,string,16,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+subtype,,string,20,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+level,,string,11,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+devid,,string,16,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+vd,,string,32,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+eventtime,,uint64,20,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+tz,,string,5,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+logdesc,,string,4096,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+user,,string,256,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+ui,,string,64,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+action,,string,65,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+msg,,string,4096,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+sn,,string,64,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3
+name,,string,128,22861 - LOG_ID_FLPOLD_NAC_ADD,22861,LOG_ID_FLPOLD_NAC_ADD,NAC device addition,Event,switch-controller,Information,7.2.3

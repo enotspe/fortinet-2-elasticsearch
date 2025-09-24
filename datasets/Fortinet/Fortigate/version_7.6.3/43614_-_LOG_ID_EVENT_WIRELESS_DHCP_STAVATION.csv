@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vapmode,Virtual Access Point mode,string,17,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+xid,,uint32,10,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+client_addr,Client address,string,17,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+source_mac,The source MAC address of wifi station,string,17,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+vap,Virtual Access Point,string,36,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+ap,Access Point,string,36,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+sn,Serial Number,string,64,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+ssid,WiFi Service Set ID,string,33,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+msg,Log Message,string,4096,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+action,Policy Action,string,65,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+logdesc,Log Description,string,4096,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+tz,Time zone,string,5,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+eventtime,Event time,uint64,20,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+vd,Virtual Domain Name,string,32,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+devid,Device ID,string,16,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+level,Log Level,string,11,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+subtype,Log Subtype,string,20,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+type,Log Type,string,16,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+logid,Log ID,string,10,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+time,Time,string,8,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3
+date,Date,string,10,43614 - LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,43614,LOG_ID_EVENT_WIRELESS_DHCP_STAVATION,DHCP Starvation detected,Event,wireless,Notice,7.6.3

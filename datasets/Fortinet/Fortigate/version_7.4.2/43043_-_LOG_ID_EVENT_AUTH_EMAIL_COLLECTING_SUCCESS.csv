@@ -1,0 +1,23 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+time,Time,string,8,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+logid,Log ID,string,10,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+type,Log Type,string,16,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+subtype,Log Subtype,string,20,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+level,Log Level,string,11,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+devid,Device ID,string,16,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+vd,Virtual Domain Name,string,32,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+eventtime,Event time,uint64,20,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+tz,Time zone,string,5,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+logdesc,Log Description,string,4096,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+user,User name of authenticated user,string,256,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+authproto,The protocol that initiated the authentication,string,512,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+action,Policy Action,string,65,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+status,Status,string,23,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+msg,Log Message,string,4096,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+srcip,Source IP,ip,39,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+reason,Reason,string,256,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+dstip,Destination IP,ip,39,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+policyid,Policy ID,uint32,10,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+interface,Interface,string,32,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2
+group,User group Name,string,512,43043 - LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,43043,LOG_ID_EVENT_AUTH_EMAIL_COLLECTING_SUCCESS,Email collecting succeeded,Event,user,Notice,7.4.2

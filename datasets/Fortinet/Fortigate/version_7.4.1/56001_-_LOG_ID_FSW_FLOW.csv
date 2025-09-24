@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+devid,,string,16,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+dstip,,ip,39,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+duration,,uint32,10,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+eventtime,,uint64,20,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+ftlkintf,,string,32,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+level,,string,11,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+logid,,string,10,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+proto,,uint8,3,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+rcvdbyte,,uint32,10,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+rcvdpkt,,uint32,10,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+srcip,,ip,39,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+subtype,,string,20,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+switchid,,string,32,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+time,,string,8,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+type,,string,16,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+tz,,string,5,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1
+vd,,string,32,56001 - LOG_ID_FSW_FLOW,56001,LOG_ID_FSW_FLOW,(null),FORTI-SWITCH,fsw-flow,Information,7.4.1

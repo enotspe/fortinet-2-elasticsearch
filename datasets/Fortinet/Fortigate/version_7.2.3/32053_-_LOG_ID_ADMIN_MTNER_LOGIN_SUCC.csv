@@ -1,0 +1,23 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+time,Time,string,8,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+logid,Log ID,string,10,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+type,Log Type,string,16,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+subtype,Log Subtype,string,20,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+level,Log Level,string,11,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+devid,Device ID,string,16,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+vd,Virtual Domain Name,string,32,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+eventtime,Event time,uint64,20,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+tz,Time zone,string,5,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+logdesc,Log Description,string,4096,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+user,User name of authenticated user,string,256,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+ui,User Interface,string,64,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+action,Policy Action,string,65,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+status,Status,string,23,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+msg,Log Message,string,4096,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+srcip,Source IP,ip,39,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+dstip,Destination IP,ip,39,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+reason,Reason,string,256,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+sn,Serial Number,string,64,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+profile,Profile Name,string,64,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3
+method,Method,string,64,32053 - LOG_ID_ADMIN_MTNER_LOGIN_SUCC,32053,LOG_ID_ADMIN_MTNER_LOGIN_SUCC,Admin monitor login successful,Event,system,Alert,7.2.3

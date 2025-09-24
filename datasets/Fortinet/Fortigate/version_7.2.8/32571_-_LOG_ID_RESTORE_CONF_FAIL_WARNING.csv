@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+time,Time,string,8,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+logid,Log ID,string,10,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+type,Log Type,string,16,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+subtype,Log Subtype,string,20,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+level,Log Level,string,11,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+devid,Device ID,string,16,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+vd,Virtual Domain Name,string,32,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+eventtime,Event time,uint64,20,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+tz,Time zone,string,5,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+logdesc,Log Description,string,4096,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+user,User name of authenticated user,string,256,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+ui,User Interface,string,64,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+action,Policy Action,string,65,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8
+msg,Log Message,string,4096,32571 - LOG_ID_RESTORE_CONF_FAIL_WARNING,32571,LOG_ID_RESTORE_CONF_FAIL_WARNING,Configuration failed to restore warning,Event,system,Warning,7.2.8

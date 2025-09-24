@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+time,Time,string,8,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+logid,Log ID,string,10,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+type,Log Type,string,16,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+subtype,Log Subtype,string,20,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+level,Log Level,string,11,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+devid,Device ID,string,16,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+vd,Virtual Domain Name,string,32,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+eventtime,Event time,uint64,20,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+tz,Time zone,string,5,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+logdesc,Log Description,string,4096,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+action,Policy Action,string,65,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+msg,Log Message,string,4096,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+ssid,WiFi Service Set ID,string,33,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+bssid,Basic service set ID,string,17,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4
+apstatus,"Rogue AP status like unclassify(0), rogue(1), accept(2), suppress(3)",uint8,3,43583 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,43583,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ACCEPTED,Rogue AP status configured as accepted,Event,wireless,Notice,7.4.4

@@ -1,0 +1,68 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"Security action performed by IPS:
+ detected - Attack is detected , but NOT blocked (similar to monitor)
+ dropped - Silent packet blocked
+ reset - Blocked and respond with Reset
+ reset_client - Blocked and reset sent to the client
+ reset_server - Blocked and reset sent to the server
+ drop_session - Silent block
+ pass_session - Session allowed
+ clear_session - Session was removed /closed",string,16,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+attack,Attack Name,string,256,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+attackcontext,The trigger patterns and the packet data with base64 encoding,string,2048,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+attackcontextid,Attack context ID / total,string,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+attackid,Attack ID,uint32,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+authserver,Authentication server for the user,string,64,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+craction,Action performed by Threat Weight,uint32,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+crlevel,Client Reputation Level,string,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+crscore,Client Reputation Score,uint32,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+date,Date,string,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+devid,Deivce ID,string,16,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+direction,Message/packets direction,string,8,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+dstauthserver,,string,64,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+dstcountry,,string,64,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+dstintf,Destination Interface,string,64,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+dstip,Destination IP,ip,39,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+dstuser,,string,256,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+eventtime,Time when detection occured,uint64,20,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+eventtype,IPS Event Type,string,32,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+fctuid,FortiClient UID,string,32,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+forwardedfor,X-Forwarded-For HTTP header,string,128,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+group,User group name,string,512,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+incidentserialno,Incident serial number,uint32,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+level,Log Level,string,11,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+logid,Log ID,string,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+msg,Log message for the attack,string,518,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+pdstport,,uint16,5,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+policyid,Policy ID,uint32,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+policymode,,string,8,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+policytype,,string,24,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+poluuid,,string,37,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+profile,Profile name for IPS,string,64,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+proto,Protocol number,uint8,3,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+psrcport,,uint16,5,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,1024,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+rawdataid,,string,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+ref,URL of the FortiGuard IPS database entry for the attack.,string,4096,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+service,Service name,string,80,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+sessionid,Session ID,uint32,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+severity,Severity of the attack,string,8,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+srccountry,Country name for Source IP,string,64,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+srcdomain,,string,255,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+srcintf,Source Interface,string,64,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+srcip,Source IP,ip,39,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+subtype,Log Subtype,string,20,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+time,Time,string,8,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+trueclntip,True-Client-IP HTTP header,ip,39,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+type,Log type,string,16,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+tz,,string,5,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+unauthuser,Unauthenticated user,string,66,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+unauthusersource,Unauthenticated user source,string,66,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+user,User name,string,256,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+vd,Virtual domain name,string,32,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+vrf,Virtual router forwarding,uint8,3,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+icmpcode,Destination Port of the ICMP message,string,6,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+icmpid,Source port of the ICMP message,string,8,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1
+icmptype,The type of ICMP message,string,6,16385 - LOGID_ATTCK_SIGNATURE_ICMP,16385,LOGID_ATTCK_SIGNATURE_ICMP,Attack detected by ICMP signature,IPS,signature,Alert,7.2.1

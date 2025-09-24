@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+time,Time,string,8,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+logid,Log ID,string,10,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+type,Log Type,string,16,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+subtype,Log Subtype,string,20,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+level,Log Level,string,11,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+devid,Device ID,string,16,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+vd,Virtual Domain Name,string,32,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+eventtime,Event time,uint64,20,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+tz,Time zone,string,5,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+logdesc,Log Description,string,4096,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+user,User name of authenticated user,string,256,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+ui,User Interface,string,64,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+action,Policy Action,string,65,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+msg,Log Message,string,4096,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+alarmid,Alarm ID,uint32,10,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3
+acktime,Alarm Acknowledge Time,string,24,32171 - LOG_ID_ALARM_ACK,32171,LOG_ID_ALARM_ACK,Alarm acknowledged,Event,system,Alert,7.2.3

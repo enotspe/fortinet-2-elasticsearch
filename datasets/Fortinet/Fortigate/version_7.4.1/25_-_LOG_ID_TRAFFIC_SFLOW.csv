@@ -1,0 +1,11 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+devid,Device Serial Number,string,16,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+eventtime,Epoch time in nanoseconds,uint64,20,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+level,Log Level,string,11,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+logid,Log ID,string,10,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+subtype,Subtype of the traffic,string,20,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+time,Time,string,8,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+type,Log type,string,16,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+tz,Time zone,string,5,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1
+vd,Virtual domain name,string,32,25 - LOG_ID_TRAFFIC_SFLOW,25,LOG_ID_TRAFFIC_SFLOW,Sflow sample,Traffic,forward,Notice,7.4.1

@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+devintfname,HA device interface name,string,32,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+msg,Log Message,string,4096,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+logdesc,Log Description,string,4096,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+tz,Time zone,string,5,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+eventtime,Event time,uint64,20,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+vd,Virtual Domain Name,string,32,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+devid,Device ID,string,16,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+level,Log Level,string,11,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+subtype,Log Subtype,string,20,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+type,Log Type,string,16,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+logid,Log ID,string,10,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+time,Time,string,8,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3
+date,Date,string,10,37900 - MESGID_HBDEV_DELETE,37900,MESGID_HBDEV_DELETE,Heartbeat device interface deleted,Event,ha,Notice,7.6.3

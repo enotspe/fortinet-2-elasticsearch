@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+time,Time,string,8,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+logid,Log ID,string,10,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+type,Log Type,string,16,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+subtype,Log Subtype,string,20,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+level,Log Level,string,11,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+devid,Device ID,string,16,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+vd,Virtual Domain Name,string,32,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+eventtime,Event time,uint64,20,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+tz,Time zone,string,5,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+logdesc,Log Description,string,4096,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+msg,Log Message,string,4096,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0
+interface,Interface,string,32,22052 - LOG_ID_IPAMD_ADDRESS_INVALIDATED,22052,LOG_ID_IPAMD_ADDRESS_INVALIDATED,FortiIPAM indicated that the address was no longer allocated to the interface,Event,system,Notice,7.6.0

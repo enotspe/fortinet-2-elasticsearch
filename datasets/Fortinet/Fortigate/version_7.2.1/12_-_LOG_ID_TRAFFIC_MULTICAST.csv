@@ -1,0 +1,150 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+accessproxy,,string,80,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+ap,Access Point name,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+app,Application name,string,96,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+appact,The security action from app control,string,16,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+appcat,Application category,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+appid,Application ID,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+applist,Application Control profile (name),string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+apprisk,Application Risk Level,string,16,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+apsn,Access Point serial number,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+authserver,Remote Authentication server,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+centralnatid,central-snat-map id,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+channel,WiFi Channel,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+clientdeviceid,,string,80,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+clientdeviceowner,,string,80,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+clientdevicetags,,string,512,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+comment,Customized policy comment,string,1024,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+craction,Action performed by Threat Weight,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+crlevel,Threat Weight level,string,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+crscore,Threat Weight score,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+date,Date,string,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+devid,Device Serial Number,string,16,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+devtype,Device Type,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstauthserver,,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstcity,,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstcountry,Country name for the destination IP,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstdevtype,Destination Device Type,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstfamily,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dsthwvendor,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dsthwversion,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstinetsvc,Internet service name for the destination,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstintf,Destination Interface,string,32,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstip,Destination IP Address,ip,39,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstmac,Destination Mac Address,string,17,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstname,Destination name,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstosname,Destination OS name,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstport,Destination Protocol Port Number,uint16,5,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstregion,,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstreputation,,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstserver,Destination Server,uint8,3,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstssid,Destination SSID,string,33,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstswversion,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstthreatfeed,,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstunauthuser,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstunauthusersource,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstuser,,string,256,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+dstuuid,UUID of the Destination Address Object,string,37,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+duration,Duration of the session,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+eventtime,Epoch time in nanoseconds,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+fctuid,FortiClient UID,string,32,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+gatewayid,,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+group,User group name,string,512,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+identifier,,uint16,5,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+lanin,LAN incoming traffic in bytes,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+lanout,LAN outgoing traffic in bytes,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+level,Log Level,string,11,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+logid,Log ID,string,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+masterdstmac,Destination master MAC address,string,17,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+msg,Log message,string,512,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+osname,Name of the device's OS,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+pdstport,,uint16,5,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+policyid,Firewall Policy ID,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+policymode,,string,8,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+policyname,Policy name,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+policytype,Policy type,string,24,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+poluuid,UUID of the Firewall Policy,string,37,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+proto,Protocol Number,uint8,3,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+psrcport,,uint16,5,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+radioband,Radio Band,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+rcvdbyte,Received Bytes,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+rcvddelta,Delta Received Bytes,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+rcvdpkt,Received Packets,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+saasname,,string,80,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+sentbyte,Sent Bytes,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+sentdelta,Delta Sent Bytes,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+sentpkt,Sent Packets,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+service,Name of Service,string,80,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+sessionid,Session ID,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+shaperperipname,Traffic shaper name (per IP),string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+shaperrcvdname,Traffic shaper name for received traffic,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+shapersentname,Traffic shaper name for sent traffic,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+shapingpolicyid,Shaping Policy ID,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+shapingpolicyname,,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+signal,,int8,4,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+snr,,int8,4,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srccity,,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srccountry,Country name for Source IP,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcdomain,,string,255,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcfamily,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srchwvendor,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srchwversion,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcinetsvc,Internet service name for the source,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcintf,Source interface name,string,32,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcip,Source IP address,ip,39,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcmac,MAC address associated with the Source IP,string,17,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcmacvendor,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcname,Source name,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcport,Source protocol port number,uint16,5,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcregion,,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcreputation,,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcserver,Source server,uint8,3,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcssid,Source SSID,string,33,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcswversion,,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcthreatfeed,,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+srcuuid,UUID of the Source Address Object,string,37,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+sslaction,Action taken by ssl-ssh-profile,string,26,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+subtype,Subtype of the traffic,string,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+time,Time,string,8,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+trandisp,NAT translation type,string,16,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+tranip,NAT Destination IP,ip,39,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+tranport,NAT Destination Port,uint16,5,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+transip,NAT Source IP,ip,39,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+transport,NAT Source Protocol Port,uint16,5,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+tunnelid,,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+type,Log type,string,16,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+tz,Time zone,string,5,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+unauthuser,Unauthenticated user name,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+unauthusersource,The method used to detect unauthenticated user name,string,66,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+url,URL,string,512,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+user,User name,string,256,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+utmaction,Security action performed by UTM,string,32,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vd,Virtual domain name,string,32,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vip,,string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vpntype,The type of the VPN tunnel,string,14,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vrf,Virtual router forwarding,uint8,3,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vwlname,,string,36,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+wanin,WAN incoming traffic in bytes,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+wanoptapptype,WAN Optimization Application type,string,9,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1
+wanout,WAN outgoing traffic in bytes,uint64,20,12 - LOG_ID_TRAFFIC_MULTICAST,12,LOG_ID_TRAFFIC_MULTICAST,Multicast traffic,Traffic,multicast,Notice,7.2.1

@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+time,Time,string,8,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+logid,Log ID,string,10,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+type,Log Type,string,16,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+subtype,Log Subtype,string,20,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+level,Log Level,string,11,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+devid,Device ID,string,16,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+vd,Virtual Domain Name,string,32,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+eventtime,Event time,uint64,20,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+tz,Time zone,string,5,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+logdesc,Log Description,string,4096,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+msg,Log Message,string,4096,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+version,Version,string,64,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9
+upgradedevice,,string,80,22080 - LOG_ID_PROVISION_LATEST_SUCCEEDED,22080,LOG_ID_PROVISION_LATEST_SUCCEEDED,Provisioning of latest firmware was completed,Event,system,Information,7.2.9

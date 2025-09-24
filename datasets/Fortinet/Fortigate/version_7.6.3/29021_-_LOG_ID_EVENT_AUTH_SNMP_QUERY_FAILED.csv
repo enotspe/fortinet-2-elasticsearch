@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+community,Community,string,36,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+version,Version,string,64,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+dstport,Destination Protocol Port,uint16,5,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+dstip,Destination IP,ip,39,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+srcport,Source port,uint16,5,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+srcip,Source IP,ip,39,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+msg,Log Message,string,4096,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+user,User name of authenticated user,string,256,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+logdesc,Log Description,string,4096,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+tz,Time zone,string,5,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+eventtime,Event time,uint64,20,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+vd,Virtual Domain Name,string,32,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+devid,Device ID,string,16,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+level,Log Level,string,11,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+subtype,Log Subtype,string,20,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+type,Log Type,string,16,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+logid,Log ID,string,10,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+time,Time,string,8,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3
+date,Date,string,10,29021 - LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,29021,LOG_ID_EVENT_AUTH_SNMP_QUERY_FAILED,SNMP query failed,Event,system,Warning,7.6.3

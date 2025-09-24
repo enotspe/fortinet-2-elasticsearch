@@ -1,0 +1,28 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Policy Action,string,65,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+bandwidth,Bandwidth,string,42,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+cpu,CPU Usage,uint8,3,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+date,Date,string,10,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+devid,Device ID,string,16,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+disk,Disk Usage,uint8,3,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+disklograte,Disk Log Rate,uint64,20,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+eventtime,Event time,uint64,20,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+fazlograte,FortiAnalyzer Logging Rate,uint64,20,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+freediskstorage,,uint32,10,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+level,Log Level,string,11,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+logdesc,Log Description,string,4096,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+logid,Log ID,string,10,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+mem,Memory Usage,uint8,3,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+msg,Log Message,string,4096,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+name,Display Name of the Connection,string,128,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+setuprate,Session Setup Rate,uint64,20,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+sn,Serial Number,string,64,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+subtype,Log Subtype,string,20,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+sysuptime,,uint32,10,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+time,Time,string,8,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+totalsession,Total Number of Sessions,uint32,10,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+type,Log Type,string,16,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+tz,Time zone,string,5,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+user,User name of authenticated user,string,256,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+vd,Virtual Domain Name,string,32,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0
+waninfo,,string,512,40704 - LOG_ID_EVENT_SYS_PERF,40704,LOG_ID_EVENT_SYS_PERF,System performance statistics,Event,SYSTEM,Notice,7.2.0

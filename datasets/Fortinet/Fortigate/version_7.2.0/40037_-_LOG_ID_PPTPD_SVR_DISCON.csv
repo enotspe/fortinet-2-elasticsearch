@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Policy Action,string,65,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+date,Date,string,10,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+devid,Device ID,string,16,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+eventtime,Event time,uint64,20,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+level,Log Level,string,11,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+logdesc,Log Description,string,4096,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+logid,Log ID,string,10,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+msg,Log Message,string,4096,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+reason,Reason,string,256,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+status,Status,string,23,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+subtype,Log Subtype,string,20,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+time,Time,string,8,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+type,Log Type,string,16,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+tz,Time zone,string,5,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0
+vd,Virtual Domain Name,string,32,40037 - LOG_ID_PPTPD_SVR_DISCON,40037,LOG_ID_PPTPD_SVR_DISCON,PPTP daemon disconnected,Event,VPN,Information,7.2.0

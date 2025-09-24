@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vulncnt,,uint32,10,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+vulnresult,,string,64,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+versionmax,,string,64,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+versionmin,,string,64,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+model,,string,64,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+product,,string,64,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+vendor,,string,64,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+ip,,ip,39,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+mac,MAC Address,string,17,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+logdesc,Log Description,string,4096,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+tz,Time zone,string,5,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+eventtime,Event time,uint64,20,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+vd,Virtual Domain Name,string,32,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+devid,Device ID,string,16,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+level,Log Level,string,11,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+subtype,Log Subtype,string,20,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+type,Log Type,string,16,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+logid,Log ID,string,10,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+time,Time,string,8,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8
+date,Date,string,10,20150 - LOG_ID_DEV_VUNL_FTGD_LOOKUP,20150,LOG_ID_DEV_VUNL_FTGD_LOOKUP,Device vulnerability lookup on FortiGuard,Event,system,Notice,7.4.8

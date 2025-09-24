@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+intf,Interface,string,16,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+sn,Serial Number,string,64,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+ip,Source IP,ip,39,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+msg,Log Message,string,4096,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+user,User name of authenticated user,string,256,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+fctuid,FortiClient UID,string,32,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+logdesc,Log Description,string,4096,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+tz,Time zone,string,5,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+eventtime,Event time,uint64,20,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+vd,Virtual Domain Name,string,32,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+devid,Device ID,string,16,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+level,Log Level,string,11,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+subtype,Log Subtype,string,20,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+type,Log Type,string,16,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+logid,Log ID,string,10,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+time,Time,string,8,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1
+date,Date,string,10,45124 - LOG_ID_EC_VPND_CONNECT,45124,LOG_ID_EC_VPND_CONNECT,FortiClient VPN connected,Event,endpoint,Warning,7.6.1

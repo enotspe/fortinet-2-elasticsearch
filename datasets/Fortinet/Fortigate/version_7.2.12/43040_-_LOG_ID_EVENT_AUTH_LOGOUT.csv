@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+authserver,Remote Authentication server,string,64,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+srcip,Source IP,ip,39,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+msg,Log Message,string,4096,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+status,Status,string,23,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+action,Policy Action,string,65,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+user,User name of authenticated user,string,256,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+logdesc,Log Description,string,4096,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+tz,Time zone,string,5,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+eventtime,Event time,uint64,20,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+vd,Virtual Domain Name,string,32,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+devid,Device ID,string,16,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+level,Log Level,string,11,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+subtype,Log Subtype,string,20,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+type,Log Type,string,16,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+logid,Log ID,string,10,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+time,Time,string,8,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12
+date,Date,string,10,43040 - LOG_ID_EVENT_AUTH_LOGOUT,43040,LOG_ID_EVENT_AUTH_LOGOUT,Authentication logout,Event,user,Notice,7.2.12

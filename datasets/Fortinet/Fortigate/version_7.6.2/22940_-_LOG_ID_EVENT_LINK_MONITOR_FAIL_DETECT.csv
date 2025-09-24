@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+interface,Interface,string,32,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+msg,Log Message,string,4096,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+logdesc,Log Description,string,4096,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+tz,Time zone,string,5,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+eventtime,Event time,uint64,20,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+vd,Virtual Domain Name,string,32,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+devid,Device ID,string,16,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+level,Log Level,string,11,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+subtype,Log Subtype,string,20,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+type,Log Type,string,16,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+logid,Log ID,string,10,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+time,Time,string,8,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2
+date,Date,string,10,22940 - LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,22940,LOG_ID_EVENT_LINK_MONITOR_FAIL_DETECT,Link monitor fail detect,Event,system,Notice,7.6.2

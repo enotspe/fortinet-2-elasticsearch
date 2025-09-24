@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+time,Time,string,8,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+logid,Log ID,string,10,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+type,Log Type,string,16,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+subtype,Log Subtype,string,20,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+level,Log Level,string,11,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+devid,Device ID,string,16,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+vd,Virtual Domain Name,string,32,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+eventtime,Event time,uint64,20,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+tz,Time zone,string,5,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+logdesc,Log Description,string,4096,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+msg,Log Message,string,4096,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+fctemssn,,string,16,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+fctemsname,,string,36,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+url,URL,string,512,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8
+wscode,,uint16,4,45123 - LOG_ID_EC_EMS_WS_CONN_ERROR,45123,LOG_ID_EC_EMS_WS_CONN_ERROR,EMS WebSocket connection error,Event,endpoint,Warning,7.2.8

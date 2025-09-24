@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+time,Time,string,8,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+logid,Log ID,string,10,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+type,Log Type,string,16,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+subtype,Log Subtype,string,20,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+level,Log Level,string,11,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+devid,Device ID,string,16,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+vd,Virtual Domain Name,string,32,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+eventtime,Event time,uint64,20,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+tz,Time zone,string,5,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+logdesc,Log Description,string,4096,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+ui,User Interface,string,64,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5
+msg,Log Message,string,4096,32020 - LOG_ID_SSH_CORRPUT_MAC,32020,LOG_ID_SSH_CORRPUT_MAC,Message Authentication Code corrupted,Event,system,Warning,7.4.5

@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+extinvalid,,int32,10,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+exttotal,,int32,10,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+desc,Description,string,128,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+msg,Log Message,string,4096,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+status,Status,string,23,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+logdesc,Log Description,string,4096,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+tz,Time zone,string,5,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+eventtime,Event time,uint64,20,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+vd,Virtual Domain Name,string,32,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+devid,Device ID,string,16,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+level,Log Level,string,11,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+subtype,Log Subtype,string,20,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+type,Log Type,string,16,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+logid,Log ID,string,10,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+time,Time,string,8,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2
+date,Date,string,10,22220 - LOG_ID_EXT_RESOURCE,22220,LOG_ID_EXT_RESOURCE,Threat feed updated,Event,system,Information,7.6.2

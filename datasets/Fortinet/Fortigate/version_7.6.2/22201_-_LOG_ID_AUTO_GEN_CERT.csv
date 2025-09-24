@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+cert,Certificate,string,36,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+msg,Log Message,string,4096,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+status,Status,string,23,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+action,Policy Action,string,65,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+user,User name of authenticated user,string,256,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+logdesc,Log Description,string,4096,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+tz,Time zone,string,5,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+eventtime,Event time,uint64,20,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+vd,Virtual Domain Name,string,32,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+devid,Device ID,string,16,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+level,Log Level,string,11,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+subtype,Log Subtype,string,20,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+type,Log Type,string,16,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+logid,Log ID,string,10,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+time,Time,string,8,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2
+date,Date,string,10,22201 - LOG_ID_AUTO_GEN_CERT,22201,LOG_ID_AUTO_GEN_CERT,Certificate will be auto-regenerated,Event,system,Warning,7.6.2

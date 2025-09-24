@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+url,URL,string,512,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+status,Status,string,23,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+path,,string,512,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+method,Method,string,64,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+ui,User Interface,string,64,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+user,User name of authenticated user,string,256,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+logdesc,Log Description,string,4096,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+tz,Time zone,string,5,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+eventtime,Event time,uint64,20,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+vd,Virtual Domain Name,string,32,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+devid,Device ID,string,16,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+level,Log Level,string,11,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+subtype,Log Subtype,string,20,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+type,Log Type,string,16,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+logid,Log ID,string,10,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+time,Time,string,8,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7
+date,Date,string,10,47301 - LOG_ID_EVENT_REST_API_OK,47301,LOG_ID_EVENT_REST_API_OK,REST API request success,Event,rest-api,Information,7.4.7

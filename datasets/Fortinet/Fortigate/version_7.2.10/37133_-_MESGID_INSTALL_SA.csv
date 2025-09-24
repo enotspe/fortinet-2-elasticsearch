@@ -1,0 +1,31 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+time,Time,string,8,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+logid,Log ID,string,10,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+type,Log Type,string,16,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+subtype,Log Subtype,string,20,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+level,Log Level,string,11,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+devid,Device ID,string,16,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+vd,Virtual Domain Name,string,32,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+eventtime,Event time,uint64,20,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+tz,Time zone,string,5,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+logdesc,Log Description,string,4096,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+action,Policy Action,string,65,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+remip,IPsec VPN remote gateway IP address,ip,39,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+user,User name of authenticated user,string,256,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+group,User group Name,string,512,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+msg,Log Message,string,4096,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+locip,IPsec VPN local gateway IP address,ip,39,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+remport,Remote Port,uint16,5,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+locport,Local Port,uint16,5,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+outintf,IPsec VPN binding interface,string,32,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+cookies,Cookie,string,64,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+useralt,,string,256,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+xauthuser,IPsec VPN Xauth user name,string,256,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+xauthgroup,IPsec VPN Xauth user group name,string,128,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+vpntunnel,IPsec VPN Tunnel Name,string,128,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+advpnsc,,uint8,3,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+role,"IPsec peer role, initator or responder",string,9,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+in_spi,SPI for incoming traffic,string,16,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10
+out_spi,Out SPI,string,16,37133 - MESGID_INSTALL_SA,37133,MESGID_INSTALL_SA,IPsec SA installed,Event,vpn,Notice,7.2.10

@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+time,Time,string,8,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+logid,Log ID,string,10,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+type,Log Type,string,16,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+subtype,Log Subtype,string,20,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+level,Log Level,string,11,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+devid,Device ID,string,16,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+vd,Virtual Domain Name,string,32,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+eventtime,Event time,uint64,20,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+tz,Time zone,string,5,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+logdesc,Log Description,string,4096,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+msg,Log Message,string,4096,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0
+fctemsname,,string,36,45131 - LOG_ID_EC_EMS_EMS_UNVERIFY,45131,LOG_ID_EC_EMS_EMS_UNVERIFY,FCEMS entry has been unverified,Event,endpoint,Information,7.4.0

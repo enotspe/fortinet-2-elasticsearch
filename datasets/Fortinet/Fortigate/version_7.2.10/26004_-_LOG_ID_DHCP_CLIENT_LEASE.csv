@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+time,Time,string,8,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+logid,Log ID,string,10,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+type,Log Type,string,16,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+subtype,Log Subtype,string,20,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+level,Log Level,string,11,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+devid,Device ID,string,16,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+vd,Virtual Domain Name,string,32,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+eventtime,Event time,uint64,20,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+tz,Time zone,string,5,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+logdesc,Log Description,string,4096,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10
+msg,Log Message,string,4096,26004 - LOG_ID_DHCP_CLIENT_LEASE,26004,LOG_ID_DHCP_CLIENT_LEASE,DHCP client lease granted,Event,system,Information,7.2.10

@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+status,Status,string,23,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+msg,Log Message,string,4096,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+action,Policy Action,string,65,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+logdesc,Log Description,string,4096,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+tz,Time zone,string,5,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+eventtime,Event time,uint64,20,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+vd,Virtual Domain Name,string,32,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+devid,Device ID,string,16,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+level,Log Level,string,11,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+subtype,Log Subtype,string,20,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+type,Log Type,string,16,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+logid,Log ID,string,10,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+time,Time,string,8,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3
+date,Date,string,10,40114 - LOG_ID_L2TPD_START,40114,LOG_ID_L2TPD_START,L2TP daemon started,Event,vpn,Notice,7.6.3

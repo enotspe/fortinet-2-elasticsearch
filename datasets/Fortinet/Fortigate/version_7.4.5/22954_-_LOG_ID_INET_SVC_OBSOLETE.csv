@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+time,Time,string,8,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+logid,Log ID,string,10,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+type,Log Type,string,16,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+subtype,Log Subtype,string,20,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+level,Log Level,string,11,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+devid,Device ID,string,16,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+vd,Virtual Domain Name,string,32,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+eventtime,Event time,uint64,20,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+tz,Time zone,string,5,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+logdesc,Log Description,string,4096,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5
+msg,Log Message,string,4096,22954 - LOG_ID_INET_SVC_OBSOLETE,22954,LOG_ID_INET_SVC_OBSOLETE,Internet Service obsolete,Event,system,Notice,7.4.5

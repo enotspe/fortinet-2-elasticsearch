@@ -1,0 +1,25 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+method,Method,string,64,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+state,State,string,64,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+sn,Serial number for login or logout events. Used to correlate login and logout events.,string,64,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+duration,Duration,uint32,10,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+reason,Reason,string,256,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+name,Display Name of the Connection,string,128,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+dstip,Destination IP,ip,39,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+srcip,Source IP,ip,39,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+msg,Log Message,string,4096,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+status,Status,string,23,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+action,Policy Action,string,65,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+ui,User Interface,string,64,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+user,User name of authenticated user,string,256,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+logdesc,Log Description,string,4096,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+tz,Time zone,string,5,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+eventtime,Event time,uint64,20,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+vd,Virtual Domain Name,string,32,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+devid,Device ID,string,16,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+level,Log Level,string,11,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+subtype,Log Subtype,string,20,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+type,Log Type,string,16,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+logid,Log ID,string,10,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+time,Time,string,8,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4
+date,Date,string,10,32003 - LOG_ID_ADMIN_LOGOUT,32003,LOG_ID_ADMIN_LOGOUT,Admin logout successful,Event,system,Information,7.6.4

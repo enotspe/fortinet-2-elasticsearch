@@ -1,0 +1,45 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+icmptype,ICMP Type,string,6,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+icmpid,ICMP ID,string,8,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+icmpcode,ICMP code,string,6,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+vrf,Virtual router forwarding,uint16,3,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+vd,Virtual Domain Name,string,32,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+user,User,string,256,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+unauthusersource,Unauthenticated user source,string,66,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+unauthuser,Unauthenticated user,string,66,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+tz,Time zone,string,5,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+type,Log Type,string,16,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+time,Time,string,8,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+subtype,Log Subtype,string,20,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+srcip,Source IP,ip,39,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+srcintf,Source Interface,string,64,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+srcdomain,,string,255,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+srccountry,Country name for Source IP,string,64,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+severity,Severity,string,8,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+sessionid,Session ID,uint32,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+service,Name of Service,string,80,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+ref,Reference,string,4096,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+proto,Protocol,uint8,3,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+policytype,Policy type,string,24,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+policyid,Policy ID,uint32,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+msg,Log Message,string,518,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+logid,Log ID,string,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+level,Log Level,string,11,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+group,User Group Name,string,512,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+fctuid,FortiClient UID,string,32,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+eventtype,Event Type,string,32,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+eventtime,Time when detection occured,uint64,20,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+dstip,Destination IP,ip,39,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+dstintf,Destination Interface,string,64,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+dstcountry,,string,64,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+devid,Deivce ID,string,16,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+date,Date,string,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+crscore,Client Reputation Score,uint32,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+crlevel,Client Reputation Level,string,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+craction,Client Reputation Action,uint32,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+count,Count,uint32,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+attackid,Attack ID,uint32,10,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+attack,Attack,string,256,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2
+action,Action,string,16,18433 - LOGID_ATTCK_ANOMALY_ICMP,18433,LOGID_ATTCK_ANOMALY_ICMP,Attack detected by ICMP anomaly,Anomaly,anomaly,Alert,7.6.2

@@ -1,0 +1,36 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+espauth,IPsec Phase2 ESP message authentication code,string,17,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+esptransform,IPsec Phase2 ESP encryption method,string,21,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+role,"IPsec peer role, initator or responder",string,9,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+xauthgroup,IPsec VPN Xauth user group name,string,128,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+xauthuser,IPsec VPN Xauth user name,string,256,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+advpnsc,,uint8,3,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+fctuid,,string,32,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+status,Status,string,23,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+vpntunnel,IPsec VPN Tunnel Name,string,128,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+eapauthgroup,,string,128,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+eapuser,,string,256,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+useralt,,string,256,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+cookies,Cookie,string,64,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+srccountry,,string,64,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+outintf,IPsec VPN binding interface,string,32,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+locport,Local Port,uint16,5,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+remport,Remote Port,uint16,5,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+locip,IPsec VPN local gateway IP address,ip,39,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+msg,Log Message,string,4096,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+group,User group Name,string,512,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+user,User name of authenticated user,string,256,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+remip,IPsec VPN remote gateway IP address,ip,39,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+action,Policy Action,string,65,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+logdesc,Log Description,string,4096,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+tz,Time zone,string,5,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+eventtime,Event time,uint64,20,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+vd,Virtual Domain Name,string,32,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+devid,Device ID,string,16,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+level,Log Level,string,11,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+subtype,Log Subtype,string,20,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+type,Log Type,string,16,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+logid,Log ID,string,10,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+time,Time,string,8,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4
+date,Date,string,10,37123 - MESGID_NEG_GENERIC_P2_ERROR,37123,MESGID_NEG_GENERIC_P2_ERROR,Negotiate IPsec phase 2,Event,vpn,Error,7.6.4

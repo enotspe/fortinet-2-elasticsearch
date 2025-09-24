@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+action,Policy Action,string,65,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+user,User name of authenticated user,string,256,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+logdesc,Log Description,string,4096,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+tz,Time zone,string,5,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+eventtime,Event time,uint64,20,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+vd,Virtual Domain Name,string,32,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+devid,Device ID,string,16,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+level,Log Level,string,11,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+subtype,Log Subtype,string,20,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+type,Log Type,string,16,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+logid,Log ID,string,10,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+time,Time,string,8,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2
+date,Date,string,10,38411 - LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,38411,LOGID_EVENT_TWO_F_AUTH_CODE_SENDTO,Two-factor authentication code sent,Event,system,Notice,7.6.2

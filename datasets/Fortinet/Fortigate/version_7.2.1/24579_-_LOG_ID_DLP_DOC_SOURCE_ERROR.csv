@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+devid,Device ID,string,16,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+dlpextra,DLP extra information,string,256,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+docsource,DLP fingerprint document source,string,515,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+eventtime,"Event Time, time when DLP event detected.",uint64,20,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+eventtype,DLP event type,string,32,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+level,Log Level,string,11,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+logid,Log ID,string,10,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+sensitivity,Sensitivity for document fingerprint,string,36,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+subtype,Log subtype,string,20,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+time,Time,string,8,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+type,Log type,string,16,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+tz,,string,5,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1
+vd,Virtual domain name,string,32,24579 - LOG_ID_DLP_DOC_SOURCE_ERROR,24579,LOG_ID_DLP_DOC_SOURCE_ERROR,DLP fingerprint document source error,DLP,dlp-docsource,Warning,7.2.1

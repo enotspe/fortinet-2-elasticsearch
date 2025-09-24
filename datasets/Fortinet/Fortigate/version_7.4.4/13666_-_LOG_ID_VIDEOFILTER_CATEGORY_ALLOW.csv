@@ -1,0 +1,45 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,,string,11,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+date,,string,10,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+devid,,string,16,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+dstintf,,string,32,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+dstintfrole,,string,10,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+dstip,,ip,39,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+dstport,,uint16,5,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+dstuser,,string,256,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+eventtime,,uint64,20,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+eventtype,,string,32,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+group,,string,512,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+hostname,,string,256,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+httpmethod,,string,20,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+level,,string,11,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+logid,,string,10,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+msg,,string,512,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+policyid,,uint32,10,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+policytype,,string,24,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+poluuid,,string,37,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+profile,,string,64,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+proto,,uint8,3,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+referralurl,Referrer URI,string,512,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+service,,string,36,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+sessionid,,uint32,10,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+srcintf,,string,32,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+srcintfrole,,string,10,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+srcip,,ip,39,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+srcport,,uint16,5,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+subtype,,string,20,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+time,,string,8,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+type,,string,16,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+tz,,string,5,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+url,,string,512,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+user,,string,256,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+vd,,string,32,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+videocategoryid,,uint32,10,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+videocategoryname,,string,256,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+videochannelid,,string,512,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+videodesc,,string,64,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+videoid,,string,512,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+videoinfosource,,string,10,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+videotitle,,string,512,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4
+vrf,,uint8,3,13666 - LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,13666,LOG_ID_VIDEOFILTER_CATEGORY_ALLOW,Video category is allowed,Webfilter,videofilter-category,Notice,7.4.4

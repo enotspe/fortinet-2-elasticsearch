@@ -1,0 +1,69 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+authserver,Authentication server for the user,string,64,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+cat,Web category ID,uint8,3,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+catdesc,Web category description,string,64,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+craction,Client Reputation Action,uint32,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+crlevel,Client Reputation level,string,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+crscore,Client Reputation Score,uint32,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+date,Date,string,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+devid,Device ID,string,16,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+direction,Direction of the web traffic,string,8,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+dstauthserver,,string,64,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+dstcountry,,string,64,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+dstintf,Destination Interface,string,32,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+dstip,Destination IP,ip,39,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+dstport,Destination Port,uint16,5,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+dstuser,,string,256,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+dstuuid,,string,37,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+eventtime,Web Filter event time,uint64,20,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+eventtype,Web Filter event type,string,32,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+fctuid,FortiClient UID,string,32,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+forwardedfor,X-Forwarded-For HTTP header,string,128,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+group,User group name,string,512,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+hostname,The host name of a URL,string,256,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+httpmethod,,string,20,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+initiator,The initiator user for override,string,64,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+level,Log Level,string,11,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+logid,Log ID,string,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+msg,Log message,string,512,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+policyid,Policy ID,uint32,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+policymode,,string,8,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+policytype,,string,24,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+poluuid,,string,37,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+profile,Web Filter profile name,string,64,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+proto,Protocol number,uint8,3,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+quotamax,Maximum quota allowed - in seconds if time-based - in bytes if traffic-based,uint64,20,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+quotatype,Quota type,string,16,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+quotaused,Quota used - in seconds if time-based - in bytes if traffic-based,uint64,20,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+ratemethod,,string,6,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,1024,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+rcvdbyte,Received Bytes,uint64,20,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+referralurl,Referrer URI,string,512,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+reqtype,Request type,string,8,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+sentbyte,Sent Bytes,uint64,20,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+service,Service name,string,36,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+sessionid,Session ID,uint32,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+srccountry,,string,64,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+srcdomain,,string,255,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+srcintf,Source Interface,string,32,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+srcip,Source IP,ip,39,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+srcport,Source Port,uint16,5,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+srcuuid,,string,37,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+subtype,Log subtype,string,20,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+time,Time,string,8,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+trueclntip,True-Client-IP HTTP header,ip,39,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+type,Log type,string,16,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+tz,Time Zone,string,5,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+unauthuser,Unauthenticated user,string,66,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+unauthusersource,Unauthenticated user source,string,66,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+url,The URL address,string,512,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+urlsource,URL source,string,64,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+user,User name,string,256,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+vd,Virtual domain name,string,32,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9
+vrf,Virtual router forwarding,uint8,3,13057 - LOG_ID_WEB_FTGD_CAT_WARN,13057,LOG_ID_WEB_FTGD_CAT_WARN,URL belongs to a category with warnings enabled,Webfilter,ftgd_blk,Warning,7.2.9

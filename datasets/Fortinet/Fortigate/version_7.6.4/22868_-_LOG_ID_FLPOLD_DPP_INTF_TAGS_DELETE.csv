@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+sn,,string,64,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+name,,string,128,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+msg,,string,4096,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+action,,string,65,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+ui,,string,64,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+user,,string,256,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+logdesc,,string,4096,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+tz,,string,5,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+eventtime,,uint64,20,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+vd,,string,32,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+devid,,string,16,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+level,,string,11,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+subtype,,string,20,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+type,,string,16,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+logid,,string,10,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+time,,string,8,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4
+date,,string,10,22868 - LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,22868,LOG_ID_FLPOLD_DPP_INTF_TAGS_DELETE,DPP interface tags delete,Event,switch-controller,Information,7.6.4

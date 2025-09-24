@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+time,Time,string,8,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+logid,Log ID,string,10,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+type,Log Type,string,16,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+subtype,Log Subtype,string,20,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+level,Log Level,string,11,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+devid,Device ID,string,16,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+vd,Virtual Domain Name,string,32,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+eventtime,Event time,uint64,20,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+tz,Time zone,string,5,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+logdesc,Log Description,string,4096,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+action,Policy Action,string,65,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+status,Status,string,23,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+msg,Log Message,string,4096,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3
+reason,Reason,string,256,22903 - LOG_ID_FAZ_CON_ERR,22903,LOG_ID_FAZ_CON_ERR,FortiAnalyzer connection failed,Event,system,Critical,7.2.3

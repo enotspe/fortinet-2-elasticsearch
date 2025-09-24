@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+time,Time,string,8,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+logid,Log ID,string,10,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+type,Log Type,string,16,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+subtype,Log Subtype,string,20,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+level,Log Level,string,11,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+devid,Device ID,string,16,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+vd,Virtual Domain Name,string,32,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+eventtime,Event time,uint64,20,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+tz,Time zone,string,5,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+logdesc,Log Description,string,4096,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+msg,Log Message,string,4096,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+vcluster,Virtual cluster,uint32,10,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+ha_role,The HA role in the cluster,string,9,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+vcluster_state,Virtual cluster member state,string,7,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+vcluster_member,Virtual cluster member,uint32,10,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+hostname,,string,128,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6
+sn,Serial Number,string,64,37892 - MESGID_VC_MOVE_MEMB_STATE,37892,MESGID_VC_MOVE_MEMB_STATE,Virtual cluster member state moved,Event,ha,Notice,7.2.6

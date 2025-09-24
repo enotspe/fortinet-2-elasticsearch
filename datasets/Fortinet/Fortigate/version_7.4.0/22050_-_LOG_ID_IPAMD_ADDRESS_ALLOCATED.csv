@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+time,Time,string,8,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+logid,Log ID,string,10,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+type,Log Type,string,16,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+subtype,Log Subtype,string,20,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+level,Log Level,string,11,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+devid,Device ID,string,16,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+vd,Virtual Domain Name,string,32,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+eventtime,Event time,uint64,20,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+tz,Time zone,string,5,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+logdesc,Log Description,string,4096,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+msg,Log Message,string,4096,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+ip,,ip,39,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0
+interface,Interface,string,32,22050 - LOG_ID_IPAMD_ADDRESS_ALLOCATED,22050,LOG_ID_IPAMD_ADDRESS_ALLOCATED,Address allocated by FortiIPAM and applied to an interface,Event,system,Notice,7.4.0

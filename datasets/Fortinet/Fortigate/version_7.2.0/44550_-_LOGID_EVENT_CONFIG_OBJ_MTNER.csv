@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Policy Action,string,65,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+cfgobj,Configuration object,string,256,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+cfgpath,Configuration path,string,128,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+cfgtid,Config transaction id,uint32,10,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+date,Date,string,10,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+devid,Device ID,string,16,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+eventtime,Event time,uint64,20,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+level,Log Level,string,11,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+logdesc,Log Description,string,4096,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+logid,Log ID,string,10,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+msg,Log Message,string,4096,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+subtype,Log Subtype,string,20,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+time,Time,string,8,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+type,Log Type,string,16,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+tz,Time zone,string,5,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+ui,User Interface,string,64,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+user,User name of authenticated user,string,256,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0
+vd,Virtual Domain Name,string,32,44550 - LOGID_EVENT_CONFIG_OBJ_MTNER,44550,LOGID_EVENT_CONFIG_OBJ_MTNER,Object configured by maintainer,Event,SYSTEM,Alert,7.2.0

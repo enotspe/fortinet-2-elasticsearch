@@ -1,0 +1,44 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+apn,Access Point Name,string,128,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+cpteid,Control Plane teid (either downlink or uplink),uint32,10,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+date,Date,string,10,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+deny_cause,Deny Cause,string,25,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+devid,Device ID,string,16,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+dstport,Destination Port,uint16,5,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+dtlexp,Detailed Explanation,string,64,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+end-usr-address,End user IP Address,ip,39,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+endusraddress6,,ip,39,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+eventtime,Event time line,uint64,20,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+from,From,ip,128,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+from6,,ip,39,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+headerteid,Tunnel Endpoint ID Header,uint32,10,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+ietype,Malformed GTP IE number,uint8,3,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+imei-sv,IMEI(International Mobile Equipment Identity) Software Version,string,32,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+imsi,International mobile subscriber ID,string,16,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+level,Log Level,string,11,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+logid,Log ID,string,10,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+msg-type,Message Type,uint8,3,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+msgtypename,,string,50,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+msisdn,Mobile Subscriber Integrated Services Digital Network-Number (telephone # to a SIM card),string,16,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+profile,Profile Name,string,64,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+rat-type,Radio Access Technology type,string,7,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+selection,"APN selection, which is one IE in gtp packet",string,14,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+seqnum,GTP packet sequence number,uint32,10,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+srcport,Source Port,uint16,5,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+status,Status,string,23,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+subtype,Log Subtype,string,20,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+time,Time,string,8,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+timeoutdelete,,uint8,3,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+to,To,ip,512,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+to6,,ip,39,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+tunnel-idx,"Tunnel serial number, internally assigned",uint32,10,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+type,Log Type,string,16,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+tz,Time zone,string,5,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+uli,User Location Information,string,120,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+ulimcc,,uint16,3,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+ulimnc,,uint16,3,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+vd,Virtual Domain Name,string,32,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+version,Version,uint32,64,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+cpaddr,Control Plane Address (either downlink or uplink),ip,39,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+cpaddr6,,ip,39,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2
+snetwork,"Source Network, it's a IE type in GTPv2 packet",string,64,41223 - LOGID_GTPV2_FORWARD,41223,LOGID_GTPV2_FORWARD,GTPv2 forward message,GTP,gtp-all,Information,7.4.2

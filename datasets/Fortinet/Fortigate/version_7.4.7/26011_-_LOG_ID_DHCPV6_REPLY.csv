@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+iaid,DHCPv6 Identity Association Identifier,uint32,10,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+duid,DHCPv6 unique identifier,string,128,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+lease,DHCP lease time,uint32,10,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+dhcp_msg,DHCP Message,string,4096,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+interface,Interface,string,32,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+ip,,ip,39,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+msg,Log Message,string,4096,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+logdesc,Log Description,string,4096,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+tz,Time zone,string,5,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+eventtime,Event time,uint64,20,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+vd,Virtual Domain Name,string,32,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+devid,Device ID,string,16,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+level,Log Level,string,11,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+subtype,Log Subtype,string,20,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+type,Log Type,string,16,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+logid,Log ID,string,10,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+time,Time,string,8,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7
+date,Date,string,10,26011 - LOG_ID_DHCPV6_REPLY,26011,LOG_ID_DHCPV6_REPLY,DHCPv6 Ack log,Event,system,Information,7.4.7

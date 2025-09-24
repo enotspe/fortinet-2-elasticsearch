@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+time,Time,string,8,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+logid,Log ID,string,10,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+type,Log Type,string,16,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+subtype,Log Subtype,string,20,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+level,Log Level,string,11,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+devid,Device ID,string,16,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+vd,Virtual Domain Name,string,32,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+eventtime,Event time,uint64,20,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+tz,Time zone,string,5,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+logdesc,Log Description,string,4096,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+action,Policy Action,string,65,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10
+msg,Log Message,string,4096,32546 - LOG_ID_APPLICATION_CRASH,32546,LOG_ID_APPLICATION_CRASH,Application crashed,Event,system,Warning,7.2.10

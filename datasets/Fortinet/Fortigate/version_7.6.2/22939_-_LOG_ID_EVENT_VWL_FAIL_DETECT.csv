@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+interface,Interface,string,32,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+eventtype,,string,48,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+logdesc,Log Description,string,4096,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+tz,Time zone,string,5,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+eventtime,Event time,uint64,20,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+vd,Virtual Domain Name,string,32,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+devid,Device ID,string,16,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+level,Log Level,string,11,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+subtype,Log Subtype,string,20,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+type,Log Type,string,16,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+logid,Log ID,string,10,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+time,Time,string,8,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2
+date,Date,string,10,22939 - LOG_ID_EVENT_VWL_FAIL_DETECT,22939,LOG_ID_EVENT_VWL_FAIL_DETECT,SD-WAN fail detect,Event,sdwan,Notice,7.6.2

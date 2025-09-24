@@ -1,0 +1,157 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+accessctrl,,string,80,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+accessproxy,,string,80,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+ap,Access Point name,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+app,Application name,string,96,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+appact,The security action from app control,string,16,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+appcat,Application category,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+appid,Application ID,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+applist,Application Control profile (name),string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+apprisk,Application Risk Level,string,16,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+apsn,Access Point serial number,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+authserver,Remote Authentication server,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+centralnatid,central-snat-map id,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+channel,WiFi Channel,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+clientdeviceid,,string,80,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+clientdevicemanageable,,string,16,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+clientdeviceowner,,string,80,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+clientdevicetags,,string,512,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+comment,Customized policy comment,string,1024,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+craction,Action performed by Threat Weight,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+crlevel,Threat Weight level,string,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+crscore,Threat Weight score,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+date,Date,string,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+devid,Device Serial Number,string,16,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+devtype,Device Type,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstauthserver,,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstcity,,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstcountry,Country name for the destination IP,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstdevtype,Destination Device Type,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstfamily,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dsthwvendor,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dsthwversion,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstinetsvc,Internet service name for the destination,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstintf,Destination Interface,string,32,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstip,Destination IP Address,ip,39,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstmac,Destination Mac Address,string,17,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstname,Destination name,string,256,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstosname,Destination OS name,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstport,Destination Protocol Port Number,uint16,5,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstregion,,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstreputation,,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstserver,Destination Server,uint8,3,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstssid,Destination SSID,string,33,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstswversion,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstthreatfeed,,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstunauthuser,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstunauthusersource,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstuser,,string,256,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+dstuuid,UUID of the Destination Address Object,string,37,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+duration,Duration of the session,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+emsconnection,,string,8,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+eventtime,Epoch time in nanoseconds,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+fctuid,FortiClient UID,string,32,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+gatewayid,,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+group,User group name,string,512,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+identifier,,uint16,5,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+lanin,LAN incoming traffic in bytes,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+lanout,LAN outgoing traffic in bytes,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+level,Log Level,string,11,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+logid,Log ID,string,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+masterdstmac,Destination master MAC address,string,17,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+msg,Log message,string,512,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+osname,Name of the device's OS,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+pdstport,,uint16,5,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+policyid,Firewall Policy ID,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+policymode,,string,8,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+policyname,Policy name,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+policytype,Policy type,string,24,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+poluuid,UUID of the Firewall Policy,string,37,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+proto,Protocol Number,uint8,3,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+proxyapptype,,string,9,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+psrcport,,uint16,5,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+radioband,Radio Band,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+rcvdbyte,Received Bytes,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+rcvddelta,Delta Received Bytes,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+rcvdpkt,Received Packets,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+replydstintf,,string,32,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+replysrcintf,,string,32,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+saasname,,string,80,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+sentbyte,Sent Bytes,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+sentdelta,Delta Sent Bytes,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+sentpkt,Sent Packets,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+service,Name of Service,string,80,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+sessionid,Session ID,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+shaperperipname,Traffic shaper name (per IP),string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+shaperrcvdname,Traffic shaper name for received traffic,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+shapersentname,Traffic shaper name for sent traffic,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+shapingpolicyid,Shaping Policy ID,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+shapingpolicyname,,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+signal,,int8,4,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+snr,,int8,4,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srccity,,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srccountry,Country name for Source IP,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcdomain,,string,255,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcfamily,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srchwvendor,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srchwversion,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcinetsvc,Internet service name for the source,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcintf,Source interface name,string,32,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcip,Source IP address,ip,39,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcmac,MAC address associated with the Source IP,string,17,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcmacvendor,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcname,Source name,string,256,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcport,Source protocol port number,uint16,5,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcregion,,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcremote,,ip,39,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcreputation,,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcserver,Source server,uint8,3,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcssid,Source SSID,string,33,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcswversion,,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcthreatfeed,,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+srcuuid,UUID of the Source Address Object,string,37,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+sslaction,Action taken by ssl-ssh-profile,string,26,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+subtype,Subtype of the traffic,string,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+time,Time,string,8,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+trandisp,NAT translation type,string,16,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+tranip,NAT Destination IP,ip,39,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+tranport,NAT Destination Port,uint16,5,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+transip,NAT Source IP,ip,39,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+transport,NAT Source Protocol Port,uint16,5,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+tunnelid,,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+type,Log type,string,16,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+tz,Time zone,string,5,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+unauthuser,Unauthenticated user name,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+unauthusersource,The method used to detect unauthenticated user name,string,66,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+url,URL,string,512,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+user,User name,string,256,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+utmaction,Security action performed by UTM,string,32,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vd,Virtual domain name,string,32,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vip,,string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vpntype,The type of the VPN tunnel,string,14,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vrf,Virtual router forwarding,uint8,3,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vwlname,,string,36,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+wanin,WAN incoming traffic in bytes,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+wanoptapptype,WAN Optimization Application type,string,9,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10
+wanout,WAN outgoing traffic in bytes,uint64,20,2 - LOG_ID_TRAFFIC_ALLOW,2,LOG_ID_TRAFFIC_ALLOW,Allowed traffic,Traffic,forward,Notice,7.2.10

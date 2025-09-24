@@ -1,0 +1,33 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+remport,Remote Port,uint16,5,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+remip,Remote IP,ip,39,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+locport,Local Port,uint16,5,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+phone,Phone,string,64,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+locip,Local IP,ip,39,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+duration,Duration of the session. Ex: 180 (in seconds),uint32,10,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+status,"Status. Ex: status=""blocked"" , status= ""start""",string,23,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+action,"Action. Eg. block , allow",string,15,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+kind,"Kind of service. Typically it will have value ""call""",string,10,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+voip_proto,SIP/SCCP/MGCP/h323,string,4,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+profile,Name or number of associated VOIP profile,string,64,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+policy_id,Name of the firewall policy governing the traffic which caused the log message.,uint32,10,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+dst_int,Destination Interface,string,16,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+src_int,"Name of the source interface. Ex: src_int=""port1""",string,16,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+proto,Protocol number. Ex: for SIP it will be proto=17,uint8,3,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+dst_port,Destination port,uint16,5,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+dstip,Destination IP,ip,39,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+src_port,Port number of the traffic's origin. Ex: srcport=40772,uint16,5,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+srcip,IP address of the traffic's origin. Ex: srcip=10.1.100.155,ip,39,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+event_id,Unique event ID,uint32,10,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+epoch,Epoch,uint32,10,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+session_id,Session ID. Ex: session_id=232,uint32,10,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+tz,Time zone,string,5,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+eventtime,Time when event occured,uint64,20,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+vd,Name of the virtual domain in which the log message was recorded.,string,32,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+devid,Serial number of the device for the traffic's origin.,string,16,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+level,Log Level,string,11,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+subtype,Subtype,string,20,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+type,"Type of log. Ex: type=""utm""",string,16,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+logid,Unique Log ID,string,10,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+time,Hour clock when the log message was recorded.,string,8,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8
+date,"Day, month, and year when the log message was recorded.",string,10,44038 - LOGID_EVENT_VOIP_SCCP_CALL_INFO,44038,LOGID_EVENT_VOIP_SCCP_CALL_INFO,VoIP SCCP call information,VoIP,voip,Information,7.4.8

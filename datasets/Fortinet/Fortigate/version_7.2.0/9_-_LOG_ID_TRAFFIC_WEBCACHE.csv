@@ -1,0 +1,161 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+accessproxy,,string,80,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+ap,Access Point name,string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+app,Application name,string,96,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+appact,The security action from app control,string,16,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+appcat,Application category,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+appid,Application ID,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+applist,Application Control profile (name),string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+apprisk,Application Risk Level,string,16,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+apsn,Access Point serial number,string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+authserver,Remote Authentication server,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+centralnatid,central-snat-map id,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+channel,WiFi Channel,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+clientdeviceid,,string,80,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+clientdeviceowner,,string,80,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+clientdevicetags,,string,512,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+comment,Customized policy comment,string,1024,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countapp,Number of App Ctrl logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countav,Number of AV logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countcifs,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countdlp,Number of DLP logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countdns,Number of DNS Query logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countemail,Number of Email logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countff,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+counticap,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countips,Number of IPS logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countsctpf,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countssh,Number of SSH logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countssl,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countwaf,Number of WAF logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+countweb,Number of Web Filter logs associated with the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+craction,Action performed by Threat Weight,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+crlevel,Threat Weight level,string,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+crscore,Threat Weight score,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+date,Date,string,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+devid,Device Serial Number,string,16,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+devtype,Device Type,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstauthserver,,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstcity,,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstcountry,Country name for the destination IP,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstdevtype,Destination Device Type,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstfamily,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dsthwvendor,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dsthwversion,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstinetsvc,Internet service name for the destination,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstintf,Destination Interface,string,32,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstip,Destination IP Address,ip,39,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstmac,Destination Mac Address,string,17,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstname,Destination name,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstosname,Destination OS name,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstport,Destination Protocol Port Number,uint16,5,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstregion,,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstreputation,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstserver,Destination Server,uint8,3,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstssid,Destination SSID,string,33,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstswversion,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstthreatfeed,,string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstunauthuser,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstunauthusersource,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstuser,,string,256,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+dstuuid,UUID of the Destination Address Object,string,37,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+duration,Duration of the session,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+eventtime,Epoch time in nanoseconds,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+fctuid,FortiClient UID,string,32,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+gatewayid,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+group,User group name,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+identifier,,uint16,5,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+lanin,LAN incoming traffic in bytes,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+lanout,LAN outgoing traffic in bytes,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+level,Log Level,string,11,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+logid,Log ID,string,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+masterdstmac,Destination master MAC address,string,17,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+msg,Log message,string,512,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+osname,Name of the device's OS,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+pdstport,,uint16,5,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+policyid,Firewall Policy ID,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+policymode,,string,8,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+policyname,Policy name,string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+policytype,Policy type,string,24,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+poluuid,UUID of the Firewall Policy,string,37,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+proto,Protocol Number,uint8,3,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+psrcport,,uint16,5,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+radioband,Radio Band,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+rcvdbyte,Received Bytes,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+rcvddelta,Delta Received Bytes,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+rcvdpkt,Received Packets,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+sentbyte,Sent Bytes,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+sentdelta,Delta Sent Bytes,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+sentpkt,Sent Packets,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+service,Name of Service,string,80,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+sessionid,Session ID,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+shaperperipname,Traffic shaper name (per IP),string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+shaperrcvdname,Traffic shaper name for received traffic,string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+shapersentname,Traffic shaper name for sent traffic,string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+shapingpolicyid,Shaping Policy ID,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+signal,,int8,4,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+snr,,int8,4,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srccity,,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srccountry,Country name for Source IP,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcdomain,,string,255,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcfamily,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srchwvendor,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srchwversion,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcinetsvc,Internet service name for the source,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcintf,Source interface name,string,32,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcip,Source IP address,ip,39,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcmac,MAC address associated with the Source IP,string,17,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcname,Source name,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcport,Source protocol port number,uint16,5,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcregion,,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcreputation,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcserver,Source server,uint8,3,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcssid,Source SSID,string,33,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcswversion,,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcthreatfeed,,string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+srcuuid,UUID of the Source Address Object,string,37,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+sslaction,Action taken by ssl-ssh-profile,string,26,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+subtype,Subtype of the traffic,string,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+time,Time,string,8,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+trandisp,NAT translation type,string,16,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+tranip,NAT Destination IP,ip,39,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+tranport,NAT Destination Port,uint16,5,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+transip,NAT Source IP,ip,39,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+transport,NAT Source Protocol Port,uint16,5,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+tunnelid,,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+type,Log type,string,16,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+tz,Time zone,string,5,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+unauthuser,Unauthenticated user name,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+unauthusersource,The method used to detect unauthenticated user name,string,66,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+url,URL,string,512,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+user,User name,string,256,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+utmaction,Security action performed by UTM,string,32,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vd,Virtual domain name,string,32,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vip,,string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vpntype,The type of the VPN tunnel,string,14,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vrf,Virtual router forwarding,uint8,3,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vwlname,,string,36,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+wanin,WAN incoming traffic in bytes,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+wanoptapptype,WAN Optimization Application type,string,9,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0
+wanout,WAN outgoing traffic in bytes,uint64,20,9 - LOG_ID_TRAFFIC_WEBCACHE,9,LOG_ID_TRAFFIC_WEBCACHE,Web cache traffic,Traffic,FORWARD,Notice,7.2.0

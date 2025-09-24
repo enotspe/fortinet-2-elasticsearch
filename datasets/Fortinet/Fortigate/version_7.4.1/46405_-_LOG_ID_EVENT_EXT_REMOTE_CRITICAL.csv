@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+time,Time,string,8,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+logid,Log ID,string,10,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+type,Log Type,string,16,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+subtype,Log Subtype,string,20,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+level,Log Level,string,11,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+devid,Device ID,string,16,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+vd,Virtual Domain Name,string,32,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+eventtime,Event time,uint64,20,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+tz,Time zone,string,5,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+logdesc,Log Description,string,4096,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+msg,Log Message,string,4096,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+sn,Serial Number,string,64,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1
+ip,,ip,39,46405 - LOG_ID_EVENT_EXT_REMOTE_CRITICAL,46405,LOG_ID_EVENT_EXT_REMOTE_CRITICAL,Remote FortiExtender critical activity,Event,fortiextender,Critical,7.4.1

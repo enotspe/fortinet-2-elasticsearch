@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+group,User group Name,string,512,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+user,User name of authenticated user,string,256,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+tunnelip,IPsec VPN tunnel IP address,ip,39,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+remip,IPsec VPN remote gateway IP address,ip,39,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+tunneltype,IPsec VPN tunnel type,string,64,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+tunnelid,IPsec VPN tunnel ID,uint32,10,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+action,Policy Action,string,65,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+logdesc,Log Description,string,4096,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+tz,Time zone,string,5,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+eventtime,Event time,uint64,20,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+vd,Virtual Domain Name,string,32,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+devid,Device ID,string,16,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+level,Log Level,string,11,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+subtype,Log Subtype,string,20,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+type,Log Type,string,16,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+logid,Log ID,string,10,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+time,Time,string,8,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11
+date,Date,string,10,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.2.11

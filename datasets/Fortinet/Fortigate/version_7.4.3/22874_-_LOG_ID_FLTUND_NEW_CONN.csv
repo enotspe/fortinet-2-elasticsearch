@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+time,,string,8,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+logid,,string,10,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+type,,string,16,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+subtype,,string,20,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+level,,string,11,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+devid,,string,16,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+vd,,string,32,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+eventtime,,uint64,20,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+tz,,string,5,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+logdesc,,string,4096,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+user,,string,256,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+ui,,string,64,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3
+msg,,string,4096,22874 - LOG_ID_FLTUND_NEW_CONN,22874,LOG_ID_FLTUND_NEW_CONN,Switch-controller FortilinkLite new connection,Event,switch-controller,Notice,7.4.3

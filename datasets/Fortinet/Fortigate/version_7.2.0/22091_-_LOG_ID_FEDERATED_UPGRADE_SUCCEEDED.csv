@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+devid,Device ID,string,16,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+eventtime,Event time,uint64,20,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+level,Log Level,string,11,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+localdevcount,,uint32,5,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+logdesc,Log Description,string,4096,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+logid,Log ID,string,10,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+msg,Log Message,string,4096,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+subtype,Log Subtype,string,20,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+time,Time,string,8,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+type,Log Type,string,16,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+tz,Time zone,string,5,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+vd,Virtual Domain Name,string,32,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0
+version,Version,string,64,22091 - LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,22091,LOG_ID_FEDERATED_UPGRADE_SUCCEEDED,A federated upgrade was completed,Event,SYSTEM,Information,7.2.0

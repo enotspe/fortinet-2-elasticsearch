@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+time,Time,string,8,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+logid,Log ID,string,10,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+type,Log Type,string,16,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+subtype,Log Subtype,string,20,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+level,Log Level,string,11,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+devid,Device ID,string,16,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+vd,Virtual Domain Name,string,32,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+eventtime,Event time,uint64,20,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+tz,Time zone,string,5,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+logdesc,Log Description,string,4096,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0
+msg,Log Message,string,4096,46513 - LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,46513,LOG_ID_INTERNAL_LTE_MODEM_LINK_CONNECTION,LTE modem data link connection event,Event,system,Information,7.6.0

@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+time,Time,string,8,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+logid,Log ID,string,10,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+type,Log Type,string,16,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+subtype,Log Subtype,string,20,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+level,Log Level,string,11,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+devid,Device ID,string,16,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+vd,Virtual Domain Name,string,32,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+eventtime,Event time,uint64,20,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+tz,Time zone,string,5,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+logdesc,Log Description,string,4096,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+user,User name of authenticated user,string,256,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+status,Status,string,23,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+msg,Log Message,string,4096,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+local,Local IP for a PPPD Connection,ip,39,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+remote,IP Address of the PPP Remote end,ip,39,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0
+assigned,Assigned IP Address through PPPoE,ip,39,29005 - LOG_ID_PPPD_MSG_DEBUG,29005,LOG_ID_PPPD_MSG_DEBUG,PPP status debug message,Event,system,Debug,7.6.0

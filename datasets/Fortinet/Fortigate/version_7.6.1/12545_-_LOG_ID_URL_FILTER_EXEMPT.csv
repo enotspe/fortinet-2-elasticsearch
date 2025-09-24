@@ -1,0 +1,68 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint16,3,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+vd,Virtual domain name,string,32,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+user,User name,string,256,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+urlsource,URL source,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+urlfilterlist,URL filter list,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+urlfilteridx,URL filter ID,uint32,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+url,The URL address,string,512,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+unauthusersource,Unauthenticated user source,string,66,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+unauthuser,Unauthenticated user,string,66,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+tz,Time Zone,string,5,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+type,Log type,string,16,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+trueclntip,True-Client-IP HTTP header,ip,39,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+transid,,uint32,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+time,Time,string,8,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+subtype,Log subtype,string,20,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srcuuid,,string,37,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srcport,Source Port,uint16,5,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srcname,,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srcmac,,string,17,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srcip,Source IP,ip,39,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srcintf,Source Interface,string,32,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srcdomain,,string,255,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+srccountry,,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+sessionid,Session ID,uint32,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+service,Service name,string,36,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+sentbyte,Sent Bytes,uint64,20,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+reqtype,Request type,string,8,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+referralurl,Referrer URI,string,512,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+rcvdbyte,Received Bytes,uint64,20,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+proto,Protocol number,uint8,3,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+profile,Web Filter profile name,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+poluuid,,string,37,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+policytype,,string,24,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+policymode,,string,8,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+policyid,Policy ID,uint32,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+msg,Log message,string,512,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+logid,Log ID,string,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+level,Log Level,string,11,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+initiator,The initiator user for override,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+httpmethod,,string,20,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+hostname,The host name of a URL,string,256,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+group,User group name,string,512,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+forwardedfor,X-Forwarded-For HTTP header,string,128,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+fctuid,FortiClient UID,string,32,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+eventtype,Web Filter event type,string,32,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+eventtime,Web Filter event time,uint64,20,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+dstuuid,,string,37,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+dstuser,,string,256,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+dstport,Destination Port,uint16,5,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+dstip,Destination IP,ip,39,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+dstintf,Destination Interface,string,32,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+dstcountry,,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+dstauthserver,,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+direction,Direction of the web traffic,string,8,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+devid,Device ID,string,16,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+date,Date,string,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+crscore,Client Reputation Score,uint32,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+crlevel,Client Reputation level,string,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+craction,Client Reputation Action,uint32,10,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+authserver,Authentication server for the user,string,64,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,12545 - LOG_ID_URL_FILTER_EXEMPT,12545,LOG_ID_URL_FILTER_EXEMPT,URL address was exempted because it was found in the URL filter list,Webfilter,urlfilter,Information,7.6.1

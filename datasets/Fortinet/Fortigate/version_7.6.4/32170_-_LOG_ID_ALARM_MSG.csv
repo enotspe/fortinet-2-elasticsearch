@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+groupid,User Group ID,uint32,10,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+alarmid,Alarm ID,uint32,10,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+msg,Log Message,string,4096,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+action,Policy Action,string,65,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+logdesc,Log Description,string,4096,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+tz,Time zone,string,5,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+eventtime,Event time,uint64,20,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+vd,Virtual Domain Name,string,32,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+devid,Device ID,string,16,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+level,Log Level,string,11,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+subtype,Log Subtype,string,20,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+type,Log Type,string,16,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+logid,Log ID,string,10,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+time,Time,string,8,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4
+date,Date,string,10,32170 - LOG_ID_ALARM_MSG,32170,LOG_ID_ALARM_MSG,Alarm created,Event,system,Alert,7.6.4

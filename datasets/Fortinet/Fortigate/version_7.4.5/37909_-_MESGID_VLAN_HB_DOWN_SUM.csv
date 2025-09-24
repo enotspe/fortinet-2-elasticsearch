@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+time,Time,string,8,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+logid,Log ID,string,10,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+type,Log Type,string,16,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+subtype,Log Subtype,string,20,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+level,Log Level,string,11,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+devid,Device ID,string,16,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+vd,Virtual Domain Name,string,32,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+eventtime,Event time,uint64,20,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+tz,Time zone,string,5,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+logdesc,Log Description,string,4096,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5
+msg,Log Message,string,4096,37909 - MESGID_VLAN_HB_DOWN_SUM,37909,MESGID_VLAN_HB_DOWN_SUM,VLAN heartbeat lost summary,Event,ha,Error,7.4.5

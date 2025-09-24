@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+time,Time,string,8,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+logid,Log ID,string,10,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+type,Log Type,string,16,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+subtype,Log Subtype,string,20,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+level,Log Level,string,11,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+devid,Device ID,string,16,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+vd,Virtual Domain Name,string,32,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+eventtime,Event time,uint64,20,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+tz,Time zone,string,5,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+logdesc,Log Description,string,4096,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+msg,Log Message,string,4096,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+policyid,Policy ID,uint32,10,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+srcip,Source IP,ip,39,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+srcport,Source port,uint16,5,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+dstip,Destination IP,ip,39,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+dstport,Destination Protocol Port,uint16,5,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+authgrp,Authorization Group,string,36,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+serial,Serial Number,uint32,10,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1
+host,Host Name,string,256,48101 - LOG_ID_WAD_AUTH_FAIL_PSK,48101,LOG_ID_WAD_AUTH_FAIL_PSK,WAN Optimization peer PSK authentication failed,Event,wad,Error,7.2.1

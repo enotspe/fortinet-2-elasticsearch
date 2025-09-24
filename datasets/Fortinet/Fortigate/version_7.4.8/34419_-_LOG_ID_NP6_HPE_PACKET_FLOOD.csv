@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+logdesc,Log Description,string,4096,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+tz,Time zone,string,5,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+eventtime,Event time,uint64,20,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+vd,Virtual Domain Name,string,32,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+devid,Device ID,string,16,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+level,Log Level,string,11,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+subtype,Log Subtype,string,20,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+type,Log Type,string,16,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+logid,Log ID,string,10,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+time,Time,string,8,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8
+date,Date,string,10,34419 - LOG_ID_NP6_HPE_PACKET_FLOOD,34419,LOG_ID_NP6_HPE_PACKET_FLOOD,NP6 HPE under a packets flood,Event,system,Critical,7.4.8

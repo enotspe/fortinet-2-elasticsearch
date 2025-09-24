@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+ha_group,HA Group Number - can be 0 - 255,uint16,4,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+sn,Serial Number,string,64,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+vcluster,Virtual cluster,uint32,10,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+msg,Log Message,string,4096,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+logdesc,Log Description,string,4096,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+tz,Time zone,string,5,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+eventtime,Event time,uint64,20,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+vd,Virtual Domain Name,string,32,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+devid,Device ID,string,16,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+level,Log Level,string,11,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+subtype,Log Subtype,string,20,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+type,Log Type,string,16,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+logid,Log ID,string,10,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+time,Time,string,8,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8
+date,Date,string,10,37894 - MESGID_VC_DETECT_MEMB_JOIN,37894,MESGID_VC_DETECT_MEMB_JOIN,Virtual cluster member joined,Event,ha,Critical,7.4.8

@@ -1,0 +1,31 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+time,Time,string,8,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+logid,Log ID,string,10,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+type,Log Type,string,16,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+subtype,Log Subtype,string,20,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+level,Log Level,string,11,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+devid,Device ID,string,16,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+vd,Virtual Domain Name,string,32,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+eventtime,Event time,uint64,20,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+tz,Time zone,string,5,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+logdesc,Log Description,string,4096,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+action,Policy Action,string,65,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+remip,IPsec VPN remote gateway IP address,ip,39,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+user,User name of authenticated user,string,256,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+group,User group Name,string,512,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+msg,Log Message,string,4096,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+locip,IPsec VPN local gateway IP address,ip,39,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+remport,Remote Port,uint16,5,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+locport,Local Port,uint16,5,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+outintf,IPsec VPN binding interface,string,32,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+cookies,Cookie,string,64,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+useralt,,string,256,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+xauthuser,IPsec VPN Xauth user name,string,256,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+xauthgroup,IPsec VPN Xauth user group name,string,128,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+vpntunnel,IPsec VPN Tunnel Name,string,128,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+status,Status,string,23,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+result,IPsec VPN negotiation result,string,31,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+peer_notif,IPsec VPN Peer Notification,string,25,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5
+advpnsc,,uint8,3,37120 - MESGID_NEG_GENERIC_P1_NOTIF,37120,MESGID_NEG_GENERIC_P1_NOTIF,Negotiate IPsec phase 1,Event,vpn,Notice,7.2.5

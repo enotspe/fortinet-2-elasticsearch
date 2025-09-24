@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+time,Time,string,8,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+logid,Log ID,string,10,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+type,Log Type,string,16,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+subtype,Log Subtype,string,20,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+level,Log Level,string,11,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+devid,Device ID,string,16,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+vd,Virtual Domain Name,string,32,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+eventtime,Event time,uint64,20,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+tz,Time zone,string,5,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+logdesc,Log Description,string,4096,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+user,User name of authenticated user,string,256,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+status,Status,string,23,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+msg,Log Message,string,4096,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+local,Local IP for a PPPD Connection,ip,39,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+remote,IP Address of the PPP Remote end,ip,39,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3
+assigned,Assigned IP Address through PPPoE,ip,39,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.2.3

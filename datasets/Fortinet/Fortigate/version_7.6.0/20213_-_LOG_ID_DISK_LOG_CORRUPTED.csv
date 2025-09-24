@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+time,Time,string,8,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+logid,Log ID,string,10,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+type,Log Type,string,16,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+subtype,Log Subtype,string,20,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+level,Log Level,string,11,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+devid,Device ID,string,16,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+vd,Virtual Domain Name,string,32,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+eventtime,Event time,uint64,20,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+tz,Time zone,string,5,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+logdesc,Log Description,string,4096,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0
+msg,Log Message,string,4096,20213 - LOG_ID_DISK_LOG_CORRUPTED,20213,LOG_ID_DISK_LOG_CORRUPTED,Log file on disk is corrupted,Event,system,Warning,7.6.0

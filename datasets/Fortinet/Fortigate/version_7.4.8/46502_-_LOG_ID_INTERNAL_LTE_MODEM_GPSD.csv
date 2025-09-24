@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+logdesc,Log Description,string,4096,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+tz,Time zone,string,5,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+eventtime,Event time,uint64,20,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+vd,Virtual Domain Name,string,32,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+devid,Device ID,string,16,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+level,Log Level,string,11,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+subtype,Log Subtype,string,20,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+type,Log Type,string,16,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+logid,Log ID,string,10,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+time,Time,string,8,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8
+date,Date,string,10,46502 - LOG_ID_INTERNAL_LTE_MODEM_GPSD,46502,LOG_ID_INTERNAL_LTE_MODEM_GPSD,LTE modem GPS daemon started or stopped,Event,system,Information,7.4.8

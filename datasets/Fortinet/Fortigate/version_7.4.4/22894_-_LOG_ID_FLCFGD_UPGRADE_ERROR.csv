@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+time,,string,8,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+logid,,string,10,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+type,,string,16,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+subtype,,string,20,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+level,,string,11,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+devid,,string,16,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+vd,,string,32,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+eventtime,,uint64,20,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+tz,,string,5,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+logdesc,,string,4096,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+user,,string,256,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+ui,,string,64,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+msg,,string,4096,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+name,,string,128,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4
+sn,,string,64,22894 - LOG_ID_FLCFGD_UPGRADE_ERROR,22894,LOG_ID_FLCFGD_UPGRADE_ERROR,Switch-Controller Switch Upgrade Error,Event,switch-controller,Error,7.4.4

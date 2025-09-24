@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+time,Time,string,8,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+logid,Log ID,string,10,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+type,Log Type,string,16,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+subtype,Log Subtype,string,20,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+level,Log Level,string,11,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+devid,Device ID,string,16,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+vd,Virtual Domain Name,string,32,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+eventtime,Event time,uint64,20,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+tz,Time zone,string,5,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+logdesc,Log Description,string,4096,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+user,User name of authenticated user,string,256,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+action,Policy Action,string,65,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5
+msg,Log Message,string,4096,22951 - LOG_ID_FDS_LOGOUT,22951,LOG_ID_FDS_LOGOUT,FortiGate Cloud logout,Event,system,Notice,7.2.5

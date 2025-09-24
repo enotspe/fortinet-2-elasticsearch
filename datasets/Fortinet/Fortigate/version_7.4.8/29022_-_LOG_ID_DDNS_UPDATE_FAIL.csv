@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+logdesc,Log Description,string,4096,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+tz,Time zone,string,5,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+eventtime,Event time,uint64,20,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+vd,Virtual Domain Name,string,32,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+devid,Device ID,string,16,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+level,Log Level,string,11,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+subtype,Log Subtype,string,20,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+type,Log Type,string,16,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+logid,Log ID,string,10,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+time,Time,string,8,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8
+date,Date,string,10,29022 - LOG_ID_DDNS_UPDATE_FAIL,29022,LOG_ID_DDNS_UPDATE_FAIL,DDNS update failed,Event,system,Error,7.4.8

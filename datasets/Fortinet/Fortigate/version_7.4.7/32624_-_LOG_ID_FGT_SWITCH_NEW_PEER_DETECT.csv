@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+sn,,string,64,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+name,,string,128,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+msg,,string,4096,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+ui,,string,64,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+user,,string,256,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+logdesc,,string,4096,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+tz,,string,5,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+eventtime,,uint64,20,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+vd,,string,32,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+devid,,string,16,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+level,,string,11,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+subtype,,string,20,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+type,,string,16,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+logid,,string,10,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+time,,string,8,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7
+date,,string,10,32624 - LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,32624,LOG_ID_FGT_SWITCH_NEW_PEER_DETECT,Fortilink Switch new peer detected,Event,switch-controller,Information,7.4.7

@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+app,Application name,string,96,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+appcat,Application category name,string,64,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+applist,Application Control profile name,string,64,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+authserver,Authentication server for the user,string,64,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+date,Date,string,10,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+devid,Deivce ID,string,16,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+direction,Direction of the packets,string,8,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+dstcountry,,string,64,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+dstintf,Destination Interface,string,64,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+dstip,Destination IP,ip,39,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+dstport,Destination Port,uint16,5,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+eventtime,Event Time,uint64,20,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+eventtype,App Control Event Type,string,32,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+fctuid,FortiClient User ID,string,32,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+group,User group name,string,512,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+level,Log level,string,11,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+logid,Log ID,string,10,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+policyid,Policy ID,uint32,10,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+profile,,string,36,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+profiletype,Profile Type,string,36,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+proto,Protocol number,uint8,3,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+service,Service name,string,80,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+sessionid,Session ID,uint32,10,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+srccountry,,string,64,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+srcdomain,,string,255,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+srcintf,Source Interface,string,64,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+srcip,Source IP,ip,39,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+srcport,Source Port,uint16,5,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+subtype,Log subtype,string,20,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+time,Time,string,8,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+type,Log type,string,16,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+tz,,string,5,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+unauthuser,Unauthenticated user,string,66,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+unauthusersource,Unauthenticated user source,string,66,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+user,User name,string,256,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+vd,Virtual domain name,string,32,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5
+vrf,Virtual Routing Forwarding,uint8,3,28720 - LOGID_APP_CTRL_SSH_PASS,28720,LOGID_APP_CTRL_SSH_PASS,Application control IM (SSH) (pass),APP-CTRL,signature,Information,7.4.5

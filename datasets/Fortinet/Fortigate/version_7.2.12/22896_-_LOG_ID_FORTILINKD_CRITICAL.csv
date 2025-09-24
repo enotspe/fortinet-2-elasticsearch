@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+name,,string,128,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+sn,,string,64,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+msg,,string,4096,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+ui,,string,64,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+user,,string,256,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+logdesc,,string,4096,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+tz,,string,5,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+eventtime,,uint64,20,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+vd,,string,32,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+devid,,string,16,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+level,,string,11,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+subtype,,string,20,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+type,,string,16,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+logid,,string,10,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+time,,string,8,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12
+date,,string,10,22896 - LOG_ID_FORTILINKD_CRITICAL,22896,LOG_ID_FORTILINKD_CRITICAL,Switch-Controller Daemon Log (Critical),Event,switch-controller,Critical,7.2.12

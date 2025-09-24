@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+dhcp_msg,DHCP Message,string,4096,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+hostname,Hostname,string,128,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+interface,Interface,string,32,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+ip,,ip,39,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+mac,MAC Address,string,17,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+msg,Log Message,string,4096,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+logdesc,Log Description,string,4096,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+tz,Time zone,string,5,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+eventtime,Event time,uint64,20,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+vd,Virtual Domain Name,string,32,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+devid,Device ID,string,16,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+level,Log Level,string,11,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+subtype,Log Subtype,string,20,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+type,Log Type,string,16,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+logid,Log ID,string,10,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+time,Time,string,8,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2
+date,Date,string,10,26002 - LOG_ID_DHCP_RELEASE,26002,LOG_ID_DHCP_RELEASE,DHCP Release log,Event,system,Information,7.6.2

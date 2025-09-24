@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+time,Time,string,8,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+logid,Log ID,string,10,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+type,Log Type,string,16,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+subtype,Log Subtype,string,20,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+level,Log Level,string,11,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+devid,Device ID,string,16,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+vd,Virtual Domain Name,string,32,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+eventtime,Event time,uint64,20,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+tz,Time zone,string,5,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+logdesc,Log Description,string,4096,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+msg,Log Message,string,4096,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+sn,Serial Number,string,64,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2
+ip,,ip,39,46410 - LOG_ID_EVENT_EXT_REMOTE_DEBUG,46410,LOG_ID_EVENT_EXT_REMOTE_DEBUG,Remote FortiExtender debug activity,Event,fortiextender,Debug,7.2.2

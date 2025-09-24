@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+time,Time,string,8,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+logid,Log ID,string,10,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+type,Log Type,string,16,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+subtype,Log Subtype,string,20,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+level,Log Level,string,11,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+devid,Device ID,string,16,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+vd,Virtual Domain Name,string,32,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+eventtime,Event time,uint64,20,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+tz,Time zone,string,5,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+logdesc,Log Description,string,4096,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+msg,Log Message,string,4096,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+interface,Interface,string,32,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8
+mac,MAC Address,string,17,26007 - LOG_ID_DHCP_BLOCKED_MAC,26007,LOG_ID_DHCP_BLOCKED_MAC,DHCP client blocked log,Event,system,Information,7.2.8

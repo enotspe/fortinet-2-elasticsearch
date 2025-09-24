@@ -1,0 +1,55 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+xid,Transaction ID,uint16,5,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+vd,Virtual Domain Name,string,32,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+user,User name,string,256,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+unauthusersource,Unauthenticated User Source,string,66,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+unauthuser,Unauthenticated User,string,66,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+tz,Time zone,string,5,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+type,Log Type,string,16,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+translationid,,uint32,10,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+time,Time,string,8,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+subtype,Log Subtype,string,20,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+sscname,Safe Search CNAME,string,256,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+srcport,Source Port,uint16,5,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+srcmac,MAC address associated with the Source IP,string,17,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+srcip,Source IP,ip,39,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+srcintfrole,Source Interface Role,string,10,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+srcintf,Source Interface,string,32,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+srcdomain,,string,255,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+srccountry,,string,64,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+sessionid,Session ID,uint32,10,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+rcode,,uint8,3,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+qtypeval,Query Type Value,uint16,5,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+qtype,Query type description,string,32,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+qname,Query domain name,string,256,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+qclass,Query class,string,32,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+proto,Protocol number,uint8,3,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+profile,Profile name for DNS filter,string,64,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+poluuid,,string,37,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+policytype,,string,24,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+policyid,Policy ID,uint32,10,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+msg,Log message,string,512,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+logid,Log ID,string,10,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+level,Log Level,string,11,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+ipaddr,IP addresses from DNS response answer section,string,512,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+group,User group name,string,512,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+fctuid,FortiClient ID,string,32,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+exchange,Mail Exchanges from DNS response answer section,string,256,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+eventtype,DNS Type (DNS query/DNS response),string,32,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+eventtime,Event Timestamp,uint64,20,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+error,DNS filter service error message,string,256,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+dstuser,,string,256,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+dstport,Destination Port,uint16,5,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+dstip,Destination IP,ip,39,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+dstintfrole,Destination Interface Role,string,10,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+dstintf,Destination Interface,string,32,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+dstcountry,,string,64,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+domainfilterlist,Domain Filter List,string,512,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+domainfilteridx,Domain Filter Index,uint8,3,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+devid,Device ID,string,16,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+date,Date,string,10,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+catdesc,DNS category description,string,64,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+cat,DNS category ID,uint8,3,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+botnetip,Botnet IP address,ip,39,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+botnetdomain,Botnet domain name,string,256,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12
+action,Security action performed by DNS filter,string,16,54800 - LOG_ID_DNS_FTGD_WARNING,54800,LOG_ID_DNS_FTGD_WARNING,FortiGuard rating error warning,DNS,dns-response,Warning,7.2.12

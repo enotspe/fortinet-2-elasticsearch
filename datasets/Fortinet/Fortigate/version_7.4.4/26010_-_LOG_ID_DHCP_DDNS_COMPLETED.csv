@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+time,Time,string,8,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+logid,Log ID,string,10,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+type,Log Type,string,16,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+subtype,Log Subtype,string,20,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+level,Log Level,string,11,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+devid,Device ID,string,16,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+vd,Virtual Domain Name,string,32,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+eventtime,Event time,uint64,20,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+tz,Time zone,string,5,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+logdesc,Log Description,string,4096,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+msg,Log Message,string,4096,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+ip,,ip,39,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+dhcp_msg,DHCP Message,string,4096,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+ddnsserver,DDNS Server,ip,39,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4
+fqdn,Fully Qualified Domain Name,string,256,26010 - LOG_ID_DHCP_DDNS_COMPLETED,26010,LOG_ID_DHCP_DDNS_COMPLETED,DHCP DDNS query completed,Event,system,Information,7.4.4

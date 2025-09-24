@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+cfgattr,Configuration attribute,string,4096,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+cfgobj,Configuration object,string,256,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+cfgpath,Configuration path,string,128,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+cfgtid,Config transaction id,uint32,10,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+msg,Log Message,string,4096,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+action,Policy Action,string,65,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+ui,User Interface,string,64,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+user,User name of authenticated user,string,256,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+logdesc,Log Description,string,4096,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+tz,Time zone,string,5,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+eventtime,Event time,uint64,20,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+vd,Virtual Domain Name,string,32,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+devid,Device ID,string,16,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+level,Log Level,string,11,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+subtype,Log Subtype,string,20,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+type,Log Type,string,16,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+logid,Log ID,string,10,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+time,Time,string,8,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7
+date,Date,string,10,44547 - LOGID_EVENT_CONFIG_OBJATTR,44547,LOGID_EVENT_CONFIG_OBJATTR,Object attribute configured,Event,system,Information,7.4.7

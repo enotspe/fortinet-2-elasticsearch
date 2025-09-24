@@ -1,0 +1,97 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint16,3,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+virusid,Virus ID (unique virus identifier),uint32,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+viruscat,,string,32,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+virus,Virus Name,string,128,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+vd,VDOM name,string,32,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+user,Username (authentication),string,256,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+url,The URL address,string,512,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+unauthusersource,,string,66,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+unauthuser,,string,66,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+tz,Time Zone,string,5,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+type,Log type,string,16,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+trueclntip,,ip,39,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+transid,,uint32,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+time,Time,string,8,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+subtype,Subtype of the virus log,string,20,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+subservice,,string,16,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+subject,,string,256,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srcuuid,,string,37,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srcport,Source Port,uint16,5,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srcname,,string,64,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srcmac,,string,17,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srcip,Source IP Address,ip,39,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srcintf,Source Interface,string,32,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srcdomain,,string,255,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+srccountry,,string,64,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+sharename,,string,256,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+sessionid,Session ID,uint32,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+service,Proxy service which scanned this traffic,string,5,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+sender,Email address from the SMTP envelope,string,128,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+referralurl,,string,512,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+ref,The URL of the FortiGuard IPS database entry for the attack,string,512,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+recipient,Email addresses from the SMTP envelope,string,512,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+rawdata,,string,20480,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+quarskip,Quarantine skip explanation,string,46,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+psrcport,,uint16,5,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+proto,Protocol number,uint8,3,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+profile,The name of the profile that was used to detect and take action,string,64,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+poluuid,,string,37,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+policytype,,string,24,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+policymode,,string,8,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+policyid,Policy ID,uint32,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+pdstport,,uint16,5,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+pathname,,string,256,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+msg,Log message,string,4096,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+messageid,,string,256,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+logid,Log ID,string,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+level,Log level,string,11,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+itype,,string,16,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+icbverdict,,string,5,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+icbseverity,,string,11,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+icbfiletype,,string,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+icbfileid,,string,65,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+icbconfidence,,string,6,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+icbaction,,string,7,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+httpmethod,,string,20,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+group,Group name (authentication),string,512,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+forwardedfor,,string,128,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+filetype,File type,string,16,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+filename,File name,string,256,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+filehashsrc,Used by Outbreak Prevention External Hash: external source that provided the hash signature,string,32,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+filehash,Used by Outbreak Prevention External Hash: the hash signature used in the detection,string,64,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+fctuid,Forticlient user ID,string,32,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+eventtype,Event type of AV,string,32,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+eventtime,Time when detection occured,uint64,20,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dtype,Data type for virus category,string,32,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dstuuid,,string,37,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dstuser,,string,256,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dstport,Destination Port,uint16,5,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dstip,Destination IP Address,ip,39,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dstintf,Destination Interface,string,32,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dstcountry,,string,64,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+dstauthserver,,string,64,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+direction,Message/packets direction,string,8,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+devid,,string,16,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+date,Date,string,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+crscore,Threat Weight Score,uint32,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+crlevel,Threat Weight Level,string,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+craction,Threat Weight action,uint32,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+contentdisarmed,"Content Disarm action- eg. disarmed, detected",string,13,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+checksum,The checksum of the scanned file,string,16,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+cdrcontent,,string,256,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+cc,,string,512,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+authserver,Server used to authenticate the involved user,string,64,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+attachment,,string,3,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+analyticssubmit,The flag for analytics submission,string,10,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+analyticscksum,The checksum of the file submitted for analytics,string,64,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,8192 - MESGID_INFECT_WARNING,8192,MESGID_INFECT_WARNING,Infected file detected by the FortiGate unit and blocked,Virus,infected,Warning,7.6.2

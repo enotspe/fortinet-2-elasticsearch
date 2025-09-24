@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+time,Time,string,8,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+logid,Log ID,string,10,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+type,Log Type,string,16,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+subtype,Log Subtype,string,20,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+level,Log Level,string,11,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+devid,Device ID,string,16,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+vd,Virtual Domain Name,string,32,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+eventtime,Event time,uint64,20,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+tz,Time zone,string,5,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+logdesc,Log Description,string,4096,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+action,Policy Action,string,65,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+msg,Log Message,string,4096,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+status,Status,string,23,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+name,Display Name of the Connection,string,128,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+cert-type,Certification type,string,6,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0
+method,Method,string,64,41992 - LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,41992,LOG_ID_EVENT_VPN_CERT_CRL_EXPIRED,CRL certificate file is expired,Event,vpn,Information,7.6.0

@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+app,Application name,string,96,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+appcat,Application category name,string,64,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+applist,Application Control profile name,string,64,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+authserver,Authentication server for the user,string,64,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+date,Date,string,10,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+devid,Deivce ID,string,16,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+direction,Direction of the packets,string,8,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+dstcountry,,string,64,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+dstintf,Destination Interface,string,64,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+dstip,Destination IP,ip,39,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+dstport,Destination Port,uint16,5,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+eventtime,Event Time,uint64,20,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+eventtype,App Control Event Type,string,32,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+fctuid,FortiClient User ID,string,32,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+group,User group name,string,512,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+level,Log level,string,11,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+logid,Log ID,string,10,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+policyid,Policy ID,uint32,10,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+profile,,string,36,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+profiletype,Profile Type,string,36,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+proto,Protocol number,uint8,3,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+service,Service name,string,80,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+sessionid,Session ID,uint32,10,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+srccountry,,string,64,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+srcdomain,,string,255,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+srcintf,Source Interface,string,64,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+srcip,Source IP,ip,39,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+srcport,Source Port,uint16,5,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+subtype,Log subtype,string,20,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+time,Time,string,8,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+type,Log type,string,16,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+tz,,string,5,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+unauthuser,Unauthenticated user,string,66,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+unauthusersource,Unauthenticated user source,string,66,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+user,User name,string,256,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+vd,Virtual domain name,string,32,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1
+vrf,Virtual Routing Forwarding,uint8,3,28677 - LOGID_APP_CTRL_IM_CHAT_BLOCK,28677,LOGID_APP_CTRL_IM_CHAT_BLOCK,Application control IM (chat blocked),APP-CTRL,signature,Information,7.4.1

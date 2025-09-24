@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+time,Time,string,8,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+logid,Log ID,string,10,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+type,Log Type,string,16,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+subtype,Log Subtype,string,20,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+level,Log Level,string,11,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+devid,Device ID,string,16,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+vd,Virtual Domain Name,string,32,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+eventtime,Event time,uint64,20,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+tz,Time zone,string,5,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+logdesc,Log Description,string,4096,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+msg,Log Message,string,4096,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+vcluster,Virtual cluster,uint32,10,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0
+devintfname,HA device interface name,string,32,37895 - MESGID_VC_ADD_HADEV,37895,MESGID_VC_ADD_HADEV,Virtual cluster added HA device interface,Event,ha,Notice,7.6.0

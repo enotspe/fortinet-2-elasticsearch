@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+time,Time,string,8,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+logid,Log ID,string,10,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+type,Log Type,string,16,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+subtype,Log Subtype,string,20,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+level,Log Level,string,11,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+devid,Device ID,string,16,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+vd,Virtual Domain Name,string,32,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+eventtime,Event time,uint64,20,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+tz,Time zone,string,5,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+logdesc,Log Description,string,4096,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+action,Policy Action,string,65,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+msg,Log Message,string,4096,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+informationsource,Information Source,string,4096,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+slot,Slot Number,uint8,3,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+chassisid,Chassis ID,uint8,3,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+newchannel,New Channel Number,uint8,3,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9
+oldchannel,Original Channel Number,uint8,3,43807 - LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,43807,LOG_ID_EVENT_ELBC_ACTIVE_CHANNEL_CHANGE,ELBC channel failover,Event,system,Critical,7.2.9

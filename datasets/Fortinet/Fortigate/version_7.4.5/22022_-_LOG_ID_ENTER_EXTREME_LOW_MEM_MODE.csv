@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+time,Time,string,8,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+logid,Log ID,string,10,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+type,Log Type,string,16,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+subtype,Log Subtype,string,20,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+level,Log Level,string,11,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+devid,Device ID,string,16,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+vd,Virtual Domain Name,string,32,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+eventtime,Event time,uint64,20,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+tz,Time zone,string,5,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+logdesc,Log Description,string,4096,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5
+msg,Log Message,string,4096,22022 - LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,22022,LOG_ID_ENTER_EXTREME_LOW_MEM_MODE,Extreme low memory mode entered,Event,system,Critical,7.4.5

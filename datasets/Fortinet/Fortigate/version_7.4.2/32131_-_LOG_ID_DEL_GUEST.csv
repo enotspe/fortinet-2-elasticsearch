@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+time,Time,string,8,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+logid,Log ID,string,10,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+type,Log Type,string,16,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+subtype,Log Subtype,string,20,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+level,Log Level,string,11,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+devid,Device ID,string,16,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+vd,Virtual Domain Name,string,32,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+eventtime,Event time,uint64,20,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+tz,Time zone,string,5,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+logdesc,Log Description,string,4096,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+user,User name of authenticated user,string,256,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+ui,User Interface,string,64,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+status,Status,string,23,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+msg,Log Message,string,4096,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2
+name,Display Name of the Connection,string,128,32131 - LOG_ID_DEL_GUEST,32131,LOG_ID_DEL_GUEST,Guest user deleted,Event,system,Notice,7.4.2

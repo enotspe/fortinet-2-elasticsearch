@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+time,Time,string,8,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+logid,Log ID,string,10,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+type,Log Type,string,16,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+subtype,Log Subtype,string,20,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+level,Log Level,string,11,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+devid,Device ID,string,16,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+vd,Virtual Domain Name,string,32,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+eventtime,Event time,uint64,20,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+tz,Time zone,string,5,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+logdesc,Log Description,string,4096,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+msg,Log Message,string,4096,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+fctemssn,,string,16,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+fctemsname,,string,36,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+url,URL,string,512,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10
+httpcode,,uint16,3,45122 - LOG_ID_EC_EMS_REST_API_ERROR,45122,LOG_ID_EC_EMS_REST_API_ERROR,EMS REST API error,Event,endpoint,Warning,7.2.10

@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+core,,uint8,3,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+cpu,CPU Usage,uint8,3,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+msg,Log Message,string,4096,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+action,Policy Action,string,65,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+logdesc,Log Description,string,4096,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+tz,Time zone,string,5,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+eventtime,Event time,uint64,20,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+vd,Virtual Domain Name,string,32,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+devid,Device ID,string,16,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+level,Log Level,string,11,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+subtype,Log Subtype,string,20,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+type,Log Type,string,16,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+logid,Log ID,string,10,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+time,Time,string,8,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12
+date,Date,string,10,40707 - LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,40707,LOG_ID_EVENT_SYS_CPU_USAGE_SINGLE_CORE,CPU single core usage statistics,Event,system,Notice,7.2.12

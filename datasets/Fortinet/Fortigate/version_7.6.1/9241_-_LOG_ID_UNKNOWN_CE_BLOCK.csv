@@ -1,0 +1,38 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint16,3,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+vd,VDOM name,string,32,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+user,Username (authentication),string,256,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+url,The URL address,string,512,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+tz,Time Zone,string,5,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+type,Log type,string,16,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+transid,,uint32,10,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+time,Time,string,8,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+subtype,Subtype of the virus log,string,20,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+srcport,Source Port,uint16,5,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+srcip,Source IP Address,ip,39,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+srcintf,Source Interface,string,32,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+sessionid,Session ID,uint32,10,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+service,Proxy service which scanned this traffic,string,5,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+proto,Protocol number,uint8,3,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+profile,The name of the profile that was used to detect and take action,string,64,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+poluuid,,string,37,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+policyid,Policy ID,uint32,10,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+msg,Log message,string,4096,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+logid,Log ID,string,10,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+level,Log level,string,11,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+group,Group name (authentication),string,512,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+eventtype,Event type of AV,string,32,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+eventtime,Time when detection occured,uint64,20,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+dstport,Destination Port,uint16,5,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+dstip,Destination IP Address,ip,39,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+dstintf,Destination Interface,string,32,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+devid,,string,16,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+date,Date,string,10,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+contentencoding,,string,512,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,9241 - LOG_ID_UNKNOWN_CE_BLOCK,9241,LOG_ID_UNKNOWN_CE_BLOCK,Unknown content-encoding detected and blocked,Virus,unknown-ce,Warning,7.6.1

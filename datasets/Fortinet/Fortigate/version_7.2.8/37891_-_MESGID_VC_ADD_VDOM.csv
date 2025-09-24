@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+time,Time,string,8,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+logid,Log ID,string,10,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+type,Log Type,string,16,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+subtype,Log Subtype,string,20,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+level,Log Level,string,11,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+devid,Device ID,string,16,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+vd,Virtual Domain Name,string,32,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+eventtime,Event time,uint64,20,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+tz,Time zone,string,5,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+logdesc,Log Description,string,4096,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+msg,Log Message,string,4096,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+to_vcluster,Destination virtual cluster number,uint32,10,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8
+vdname,Virtual Domain Name,string,32,37891 - MESGID_VC_ADD_VDOM,37891,MESGID_VC_ADD_VDOM,Virtual cluster VDOM added,Event,ha,Notice,7.2.8

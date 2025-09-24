@@ -1,0 +1,32 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+reason,Reason,string,256,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+advpnsc,,uint8,3,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+fctuid,,string,32,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+peer_notif,IPsec VPN Peer Notification,string,25,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+status,Status,string,23,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+vpntunnel,IPsec VPN Tunnel Name,string,128,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+xauthgroup,IPsec VPN Xauth user group name,string,128,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+xauthuser,IPsec VPN Xauth user name,string,256,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+useralt,,string,256,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+cookies,Cookie,string,64,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+outintf,IPsec VPN binding interface,string,32,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+locport,Local Port,uint16,5,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+remport,Remote Port,uint16,5,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+locip,IPsec VPN local gateway IP address,ip,39,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+msg,Log Message,string,4096,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+group,User group Name,string,512,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+user,User name of authenticated user,string,256,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+remip,IPsec VPN remote gateway IP address,ip,39,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+action,Policy Action,string,65,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+logdesc,Log Description,string,4096,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+tz,Time zone,string,5,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+eventtime,Event time,uint64,20,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+vd,Virtual Domain Name,string,32,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+devid,Device ID,string,16,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+level,Log Level,string,11,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+subtype,Log Subtype,string,20,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+type,Log Type,string,16,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+logid,Log ID,string,10,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+time,Time,string,8,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1
+date,Date,string,10,37124 - MESGID_NEG_I_P1_ERROR,37124,MESGID_NEG_I_P1_ERROR,IPsec phase 1 error,Event,vpn,Error,7.6.1

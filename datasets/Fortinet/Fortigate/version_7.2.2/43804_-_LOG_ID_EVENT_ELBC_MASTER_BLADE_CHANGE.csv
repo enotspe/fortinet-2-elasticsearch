@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+time,Time,string,8,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+logid,Log ID,string,10,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+type,Log Type,string,16,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+subtype,Log Subtype,string,20,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+level,Log Level,string,11,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+devid,Device ID,string,16,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+vd,Virtual Domain Name,string,32,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+eventtime,Event time,uint64,20,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+tz,Time zone,string,5,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+logdesc,Log Description,string,4096,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+action,Policy Action,string,65,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+msg,Log Message,string,4096,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+informationsource,Information Source,string,4096,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+oldslot,Original Slot Number,uint8,3,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+oldchassisid,Original Chassis Number,uint8,3,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+newslot,New Slot Number,uint8,3,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2
+newchassisid,New Chassis ID,uint8,3,43804 - LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,43804,LOG_ID_EVENT_ELBC_MASTER_BLADE_CHANGE,Primary blade changed,Event,system,Critical,7.2.2

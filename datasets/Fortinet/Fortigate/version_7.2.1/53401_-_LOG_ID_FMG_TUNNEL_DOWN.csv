@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+time,Time,string,8,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+logid,Log ID,string,10,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+type,Log Type,string,16,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+subtype,Log Subtype,string,20,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+level,Log Level,string,11,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+devid,Device ID,string,16,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+vd,Virtual Domain Name,string,32,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+eventtime,Event time,uint64,20,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+tz,Time zone,string,5,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+logdesc,Log Description,string,4096,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+action,Policy Action,string,65,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+status,Status,string,23,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1
+msg,Log Message,string,4096,53401 - LOG_ID_FMG_TUNNEL_DOWN,53401,LOG_ID_FMG_TUNNEL_DOWN,FortiManager tunnel connection down,Event,system,Warning,7.2.1

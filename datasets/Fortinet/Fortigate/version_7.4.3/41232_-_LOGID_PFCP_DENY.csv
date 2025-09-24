@@ -1,0 +1,36 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+apn,Access Point Name,string,128,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+cfseid,,string,20,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+cfseidaddr,,ip,39,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+date,Date,string,10,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+deny_cause,Deny Cause,string,25,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+devid,Device ID,string,16,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+dstport,Destination Port,uint16,5,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+dtlexp,Detailed Explanation,string,64,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+eventtime,Event time line,uint64,20,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+from,From,ip,128,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+from6,,ip,39,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+hseid,,string,20,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+ietype,Malformed GTP IE number,uint8,3,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+imei-sv,IMEI(International Mobile Equipment Identity) Software Version,string,32,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+imsi,International mobile subscriber ID,string,16,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+level,Log Level,string,11,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+logid,Log ID,string,10,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+msg-type,Message Type,uint8,3,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+msgtypename,,string,50,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+msisdn,Mobile Subscriber Integrated Services Digital Network-Number (telephone # to a SIM card),string,16,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+nai,,string,128,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+profile,Profile Name,string,64,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+seqnum,GTP packet sequence number,uint32,10,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+srcport,Source Port,uint16,5,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+status,Status,string,23,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+subtype,Log Subtype,string,20,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+time,Time,string,8,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+to,To,ip,512,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+to6,,ip,39,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+type,Log Type,string,16,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+tz,Time zone,string,5,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+ufseid,,string,20,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+ufseidaddr,,ip,39,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+vd,Virtual Domain Name,string,32,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3
+version,Version,uint32,64,41232 - LOGID_PFCP_DENY,41232,LOGID_PFCP_DENY,PFCP deny message,GTP,pfcp-all,Information,7.4.3

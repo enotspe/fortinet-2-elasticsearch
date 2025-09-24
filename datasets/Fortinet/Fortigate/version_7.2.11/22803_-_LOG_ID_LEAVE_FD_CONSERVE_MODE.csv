@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+green,Green threshold for conserve mode,string,32,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+red,,string,32,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+used,Number of Used IPs,uint32,10,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+total,Total,uint32,10,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+conserve,Flag for Conserve Mode,string,32,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+daemon,Daemon Name,string,32,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+msg,Log Message,string,4096,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+logdesc,Log Description,string,4096,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+tz,Time zone,string,5,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+eventtime,Event time,uint64,20,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+vd,Virtual Domain Name,string,32,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+devid,Device ID,string,16,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+level,Log Level,string,11,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+subtype,Log Subtype,string,20,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+type,Log Type,string,16,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+logid,Log ID,string,10,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+time,Time,string,8,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11
+date,Date,string,10,22803 - LOG_ID_LEAVE_FD_CONSERVE_MODE,22803,LOG_ID_LEAVE_FD_CONSERVE_MODE,File descriptor conserve mode exited,Event,system,Critical,7.2.11

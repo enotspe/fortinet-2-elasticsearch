@@ -1,0 +1,44 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Action,string,16,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+attack,Attack,string,256,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+attackid,Attack ID,uint32,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+count,Count,uint32,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+craction,Client Reputation Action,uint32,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+crlevel,Client Reputation Level,string,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+crscore,Client Reputation Score,uint32,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+date,Date,string,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+devid,Deivce ID,string,16,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+dstcountry,,string,64,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+dstintf,Destination Interface,string,64,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+dstip,Destination IP,ip,39,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+dstport,Destination Port,uint16,5,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+eventtime,Time when detection occured,uint64,20,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+eventtype,Event Type,string,32,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+fctuid,FortiClient UID,string,32,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+group,User Group Name,string,512,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+level,Log Level,string,11,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+logid,Log ID,string,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+msg,Log Message,string,518,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+policyid,Policy ID,uint32,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+policytype,Policy type,string,24,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+proto,Protocol,uint8,3,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+ref,Reference,string,4096,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+service,Name of Service,string,80,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+sessionid,Session ID,uint32,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+severity,Severity,string,8,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+srccountry,Country name for Source IP,string,64,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+srcdomain,,string,255,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+srcintf,Source Interface,string,64,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+srcip,Source IP,ip,39,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+srcport,Source Port,uint16,5,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+subtype,Log Subtype,string,20,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+time,Time,string,8,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+type,Log Type,string,16,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+tz,Time zone,string,5,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+unauthuser,Unauthenticated user,string,66,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+unauthusersource,Unauthenticated user source,string,66,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+user,User,string,256,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+vd,Virtual Domain Name,string,32,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4
+vrf,Virtual router forwarding,uint8,3,18432 - LOGID_ATTCK_ANOMALY_TCP_UDP,18432,LOGID_ATTCK_ANOMALY_TCP_UDP,Attack detected by UCP/TCP anomaly,Anomaly,anomaly,Alert,7.2.4

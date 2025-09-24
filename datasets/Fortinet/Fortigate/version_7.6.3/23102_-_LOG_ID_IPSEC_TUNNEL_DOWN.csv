@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+group,User group Name,string,512,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+user,User name of authenticated user,string,256,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+tunnelip,IPsec VPN tunnel IP address,ip,39,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+remip,IPsec VPN remote gateway IP address,ip,39,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+tunneltype,IPsec VPN tunnel type,string,64,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+tunnelid,IPsec VPN tunnel ID,uint32,10,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+action,Policy Action,string,65,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+logdesc,Log Description,string,4096,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+tz,Time zone,string,5,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+eventtime,Event time,uint64,20,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+vd,Virtual Domain Name,string,32,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+devid,Device ID,string,16,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+level,Log Level,string,11,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+subtype,Log Subtype,string,20,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+type,Log Type,string,16,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+logid,Log ID,string,10,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+time,Time,string,8,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3
+date,Date,string,10,23102 - LOG_ID_IPSEC_TUNNEL_DOWN,23102,LOG_ID_IPSEC_TUNNEL_DOWN,IPsec VPN tunnel down,Event,vpn,Information,7.6.3

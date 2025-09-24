@@ -1,0 +1,35 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+time,Time,string,8,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+logid,Log ID,string,10,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+type,Log Type,string,16,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+subtype,Log Subtype,string,20,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+level,Log Level,string,11,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+devid,Device ID,string,16,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+vd,Virtual Domain Name,string,32,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+eventtime,Event time,uint64,20,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+tz,Time zone,string,5,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+logdesc,Log Description,string,4096,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+action,Policy Action,string,65,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+tunnelid,IPsec VPN tunnel ID,uint32,10,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+tunneltype,IPsec VPN tunnel type,string,64,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+remip,IPsec VPN remote gateway IP address,ip,39,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+tunnelip,IPsec VPN tunnel IP address,ip,39,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+user,User name of authenticated user,string,256,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+group,User group Name,string,512,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+msg,Log Message,string,4096,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+locip,IPsec VPN local gateway IP address,ip,39,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+remport,Remote Port,uint16,5,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+locport,Local Port,uint16,5,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+outintf,IPsec VPN binding interface,string,32,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+cookies,Cookie,string,64,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+useralt,,string,256,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+xauthuser,IPsec VPN Xauth user name,string,256,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+xauthgroup,IPsec VPN Xauth user group name,string,128,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+vpntunnel,IPsec VPN Tunnel Name,string,128,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+advpnsc,,uint8,3,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+duration,Duration,uint32,10,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+sentbyte,Bytes Sent,uint64,20,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+rcvdbyte,Received Bytes,uint64,20,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6
+nextstat,Time interval in seconds for the next statistics,uint32,10,37141 - MESGID_CONN_STATS,37141,MESGID_CONN_STATS,IPsec tunnel statistics,Event,vpn,Notice,7.2.6

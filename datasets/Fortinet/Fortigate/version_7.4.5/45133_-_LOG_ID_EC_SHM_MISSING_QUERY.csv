@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+time,Time,string,8,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+logid,Log ID,string,10,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+type,Log Type,string,16,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+subtype,Log Subtype,string,20,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+level,Log Level,string,11,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+devid,Device ID,string,16,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+vd,Virtual Domain Name,string,32,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+eventtime,Event time,uint64,20,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+tz,Time zone,string,5,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+logdesc,Log Description,string,4096,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5
+msg,Log Message,string,4096,45133 - LOG_ID_EC_SHM_MISSING_QUERY,45133,LOG_ID_EC_SHM_MISSING_QUERY,FCEMS shared memory missing query statistics,Event,endpoint,Warning,7.4.5

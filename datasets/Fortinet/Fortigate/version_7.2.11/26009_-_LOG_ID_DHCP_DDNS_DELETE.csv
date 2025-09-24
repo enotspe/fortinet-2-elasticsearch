@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+fqdn,Fully Qualified Domain Name,string,256,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+ddnsserver,DDNS Server,ip,39,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+dhcp_msg,DHCP Message,string,4096,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+ip,,ip,39,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+msg,Log Message,string,4096,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+logdesc,Log Description,string,4096,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+tz,Time zone,string,5,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+eventtime,Event time,uint64,20,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+vd,Virtual Domain Name,string,32,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+devid,Device ID,string,16,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+level,Log Level,string,11,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+subtype,Log Subtype,string,20,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+type,Log Type,string,16,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+logid,Log ID,string,10,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+time,Time,string,8,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11
+date,Date,string,10,26009 - LOG_ID_DHCP_DDNS_DELETE,26009,LOG_ID_DHCP_DDNS_DELETE,DHCP DDNS delete query,Event,system,Information,7.2.11

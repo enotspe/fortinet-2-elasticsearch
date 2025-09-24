@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+action,Policy Action,string,65,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+ui,User Interface,string,64,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+user,User name of authenticated user,string,256,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+logdesc,Log Description,string,4096,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+tz,Time zone,string,5,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+eventtime,Event time,uint64,20,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+vd,Virtual Domain Name,string,32,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+devid,Device ID,string,16,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+level,Log Level,string,11,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+subtype,Log Subtype,string,20,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+type,Log Type,string,16,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+logid,Log ID,string,10,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+time,Time,string,8,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8
+date,Date,string,10,32200 - LOG_ID_SHUTDOWN,32200,LOG_ID_SHUTDOWN,Device shutdown,Event,system,Critical,7.4.8

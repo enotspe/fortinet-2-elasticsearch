@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+time,Time,string,8,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+logid,Log ID,string,10,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+type,Log Type,string,16,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+subtype,Log Subtype,string,20,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+level,Log Level,string,11,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+devid,Device ID,string,16,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+vd,Virtual Domain Name,string,32,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+eventtime,Event time,uint64,20,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+tz,Time zone,string,5,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+logdesc,Log Description,string,4096,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+action,Policy Action,string,65,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+msg,Log Message,string,4096,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+ssid,WiFi Service Set ID,string,33,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+bssid,Basic service set ID,string,17,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0
+apstatus,"Rogue AP status like unclassify(0), rogue(1), accept(2), suppress(3)",uint8,3,43584 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,43584,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_ROGUE,Rogue AP status configured as rogue,Event,wireless,Notice,7.4.0

@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+time,Time,string,8,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+logid,Log ID,string,10,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+type,Log Type,string,16,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+subtype,Log Subtype,string,20,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+level,Log Level,string,11,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+devid,Device ID,string,16,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+vd,Virtual Domain Name,string,32,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+eventtime,Event time,uint64,20,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+tz,Time zone,string,5,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+logdesc,Log Description,string,4096,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+action,Policy Action,string,65,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+status,Status,string,23,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+msg,Log Message,string,4096,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+server,Server IP Address,string,64,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+port,Port Number,uint16,5,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9
+vip,Virtual IP,string,64,46002 - LOG_ID_VIP_REAL_SVR_UP,46002,LOG_ID_VIP_REAL_SVR_UP,VIP real server up,Event,system,Notice,7.2.9

@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+action,Policy Action,string,65,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+ui,User Interface,string,64,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+user,User name of authenticated user,string,256,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+logdesc,Log Description,string,4096,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+tz,Time zone,string,5,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+eventtime,Event time,uint64,20,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+vd,Virtual Domain Name,string,32,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+devid,Device ID,string,16,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+level,Log Level,string,11,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+subtype,Log Subtype,string,20,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+type,Log Type,string,16,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+logid,Log ID,string,10,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+time,Time,string,8,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12
+date,Date,string,10,32215 - LOG_ID_UPT_IMG,32215,LOG_ID_UPT_IMG,Image updated,Event,system,Critical,7.2.12

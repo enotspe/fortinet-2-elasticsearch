@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+processtime,Process time for reports,uint32,10,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+reporttype,Report Type,string,20,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+datarange,Data range for reports,string,50,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+filesize,Report File Size in Bytes,uint32,10,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+file,Report file full path,string,256,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+msg,Log Message,string,4096,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+logdesc,Log Description,string,4096,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+tz,Time zone,string,5,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+eventtime,Event time,uint64,20,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+vd,Virtual Domain Name,string,32,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+devid,Device ID,string,16,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+level,Log Level,string,11,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+subtype,Log Subtype,string,20,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+type,Log Type,string,16,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+logid,Log ID,string,10,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+time,Time,string,8,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7
+date,Date,string,10,20025 - LOG_ID_REPORTD_REPORT_SUCCESS,20025,LOG_ID_REPORTD_REPORT_SUCCESS,Report generated successfully,Event,system,Notice,7.4.7

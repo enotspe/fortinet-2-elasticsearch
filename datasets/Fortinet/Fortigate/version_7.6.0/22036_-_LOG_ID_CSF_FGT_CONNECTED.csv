@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+time,Time,string,8,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+logid,Log ID,string,10,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+type,Log Type,string,16,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+subtype,Log Subtype,string,20,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+level,Log Level,string,11,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+devid,Device ID,string,16,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+vd,Virtual Domain Name,string,32,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+eventtime,Event time,uint64,20,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+tz,Time zone,string,5,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+logdesc,Log Description,string,4096,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+msg,Log Message,string,4096,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+ip,,ip,39,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+sn,Serial Number,string,64,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0
+direction,,string,16,22036 - LOG_ID_CSF_FGT_CONNECTED,22036,LOG_ID_CSF_FGT_CONNECTED,Connection with Security Fabric member established and authorized.,Event,system,Information,7.6.0

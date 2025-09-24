@@ -1,0 +1,29 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+advpnsc,,uint8,3,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+fctuid,,string,32,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+vpntunnel,IPsec VPN Tunnel Name,string,128,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+xauthgroup,IPsec VPN Xauth user group name,string,128,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+xauthuser,IPsec VPN Xauth user name,string,256,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+useralt,,string,256,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+cookies,Cookie,string,64,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+outintf,IPsec VPN binding interface,string,32,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+locport,Local Port,uint16,5,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+remport,Remote Port,uint16,5,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+locip,IPsec VPN local gateway IP address,ip,39,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+msg,Log Message,string,4096,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+group,User group Name,string,512,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+user,User name of authenticated user,string,256,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+remip,IPsec VPN remote gateway IP address,ip,39,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+action,Policy Action,string,65,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+logdesc,Log Description,string,4096,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+tz,Time zone,string,5,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+eventtime,Event time,uint64,20,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+vd,Virtual Domain Name,string,32,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+devid,Device ID,string,16,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+level,Log Level,string,11,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+subtype,Log Subtype,string,20,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+type,Log Type,string,16,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+logid,Log ID,string,10,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+time,Time,string,8,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6
+date,Date,string,10,37134 - MESGID_DELETE_P1_SA,37134,MESGID_DELETE_P1_SA,IPsec phase 1 SA deleted,Event,vpn,Notice,7.4.6

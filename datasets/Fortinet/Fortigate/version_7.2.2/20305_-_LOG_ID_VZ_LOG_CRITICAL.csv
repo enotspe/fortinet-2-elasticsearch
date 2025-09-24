@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+time,Time,string,8,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+logid,Log ID,string,10,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+type,Log Type,string,16,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+subtype,Log Subtype,string,20,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+level,Log Level,string,11,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+devid,Device ID,string,16,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+vd,Virtual Domain Name,string,32,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+eventtime,Event time,uint64,20,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+tz,Time zone,string,5,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+logdesc,Log Description,string,4096,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2
+msg,Log Message,string,4096,20305 - LOG_ID_VZ_LOG_CRITICAL,20305,LOG_ID_VZ_LOG_CRITICAL,Routing log critical event,Event,router,Critical,7.2.2

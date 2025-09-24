@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+time,Time,string,8,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+logid,Log ID,string,10,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+type,Log Type,string,16,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+subtype,Log Subtype,string,20,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+level,Log Level,string,11,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+devid,Device ID,string,16,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+vd,Virtual Domain Name,string,32,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+eventtime,Event time,uint64,20,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+tz,Time zone,string,5,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+logdesc,Log Description,string,4096,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8
+msg,Log Message,string,4096,35011 - LOG_ID_HA_SYNC_FAIL,35011,LOG_ID_HA_SYNC_FAIL,HA secondary synchronization failed,Event,ha,Error,7.2.8

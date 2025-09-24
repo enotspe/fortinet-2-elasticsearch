@@ -1,0 +1,47 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual Domain Name,string,32,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+user,User name for authentication,string,256,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+unauthusersource,Unauthenticated User Source,string,66,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+unauthuser,Unauthenticated User,string,66,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+tz,Time zone,string,5,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+type,Log type,string,16,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+time,Time,string,8,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+subtype,Log subtype,string,20,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+srcuuid,,string,37,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+srcport,Source Port,uint16,5,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+srcip,Source IP,ip,39,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+srcintf,Source Interface,string,32,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+srcdomain,,string,255,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+srccountry,,string,64,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+severity,Severity level of shell command,string,8,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+sessionid,Session ID,uint32,10,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+proto,Protocol number,uint8,3,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+profile,Full profile name,string,64,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+poluuid,,string,37,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+policytype,,string,24,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+policyid,Policy ID,uint32,10,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+login,SSH login Name,string,128,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+logid,Log ID,string,10,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+level,Log level,string,11,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+hostkeystatus,,string,15,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+group,Group name for authentication,string,512,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+fctuid,FortiClient UID,string,32,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+eventtype,Event Type,string,32,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+eventtime,Event time,uint64,20,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+dstuuid,,string,37,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+dstuser,,string,256,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+dstport,Destination Port,uint16,5,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+dstip,Destination IP,ip,39,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+dstintf,Destination Interface,string,32,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+dstcountry,,string,64,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+direction,Direction of session,string,4096,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+devid,Device ID,string,16,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+date,Date,string,10,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+command,Shell command,string,256,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+channeltype,"Type of Channel:
+ x11, shell, exec, tcp-fprward, tun-forward, sftp. scp",string,15,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8
+action,"The status of the ssh-channel:
+ passthrough - channel is allowed
+ blocked - channel is blocked",string,17,61014 - LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,61014,LOG_ID_SSH_UNSUPPORT_PROTO_BLOCK,"SSH connection is blocked, because unsupported SSH protocol",SSH,ssh-unsupport-proto,Warning,7.4.8

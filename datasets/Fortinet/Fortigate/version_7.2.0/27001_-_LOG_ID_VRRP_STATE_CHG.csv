@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+devid,Device ID,string,16,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+eventtime,Event time,uint64,20,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+interface,Interface,string,32,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+level,Log Level,string,11,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+logdesc,Log Description,string,4096,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+logid,Log ID,string,10,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+msg,Log Message,string,4096,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+subtype,Log Subtype,string,20,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+time,Time,string,8,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+type,Log Type,string,16,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+tz,Time zone,string,5,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0
+vd,Virtual Domain Name,string,32,27001 - LOG_ID_VRRP_STATE_CHG,27001,LOG_ID_VRRP_STATE_CHG,VRRP state changed,Event,ROUTER,Information,7.2.0

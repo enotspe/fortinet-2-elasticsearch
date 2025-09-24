@@ -1,0 +1,26 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+vendorurl,,string,256,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+cveid,CVE ID,string,720,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+severity,Severity,string,10,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+vulncat,Vulnerability Category,string,32,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+vulnname,Vulnerability name,string,128,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+vulnid,Vulnerability ID,uint32,10,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+devtype,Device type,string,32,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+srcmac,Source MAC address,string,17,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+srcname,Source name,string,64,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+srcip,Source IP,ip,39,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+user,User name of authenticated user,string,256,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+fctuid,FortiClient UID,string,32,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+scantime,,uint64,20,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+logdesc,Log Description,string,4096,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+tz,Time zone,string,5,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+eventtime,Event time,uint64,20,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+vd,Virtual Domain Name,string,32,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+devid,Device ID,string,16,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+level,Log Level,string,11,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+subtype,Log Subtype,string,20,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+type,Log Type,string,16,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+logid,Log ID,string,10,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+time,Time,string,8,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8
+date,Date,string,10,45071 - LOG_ID_FCC_VULN_SCAN,45071,LOG_ID_FCC_VULN_SCAN,FortiClient Vulnerability Scan,Event,endpoint,Notice,7.4.8

@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+devintfname,HA device interface name,string,32,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+vcluster,Virtual cluster,uint32,10,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+msg,Log Message,string,4096,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+logdesc,Log Description,string,4096,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+tz,Time zone,string,5,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+eventtime,Event time,uint64,20,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+vd,Virtual Domain Name,string,32,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+devid,Device ID,string,16,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+level,Log Level,string,11,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+subtype,Log Subtype,string,20,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+type,Log Type,string,16,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+logid,Log ID,string,10,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+time,Time,string,8,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1
+date,Date,string,10,37896 - MESGID_VC_DEL_HADEV,37896,MESGID_VC_DEL_HADEV,Virtual cluster deleted HA device interface,Event,ha,Notice,7.6.1

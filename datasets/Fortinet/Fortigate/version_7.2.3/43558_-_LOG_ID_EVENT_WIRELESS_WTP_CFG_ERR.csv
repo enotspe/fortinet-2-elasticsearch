@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+time,Time,string,8,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+logid,Log ID,string,10,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+type,Log Type,string,16,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+subtype,Log Subtype,string,20,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+level,Log Level,string,11,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+devid,Device ID,string,16,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+vd,Virtual Domain Name,string,32,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+eventtime,Event time,uint64,20,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+tz,Time zone,string,5,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+logdesc,Log Description,string,4096,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+action,Policy Action,string,65,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+msg,Log Message,string,4096,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+sn,Serial Number,string,64,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+ap,Access Point,string,36,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+profile,Profile Name,string,64,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+ip,,ip,39,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+meshmode,Mesh mode,string,19,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+snmeshparent,SN of the mesh parent,string,36,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3
+reason,Reason,string,256,43558 - LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,43558,LOG_ID_EVENT_WIRELESS_WTP_CFG_ERR,Physical AP config error,Event,wireless,Notice,7.2.3

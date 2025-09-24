@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+time,Time,string,8,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+logid,Log ID,string,10,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+type,Log Type,string,16,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+subtype,Log Subtype,string,20,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+level,Log Level,string,11,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+devid,Device ID,string,16,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+vd,Virtual Domain Name,string,32,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+eventtime,Event time,uint64,20,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+tz,Time zone,string,5,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+logdesc,Log Description,string,4096,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+tunnelid,IPsec VPN tunnel ID,uint32,10,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+tunneltype,IPsec VPN tunnel type,string,64,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+policyid,Policy ID,uint32,10,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+srcip,Source IP,ip,39,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+srcport,Source port,uint16,5,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+dstip,Destination IP,ip,39,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+dstport,Destination Protocol Port,uint16,5,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10
+msg,Log Message,string,4096,48040 - LOG_ID_WANOPT_TUNNEL_CREATE,48040,LOG_ID_WANOPT_TUNNEL_CREATE,WANOPT Tunnel successfully created,Event,wanopt,Information,7.2.10

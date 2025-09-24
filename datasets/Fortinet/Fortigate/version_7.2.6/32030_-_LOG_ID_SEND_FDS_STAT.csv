@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+time,Time,string,8,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+logid,Log ID,string,10,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+type,Log Type,string,16,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+subtype,Log Subtype,string,20,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+level,Log Level,string,11,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+devid,Device ID,string,16,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+vd,Virtual Domain Name,string,32,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+eventtime,Event time,uint64,20,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+tz,Time zone,string,5,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+logdesc,Log Description,string,4096,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+user,User name of authenticated user,string,256,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+ui,User Interface,string,64,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+action,Policy Action,string,65,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6
+msg,Log Message,string,4096,32030 - LOG_ID_SEND_FDS_STAT,32030,LOG_ID_SEND_FDS_STAT,FDS statistics sent,Event,system,Notice,7.2.6

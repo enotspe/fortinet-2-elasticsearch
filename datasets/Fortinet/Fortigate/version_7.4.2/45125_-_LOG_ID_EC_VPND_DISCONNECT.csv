@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+time,Time,string,8,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+logid,Log ID,string,10,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+type,Log Type,string,16,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+subtype,Log Subtype,string,20,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+level,Log Level,string,11,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+devid,Device ID,string,16,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+vd,Virtual Domain Name,string,32,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+eventtime,Event time,uint64,20,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+tz,Time zone,string,5,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+logdesc,Log Description,string,4096,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+fctuid,FortiClient UID,string,32,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+user,User name of authenticated user,string,256,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+msg,Log Message,string,4096,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+ip,Source IP,ip,39,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+sn,Serial Number,string,64,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2
+intf,Interface,string,16,45125 - LOG_ID_EC_VPND_DISCONNECT,45125,LOG_ID_EC_VPND_DISCONNECT,FortiClient VPN disconnected,Event,endpoint,Warning,7.4.2

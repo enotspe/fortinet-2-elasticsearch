@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+interface,Interface,string,32,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+sn,Serial Number,string,64,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+msg,Log Message,string,4096,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+logdesc,Log Description,string,4096,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+tz,Time zone,string,5,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+eventtime,Event time,uint64,20,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+vd,Virtual Domain Name,string,32,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+devid,Device ID,string,16,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+level,Log Level,string,11,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+subtype,Log Subtype,string,20,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+type,Log Type,string,16,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+logid,Log ID,string,10,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+time,Time,string,8,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7
+date,Date,string,10,22060 - LOG_ID_IPAMSD_ADD_ENTRY,22060,LOG_ID_IPAMSD_ADD_ENTRY,Add new entry to IPAM,Event,system,Notice,7.4.7

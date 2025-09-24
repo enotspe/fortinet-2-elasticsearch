@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+time,Time,string,8,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+logid,Log ID,string,10,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+type,Log Type,string,16,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+subtype,Log Subtype,string,20,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+level,Log Level,string,11,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+devid,Device ID,string,16,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+vd,Virtual Domain Name,string,32,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+eventtime,Event time,uint64,20,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+tz,Time zone,string,5,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+logdesc,Log Description,string,4096,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+user,User name of authenticated user,string,256,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+action,Policy Action,string,65,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3
+msg,Log Message,string,4096,38412 - LOGID_EVENT_TOKEN_CODE_SENDTO,38412,LOGID_EVENT_TOKEN_CODE_SENDTO,Token activation code sent,Event,system,Notice,7.4.3

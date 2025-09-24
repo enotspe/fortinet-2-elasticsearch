@@ -1,0 +1,86 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+wanout,WAN outgoing traffic in bytes,uint64,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+wanin,WAN incoming traffic in bytes,uint64,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+vd,Virtual domain name,string,32,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+utmaction,Security action performed by UTM,string,32,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+user,User name,string,256,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+url,URL,string,512,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+tz,Time zone,string,5,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+type,Log type,string,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+transid,,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+tranport,NAT Destination Port,uint16,5,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+tranip,NAT Destination IP,ip,39,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+time,Time,string,8,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+subtype,Subtype of the traffic,string,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+statuscode,,string,8,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+sslaction,Action taken by ssl-ssh-profile,string,26,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+srcuuid,UUID of the Source Address Object,string,37,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+srcport,Source protocol port number,uint16,5,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+srcip,Source IP address,ip,39,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+sessionid,Session ID,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+sentbyte,Sent Bytes,uint64,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+scheme,,string,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+resptype,,string,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+resptime,,uint64,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+resplength,,uint64,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+respfinishtime,,uint64,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+reqtime,,uint64,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+reqlength,,uint64,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+referralurl,,string,512,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+rcvdbyte,Received Bytes,uint64,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+poluuid,UUID of the Firewall Policy,string,37,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+policytype,Policy type,string,24,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+policyid,Firewall Policy ID,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+logid,Log ID,string,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+level,Log Level,string,11,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+lanout,LAN outgoing traffic in bytes,uint64,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+lanin,LAN incoming traffic in bytes,uint64,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+httpmethod,,string,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+hostname,,string,256,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+group,User group name,string,512,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+fwdsrv,,string,64,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+eventtime,Epoch time in nanoseconds,uint64,20,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+emsconnection,,string,8,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+duration,Duration of the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+dstuuid,UUID of the Destination Address Object,string,37,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+dstport,Destination Protocol Port Number,uint16,5,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+dstip,Destination IP Address,ip,39,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+devid,Device Serial Number,string,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+date,Date,string,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countweb,Number of Web Filter logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countwaf,Number of WAF logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countvpatch,,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countssl,,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countssh,Number of SSH logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countsctpf,,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countips,Number of IPS logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+counticap,,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countff,,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countemail,Number of Email logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countdns,Number of DNS Query logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countdlp,Number of DLP logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countcifs,,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countcasb,,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countav,Number of AV logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+countapp,Number of App Ctrl logs associated with the session,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+clientdevicetags,,string,512,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+clientdeviceowner,,string,80,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+clientdeviceid,,string,80,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+authserver,Remote Authentication server,string,64,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+apprisk,Application Risk Level,string,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+applist,Application Control profile (name),string,64,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+appid,Application ID,uint32,10,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+appcat,Application category,string,64,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+appact,The security action from app control,string,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+app,Application Name,string,96,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,26 - LOG_ID_TRAFFIC_HTTP_TRANSACTION,26,LOG_ID_TRAFFIC_HTTP_TRANSACTION,HTTP transaction,Traffic,http-transaction,Notice,7.6.3

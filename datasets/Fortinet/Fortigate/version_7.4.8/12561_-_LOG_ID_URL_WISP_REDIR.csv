@@ -1,0 +1,61 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint8,3,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+vd,Virtual domain name,string,32,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+user,User name,string,256,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+url,The URL address,string,512,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+unauthusersource,Unauthenticated user source,string,66,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+unauthuser,Unauthenticated user,string,66,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+tz,Time Zone,string,5,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+type,Log type,string,16,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+trueclntip,True-Client-IP HTTP header,ip,39,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+time,Time,string,8,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+subtype,Log subtype,string,20,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+srcuuid,,string,37,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+srcport,Source Port,uint16,5,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+srcip,Source IP,ip,39,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+srcintf,Source Interface,string,32,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+srcdomain,,string,255,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+srccountry,,string,64,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+sessionid,Session ID,uint32,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+service,Service name,string,36,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+sentbyte,Sent Bytes,uint64,20,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+reqtype,Request type,string,8,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+referralurl,Referrer URI,string,512,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+rcvdbyte,Received Bytes,uint64,20,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+proto,Protocol number,uint8,3,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+profile,Web Filter profile name,string,64,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+poluuid,,string,37,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+policytype,,string,24,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+policymode,,string,8,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+policyid,Policy ID,uint32,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+msg,Log message,string,512,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+logid,Log ID,string,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+level,Log Level,string,11,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+httpmethod,,string,20,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+hostname,The host name of a URL,string,256,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+group,User group name,string,512,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+forwardedfor,X-Forwarded-For HTTP header,string,128,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+fctuid,FortiClient UID,string,32,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+eventtype,Web Filter event type,string,32,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+eventtime,Web Filter event time,uint64,20,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+dstuuid,,string,37,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+dstuser,,string,256,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+dstport,Destination Port,uint16,5,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+dstip,Destination IP,ip,39,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+dstintf,Destination Interface,string,32,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+dstcountry,,string,64,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+dstauthserver,,string,64,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+direction,Direction of the web traffic,string,8,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+devid,Device ID,string,16,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+date,Date,string,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+crscore,Client Reputation Score,uint32,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+crlevel,Client Reputation level,string,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+craction,Client Reputation Action,uint32,10,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+authserver,Authentication server for the user,string,64,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,12561 - LOG_ID_URL_WISP_REDIR,12561,LOG_ID_URL_WISP_REDIR,URL blocked with redirect message by Websense service,Webfilter,urlfilter,Warning,7.4.8

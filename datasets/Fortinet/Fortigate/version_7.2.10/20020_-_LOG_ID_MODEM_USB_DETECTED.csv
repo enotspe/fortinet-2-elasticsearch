@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+time,Time,string,8,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+logid,Log ID,string,10,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+type,Log Type,string,16,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+subtype,Log Subtype,string,20,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+level,Log Level,string,11,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+devid,Device ID,string,16,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+vd,Virtual Domain Name,string,32,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+eventtime,Event time,uint64,20,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+tz,Time zone,string,5,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+logdesc,Log Description,string,4096,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10
+msg,Log Message,string,4096,20020 - LOG_ID_MODEM_USB_DETECTED,20020,LOG_ID_MODEM_USB_DETECTED,USB modem detected,Event,system,Warning,7.2.10

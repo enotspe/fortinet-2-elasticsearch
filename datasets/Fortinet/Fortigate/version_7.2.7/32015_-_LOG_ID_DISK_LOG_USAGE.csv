@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+time,Time,string,8,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+logid,Log ID,string,10,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+type,Log Type,string,16,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+subtype,Log Subtype,string,20,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+level,Log Level,string,11,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+devid,Device ID,string,16,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+vd,Virtual Domain Name,string,32,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+eventtime,Event time,uint64,20,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+tz,Time zone,string,5,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+logdesc,Log Description,string,4096,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7
+msg,Log Message,string,4096,32015 - LOG_ID_DISK_LOG_USAGE,32015,LOG_ID_DISK_LOG_USAGE,Log disk full,Event,system,Warning,7.2.7

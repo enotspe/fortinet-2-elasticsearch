@@ -1,0 +1,25 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+dst_host,Destination Host,string,64,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+rcvdbyte,Received Bytes,uint64,20,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+sentbyte,Bytes Sent,uint64,20,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+duration,Duration,uint32,10,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+reason,Reason,string,256,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+srccountry,,string,64,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+msg,Log Message,string,4096,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+group,User group Name,string,512,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+user,User name of authenticated user,string,256,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+remip,IPsec VPN remote gateway IP address,ip,39,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+tunneltype,IPsec VPN tunnel type,string,64,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+tunnelid,IPsec VPN tunnel ID,uint32,10,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+action,Policy Action,string,65,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+logdesc,Log Description,string,4096,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+tz,Time zone,string,5,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+eventtime,Event time,uint64,20,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+vd,Virtual Domain Name,string,32,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+devid,Device ID,string,16,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+level,Log Level,string,11,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+subtype,Log Subtype,string,20,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+type,Log Type,string,16,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+logid,Log ID,string,10,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+time,Time,string,8,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2
+date,Date,string,10,39425 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,39425,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_DOWN,SSL VPN tunnel down,Event,vpn,Information,7.6.2

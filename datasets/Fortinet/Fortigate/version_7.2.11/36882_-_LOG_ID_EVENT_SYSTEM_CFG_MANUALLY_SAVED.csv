@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+ui,User Interface,string,64,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+user,User name of authenticated user,string,256,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+logdesc,Log Description,string,4096,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+tz,Time zone,string,5,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+eventtime,Event time,uint64,20,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+vd,Virtual Domain Name,string,32,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+devid,Device ID,string,16,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+level,Log Level,string,11,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+subtype,Log Subtype,string,20,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+type,Log Type,string,16,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+logid,Log ID,string,10,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+time,Time,string,8,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11
+date,Date,string,10,36882 - LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,36882,LOG_ID_EVENT_SYSTEM_CFG_MANUALLY_SAVED,Configuration manually saved,Event,system,Notice,7.2.11

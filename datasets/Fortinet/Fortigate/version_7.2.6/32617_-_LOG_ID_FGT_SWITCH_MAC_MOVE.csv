@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+time,,string,8,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+logid,,string,10,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+type,,string,16,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+subtype,,string,20,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+level,,string,11,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+devid,,string,16,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+vd,,string,32,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+eventtime,,uint64,20,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+tz,,string,5,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+logdesc,,string,4096,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+user,,string,256,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+ui,,string,64,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+msg,,string,4096,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+sn,,string,64,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6
+name,,string,128,32617 - LOG_ID_FGT_SWITCH_MAC_MOVE,32617,LOG_ID_FGT_SWITCH_MAC_MOVE,FortiSwitch MAC move,Event,switch-controller,Information,7.2.6

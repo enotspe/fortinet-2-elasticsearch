@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+logdesc,Log Description,string,4096,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+tz,Time zone,string,5,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+eventtime,Event time,uint64,20,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+vd,Virtual Domain Name,string,32,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+devid,Device ID,string,16,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+level,Log Level,string,11,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+subtype,Log Subtype,string,20,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+type,Log Type,string,16,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+logid,Log ID,string,10,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+time,Time,string,8,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4
+date,Date,string,10,46524 - LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,46524,LOG_ID_INTERNAL_LTE_MODEM_SIM_SWITCH_DATA_PLAN,LTE modem active SIM card switched: data plan reached,Event,system,Information,7.6.4

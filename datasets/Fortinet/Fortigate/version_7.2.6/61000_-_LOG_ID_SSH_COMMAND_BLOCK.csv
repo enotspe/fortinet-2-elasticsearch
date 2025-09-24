@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the ssh-channel:
+ passthrough - channel is allowed
+ blocked - channel is blocked",string,17,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+channeltype,"Type of Channel:
+ x11, shell, exec, tcp-fprward, tun-forward, sftp. scp",string,15,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+command,Shell command,string,256,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+date,Date,string,10,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+devid,Device ID,string,16,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+direction,Direction of session,string,4096,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+dstcountry,,string,64,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+dstintf,Destination Interface,string,32,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+dstip,Destination IP,ip,39,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+dstport,Destination Port,uint16,5,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+dstuser,,string,256,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+dstuuid,,string,37,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+eventtime,Event time,uint64,20,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+eventtype,Event Type,string,32,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+fctuid,FortiClient UID,string,32,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+group,Group name for authentication,string,512,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+hostkeystatus,,string,15,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+level,Log level,string,11,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+logid,Log ID,string,10,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+login,SSH login Name,string,128,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+policyid,Policy ID,uint32,10,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+policytype,,string,24,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+profile,Full profile name,string,64,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+proto,Protocol number,uint8,3,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+sessionid,Session ID,uint32,10,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+severity,Severity level of shell command,string,8,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+srccountry,,string,64,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+srcdomain,,string,255,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+srcintf,Source Interface,string,32,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+srcip,Source IP,ip,39,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+srcport,Source Port,uint16,5,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+srcuuid,,string,37,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+subtype,Log subtype,string,20,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+time,Time,string,8,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+type,Log type,string,16,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+tz,Time zone,string,5,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+unauthuser,Unauthenticated User,string,66,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+unauthusersource,Unauthenticated User Source,string,66,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+user,User name for authentication,string,256,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6
+vd,Virtual Domain Name,string,32,61000 - LOG_ID_SSH_COMMAND_BLOCK,61000,LOG_ID_SSH_COMMAND_BLOCK,SSH shell command is blocked,SSH,ssh-command,Warning,7.2.6

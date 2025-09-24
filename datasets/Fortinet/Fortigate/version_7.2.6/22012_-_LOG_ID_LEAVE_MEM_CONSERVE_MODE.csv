@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+time,Time,string,8,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+logid,Log ID,string,10,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+type,Log Type,string,16,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+subtype,Log Subtype,string,20,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+level,Log Level,string,11,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+devid,Device ID,string,16,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+vd,Virtual Domain Name,string,32,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+eventtime,Event time,uint64,20,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+tz,Time zone,string,5,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+logdesc,Log Description,string,4096,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+msg,Log Message,string,4096,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+service,Name of Service,string,64,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+conserve,Flag for Conserve Mode,string,32,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+total,Total,uint32,10,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+used,Number of Used IPs,uint32,10,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+red,,string,32,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6
+green,Green threshold for conserve mode,string,32,22012 - LOG_ID_LEAVE_MEM_CONSERVE_MODE,22012,LOG_ID_LEAVE_MEM_CONSERVE_MODE,Memory conserve mode exited,Event,system,Critical,7.2.6

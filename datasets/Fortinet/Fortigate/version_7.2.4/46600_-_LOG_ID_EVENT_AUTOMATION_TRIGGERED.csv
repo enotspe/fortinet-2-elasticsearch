@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+time,Time,string,8,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+logid,Log ID,string,10,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+type,Log Type,string,16,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+subtype,Log Subtype,string,20,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+level,Log Level,string,11,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+devid,Device ID,string,16,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+vd,Virtual Domain Name,string,32,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+eventtime,Event time,uint64,20,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+tz,Time zone,string,5,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+logdesc,Log Description,string,4096,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+msg,Log Message,string,4096,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+stitch,Automation stitch name,string,36,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+trigger,Automation trigger name,string,36,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+stitchaction,,string,256,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4
+from,Sender Email Address for Notification,string,128,46600 - LOG_ID_EVENT_AUTOMATION_TRIGGERED,46600,LOG_ID_EVENT_AUTOMATION_TRIGGERED,Automation stitch triggered,Event,system,Notice,7.2.4

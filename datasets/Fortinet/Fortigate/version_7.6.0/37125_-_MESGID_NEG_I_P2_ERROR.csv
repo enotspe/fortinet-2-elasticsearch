@@ -1,0 +1,31 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+time,Time,string,8,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+logid,Log ID,string,10,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+type,Log Type,string,16,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+subtype,Log Subtype,string,20,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+level,Log Level,string,11,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+devid,Device ID,string,16,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+vd,Virtual Domain Name,string,32,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+eventtime,Event time,uint64,20,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+tz,Time zone,string,5,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+logdesc,Log Description,string,4096,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+action,Policy Action,string,65,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+remip,IPsec VPN remote gateway IP address,ip,39,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+user,User name of authenticated user,string,256,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+group,User group Name,string,512,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+msg,Log Message,string,4096,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+locip,IPsec VPN local gateway IP address,ip,39,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+remport,Remote Port,uint16,5,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+locport,Local Port,uint16,5,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+outintf,IPsec VPN binding interface,string,32,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+cookies,Cookie,string,64,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+useralt,,string,256,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+xauthuser,IPsec VPN Xauth user name,string,256,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+xauthgroup,IPsec VPN Xauth user group name,string,128,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+vpntunnel,IPsec VPN Tunnel Name,string,128,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+status,Status,string,23,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+fctuid,,string,32,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+advpnsc,,uint8,3,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0
+reason,Reason,string,256,37125 - MESGID_NEG_I_P2_ERROR,37125,MESGID_NEG_I_P2_ERROR,IPsec phase 2 error,Event,vpn,Error,7.6.0

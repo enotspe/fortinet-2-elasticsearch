@@ -1,0 +1,55 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Security action performed by DNS filter,string,16,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+botnetdomain,Botnet domain name,string,256,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+botnetip,Botnet IP address,ip,39,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+cat,DNS category ID,uint8,3,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+catdesc,DNS category description,string,64,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+date,Date,string,10,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+devid,Device ID,string,16,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+domainfilteridx,Domain Filter Index,uint8,3,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+domainfilterlist,Domain Filter List,string,512,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+dstcountry,,string,64,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+dstintf,Destination Interface,string,32,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+dstintfrole,Destination Interface Role,string,10,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+dstip,Destination IP,ip,39,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+dstport,Destination Port,uint16,5,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+dstuser,,string,256,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+error,DNS filter service error message,string,256,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+eventtime,Event Timestamp,uint64,20,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+eventtype,DNS Type (DNS query/DNS response),string,32,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+exchange,Mail Exchanges from DNS response answer section,string,256,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+fctuid,FortiClient ID,string,32,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+group,User group name,string,512,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+ipaddr,IP addresses from DNS response answer section,string,512,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+level,Log Level,string,11,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+logid,Log ID,string,10,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+msg,Log message,string,512,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+policyid,Policy ID,uint32,10,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+policytype,,string,24,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+poluuid,,string,37,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+profile,Profile name for DNS filter,string,64,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+proto,Protocol number,uint8,3,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+qclass,Query class,string,32,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+qname,Query domain name,string,256,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+qtype,Query type description,string,32,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+qtypeval,Query Type Value,uint16,5,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+rcode,,uint8,3,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+sessionid,Session ID,uint32,10,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+srccountry,,string,64,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+srcdomain,,string,255,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+srcintf,Source Interface,string,32,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+srcintfrole,Source Interface Role,string,10,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+srcip,Source IP,ip,39,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+srcmac,MAC address associated with the Source IP,string,17,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+srcport,Source Port,uint16,5,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+sscname,Safe Search CNAME,string,256,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+subtype,Log Subtype,string,20,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+time,Time,string,8,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+translationid,,uint32,10,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+type,Log Type,string,16,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+tz,Time zone,string,5,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+unauthuser,Unauthenticated User,string,66,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+unauthusersource,Unauthenticated User Source,string,66,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+user,User name,string,256,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+vd,Virtual Domain Name,string,32,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3
+xid,Transaction ID,uint16,5,54802 - LOG_ID_DNS_FTGD_CAT_ALLOW,54802,LOG_ID_DNS_FTGD_CAT_ALLOW,Domain is monitored,DNS,dns-response,Notice,7.4.3

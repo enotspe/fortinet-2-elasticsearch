@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+logdesc,Log Description,string,4096,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+tz,Time zone,string,5,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+eventtime,Event time,uint64,20,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+vd,Virtual Domain Name,string,32,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+devid,Device ID,string,16,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+level,Log Level,string,11,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+subtype,Log Subtype,string,20,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+type,Log Type,string,16,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+logid,Log ID,string,10,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+time,Time,string,8,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11
+date,Date,string,10,20202 - LOG_ID_DISK_FORMAT_ERROR,20202,LOG_ID_DISK_FORMAT_ERROR,Disk partitioning or formatting Error,Event,system,Warning,7.2.11

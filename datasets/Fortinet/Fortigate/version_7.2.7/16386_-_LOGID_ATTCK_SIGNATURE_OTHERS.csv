@@ -1,0 +1,65 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"Security action performed by IPS:
+ detected - Attack is detected , but NOT blocked (similar to monitor)
+ dropped - Silent packet blocked
+ reset - Blocked and respond with Reset
+ reset_client - Blocked and reset sent to the client
+ reset_server - Blocked and reset sent to the server
+ drop_session - Silent block
+ pass_session - Session allowed
+ clear_session - Session was removed /closed",string,16,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+attack,Attack Name,string,256,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+attackcontext,The trigger patterns and the packet data with base64 encoding,string,2048,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+attackcontextid,Attack context ID / total,string,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+attackid,Attack ID,uint32,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+authserver,Authentication server for the user,string,64,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+craction,Action performed by Threat Weight,uint32,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+crlevel,Client Reputation Level,string,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+crscore,Client Reputation Score,uint32,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+date,Date,string,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+devid,Deivce ID,string,16,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+direction,Message/packets direction,string,8,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+dstauthserver,,string,64,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+dstcountry,,string,64,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+dstintf,Destination Interface,string,64,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+dstip,Destination IP,ip,39,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+dstuser,,string,256,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+eventtime,Time when detection occured,uint64,20,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+eventtype,IPS Event Type,string,32,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+fctuid,FortiClient UID,string,32,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+forwardedfor,X-Forwarded-For HTTP header,string,128,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+group,User group name,string,512,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+incidentserialno,Incident serial number,uint32,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+level,Log Level,string,11,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+logid,Log ID,string,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+msg,Log message for the attack,string,518,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+pdstport,,uint16,5,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+policyid,Policy ID,uint32,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+policymode,,string,8,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+policytype,,string,24,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+poluuid,,string,37,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+profile,Profile name for IPS,string,64,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+proto,Protocol number,uint8,3,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+psrcport,,uint16,5,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,1024,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+rawdataid,,string,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+ref,URL of the FortiGuard IPS database entry for the attack.,string,4096,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+service,Service name,string,80,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+sessionid,Session ID,uint32,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+severity,Severity of the attack,string,8,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+srccountry,Country name for Source IP,string,64,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+srcdomain,,string,255,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+srcintf,Source Interface,string,64,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+srcip,Source IP,ip,39,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+subtype,Log Subtype,string,20,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+time,Time,string,8,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+trueclntip,True-Client-IP HTTP header,ip,39,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+type,Log type,string,16,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+tz,,string,5,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+unauthuser,Unauthenticated user,string,66,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+unauthusersource,Unauthenticated user source,string,66,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+user,User name,string,256,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+vd,Virtual domain name,string,32,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7
+vrf,Virtual router forwarding,uint8,3,16386 - LOGID_ATTCK_SIGNATURE_OTHERS,16386,LOGID_ATTCK_SIGNATURE_OTHERS,Attack detected by other signature,IPS,signature,Alert,7.2.7

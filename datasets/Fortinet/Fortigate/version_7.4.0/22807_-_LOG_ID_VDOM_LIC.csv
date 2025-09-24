@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+time,Time,string,8,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+logid,Log ID,string,10,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+type,Log Type,string,16,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+subtype,Log Subtype,string,20,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+level,Log Level,string,11,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+devid,Device ID,string,16,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+vd,Virtual Domain Name,string,32,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+eventtime,Event time,uint64,20,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+tz,Time zone,string,5,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+logdesc,Log Description,string,4096,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+status,Status,string,23,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+msg,Log Message,string,4096,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+service,Name of Service,string,64,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0
+sn,Serial Number,string,64,22807 - LOG_ID_VDOM_LIC,22807,LOG_ID_VDOM_LIC,VDOM license status changed,Event,system,Critical,7.4.0

@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+peer,,string,36,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+authgrp,,string,36,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+serial,,uint32,10,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+msg,Log Message,string,4096,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+dstport,Destination Protocol Port,uint16,5,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+dstip,Destination IP,ip,39,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+srcport,Source port,uint16,5,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+srcip,Source IP,ip,39,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+policyid,Policy ID,uint32,10,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+logdesc,Log Description,string,4096,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+tz,Time zone,string,5,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+eventtime,Event time,uint64,20,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+vd,Virtual Domain Name,string,32,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+devid,Device ID,string,16,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+level,Log Level,string,11,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+subtype,Log Subtype,string,20,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+type,Log Type,string,16,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+logid,Log ID,string,10,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+time,Time,string,8,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2
+date,Date,string,10,48102 - LOG_ID_WANOPT_AUTH_FAIL_OTH,48102,LOG_ID_WANOPT_AUTH_FAIL_OTH,WAN Optimization peer authentication failed,Event,wanopt,Error,7.6.2

@@ -1,0 +1,29 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+phone,Phone,string,64,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+locip,Local IP,ip,39,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+reason,"Reason. Ex: reason=""unrecognized-form""",string,128,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+status,"Status. Ex: status=""blocked"" , status= ""start""",string,23,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+action,"Action. Eg. block , allow",string,15,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+kind,"Kind of service. Typically it will have value ""call""",string,10,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+voip_proto,SIP/SCCP/MGCP/h323,string,4,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+profile,Name or number of associated VOIP profile,string,64,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+policy_id,Name of the firewall policy governing the traffic which caused the log message.,uint32,10,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+src_int,"Name of the source interface. Ex: src_int=""port1""",string,16,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+proto,Protocol number. Ex: for SIP it will be proto=17,uint8,3,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+dst_port,Destination port,uint16,5,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+dstip,Destination IP,ip,39,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+src_port,Port number of the traffic's origin. Ex: srcport=40772,uint16,5,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+srcip,IP address of the traffic's origin. Ex: srcip=10.1.100.155,ip,39,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+event_id,Unique event ID,uint32,10,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+epoch,Epoch,uint32,10,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+session_id,Session ID. Ex: session_id=232,uint32,10,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+tz,Time zone,string,5,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+eventtime,Time when event occured,uint64,20,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+vd,Name of the virtual domain in which the log message was recorded.,string,32,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+devid,Serial number of the device for the traffic's origin.,string,16,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+level,Log Level,string,11,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+subtype,Subtype,string,20,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+type,"Type of log. Ex: type=""utm""",string,16,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+logid,Unique Log ID,string,10,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+time,Hour clock when the log message was recorded.,string,8,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12
+date,"Day, month, and year when the log message was recorded.",string,10,44037 - LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,44037,LOGID_EVENT_VOIP_SCCP_CALL_BLOCK,VoIP SCCP call blocked,VoIP,voip,Information,7.2.12

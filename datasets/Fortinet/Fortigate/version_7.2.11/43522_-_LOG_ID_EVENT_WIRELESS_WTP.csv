@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+reason,Reason,string,256,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+snmeshparent,SN of the mesh parent,string,36,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+meshmode,Mesh mode,string,19,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+ip,,ip,39,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+profile,Profile Name,string,64,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+ap,Access Point,string,36,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+sn,Serial Number,string,64,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+msg,Log Message,string,4096,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+action,Policy Action,string,65,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+logdesc,Log Description,string,4096,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+tz,Time zone,string,5,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+eventtime,Event time,uint64,20,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+vd,Virtual Domain Name,string,32,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+devid,Device ID,string,16,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+level,Log Level,string,11,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+subtype,Log Subtype,string,20,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+type,Log Type,string,16,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+logid,Log ID,string,10,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+time,Time,string,8,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11
+date,Date,string,10,43522 - LOG_ID_EVENT_WIRELESS_WTP,43522,LOG_ID_EVENT_WIRELESS_WTP,Physical AP activity,Event,wireless,Notice,7.2.11

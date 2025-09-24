@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+time,Time,string,8,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+logid,Log ID,string,10,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+type,Log Type,string,16,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+subtype,Log Subtype,string,20,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+level,Log Level,string,11,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+devid,Device ID,string,16,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+vd,Virtual Domain Name,string,32,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+eventtime,Event time,uint64,20,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+tz,Time zone,string,5,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+logdesc,Log Description,string,4096,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1
+msg,Log Message,string,4096,20045 - LOG_ID_RAD_PREFIX_TOO_LONG,20045,LOG_ID_RAD_PREFIX_TOO_LONG,RADVD invalid prefix length,Event,system,Critical,7.2.1

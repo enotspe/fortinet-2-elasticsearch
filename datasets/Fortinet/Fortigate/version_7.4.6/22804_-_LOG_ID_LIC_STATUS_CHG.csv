@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+sn,Serial Number,string,64,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+service,Name of Service,string,64,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+msg,Log Message,string,4096,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+status,Status,string,23,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+logdesc,Log Description,string,4096,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+tz,Time zone,string,5,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+eventtime,Event time,uint64,20,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+vd,Virtual Domain Name,string,32,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+devid,Device ID,string,16,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+level,Log Level,string,11,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+subtype,Log Subtype,string,20,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+type,Log Type,string,16,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+logid,Log ID,string,10,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+time,Time,string,8,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6
+date,Date,string,10,22804 - LOG_ID_LIC_STATUS_CHG,22804,LOG_ID_LIC_STATUS_CHG,License status changed,Event,system,Critical,7.4.6

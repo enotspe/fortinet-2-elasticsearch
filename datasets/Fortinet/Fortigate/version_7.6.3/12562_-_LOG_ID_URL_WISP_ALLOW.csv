@@ -1,0 +1,63 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint16,3,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+vd,Virtual domain name,string,32,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+user,User name,string,256,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+url,The URL address,string,512,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+unauthusersource,Unauthenticated user source,string,66,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+unauthuser,Unauthenticated user,string,66,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+tz,Time Zone,string,5,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+type,Log type,string,16,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+trueclntip,True-Client-IP HTTP header,ip,39,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+time,Time,string,8,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+subtype,Log subtype,string,20,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srcuuid,,string,37,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srcport,Source Port,uint16,5,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srcname,,string,64,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srcmac,,string,17,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srcip,Source IP,ip,39,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srcintf,Source Interface,string,32,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srcdomain,,string,255,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+srccountry,,string,64,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+sessionid,Session ID,uint32,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+service,Service name,string,36,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+sentbyte,Sent Bytes,uint64,20,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+reqtype,Request type,string,8,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+referralurl,Referrer URI,string,512,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+rcvdbyte,Received Bytes,uint64,20,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+proto,Protocol number,uint8,3,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+profile,Web Filter profile name,string,64,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+poluuid,,string,37,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+policytype,,string,24,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+policymode,,string,8,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+policyid,Policy ID,uint32,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+msg,Log message,string,512,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+logid,Log ID,string,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+level,Log Level,string,11,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+httpmethod,,string,20,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+hostname,The host name of a URL,string,256,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+group,User group name,string,512,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+forwardedfor,X-Forwarded-For HTTP header,string,128,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+fctuid,FortiClient UID,string,32,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+eventtype,Web Filter event type,string,32,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+eventtime,Web Filter event time,uint64,20,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+dstuuid,,string,37,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+dstuser,,string,256,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+dstport,Destination Port,uint16,5,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+dstip,Destination IP,ip,39,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+dstintf,Destination Interface,string,32,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+dstcountry,,string,64,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+dstauthserver,,string,64,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+direction,Direction of the web traffic,string,8,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+devid,Device ID,string,16,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+date,Date,string,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+crscore,Client Reputation Score,uint32,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+crlevel,Client Reputation level,string,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+craction,Client Reputation Action,uint32,10,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+authserver,Authentication server for the user,string,64,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,12562 - LOG_ID_URL_WISP_ALLOW,12562,LOG_ID_URL_WISP_ALLOW,URL allowed by Websense service,Webfilter,urlfilter,Information,7.6.3

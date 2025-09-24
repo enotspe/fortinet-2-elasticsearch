@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+time,Time,string,8,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+logid,Log ID,string,10,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+type,Log Type,string,16,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+subtype,Log Subtype,string,20,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+level,Log Level,string,11,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+devid,Device ID,string,16,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+vd,Virtual Domain Name,string,32,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+eventtime,Event time,uint64,20,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+tz,Time zone,string,5,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+logdesc,Log Description,string,4096,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+action,Policy Action,string,65,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+status,Status,string,23,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+msg,Log Message,string,4096,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+server,Server IP Address,string,64,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+port,Port Number,uint16,5,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8
+vip,Virtual IP,string,64,46000 - LOG_ID_VIP_REAL_SVR_ENA,46000,LOG_ID_VIP_REAL_SVR_ENA,VIP real server enabled,Event,system,Notice,7.2.8

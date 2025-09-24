@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+time,Time,string,8,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+logid,Log ID,string,10,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+type,Log Type,string,16,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+subtype,Log Subtype,string,20,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+level,Log Level,string,11,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+devid,Device ID,string,16,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+vd,Virtual Domain Name,string,32,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+eventtime,Event time,uint64,20,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+tz,Time zone,string,5,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+logdesc,Log Description,string,4096,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+action,Policy Action,string,65,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+tunnelid,IPsec VPN tunnel ID,uint32,10,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+tunneltype,IPsec VPN tunnel type,string,64,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+remip,IPsec VPN remote gateway IP address,ip,39,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+tunnelip,IPsec VPN tunnel IP address,ip,39,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+user,User name of authenticated user,string,256,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+group,User group Name,string,512,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3
+msg,Log Message,string,4096,40001 - LOG_ID_PPTP_TUNNEL_UP,40001,LOG_ID_PPTP_TUNNEL_UP,PPTP tunnel up,Event,vpn,Information,7.4.3

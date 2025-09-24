@@ -1,0 +1,171 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+accessctrl,,string,80,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+accessproxy,,string,80,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+ap,Access Point name,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+app,Application name,string,96,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+appact,The security action from app control,string,16,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+appcat,Application category,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+appid,Application ID,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+applist,Application Control profile (name),string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+apprisk,Application Risk Level,string,16,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+apsn,Access Point serial number,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+authserver,Remote Authentication server,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+centralnatid,central-snat-map id,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+channel,WiFi Channel,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+clientdeviceid,,string,80,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+clientdevicemanageable,,string,16,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+clientdeviceowner,,string,80,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+clientdevicetags,,string,512,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+comment,Customized policy comment,string,1024,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+craction,Action performed by Threat Weight,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+crlevel,Threat Weight level,string,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+crscore,Threat Weight score,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+date,Date,string,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+devid,Device Serial Number,string,16,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+devtype,Device Type,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstauthserver,,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstcity,,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstcountry,Country name for the destination IP,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstdevtype,Destination Device Type,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstfamily,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dsthwvendor,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dsthwversion,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstinetsvc,Internet service name for the destination,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstintf,Destination Interface,string,32,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstip,Destination IP Address,ip,39,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstmac,Destination Mac Address,string,17,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstname,Destination name,string,256,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstosname,Destination OS name,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstport,Destination Protocol Port Number,uint16,5,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstregion,,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstreputation,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstserver,Destination Server,uint8,3,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstssid,Destination SSID,string,33,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstswversion,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstthreatfeed,,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstunauthuser,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstunauthusersource,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstuser,,string,256,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+dstuuid,UUID of the Destination Address Object,string,37,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+duration,Duration of the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+emsconnection,,string,8,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+eventtime,Epoch time in nanoseconds,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+fctuid,FortiClient UID,string,32,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+gatewayid,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+group,User group name,string,512,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+identifier,,uint16,5,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+lanin,LAN incoming traffic in bytes,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+lanout,LAN outgoing traffic in bytes,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+level,Log Level,string,11,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+logid,Log ID,string,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+masterdstmac,Destination master MAC address,string,17,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+msg,Log message,string,512,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+osname,Name of the device's OS,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+pdstport,,uint16,5,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+policyid,Firewall Policy ID,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+policymode,,string,8,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+policyname,Policy name,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+policytype,Policy type,string,24,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+poluuid,UUID of the Firewall Policy,string,37,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+proto,Protocol Number,uint8,3,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+proxyapptype,,string,9,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+psrcport,,uint16,5,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+radioband,Radio Band,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+rcvdbyte,Received Bytes,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+rcvddelta,Delta Received Bytes,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+rcvdpkt,Received Packets,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+replydstintf,,string,32,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+replysrcintf,,string,32,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+saasname,,string,80,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+sentbyte,Sent Bytes,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+sentdelta,Delta Sent Bytes,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+sentpkt,Sent Packets,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+service,Name of Service,string,80,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+sessionid,Session ID,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+shaperperipname,Traffic shaper name (per IP),string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+shaperrcvdname,Traffic shaper name for received traffic,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+shapersentname,Traffic shaper name for sent traffic,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+shapingpolicyid,Shaping Policy ID,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+shapingpolicyname,,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+signal,,int8,4,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+snr,,int8,4,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srccity,,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srccountry,Country name for Source IP,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcdomain,,string,255,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcfamily,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srchwvendor,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srchwversion,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcinetsvc,Internet service name for the source,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcintf,Source interface name,string,32,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcip,Source IP address,ip,39,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcmac,MAC address associated with the Source IP,string,17,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcmacvendor,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcname,Source name,string,256,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcport,Source protocol port number,uint16,5,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcregion,,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcremote,,ip,39,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcreputation,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcserver,Source server,uint8,3,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcssid,Source SSID,string,33,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcswversion,,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcthreatfeed,,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+srcuuid,UUID of the Source Address Object,string,37,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+sslaction,Action taken by ssl-ssh-profile,string,26,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+subtype,Subtype of the traffic,string,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+time,Time,string,8,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+trandisp,NAT translation type,string,16,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+tranip,NAT Destination IP,ip,39,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+tranport,NAT Destination Port,uint16,5,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+transip,NAT Source IP,ip,39,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+transport,NAT Source Protocol Port,uint16,5,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+tunnelid,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+type,Log type,string,16,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+tz,Time zone,string,5,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+unauthuser,Unauthenticated user name,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+unauthusersource,The method used to detect unauthenticated user name,string,66,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+url,URL,string,512,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+user,User name,string,256,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+utmaction,Security action performed by UTM,string,32,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vd,Virtual domain name,string,32,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vip,,string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vpntype,The type of the VPN tunnel,string,14,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vrf,Virtual router forwarding,uint8,3,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vwlname,,string,36,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+wanin,WAN incoming traffic in bytes,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+wanoptapptype,WAN Optimization Application type,string,9,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+wanout,WAN outgoing traffic in bytes,uint64,20,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countapp,Number of App Ctrl logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countav,Number of AV logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countcifs,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countdlp,Number of DLP logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countdns,Number of DNS Query logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countemail,Number of Email logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countff,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+counticap,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countips,Number of IPS logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countsctpf,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countssh,Number of SSH logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countssl,,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countwaf,Number of WAF logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9
+countweb,Number of Web Filter logs associated with the session,uint32,10,22 - LOG_ID_TRAFFIC_UTM_CORRELATION,22,LOG_ID_TRAFFIC_UTM_CORRELATION,Forward traffic for UTM correlation,Traffic,forward,Notice,7.2.9

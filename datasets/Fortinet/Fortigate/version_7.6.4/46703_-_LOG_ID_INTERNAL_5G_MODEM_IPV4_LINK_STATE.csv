@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+modem,,string,3,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+state,State,string,64,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+msg,Log Message,string,4096,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+logdesc,Log Description,string,4096,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+tz,Time zone,string,5,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+eventtime,Event time,uint64,20,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+vd,Virtual Domain Name,string,32,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+devid,Device ID,string,16,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+level,Log Level,string,11,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+subtype,Log Subtype,string,20,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+type,Log Type,string,16,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+logid,Log ID,string,10,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+time,Time,string,8,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4
+date,Date,string,10,46703 - LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,46703,LOG_ID_INTERNAL_5G_MODEM_IPV4_LINK_STATE,5G modem link state changed,Event,system,Information,7.6.4

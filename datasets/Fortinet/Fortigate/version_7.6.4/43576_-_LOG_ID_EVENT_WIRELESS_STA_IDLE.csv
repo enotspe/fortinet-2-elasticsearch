@@ -1,0 +1,33 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+mpsk,Multiple pre-shared keys,string,33,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+snr,,int8,4,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+srcip,Source IP,ip,39,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+authserver,Remote Authentication server,string,64,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+group,User group Name,string,512,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+user,User name of authenticated user,string,256,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+radioid,The operating radio ID,uint8,3,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+trafficmode,,string,8,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+vap,Virtual Access Point,string,36,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+reason,Reason,string,256,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+ap,Access Point,string,36,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+sn,Serial Number,string,64,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+stamac,The MAC address of wifi station,string,17,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+signal,The signal value of SSID or client,int8,4,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+encryption,The encryption type of detected rogue AP,string,12,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+security,Security,string,40,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+channel,Channel,uint8,3,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+radioband,The operating radio band,string,64,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+ssid,WiFi Service Set ID,string,33,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+msg,Log Message,string,4096,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+action,Policy Action,string,65,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+logdesc,Log Description,string,4096,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+tz,Time zone,string,5,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+eventtime,Event time,uint64,20,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+vd,Virtual Domain Name,string,32,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+devid,Device ID,string,16,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+level,Log Level,string,11,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+subtype,Log Subtype,string,20,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+type,Log Type,string,16,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+logid,Log ID,string,10,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+time,Time,string,8,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4
+date,Date,string,10,43576 - LOG_ID_EVENT_WIRELESS_STA_IDLE,43576,LOG_ID_EVENT_WIRELESS_STA_IDLE,Wireless client idle,Event,wireless,Notice,7.6.4

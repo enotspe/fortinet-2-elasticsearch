@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+time,Time,string,8,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+logid,Log ID,string,10,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+type,Log Type,string,16,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+subtype,Log Subtype,string,20,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+level,Log Level,string,11,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+devid,Device ID,string,16,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+vd,Virtual Domain Name,string,32,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+eventtime,Event time,uint64,20,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+tz,Time zone,string,5,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+logdesc,Log Description,string,4096,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+action,Policy Action,string,65,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2
+msg,Log Message,string,4096,43612 - LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,43612,LOG_ID_EVENT_WIRELESS_SYS_AC_CFG_LOADED,Wireless controller configuration loaded,Event,wireless,Notice,7.4.2

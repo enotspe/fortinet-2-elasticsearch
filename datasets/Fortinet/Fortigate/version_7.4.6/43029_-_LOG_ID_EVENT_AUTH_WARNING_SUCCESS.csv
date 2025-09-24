@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+category,Log category,uint32,10,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+oldwprof,Old Web Filter Profile,string,64,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+expiry,FortiGuard override expiry timestamp,string,64,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+scope,FortiGuard Override Scope,string,16,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+initiator,Original login user name for Fortiguard override,string,64,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+dstip,Destination IP,ip,39,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+reason,Reason,string,256,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+srcip,Source IP,ip,39,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+msg,Log Message,string,4096,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+status,Status,string,23,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+logdesc,Log Description,string,4096,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+tz,Time zone,string,5,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+eventtime,Event time,uint64,20,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+vd,Virtual Domain Name,string,32,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+devid,Device ID,string,16,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+level,Log Level,string,11,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+subtype,Log Subtype,string,20,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+type,Log Type,string,16,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+logid,Log ID,string,10,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+time,Time,string,8,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6
+date,Date,string,10,43029 - LOG_ID_EVENT_AUTH_WARNING_SUCCESS,43029,LOG_ID_EVENT_AUTH_WARNING_SUCCESS,FortiGuard authentication override successful,Event,user,Notice,7.4.6

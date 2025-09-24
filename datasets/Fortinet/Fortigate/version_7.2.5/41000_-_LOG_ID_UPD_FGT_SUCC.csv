@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+time,Time,string,8,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+logid,Log ID,string,10,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+type,Log Type,string,16,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+subtype,Log Subtype,string,20,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+level,Log Level,string,11,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+devid,Device ID,string,16,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+vd,Virtual Domain Name,string,32,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+eventtime,Event time,uint64,20,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+tz,Time zone,string,5,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+logdesc,Log Description,string,4096,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+status,Status,string,23,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5
+msg,Log Message,string,4096,41000 - LOG_ID_UPD_FGT_SUCC,41000,LOG_ID_UPD_FGT_SUCC,FortiGate update succeeded,Event,system,Notice,7.2.5

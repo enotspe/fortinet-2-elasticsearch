@@ -1,0 +1,24 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+dir,Direction,string,8,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+dst_int,Destination Interface,string,64,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+src_int,Source Interface,string,64,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+session_id,Session ID,uint32,10,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+file,Report file full path,string,256,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+dstport,Destination Protocol Port,uint16,5,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+dstip,Destination IP,ip,39,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+srcport,Source port,uint16,5,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+srcip,Source IP,ip,39,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+proto,Protocol Number,uint8,3,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+service,Name of Service,string,64,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+msg,Log Message,string,4096,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+logdesc,Log Description,string,4096,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+tz,Time zone,string,5,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+eventtime,Event time,uint64,20,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+vd,Virtual Domain Name,string,32,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+devid,Device ID,string,16,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+level,Log Level,string,11,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+subtype,Log Subtype,string,20,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+type,Log Type,string,16,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+logid,Log ID,string,10,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+time,Time,string,8,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2
+date,Date,string,10,22810 - LOG_ID_SCANUNIT_ERROR_BLOCK,22810,LOG_ID_SCANUNIT_ERROR_BLOCK,Scan error - traffic blocked,Event,system,Warning,7.6.2

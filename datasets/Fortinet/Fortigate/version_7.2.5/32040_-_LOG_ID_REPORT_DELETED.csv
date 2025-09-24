@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+time,Time,string,8,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+logid,Log ID,string,10,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+type,Log Type,string,16,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+subtype,Log Subtype,string,20,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+level,Log Level,string,11,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+devid,Device ID,string,16,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+vd,Virtual Domain Name,string,32,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+eventtime,Event time,uint64,20,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+tz,Time zone,string,5,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+logdesc,Log Description,string,4096,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+action,Policy Action,string,65,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5
+msg,Log Message,string,4096,32040 - LOG_ID_REPORT_DELETED,32040,LOG_ID_REPORT_DELETED,Report deleted,Event,system,Information,7.2.5

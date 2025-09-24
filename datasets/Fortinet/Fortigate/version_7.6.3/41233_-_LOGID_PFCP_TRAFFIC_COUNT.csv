@@ -1,0 +1,31 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+u-pkts,User Plane Packets,uint64,20,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+u-bytes,User Plane Data Bytes,uint64,20,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+sessionid,,uint32,10,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+duration,Tunnel duration,uint32,10,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+c-pkts,Control Plane Packets,uint64,20,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+c-bytes,Control Plane Data Bytes,uint64,20,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+version,Version,uint32,64,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+vd,Virtual Domain Name,string,32,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+ufseidaddr,,ip,39,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+ufseid,,string,20,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+tz,Time zone,string,5,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+type,Log Type,string,16,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+time,Time,string,8,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+subtype,Log Subtype,string,20,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+status,Status,string,23,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+profile,Profile Name,string,64,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+nai,,string,128,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+msisdn,Mobile Subscriber Integrated Services Digital Network-Number (telephone # to a SIM card),string,16,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+logid,Log ID,string,10,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+level,Log Level,string,11,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+imsi,International mobile subscriber ID,string,16,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+imei-sv,IMEI(International Mobile Equipment Identity) Software Version,string,32,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+eventtime,Event time line,uint64,20,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+endusraddress6,,ip,39,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+end-usr-address,End user IP Address,ip,39,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+devid,Device ID,string,16,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+date,Date,string,10,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+cfseidaddr,,ip,39,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+cfseid,,string,20,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3
+apn,Access Point Name,string,128,41233 - LOGID_PFCP_TRAFFIC_COUNT,41233,LOGID_PFCP_TRAFFIC_COUNT,Statistic summary information when the PFCP session is being torn down,GTP,pfcp-all,Information,7.6.3

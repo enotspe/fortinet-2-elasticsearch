@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+time,Time,string,8,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+logid,Log ID,string,10,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+type,Log Type,string,16,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+subtype,Log Subtype,string,20,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+level,Log Level,string,11,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+devid,Device ID,string,16,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+vd,Virtual Domain Name,string,32,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+eventtime,Event time,uint64,20,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+tz,Time zone,string,5,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+logdesc,Log Description,string,4096,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+action,Policy Action,string,65,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+msg,Log Message,string,4096,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+sn,Serial Number,string,64,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+ap,Access Point,string,36,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+profile,Profile Name,string,64,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+ip,,ip,39,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+meshmode,Mesh mode,string,19,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+snmeshparent,SN of the mesh parent,string,36,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10
+reason,Reason,string,256,43555 - LOG_ID_EVENT_WIRELESS_WTP_RESET,43555,LOG_ID_EVENT_WIRELESS_WTP_RESET,Physical AP reset,Event,wireless,Notice,7.2.10

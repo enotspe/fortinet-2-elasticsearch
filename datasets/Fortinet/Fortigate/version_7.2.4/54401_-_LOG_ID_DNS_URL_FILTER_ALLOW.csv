@@ -1,0 +1,55 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Security action performed by DNS filter,string,16,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+botnetdomain,Botnet domain name,string,256,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+botnetip,Botnet IP address,ip,39,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+cat,DNS category ID,uint8,3,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+catdesc,DNS category description,string,64,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+date,Date,string,10,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+devid,Device ID,string,16,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+domainfilteridx,Domain Filter Index,uint8,3,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+domainfilterlist,Domain Filter List,string,512,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+dstcountry,,string,64,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+dstintf,Destination Interface,string,32,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+dstintfrole,Destination Interface Role,string,10,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+dstip,Destination IP,ip,39,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+dstport,Destination Port,uint16,5,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+dstuser,,string,256,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+error,DNS filter service error message,string,256,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+eventtime,Event Timestamp,uint64,20,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+eventtype,DNS Type (DNS query/DNS response),string,32,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+exchange,Mail Exchanges from DNS response answer section,string,256,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+fctuid,FortiClient ID,string,32,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+group,User group name,string,512,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+ipaddr,IP addresses from DNS response answer section,string,512,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+level,Log Level,string,11,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+logid,Log ID,string,10,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+msg,Log message,string,512,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+policyid,Policy ID,uint32,10,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+policytype,,string,24,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+poluuid,,string,37,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+profile,Profile name for DNS filter,string,64,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+proto,Protocol number,uint8,3,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+qclass,Query class,string,32,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+qname,Query domain name,string,256,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+qtype,Query type description,string,32,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+qtypeval,Query Type Value,uint16,5,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+rcode,,uint8,3,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+sessionid,Session ID,uint32,10,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+srccountry,,string,64,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+srcdomain,,string,255,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+srcintf,Source Interface,string,32,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+srcintfrole,Source Interface Role,string,10,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+srcip,Source IP,ip,39,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+srcmac,MAC address associated with the Source IP,string,17,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+srcport,Source Port,uint16,5,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+sscname,Safe Search CNAME,string,256,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+subtype,Log Subtype,string,20,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+time,Time,string,8,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+translationid,,uint32,10,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+type,Log Type,string,16,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+tz,Time zone,string,5,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+unauthuser,Unauthenticated User,string,66,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+unauthusersource,Unauthenticated User Source,string,66,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+user,User name,string,256,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+vd,Virtual Domain Name,string,32,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4
+xid,Transaction ID,uint16,5,54401 - LOG_ID_DNS_URL_FILTER_ALLOW,54401,LOG_ID_DNS_URL_FILTER_ALLOW,Domain allowed because it is in the domain-filter list,DNS,dns-response,Information,7.2.4

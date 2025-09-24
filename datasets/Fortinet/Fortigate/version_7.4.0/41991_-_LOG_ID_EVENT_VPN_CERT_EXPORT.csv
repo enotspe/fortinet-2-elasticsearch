@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+time,Time,string,8,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+logid,Log ID,string,10,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+type,Log Type,string,16,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+subtype,Log Subtype,string,20,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+level,Log Level,string,11,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+devid,Device ID,string,16,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+vd,Virtual Domain Name,string,32,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+eventtime,Event time,uint64,20,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+tz,Time zone,string,5,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+logdesc,Log Description,string,4096,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+action,Policy Action,string,65,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+user,User name of authenticated user,string,256,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+msg,Log Message,string,4096,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+status,Status,string,23,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+ui,User Interface,string,64,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+name,Display Name of the Connection,string,128,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0
+cert-type,Certification type,string,6,41991 - LOG_ID_EVENT_VPN_CERT_EXPORT,41991,LOG_ID_EVENT_VPN_CERT_EXPORT,Certificate exported,Event,vpn,Information,7.4.0

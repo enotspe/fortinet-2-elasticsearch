@@ -1,0 +1,32 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+time,Time,string,8,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+logid,Log ID,string,10,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+type,Log Type,string,16,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+subtype,Log Subtype,string,20,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+level,Log Level,string,11,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+devid,Device ID,string,16,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+vd,Virtual Domain Name,string,32,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+eventtime,Event time,uint64,20,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+tz,Time zone,string,5,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+logdesc,Log Description,string,4096,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+eventtype,,string,32,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+healthcheck,,string,64,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+oldvalue,,string,32,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+newvalue,,string,32,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+interface,Interface,string,32,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+msg,Log Message,string,4096,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+status,Status,string,23,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+latency,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+jitter,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+packetloss,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+moscodec,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+mosvalue,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+inbandwidthavailable,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+outbandwidthavailable,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+bibandwidthavailable,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+inbandwidthused,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+outbandwidthused,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+bibandwidthused,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+slamap,,string,24,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0
+probeproto,Link Monitor Probe Protocol,string,16,22933 - LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,22933,LOG_ID_EVENT_VWL_SLA_INFO_NOTIF,SDWAN SLA notification,Event,sdwan,Notice,7.4.0

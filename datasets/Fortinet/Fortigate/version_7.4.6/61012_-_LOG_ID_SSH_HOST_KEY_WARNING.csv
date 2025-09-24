@@ -1,0 +1,47 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual Domain Name,string,32,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+user,User name for authentication,string,256,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+unauthusersource,Unauthenticated User Source,string,66,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+unauthuser,Unauthenticated User,string,66,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+tz,Time zone,string,5,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+type,Log type,string,16,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+time,Time,string,8,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+subtype,Log subtype,string,20,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+srcuuid,,string,37,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+srcport,Source Port,uint16,5,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+srcip,Source IP,ip,39,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+srcintf,Source Interface,string,32,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+srcdomain,,string,255,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+srccountry,,string,64,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+severity,Severity level of shell command,string,8,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+sessionid,Session ID,uint32,10,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+proto,Protocol number,uint8,3,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+profile,Full profile name,string,64,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+poluuid,,string,37,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+policytype,,string,24,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+policyid,Policy ID,uint32,10,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+login,SSH login Name,string,128,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+logid,Log ID,string,10,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+level,Log level,string,11,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+hostkeystatus,,string,15,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+group,Group name for authentication,string,512,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+fctuid,FortiClient UID,string,32,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+eventtype,Event Type,string,32,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+eventtime,Event time,uint64,20,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+dstuuid,,string,37,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+dstuser,,string,256,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+dstport,Destination Port,uint16,5,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+dstip,Destination IP,ip,39,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+dstintf,Destination Interface,string,32,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+dstcountry,,string,64,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+direction,Direction of session,string,4096,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+devid,Device ID,string,16,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+date,Date,string,10,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+command,Shell command,string,256,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+channeltype,"Type of Channel:
+ x11, shell, exec, tcp-fprward, tun-forward, sftp. scp",string,15,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6
+action,"The status of the ssh-channel:
+ passthrough - channel is allowed
+ blocked - channel is blocked",string,17,61012 - LOG_ID_SSH_HOST_KEY_WARNING,61012,LOG_ID_SSH_HOST_KEY_WARNING,"SSH connection is blocked, because host-key is not trust",SSH,ssh-hostkey,Warning,7.4.6

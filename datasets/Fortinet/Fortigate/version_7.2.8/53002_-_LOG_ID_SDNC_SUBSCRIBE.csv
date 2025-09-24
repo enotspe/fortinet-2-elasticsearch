@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+time,Time,string,8,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+logid,Log ID,string,10,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+type,Log Type,string,16,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+subtype,Log Subtype,string,20,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+level,Log Level,string,11,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+devid,Device ID,string,16,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+vd,Virtual Domain Name,string,32,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+eventtime,Event time,uint64,20,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+tz,Time zone,string,5,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+logdesc,Log Description,string,4096,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8
+msg,Log Message,string,4096,53002 - LOG_ID_SDNC_SUBSCRIBE,53002,LOG_ID_SDNC_SUBSCRIBE,Dynamic SDN address channel opened,Event,system,Information,7.2.8

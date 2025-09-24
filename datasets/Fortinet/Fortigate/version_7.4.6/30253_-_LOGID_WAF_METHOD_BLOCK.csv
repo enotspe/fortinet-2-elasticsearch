@@ -1,0 +1,53 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual Domain Name,string,32,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+user,User Name,string,256,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+url,URL,string,512,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+unauthusersource,Unauthenticated user source,string,66,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+unauthuser,Unauthenticated user,string,66,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+tz,Time zone,string,5,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+type,Log Type,string,16,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+time,Time,string,8,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+subtype,Log Subtype,string,20,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+srcuuid,,string,37,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+srcport,Source Port,uint16,5,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+srcip,Source IP Address,ip,39,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+srcintf,Source Interface,string,32,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+srcdomain,,string,255,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+srccountry,,string,64,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+severity,Severity,string,6,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+sessionid,Session ID,uint32,10,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+service,Service name,string,5,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+referralurl,,string,512,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+rawdata,Raw Data,string,20480,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+ratemethod,,string,4096,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+proto,Protocol,uint8,3,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+profile,Full profile name,string,64,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+poluuid,,string,37,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+policytype,,string,24,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+policyid,Policy ID,uint32,10,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+name,Method or custom signature name,string,64,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+msg,Log Message,string,4096,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+logid,Log ID,string,10,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+level,Log Level,string,11,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+httpmethod,,string,20,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+group,User Group Name,string,512,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+fctuid,FortiClient UID,string,32,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+eventtype,Event Type,string,32,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+eventtime,"Event Time, Time when WAF event detected",uint64,20,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+eventid,Event ID,uint32,10,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+dstuuid,,string,37,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+dstuser,,string,256,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+dstport,Destination Port,uint16,5,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+dstip,Destination IP Address,ip,39,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+dstintf,Destination Interface,string,32,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+dstcountry,,string,64,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+dstauthserver,,string,64,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+direction,Direction,string,4096,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+devid,Device ID,string,16,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+date,Date,string,10,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+constraint,WAF HTTP protocol restrictions,string,4096,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+authserver,Authentication Server,string,64,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+agent,Agent,string,1024,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6
+action,Status of the session. Uses following definition: - Deny = blocked by firewall policy. - Start = session start log (special option to enable logging at start of a session). This means firewall allowed. - All Others = allowed by Firewall Policy and the status indicates how it was closed.,string,17,30253 - LOGID_WAF_METHOD_BLOCK,30253,LOGID_WAF_METHOD_BLOCK,Web application firewall blocked application by HTTP method,WAF,waf-http-method,Warning,7.4.6

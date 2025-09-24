@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+time,Time,string,8,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+logid,Log ID,string,10,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+type,Log Type,string,16,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+subtype,Log Subtype,string,20,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+level,Log Level,string,11,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+devid,Device ID,string,16,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+vd,Virtual Domain Name,string,32,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+eventtime,Event time,uint64,20,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+tz,Time zone,string,5,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+logdesc,Log Description,string,4096,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+action,Policy Action,string,65,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+tunnelid,IPsec VPN tunnel ID,uint32,10,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+tunneltype,IPsec VPN tunnel type,string,64,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+remip,IPsec VPN remote gateway IP address,ip,39,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+tunnelip,IPsec VPN tunnel IP address,ip,39,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+user,User name of authenticated user,string,256,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+group,User group Name,string,512,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4
+msg,Log Message,string,4096,40003 - LOG_ID_PPTP_TUNNEL_STAT,40003,LOG_ID_PPTP_TUNNEL_STAT,PPTP tunnel status,Event,vpn,Information,7.4.4

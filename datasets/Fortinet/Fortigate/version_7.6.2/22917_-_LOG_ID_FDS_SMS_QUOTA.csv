@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+user,User name of authenticated user,string,256,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+logdesc,Log Description,string,4096,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+tz,Time zone,string,5,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+eventtime,Event time,uint64,20,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+vd,Virtual Domain Name,string,32,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+devid,Device ID,string,16,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+level,Log Level,string,11,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+subtype,Log Subtype,string,20,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+type,Log Type,string,16,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+logid,Log ID,string,10,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+time,Time,string,8,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2
+date,Date,string,10,22917 - LOG_ID_FDS_SMS_QUOTA,22917,LOG_ID_FDS_SMS_QUOTA,SMS quota reached,Event,system,Notice,7.6.2

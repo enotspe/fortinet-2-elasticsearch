@@ -1,0 +1,55 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+xid,Transaction ID,uint16,5,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+vd,Virtual Domain Name,string,32,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+user,User name,string,256,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+unauthusersource,Unauthenticated User Source,string,66,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+unauthuser,Unauthenticated User,string,66,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+tz,Time zone,string,5,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+type,Log Type,string,16,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+translationid,,uint32,10,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+time,Time,string,8,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+subtype,Log Subtype,string,20,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+sscname,Safe Search CNAME,string,256,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+srcport,Source Port,uint16,5,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+srcmac,MAC address associated with the Source IP,string,17,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+srcip,Source IP,ip,39,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+srcintfrole,Source Interface Role,string,10,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+srcintf,Source Interface,string,32,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+srcdomain,,string,255,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+srccountry,,string,64,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+sessionid,Session ID,uint32,10,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+rcode,,uint8,3,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+qtypeval,Query Type Value,uint16,5,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+qtype,Query type description,string,32,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+qname,Query domain name,string,256,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+qclass,Query class,string,32,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+proto,Protocol number,uint8,3,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+profile,Profile name for DNS filter,string,64,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+poluuid,,string,37,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+policytype,,string,24,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+policyid,Policy ID,uint32,10,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+msg,Log message,string,512,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+logid,Log ID,string,10,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+level,Log Level,string,11,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+ipaddr,IP addresses from DNS response answer section,string,512,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+group,User group name,string,512,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+fctuid,FortiClient ID,string,32,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+exchange,Mail Exchanges from DNS response answer section,string,256,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+eventtype,DNS Type (DNS query/DNS response),string,32,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+eventtime,Event Timestamp,uint64,20,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+error,DNS filter service error message,string,256,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+dstuser,,string,256,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+dstport,Destination Port,uint16,5,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+dstip,Destination IP,ip,39,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+dstintfrole,Destination Interface Role,string,10,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+dstintf,Destination Interface,string,32,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+dstcountry,,string,64,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+domainfilterlist,Domain Filter List,string,512,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+domainfilteridx,Domain Filter Index,uint8,3,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+devid,Device ID,string,16,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+date,Date,string,10,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+catdesc,DNS category description,string,64,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+cat,DNS category ID,uint8,3,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+botnetip,Botnet IP address,ip,39,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+botnetdomain,Botnet domain name,string,256,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1
+action,Security action performed by DNS filter,string,16,54803 - LOG_ID_DNS_FTGD_CAT_BLOCK,54803,LOG_ID_DNS_FTGD_CAT_BLOCK,Domain belongs to a denied category in policy,DNS,dns-response,Warning,7.6.1

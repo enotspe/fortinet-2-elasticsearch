@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+time,Time,string,8,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+logid,Log ID,string,10,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+type,Log Type,string,16,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+subtype,Log Subtype,string,20,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+level,Log Level,string,11,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+devid,Device ID,string,16,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+vd,Virtual Domain Name,string,32,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+eventtime,Event time,uint64,20,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+tz,Time zone,string,5,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+logdesc,Log Description,string,4096,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+policyid,Policy ID,uint32,10,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+srcip,Source IP,ip,39,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+srcport,Source port,uint16,5,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+dstip,Destination IP,ip,39,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+dstport,Destination Protocol Port,uint16,5,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+msg,Log Message,string,4096,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+session_id,Session ID,uint32,10,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4
+app-type,,string,64,48301 - LOG_ID_UNEXP_APP_TYPE,48301,LOG_ID_UNEXP_APP_TYPE,Unexpected application type for WAN Optimization,Event,wanopt,Critical,7.2.4

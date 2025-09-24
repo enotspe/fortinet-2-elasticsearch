@@ -1,0 +1,32 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+mpsk,Multiple pre-shared keys,string,33,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+snr,,int8,4,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+srcip,Source IP,ip,39,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+authserver,Remote Authentication server,string,64,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+group,User group Name,string,512,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+user,User name of authenticated user,string,256,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+radioid,The operating radio ID,uint8,3,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+vap,Virtual Access Point,string,36,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+reason,Reason,string,256,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+ap,Access Point,string,36,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+sn,Serial Number,string,64,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+stamac,The MAC address of wifi station,string,17,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+signal,The signal value of SSID or client,int8,4,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+encryption,The encryption type of detected rogue AP,string,12,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+security,Security,string,40,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+channel,Channel,uint8,3,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+radioband,The operating radio band,string,64,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+ssid,WiFi Service Set ID,string,33,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+msg,Log Message,string,4096,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+action,Policy Action,string,65,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+logdesc,Log Description,string,4096,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+tz,Time zone,string,5,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+eventtime,Event time,uint64,20,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+vd,Virtual Domain Name,string,32,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+devid,Device ID,string,16,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+level,Log Level,string,11,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+subtype,Log Subtype,string,20,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+type,Log Type,string,16,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+logid,Log ID,string,10,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+time,Time,string,8,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6
+date,Date,string,10,43606 - LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,43606,LOG_ID_EVENT_WIRELESS_STA_CAP_EMAIL_FAILURE,Captive-portal VAP e-mail collect failed,Event,wireless,Warning,7.4.6

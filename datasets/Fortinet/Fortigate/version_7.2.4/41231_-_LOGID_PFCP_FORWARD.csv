@@ -1,0 +1,36 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+apn,Access Point Name,string,128,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+cfseid,,string,20,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+cfseidaddr,,ip,39,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+date,Date,string,10,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+deny_cause,Deny Cause,string,25,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+devid,Device ID,string,16,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+dstport,Destination Port,uint16,5,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+dtlexp,Detailed Explanation,string,64,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+eventtime,Event time line,uint64,20,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+from,From,ip,128,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+from6,,ip,39,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+hseid,,string,20,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+ietype,Malformed GTP IE number,uint8,3,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+imei-sv,IMEI(International Mobile Equipment Identity) Software Version,string,32,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+imsi,International mobile subscriber ID,string,16,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+level,Log Level,string,11,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+logid,Log ID,string,10,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+msg-type,Message Type,uint8,3,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+msgtypename,,string,50,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+msisdn,Mobile Subscriber Integrated Services Digital Network-Number (telephone # to a SIM card),string,16,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+nai,,string,128,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+profile,Profile Name,string,64,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+seqnum,GTP packet sequence number,uint32,10,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+srcport,Source Port,uint16,5,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+status,Status,string,23,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+subtype,Log Subtype,string,20,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+time,Time,string,8,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+to,To,ip,512,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+to6,,ip,39,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+type,Log Type,string,16,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+tz,Time zone,string,5,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+ufseid,,string,20,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+ufseidaddr,,ip,39,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+vd,Virtual Domain Name,string,32,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4
+version,Version,uint32,64,41231 - LOGID_PFCP_FORWARD,41231,LOGID_PFCP_FORWARD,PFCP forward message,GTP,pfcp-all,Information,7.2.4

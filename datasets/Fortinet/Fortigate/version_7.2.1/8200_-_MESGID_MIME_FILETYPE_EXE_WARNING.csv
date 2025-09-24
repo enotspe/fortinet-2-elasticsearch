@@ -1,0 +1,73 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+analyticscksum,The checksum of the file submitted for analytics,string,64,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+analyticssubmit,The flag for analytics submission,string,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+attachment,,string,3,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+authserver,Server used to authenticate the involved user,string,64,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+cc,,string,512,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+checksum,The checksum of the scanned file,string,16,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+craction,Threat Weight action,uint32,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+crlevel,Threat Weight Level,string,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+crscore,Threat Weight Score,uint32,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+date,Date,string,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+devid,,string,16,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+direction,Message/packets direction,string,8,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dstauthserver,,string,64,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dstcountry,,string,64,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dstintf,Destination Interface,string,32,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dstip,Destination IP Address,ip,39,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dstport,Destination Port,uint16,5,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dstuser,,string,256,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dstuuid,,string,37,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+dtype,Data type for virus category,string,32,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+eventtime,Time when detection occured,uint64,20,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+eventtype,Event type of AV,string,32,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+fctuid,Forticlient user ID,string,32,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+filename,File name,string,256,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+forwardedfor,,string,128,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+group,Group name (authentication),string,512,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+httpmethod,,string,20,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+level,Log level,string,11,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+logid,Log ID,string,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+msg,Log message,string,4096,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+pdstport,,uint16,5,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+policyid,Policy ID,uint32,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+policymode,,string,8,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+policytype,,string,24,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+poluuid,,string,37,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+profile,The name of the profile that was used to detect and take action,string,64,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+proto,Protocol number,uint8,3,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+psrcport,,uint16,5,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+quarskip,Quarantine skip explanation,string,46,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+recipient,Email addresses from the SMTP envelope,string,512,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+referralurl,,string,512,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+sender,Email address from the SMTP envelope,string,128,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+service,Proxy service which scanned this traffic,string,5,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+sessionid,Session ID,uint32,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+srccountry,,string,64,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+srcdomain,,string,255,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+srcintf,Source Interface,string,32,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+srcip,Source IP Address,ip,39,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+srcport,Source Port,uint16,5,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+srcuuid,,string,37,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+subject,,string,256,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+subservice,,string,16,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+subtype,Subtype of the virus log,string,20,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+time,Time,string,8,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+trueclntip,,ip,39,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+type,Log type,string,16,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+tz,Time Zone,string,5,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+unauthuser,,string,66,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+unauthusersource,,string,66,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+user,Username (authentication),string,256,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+vd,VDOM name,string,32,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1
+vrf,,uint8,3,8200 - MESGID_MIME_FILETYPE_EXE_WARNING,8200,MESGID_MIME_FILETYPE_EXE_WARNING,File is an executable (warning),Virus,filetype-executable,Warning,7.2.1

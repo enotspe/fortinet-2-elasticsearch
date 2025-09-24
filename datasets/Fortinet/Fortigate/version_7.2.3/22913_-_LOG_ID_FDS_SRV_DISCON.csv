@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+time,Time,string,8,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+logid,Log ID,string,10,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+type,Log Type,string,16,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+subtype,Log Subtype,string,20,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+level,Log Level,string,11,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+devid,Device ID,string,16,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+vd,Virtual Domain Name,string,32,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+eventtime,Event time,uint64,20,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+tz,Time zone,string,5,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+logdesc,Log Description,string,4096,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+action,Policy Action,string,65,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+msg,Log Message,string,4096,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+server,Server IP Address,string,64,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3
+reason,Reason,string,256,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiCloud server disconnected,Event,system,Notice,7.2.3

@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+probeproto,Link Monitor Probe Protocol,string,16,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+msg,Log Message,string,4096,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+interface,Interface,string,32,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+newvalue,,string,32,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+oldvalue,,string,32,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+healthcheck,,string,64,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+eventtype,,string,48,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+logdesc,Log Description,string,4096,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+tz,Time zone,string,5,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+eventtime,Event time,uint64,20,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+vd,Virtual Domain Name,string,32,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+devid,Device ID,string,16,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+level,Log Level,string,11,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+subtype,Log Subtype,string,20,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+type,Log Type,string,16,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+logid,Log ID,string,10,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+time,Time,string,8,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8
+date,Date,string,10,22931 - LOG_ID_EVENT_VWL_SLA_INFO_WARNING,22931,LOG_ID_EVENT_VWL_SLA_INFO_WARNING,SD-WAN SLA information warning,Event,sdwan,Warning,7.4.8

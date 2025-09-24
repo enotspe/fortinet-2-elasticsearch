@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+srcip,,ip,39,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+sn,,string,64,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+name,,string,128,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+msg,,string,4096,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+action,,string,65,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+ui,,string,64,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+user,,string,256,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+logdesc,,string,4096,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+tz,,string,5,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+eventtime,,uint64,20,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+vd,,string,32,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+devid,,string,16,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+level,,string,11,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+subtype,,string,20,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+type,,string,16,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+logid,,string,10,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+time,,string,8,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8
+date,,string,10,22904 - LOG_ID_CAPUTP_SESSION_NOTIF,22904,LOG_ID_CAPUTP_SESSION_NOTIF,CAPUTP session status notification,Event,switch-controller,Notice,7.4.8

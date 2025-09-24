@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+time,Time,string,8,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+logid,Log ID,string,10,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+type,Log Type,string,16,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+subtype,Log Subtype,string,20,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+level,Log Level,string,11,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+devid,Device ID,string,16,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+vd,Virtual Domain Name,string,32,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+eventtime,Event time,uint64,20,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+tz,Time zone,string,5,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+logdesc,Log Description,string,4096,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+status,Status,string,23,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+msg,Log Message,string,4096,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+srcip,Source IP,ip,39,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+reason,Reason,string,256,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+dstip,Destination IP,ip,39,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+initiator,Original login user name for Fortiguard override,string,64,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+scope,FortiGuard Override Scope,string,16,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+expiry,FortiGuard override expiry timestamp,string,64,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9
+oldwprof,Old Web Filter Profile,string,64,43020 - LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,43020,LOG_ID_EVENT_AUTH_FGOVRD_SUCCESS,FortiGuard override successful,Event,user,Notice,7.2.9

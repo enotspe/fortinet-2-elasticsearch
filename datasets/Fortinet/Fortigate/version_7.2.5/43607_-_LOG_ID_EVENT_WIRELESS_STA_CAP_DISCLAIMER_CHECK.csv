@@ -1,0 +1,32 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+time,Time,string,8,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+logid,Log ID,string,10,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+type,Log Type,string,16,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+subtype,Log Subtype,string,20,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+level,Log Level,string,11,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+devid,Device ID,string,16,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+vd,Virtual Domain Name,string,32,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+eventtime,Event time,uint64,20,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+tz,Time zone,string,5,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+logdesc,Log Description,string,4096,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+action,Policy Action,string,65,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+msg,Log Message,string,4096,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+ssid,WiFi Service Set ID,string,33,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+radioband,The operating radio band,string,64,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+channel,Channel,uint8,3,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+security,Security,string,40,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+encryption,The encryption type of detected rogue AP,string,12,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+signal,The signal value of SSID or client,int8,4,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+stamac,The MAC address of wifi station,string,17,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+sn,Serial Number,string,64,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+ap,Access Point,string,36,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+reason,Reason,string,256,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+vap,Virtual Access Point,string,36,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+radioid,The operating radio ID,uint8,3,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+user,User name of authenticated user,string,256,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+group,User group Name,string,512,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+authserver,Remote Authentication server,string,64,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+srcip,Source IP,ip,39,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+snr,,int8,4,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5
+mpsk,Multiple pre-shared keys,string,33,43607 - LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,43607,LOG_ID_EVENT_WIRELESS_STA_CAP_DISCLAIMER_CHECK,Captive-portal VAP disclaimer agreed,Event,wireless,Warning,7.2.5

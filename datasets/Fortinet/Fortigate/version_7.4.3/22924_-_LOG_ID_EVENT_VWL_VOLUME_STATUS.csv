@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+time,Time,string,8,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+logid,Log ID,string,10,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+type,Log Type,string,16,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+subtype,Log Subtype,string,20,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+level,Log Level,string,11,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+devid,Device ID,string,16,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+vd,Virtual Domain Name,string,32,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+eventtime,Event time,uint64,20,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+tz,Time zone,string,5,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+logdesc,Log Description,string,4096,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+eventtype,,string,48,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+interface,Interface,string,32,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+member,,string,512,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3
+msg,Log Message,string,4096,22924 - LOG_ID_EVENT_VWL_VOLUME_STATUS,22924,LOG_ID_EVENT_VWL_VOLUME_STATUS,SDWAN volume status,Event,sdwan,Notice,7.4.3

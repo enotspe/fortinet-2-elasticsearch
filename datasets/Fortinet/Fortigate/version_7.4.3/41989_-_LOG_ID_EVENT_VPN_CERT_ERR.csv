@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+time,Time,string,8,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+logid,Log ID,string,10,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+type,Log Type,string,16,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+subtype,Log Subtype,string,20,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+level,Log Level,string,11,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+devid,Device ID,string,16,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+vd,Virtual Domain Name,string,32,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+eventtime,Event time,uint64,20,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+tz,Time zone,string,5,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+logdesc,Log Description,string,4096,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+action,Policy Action,string,65,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+msg,Log Message,string,4096,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+status,Status,string,23,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+name,Display Name of the Connection,string,128,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+cert-type,Certification type,string,6,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3
+method,Method,string,64,41989 - LOG_ID_EVENT_VPN_CERT_ERR,41989,LOG_ID_EVENT_VPN_CERT_ERR,Certificate error,Event,vpn,Information,7.4.3

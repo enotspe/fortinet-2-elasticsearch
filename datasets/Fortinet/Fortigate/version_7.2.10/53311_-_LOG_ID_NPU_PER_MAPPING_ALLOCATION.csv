@@ -1,0 +1,12 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+time,Time,string,8,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+logid,Log ID,string,10,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+type,Log Type,string,16,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+subtype,Log Subtype,string,20,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+level,Log Level,string,11,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+devid,Device ID,string,16,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+vd,Virtual Domain Name,string,32,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+eventtime,Event time,uint64,20,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+tz,Time zone,string,5,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10
+logdesc,Log Description,string,4096,53311 - LOG_ID_NPU_PER_MAPPING_ALLOCATION,53311,LOG_ID_NPU_PER_MAPPING_ALLOCATION,Resource per mapping allocation,Event,system,Notice,7.2.10

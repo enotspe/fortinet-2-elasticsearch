@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+time,Time,string,8,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+logid,Log ID,string,10,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+type,Log Type,string,16,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+subtype,Log Subtype,string,20,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+level,Log Level,string,11,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+devid,Device ID,string,16,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+vd,Virtual Domain Name,string,32,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+eventtime,Event time,uint64,20,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+tz,Time zone,string,5,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+logdesc,Log Description,string,4096,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+user,User name of authenticated user,string,256,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+ui,User Interface,string,64,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5
+msg,Log Message,string,4096,41008 - LOG_ID_UPD_MANUAL_LICENSE_FAIL,41008,LOG_ID_UPD_MANUAL_LICENSE_FAIL,FortiGate Manual License is invalid,Event,system,Warning,7.4.5

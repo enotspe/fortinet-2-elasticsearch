@@ -1,0 +1,157 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+wanout,WAN outgoing traffic in bytes,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+wanoptapptype,WAN Optimization Application type,string,9,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+wanin,WAN incoming traffic in bytes,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vwlname,,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vrf,Virtual router forwarding,uint8,3,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vpntype,The type of the VPN tunnel,string,14,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vip,,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+vd,Virtual domain name,string,32,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+utmaction,Security action performed by UTM,string,32,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+user,User name,string,256,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+url,URL,string,512,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+unauthusersource,The method used to detect unauthenticated user name,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+unauthuser,Unauthenticated user name,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+tz,Time zone,string,5,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+type,Log type,string,16,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+tunnelid,,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+transport,NAT Source Protocol Port,uint16,5,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+transip,NAT Source IP,ip,39,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+tranport,NAT Destination Port,uint16,5,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+tranip,NAT Destination IP,ip,39,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+trandisp,NAT translation type,string,16,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+time,Time,string,8,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+subtype,Subtype of the traffic,string,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+sslaction,Action taken by ssl-ssh-profile,string,26,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcuuid,UUID of the Source Address Object,string,37,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcthreatfeed,,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcswversion,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcssid,Source SSID,string,33,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcserver,Source server,uint8,3,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcreputation,,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcremote,,ip,39,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcregion,,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcport,Source protocol port number,uint16,5,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcname,Source name,string,256,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcmacvendor,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcmac,MAC address associated with the Source IP,string,17,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcip,Source IP address,ip,39,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcintf,Source interface name,string,32,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcinetsvc,Internet service name for the source,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srchwversion,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srchwvendor,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcfamily,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srcdomain,,string,255,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srccountry,Country name for Source IP,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+srccity,,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+snr,,int8,4,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+signal,,int8,4,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+shapingpolicyname,,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+shapingpolicyid,Shaping Policy ID,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+shapersentname,Traffic shaper name for sent traffic,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+shaperrcvdname,Traffic shaper name for received traffic,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+shaperperipname,Traffic shaper name (per IP),string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+sessionid,Session ID,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+service,Name of Service,string,80,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+sentpkt,Sent Packets,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+sentdelta,Delta Sent Bytes,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+sentbyte,Sent Bytes,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+saasname,,string,80,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+replysrcintf,,string,32,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+replydstintf,,string,32,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+rcvdpkt,Received Packets,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+rcvddelta,Delta Received Bytes,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+rcvdbyte,Received Bytes,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+radioband,Radio Band,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+psrcport,,uint16,5,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+proxyapptype,,string,9,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+proto,Protocol Number,uint8,3,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+poluuid,UUID of the Firewall Policy,string,37,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+policytype,Policy type,string,24,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+policyname,Policy name,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+policymode,,string,8,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+policyid,Firewall Policy ID,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+pdstport,,uint16,5,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+osname,Name of the device's OS,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+msg,Log message,string,512,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+masterdstmac,Destination master MAC address,string,17,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+logid,Log ID,string,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+level,Log Level,string,11,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+lanout,LAN outgoing traffic in bytes,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+lanin,LAN incoming traffic in bytes,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+identifier,,uint16,5,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+group,User group name,string,512,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+gatewayid,,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+fctuid,FortiClient UID,string,32,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+eventtime,Epoch time in nanoseconds,uint64,20,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+emsconnection,,string,8,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+duration,Duration of the session,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstuuid,UUID of the Destination Address Object,string,37,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstuser,,string,256,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstunauthusersource,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstunauthuser,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstthreatfeed,,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstswversion,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstssid,Destination SSID,string,33,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstserver,Destination Server,uint8,3,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstreputation,,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstregion,,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstport,Destination Protocol Port Number,uint16,5,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstosname,Destination OS name,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstname,Destination name,string,256,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstmac,Destination Mac Address,string,17,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstip,Destination IP Address,ip,39,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstintf,Destination Interface,string,32,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstinetsvc,Internet service name for the destination,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dsthwversion,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dsthwvendor,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstfamily,,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstdevtype,Destination Device Type,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstcountry,Country name for the destination IP,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstcity,,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+dstauthserver,,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+devtype,Device Type,string,66,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+devid,Device Serial Number,string,16,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+date,Date,string,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+crscore,Threat Weight score,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+crlevel,Threat Weight level,string,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+craction,Action performed by Threat Weight,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+comment,Customized policy comment,string,1024,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+clientdevicetags,,string,512,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+clientdeviceowner,,string,80,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+clientdevicemanageable,,string,16,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+clientdeviceid,,string,80,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+channel,WiFi Channel,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+centralnatid,central-snat-map id,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+authserver,Remote Authentication server,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+apsn,Access Point serial number,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+apprisk,Application Risk Level,string,16,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+applist,Application Control profile (name),string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+appid,Application ID,uint32,10,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+appcat,Application category,string,64,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+appact,The security action from app control,string,16,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+app,Application name,string,96,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+ap,Access Point name,string,36,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+accessproxy,,string,80,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11
+accessctrl,,string,80,20 - LOG_ID_TRAFFIC_STAT,20,LOG_ID_TRAFFIC_STAT,Forward traffic statistics,Traffic,forward,Notice,7.2.11

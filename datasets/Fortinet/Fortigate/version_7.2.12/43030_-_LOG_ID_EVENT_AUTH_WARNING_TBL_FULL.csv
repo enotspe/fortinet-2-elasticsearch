@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+initiator,Original login user name for Fortiguard override,string,64,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+dstip,Destination IP,ip,39,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+reason,Reason,string,256,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+srcip,Source IP,ip,39,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+msg,Log Message,string,4096,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+status,Status,string,23,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+logdesc,Log Description,string,4096,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+tz,Time zone,string,5,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+eventtime,Event time,uint64,20,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+vd,Virtual Domain Name,string,32,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+devid,Device ID,string,16,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+level,Log Level,string,11,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+subtype,Log Subtype,string,20,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+type,Log Type,string,16,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+logid,Log ID,string,10,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+time,Time,string,8,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12
+date,Date,string,10,43030 - LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,43030,LOG_ID_EVENT_AUTH_WARNING_TBL_FULL,FortiGuard authentication override failed,Event,user,Warning,7.2.12

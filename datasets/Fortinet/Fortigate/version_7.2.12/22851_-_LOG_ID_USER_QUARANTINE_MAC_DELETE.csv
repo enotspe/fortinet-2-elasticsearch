@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,,string,4096,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+action,,string,65,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+ui,,string,64,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+user,,string,256,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+logdesc,,string,4096,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+tz,,string,5,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+eventtime,,uint64,20,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+vd,,string,32,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+devid,,string,16,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+level,,string,11,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+subtype,,string,20,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+type,,string,16,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+logid,,string,10,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+time,,string,8,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12
+date,,string,10,22851 - LOG_ID_USER_QUARANTINE_MAC_DELETE,22851,LOG_ID_USER_QUARANTINE_MAC_DELETE,User quarantine MAC deleted,Event,switch-controller,Notice,7.2.12

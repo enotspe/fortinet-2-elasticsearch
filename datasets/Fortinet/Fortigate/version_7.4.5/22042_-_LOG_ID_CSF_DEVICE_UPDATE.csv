@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+time,Time,string,8,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+logid,Log ID,string,10,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+type,Log Type,string,16,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+subtype,Log Subtype,string,20,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+level,Log Level,string,11,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+devid,Device ID,string,16,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+vd,Virtual Domain Name,string,32,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+eventtime,Event time,uint64,20,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+tz,Time zone,string,5,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+logdesc,Log Description,string,4096,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+msg,Log Message,string,4096,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+sn,Serial Number,string,64,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5
+scope,,string,16,22042 - LOG_ID_CSF_DEVICE_UPDATE,22042,LOG_ID_CSF_DEVICE_UPDATE,Device in the Security Fabric was updated.,Event,system,Notice,7.4.5

@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+time,Time,string,8,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+logid,Log ID,string,10,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+type,Log Type,string,16,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+subtype,Log Subtype,string,20,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+level,Log Level,string,11,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+devid,Device ID,string,16,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+vd,Virtual Domain Name,string,32,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+eventtime,Event time,uint64,20,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+tz,Time zone,string,5,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+logdesc,Log Description,string,4096,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+action,Policy Action,string,65,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+msg,Log Message,string,4096,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+informationsource,Information Source,string,4096,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+slot,Slot Number,uint8,3,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3
+chassisid,Chassis ID,uint8,3,43802 - LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,43802,LOG_ID_EVENT_ELBC_MASTER_BLADE_FOUND,Primary blade found,Event,system,Critical,7.2.3

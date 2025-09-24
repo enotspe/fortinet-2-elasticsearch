@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+time,Time,string,8,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+logid,Log ID,string,10,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+type,Log Type,string,16,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+subtype,Log Subtype,string,20,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+level,Log Level,string,11,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+devid,Device ID,string,16,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+vd,Virtual Domain Name,string,32,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+eventtime,Event time,uint64,20,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+tz,Time zone,string,5,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+logdesc,Log Description,string,4096,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+msg,Log Message,string,4096,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+reason,Reason,string,256,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+version,Version,string,64,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8
+upgradedevice,,string,80,22086 - LOG_ID_DEVICE_UPGRADE_FAILED,22086,LOG_ID_DEVICE_UPGRADE_FAILED,A device upgrade failed,Event,system,Warning,7.2.8

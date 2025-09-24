@@ -1,0 +1,30 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+analyticscksum,The checksum of the file submitted for analytics,string,64,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+date,Date,string,10,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+devid,,string,16,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+dstip,Destination IP Address,ip,39,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+dstport,Destination Port,uint16,5,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+dtype,Data type for virus category,string,32,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+eventtime,Time when detection occured,uint64,20,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+eventtype,Event type of AV,string,32,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+fctuid,Forticlient user ID,string,32,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+filename,File name,string,256,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+fsaverdict,"FortiSandbox Verdict returned to FortiGate after analysis (clean, low risk, med risk, high risk, malicious)",string,32,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+level,Log level,string,11,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+logid,Log ID,string,10,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+service,Proxy service which scanned this traffic,string,5,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+srcdomain,,string,255,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+srcip,Source IP Address,ip,39,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+srcport,Source Port,uint16,5,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+subtype,Subtype of the virus log,string,20,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+time,Time,string,8,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+type,Log type,string,16,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+tz,Time Zone,string,5,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+unauthuser,,string,66,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+unauthusersource,,string,66,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0
+vd,VDOM name,string,32,9238 - MESGID_ANALYTICS_FSA_RESULT,9238,MESGID_ANALYTICS_FSA_RESULT,File verdict returned from FortiSandbox,AV,ANALYTICS,Notice,7.2.0

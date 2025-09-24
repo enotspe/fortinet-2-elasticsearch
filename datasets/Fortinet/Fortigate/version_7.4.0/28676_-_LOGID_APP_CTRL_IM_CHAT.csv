@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+app,Application name,string,96,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+appcat,Application category name,string,64,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+applist,Application Control profile name,string,64,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+authserver,Authentication server for the user,string,64,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+date,Date,string,10,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+devid,Deivce ID,string,16,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+direction,Direction of the packets,string,8,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+dstcountry,,string,64,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+dstintf,Destination Interface,string,64,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+dstip,Destination IP,ip,39,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+dstport,Destination Port,uint16,5,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+eventtime,Event Time,uint64,20,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+eventtype,App Control Event Type,string,32,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+fctuid,FortiClient User ID,string,32,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+group,User group name,string,512,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+level,Log level,string,11,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+logid,Log ID,string,10,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+policyid,Policy ID,uint32,10,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+profile,,string,36,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+profiletype,Profile Type,string,36,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+proto,Protocol number,uint8,3,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+service,Service name,string,80,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+sessionid,Session ID,uint32,10,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+srccountry,,string,64,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+srcdomain,,string,255,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+srcintf,Source Interface,string,64,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+srcip,Source IP,ip,39,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+srcport,Source Port,uint16,5,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+subtype,Log subtype,string,20,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+time,Time,string,8,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+type,Log type,string,16,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+tz,,string,5,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+unauthuser,Unauthenticated user,string,66,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+unauthusersource,Unauthenticated user source,string,66,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+user,User name,string,256,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+vd,Virtual domain name,string,32,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0
+vrf,Virtual Routing Forwarding,uint8,3,28676 - LOGID_APP_CTRL_IM_CHAT,28676,LOGID_APP_CTRL_IM_CHAT,Application control IM (chat),APP-CTRL,signature,Information,7.4.0

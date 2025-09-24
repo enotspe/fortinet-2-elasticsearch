@@ -1,0 +1,96 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+analyticscksum,The checksum of the file submitted for analytics,string,64,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+analyticssubmit,The flag for analytics submission,string,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+attachment,,string,3,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+authserver,Server used to authenticate the involved user,string,64,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+cc,,string,512,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+cdrcontent,,string,256,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+checksum,The checksum of the scanned file,string,16,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+contentdisarmed,"Content Disarm action- eg. disarmed, detected",string,13,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+craction,Threat Weight action,uint32,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+crlevel,Threat Weight Level,string,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+crscore,Threat Weight Score,uint32,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+date,Date,string,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+devid,,string,16,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+direction,Message/packets direction,string,8,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dstauthserver,,string,64,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dstcountry,,string,64,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dstintf,Destination Interface,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dstip,Destination IP Address,ip,39,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dstport,Destination Port,uint16,5,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dstuser,,string,256,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dstuuid,,string,37,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+dtype,Data type for virus category,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+eventtime,Time when detection occured,uint64,20,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+eventtype,Event type of AV,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fctuid,Forticlient user ID,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+filehash,Used by Outbreak Prevention External Hash: the hash signature used in the detection,string,64,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+filehashsrc,Used by Outbreak Prevention External Hash: external source that provided the hash signature,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+filename,File name,string,256,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+filetype,File type,string,16,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fndraction,,string,7,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fndrconfidence,,string,6,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fndrfileid,,uint64,20,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fndrfiletype,,string,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fndrseverity,,string,8,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+forwardedfor,,string,128,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fsaaction,,string,7,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fsafileid,,uint64,20,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fsafiletype,,string,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fsaseverity,,string,11,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+fsaverdict,,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+group,Group name (authentication),string,64,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+httpmethod,,string,20,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+level,Log level,string,11,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+logid,Log ID,string,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+msg,Log message,string,4096,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+pathname,,string,256,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+pdstport,,uint16,5,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+policyid,Policy ID,uint32,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+policymode,,string,8,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+policytype,,string,24,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+poluuid,,string,37,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+profile,The name of the profile that was used to detect and take action,string,64,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+proto,Protocol number,uint8,3,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+psrcport,,uint16,5,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+quarskip,Quarantine skip explanation,string,46,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+rawdata,,string,1024,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+recipient,Email addresses from the SMTP envelope,string,512,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+ref,The URL of the FortiGuard IPS database entry for the attack,string,512,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+referralurl,,string,512,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+sender,Email address from the SMTP envelope,string,128,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+service,Proxy service which scanned this traffic,string,5,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+sessionid,Session ID,uint32,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+sharename,,string,256,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+srccountry,,string,64,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+srcdomain,,string,255,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+srcintf,Source Interface,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+srcip,Source IP Address,ip,39,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+srcport,Source Port,uint16,5,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+srcuuid,,string,37,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+subject,,string,256,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+subservice,,string,16,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+subtype,Subtype of the virus log,string,20,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+time,Time,string,8,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+trueclntip,,ip,39,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+type,Log type,string,16,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+tz,Time Zone,string,5,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+unauthuser,,string,66,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+unauthusersource,,string,66,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+url,The URL address,string,512,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+user,Username (authentication),string,256,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+vd,VDOM name,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+virus,Virus Name,string,128,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+viruscat,,string,32,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+virusid,Virus ID (unique virus identifier),uint32,10,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0
+vrf,,uint8,3,9234 - MESGID_ANALYTICS_INFECT_WARNING,9234,MESGID_ANALYTICS_INFECT_WARNING,File reported infected by FortiSandbox (warning),AV,INFECTED,Warning,7.2.0

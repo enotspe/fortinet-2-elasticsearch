@@ -1,0 +1,23 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+time,Time,string,8,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+logid,Log ID,string,10,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+type,Log Type,string,16,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+subtype,Log Subtype,string,20,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+level,Log Level,string,11,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+devid,Device ID,string,16,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+vd,Virtual Domain Name,string,32,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+eventtime,Event time,uint64,20,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+tz,Time zone,string,5,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+logdesc,Log Description,string,4096,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+user,User name of authenticated user,string,256,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+authproto,The protocol that initiated the authentication,string,512,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+action,Policy Action,string,65,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+status,Status,string,23,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+msg,Log Message,string,4096,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+srcip,Source IP,ip,39,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+reason,Reason,string,256,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+dstip,Destination IP,ip,39,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+policyid,Policy ID,uint32,10,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+group,User group Name,string,512,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0
+adgroup,AD Group Name of FSSO user,string,128,43016 - LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,43016,LOG_ID_EVENT_AUTH_NTLM_AUTH_SUCCESS,NTLM authentication successful,Event,user,Notice,7.4.0

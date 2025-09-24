@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+group,User group Name,string,512,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+user,User name of authenticated user,string,256,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+tunnelip,IPsec VPN tunnel IP address,ip,39,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+remip,IPsec VPN remote gateway IP address,ip,39,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+tunneltype,IPsec VPN tunnel type,string,64,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+tunnelid,IPsec VPN tunnel ID,uint32,10,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+action,Policy Action,string,65,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+logdesc,Log Description,string,4096,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+tz,Time zone,string,5,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+eventtime,Event time,uint64,20,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+vd,Virtual Domain Name,string,32,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+devid,Device ID,string,16,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+level,Log Level,string,11,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+subtype,Log Subtype,string,20,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+type,Log Type,string,16,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+logid,Log ID,string,10,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+time,Time,string,8,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12
+date,Date,string,10,23101 - LOG_ID_IPSEC_TUNNEL_UP,23101,LOG_ID_IPSEC_TUNNEL_UP,IPsec VPN tunnel up,Event,vpn,Information,7.2.12

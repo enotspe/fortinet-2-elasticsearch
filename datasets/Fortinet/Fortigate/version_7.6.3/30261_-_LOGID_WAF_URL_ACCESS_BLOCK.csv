@@ -1,0 +1,54 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual Domain Name,string,32,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+user,User Name,string,256,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+url,URL,string,512,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+unauthusersource,Unauthenticated user source,string,66,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+unauthuser,Unauthenticated user,string,66,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+tz,Time zone,string,5,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+type,Log Type,string,16,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+transid,,uint32,10,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+time,Time,string,8,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+subtype,Log Subtype,string,20,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+srcuuid,,string,37,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+srcport,Source Port,uint16,5,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+srcip,Source IP Address,ip,39,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+srcintf,Source Interface,string,32,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+srcdomain,,string,255,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+srccountry,,string,64,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+severity,Severity,string,6,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+sessionid,Session ID,uint32,10,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+service,Service name,string,5,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+referralurl,,string,512,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+rawdata,Raw Data,string,20480,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+ratemethod,,string,4096,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+proto,Protocol,uint8,3,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+profile,Full profile name,string,64,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+poluuid,,string,37,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+policytype,,string,24,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+policyid,Policy ID,uint32,10,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+name,Method or custom signature name,string,64,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+msg,Log Message,string,4096,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+logid,Log ID,string,10,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+level,Log Level,string,11,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+httpmethod,,string,20,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+group,User Group Name,string,512,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+fctuid,FortiClient UID,string,32,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+eventtype,Event Type,string,32,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+eventtime,"Event Time, Time when WAF event detected",uint64,20,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+eventid,Event ID,uint32,10,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+dstuuid,,string,37,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+dstuser,,string,256,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+dstport,Destination Port,uint16,5,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+dstip,Destination IP Address,ip,39,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+dstintf,Destination Interface,string,32,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+dstcountry,,string,64,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+dstauthserver,,string,64,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+direction,Direction,string,4096,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+devid,Device ID,string,16,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+date,Date,string,10,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+constraint,WAF HTTP protocol restrictions,string,4096,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+authserver,Authentication Server,string,64,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+agent,Agent,string,1024,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3
+action,Status of the session. Uses following definition: - Deny = blocked by firewall policy. - Start = session start log (special option to enable logging at start of a session). This means firewall allowed. - All Others = allowed by Firewall Policy and the status indicates how it was closed.,string,17,30261 - LOGID_WAF_URL_ACCESS_BLOCK,30261,LOGID_WAF_URL_ACCESS_BLOCK,Web application firewall blocked application by URL access,WAF,waf-url-access,Warning,7.6.3

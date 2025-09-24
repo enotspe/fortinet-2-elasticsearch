@@ -1,0 +1,44 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+apn,Access Point Name,string,128,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+cpteid,Control Plane teid (either downlink or uplink),uint32,10,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+date,Date,string,10,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+deny_cause,Deny Cause,string,25,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+devid,Device ID,string,16,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+dstport,Destination Port,uint16,5,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+dtlexp,Detailed Explanation,string,64,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+end-usr-address,End user IP Address,ip,39,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+endusraddress6,,ip,39,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+eventtime,Event time line,uint64,20,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+from,From,ip,128,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+from6,,ip,39,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+headerteid,Tunnel Endpoint ID Header,uint32,10,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+ietype,Malformed GTP IE number,uint8,3,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+imei-sv,IMEI(International Mobile Equipment Identity) Software Version,string,32,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+imsi,International mobile subscriber ID,string,16,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+level,Log Level,string,11,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+logid,Log ID,string,10,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+msg-type,Message Type,uint8,3,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+msgtypename,,string,50,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+msisdn,Mobile Subscriber Integrated Services Digital Network-Number (telephone # to a SIM card),string,16,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+profile,Profile Name,string,64,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+rat-type,Radio Access Technology type,string,7,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+selection,"APN selection, which is one IE in gtp packet",string,14,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+seqnum,GTP packet sequence number,uint32,10,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+srcport,Source Port,uint16,5,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+status,Status,string,23,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+subtype,Log Subtype,string,20,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+time,Time,string,8,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+timeoutdelete,,uint8,3,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+to,To,ip,512,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+to6,,ip,39,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+tunnel-idx,"Tunnel serial number, internally assigned",uint32,10,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+type,Log Type,string,16,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+tz,Time zone,string,5,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+uli,User Location Information,string,120,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+ulimcc,,uint16,3,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+ulimnc,,uint16,3,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+vd,Virtual Domain Name,string,32,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+version,Version,uint32,64,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+cpaddr,Control Plane Address (either downlink or uplink),ip,39,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+cpaddr6,,ip,39,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0
+snetwork,"Source Network, it's a IE type in GTPv2 packet",string,64,41225 - LOGID_GTPV2_RATE_LIMIT,41225,LOGID_GTPV2_RATE_LIMIT,GTPv2 rate limit message,GTP,gtp-all,Information,7.4.0

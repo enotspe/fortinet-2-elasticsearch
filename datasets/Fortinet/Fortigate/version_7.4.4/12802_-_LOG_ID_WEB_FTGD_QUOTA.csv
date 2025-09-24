@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+catdesc,Web category description,string,64,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+date,Date,string,10,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+devid,Device ID,string,16,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+dstuser,,string,256,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+eventtime,Web Filter event time,uint64,20,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+eventtype,Web Filter event type,string,32,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+level,Log Level,string,11,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+logid,Log ID,string,10,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+profile,Web Filter profile name,string,64,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+quotaexceeded,Quota has been exceeded,string,3,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+quotamax,Maximum quota allowed - in seconds if time-based - in bytes if traffic-based,uint64,20,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+quotatype,Quota type,string,16,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+quotaused,Quota used - in seconds if time-based - in bytes if traffic-based,uint64,20,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+subtype,Log subtype,string,20,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+time,Time,string,8,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+type,Log type,string,16,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+tz,Time Zone,string,5,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+user,User name,string,256,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4
+vd,Virtual domain name,string,32,12802 - LOG_ID_WEB_FTGD_QUOTA,12802,LOG_ID_WEB_FTGD_QUOTA,Daily FortiGuard quota status,Webfilter,ftgd_quota,Information,7.4.4

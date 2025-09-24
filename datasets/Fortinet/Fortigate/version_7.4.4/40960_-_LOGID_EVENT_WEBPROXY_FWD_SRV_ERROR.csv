@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+time,Time,string,8,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+logid,Log ID,string,10,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+type,Log Type,string,16,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+subtype,Log Subtype,string,20,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+level,Log Level,string,11,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+devid,Device ID,string,16,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+vd,Virtual Domain Name,string,32,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+eventtime,Event time,uint64,20,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+tz,Time zone,string,5,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+logdesc,Log Description,string,4096,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+fwserver_name,,string,32,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+addr_type,,string,4,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+ip,,ip,39,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+fqdn,Fully Qualified Domain Name,string,256,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+port,Port Number,uint16,5,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4
+msg,Log Message,string,4096,40960 - LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,40960,LOGID_EVENT_WEBPROXY_FWD_SRV_ERROR,Web proxy forward server error,Event,webproxy,Notice,7.4.4

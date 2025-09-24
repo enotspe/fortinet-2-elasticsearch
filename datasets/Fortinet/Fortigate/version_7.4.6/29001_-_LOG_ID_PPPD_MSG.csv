@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+assigned,Assigned IP Address through PPPoE,ip,39,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+remote,IP Address of the PPP Remote end,ip,39,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+local,Local IP for a PPPD Connection,ip,39,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+msg,Log Message,string,4096,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+status,Status,string,23,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+user,User name of authenticated user,string,256,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+logdesc,Log Description,string,4096,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+tz,Time zone,string,5,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+eventtime,Event time,uint64,20,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+vd,Virtual Domain Name,string,32,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+devid,Device ID,string,16,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+level,Log Level,string,11,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+subtype,Log Subtype,string,20,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+type,Log Type,string,16,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+logid,Log ID,string,10,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+time,Time,string,8,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6
+date,Date,string,10,29001 - LOG_ID_PPPD_MSG,29001,LOG_ID_PPPD_MSG,PPP status,Event,system,Information,7.4.6

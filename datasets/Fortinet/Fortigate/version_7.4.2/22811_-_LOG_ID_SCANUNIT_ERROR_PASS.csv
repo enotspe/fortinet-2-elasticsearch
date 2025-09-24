@@ -1,0 +1,24 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+time,Time,string,8,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+logid,Log ID,string,10,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+type,Log Type,string,16,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+subtype,Log Subtype,string,20,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+level,Log Level,string,11,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+devid,Device ID,string,16,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+vd,Virtual Domain Name,string,32,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+eventtime,Event time,uint64,20,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+tz,Time zone,string,5,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+logdesc,Log Description,string,4096,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+msg,Log Message,string,4096,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+service,Name of Service,string,64,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+proto,Protocol Number,uint8,3,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+srcip,Source IP,ip,39,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+srcport,Source port,uint16,5,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+dstip,Destination IP,ip,39,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+dstport,Destination Protocol Port,uint16,5,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+file,Report file full path,string,256,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+session_id,Session ID,uint32,10,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+src_int,Source Interface,string,64,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+dst_int,Destination Interface,string,64,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2
+dir,Direction,string,8,22811 - LOG_ID_SCANUNIT_ERROR_PASS,22811,LOG_ID_SCANUNIT_ERROR_PASS,Scan error - traffic passed,Event,system,Notice,7.4.2

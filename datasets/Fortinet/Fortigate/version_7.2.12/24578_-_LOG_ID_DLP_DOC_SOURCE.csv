@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual domain name,string,32,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+tz,,string,5,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+type,Log type,string,16,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+time,Time,string,8,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+subtype,Log subtype,string,20,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+sensitivity,Sensitivity for document fingerprint,string,36,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+logid,Log ID,string,10,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+level,Log Level,string,11,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+eventtype,DLP event type,string,32,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+eventtime,"Event Time, time when DLP event detected.",uint64,20,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+docsource,DLP fingerprint document source,string,515,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+dlpextra,DLP extra information,string,256,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+devid,Device ID,string,16,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12
+date,Date,string,10,24578 - LOG_ID_DLP_DOC_SOURCE,24578,LOG_ID_DLP_DOC_SOURCE,DLP fingerprint document source notice,DLP,dlp-docsource,Notice,7.2.12

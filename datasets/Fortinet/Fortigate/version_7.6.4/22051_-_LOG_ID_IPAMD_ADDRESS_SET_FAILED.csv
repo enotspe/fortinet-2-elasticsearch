@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+interface,Interface,string,32,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+ip,,ip,39,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+msg,Log Message,string,4096,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+logdesc,Log Description,string,4096,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+tz,Time zone,string,5,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+eventtime,Event time,uint64,20,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+vd,Virtual Domain Name,string,32,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+devid,Device ID,string,16,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+level,Log Level,string,11,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+subtype,Log Subtype,string,20,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+type,Log Type,string,16,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+logid,Log ID,string,10,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+time,Time,string,8,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4
+date,Date,string,10,22051 - LOG_ID_IPAMD_ADDRESS_SET_FAILED,22051,LOG_ID_IPAMD_ADDRESS_SET_FAILED,Address received from FortiIPAM could not be applied to the interface,Event,system,Warning,7.6.4

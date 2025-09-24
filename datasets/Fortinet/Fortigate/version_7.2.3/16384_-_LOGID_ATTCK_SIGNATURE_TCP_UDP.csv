@@ -1,0 +1,72 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"Security action performed by IPS:
+ detected - Attack is detected , but NOT blocked (similar to monitor)
+ dropped - Silent packet blocked
+ reset - Blocked and respond with Reset
+ reset_client - Blocked and reset sent to the client
+ reset_server - Blocked and reset sent to the server
+ drop_session - Silent block
+ pass_session - Session allowed
+ clear_session - Session was removed /closed",string,16,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+agent,,string,1024,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+attack,Attack Name,string,256,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+attackcontext,The trigger patterns and the packet data with base64 encoding,string,2048,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+attackcontextid,Attack context ID / total,string,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+attackid,Attack ID,uint32,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+authserver,Authentication server for the user,string,64,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+craction,Action performed by Threat Weight,uint32,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+crlevel,Client Reputation Level,string,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+crscore,Client Reputation Score,uint32,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+date,Date,string,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+devid,Deivce ID,string,16,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+direction,Message/packets direction,string,8,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+dstauthserver,,string,64,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+dstcountry,,string,64,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+dstintf,Destination Interface,string,64,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+dstip,Destination IP,ip,39,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+dstport,Destination Port,uint16,5,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+dstuser,,string,256,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+eventtime,Time when detection occured,uint64,20,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+eventtype,IPS Event Type,string,32,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+fctuid,FortiClient UID,string,32,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+forwardedfor,X-Forwarded-For HTTP header,string,128,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+group,User group name,string,512,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+hostname,The host name of a URL,string,256,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+httpmethod,,string,20,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+incidentserialno,Incident serial number,uint32,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+level,Log Level,string,11,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+logid,Log ID,string,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+msg,Log message for the attack,string,518,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+pdstport,,uint16,5,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+policyid,Policy ID,uint32,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+policymode,,string,8,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+policytype,,string,24,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+poluuid,,string,37,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+profile,Profile name for IPS,string,64,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+proto,Protocol number,uint8,3,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+psrcport,,uint16,5,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,1024,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+rawdataid,,string,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+ref,URL of the FortiGuard IPS database entry for the attack.,string,4096,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+referralurl,,string,512,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+service,Service name,string,80,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+sessionid,Session ID,uint32,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+severity,Severity of the attack,string,8,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+srccountry,Country name for Source IP,string,64,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+srcdomain,,string,255,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+srcintf,Source Interface,string,64,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+srcip,Source IP,ip,39,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+srcport,Source Port,uint16,5,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+subtype,Log Subtype,string,20,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+time,Time,string,8,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+trueclntip,True-Client-IP HTTP header,ip,39,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+type,Log type,string,16,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+tz,,string,5,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+unauthuser,Unauthenticated user,string,66,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+unauthusersource,Unauthenticated user source,string,66,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+url,The URL address,string,512,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+user,User name,string,256,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+vd,Virtual domain name,string,32,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3
+vrf,Virtual router forwarding,uint8,3,16384 - LOGID_ATTCK_SIGNATURE_TCP_UDP,16384,LOGID_ATTCK_SIGNATURE_TCP_UDP,Attack detected by UDP/TCP signature,IPS,signature,Alert,7.2.3

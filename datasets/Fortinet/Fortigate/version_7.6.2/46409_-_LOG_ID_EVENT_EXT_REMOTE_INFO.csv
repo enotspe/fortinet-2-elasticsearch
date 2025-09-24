@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+ip,,ip,39,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+sn,Serial Number,string,64,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+msg,Log Message,string,4096,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+logdesc,Log Description,string,4096,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+tz,Time zone,string,5,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+eventtime,Event time,uint64,20,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+vd,Virtual Domain Name,string,32,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+devid,Device ID,string,16,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+level,Log Level,string,11,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+subtype,Log Subtype,string,20,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+type,Log Type,string,16,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+logid,Log ID,string,10,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+time,Time,string,8,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2
+date,Date,string,10,46409 - LOG_ID_EVENT_EXT_REMOTE_INFO,46409,LOG_ID_EVENT_EXT_REMOTE_INFO,Remote FortiExtender info activity,Event,fortiextender,Information,7.6.2

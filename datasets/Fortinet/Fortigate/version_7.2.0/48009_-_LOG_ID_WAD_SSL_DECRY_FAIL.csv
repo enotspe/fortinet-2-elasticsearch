@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Policy Action,string,65,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+date,Date,string,10,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+devid,Device ID,string,16,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+dstip,Destination IP,ip,39,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+dstport,Destination Protocol Port,uint16,5,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+eventtime,Event time,uint64,20,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+level,Log Level,string,11,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+logdesc,Log Description,string,4096,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+logid,Log ID,string,10,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+msg,Log Message,string,4096,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+policyid,Policy ID,uint32,10,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+reason,Reason,string,256,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+session_id,Session ID,uint32,10,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+srcip,Source IP,ip,39,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+srcport,Source port,uint16,5,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+subtype,Log Subtype,string,20,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+time,Time,string,8,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+type,Log Type,string,16,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+tz,Time zone,string,5,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0
+vd,Virtual Domain Name,string,32,48009 - LOG_ID_WAD_SSL_DECRY_FAIL,48009,LOG_ID_WAD_SSL_DECRY_FAIL,SSL decryption failed,Event,WAD,Error,7.2.0

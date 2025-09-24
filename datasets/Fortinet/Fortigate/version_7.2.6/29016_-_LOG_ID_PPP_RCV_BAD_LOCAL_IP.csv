@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+time,Time,string,8,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+logid,Log ID,string,10,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+type,Log Type,string,16,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+subtype,Log Subtype,string,20,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+level,Log Level,string,11,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+devid,Device ID,string,16,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+vd,Virtual Domain Name,string,32,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+eventtime,Event time,uint64,20,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+tz,Time zone,string,5,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+logdesc,Log Description,string,4096,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6
+msg,Log Message,string,4096,29016 - LOG_ID_PPP_RCV_BAD_LOCAL_IP,29016,LOG_ID_PPP_RCV_BAD_LOCAL_IP,PPP received invalid local IP,Event,system,Error,7.2.6

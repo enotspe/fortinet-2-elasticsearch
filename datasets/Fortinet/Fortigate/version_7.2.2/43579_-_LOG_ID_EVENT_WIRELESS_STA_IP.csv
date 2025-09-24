@@ -1,0 +1,32 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+time,Time,string,8,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+logid,Log ID,string,10,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+type,Log Type,string,16,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+subtype,Log Subtype,string,20,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+level,Log Level,string,11,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+devid,Device ID,string,16,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+vd,Virtual Domain Name,string,32,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+eventtime,Event time,uint64,20,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+tz,Time zone,string,5,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+logdesc,Log Description,string,4096,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+action,Policy Action,string,65,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+msg,Log Message,string,4096,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+ssid,WiFi Service Set ID,string,33,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+radioband,The operating radio band,string,64,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+channel,Channel,uint8,3,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+security,Security,string,40,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+encryption,The encryption type of detected rogue AP,string,12,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+signal,The signal value of SSID or client,int8,4,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+stamac,The MAC address of wifi station,string,17,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+sn,Serial Number,string,64,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+ap,Access Point,string,36,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+reason,Reason,string,256,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+vap,Virtual Access Point,string,36,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+radioid,The operating radio ID,uint8,3,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+user,User name of authenticated user,string,256,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+group,User group Name,string,512,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+authserver,Remote Authentication server,string,64,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+srcip,Source IP,ip,39,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+snr,,int8,4,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2
+mpsk,Multiple pre-shared keys,string,33,43579 - LOG_ID_EVENT_WIRELESS_STA_IP,43579,LOG_ID_EVENT_WIRELESS_STA_IP,Wireless client IP assigned,Event,wireless,Notice,7.2.2

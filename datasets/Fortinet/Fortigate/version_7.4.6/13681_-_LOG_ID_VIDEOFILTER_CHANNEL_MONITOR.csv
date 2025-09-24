@@ -1,0 +1,45 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint8,3,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+videotitle,,string,512,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+videoinfosource,,string,10,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+videoid,,string,512,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+videodesc,,string,64,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+videochannelid,,string,512,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+videocategoryname,,string,256,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+videocategoryid,,uint32,10,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+vd,,string,32,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+user,,string,256,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+url,,string,512,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+tz,,string,5,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+type,,string,16,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+time,,string,8,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+subtype,,string,20,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+srcport,,uint16,5,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+srcip,,ip,39,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+srcintfrole,,string,10,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+srcintf,,string,32,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+sessionid,,uint32,10,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+service,,string,36,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+referralurl,Referrer URI,string,512,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+proto,,uint8,3,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+profile,,string,64,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+poluuid,,string,37,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+policytype,,string,24,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+policyid,,uint32,10,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+msg,,string,512,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+logid,,string,10,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+level,,string,11,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+httpmethod,,string,20,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+hostname,,string,256,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+group,,string,512,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+eventtype,,string,32,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+eventtime,,uint64,20,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+dstuser,,string,256,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+dstport,,uint16,5,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+dstip,,ip,39,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+dstintfrole,,string,10,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+dstintf,,string,32,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+devid,,string,16,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+date,,string,10,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6
+action,,string,11,13681 - LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,13681,LOG_ID_VIDEOFILTER_CHANNEL_MONITOR,Video channel is monitored,Webfilter,videofilter-channel,Notice,7.4.6

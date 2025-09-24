@@ -1,0 +1,47 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual Domain Name,string,32,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+user,User name for authentication,string,256,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+unauthusersource,Unauthenticated User Source,string,66,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+unauthuser,Unauthenticated User,string,66,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+tz,Time zone,string,5,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+type,Log type,string,16,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+time,Time,string,8,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+subtype,Log subtype,string,20,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+srcuuid,,string,37,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+srcport,Source Port,uint16,5,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+srcip,Source IP,ip,39,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+srcintf,Source Interface,string,32,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+srcdomain,,string,255,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+srccountry,,string,64,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+severity,Severity level of shell command,string,8,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+sessionid,Session ID,uint32,10,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+proto,Protocol number,uint8,3,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+profile,Full profile name,string,64,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+poluuid,,string,37,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+policytype,,string,24,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+policyid,Policy ID,uint32,10,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+login,SSH login Name,string,128,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+logid,Log ID,string,10,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+level,Log level,string,11,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+hostkeystatus,,string,15,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+group,Group name for authentication,string,512,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+fctuid,FortiClient UID,string,32,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+eventtype,Event Type,string,32,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+eventtime,Event time,uint64,20,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+dstuuid,,string,37,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+dstuser,,string,256,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+dstport,Destination Port,uint16,5,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+dstip,Destination IP,ip,39,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+dstintf,Destination Interface,string,32,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+dstcountry,,string,64,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+direction,Direction of session,string,4096,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+devid,Device ID,string,16,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+date,Date,string,10,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+command,Shell command,string,256,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+channeltype,"Type of Channel:
+ x11, shell, exec, tcp-fprward, tun-forward, sftp. scp",string,15,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3
+action,"The status of the ssh-channel:
+ passthrough - channel is allowed
+ blocked - channel is blocked",string,17,61003 - LOG_ID_SSH_COMMAND_PASS_ALERT,61003,LOG_ID_SSH_COMMAND_PASS_ALERT,SSH shell command is detected,SSH,ssh-command,Alert,7.6.3

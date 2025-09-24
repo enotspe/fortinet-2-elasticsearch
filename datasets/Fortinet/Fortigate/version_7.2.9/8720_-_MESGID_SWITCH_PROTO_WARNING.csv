@@ -1,0 +1,61 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+authserver,Server used to authenticate the involved user,string,64,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+craction,Threat Weight action,uint32,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+crlevel,Threat Weight Level,string,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+crscore,Threat Weight Score,uint32,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+date,Date,string,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+devid,,string,16,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+direction,Message/packets direction,string,8,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+dstauthserver,,string,64,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+dstcountry,,string,64,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+dstintf,Destination Interface,string,32,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+dstip,Destination IP Address,ip,39,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+dstport,Destination Port,uint16,5,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+dstuser,,string,256,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+dstuuid,,string,37,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+eventtime,Time when detection occured,uint64,20,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+eventtype,Event type of AV,string,32,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+fctuid,Forticlient user ID,string,32,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+group,Group name (authentication),string,512,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+httpmethod,,string,20,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+level,Log level,string,11,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+logid,Log ID,string,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+msg,Log message,string,4096,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+pdstport,,uint16,5,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+policyid,Policy ID,uint32,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+policytype,,string,24,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+poluuid,,string,37,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+profile,The name of the profile that was used to detect and take action,string,64,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+proto,Protocol number,uint8,3,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+psrcport,,uint16,5,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+referralurl,,string,512,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+service,Proxy service which scanned this traffic,string,5,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+sessionid,Session ID,uint32,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+srccountry,,string,64,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+srcdomain,,string,255,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+srcintf,Source Interface,string,32,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+srcip,Source IP Address,ip,39,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+srcport,Source Port,uint16,5,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+srcuuid,,string,37,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+subservice,,string,16,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+subtype,Subtype of the virus log,string,20,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+switchproto,Protocol used on the switch,string,128,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+time,Time,string,8,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+type,Log type,string,16,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+tz,Time Zone,string,5,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+unauthuser,,string,66,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+unauthusersource,,string,66,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+url,The URL address,string,512,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+user,Username (authentication),string,256,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+vd,VDOM name,string,32,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9
+vrf,,uint8,3,8720 - MESGID_SWITCH_PROTO_WARNING,8720,MESGID_SWITCH_PROTO_WARNING,Switching protocols request (warning),Virus,switchproto,Warning,7.2.9

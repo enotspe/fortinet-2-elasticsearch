@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+time,Time,string,8,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+logid,Log ID,string,10,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+type,Log Type,string,16,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+subtype,Log Subtype,string,20,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+level,Log Level,string,11,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+devid,Device ID,string,16,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+vd,Virtual Domain Name,string,32,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+eventtime,Event time,uint64,20,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+tz,Time zone,string,5,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+logdesc,Log Description,string,4096,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+msg,Log Message,string,4096,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1
+service,Name of Service,string,64,22113 - LOG_ID_FNBAM_FAILURE,22113,LOG_ID_FNBAM_FAILURE,Authentication error,Event,system,Warning,7.4.1

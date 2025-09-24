@@ -1,0 +1,63 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint8,3,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+vd,Virtual domain name,string,32,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+user,User name,string,256,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+url,The URL address,string,512,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+unauthusersource,Unauthenticated user source,string,66,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+unauthuser,Unauthenticated user,string,66,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+tz,Time Zone,string,5,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+type,Log type,string,16,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+trueclntip,True-Client-IP HTTP header,ip,39,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+time,Time,string,8,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+subtype,Log subtype,string,20,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+srcuuid,,string,37,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+srcport,Source Port,uint16,5,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+srcip,Source IP,ip,39,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+srcintf,Source Interface,string,32,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+srcdomain,,string,255,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+srccountry,,string,64,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+sessionid,Session ID,uint32,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+service,Service name,string,36,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+sentbyte,Sent Bytes,uint64,20,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+reqtype,Request type,string,8,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+referralurl,Referrer URI,string,512,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+rcvdbyte,Received Bytes,uint64,20,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+proto,Protocol number,uint8,3,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+profile,Web Filter profile name,string,64,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+poluuid,,string,37,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+policytype,,string,24,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+policymode,,string,8,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+policyid,Policy ID,uint32,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+msg,Log message,string,512,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+logid,Log ID,string,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+level,Log Level,string,11,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+initiator,The initiator user for override,string,64,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+httpmethod,,string,20,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+hostname,The host name of a URL,string,256,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+group,User group name,string,512,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+forwardedfor,X-Forwarded-For HTTP header,string,128,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+filtertype,Filter type,string,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+fctuid,FortiClient UID,string,32,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+eventtype,Web Filter event type,string,32,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+eventtime,Web Filter event time,uint64,20,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+dstuuid,,string,37,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+dstuser,,string,256,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+dstport,Destination Port,uint16,5,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+dstip,Destination IP,ip,39,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+dstintf,Destination Interface,string,32,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+dstcountry,,string,64,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+dstauthserver,,string,64,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+direction,Direction of the web traffic,string,8,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+devid,Device ID,string,16,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+date,Date,string,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+crscore,Client Reputation Score,uint32,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+crlevel,Client Reputation level,string,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+craction,Client Reputation Action,uint32,10,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+authserver,Authentication server for the user,string,64,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,13600 - LOG_ID_WEB_SCRIPTFILTER_OTHER,13600,LOG_ID_WEB_SCRIPTFILTER_OTHER,Script entity removed,Webfilter,scriptfilter,Notice,7.4.7

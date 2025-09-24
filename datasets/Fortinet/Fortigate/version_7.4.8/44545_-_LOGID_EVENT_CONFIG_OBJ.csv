@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+cfgobj,Configuration object,string,256,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+cfgpath,Configuration path,string,128,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+cfgtid,Config transaction id,uint32,10,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+msg,Log Message,string,4096,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+action,Policy Action,string,65,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+ui,User Interface,string,64,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+user,User name of authenticated user,string,256,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+logdesc,Log Description,string,4096,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+tz,Time zone,string,5,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+eventtime,Event time,uint64,20,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+vd,Virtual Domain Name,string,32,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+devid,Device ID,string,16,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+level,Log Level,string,11,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+subtype,Log Subtype,string,20,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+type,Log Type,string,16,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+logid,Log ID,string,10,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+time,Time,string,8,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8
+date,Date,string,10,44545 - LOGID_EVENT_CONFIG_OBJ,44545,LOGID_EVENT_CONFIG_OBJ,Object configured,Event,system,Information,7.4.8

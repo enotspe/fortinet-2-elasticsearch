@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+status,Status,string,23,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+action,Policy Action,string,65,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+logdesc,Log Description,string,4096,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+tz,Time zone,string,5,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+eventtime,Event time,uint64,20,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+vd,Virtual Domain Name,string,32,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+devid,Device ID,string,16,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+level,Log Level,string,11,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+subtype,Log Subtype,string,20,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+type,Log Type,string,16,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+logid,Log ID,string,10,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+time,Time,string,8,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1
+date,Date,string,10,20099 - LOG_ID_INTF_STA_CHG,20099,LOG_ID_INTF_STA_CHG,Interface status changed,Event,system,Warning,7.6.1

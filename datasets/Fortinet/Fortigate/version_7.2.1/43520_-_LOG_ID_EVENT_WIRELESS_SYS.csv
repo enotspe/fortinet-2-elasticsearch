@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+time,Time,string,8,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+logid,Log ID,string,10,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+type,Log Type,string,16,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+subtype,Log Subtype,string,20,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+level,Log Level,string,11,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+devid,Device ID,string,16,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+vd,Virtual Domain Name,string,32,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+eventtime,Event time,uint64,20,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+tz,Time zone,string,5,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+logdesc,Log Description,string,4096,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+action,Policy Action,string,65,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1
+msg,Log Message,string,4096,43520 - LOG_ID_EVENT_WIRELESS_SYS,43520,LOG_ID_EVENT_WIRELESS_SYS,Wireless system activity,Event,wireless,Notice,7.2.1

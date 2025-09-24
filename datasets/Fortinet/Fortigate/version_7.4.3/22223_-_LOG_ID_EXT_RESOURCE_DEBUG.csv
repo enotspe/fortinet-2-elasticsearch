@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+time,Time,string,8,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+logid,Log ID,string,10,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+type,Log Type,string,16,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+subtype,Log Subtype,string,20,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+level,Log Level,string,11,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+devid,Device ID,string,16,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+vd,Virtual Domain Name,string,32,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+eventtime,Event time,uint64,20,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+tz,Time zone,string,5,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+logdesc,Log Description,string,4096,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+action,Policy Action,string,65,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+msg,Log Message,string,4096,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+dstport,Destination Protocol Port,uint16,5,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+path,,string,512,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+desc,Description,string,128,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+informationsource,Information Source,string,4096,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+profile,Profile Name,string,64,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+hostname,Hostname,string,128,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+host,,string,256,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3
+old_status,Original Status,string,512,22223 - LOG_ID_EXT_RESOURCE_DEBUG,22223,LOG_ID_EXT_RESOURCE_DEBUG,Threat feed debug,Event,system,Debug,7.4.3

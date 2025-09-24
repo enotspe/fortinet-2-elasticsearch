@@ -1,0 +1,53 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual Domain Name,string,32,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+user,User Name,string,256,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+url,URL,string,512,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+unauthusersource,Unauthenticated user source,string,66,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+unauthuser,Unauthenticated user,string,66,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+tz,Time zone,string,5,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+type,Log Type,string,16,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+time,Time,string,8,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+subtype,Log Subtype,string,20,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+srcuuid,,string,37,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+srcport,Source Port,uint16,5,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+srcip,Source IP Address,ip,39,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+srcintf,Source Interface,string,32,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+srcdomain,,string,255,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+srccountry,,string,64,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+severity,Severity,string,6,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+sessionid,Session ID,uint32,10,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+service,Service name,string,5,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+referralurl,,string,512,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+rawdata,Raw Data,string,20480,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+ratemethod,,string,4096,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+proto,Protocol,uint8,3,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+profile,Full profile name,string,64,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+poluuid,,string,37,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+policytype,,string,24,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+policyid,Policy ID,uint32,10,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+name,Method or custom signature name,string,64,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+msg,Log Message,string,4096,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+logid,Log ID,string,10,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+level,Log Level,string,11,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+httpmethod,,string,20,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+group,User Group Name,string,512,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+fctuid,FortiClient UID,string,32,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+eventtype,Event Type,string,32,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+eventtime,"Event Time, Time when WAF event detected",uint64,20,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+eventid,Event ID,uint32,10,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+dstuuid,,string,37,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+dstuser,,string,256,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+dstport,Destination Port,uint16,5,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+dstip,Destination IP Address,ip,39,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+dstintf,Destination Interface,string,32,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+dstcountry,,string,64,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+dstauthserver,,string,64,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+direction,Direction,string,4096,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+devid,Device ID,string,16,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+date,Date,string,10,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+constraint,WAF HTTP protocol restrictions,string,4096,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+authserver,Authentication Server,string,64,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+agent,Agent,string,1024,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7
+action,Status of the session. Uses following definition: - Deny = blocked by firewall policy. - Start = session start log (special option to enable logging at start of a session). This means firewall allowed. - All Others = allowed by Firewall Policy and the status indicates how it was closed.,string,17,30248 - LOGID_WAF_SIGNATURE_BLOCK,30248,LOGID_WAF_SIGNATURE_BLOCK,Web application firewall blocked application by signature,WAF,waf-signature,Warning,7.4.7

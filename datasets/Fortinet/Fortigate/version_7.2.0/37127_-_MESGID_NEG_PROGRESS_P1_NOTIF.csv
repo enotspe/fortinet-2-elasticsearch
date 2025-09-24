@@ -1,0 +1,37 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Policy Action,string,65,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+advpnsc,,uint8,3,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+cookies,Cookie,string,64,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+date,Date,string,10,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+devid,Device ID,string,16,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+dir,Direction,string,8,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+eventtime,Event time,uint64,20,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+exch,Type of IKE messages exchanged,string,14,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+group,User group Name,string,64,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+init,,string,6,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+level,Log Level,string,11,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+locip,IPsec VPN local gateway IP address,ip,39,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+locport,Local Port,uint16,5,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+logdesc,Log Description,string,4096,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+logid,Log ID,string,10,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+mode,IPsec VPN ID protection mode,string,12,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+msg,Log Message,string,4096,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+outintf,IPsec VPN binding interface,string,32,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+remip,IPsec VPN remote gateway IP address,ip,39,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+remport,Remote Port,uint16,5,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+result,IPsec VPN negotiation result,string,31,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+role,"IPsec peer role, initator or responder",string,9,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+stage,,uint8,3,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+status,Status,string,23,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+subtype,Log Subtype,string,20,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+time,Time,string,8,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+type,Log Type,string,16,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+tz,Time zone,string,5,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+user,User name of authenticated user,string,256,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+useralt,,string,256,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+vd,Virtual Domain Name,string,32,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+version,Version,string,64,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+vpntunnel,IPsec VPN Tunnel Name,string,128,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+xauthgroup,IPsec VPN Xauth user group name,string,128,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0
+xauthuser,IPsec VPN Xauth user name,string,256,37127 - MESGID_NEG_PROGRESS_P1_NOTIF,37127,MESGID_NEG_PROGRESS_P1_NOTIF,Progress IPsec phase 1,Event,VPN,Notice,7.2.0

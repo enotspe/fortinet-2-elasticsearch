@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+time,Time,string,8,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+logid,Log ID,string,10,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+type,Log Type,string,16,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+subtype,Log Subtype,string,20,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+level,Log Level,string,11,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+devid,Device ID,string,16,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+vd,Virtual Domain Name,string,32,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+eventtime,Event time,uint64,20,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+tz,Time zone,string,5,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+logdesc,Log Description,string,4096,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+user,User name of authenticated user,string,256,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+action,Policy Action,string,65,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+status,Status,string,23,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0
+msg,Log Message,string,4096,32103 - LOG_ID_NEW_FIRMWARE,32103,LOG_ID_NEW_FIRMWARE,New firmware available on FortiGuard,Event,system,Notice,7.6.0

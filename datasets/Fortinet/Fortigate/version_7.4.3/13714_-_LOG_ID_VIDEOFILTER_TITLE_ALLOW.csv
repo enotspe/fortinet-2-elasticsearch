@@ -1,0 +1,44 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,,string,11,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+date,,string,10,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+devid,,string,16,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+dstintf,,string,32,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+dstintfrole,,string,10,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+dstip,,ip,39,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+dstport,,uint16,5,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+dstuser,,string,256,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+eventtime,,uint64,20,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+eventtype,,string,32,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+group,,string,512,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+hostname,,string,256,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+httpmethod,,string,20,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+level,,string,11,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+logid,,string,10,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+msg,,string,512,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+policyid,,uint32,10,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+poluuid,,string,37,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+profile,,string,64,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+proto,,uint8,3,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+referralurl,Referrer URI,string,512,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+service,,string,36,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+sessionid,,uint32,10,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+srcintf,,string,32,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+srcintfrole,,string,10,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+srcip,,ip,39,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+srcport,,uint16,5,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+subtype,,string,20,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+time,,string,8,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+type,,string,16,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+tz,,string,5,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+url,,string,512,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+user,,string,256,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+vd,,string,32,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+videocategoryid,,uint32,10,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+videocategoryname,,string,256,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+videochannelid,,string,512,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+videodesc,,string,64,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+videoid,,string,512,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+videoinfosource,,string,10,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+videotitle,,string,512,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3
+vrf,,uint8,3,13714 - LOG_ID_VIDEOFILTER_TITLE_ALLOW,13714,LOG_ID_VIDEOFILTER_TITLE_ALLOW,Video title is allowed,Webfilter,videofilter-title,Notice,7.4.3

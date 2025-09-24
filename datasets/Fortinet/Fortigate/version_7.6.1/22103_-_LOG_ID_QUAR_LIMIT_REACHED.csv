@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+limit,Virtual Domain Resource Limit,uint32,10,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+count,Count,uint32,10,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+msg,Log Message,string,4096,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+action,Policy Action,string,65,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+logdesc,Log Description,string,4096,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+tz,Time zone,string,5,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+eventtime,Event time,uint64,20,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+vd,Virtual Domain Name,string,32,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+devid,Device ID,string,16,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+level,Log Level,string,11,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+subtype,Log Subtype,string,20,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+type,Log Type,string,16,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+logid,Log ID,string,10,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+time,Time,string,8,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1
+date,Date,string,10,22103 - LOG_ID_QUAR_LIMIT_REACHED,22103,LOG_ID_QUAR_LIMIT_REACHED,Sandbox limit reached,Event,system,Warning,7.6.1

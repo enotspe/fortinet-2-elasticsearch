@@ -1,0 +1,84 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ log-only - DLP event is detected , but NOT blocked (similar to monitor action)
+ block - Blocked
+ exempt - Allowed
+ ban - blocked (Not in used since FortiOS 5.0, replaced by blocked)
+ ban-sender - blocks all data being sent by an ip or user (Not in used since FortiOS 5.0, replaced by quarantine)
+ quarantine-ip - Blocked and band the source ip (Not in used since FortiOS 5.0)
+ quarantine-interface - Blocked and band the source interface (Not in used since FortiOS 5.0)",string,20,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+attachment,,string,3,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+authserver,Authentication Server,string,64,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+cc,,string,512,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+date,Date,string,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+devid,Device ID,string,16,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+direction,Direction of packets,string,8,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dlpextra,DLP extra information,string,256,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dstauthserver,,string,64,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dstcountry,,string,64,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dstintf,Destination Interface,string,32,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dstip,Destination IP,ip,39,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dstport,Destination Port,uint16,5,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dstuser,,string,256,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+dstuuid,,string,37,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+epoch,Epoch used for locating file,uint32,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+eventid,The serial number of the dlparchive file in the same epoch,uint32,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+eventtime,"Event Time, time when DLP event detected.",uint64,20,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+eventtype,DLP event type,string,32,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+fctuid,FortiClient User ID,string,32,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+filename,File name,string,256,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+filesize,File size in bytes,uint64,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+filetype,File type,string,23,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+filtercat,DLP filter category,string,8,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+filteridx,DLP filter ID,uint32,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+filtername,DLP rule name,string,128,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+filtertype,DLP filter type,string,23,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+forwardedfor,Forwarded For,string,128,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+group,User group name,string,512,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+hostname,The host name of a URL,string,256,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+httpmethod,,string,20,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+infectedfilelevel,"Infected File Level (Critical,Warning etc)",uint32,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+infectedfilename,Infected File Name,string,256,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+infectedfilesize,Infected File Size,uint64,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+infectedfiletype,Infected File Type,string,23,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+level,Log Level,string,11,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+logid,Log ID,string,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+pdstport,,uint16,5,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+policyid,Policy ID,uint32,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+policymode,,string,8,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+policytype,,string,24,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+poluuid,,string,37,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+profile,DLP profile name,string,64,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+proto,Protocol number,uint8,3,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+psrcport,,uint16,5,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+rawdata,Raw Data,string,20480,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+recipient,Email addresses from the SMTP envelope,string,512,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+referralurl,,string,512,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+sender,Email address from the SMTP envelope,string,128,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+service,Service name,string,36,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+sessionid,Session ID,uint32,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+severity,Severity level of a DLP rule,string,8,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+srccountry,,string,64,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+srcdomain,,string,255,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+srcintf,Source Interface,string,32,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+srcip,Source IP,ip,39,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+srcport,Source Port,uint16,5,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+srcuuid,,string,37,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+subject,The subject title of the email message,string,256,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+subservice,,string,16,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+subtype,Log subtype,string,20,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+time,Time,string,8,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+trueclntip,True client's IP,ip,39,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+type,Log type,string,16,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+tz,,string,5,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+unauthuser,Unauthenticated user,string,66,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+unauthusersource,Unauthenticated user source,string,66,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+url,The URL address,string,512,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+user,User name,string,256,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+vd,Virtual domain name,string,32,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1
+vrf,Virtual Routing Forwarding,uint8,3,24577 - LOG_ID_DLP_NOTIF,24577,LOG_ID_DLP_NOTIF,Data leak detected by specified DLP sensor rule,DLP,dlp,Notice,7.4.1

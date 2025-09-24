@@ -1,0 +1,47 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual Domain Name,string,32,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+user,User name for authentication,string,256,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+unauthusersource,Unauthenticated User Source,string,66,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+unauthuser,Unauthenticated User,string,66,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+tz,Time zone,string,5,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+type,Log type,string,16,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+time,Time,string,8,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+subtype,Log subtype,string,20,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+srcuuid,,string,37,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+srcport,Source Port,uint16,5,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+srcip,Source IP,ip,39,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+srcintf,Source Interface,string,32,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+srcdomain,,string,255,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+srccountry,,string,64,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+severity,Severity level of shell command,string,8,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+sessionid,Session ID,uint32,10,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+proto,Protocol number,uint8,3,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+profile,Full profile name,string,64,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+poluuid,,string,37,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+policytype,,string,24,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+policyid,Policy ID,uint32,10,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+login,SSH login Name,string,128,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+logid,Log ID,string,10,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+level,Log level,string,11,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+hostkeystatus,,string,15,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+group,Group name for authentication,string,512,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+fctuid,FortiClient UID,string,32,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+eventtype,Event Type,string,32,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+eventtime,Event time,uint64,20,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+dstuuid,,string,37,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+dstuser,,string,256,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+dstport,Destination Port,uint16,5,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+dstip,Destination IP,ip,39,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+dstintf,Destination Interface,string,32,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+dstcountry,,string,64,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+direction,Direction of session,string,4096,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+devid,Device ID,string,16,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+date,Date,string,10,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+command,Shell command,string,256,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+channeltype,"Type of Channel:
+ x11, shell, exec, tcp-fprward, tun-forward, sftp. scp",string,15,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1
+action,"The status of the ssh-channel:
+ passthrough - channel is allowed
+ blocked - channel is blocked",string,17,61001 - LOG_ID_SSH_COMMAND_BLOCK_ALERT,61001,LOG_ID_SSH_COMMAND_BLOCK_ALERT,SSH shell command is blocked,SSH,ssh-command,Alert,7.6.1

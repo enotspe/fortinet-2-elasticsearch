@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+time,Time,string,8,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+logid,Log ID,string,10,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+type,Log Type,string,16,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+subtype,Log Subtype,string,20,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+level,Log Level,string,11,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+devid,Device ID,string,16,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+vd,Virtual Domain Name,string,32,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+eventtime,Event time,uint64,20,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+tz,Time zone,string,5,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+logdesc,Log Description,string,4096,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+user,User name of authenticated user,string,256,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+ui,User Interface,string,64,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5
+msg,Log Message,string,4096,32052 - LOG_ID_UPLOAD_RUN_SCRIPT,32052,LOG_ID_UPLOAD_RUN_SCRIPT,Upload and run a script,Event,system,Notice,7.2.5

@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+logdesc,Log Description,string,4096,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+tz,Time zone,string,5,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+eventtime,Event time,uint64,20,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+vd,Virtual Domain Name,string,32,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+devid,Device ID,string,16,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+level,Log Level,string,11,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+subtype,Log Subtype,string,20,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+type,Log Type,string,16,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+logid,Log ID,string,10,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+time,Time,string,8,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4
+date,Date,string,10,20130 - LOG_ID_EMSC_ACC_LIC_EXPIRE,20130,LOG_ID_EMSC_ACC_LIC_EXPIRE,FortiClient EMS Cloud license expiring,Event,system,Warning,7.6.4

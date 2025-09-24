@@ -1,0 +1,37 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+contentencoding,,string,512,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+vrf,,uint8,3,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+vd,VDOM name,string,32,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+user,Username (authentication),string,256,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+url,The URL address,string,512,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+tz,Time Zone,string,5,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+type,Log type,string,16,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+time,Time,string,8,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+subtype,Subtype of the virus log,string,20,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+srcport,Source Port,uint16,5,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+srcip,Source IP Address,ip,39,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+srcintf,Source Interface,string,32,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+sessionid,Session ID,uint32,10,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+service,Proxy service which scanned this traffic,string,5,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+proto,Protocol number,uint8,3,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+profile,The name of the profile that was used to detect and take action,string,64,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+poluuid,,string,37,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+policyid,Policy ID,uint32,10,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+msg,Log message,string,4096,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+logid,Log ID,string,10,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+level,Log level,string,11,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+group,Group name (authentication),string,512,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+eventtype,Event type of AV,string,32,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+eventtime,Time when detection occured,uint64,20,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+dstport,Destination Port,uint16,5,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+dstip,Destination IP Address,ip,39,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+dstintf,Destination Interface,string,32,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+devid,,string,16,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+date,Date,string,10,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,9242 - LOG_ID_UNKNOWN_CE_BYPASS,9242,LOG_ID_UNKNOWN_CE_BYPASS,Scan is bypassed due to unknown content-encoding,Virus,unknown,Notice,7.4.6

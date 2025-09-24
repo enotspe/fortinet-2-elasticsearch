@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+act,Action,string,16,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+daddr,Destination address,string,80,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+date,Date,string,10,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+devid,Device ID,string,16,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+dintf,Destination interface,string,36,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+eventtime,Event time,uint64,20,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+iptype,IP type,string,16,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+level,Log Level,string,11,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+logdesc,Log Description,string,4096,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+logid,Log ID,string,10,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+msg,Log Message,string,4096,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+saddr,Source Address IP,string,80,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+seq,,string,512,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+status,Status,string,23,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+subtype,Log Subtype,string,20,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+time,Time,string,8,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+type,Log Type,string,16,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+tz,Time zone,string,5,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+ui,User Interface,string,64,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+user,User name of authenticated user,string,256,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0
+vd,Virtual Domain Name,string,32,32172 - LOG_ID_ADD_IP4_LOCAL_POL,32172,LOG_ID_ADD_IP4_LOCAL_POL,IPv4 firewall local in policy added,Event,SYSTEM,Notice,7.2.0

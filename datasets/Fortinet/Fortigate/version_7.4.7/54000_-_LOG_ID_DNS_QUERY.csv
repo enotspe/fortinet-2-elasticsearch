@@ -1,0 +1,41 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+xid,Transaction ID,uint16,5,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+vd,Virtual Domain Name,string,32,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+user,User name,string,256,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+unauthusersource,Unauthenticated User Source,string,66,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+unauthuser,Unauthenticated User,string,66,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+tz,Time zone,string,5,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+type,Log Type,string,16,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+time,Time,string,8,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+subtype,Log Subtype,string,20,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+srcport,Source Port,uint16,5,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+srcmac,MAC address associated with the Source IP,string,17,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+srcip,Source IP,ip,39,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+srcintfrole,Source Interface Role,string,10,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+srcintf,Source Interface,string,32,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+srcdomain,,string,255,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+srccountry,,string,64,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+sessionid,Session ID,uint32,10,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+qtypeval,Query Type Value,uint16,5,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+qtype,Query type description,string,32,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+qname,Query domain name,string,256,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+qclass,Query class,string,32,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+proto,Protocol number,uint8,3,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+profile,Profile name for DNS filter,string,64,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+poluuid,,string,37,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+policytype,,string,24,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+policyid,Policy ID,uint32,10,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+logid,Log ID,string,10,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+level,Log Level,string,11,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+group,User group name,string,512,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+fctuid,FortiClient ID,string,32,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+eventtype,DNS Type (DNS query/DNS response),string,32,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+eventtime,Event Timestamp,uint64,20,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+dstuser,,string,256,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+dstport,Destination Port,uint16,5,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+dstip,Destination IP,ip,39,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+dstintfrole,Destination Interface Role,string,10,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+dstintf,Destination Interface,string,32,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+dstcountry,,string,64,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+devid,Device ID,string,16,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7
+date,Date,string,10,54000 - LOG_ID_DNS_QUERY,54000,LOG_ID_DNS_QUERY,DNS query message,DNS,dns-query,Information,7.4.7

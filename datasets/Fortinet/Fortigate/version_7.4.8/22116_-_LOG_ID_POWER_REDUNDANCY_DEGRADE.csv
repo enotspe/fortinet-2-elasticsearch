@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+status,Status,string,23,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+action,Policy Action,string,65,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+logdesc,Log Description,string,4096,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+tz,Time zone,string,5,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+eventtime,Event time,uint64,20,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+vd,Virtual Domain Name,string,32,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+devid,Device ID,string,16,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+level,Log Level,string,11,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+subtype,Log Subtype,string,20,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+type,Log Type,string,16,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+logid,Log ID,string,10,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+time,Time,string,8,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8
+date,Date,string,10,22116 - LOG_ID_POWER_REDUNDANCY_DEGRADE,22116,LOG_ID_POWER_REDUNDANCY_DEGRADE,Power Supply Redundancy Degrade,Event,system,Warning,7.4.8

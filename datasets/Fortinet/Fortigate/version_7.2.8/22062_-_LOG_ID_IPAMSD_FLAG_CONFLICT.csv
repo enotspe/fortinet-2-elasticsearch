@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+time,Time,string,8,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+logid,Log ID,string,10,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+type,Log Type,string,16,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+subtype,Log Subtype,string,20,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+level,Log Level,string,11,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+devid,Device ID,string,16,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+vd,Virtual Domain Name,string,32,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+eventtime,Event time,uint64,20,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+tz,Time zone,string,5,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+logdesc,Log Description,string,4096,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+msg,Log Message,string,4096,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+sn,Serial Number,string,64,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8
+interface,Interface,string,32,22062 - LOG_ID_IPAMSD_FLAG_CONFLICT,22062,LOG_ID_IPAMSD_FLAG_CONFLICT,Flag IPAM entry as conflict,Event,system,Notice,7.2.8

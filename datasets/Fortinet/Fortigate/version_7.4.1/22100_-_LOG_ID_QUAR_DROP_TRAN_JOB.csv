@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+time,Time,string,8,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+logid,Log ID,string,10,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+type,Log Type,string,16,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+subtype,Log Subtype,string,20,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+level,Log Level,string,11,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+devid,Device ID,string,16,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+vd,Virtual Domain Name,string,32,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+eventtime,Event time,uint64,20,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+tz,Time zone,string,5,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+logdesc,Log Description,string,4096,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+action,Policy Action,string,65,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+status,Status,string,23,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+msg,Log Message,string,4096,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+count,Count,uint32,10,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+limit,Virtual Domain Resource Limit,uint32,10,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+reason,Reason,string,256,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+used,Number of Used IPs,uint32,10,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+duration,Duration,uint32,10,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1
+fams_pause,Fortinet Analysis and Management Service Pause,uint32,10,22100 - LOG_ID_QUAR_DROP_TRAN_JOB,22100,LOG_ID_QUAR_DROP_TRAN_JOB,Files dropped by quarantine daemon,Event,system,Warning,7.4.1

@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+devid,Device ID,string,16,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+eventtime,Event time,uint64,20,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+ip,,ip,39,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+level,Log Level,string,11,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+logdesc,Log Description,string,4096,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+logid,Log ID,string,10,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+msg,Log Message,string,4096,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+sn,Serial Number,string,64,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+subtype,Log Subtype,string,20,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+time,Time,string,8,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+type,Log Type,string,16,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+tz,Time zone,string,5,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0
+vd,Virtual Domain Name,string,32,46406 - LOG_ID_EVENT_EXT_REMOTE_ERROR,46406,LOG_ID_EVENT_EXT_REMOTE_ERROR,Remote FortiExtender error activity,Event,FORTIEXTENDER,Error,7.2.0

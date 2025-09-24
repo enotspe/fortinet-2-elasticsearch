@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+sn,,string,64,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+name,,string,128,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+msg,,string,4096,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+ui,,string,64,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+user,,string,256,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+logdesc,,string,4096,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+tz,,string,5,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+eventtime,,uint64,20,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+vd,,string,32,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+devid,,string,16,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+level,,string,11,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+subtype,,string,20,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+type,,string,16,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+logid,,string,10,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+time,,string,8,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3
+date,,string,10,32621 - LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,32621,LOG_ID_FGT_SWITCH_GROUP_DEL_MEMBER,Delete switch as member from switch group,Event,switch-controller,Information,7.6.3

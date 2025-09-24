@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+time,Time,string,8,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+logid,Log ID,string,10,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+type,Log Type,string,16,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+subtype,Log Subtype,string,20,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+level,Log Level,string,11,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+devid,Device ID,string,16,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+vd,Virtual Domain Name,string,32,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+eventtime,Event time,uint64,20,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+tz,Time zone,string,5,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+logdesc,Log Description,string,4096,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10
+msg,Log Message,string,4096,20084 - LOG_ID_RAD_FAIL_TO_SEND,20084,LOG_ID_RAD_FAIL_TO_SEND,RADVD send message failed,Event,system,Warning,7.2.10

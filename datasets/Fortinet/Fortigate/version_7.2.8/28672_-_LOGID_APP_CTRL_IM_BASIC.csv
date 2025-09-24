@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+app,Application name,string,96,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+appcat,Application category name,string,64,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+applist,Application Control profile name,string,64,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+authserver,Authentication server for the user,string,64,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+date,Date,string,10,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+devid,Deivce ID,string,16,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+direction,Direction of the packets,string,8,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+dstcountry,,string,64,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+dstintf,Destination Interface,string,64,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+dstip,Destination IP,ip,39,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+dstport,Destination Port,uint16,5,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+eventtime,Event Time,uint64,20,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+eventtype,App Control Event Type,string,32,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+fctuid,FortiClient User ID,string,32,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+group,User group name,string,512,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+level,Log level,string,11,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+logid,Log ID,string,10,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+policyid,Policy ID,uint32,10,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+profile,,string,36,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+profiletype,Profile Type,string,36,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+proto,Protocol number,uint8,3,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+service,Service name,string,80,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+sessionid,Session ID,uint32,10,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+srccountry,,string,64,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+srcdomain,,string,255,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+srcintf,Source Interface,string,64,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+srcip,Source IP,ip,39,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+srcport,Source Port,uint16,5,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+subtype,Log subtype,string,20,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+time,Time,string,8,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+type,Log type,string,16,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+tz,,string,5,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+unauthuser,Unauthenticated user,string,66,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+unauthusersource,Unauthenticated user source,string,66,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+user,User name,string,256,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+vd,Virtual domain name,string,32,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8
+vrf,Virtual Routing Forwarding,uint8,3,28672 - LOGID_APP_CTRL_IM_BASIC,28672,LOGID_APP_CTRL_IM_BASIC,Application control IM-basic,APP-CTRL,signature,Information,7.2.8

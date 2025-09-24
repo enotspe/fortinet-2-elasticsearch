@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+time,Time,string,8,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+logid,Log ID,string,10,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+type,Log Type,string,16,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+subtype,Log Subtype,string,20,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+level,Log Level,string,11,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+devid,Device ID,string,16,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+vd,Virtual Domain Name,string,32,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+eventtime,Event time,uint64,20,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+tz,Time zone,string,5,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+logdesc,Log Description,string,4096,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9
+msg,Log Message,string,4096,34417 - LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,34417,LOG_ID_NP6_IPSEC_ENGINE_LOCKUP,NP6 IPsec engine is locked up,Event,system,Critical,7.2.9

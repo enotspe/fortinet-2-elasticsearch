@@ -1,0 +1,23 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+fctuid,FortiClient UID,string,32,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+name,Display Name of the Connection,string,128,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+ip,Source IP,ip,39,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+user,User name of authenticated user,string,256,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+count,Number of Packets,uint32,10,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+connection_type,,string,6,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+used_for_type,,uint32,10,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+license_limit,,string,32,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+status,Status,string,23,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+action,Policy Action,string,65,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+logdesc,Log Description,string,4096,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+tz,Time zone,string,5,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+eventtime,Event time,uint64,20,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+vd,Virtual Domain Name,string,32,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+devid,Device ID,string,16,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+level,Log Level,string,11,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+subtype,Log Subtype,string,20,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+type,Log Type,string,16,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+logid,Log ID,string,10,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+time,Time,string,8,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12
+date,Date,string,10,45061 - LOG_ID_FCC_CLOSE_BY_TYPE,45061,LOG_ID_FCC_CLOSE_BY_TYPE,FortiClient connection closed by type,Event,endpoint,Information,7.2.12

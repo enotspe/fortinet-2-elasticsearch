@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+time,Time,string,8,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+logid,Log ID,string,10,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+type,Log Type,string,16,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+subtype,Log Subtype,string,20,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+level,Log Level,string,11,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+devid,Device ID,string,16,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+vd,Virtual Domain Name,string,32,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+eventtime,Event time,uint64,20,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+tz,Time zone,string,5,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+logdesc,Log Description,string,4096,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+user,User name of authenticated user,string,256,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+action,Policy Action,string,65,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+status,Status,string,23,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+msg,Log Message,string,4096,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+srcip,Source IP,ip,39,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+server,AD server FQDN or IP,string,64,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10
+reason,Reason,string,256,38032 - LOG_ID_FSSO_LOGOFF,38032,LOG_ID_FSSO_LOGOFF,FSSO logout successful,Event,user,Notice,7.2.10

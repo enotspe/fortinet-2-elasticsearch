@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+time,Time,string,8,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+logid,Log ID,string,10,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+type,Log Type,string,16,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+subtype,Log Subtype,string,20,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+level,Log Level,string,11,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+devid,Device ID,string,16,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+vd,Virtual Domain Name,string,32,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+eventtime,Event time,uint64,20,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+tz,Time zone,string,5,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+logdesc,Log Description,string,4096,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+action,Policy Action,string,65,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+status,Status,string,23,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+msg,Log Message,string,4096,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+srcip,Source IP,ip,39,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+dstip,Destination IP,ip,39,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+policyid,Policy ID,uint32,10,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+url,URL,string,512,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10
+agent,SNMP agent,string,1024,43034 - LOG_ID_EVENT_AUTH_PROXY_NO_RESP,43034,LOG_ID_EVENT_AUTH_PROXY_NO_RESP,Explicit proxy authentication no response,Event,user,Notice,7.2.10

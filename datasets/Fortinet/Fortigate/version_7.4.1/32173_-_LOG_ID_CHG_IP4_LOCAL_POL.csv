@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+time,Time,string,8,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+logid,Log ID,string,10,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+type,Log Type,string,16,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+subtype,Log Subtype,string,20,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+level,Log Level,string,11,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+devid,Device ID,string,16,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+vd,Virtual Domain Name,string,32,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+eventtime,Event time,uint64,20,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+tz,Time zone,string,5,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+logdesc,Log Description,string,4096,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+user,User name of authenticated user,string,256,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+ui,User Interface,string,64,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+status,Status,string,23,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+msg,Log Message,string,4096,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+saddr,Source Address IP,string,80,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+seq,,string,512,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+dintf,Destination interface,string,36,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+daddr,Destination address,string,80,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+act,Action,string,16,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1
+iptype,IP type,string,16,32173 - LOG_ID_CHG_IP4_LOCAL_POL,32173,LOG_ID_CHG_IP4_LOCAL_POL,IPv4 firewall local in policy's setting changed,Event,system,Notice,7.4.1

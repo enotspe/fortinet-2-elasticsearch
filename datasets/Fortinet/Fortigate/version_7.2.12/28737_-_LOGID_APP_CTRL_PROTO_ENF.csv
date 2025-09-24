@@ -1,0 +1,78 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual Routing Forwarding,uint8,3,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+vd,Virtual domain name,string,32,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+user,User name,string,256,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+url,The URL address,string,512,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+unauthusersource,Unauthenticated user source,string,66,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+unauthuser,Unauthenticated user,string,66,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+tz,,string,5,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+type,Log type,string,16,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+trueclntip,True-Client-IP,ip,39,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+time,Time,string,8,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+subtype,Log subtype,string,20,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+srcport,Source Port,uint16,5,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+srcip,Source IP,ip,39,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+srcintf,Source Interface,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+srcdomain,,string,255,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+srccountry,,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+sessionid,Session ID,uint32,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+service,Service name,string,80,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+scertissuer,server certificate issuer,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+scertcname,server certificate name,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+referralurl,,string,512,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+rawdataid,,string,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,1024,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+psrcport,,uint16,5,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+proto,Protocol number,uint8,3,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+profiletype,Profile Type,string,36,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+profile,,string,36,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+poluuid,,string,37,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+policytype,,string,24,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+policymode,,string,8,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+policyid,Policy ID,uint32,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+pdstport,,uint16,5,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+parameters,,string,512,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+msg,Log message,string,512,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+logid,Log ID,string,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+level,Log level,string,11,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+incidentserialno,Incident serial number,uint32,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+httpmethod,,string,20,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+hostname,The host name of a URL,string,256,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+group,User group name,string,512,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+forwardedfor,Forwarded For,string,128,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+filesize,File size in bytes,uint64,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+filename,File name,string,256,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+fctuid,FortiClient User ID,string,32,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+eventtype,App Control Event Type,string,32,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+eventtime,Event Time,uint64,20,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+dstuser,,string,256,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+dstport,Destination Port,uint16,5,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+dstip,Destination IP,ip,39,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+dstintf,Destination Interface,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+dstcountry,,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+dstauthserver,,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+direction,Direction of the packets,string,8,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+devid,Deivce ID,string,16,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+date,Date,string,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+crscore,Client Reputation Score,uint32,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+crlevel,Client Reputation Level,string,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+craction,Client Reputation Action,uint32,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+clouduser,User login ID detected by the Deep Application Control feature,string,256,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+clouddevice,,string,256,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+cloudaction,Action performed by cloud application,string,32,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+ccertissuer,,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+authserver,Authentication server for the user,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+apprisk,Application risk level,string,16,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+applist,Application Control profile name,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+appid,Application ID,uint32,10,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+appcat,Application category name,string,64,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+app,Application name,string,96,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+agent,,string,1024,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28737 - LOGID_APP_CTRL_PROTO_ENF,28737,LOGID_APP_CTRL_PROTO_ENF,Application control protocol enforcement,APP-CTRL,protocol-violation,Warning,7.2.12

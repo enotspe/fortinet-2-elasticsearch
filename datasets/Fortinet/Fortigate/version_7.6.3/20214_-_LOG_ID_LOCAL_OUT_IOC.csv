@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+session_id,Session ID,uint32,10,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+dstport,Destination Protocol Port,uint16,5,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+dstip,Destination IP,ip,39,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+srcport,Source port,uint16,5,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+srcip,Source IP,ip,39,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+proto,Protocol Number,uint8,3,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+logdesc,Log Description,string,4096,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+tz,Time zone,string,5,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+eventtime,Event time,uint64,20,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+vd,Virtual Domain Name,string,32,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+devid,Device ID,string,16,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+level,Log Level,string,11,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+subtype,Log Subtype,string,20,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+type,Log Type,string,16,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+logid,Log ID,string,10,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+time,Time,string,8,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3
+date,Date,string,10,20214 - LOG_ID_LOCAL_OUT_IOC,20214,LOG_ID_LOCAL_OUT_IOC,Locally generated traffic goes to IoC location,Event,system,Warning,7.6.3

@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+logdesc,Log Description,string,4096,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+tz,Time zone,string,5,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+eventtime,Event time,uint64,20,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+vd,Virtual Domain Name,string,32,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+devid,Device ID,string,16,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+level,Log Level,string,11,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+subtype,Log Subtype,string,20,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+type,Log Type,string,16,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+logid,Log ID,string,10,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+time,Time,string,8,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2
+date,Date,string,10,46516 - LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,46516,LOG_ID_INTERNAL_LTE_MODEM_BEARER_TECH_CHANGE,LTE modem bearer event,Event,system,Information,7.6.2

@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the ssh-channel:
+ passthrough - channel is allowed
+ blocked - channel is blocked",string,17,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+channeltype,"Type of Channel:
+ x11, shell, exec, tcp-fprward, tun-forward, sftp. scp",string,15,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+command,Shell command,string,256,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+date,Date,string,10,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+devid,Device ID,string,16,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+direction,Direction of session,string,4096,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+dstcountry,,string,64,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+dstintf,Destination Interface,string,32,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+dstip,Destination IP,ip,39,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+dstport,Destination Port,uint16,5,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+dstuser,,string,256,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+dstuuid,,string,37,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+eventtime,Event time,uint64,20,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+eventtype,Event Type,string,32,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+fctuid,FortiClient UID,string,32,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+group,Group name for authentication,string,64,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+hostkeystatus,,string,15,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+level,Log level,string,11,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+logid,Log ID,string,10,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+login,SSH login Name,string,128,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+policyid,Policy ID,uint32,10,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+policytype,,string,24,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+profile,Full profile name,string,64,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+proto,Protocol number,uint8,3,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+sessionid,Session ID,uint32,10,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+severity,Severity level of shell command,string,8,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+srccountry,,string,64,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+srcdomain,,string,255,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+srcintf,Source Interface,string,32,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+srcip,Source IP,ip,39,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+srcport,Source Port,uint16,5,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+srcuuid,,string,37,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+subtype,Log subtype,string,20,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+time,Time,string,8,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+type,Log type,string,16,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+tz,Time zone,string,5,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+unauthuser,Unauthenticated User,string,66,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+unauthusersource,Unauthenticated User Source,string,66,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+user,User name for authentication,string,256,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0
+vd,Virtual Domain Name,string,32,61010 - LOG_ID_SSH_CHANNEL_BLOCK,61010,LOG_ID_SSH_CHANNEL_BLOCK,SSH channel is blocked,SSH,SSH-CHANNEL,Warning,7.2.0

@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+app,Application name,string,96,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+appcat,Application category name,string,64,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+applist,Application Control profile name,string,64,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+authserver,Authentication server for the user,string,64,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+date,Date,string,10,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+devid,Deivce ID,string,16,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+direction,Direction of the packets,string,8,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+dstcountry,,string,64,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+dstintf,Destination Interface,string,64,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+dstip,Destination IP,ip,39,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+dstport,Destination Port,uint16,5,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+eventtime,Event Time,uint64,20,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+eventtype,App Control Event Type,string,32,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+fctuid,FortiClient User ID,string,32,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+group,User group name,string,512,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+level,Log level,string,11,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+logid,Log ID,string,10,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+policyid,Policy ID,uint32,10,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+profile,,string,36,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+profiletype,Profile Type,string,36,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+proto,Protocol number,uint8,3,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+service,Service name,string,80,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+sessionid,Session ID,uint32,10,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+srccountry,,string,64,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+srcdomain,,string,255,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+srcintf,Source Interface,string,64,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+srcip,Source IP,ip,39,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+srcport,Source Port,uint16,5,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+subtype,Log subtype,string,20,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+time,Time,string,8,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+type,Log type,string,16,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+tz,,string,5,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+unauthuser,Unauthenticated user,string,66,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+unauthusersource,Unauthenticated user source,string,66,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+user,User name,string,256,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+vd,Virtual domain name,string,32,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0
+vrf,Virtual Routing Forwarding,uint8,3,28721 - LOGID_APP_CTRL_SSH_BLOCK,28721,LOGID_APP_CTRL_SSH_BLOCK,Application control IM (SSH) (block),APP-CTRL,signature,Warning,7.6.0

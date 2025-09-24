@@ -1,0 +1,32 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+time,Time,string,8,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+logid,Log ID,string,10,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+type,Log Type,string,16,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+subtype,Log Subtype,string,20,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+level,Log Level,string,11,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+devid,Device ID,string,16,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+vd,Virtual Domain Name,string,32,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+eventtime,Event time,uint64,20,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+tz,Time zone,string,5,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+logdesc,Log Description,string,4096,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+action,Policy Action,string,65,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+msg,Log Message,string,4096,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+ssid,WiFi Service Set ID,string,33,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+radioband,The operating radio band,string,64,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+channel,Channel,uint8,3,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+security,Security,string,40,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+encryption,The encryption type of detected rogue AP,string,12,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+signal,The signal value of SSID or client,int8,4,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+stamac,The MAC address of wifi station,string,17,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+sn,Serial Number,string,64,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+ap,Access Point,string,36,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+reason,Reason,string,256,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+vap,Virtual Access Point,string,36,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+radioid,The operating radio ID,uint8,3,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+user,User name of authenticated user,string,256,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+group,User group Name,string,512,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+authserver,Remote Authentication server,string,64,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+srcip,Source IP,ip,39,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+snr,,int8,4,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1
+mpsk,Multiple pre-shared keys,string,33,43717 - LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,43717,LOG_ID_EVENT_WIRELESS_STA_L3R_REHOME,Wireless client layer3 roaming rehome,Event,wireless,Notice,7.2.1

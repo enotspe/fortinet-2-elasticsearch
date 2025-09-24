@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+time,Time,string,8,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+logid,Log ID,string,10,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+type,Log Type,string,16,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+subtype,Log Subtype,string,20,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+level,Log Level,string,11,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+devid,Device ID,string,16,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+vd,Virtual Domain Name,string,32,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+eventtime,Event time,uint64,20,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+tz,Time zone,string,5,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+logdesc,Log Description,string,4096,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+msg,Log Message,string,4096,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+ip,,ip,39,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+dhcp_msg,DHCP Message,string,4096,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+ddnsserver,DDNS Server,ip,39,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2
+fqdn,Fully Qualified Domain Name,string,256,26008 - LOG_ID_DHCP_DDNS_ADD,26008,LOG_ID_DHCP_DDNS_ADD,DHCP DDNS add query,Event,system,Information,7.2.2

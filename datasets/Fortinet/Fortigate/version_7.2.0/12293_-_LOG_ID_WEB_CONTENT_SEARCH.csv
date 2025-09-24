@@ -1,0 +1,67 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+authserver,Authentication server for the user,string,64,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+banword,Banned word,string,128,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+contenttype,Content Type from HTTP header,string,64,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+craction,Client Reputation Action,uint32,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+crlevel,Client Reputation level,string,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+crscore,Client Reputation Score,uint32,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+date,Date,string,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+devid,Device ID,string,16,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+direction,Direction of the web traffic,string,8,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+dstauthserver,,string,64,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+dstcountry,,string,64,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+dstintf,Destination Interface,string,32,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+dstip,Destination IP,ip,39,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+dstport,Destination Port,uint16,5,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+dstuser,,string,256,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+dstuuid,,string,37,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+eventtime,Web Filter event time,uint64,20,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+eventtype,Web Filter event type,string,32,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+fctuid,FortiClient UID,string,32,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+forwardedfor,X-Forwarded-For HTTP header,string,128,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+from,MMS-only - From/To headers from the email,string,128,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+group,User group name,string,64,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+hostname,The host name of a URL,string,256,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+httpmethod,,string,20,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+initiator,The initiator user for override,string,64,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+keyword,Keyword used for search,string,512,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+level,Log Level,string,11,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+logid,Log ID,string,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+msg,Log message,string,512,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+policyid,Policy ID,uint32,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+policymode,,string,8,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+policytype,,string,24,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+poluuid,,string,37,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+profile,Web Filter profile name,string,64,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+proto,Protocol number,uint8,3,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,1024,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+rcvdbyte,Received Bytes,uint64,20,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+referralurl,Referrer URI,string,512,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+reqtype,Request type,string,8,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+sentbyte,Sent Bytes,uint64,20,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+service,Service name,string,36,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+sessionid,Session ID,uint32,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+srccountry,,string,64,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+srcdomain,,string,255,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+srcintf,Source Interface,string,32,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+srcip,Source IP,ip,39,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+srcport,Source Port,uint16,5,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+srcuuid,,string,37,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+subtype,Log subtype,string,20,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+time,Time,string,8,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+to,MMS-only - From/To headers from the email,string,512,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+trueclntip,True-Client-IP HTTP header,ip,39,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+type,Log type,string,16,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+tz,Time Zone,string,5,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+unauthuser,Unauthenticated user,string,66,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+unauthusersource,Unauthenticated user source,string,66,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+url,The URL address,string,512,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+user,User name,string,256,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+vd,Virtual domain name,string,32,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0
+vrf,Virtual router forwarding,uint8,3,12293 - LOG_ID_WEB_CONTENT_SEARCH,12293,LOG_ID_WEB_CONTENT_SEARCH,Search phrase detected,Web,CONTENT,Notice,7.2.0

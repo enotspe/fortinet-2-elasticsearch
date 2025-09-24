@@ -1,0 +1,42 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,,string,11,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+date,,string,10,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+devid,,string,16,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+dstintf,,string,32,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+dstintfrole,,string,10,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+dstip,,ip,39,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+dstport,,uint16,5,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+dstuser,,string,256,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+eventtime,,uint64,20,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+eventtype,,string,32,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+group,,string,512,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+hostname,,string,256,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+httpmethod,,string,20,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+level,,string,11,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+logid,,string,10,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+msg,,string,512,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+policyid,,uint32,10,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+poluuid,,string,37,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+profile,,string,64,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+proto,,uint8,3,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+referralurl,Referrer URI,string,512,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+service,,string,36,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+sessionid,,uint32,10,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+srcintf,,string,32,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+srcintfrole,,string,10,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+srcip,,ip,39,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+srcport,,uint16,5,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+subtype,,string,20,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+time,,string,8,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+type,,string,16,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+tz,,string,5,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+url,,string,512,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+user,,string,256,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+vd,,string,32,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+videocategoryid,,uint32,10,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+videocategoryname,,string,256,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+videochannelid,,string,512,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+videoid,,string,512,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+videoinfosource,,string,10,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0
+vrf,,uint8,3,13665 - LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,13665,LOG_ID_VIDEOFILTER_CATEGORY_MONITOR,Video category is monitored,Webfilter,videofilter-category,Notice,7.4.0

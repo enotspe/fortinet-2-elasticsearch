@@ -1,0 +1,168 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+accessctrl,,string,80,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+accessproxy,,string,80,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+ap,Access Point name,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+app,Application name,string,96,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+appact,The security action from app control,string,16,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+appcat,Application category,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+appid,Application ID,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+applist,Application Control profile (name),string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+apprisk,Application Risk Level,string,16,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+apsn,Access Point serial number,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+authserver,Remote Authentication server,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+centralnatid,central-snat-map id,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+channel,WiFi Channel,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+clientdeviceid,,string,80,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+clientdevicemanageable,,string,16,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+clientdeviceowner,,string,80,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+clientdevicetags,,string,512,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+comment,Customized policy comment,string,1024,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+craction,Action performed by Threat Weight,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+crlevel,Threat Weight level,string,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+crscore,Threat Weight score,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+date,Date,string,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+devid,Device Serial Number,string,16,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+devtype,Device Type,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstauthserver,,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstcity,,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstcountry,Country name for the destination IP,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstdevtype,Destination Device Type,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstfamily,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dsthwvendor,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dsthwversion,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstinetsvc,Internet service name for the destination,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstintf,Destination Interface,string,32,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstip,Destination IP Address,ip,39,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstmac,Destination Mac Address,string,17,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstname,Destination name,string,256,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstosname,Destination OS name,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstport,Destination Protocol Port Number,uint16,5,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstregion,,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstreputation,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstserver,Destination Server,uint8,3,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstssid,Destination SSID,string,33,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstswversion,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstthreatfeed,,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstunauthuser,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstunauthusersource,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstuser,,string,256,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+dstuuid,UUID of the Destination Address Object,string,37,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+duration,Duration of the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+emsconnection,,string,8,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+eventtime,Epoch time in nanoseconds,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+fctuid,FortiClient UID,string,32,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+gatewayid,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+group,User group name,string,512,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+identifier,,uint16,5,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+lanin,LAN incoming traffic in bytes,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+lanout,LAN outgoing traffic in bytes,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+level,Log Level,string,11,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+logid,Log ID,string,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+masterdstmac,Destination master MAC address,string,17,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+msg,Log message,string,512,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+osname,Name of the device's OS,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+pdstport,,uint16,5,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+policyid,Firewall Policy ID,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+policymode,,string,8,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+policyname,Policy name,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+policytype,Policy type,string,24,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+poluuid,UUID of the Firewall Policy,string,37,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+proto,Protocol Number,uint8,3,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+proxyapptype,,string,9,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+psrcport,,uint16,5,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+radioband,Radio Band,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+rcvdbyte,Received Bytes,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+rcvddelta,Delta Received Bytes,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+rcvdpkt,Received Packets,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+saasname,,string,80,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+sentbyte,Sent Bytes,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+sentdelta,Delta Sent Bytes,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+sentpkt,Sent Packets,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+service,Name of Service,string,80,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+sessionid,Session ID,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+shaperperipname,Traffic shaper name (per IP),string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+shaperrcvdname,Traffic shaper name for received traffic,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+shapersentname,Traffic shaper name for sent traffic,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+shapingpolicyid,Shaping Policy ID,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+shapingpolicyname,,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+signal,,int8,4,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+snr,,int8,4,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srccity,,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srccountry,Country name for Source IP,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcdomain,,string,255,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcfamily,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srchwvendor,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srchwversion,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcinetsvc,Internet service name for the source,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcintf,Source interface name,string,32,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcip,Source IP address,ip,39,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcmac,MAC address associated with the Source IP,string,17,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcmacvendor,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcname,Source name,string,256,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcport,Source protocol port number,uint16,5,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcregion,,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcreputation,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcserver,Source server,uint8,3,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcssid,Source SSID,string,33,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcswversion,,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcthreatfeed,,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+srcuuid,UUID of the Source Address Object,string,37,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+sslaction,Action taken by ssl-ssh-profile,string,26,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+subtype,Subtype of the traffic,string,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+time,Time,string,8,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+trandisp,NAT translation type,string,16,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+tranip,NAT Destination IP,ip,39,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+tranport,NAT Destination Port,uint16,5,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+transip,NAT Source IP,ip,39,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+transport,NAT Source Protocol Port,uint16,5,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+tunnelid,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+type,Log type,string,16,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+tz,Time zone,string,5,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+unauthuser,Unauthenticated user name,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+unauthusersource,The method used to detect unauthenticated user name,string,66,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+url,URL,string,512,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+user,User name,string,256,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+utmaction,Security action performed by UTM,string,32,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vd,Virtual domain name,string,32,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vip,,string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vpntype,The type of the VPN tunnel,string,14,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vrf,Virtual router forwarding,uint8,3,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vwlname,,string,36,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+wanin,WAN incoming traffic in bytes,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+wanoptapptype,WAN Optimization Application type,string,9,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+wanout,WAN outgoing traffic in bytes,uint64,20,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countapp,Number of App Ctrl logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countav,Number of AV logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countcifs,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countdlp,Number of DLP logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countdns,Number of DNS Query logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countemail,Number of Email logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countff,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+counticap,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countips,Number of IPS logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countsctpf,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countssh,Number of SSH logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countssl,,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countwaf,Number of WAF logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4
+countweb,Number of Web Filter logs associated with the session,uint32,10,13 - LOG_ID_TRAFFIC_END_FORWARD,13,LOG_ID_TRAFFIC_END_FORWARD,Forward traffic,Traffic,forward,Notice,7.2.4

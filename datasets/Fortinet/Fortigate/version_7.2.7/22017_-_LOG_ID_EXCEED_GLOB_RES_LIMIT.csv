@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+time,Time,string,8,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+logid,Log ID,string,10,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+type,Log Type,string,16,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+subtype,Log Subtype,string,20,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+level,Log Level,string,11,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+devid,Device ID,string,16,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+vd,Virtual Domain Name,string,32,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+eventtime,Event time,uint64,20,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+tz,Time zone,string,5,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+logdesc,Log Description,string,4096,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+msg,Log Message,string,4096,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7
+service,Name of Service,string,64,22017 - LOG_ID_EXCEED_GLOB_RES_LIMIT,22017,LOG_ID_EXCEED_GLOB_RES_LIMIT,Global resource limit exceeded,Event,system,Notice,7.2.7

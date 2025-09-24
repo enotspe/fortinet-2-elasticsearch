@@ -1,0 +1,84 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"The status of the session:
+ log-only - DLP event is detected , but NOT blocked (similar to monitor action)
+ block - Blocked
+ exempt - Allowed
+ ban - blocked (Not in used since FortiOS 5.0, replaced by blocked)
+ ban-sender - blocks all data being sent by an ip or user (Not in used since FortiOS 5.0, replaced by quarantine)
+ quarantine-ip - Blocked and band the source ip (Not in used since FortiOS 5.0)
+ quarantine-interface - Blocked and band the source interface (Not in used since FortiOS 5.0)",string,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+attachment,,string,3,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+authserver,Authentication Server,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+cc,,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+date,Date,string,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+devid,Device ID,string,16,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+direction,Direction of packets,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dlpextra,DLP extra information,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dstauthserver,,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dstcountry,,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dstintf,Destination Interface,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dstip,Destination IP,ip,39,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dstport,Destination Port,uint16,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dstuser,,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+dstuuid,,string,37,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+epoch,Epoch used for locating file,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+eventid,The serial number of the dlparchive file in the same epoch,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+eventtime,"Event Time, time when DLP event detected.",uint64,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+eventtype,DLP event type,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+fctuid,FortiClient User ID,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+filename,File name,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+filesize,File size in bytes,uint64,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+filetype,File type,string,23,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+filtercat,DLP filter category,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+filteridx,DLP filter ID,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+filtername,DLP rule name,string,128,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+filtertype,DLP filter type,string,23,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+forwardedfor,Forwarded For,string,128,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+group,User group name,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+hostname,The host name of a URL,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+httpmethod,,string,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+infectedfilelevel,"Infected File Level (Critical,Warning etc)",uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+infectedfilename,Infected File Name,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+infectedfilesize,Infected File Size,uint64,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+infectedfiletype,Infected File Type,string,23,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+level,Log Level,string,11,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+logid,Log ID,string,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+pdstport,,uint16,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+policyid,Policy ID,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+policymode,,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+policytype,,string,24,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+poluuid,,string,37,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+profile,DLP profile name,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+proto,Protocol number,uint8,3,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+psrcport,,uint16,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+rawdata,Raw Data,string,1024,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+recipient,Email addresses from the SMTP envelope,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+referralurl,,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+sender,Email address from the SMTP envelope,string,128,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+service,Service name,string,36,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+sessionid,Session ID,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+severity,Severity level of a DLP rule,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+srccountry,,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+srcdomain,,string,255,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+srcintf,Source Interface,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+srcip,Source IP,ip,39,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+srcport,Source Port,uint16,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+srcuuid,,string,37,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+subject,The subject title of the email message,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+subservice,,string,16,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+subtype,Log subtype,string,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+time,Time,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+trueclntip,True client's IP,ip,39,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+type,Log type,string,16,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+tz,,string,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+unauthuser,Unauthenticated user,string,66,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+unauthusersource,Unauthenticated user source,string,66,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+url,The URL address,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+user,User name,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+vd,Virtual domain name,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1
+vrf,Virtual Routing Forwarding,uint8,3,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data leak detected by specified DLP sensor rule,DLP,dlp,Warning,7.2.1

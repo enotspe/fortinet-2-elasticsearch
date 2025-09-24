@@ -1,0 +1,42 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint8,3,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+videoinfosource,,string,10,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+videoid,,string,512,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+videochannelid,,string,512,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+videocategoryname,,string,256,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+videocategoryid,,uint32,10,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+vd,,string,32,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+user,,string,256,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+url,,string,512,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+tz,,string,5,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+type,,string,16,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+time,,string,8,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+subtype,,string,20,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+srcport,,uint16,5,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+srcip,,ip,39,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+srcintfrole,,string,10,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+srcintf,,string,32,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+sessionid,,uint32,10,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+service,,string,36,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+referralurl,Referrer URI,string,512,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+proto,,uint8,3,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+profile,,string,64,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+poluuid,,string,37,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+policyid,,uint32,10,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+msg,,string,512,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+logid,,string,10,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+level,,string,11,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+httpmethod,,string,20,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+hostname,,string,256,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+group,,string,512,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+eventtype,,string,32,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+eventtime,,uint64,20,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+dstuser,,string,256,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+dstport,,uint16,5,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+dstip,,ip,39,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+dstintfrole,,string,10,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+dstintf,,string,32,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+devid,,string,16,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+date,,string,10,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12
+action,,string,11,13682 - LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,13682,LOG_ID_VIDEOFILTER_CHANNEL_ALLOW,Video channel is allowed,Webfilter,videofilter-channel,Notice,7.2.12

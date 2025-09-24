@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Policy Action,string,65,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+date,Date,string,10,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+devid,Device ID,string,16,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+eventtime,Event time,uint64,20,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+level,Log Level,string,11,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+logdesc,Log Description,string,4096,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+logid,Log ID,string,10,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+msg,Log Message,string,4096,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+status,Status,string,23,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+subtype,Log Subtype,string,20,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+time,Time,string,8,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+type,Log Type,string,16,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+tz,Time zone,string,5,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+unit,Unit,uint32,10,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0
+vd,Virtual Domain Name,string,32,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,SYSTEM,Critical,7.2.0

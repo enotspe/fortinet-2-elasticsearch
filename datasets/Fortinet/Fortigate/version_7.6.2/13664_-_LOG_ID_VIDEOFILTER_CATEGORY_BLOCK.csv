@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint16,3,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+videotitle,,string,512,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+videoinfosource,,string,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+videoid,,string,512,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+videodesc,,string,64,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+videochannelid,,string,512,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+videocategoryname,,string,256,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+videocategoryid,,uint32,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+vd,,string,32,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+user,,string,256,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+url,,string,512,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+tz,,string,5,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+type,,string,16,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+transid,Transaction ID,uint32,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+time,,string,8,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+subtype,,string,20,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+srcport,,uint16,5,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+srcip,,ip,39,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+srcintfrole,,string,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+srcintf,,string,32,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+sessionid,,uint32,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+service,,string,36,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+referralurl,Referrer URI,string,512,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+proto,,uint8,3,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+profile,,string,64,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+poluuid,,string,37,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+policytype,,string,24,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+policyid,,uint32,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+msg,,string,512,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+logid,,string,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+level,,string,11,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+httpmethod,,string,20,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+hostname,,string,256,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+group,,string,512,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+eventtype,,string,32,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+eventtime,,uint64,20,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+dstuser,,string,256,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+dstport,,uint16,5,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+dstip,,ip,39,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+dstintfrole,,string,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+dstintf,,string,32,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+devid,,string,16,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+date,,string,10,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2
+action,,string,11,13664 - LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,13664,LOG_ID_VIDEOFILTER_CATEGORY_BLOCK,Video category is blocked.,Webfilter,videofilter-category,Warning,7.6.2

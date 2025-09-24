@@ -1,0 +1,33 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+craction,Client Reputation Action,uint32,10,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+crlevel,Client Reputation level,string,10,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+crscore,Client Reputation Score,uint32,10,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+date,Date,string,10,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+devid,Device ID,string,16,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+dstip,Destination IP,ip,39,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+dstport,Destination Port,uint16,5,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+dstuser,,string,256,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+eventtime,Web Filter event time,uint64,20,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+eventtype,Web Filter event type,string,32,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+fctuid,FortiClient UID,string,32,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+hostname,The host name of a URL,string,256,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+level,Log Level,string,11,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+logid,Log ID,string,10,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+msg,Log message,string,512,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+srcdomain,,string,255,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+srcip,Source IP,ip,39,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+srcport,Source Port,uint16,5,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+subtype,Log subtype,string,20,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+time,Time,string,8,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+type,Log type,string,16,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+tz,Time Zone,string,5,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+unauthuser,Unauthenticated user,string,66,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+unauthusersource,Unauthenticated user source,string,66,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+url,The URL address,string,512,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+user,User name,string,256,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+vd,Virtual domain name,string,32,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+error,URL rating error message,string,256,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4
+urltype,URL filter type,string,8,12558 - LOG_ID_URL_FILTER_RATING_ERR,12558,LOG_ID_URL_FILTER_RATING_ERR,Rating error occurred,Webfilter,urlfilter,Information,7.4.4

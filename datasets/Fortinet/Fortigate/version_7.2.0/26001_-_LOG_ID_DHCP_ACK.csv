@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+devid,Device ID,string,16,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+dhcp_msg,DHCP Message,string,4096,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+eventtime,Event time,uint64,20,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+hostname,Hostname,string,128,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+interface,Interface,string,32,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+ip,,ip,39,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+lease,DHCP lease time,uint32,10,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+level,Log Level,string,11,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+logdesc,Log Description,string,4096,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+logid,Log ID,string,10,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+mac,MAC Address,string,17,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+msg,Log Message,string,4096,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+subtype,Log Subtype,string,20,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+time,Time,string,8,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+type,Log Type,string,16,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+tz,Time zone,string,5,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0
+vd,Virtual Domain Name,string,32,26001 - LOG_ID_DHCP_ACK,26001,LOG_ID_DHCP_ACK,DHCP Ack log,Event,SYSTEM,Information,7.2.0

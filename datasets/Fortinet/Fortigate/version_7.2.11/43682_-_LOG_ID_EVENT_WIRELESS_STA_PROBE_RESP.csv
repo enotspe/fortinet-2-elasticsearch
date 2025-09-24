@@ -1,0 +1,27 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+remotewtptime,The time of AP when client trying to connect,string,32,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+authserver,Remote Authentication server,string,64,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+user,User name of authenticated user,string,256,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+radioid,The operating radio ID,uint8,3,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+vap,Virtual Access Point,string,36,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+reason,Reason,string,256,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+ap,Access Point,string,36,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+sn,Serial Number,string,64,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+stamac,The MAC address of wifi station,string,17,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+encryption,The encryption type of detected rogue AP,string,12,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+security,Security,string,40,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+channel,Channel,uint8,3,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+ssid,WiFi Service Set ID,string,33,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+msg,Log Message,string,4096,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+action,Policy Action,string,65,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+logdesc,Log Description,string,4096,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+tz,Time zone,string,5,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+eventtime,Event time,uint64,20,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+vd,Virtual Domain Name,string,32,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+devid,Device ID,string,16,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+level,Log Level,string,11,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+subtype,Log Subtype,string,20,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+type,Log Type,string,16,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+logid,Log ID,string,10,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+time,Time,string,8,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11
+date,Date,string,10,43682 - LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,43682,LOG_ID_EVENT_WIRELESS_STA_PROBE_RESP,Probe response to wireless station,Event,wireless,Information,7.2.11

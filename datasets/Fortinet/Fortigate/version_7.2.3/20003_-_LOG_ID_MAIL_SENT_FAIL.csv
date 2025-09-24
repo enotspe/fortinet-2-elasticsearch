@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+time,Time,string,8,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+logid,Log ID,string,10,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+type,Log Type,string,16,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+subtype,Log Subtype,string,20,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+level,Log Level,string,11,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+devid,Device ID,string,16,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+vd,Virtual Domain Name,string,32,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+eventtime,Event time,uint64,20,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+tz,Time zone,string,5,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+logdesc,Log Description,string,4096,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+user,User name of authenticated user,string,256,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+ui,User Interface,string,64,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+action,Policy Action,string,65,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+status,Status,string,23,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+msg,Log Message,string,4096,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3
+count,Count,uint32,10,20003 - LOG_ID_MAIL_SENT_FAIL,20003,LOG_ID_MAIL_SENT_FAIL,Alert email send status failed,Event,system,Notice,7.2.3

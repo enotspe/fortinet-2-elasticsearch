@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+logdesc,Log Description,string,4096,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+tz,Time zone,string,5,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+eventtime,Event time,uint64,20,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+vd,Virtual Domain Name,string,32,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+devid,Device ID,string,16,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+level,Log Level,string,11,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+subtype,Log Subtype,string,20,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+type,Log Type,string,16,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+logid,Log ID,string,10,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+time,Time,string,8,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12
+date,Date,string,10,20115 - LOG_ID_IPSA_STATUSUPD_FAIL,20115,LOG_ID_IPSA_STATUSUPD_FAIL,IPSA driver update failed,Event,system,Error,7.2.12

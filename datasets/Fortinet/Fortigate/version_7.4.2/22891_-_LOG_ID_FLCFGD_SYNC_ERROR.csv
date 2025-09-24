@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+time,,string,8,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+logid,,string,10,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+type,,string,16,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+subtype,,string,20,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+level,,string,11,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+devid,,string,16,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+vd,,string,32,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+eventtime,,uint64,20,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+tz,,string,5,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+logdesc,,string,4096,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+user,,string,256,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+ui,,string,64,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+msg,,string,4096,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+name,,string,128,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2
+sn,,string,64,22891 - LOG_ID_FLCFGD_SYNC_ERROR,22891,LOG_ID_FLCFGD_SYNC_ERROR,Switch-Controller Switch Sync Error,Event,switch-controller,Error,7.4.2

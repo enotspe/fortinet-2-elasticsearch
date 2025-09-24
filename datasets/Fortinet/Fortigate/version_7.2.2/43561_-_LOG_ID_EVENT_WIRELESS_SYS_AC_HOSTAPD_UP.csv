@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+time,Time,string,8,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+logid,Log ID,string,10,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+type,Log Type,string,16,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+subtype,Log Subtype,string,20,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+level,Log Level,string,11,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+devid,Device ID,string,16,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+vd,Virtual Domain Name,string,32,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+eventtime,Event time,uint64,20,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+tz,Time zone,string,5,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+logdesc,Log Description,string,4096,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+action,Policy Action,string,65,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2
+msg,Log Message,string,4096,43561 - LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,43561,LOG_ID_EVENT_WIRELESS_SYS_AC_HOSTAPD_UP,Wireless system hostapd up,Event,wireless,Notice,7.2.2

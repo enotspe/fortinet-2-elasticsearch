@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+time,,string,8,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+logid,,string,10,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+type,,string,16,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+subtype,,string,20,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+level,,string,11,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+devid,,string,16,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+vd,,string,32,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+eventtime,,uint64,20,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+tz,,string,5,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+logdesc,,string,4096,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+user,,string,256,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+ui,,string,64,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+msg,,string,4096,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+sn,,string,64,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2
+name,,string,128,22893 - LOG_ID_FLCFGD_SYNC_STATE,22893,LOG_ID_FLCFGD_SYNC_STATE,Switch-Controller Switch Sync State,Event,switch-controller,Debug,7.2.2

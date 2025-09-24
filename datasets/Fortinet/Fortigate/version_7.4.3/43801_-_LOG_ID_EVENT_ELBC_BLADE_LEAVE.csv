@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+time,Time,string,8,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+logid,Log ID,string,10,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+type,Log Type,string,16,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+subtype,Log Subtype,string,20,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+level,Log Level,string,11,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+devid,Device ID,string,16,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+vd,Virtual Domain Name,string,32,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+eventtime,Event time,uint64,20,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+tz,Time zone,string,5,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+logdesc,Log Description,string,4096,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+action,Policy Action,string,65,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+msg,Log Message,string,4096,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+informationsource,Information Source,string,4096,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+slot,Slot Number,uint8,3,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3
+chassisid,Chassis ID,uint8,3,43801 - LOG_ID_EVENT_ELBC_BLADE_LEAVE,43801,LOG_ID_EVENT_ELBC_BLADE_LEAVE,Blade not ready to process traffic,Event,system,Critical,7.4.3

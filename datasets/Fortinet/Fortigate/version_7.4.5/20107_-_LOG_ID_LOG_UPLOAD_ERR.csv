@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+time,Time,string,8,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+logid,Log ID,string,10,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+type,Log Type,string,16,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+subtype,Log Subtype,string,20,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+level,Log Level,string,11,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+devid,Device ID,string,16,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+vd,Virtual Domain Name,string,32,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+eventtime,Event time,uint64,20,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+tz,Time zone,string,5,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+logdesc,Log Description,string,4096,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+user,User name of authenticated user,string,256,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+action,Policy Action,string,65,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+msg,Log Message,string,4096,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+error,Error Reason for Log Upload to Forticloud,string,256,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+server,Server IP Address,string,64,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5
+port,Port Number,uint16,5,20107 - LOG_ID_LOG_UPLOAD_ERR,20107,LOG_ID_LOG_UPLOAD_ERR,Log upload error,Event,system,Warning,7.4.5

@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+iptype,IP type,string,16,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+act,Action,string,16,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+daddr,Destination address,string,80,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+dintf,Destination interface,string,36,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+seq,,string,512,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+saddr,Source Address IP,string,80,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+msg,Log Message,string,4096,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+status,Status,string,23,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+ui,User Interface,string,64,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+user,User name of authenticated user,string,256,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+logdesc,Log Description,string,4096,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+tz,Time zone,string,5,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+eventtime,Event time,uint64,20,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+vd,Virtual Domain Name,string,32,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+devid,Device ID,string,16,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+level,Log Level,string,11,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+subtype,Log Subtype,string,20,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+type,Log Type,string,16,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+logid,Log ID,string,10,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+time,Time,string,8,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3
+date,Date,string,10,32153 - LOG_ID_DEL_IP6_LOCAL_POL,32153,LOG_ID_DEL_IP6_LOCAL_POL,IPv6 firewall local in policy deleted,Event,system,Notice,7.6.3

@@ -1,0 +1,70 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint8,3,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+vd,VDOM name,string,32,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+user,Username (authentication),string,256,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+url,The URL address,string,512,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+unauthusersource,,string,66,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+unauthuser,,string,66,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+tz,Time Zone,string,5,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+type,Log type,string,16,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+time,Time,string,8,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+subtype,Subtype of the virus log,string,20,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+subservice,,string,16,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+subject,,string,256,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+srcuuid,,string,37,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+srcport,Source Port,uint16,5,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+srcip,Source IP Address,ip,39,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+srcintf,Source Interface,string,32,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+srcdomain,,string,255,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+srccountry,,string,64,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+sessionid,Session ID,uint32,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+service,Proxy service which scanned this traffic,string,5,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+sender,Email address from the SMTP envelope,string,128,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+referralurl,,string,512,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+recipient,Email addresses from the SMTP envelope,string,512,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+quarskip,Quarantine skip explanation,string,46,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+psrcport,,uint16,5,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+proto,Protocol number,uint8,3,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+profile,The name of the profile that was used to detect and take action,string,64,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+poluuid,,string,37,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+policytype,,string,24,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+policyid,Policy ID,uint32,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+pdstport,,uint16,5,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+msg,Log message,string,4096,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+logid,Log ID,string,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+level,Log level,string,11,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+httpmethod,,string,20,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+group,Group name (authentication),string,512,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+filetype,File type,string,16,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+filename,File name,string,256,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+filefilter,The filter used to identify the affected file,string,12,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+fctuid,Forticlient user ID,string,32,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+eventtype,Event type of AV,string,32,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+eventtime,Time when detection occured,uint64,20,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+dstuuid,,string,37,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+dstuser,,string,256,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+dstport,Destination Port,uint16,5,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+dstip,Destination IP Address,ip,39,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+dstintf,Destination Interface,string,32,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+dstcountry,,string,64,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+dstauthserver,,string,64,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+direction,Message/packets direction,string,8,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+devid,,string,16,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+date,Date,string,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+crscore,Threat Weight Score,uint32,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+crlevel,Threat Weight Level,string,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+craction,Threat Weight action,uint32,10,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+checksum,The checksum of the scanned file,string,16,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+cc,,string,512,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+authserver,Server used to authenticate the involved user,string,64,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+attachment,,string,3,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,8450 - MESGID_BLOCK_MIME_WARNING,8450,MESGID_BLOCK_MIME_WARNING,FortiGate unit blocked a file because it contains a virus (MIME),Virus,mimefragmented,Warning,7.4.7

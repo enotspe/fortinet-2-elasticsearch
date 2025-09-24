@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+time,Time,string,8,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+logid,Log ID,string,10,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+type,Log Type,string,16,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+subtype,Log Subtype,string,20,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+level,Log Level,string,11,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+devid,Device ID,string,16,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+vd,Virtual Domain Name,string,32,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+eventtime,Event time,uint64,20,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+tz,Time zone,string,5,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+logdesc,Log Description,string,4096,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+action,Policy Action,string,65,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+status,Status,string,23,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+msg,Log Message,string,4096,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+server,Server IP Address,string,64,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+port,Port Number,uint16,5,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0
+vip,Virtual IP,string,64,46003 - LOG_ID_VIP_REAL_SVR_DOWN,46003,LOG_ID_VIP_REAL_SVR_DOWN,VIP real server down,Event,system,Alert,7.4.0

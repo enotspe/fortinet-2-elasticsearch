@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+devid,Device ID,string,16,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+eventtime,Event time,uint64,20,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+from_vcluster,Source virtual cluster number,uint32,10,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+level,Log Level,string,11,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+logdesc,Log Description,string,4096,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+logid,Log ID,string,10,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+msg,Log Message,string,4096,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+subtype,Log Subtype,string,20,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+time,Time,string,8,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+to_vcluster,Destination virtual cluster number,uint32,10,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+type,Log Type,string,16,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+tz,Time zone,string,5,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+vd,Virtual Domain Name,string,32,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0
+vdname,Virtual Domain Name,string,32,37890 - MESGID_VC_MOVE_VDOM,37890,MESGID_VC_MOVE_VDOM,Virtual cluster VDOM moved,Event,HA,Notice,7.2.0

@@ -1,0 +1,23 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+time,Time,string,8,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+logid,Log ID,string,10,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+type,Log Type,string,16,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+subtype,Log Subtype,string,20,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+level,Log Level,string,11,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+devid,Device ID,string,16,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+vd,Virtual Domain Name,string,32,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+eventtime,Event time,uint64,20,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+tz,Time zone,string,5,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+logdesc,Log Description,string,4096,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+user,User name of authenticated user,string,256,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+ui,User Interface,string,64,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+action,Policy Action,string,65,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+status,Status,string,23,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+msg,Log Message,string,4096,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+srcip,Source IP,ip,39,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+dstip,Destination IP,ip,39,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+name,Display Name of the Connection,string,128,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+reason,Reason,string,256,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+sn,Serial number for login or logout events. Used to correlate login and logout events.,string,64,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0
+method,Method,string,64,32002 - LOG_ID_ADMIN_LOGIN_FAIL,32002,LOG_ID_ADMIN_LOGIN_FAIL,Admin login failed,Event,system,Alert,7.6.0

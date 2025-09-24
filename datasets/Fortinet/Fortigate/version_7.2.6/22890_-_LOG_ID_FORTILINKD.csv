@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,,string,10,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+time,,string,8,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+logid,,string,10,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+type,,string,16,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+subtype,,string,20,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+level,,string,11,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+devid,,string,16,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+vd,,string,32,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+eventtime,,uint64,20,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+tz,,string,5,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+logdesc,,string,4096,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+user,,string,256,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+ui,,string,64,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+msg,,string,4096,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+sn,,string,64,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6
+name,,string,128,22890 - LOG_ID_FORTILINKD,22890,LOG_ID_FORTILINKD,Switch-Controller Daemon Log (Notification),Event,switch-controller,Notice,7.2.6

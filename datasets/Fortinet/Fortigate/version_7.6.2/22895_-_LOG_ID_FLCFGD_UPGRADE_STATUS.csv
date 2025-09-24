@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+sn,,string,64,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+name,,string,128,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+msg,,string,4096,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+ui,,string,64,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+user,,string,256,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+logdesc,,string,4096,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+tz,,string,5,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+eventtime,,uint64,20,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+vd,,string,32,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+devid,,string,16,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+level,,string,11,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+subtype,,string,20,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+type,,string,16,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+logid,,string,10,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+time,,string,8,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2
+date,,string,10,22895 - LOG_ID_FLCFGD_UPGRADE_STATUS,22895,LOG_ID_FLCFGD_UPGRADE_STATUS,Switch-Controller Switch Upgrade Status,Event,switch-controller,Information,7.6.2

@@ -1,0 +1,29 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+slamap,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+bibandwidthused,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+outbandwidthused,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+inbandwidthused,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+bibandwidthavailable,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+outbandwidthavailable,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+inbandwidthavailable,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+mosvalue,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+moscodec,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+packetloss,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+jitter,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+latency,,string,24,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+status,Status,string,23,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+msg,Log Message,string,4096,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+interface,Interface,string,32,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+healthcheck,,string,64,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+eventtype,,string,32,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+logdesc,Log Description,string,4096,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+tz,Time zone,string,5,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+eventtime,Event time,uint64,20,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+vd,Virtual Domain Name,string,32,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+devid,Device ID,string,16,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+level,Log Level,string,11,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+subtype,Log Subtype,string,20,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+type,Log Type,string,16,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+logid,Log ID,string,10,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+time,Time,string,8,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12
+date,Date,string,10,22925 - LOG_ID_EVENT_VWL_SLA_INFO,22925,LOG_ID_EVENT_VWL_SLA_INFO,SD-WAN SLA information,Event,sdwan,Information,7.2.12

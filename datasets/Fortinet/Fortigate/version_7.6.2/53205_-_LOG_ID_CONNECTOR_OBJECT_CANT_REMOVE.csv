@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+fctemssn,,string,16,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+msg,Log Message,string,4096,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+addr,IP Address,string,80,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+logdesc,Log Description,string,4096,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+tz,Time zone,string,5,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+eventtime,Event time,uint64,20,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+vd,Virtual Domain Name,string,32,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+devid,Device ID,string,16,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+level,Log Level,string,11,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+subtype,Log Subtype,string,20,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+type,Log Type,string,16,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+logid,Log ID,string,10,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+time,Time,string,8,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2
+date,Date,string,10,53205 - LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,53205,LOG_ID_CONNECTOR_OBJECT_CANT_REMOVE,Dynamic address can't be removed,Event,connector,Warning,7.6.2

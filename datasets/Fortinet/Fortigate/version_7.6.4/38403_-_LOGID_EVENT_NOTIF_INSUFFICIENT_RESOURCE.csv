@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+logdesc,Log Description,string,4096,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+tz,Time zone,string,5,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+eventtime,Event time,uint64,20,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+vd,Virtual Domain Name,string,32,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+devid,Device ID,string,16,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+level,Log Level,string,11,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+subtype,Log Subtype,string,20,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+type,Log Type,string,16,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+logid,Log ID,string,10,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+time,Time,string,8,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4
+date,Date,string,10,38403 - LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,38403,LOGID_EVENT_NOTIF_INSUFFICIENT_RESOURCE,Insufficient system resource notification,Event,system,Critical,7.6.4

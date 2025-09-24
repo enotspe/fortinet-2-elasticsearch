@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+time,Time,string,8,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+logid,Log ID,string,10,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+type,Log Type,string,16,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+subtype,Log Subtype,string,20,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+level,Log Level,string,11,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+devid,Device ID,string,16,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+vd,Virtual Domain Name,string,32,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+eventtime,Event time,uint64,20,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+tz,Time zone,string,5,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+logdesc,Log Description,string,4096,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+msg,Log Message,string,4096,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+ha_role,The HA role in the cluster,string,9,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3
+devintfname,HA device interface name,string,32,37898 - MESGID_HADEV_FAIL,37898,MESGID_HADEV_FAIL,HA device interface failed,Event,ha,Warning,7.4.3

@@ -1,0 +1,63 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint8,3,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+vd,Virtual domain name,string,32,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+user,User name,string,256,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+url,The URL address,string,512,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+unauthusersource,Unauthenticated user source,string,66,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+unauthuser,Unauthenticated user,string,66,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+tz,Time Zone,string,5,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+type,Log type,string,16,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+trueclntip,True-Client-IP HTTP header,ip,39,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+time,Time,string,8,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+subtype,Log subtype,string,20,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+srcuuid,,string,37,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+srcport,Source Port,uint16,5,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+srcip,Source IP,ip,39,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+srcintf,Source Interface,string,32,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+srcdomain,,string,255,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+srccountry,,string,64,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+sessionid,Session ID,uint32,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+service,Service name,string,36,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+sentbyte,Sent Bytes,uint64,20,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+reqtype,Request type,string,8,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+referralurl,Referrer URI,string,512,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+rcvdbyte,Received Bytes,uint64,20,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,1024,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+proto,Protocol number,uint8,3,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+profile,Web Filter profile name,string,64,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+poluuid,,string,37,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+policytype,,string,24,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+policymode,,string,8,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+policyid,Policy ID,uint32,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+msg,Log message,string,512,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+logid,Log ID,string,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+level,Log Level,string,11,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+initiator,The initiator user for override,string,64,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+httpmethod,,string,20,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+hostname,The host name of a URL,string,256,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+group,User group name,string,512,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+forwardedfor,X-Forwarded-For HTTP header,string,128,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+filtertype,Filter type,string,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+fctuid,FortiClient UID,string,32,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+eventtype,Web Filter event type,string,32,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+eventtime,Web Filter event time,uint64,20,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+dstuuid,,string,37,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+dstuser,,string,256,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+dstport,Destination Port,uint16,5,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+dstip,Destination IP,ip,39,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+dstintf,Destination Interface,string,32,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+dstcountry,,string,64,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+dstauthserver,,string,64,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+direction,Direction of the web traffic,string,8,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+devid,Device ID,string,16,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+date,Date,string,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+crscore,Client Reputation Score,uint32,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+crlevel,Client Reputation level,string,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+craction,Client Reputation Action,uint32,10,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+authserver,Authentication server for the user,string,64,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,13602 - LOG_ID_WEB_WF_REFERER,13602,LOG_ID_WEB_WF_REFERER,Referrer removed from request,Webfilter,cookiefilter,Notice,7.2.12

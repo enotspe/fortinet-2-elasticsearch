@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+time,Time,string,8,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+logid,Log ID,string,10,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+type,Log Type,string,16,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+subtype,Log Subtype,string,20,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+level,Log Level,string,11,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+devid,Device ID,string,16,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+vd,Virtual Domain Name,string,32,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+eventtime,Event time,uint64,20,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+tz,Time zone,string,5,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+logdesc,Log Description,string,4096,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+msg,Log Message,string,4096,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+srcip,Source IP,ip,39,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+reason,Reason,string,256,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+carrier_ep,The FortiOS Carrier end-point identification,string,64,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+rsso_key,RADIUS SSO attribute value,string,64,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2
+acct_stat,Accounting state (RADIUS),string,14,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.2.2

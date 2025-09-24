@@ -1,0 +1,24 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+apn,Access Point Name,string,128,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+date,Date,string,10,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+devid,Device ID,string,16,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+end-usr-address,End user IP Address,ip,39,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+endusraddress6,,ip,39,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+eventtime,Event time line,uint64,20,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+from,From,ip,128,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+from6,,ip,39,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+imsi,International mobile subscriber ID,string,16,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+level,Log Level,string,11,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+logid,Log ID,string,10,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+profile,Profile Name,string,64,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+status,Status,string,23,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+subtype,Log Subtype,string,20,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+time,Time,string,8,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+to,To,ip,512,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+to6,,ip,39,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+tunnel-idx,"Tunnel serial number, internally assigned",uint32,10,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+type,Log Type,string,16,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+tz,Time zone,string,5,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+vd,Virtual Domain Name,string,32,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+version,Version,uint32,64,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9
+user_data,User traffic content inside GTP-U tunnel,string,256,41222 - LOGID_GTP_USER_DATA,41222,LOGID_GTP_USER_DATA,GTP user data,GTP,gtp-all,Information,7.2.9

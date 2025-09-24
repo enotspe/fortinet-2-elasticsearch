@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+action,Policy Action,string,65,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+logdesc,Log Description,string,4096,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+tz,Time zone,string,5,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+eventtime,Event time,uint64,20,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+vd,Virtual Domain Name,string,32,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+devid,Device ID,string,16,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+level,Log Level,string,11,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+subtype,Log Subtype,string,20,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+type,Log Type,string,16,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+logid,Log ID,string,10,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+time,Time,string,8,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4
+date,Date,string,10,22112 - LOG_ID_PSU_ACTION_FPC_UP,22112,LOG_ID_PSU_ACTION_FPC_UP,FPC up due to PSU action,Event,system,Information,7.6.4

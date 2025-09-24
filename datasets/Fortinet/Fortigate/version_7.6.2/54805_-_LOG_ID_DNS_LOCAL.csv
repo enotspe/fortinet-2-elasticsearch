@@ -1,0 +1,55 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+xid,Transaction ID,uint16,5,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+vd,Virtual Domain Name,string,32,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+user,User name,string,256,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+unauthusersource,Unauthenticated User Source,string,66,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+unauthuser,Unauthenticated User,string,66,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+tz,Time zone,string,5,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+type,Log Type,string,16,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+translationid,,uint32,10,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+time,Time,string,8,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+subtype,Log Subtype,string,20,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+sscname,Safe Search CNAME,string,256,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+srcport,Source Port,uint16,5,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+srcmac,MAC address associated with the Source IP,string,17,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+srcip,Source IP,ip,39,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+srcintfrole,Source Interface Role,string,10,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+srcintf,Source Interface,string,32,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+srcdomain,,string,255,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+srccountry,,string,64,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+sessionid,Session ID,uint32,10,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+rcode,,uint8,3,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+qtypeval,Query Type Value,uint16,5,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+qtype,Query type description,string,32,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+qname,Query domain name,string,256,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+qclass,Query class,string,32,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+proto,Protocol number,uint8,3,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+profile,Profile name for DNS filter,string,64,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+poluuid,,string,37,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+policytype,,string,24,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+policyid,Policy ID,uint32,10,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+msg,Log message,string,512,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+logid,Log ID,string,10,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+level,Log Level,string,11,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+ipaddr,IP addresses from DNS response answer section,string,512,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+group,User group name,string,512,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+fctuid,FortiClient ID,string,32,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+exchange,Mail Exchanges from DNS response answer section,string,256,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+eventtype,DNS Type (DNS query/DNS response),string,32,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+eventtime,Event Timestamp,uint64,20,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+error,DNS filter service error message,string,256,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+dstuser,,string,256,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+dstport,Destination Port,uint16,5,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+dstip,Destination IP,ip,39,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+dstintfrole,Destination Interface Role,string,10,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+dstintf,Destination Interface,string,32,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+dstcountry,,string,64,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+domainfilterlist,Domain Filter List,string,512,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+domainfilteridx,Domain Filter Index,uint8,3,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+devid,Device ID,string,16,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+date,Date,string,10,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+catdesc,DNS category description,string,64,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+cat,DNS category ID,uint8,3,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+botnetip,Botnet IP address,ip,39,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+botnetdomain,Botnet domain name,string,256,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2
+action,Security action performed by DNS filter,string,16,54805 - LOG_ID_DNS_LOCAL,54805,LOG_ID_DNS_LOCAL,DNS local query,DNS,dns-response,Information,7.6.2

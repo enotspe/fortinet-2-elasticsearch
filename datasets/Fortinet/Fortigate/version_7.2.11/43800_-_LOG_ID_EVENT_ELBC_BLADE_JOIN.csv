@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+chassisid,Chassis ID,uint8,3,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+slot,Slot Number,uint8,3,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+informationsource,Information Source,string,4096,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+msg,Log Message,string,4096,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+action,Policy Action,string,65,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+logdesc,Log Description,string,4096,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+tz,Time zone,string,5,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+eventtime,Event time,uint64,20,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+vd,Virtual Domain Name,string,32,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+devid,Device ID,string,16,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+level,Log Level,string,11,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+subtype,Log Subtype,string,20,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+type,Log Type,string,16,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+logid,Log ID,string,10,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+time,Time,string,8,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11
+date,Date,string,10,43800 - LOG_ID_EVENT_ELBC_BLADE_JOIN,43800,LOG_ID_EVENT_ELBC_BLADE_JOIN,Blade ready to process traffic,Event,system,Critical,7.2.11

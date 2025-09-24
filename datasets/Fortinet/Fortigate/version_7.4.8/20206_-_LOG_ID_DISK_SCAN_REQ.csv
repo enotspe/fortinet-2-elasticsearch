@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+action,Policy Action,string,65,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+ui,User Interface,string,64,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+user,User name of authenticated user,string,256,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+logdesc,Log Description,string,4096,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+tz,Time zone,string,5,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+eventtime,Event time,uint64,20,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+vd,Virtual Domain Name,string,32,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+devid,Device ID,string,16,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+level,Log Level,string,11,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+subtype,Log Subtype,string,20,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+type,Log Type,string,16,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+logid,Log ID,string,10,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+time,Time,string,8,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8
+date,Date,string,10,20206 - LOG_ID_DISK_SCAN_REQ,20206,LOG_ID_DISK_SCAN_REQ,Scan disk requested,Event,system,Warning,7.4.8

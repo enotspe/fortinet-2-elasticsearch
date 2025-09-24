@@ -1,0 +1,178 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+wanout,WAN outgoing traffic in bytes,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+wanoptapptype,WAN Optimization Application type,string,9,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+wanin,WAN incoming traffic in bytes,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vwlname,,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vrf,Virtual router forwarding,uint16,3,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vpntype,The type of the VPN tunnel,string,14,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vipincomingip,,ip,39,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vip,,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+vd,Virtual domain name,string,32,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+utmaction,Security action performed by UTM,string,32,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+user,User name,string,256,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+url,URL,string,512,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+unauthusersource,The method used to detect unauthenticated user name,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+unauthuser,Unauthenticated user name,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tz,Time zone,string,5,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+type,Log type,string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tunnelsrcip,,ip,39,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tunnelsessionid,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tunnelproto,,string,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tunnelid,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tunneldstip,,ip,39,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+transport,NAT Source Protocol Port,uint16,5,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+transip,NAT Source IP,ip,39,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tranport,NAT Destination Port,uint16,5,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tranip,NAT Destination IP,ip,39,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+trandisp,NAT translation type,string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+time,Time,string,8,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tcpsynrtrs,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tcpsynackrtrs,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tcpsrt,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tcprst,,string,6,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tcprplrtrs,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tcporgrtrs,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+tcpnrt,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+subtype,Subtype of the traffic,string,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+sslaction,Action taken by ssl-ssh-profile,string,26,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcuuid,UUID of the Source Address Object,string,37,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcthreatfeed,,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcswversion,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcssid,Source SSID,string,33,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcserver,Source server,uint8,3,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcreputation,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcremote,,ip,39,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcregion,,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcport,Source protocol port number,uint16,5,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcname,Source name,string,256,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcmacvendor,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcmac,MAC address associated with the Source IP,string,17,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcip,Source IP address,ip,39,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcintf,Source interface name,string,32,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcinetsvc,Internet service name for the source,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srchwversion,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srchwvendor,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcfamily,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srcdomain,,string,255,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srccountry,Country name for Source IP,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+srccity,,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+snr,,int8,4,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+signal,,int8,4,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+shapingpolicyname,,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+shapingpolicyid,Shaping Policy ID,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+shapersentname,Traffic shaper name for sent traffic,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+shaperrcvdname,Traffic shaper name for received traffic,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+shaperperipname,Traffic shaper name (per IP),string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+sessionid,Session ID,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+service,Name of Service,string,80,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+sentpktdelta,,uint32,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+sentpkt,Sent Packets,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+sentdelta,Delta Sent Bytes,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+sentbyte,Sent Bytes,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+saasname,,string,80,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+replysrcintf,,string,32,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+replydstintf,,string,32,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+realserverid,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+rcvdpktdelta,,uint32,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+rcvdpkt,Received Packets,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+rcvddelta,Delta Received Bytes,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+rcvdbyte,Received Bytes,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+radioband,Radio Band,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+psrcport,,uint16,5,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+proxyapptype,,string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+proto,Protocol Number,uint8,3,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+poluuid,UUID of the Firewall Policy,string,37,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+policytype,Policy type,string,24,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+policyname,Policy name,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+policymode,,string,8,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+policyid,Firewall Policy ID,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+pdstport,,uint16,5,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+osname,Name of the device's OS,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+msg,Log message,string,512,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+masterdstmac,Destination master MAC address,string,17,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+logid,Log ID,string,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+level,Log Level,string,11,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+lanout,LAN outgoing traffic in bytes,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+lanin,LAN incoming traffic in bytes,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+identifier,,uint16,5,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+group,User group name,string,512,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+gatewayid,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+fwdsrv,,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+fctuid,FortiClient UID,string,32,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+eventtime,Epoch time in nanoseconds,uint64,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+emstag2,,string,80,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+emstag,,string,80,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+emsconnection,,string,8,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+durationdelta,,uint32,20,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+duration,Duration of the session,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstuuid,UUID of the Destination Address Object,string,37,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstuser,,string,256,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstunauthusersource,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstunauthuser,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstthreatfeed,,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstswversion,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstssid,Destination SSID,string,33,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstserver,Destination Server,uint8,3,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstreputation,,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstregion,,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstport,Destination Protocol Port Number,uint16,5,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstosname,Destination OS name,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstname,Destination name,string,256,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstmac,Destination Mac Address,string,17,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstip,Destination IP Address,ip,39,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstintf,Destination Interface,string,32,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstinetsvc,Internet service name for the destination,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dsthwversion,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dsthwvendor,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstfamily,,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstdevtype,Destination Device Type,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstcountry,Country name for the destination IP,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstcity,,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+dstauthserver,,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+devtype,Device Type,string,66,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+devid,Device Serial Number,string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+date,Date,string,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+crscore,Threat Weight score,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+crlevel,Threat Weight level,string,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+craction,Action performed by Threat Weight,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+comment,Customized policy comment,string,1024,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+clientdevicetags,,string,512,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+clientdeviceowner,,string,80,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+clientdevicemanageable,,string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+clientdeviceid,,string,80,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+clientdeviceems,,string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+clientcert,,string,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+channel,WiFi Channel,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+centralnatid,central-snat-map id,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+authserver,Remote Authentication server,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+apsn,Access Point serial number,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+apprisk,Application Risk Level,string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+applist,Application Control profile (name),string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+appid,Application ID,uint32,10,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+appcat,Application category,string,64,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+appact,The security action from app control,string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+app,Application name,string,96,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+ap,Access Point name,string,36,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+accessproxy,,string,80,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3
+accessctrl,,string,80,5 - LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,5,LOG_ID_TRAFFIC_OTHER_ICMP_ALLOW,Traffic allowed ICMP,Traffic,forward,Notice,7.6.3

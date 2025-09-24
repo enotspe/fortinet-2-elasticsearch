@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+time,Time,string,8,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+logid,Log ID,string,10,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+type,Log Type,string,16,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+subtype,Log Subtype,string,20,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+level,Log Level,string,11,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+devid,Device ID,string,16,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+vd,Virtual Domain Name,string,32,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+eventtime,Event time,uint64,20,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+tz,Time zone,string,5,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+logdesc,Log Description,string,4096,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+user,User name of authenticated user,string,256,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+authproto,The protocol that initiated the authentication,string,512,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+action,Policy Action,string,65,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+status,Status,string,23,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+msg,Log Message,string,4096,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+srcip,Source IP,ip,39,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+reason,Reason,string,256,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+dstip,Destination IP,ip,39,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+group,User group Name,string,512,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9
+authid,,string,36,43028 - LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,43028,LOG_ID_EVENT_AUTH_PROXY_GROUP_INFO_FAILED,Explicit proxy user group query failed,Event,user,Notice,7.2.9

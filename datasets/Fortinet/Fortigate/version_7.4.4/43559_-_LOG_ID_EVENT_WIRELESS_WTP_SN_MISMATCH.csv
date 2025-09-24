@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+time,Time,string,8,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+logid,Log ID,string,10,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+type,Log Type,string,16,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+subtype,Log Subtype,string,20,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+level,Log Level,string,11,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+devid,Device ID,string,16,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+vd,Virtual Domain Name,string,32,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+eventtime,Event time,uint64,20,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+tz,Time zone,string,5,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+logdesc,Log Description,string,4096,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+action,Policy Action,string,65,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+msg,Log Message,string,4096,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+sn,Serial Number,string,64,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+ap,Access Point,string,36,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+profile,Profile Name,string,64,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+ip,,ip,39,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+meshmode,Mesh mode,string,19,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+snmeshparent,SN of the mesh parent,string,36,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4
+reason,Reason,string,256,43559 - LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,43559,LOG_ID_EVENT_WIRELESS_WTP_SN_MISMATCH,Physical AP SN mismatch,Event,wireless,Warning,7.4.4

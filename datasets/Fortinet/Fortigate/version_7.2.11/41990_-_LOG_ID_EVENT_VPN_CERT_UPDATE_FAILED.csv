@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+method,Method,string,64,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+cert-type,Certification type,string,6,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+name,Display Name of the Connection,string,128,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+reason,Reason,string,256,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+status,Status,string,23,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+msg,Log Message,string,4096,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+action,Policy Action,string,65,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+logdesc,Log Description,string,4096,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+tz,Time zone,string,5,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+eventtime,Event time,uint64,20,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+vd,Virtual Domain Name,string,32,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+devid,Device ID,string,16,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+level,Log Level,string,11,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+subtype,Log Subtype,string,20,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+type,Log Type,string,16,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+logid,Log ID,string,10,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+time,Time,string,8,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11
+date,Date,string,10,41990 - LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,41990,LOG_ID_EVENT_VPN_CERT_UPDATE_FAILED,Certificate update failed,Event,vpn,Information,7.2.11

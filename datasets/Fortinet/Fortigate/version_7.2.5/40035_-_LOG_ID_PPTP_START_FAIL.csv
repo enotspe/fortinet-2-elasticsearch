@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+time,Time,string,8,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+logid,Log ID,string,10,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+type,Log Type,string,16,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+subtype,Log Subtype,string,20,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+level,Log Level,string,11,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+devid,Device ID,string,16,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+vd,Virtual Domain Name,string,32,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+eventtime,Event time,uint64,20,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+tz,Time zone,string,5,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+logdesc,Log Description,string,4096,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+action,Policy Action,string,65,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+msg,Log Message,string,4096,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+status,Status,string,23,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5
+reason,Reason,string,256,40035 - LOG_ID_PPTP_START_FAIL,40035,LOG_ID_PPTP_START_FAIL,PPTP daemon failed to start,Event,vpn,Error,7.2.5

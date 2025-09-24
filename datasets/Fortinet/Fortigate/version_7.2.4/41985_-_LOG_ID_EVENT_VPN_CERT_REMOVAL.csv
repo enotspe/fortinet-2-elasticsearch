@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+time,Time,string,8,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+logid,Log ID,string,10,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+type,Log Type,string,16,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+subtype,Log Subtype,string,20,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+level,Log Level,string,11,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+devid,Device ID,string,16,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+vd,Virtual Domain Name,string,32,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+eventtime,Event time,uint64,20,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+tz,Time zone,string,5,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+logdesc,Log Description,string,4096,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+action,Policy Action,string,65,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+user,User name of authenticated user,string,256,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+msg,Log Message,string,4096,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+status,Status,string,23,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+ui,User Interface,string,64,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+name,Display Name of the Connection,string,128,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4
+cert-type,Certification type,string,6,41985 - LOG_ID_EVENT_VPN_CERT_REMOVAL,41985,LOG_ID_EVENT_VPN_CERT_REMOVAL,Certificate removed,Event,vpn,Information,7.2.4

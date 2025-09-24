@@ -1,0 +1,92 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint8,3,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+virusid,Virus ID (unique virus identifier),uint32,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+viruscat,,string,32,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+virus,Virus Name,string,128,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+vd,VDOM name,string,32,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+user,Username (authentication),string,256,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+url,The URL address,string,512,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+unauthusersource,,string,66,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+unauthuser,,string,66,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+tz,Time Zone,string,5,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+type,Log type,string,16,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+trueclntip,,ip,39,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+time,Time,string,8,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+subtype,Subtype of the virus log,string,20,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+subservice,,string,16,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+subject,,string,256,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+srcuuid,,string,37,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+srcport,Source Port,uint16,5,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+srcip,Source IP Address,ip,39,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+srcintf,Source Interface,string,32,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+srcdomain,,string,255,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+srccountry,,string,64,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+sharename,,string,256,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+sessionid,Session ID,uint32,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+service,Proxy service which scanned this traffic,string,5,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+sender,Email address from the SMTP envelope,string,128,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+referralurl,,string,512,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+ref,The URL of the FortiGuard IPS database entry for the attack,string,512,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+recipient,Email addresses from the SMTP envelope,string,512,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+rawdata,,string,20480,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+quarskip,Quarantine skip explanation,string,46,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+psrcport,,uint16,5,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+proto,Protocol number,uint8,3,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+profile,The name of the profile that was used to detect and take action,string,64,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+poluuid,,string,37,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+policytype,,string,24,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+policymode,,string,8,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+policyid,Policy ID,uint32,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+pdstport,,uint16,5,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+pathname,,string,256,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+msg,Log message,string,4096,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+logid,Log ID,string,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+level,Log level,string,11,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+icbverdict,,string,5,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+icbseverity,,string,11,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+icbfiletype,,string,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+icbfileid,,string,65,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+icbconfidence,,string,6,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+icbaction,,string,7,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+httpmethod,,string,20,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+group,Group name (authentication),string,512,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+forwardedfor,,string,128,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+filetype,File type,string,16,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+filename,File name,string,256,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+filehashsrc,Used by Outbreak Prevention External Hash: external source that provided the hash signature,string,32,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+filehash,Used by Outbreak Prevention External Hash: the hash signature used in the detection,string,64,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+fctuid,Forticlient user ID,string,32,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+eventtype,Event type of AV,string,32,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+eventtime,Time when detection occured,uint64,20,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dtype,Data type for virus category,string,32,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dstuuid,,string,37,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dstuser,,string,256,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dstport,Destination Port,uint16,5,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dstip,Destination IP Address,ip,39,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dstintf,Destination Interface,string,32,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dstcountry,,string,64,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+dstauthserver,,string,64,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+direction,Message/packets direction,string,8,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+devid,,string,16,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+date,Date,string,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+crscore,Threat Weight Score,uint32,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+crlevel,Threat Weight Level,string,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+craction,Threat Weight action,uint32,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+contentdisarmed,"Content Disarm action- eg. disarmed, detected",string,13,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+checksum,The checksum of the scanned file,string,16,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+cdrcontent,,string,256,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+cc,,string,512,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+authserver,Server used to authenticate the involved user,string,64,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+attachment,,string,3,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+analyticssubmit,The flag for analytics submission,string,10,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+analyticscksum,The checksum of the file submitted for analytics,string,64,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,8203 - MESGID_AVQUERY_NOTIF,8203,MESGID_AVQUERY_NOTIF,File reported infected by Outbreak Prevention (notice),Virus,outbreak-prevention,Notice,7.4.6

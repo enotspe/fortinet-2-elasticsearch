@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+time,Time,string,8,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+logid,Log ID,string,10,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+type,Log Type,string,16,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+subtype,Log Subtype,string,20,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+level,Log Level,string,11,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+devid,Device ID,string,16,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+vd,Virtual Domain Name,string,32,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+eventtime,Event time,uint64,20,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+tz,Time zone,string,5,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+logdesc,Log Description,string,4096,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+action,Policy Action,string,65,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+status,Status,string,23,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1
+msg,Log Message,string,4096,53400 - LOG_ID_FMG_TUNNEL_UP,53400,LOG_ID_FMG_TUNNEL_UP,Central Management connectivity is active,Event,system,Notice,7.4.1

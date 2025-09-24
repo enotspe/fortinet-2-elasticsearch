@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Policy Action,string,65,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+ap,Access Point,string,36,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+date,Date,string,10,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+devid,Device ID,string,16,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+eventtime,Event time,uint64,20,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+ip,,ip,39,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+level,Log Level,string,11,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+logdesc,Log Description,string,4096,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+logid,Log ID,string,10,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+meshmode,Mesh mode,string,19,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+msg,Log Message,string,4096,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+profile,Profile Name,string,64,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+reason,Reason,string,256,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+sn,Serial Number,string,64,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+snmeshparent,SN of the mesh parent,string,36,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+subtype,Log Subtype,string,20,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+time,Time,string,8,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+type,Log Type,string,16,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+tz,Time zone,string,5,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0
+vd,Virtual Domain Name,string,32,43621 - LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,43621,LOG_ID_EVENT_WIRELESS_WTP_DATA_CHAN_CHG,Wireless wtp data channel changed,Event,WIRELESS,Notice,7.2.0

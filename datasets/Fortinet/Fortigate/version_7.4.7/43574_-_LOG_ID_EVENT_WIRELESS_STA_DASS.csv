@@ -1,0 +1,34 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+remotewtptime,The time of AP when client trying to connect,string,32,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+snprev,,string,36,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+mpsk,Multiple pre-shared keys,string,33,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+snr,,int8,4,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+srcip,Source IP,ip,39,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+authserver,Remote Authentication server,string,64,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+group,User group Name,string,512,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+user,User name of authenticated user,string,256,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+radioid,The operating radio ID,uint8,3,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+vap,Virtual Access Point,string,36,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+reason,Reason,string,256,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+ap,Access Point,string,36,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+sn,Serial Number,string,64,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+stamac,The MAC address of wifi station,string,17,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+signal,The signal value of SSID or client,int8,4,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+encryption,The encryption type of detected rogue AP,string,12,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+security,Security,string,40,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+channel,Channel,uint8,3,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+radioband,The operating radio band,string,64,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+ssid,WiFi Service Set ID,string,33,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+msg,Log Message,string,4096,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+action,Policy Action,string,65,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+logdesc,Log Description,string,4096,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+tz,Time zone,string,5,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+eventtime,Event time,uint64,20,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+vd,Virtual Domain Name,string,32,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+devid,Device ID,string,16,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+level,Log Level,string,11,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+subtype,Log Subtype,string,20,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+type,Log Type,string,16,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+logid,Log ID,string,10,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+time,Time,string,8,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7
+date,Date,string,10,43574 - LOG_ID_EVENT_WIRELESS_STA_DASS,43574,LOG_ID_EVENT_WIRELESS_STA_DASS,Wireless client disassociated,Event,wireless,Notice,7.4.7

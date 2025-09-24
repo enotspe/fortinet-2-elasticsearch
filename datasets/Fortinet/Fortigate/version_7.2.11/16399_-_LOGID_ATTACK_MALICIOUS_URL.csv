@@ -1,0 +1,66 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint8,3,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+vd,Virtual domain name,string,32,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+user,User name,string,256,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+url,The URL address,string,512,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+unauthusersource,Unauthenticated user source,string,66,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+unauthuser,Unauthenticated user,string,66,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+tz,,string,5,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+type,Log type,string,16,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+trueclntip,True-Client-IP HTTP header,ip,39,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+time,Time,string,8,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+subtype,Log Subtype,string,20,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+srcport,Source Port,uint16,5,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+srcip,Source IP,ip,39,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+srcintf,Source Interface,string,64,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+srcdomain,,string,255,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+srccountry,Country name for Source IP,string,64,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+severity,Severity of the attack,string,8,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+sessionid,Session ID,uint32,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+service,Service name,string,80,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+referralurl,,string,512,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+rawdataid,,string,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,1024,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+proto,Protocol number,uint8,3,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+profile,Profile name for IPS,string,64,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+poluuid,,string,37,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+policytype,,string,24,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+policymode,,string,8,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+policyid,Policy ID,uint32,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+msg,Log message for the attack,string,518,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+logid,Log ID,string,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+level,Log Level,string,11,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+httpmethod,,string,20,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+hostname,The host name of a URL,string,256,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+forwardedfor,X-Forwarded-For HTTP header,string,128,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+fctuid,FortiClient UID,string,32,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+eventtype,IPS Event Type,string,32,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+eventtime,Time when detection occured,uint64,20,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+dstuser,,string,256,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+dstport,Destination Port,uint16,5,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+dstip,Destination IP,ip,39,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+dstintf,Destination Interface,string,64,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+dstcountry,,string,64,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+dstauthserver,,string,64,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+direction,Message/packets direction,string,8,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+devid,Deivce ID,string,16,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+date,Date,string,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+crscore,Client Reputation Score,uint32,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+crlevel,Client Reputation Level,string,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+craction,Action performed by Threat Weight,uint32,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+authserver,Authentication server for the user,string,64,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+attackcontextid,Attack context ID / total,string,10,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+attackcontext,The trigger patterns and the packet data with base64 encoding,string,2048,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+attack,Attack Name,string,256,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+agent,,string,1024,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11
+action,"Security action performed by IPS:
+ detected - Attack is detected , but NOT blocked (similar to monitor)
+ dropped - Silent packet blocked
+ reset - Blocked and respond with Reset
+ reset_client - Blocked and reset sent to the client
+ reset_server - Blocked and reset sent to the server
+ drop_session - Silent block
+ pass_session - Session allowed
+ clear_session - Session was removed /closed",string,16,16399 - LOGID_ATTACK_MALICIOUS_URL,16399,LOGID_ATTACK_MALICIOUS_URL,Attack detected by a malicious URL,IPS,malicious-url,Warning,7.2.11

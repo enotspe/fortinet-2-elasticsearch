@@ -1,0 +1,168 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+accessctrl,,string,80,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+accessproxy,,string,80,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+ap,Access Point name,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+app,Application Name,string,96,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+appact,The security action from app control,string,16,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+appcat,Application category,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+appid,Application ID,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+applist,Application Control profile (name),string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+apprisk,Application Risk Level,string,16,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+apsn,Access Point serial number,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+authserver,Remote Authentication server,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+centralnatid,central-snat-map id,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+channel,WiFi Channel,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+clientdeviceid,,string,80,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+clientdevicemanageable,,string,16,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+clientdeviceowner,,string,80,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+clientdevicetags,,string,512,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+comment,Customized policy comment,string,1024,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countapp,Number of App Ctrl logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countav,Number of AV logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countcifs,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countdlp,Number of DLP logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countdns,Number of DNS Query logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countemail,Number of Email logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countff,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+counticap,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countips,Number of IPS logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countsctpf,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countssh,Number of SSH logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countssl,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countwaf,Number of WAF logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+countweb,Number of Web Filter logs associated with the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+craction,Action performed by Threat Weight,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+crlevel,Threat Weight level,string,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+crscore,Threat Weight score,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+date,Date,string,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+devid,Device Serial Number,string,16,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+devtype,Device Type,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstauthserver,,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstcity,,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstcountry,Country name for the destination IP,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstdevtype,Destination Device Type,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstfamily,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dsthwvendor,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dsthwversion,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstinetsvc,Internet service name for the destination,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstintf,Destination Interface,string,32,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstip,Destination IP Address,ip,39,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstmac,Destination Mac Address,string,17,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstname,Destination name,string,256,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstosname,Destination OS name,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstport,Destination Protocol Port Number,uint16,5,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstregion,,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstreputation,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstserver,Destination Server,uint8,3,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstssid,Destination SSID,string,33,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstswversion,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstthreatfeed,,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstunauthuser,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstunauthusersource,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstuser,,string,256,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+dstuuid,UUID of the Destination Address Object,string,37,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+duration,Duration of the session,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+emsconnection,,string,8,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+eventtime,Epoch time in nanoseconds,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+fctuid,FortiClient UID,string,32,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+gatewayid,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+group,User group name,string,512,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+identifier,,uint16,5,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+lanin,LAN incoming traffic in bytes,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+lanout,LAN outgoing traffic in bytes,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+level,Log Level,string,11,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+logid,Log ID,string,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+masterdstmac,Destination master MAC address,string,17,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+msg,Log message,string,512,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+osname,Name of the device's OS,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+pdstport,,uint16,5,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+policyid,Firewall Policy ID,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+policymode,,string,8,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+policyname,Policy name,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+policytype,Policy type,string,24,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+poluuid,UUID of the Firewall Policy,string,37,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+proto,Protocol Number,uint8,3,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+proxyapptype,,string,9,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+psrcport,,uint16,5,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+radioband,Radio Band,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+rcvdbyte,Received Bytes,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+rcvddelta,Delta Received Bytes,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+rcvdpkt,Received Packets,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+saasname,,string,80,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+sentbyte,Sent Bytes,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+sentdelta,Delta Sent Bytes,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+sentpkt,Sent Packets,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+service,Name of Service,string,80,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+sessionid,Session ID,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+shaperperipname,Traffic shaper name (per IP),string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+shaperrcvdname,Traffic shaper name for received traffic,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+shapersentname,Traffic shaper name for sent traffic,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+shapingpolicyid,Shaping Policy ID,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+shapingpolicyname,,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+signal,,int8,4,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+snr,,int8,4,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srccity,,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srccountry,Country name for Source IP,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcdomain,,string,255,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcfamily,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srchwvendor,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srchwversion,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcinetsvc,Internet service name for the source,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcintf,Source interface name,string,32,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcip,Source IP address,ip,39,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcmac,MAC address associated with the Source IP,string,17,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcmacvendor,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcname,Source name,string,256,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcport,Source protocol port number,uint16,5,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcregion,,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcreputation,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcserver,Source server,uint8,3,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcssid,Source SSID,string,33,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcswversion,,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcthreatfeed,,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+srcuuid,UUID of the Source Address Object,string,37,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+sslaction,Action taken by ssl-ssh-profile,string,26,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+subtype,Subtype of the traffic,string,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+time,Time,string,8,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+trandisp,NAT translation type,string,16,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+tranip,NAT Destination IP,ip,39,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+tranport,NAT Destination Port,uint16,5,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+transip,NAT Source IP,ip,39,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+transport,NAT Source Protocol Port,uint16,5,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+tunnelid,,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+type,Log type,string,16,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+tz,Time zone,string,5,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+unauthuser,Unauthenticated user name,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+unauthusersource,The method used to detect unauthenticated user name,string,66,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+url,URL,string,512,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+user,User name,string,256,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+utmaction,Security action performed by UTM,string,32,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vd,Virtual domain name,string,32,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vip,,string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vpntype,The type of the VPN tunnel,string,14,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vrf,Virtual router forwarding,uint8,3,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vwlname,,string,36,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+wanin,WAN incoming traffic in bytes,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+wanoptapptype,WAN Optimization Application type,string,9,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5
+wanout,WAN outgoing traffic in bytes,uint64,20,17 - LOG_ID_TRAFFIC_SNIFFER,17,LOG_ID_TRAFFIC_SNIFFER,Sniffer traffic,Traffic,sniffer,Notice,7.2.5

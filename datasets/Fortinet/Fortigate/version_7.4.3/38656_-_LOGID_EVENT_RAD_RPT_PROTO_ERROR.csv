@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+time,Time,string,8,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+logid,Log ID,string,10,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+type,Log Type,string,16,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+subtype,Log Subtype,string,20,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+level,Log Level,string,11,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+devid,Device ID,string,16,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+vd,Virtual Domain Name,string,32,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+eventtime,Event time,uint64,20,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+tz,Time zone,string,5,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+logdesc,Log Description,string,4096,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+msg,Log Message,string,4096,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+count,Number of Packets,uint32,10,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3
+duration,Duration,uint32,10,38656 - LOGID_EVENT_RAD_RPT_PROTO_ERROR,38656,LOGID_EVENT_RAD_RPT_PROTO_ERROR,RADIUS protocol error summary,Event,user,Notice,7.4.3

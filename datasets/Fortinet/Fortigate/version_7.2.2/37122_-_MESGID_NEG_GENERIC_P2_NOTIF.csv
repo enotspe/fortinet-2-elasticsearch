@@ -1,0 +1,32 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+time,Time,string,8,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+logid,Log ID,string,10,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+type,Log Type,string,16,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+subtype,Log Subtype,string,20,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+level,Log Level,string,11,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+devid,Device ID,string,16,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+vd,Virtual Domain Name,string,32,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+eventtime,Event time,uint64,20,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+tz,Time zone,string,5,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+logdesc,Log Description,string,4096,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+action,Policy Action,string,65,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+remip,IPsec VPN remote gateway IP address,ip,39,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+user,User name of authenticated user,string,256,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+group,User group Name,string,512,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+msg,Log Message,string,4096,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+locip,IPsec VPN local gateway IP address,ip,39,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+remport,Remote Port,uint16,5,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+locport,Local Port,uint16,5,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+outintf,IPsec VPN binding interface,string,32,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+cookies,Cookie,string,64,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+useralt,,string,256,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+xauthuser,IPsec VPN Xauth user name,string,256,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+xauthgroup,IPsec VPN Xauth user group name,string,128,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+vpntunnel,IPsec VPN Tunnel Name,string,128,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+status,Status,string,23,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+advpnsc,,uint8,3,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+role,"IPsec peer role, initator or responder",string,9,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+esptransform,IPsec Phase2 ESP encryption method,string,21,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2
+espauth,IPsec Phase2 ESP message authentication code,string,17,37122 - MESGID_NEG_GENERIC_P2_NOTIF,37122,MESGID_NEG_GENERIC_P2_NOTIF,Negotiate IPsec phase 2,Event,vpn,Notice,7.2.2

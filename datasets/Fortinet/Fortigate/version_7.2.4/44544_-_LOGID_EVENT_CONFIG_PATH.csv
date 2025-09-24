@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+time,Time,string,8,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+logid,Log ID,string,10,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+type,Log Type,string,16,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+subtype,Log Subtype,string,20,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+level,Log Level,string,11,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+devid,Device ID,string,16,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+vd,Virtual Domain Name,string,32,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+eventtime,Event time,uint64,20,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+tz,Time zone,string,5,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+logdesc,Log Description,string,4096,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+user,User name of authenticated user,string,256,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+ui,User Interface,string,64,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+action,Policy Action,string,65,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+msg,Log Message,string,4096,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+cfgtid,Config transaction id,uint32,10,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4
+cfgpath,Configuration path,string,128,44544 - LOGID_EVENT_CONFIG_PATH,44544,LOGID_EVENT_CONFIG_PATH,Path configured,Event,system,Information,7.2.4

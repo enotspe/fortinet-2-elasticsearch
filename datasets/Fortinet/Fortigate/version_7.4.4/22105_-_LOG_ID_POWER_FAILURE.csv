@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+time,Time,string,8,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+logid,Log ID,string,10,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+type,Log Type,string,16,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+subtype,Log Subtype,string,20,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+level,Log Level,string,11,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+devid,Device ID,string,16,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+vd,Virtual Domain Name,string,32,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+eventtime,Event time,uint64,20,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+tz,Time zone,string,5,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+logdesc,Log Description,string,4096,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+action,Policy Action,string,65,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+status,Status,string,23,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4
+msg,Log Message,string,4096,22105 - LOG_ID_POWER_FAILURE,22105,LOG_ID_POWER_FAILURE,Power supply failed,Event,system,Critical,7.4.4

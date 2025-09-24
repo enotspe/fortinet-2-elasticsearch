@@ -1,0 +1,55 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Security action performed by DNS filter,string,16,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+botnetdomain,Botnet domain name,string,256,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+botnetip,Botnet IP address,ip,39,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+cat,DNS category ID,uint8,3,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+catdesc,DNS category description,string,64,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+date,Date,string,10,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+devid,Device ID,string,16,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+domainfilteridx,Domain Filter Index,uint8,3,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+domainfilterlist,Domain Filter List,string,512,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+dstcountry,,string,64,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+dstintf,Destination Interface,string,32,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+dstintfrole,Destination Interface Role,string,10,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+dstip,Destination IP,ip,39,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+dstport,Destination Port,uint16,5,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+dstuser,,string,256,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+error,DNS filter service error message,string,256,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+eventtime,Event Timestamp,uint64,20,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+eventtype,DNS Type (DNS query/DNS response),string,32,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+exchange,Mail Exchanges from DNS response answer section,string,256,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+fctuid,FortiClient ID,string,32,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+group,User group name,string,512,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+ipaddr,IP addresses from DNS response answer section,string,512,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+level,Log Level,string,11,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+logid,Log ID,string,10,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+msg,Log message,string,512,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+policyid,Policy ID,uint32,10,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+policytype,,string,24,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+poluuid,,string,37,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+profile,Profile name for DNS filter,string,64,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+proto,Protocol number,uint8,3,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+qclass,Query class,string,32,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+qname,Query domain name,string,256,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+qtype,Query type description,string,32,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+qtypeval,Query Type Value,uint16,5,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+rcode,,uint8,3,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+sessionid,Session ID,uint32,10,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+srccountry,,string,64,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+srcdomain,,string,255,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+srcintf,Source Interface,string,32,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+srcintfrole,Source Interface Role,string,10,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+srcip,Source IP,ip,39,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+srcmac,MAC address associated with the Source IP,string,17,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+srcport,Source Port,uint16,5,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+sscname,Safe Search CNAME,string,256,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+subtype,Log Subtype,string,20,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+time,Time,string,8,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+translationid,,uint32,10,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+type,Log Type,string,16,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+tz,Time zone,string,5,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+unauthuser,Unauthenticated User,string,66,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+unauthusersource,Unauthenticated User Source,string,66,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+user,User name,string,256,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+vd,Virtual Domain Name,string,32,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8
+xid,Transaction ID,uint16,5,54804 - LOG_ID_DNS_SAFE_SEARCH,54804,LOG_ID_DNS_SAFE_SEARCH,DNS Safe Search enforced,DNS,dns-response,Notice,7.2.8

@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+time,Time,string,8,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+logid,Log ID,string,10,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+type,Log Type,string,16,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+subtype,Log Subtype,string,20,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+level,Log Level,string,11,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+devid,Device ID,string,16,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+vd,Virtual Domain Name,string,32,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+eventtime,Event time,uint64,20,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+tz,Time zone,string,5,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+logdesc,Log Description,string,4096,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+user,User name of authenticated user,string,256,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+authproto,The protocol that initiated the authentication,string,512,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+action,Policy Action,string,65,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+status,Status,string,23,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+msg,Log Message,string,4096,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+srcip,Source IP,ip,39,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+reason,Reason,string,256,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5
+dstip,Destination IP,ip,39,43027 - LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,43027,LOG_ID_EVENT_AUTH_PROXY_TIME_OUT,Explicit proxy authentication timed out,Event,user,Notice,7.2.5

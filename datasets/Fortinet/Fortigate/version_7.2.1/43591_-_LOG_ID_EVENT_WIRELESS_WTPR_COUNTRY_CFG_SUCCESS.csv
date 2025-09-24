@@ -1,0 +1,27 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+time,Time,string,8,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+logid,Log ID,string,10,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+type,Log Type,string,16,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+subtype,Log Subtype,string,20,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+level,Log Level,string,11,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+devid,Device ID,string,16,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+vd,Virtual Domain Name,string,32,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+eventtime,Event time,uint64,20,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+tz,Time zone,string,5,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+logdesc,Log Description,string,4096,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+action,Policy Action,string,65,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+msg,Log Message,string,4096,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+ssid,WiFi Service Set ID,string,33,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+radioband,The operating radio band,string,64,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+sn,Serial Number,string,64,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+ap,Access Point,string,36,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+ip,,ip,39,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+radioid,The operating radio ID,uint8,3,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+bandwidth,Bandwidth,string,42,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+configcountry,Config Country,string,4,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+opercountry,The name of operating country on a AP,string,4,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+cfgtxpower,Config TX power,uint32,10,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+opertxpower,The value of operating tx power,uint32,10,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+slctdrmamode,,string,10,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1
+operdrmamode,,string,10,43591 - LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,43591,LOG_ID_EVENT_WIRELESS_WTPR_COUNTRY_CFG_SUCCESS,Physical AP radio country config success,Event,wireless,Notice,7.2.1

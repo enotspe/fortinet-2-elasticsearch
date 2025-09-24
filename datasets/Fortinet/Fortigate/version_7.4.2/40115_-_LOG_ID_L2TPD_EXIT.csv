@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+date,Date,string,10,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+time,Time,string,8,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+logid,Log ID,string,10,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+type,Log Type,string,16,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+subtype,Log Subtype,string,20,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+level,Log Level,string,11,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+devid,Device ID,string,16,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+vd,Virtual Domain Name,string,32,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+eventtime,Event time,uint64,20,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+tz,Time zone,string,5,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+logdesc,Log Description,string,4096,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+action,Policy Action,string,65,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+msg,Log Message,string,4096,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2
+status,Status,string,23,40115 - LOG_ID_L2TPD_EXIT,40115,LOG_ID_L2TPD_EXIT,L2TP daemon exited,Event,vpn,Notice,7.4.2

@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+action,Policy Action,string,65,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+date,Date,string,10,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+devid,Device ID,string,16,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+dstip,Destination IP,ip,39,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+dstport,Destination Protocol Port,uint16,5,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+eventtime,Event time,uint64,20,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+handshake,Handshake,string,32,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+level,Log Level,string,11,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+logdesc,Log Description,string,4096,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+logid,Log ID,string,10,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+msg,Log Message,string,4096,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+policyid,Policy ID,uint32,10,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+session_id,Session ID,uint32,10,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+srcip,Source IP,ip,39,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+srcport,Source port,uint16,5,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+subtype,Log Subtype,string,20,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+time,Time,string,8,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+type,Log Type,string,16,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+tz,Time zone,string,5,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
+vd,Virtual Domain Name,string,32,48017 - LOG_ID_WAD_SSL_HS_TOO_LONG,48017,LOG_ID_WAD_SSL_HS_TOO_LONG,SSL handshake too long,Event,WAD,Error,7.2.0
