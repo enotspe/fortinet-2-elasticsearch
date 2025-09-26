@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 """
 FortiGate Log Message Reference Scraper
 
@@ -41,12 +41,35 @@ class FortiGateLogScraper:
         self.versions = [
             '7.6.0', '7.6.1', '7.6.2', '7.6.3', '7.6.4',
             '7.4.0', '7.4.1', '7.4.2', '7.4.3', '7.4.4', '7.4.5', '7.4.6', '7.4.7', '7.4.8',
-            '7.2.0', '7.2.1', '7.2.2', '7.2.3', '7.2.4', '7.2.5', '7.2.6', '7.2.7', '7.2.8', '7.2.9', '7.2.10', '7.2.11', '7.2.12'
+            '7.2.0', '7.2.1', '7.2.2', '7.2.3', '7.2.4', '7.2.5', '7.2.6', '7.2.7', '7.2.8', '7.2.9', '7.2.10', '7.2.11', '7.2.12',
         ]
 
         # Create output directory
-        self.output_dir = "Fortigate"
+        self.output_dir = "fortigate_logs"
         os.makedirs(self.output_dir, exist_ok=True)
+
+    def get_version_directories(self, version: str) -> tuple:
+        """
+        Get the major and minor version directory paths
+
+        Args:
+            version: Version string like '7.6.4'
+
+        Returns:
+            Tuple of (major_version_dir, minor_version_dir)
+        """
+        # Split version into major (7.6) and full version (7.6.4)
+        version_parts = version.split('.')
+        if len(version_parts) >= 2:
+            major_version = f"{version_parts[0]}.{version_parts[1]}"  # e.g., "7.6"
+        else:
+            major_version = version  # Fallback if version format is unexpected
+
+        # Create directory paths
+        major_version_dir = os.path.join(self.output_dir, major_version)
+        minor_version_dir = os.path.join(major_version_dir, version)
+
+        return major_version_dir, minor_version_dir#!/usr/bin/env python3
 
     def get_page_content(self, url: str) -> Optional[BeautifulSoup]:
         """
@@ -259,9 +282,10 @@ class FortiGateLogScraper:
         """
         logger.info(f"Starting scrape for FortiOS version {version}")
 
-        # Create version-specific directory
-        version_dir = os.path.join(self.output_dir, f"version_{version}")
-        os.makedirs(version_dir, exist_ok=True)
+        # Create version-specific directory structure
+        major_version_dir, minor_version_dir = self.get_version_directories(version)
+        os.makedirs(major_version_dir, exist_ok=True)
+        os.makedirs(minor_version_dir, exist_ok=True)
 
         version_url = self.get_version_url(version)
         soup = self.get_page_content(version_url)
@@ -281,7 +305,6 @@ class FortiGateLogScraper:
 
         # Process each LOGID and save immediately
         successful_count = 0
-        all_dataframes = []  # Keep track for combined file
 
         for logid_description, url in logid_links.items():
             logger.info(f"Processing LOGID: {logid_description}")
@@ -294,28 +317,17 @@ class FortiGateLogScraper:
             if df is not None:
                 df['Version'] = version
 
-                # Save immediately to CSV
+                # Save immediately to CSV in the minor version directory
                 safe_logid = re.sub(r'[^\w\-_\.]', '_', str(logid_description))
                 filename = f"{safe_logid}.csv"
-                filepath = os.path.join(version_dir, filename)
+                filepath = os.path.join(minor_version_dir, filename)
 
                 try:
                     df.to_csv(filepath, index=False)
                     logger.info(f"Saved {len(df)} rows to {filepath}")
                     successful_count += 1
-                    all_dataframes.append(df)
                 except Exception as e:
                     logger.error(f"Error saving {filepath}: {e}")
-
-        # Create combined file for the version
-        if all_dataframes:
-            try:
-                combined_df = pd.concat(all_dataframes, ignore_index=True)
-                combined_filepath = os.path.join(version_dir, f"all_logids_{version}.csv")
-                combined_df.to_csv(combined_filepath, index=False)
-                logger.info(f"Saved combined file: {combined_filepath} ({len(combined_df)} total rows)")
-            except Exception as e:
-                logger.error(f"Error saving combined file for version {version}: {e}")
 
         return successful_count
 
