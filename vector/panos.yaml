@@ -18,7 +18,7 @@
 # Random Syslog-formatted logs
 sources:
 
-  syslog_[panos]:
+  syslog_panos:
     type: "syslog"
     address: 0.0.0.0:${PANOS_SYSLOG_UDP_PORT:-5140}
     mode: "udp"
