@@ -1,0 +1,500 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "fgt": {
+          "type": "object",
+          "properties": {
+            "accessproxy": {
+              "type": "keyword"
+            },
+            "action": {
+              "type": "keyword"
+            },
+            "agent": {
+              "type": "keyword"
+            },
+            "ap": {
+              "type": "keyword"
+            },
+            "app": {
+              "type": "keyword"
+            },
+            "appact": {
+              "type": "keyword"
+            },
+            "appcat": {
+              "type": "keyword"
+            },
+            "appid": {
+              "type": "long"
+            },
+            "applist": {
+              "type": "keyword"
+            },
+            "apprisk": {
+              "type": "keyword"
+            },
+            "apsn": {
+              "type": "keyword"
+            },
+            "authserver": {
+              "type": "keyword"
+            },
+            "centralnatid": {
+              "type": "long"
+            },
+            "channel": {
+              "type": "long"
+            },
+            "clientdeviceid": {
+              "type": "keyword"
+            },
+            "clientdeviceowner": {
+              "type": "keyword"
+            },
+            "clientdevicetags": {
+              "type": "keyword"
+            },
+            "comment": {
+              "type": "keyword"
+            },
+            "countapp": {
+              "type": "long"
+            },
+            "countav": {
+              "type": "long"
+            },
+            "countcifs": {
+              "type": "long"
+            },
+            "countdlp": {
+              "type": "long"
+            },
+            "countdns": {
+              "type": "long"
+            },
+            "countemail": {
+              "type": "long"
+            },
+            "countff": {
+              "type": "long"
+            },
+            "counticap": {
+              "type": "long"
+            },
+            "countips": {
+              "type": "long"
+            },
+            "countsctpf": {
+              "type": "long"
+            },
+            "countssh": {
+              "type": "long"
+            },
+            "countssl": {
+              "type": "long"
+            },
+            "countwaf": {
+              "type": "long"
+            },
+            "countweb": {
+              "type": "long"
+            },
+            "craction": {
+              "type": "long"
+            },
+            "crlevel": {
+              "type": "keyword"
+            },
+            "crscore": {
+              "type": "long"
+            },
+            "date": {
+              "type": "keyword"
+            },
+            "devid": {
+              "type": "keyword"
+            },
+            "devtype": {
+              "type": "keyword"
+            },
+            "dstauthserver": {
+              "type": "keyword"
+            },
+            "dstcity": {
+              "type": "keyword"
+            },
+            "dstcountry": {
+              "type": "keyword"
+            },
+            "dstdevtype": {
+              "type": "keyword"
+            },
+            "dstfamily": {
+              "type": "keyword"
+            },
+            "dsthwvendor": {
+              "type": "keyword"
+            },
+            "dsthwversion": {
+              "type": "keyword"
+            },
+            "dstinetsvc": {
+              "type": "keyword"
+            },
+            "dstintf": {
+              "type": "keyword"
+            },
+            "dstintfrole": {
+              "type": "keyword"
+            },
+            "dstip": {
+              "type": "ip"
+            },
+            "dstmac": {
+              "type": "keyword"
+            },
+            "dstname": {
+              "type": "keyword"
+            },
+            "dstosname": {
+              "type": "keyword"
+            },
+            "dstport": {
+              "type": "long"
+            },
+            "dstregion": {
+              "type": "keyword"
+            },
+            "dstreputation": {
+              "type": "long"
+            },
+            "dstserver": {
+              "type": "long"
+            },
+            "dstssid": {
+              "type": "keyword"
+            },
+            "dstswversion": {
+              "type": "keyword"
+            },
+            "dstthreatfeed": {
+              "type": "keyword"
+            },
+            "dstunauthuser": {
+              "type": "keyword"
+            },
+            "dstunauthusersource": {
+              "type": "keyword"
+            },
+            "dstuser": {
+              "type": "keyword"
+            },
+            "dstuuid": {
+              "type": "keyword"
+            },
+            "duration": {
+              "type": "long"
+            },
+            "eventtime": {
+              "type": "long"
+            },
+            "fctuid": {
+              "type": "keyword"
+            },
+            "gatewayid": {
+              "type": "long"
+            },
+            "group": {
+              "type": "keyword"
+            },
+            "identifier": {
+              "type": "long"
+            },
+            "lanin": {
+              "type": "long"
+            },
+            "lanout": {
+              "type": "long"
+            },
+            "level": {
+              "type": "keyword"
+            },
+            "logid": {
+              "type": "keyword"
+            },
+            "masterdstmac": {
+              "type": "keyword"
+            },
+            "mastersrcmac": {
+              "type": "keyword"
+            },
+            "msg": {
+              "type": "keyword"
+            },
+            "osname": {
+              "type": "keyword"
+            },
+            "pdstport": {
+              "type": "long"
+            },
+            "policyid": {
+              "type": "long"
+            },
+            "policymode": {
+              "type": "keyword"
+            },
+            "policyname": {
+              "type": "keyword"
+            },
+            "policytype": {
+              "type": "keyword"
+            },
+            "poluuid": {
+              "type": "keyword"
+            },
+            "proto": {
+              "type": "long"
+            },
+            "psrcport": {
+              "type": "long"
+            },
+            "radioband": {
+              "type": "keyword"
+            },
+            "rcvdbyte": {
+              "type": "long"
+            },
+            "rcvddelta": {
+              "type": "long"
+            },
+            "rcvdpkt": {
+              "type": "long"
+            },
+            "sentbyte": {
+              "type": "long"
+            },
+            "sentdelta": {
+              "type": "long"
+            },
+            "sentpkt": {
+              "type": "long"
+            },
+            "service": {
+              "type": "keyword"
+            },
+            "sessionid": {
+              "type": "long"
+            },
+            "shaperdroprcvdbyte": {
+              "type": "long"
+            },
+            "shaperdropsentbyte": {
+              "type": "long"
+            },
+            "shaperperipdropbyte": {
+              "type": "long"
+            },
+            "shaperperipname": {
+              "type": "keyword"
+            },
+            "shaperrcvdname": {
+              "type": "keyword"
+            },
+            "shapersentname": {
+              "type": "keyword"
+            },
+            "shapingpolicyid": {
+              "type": "long"
+            },
+            "signal": {
+              "type": "long"
+            },
+            "snr": {
+              "type": "long"
+            },
+            "srccity": {
+              "type": "keyword"
+            },
+            "srccountry": {
+              "type": "keyword"
+            },
+            "srcdomain": {
+              "type": "keyword"
+            },
+            "srcfamily": {
+              "type": "keyword"
+            },
+            "srchwvendor": {
+              "type": "keyword"
+            },
+            "srchwversion": {
+              "type": "keyword"
+            },
+            "srcinetsvc": {
+              "type": "keyword"
+            },
+            "srcintf": {
+              "type": "keyword"
+            },
+            "srcintfrole": {
+              "type": "keyword"
+            },
+            "srcip": {
+              "type": "ip"
+            },
+            "srcmac": {
+              "type": "keyword"
+            },
+            "srcname": {
+              "type": "keyword"
+            },
+            "srcport": {
+              "type": "long"
+            },
+            "srcregion": {
+              "type": "keyword"
+            },
+            "srcreputation": {
+              "type": "long"
+            },
+            "srcserver": {
+              "type": "long"
+            },
+            "srcssid": {
+              "type": "keyword"
+            },
+            "srcswversion": {
+              "type": "keyword"
+            },
+            "srcthreatfeed": {
+              "type": "keyword"
+            },
+            "srcuuid": {
+              "type": "keyword"
+            },
+            "sslaction": {
+              "type": "keyword"
+            },
+            "subtype": {
+              "type": "keyword"
+            },
+            "time": {
+              "type": "keyword"
+            },
+            "trandisp": {
+              "type": "keyword"
+            },
+            "tranip": {
+              "type": "ip"
+            },
+            "tranport": {
+              "type": "long"
+            },
+            "transip": {
+              "type": "ip"
+            },
+            "transport": {
+              "type": "long"
+            },
+            "tunnelid": {
+              "type": "long"
+            },
+            "type": {
+              "type": "keyword"
+            },
+            "tz": {
+              "type": "keyword"
+            },
+            "unauthuser": {
+              "type": "keyword"
+            },
+            "unauthusersource": {
+              "type": "keyword"
+            },
+            "url": {
+              "type": "keyword"
+            },
+            "user": {
+              "type": "keyword"
+            },
+            "utmaction": {
+              "type": "keyword"
+            },
+            "vd": {
+              "type": "keyword"
+            },
+            "vip": {
+              "type": "keyword"
+            },
+            "vpntype": {
+              "type": "keyword"
+            },
+            "vrf": {
+              "type": "long"
+            },
+            "vwlid": {
+              "type": "long"
+            },
+            "vwlname": {
+              "type": "keyword"
+            },
+            "vwlquality": {
+              "type": "keyword"
+            },
+            "vwlservice": {
+              "type": "keyword"
+            },
+            "vwpvlanid": {
+              "type": "long"
+            },
+            "wanin": {
+              "type": "long"
+            },
+            "wanoptapptype": {
+              "type": "keyword"
+            },
+            "wanout": {
+              "type": "long"
+            },
+            "saasname": {
+              "type": "keyword"
+            },
+            "shapingpolicyname": {
+              "type": "keyword"
+            },
+            "srcmacvendor": {
+              "type": "keyword"
+            },
+            "accessctrl": {
+              "type": "keyword"
+            },
+            "clientdevicemanageable": {
+              "type": "keyword"
+            },
+            "emsconnection": {
+              "type": "keyword"
+            },
+            "proxyapptype": {
+              "type": "keyword"
+            },
+            "replydstintf": {
+              "type": "keyword"
+            },
+            "replysrcintf": {
+              "type": "keyword"
+            },
+            "srcremote": {
+              "type": "ip"
+            }
+          }
+        }
+      }
+    }
+  },
+  "_meta": {
+    "description": "Fortigate traffic logs mapping for version 7.2",
+    "version": "7.2"
+  }
+}

@@ -4,7 +4,13 @@
     "lifecycle": {
       "enabled": true,
       "data_retention": "180d"
-    }
+    },
+    "settings": {
+        "index.mode": "logsdb",
+        "mapping": {
+          "ignore_malformed": "true"
+        }
+     }
   },
   "index_patterns": [
     "logs-fortinet.fortigate.traffic*"
@@ -16,21 +22,19 @@
     "ecs-user",
     "ecs-observer",
     "ecs-destination",
-    "ecs-source-modified",
+    "ecs-source",
     "ecs-network",
-    "ecs-event-modified",
+    "ecs-event",
     "ecs-url",
-    "ecs-log-modified",
+    "ecs-log",
     "ecs-rule",
     "ecs-data_stream",
     "ecs-organization",
     "ecs-ecs",
-    "ecs-host",
     "logs-fortinet.fortigate.traffic@ilm",
     "strings_as_keyword@mappings",
-    "logs-fortinet.fortigate@mappings",
+    "fortigate_traffic_7_6",
     "auto_expand_replicas@settings",
-    "refresh_interval@settings",
-    "synthetic_source@mappings"
+    "refresh_interval@settings"
   ]
 }

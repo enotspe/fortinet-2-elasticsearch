@@ -1,0 +1,746 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "fgt": {
+          "type": "object",
+          "properties": {
+            "action": {
+              "type": "keyword"
+            },
+            "agent": {
+              "type": "keyword"
+            },
+            "authserver": {
+              "type": "keyword"
+            },
+            "banword": {
+              "type": "keyword"
+            },
+            "contenttype": {
+              "type": "keyword"
+            },
+            "craction": {
+              "type": "long"
+            },
+            "crlevel": {
+              "type": "keyword"
+            },
+            "crscore": {
+              "type": "long"
+            },
+            "date": {
+              "type": "keyword"
+            },
+            "devid": {
+              "type": "keyword"
+            },
+            "direction": {
+              "type": "keyword"
+            },
+            "dstauthserver": {
+              "type": "keyword"
+            },
+            "dstcountry": {
+              "type": "keyword"
+            },
+            "dstintf": {
+              "type": "keyword"
+            },
+            "dstintfrole": {
+              "type": "keyword"
+            },
+            "dstip": {
+              "type": "ip"
+            },
+            "dstport": {
+              "type": "long"
+            },
+            "dstuser": {
+              "type": "keyword"
+            },
+            "dstuuid": {
+              "type": "keyword"
+            },
+            "eventtime": {
+              "type": "long"
+            },
+            "eventtype": {
+              "type": "keyword"
+            },
+            "fctuid": {
+              "type": "keyword"
+            },
+            "forwardedfor": {
+              "type": "keyword"
+            },
+            "from": {
+              "type": "keyword"
+            },
+            "group": {
+              "type": "keyword"
+            },
+            "hostname": {
+              "type": "keyword"
+            },
+            "httpmethod": {
+              "type": "keyword"
+            },
+            "initiator": {
+              "type": "keyword"
+            },
+            "keyword": {
+              "type": "keyword"
+            },
+            "level": {
+              "type": "keyword"
+            },
+            "logid": {
+              "type": "keyword"
+            },
+            "msg": {
+              "type": "keyword"
+            },
+            "policyid": {
+              "type": "long"
+            },
+            "policymode": {
+              "type": "keyword"
+            },
+            "policytype": {
+              "type": "keyword"
+            },
+            "poluuid": {
+              "type": "keyword"
+            },
+            "profile": {
+              "type": "keyword"
+            },
+            "proto": {
+              "type": "long"
+            },
+            "rawdata": {
+              "type": "keyword"
+            },
+            "rcvdbyte": {
+              "type": "long"
+            },
+            "referralurl": {
+              "type": "keyword"
+            },
+            "reqtype": {
+              "type": "keyword"
+            },
+            "sentbyte": {
+              "type": "long"
+            },
+            "service": {
+              "type": "keyword"
+            },
+            "sessionid": {
+              "type": "long"
+            },
+            "srccountry": {
+              "type": "keyword"
+            },
+            "srcdomain": {
+              "type": "keyword"
+            },
+            "srcintf": {
+              "type": "keyword"
+            },
+            "srcintfrole": {
+              "type": "keyword"
+            },
+            "srcip": {
+              "type": "ip"
+            },
+            "srcport": {
+              "type": "long"
+            },
+            "srcuuid": {
+              "type": "keyword"
+            },
+            "subtype": {
+              "type": "keyword"
+            },
+            "time": {
+              "type": "keyword"
+            },
+            "to": {
+              "type": "keyword"
+            },
+            "trueclntip": {
+              "type": "ip"
+            },
+            "type": {
+              "type": "keyword"
+            },
+            "tz": {
+              "type": "keyword"
+            },
+            "unauthuser": {
+              "type": "keyword"
+            },
+            "unauthusersource": {
+              "type": "keyword"
+            },
+            "url": {
+              "type": "keyword"
+            },
+            "user": {
+              "type": "keyword"
+            },
+            "vd": {
+              "type": "keyword"
+            },
+            "vrf": {
+              "type": "long"
+            },
+            "urlfilteridx": {
+              "type": "long"
+            },
+            "urlfilterlist": {
+              "type": "keyword"
+            },
+            "urlsource": {
+              "type": "keyword"
+            },
+            "error": {
+              "type": "keyword"
+            },
+            "urltype": {
+              "type": "keyword"
+            },
+            "cat": {
+              "type": "long"
+            },
+            "catdesc": {
+              "type": "keyword"
+            },
+            "quotamax": {
+              "type": "long"
+            },
+            "quotatype": {
+              "type": "keyword"
+            },
+            "quotaused": {
+              "type": "long"
+            },
+            "ratemethod": {
+              "type": "keyword"
+            },
+            "quotaexceeded": {
+              "type": "keyword"
+            },
+            "filtertype": {
+              "type": "keyword"
+            },
+            "chgheaders": {
+              "type": "keyword"
+            },
+            "transid": {
+              "type": "long"
+            },
+            "antiphishdc": {
+              "type": "keyword"
+            },
+            "antiphishrule": {
+              "type": "keyword"
+            },
+            "videocategoryid": {
+              "type": "long"
+            },
+            "videocategoryname": {
+              "type": "keyword"
+            },
+            "videochannelid": {
+              "type": "keyword"
+            },
+            "videoid": {
+              "type": "keyword"
+            },
+            "videoinfosource": {
+              "type": "keyword"
+            },
+            "contentencoding": {
+              "type": "keyword"
+            },
+            "attack": {
+              "type": "keyword"
+            },
+            "attackcontext": {
+              "type": "keyword"
+            },
+            "attackcontextid": {
+              "type": "keyword"
+            },
+            "attackid": {
+              "type": "long"
+            },
+            "incidentserialno": {
+              "type": "long"
+            },
+            "pdstport": {
+              "type": "long"
+            },
+            "psrcport": {
+              "type": "long"
+            },
+            "rawdataid": {
+              "type": "keyword"
+            },
+            "ref": {
+              "type": "keyword"
+            },
+            "severity": {
+              "type": "keyword"
+            },
+            "icmpcode": {
+              "type": "keyword"
+            },
+            "icmpid": {
+              "type": "keyword"
+            },
+            "icmptype": {
+              "type": "keyword"
+            },
+            "count": {
+              "type": "long"
+            },
+            "attachment": {
+              "type": "keyword"
+            },
+            "cc": {
+              "type": "keyword"
+            },
+            "fortiguardresp": {
+              "type": "keyword"
+            },
+            "recipient": {
+              "type": "keyword"
+            },
+            "sender": {
+              "type": "keyword"
+            },
+            "size": {
+              "type": "keyword"
+            },
+            "subject": {
+              "type": "keyword"
+            },
+            "webmailprovider": {
+              "type": "keyword"
+            },
+            "dlpextra": {
+              "type": "keyword"
+            },
+            "epoch": {
+              "type": "long"
+            },
+            "eventid": {
+              "type": "long"
+            },
+            "filename": {
+              "type": "keyword"
+            },
+            "filesize": {
+              "type": "long"
+            },
+            "filetype": {
+              "type": "keyword"
+            },
+            "filtercat": {
+              "type": "keyword"
+            },
+            "filteridx": {
+              "type": "long"
+            },
+            "filtername": {
+              "type": "keyword"
+            },
+            "infectedfilelevel": {
+              "type": "long"
+            },
+            "infectedfilename": {
+              "type": "keyword"
+            },
+            "infectedfilesize": {
+              "type": "long"
+            },
+            "infectedfiletype": {
+              "type": "keyword"
+            },
+            "subservice": {
+              "type": "keyword"
+            },
+            "docsource": {
+              "type": "keyword"
+            },
+            "sensitivity": {
+              "type": "keyword"
+            },
+            "app": {
+              "type": "keyword"
+            },
+            "appcat": {
+              "type": "keyword"
+            },
+            "applist": {
+              "type": "keyword"
+            },
+            "profiletype": {
+              "type": "keyword"
+            },
+            "appid": {
+              "type": "long"
+            },
+            "apprisk": {
+              "type": "keyword"
+            },
+            "ccertissuer": {
+              "type": "keyword"
+            },
+            "cloudaction": {
+              "type": "keyword"
+            },
+            "clouddevice": {
+              "type": "keyword"
+            },
+            "clouduser": {
+              "type": "keyword"
+            },
+            "parameters": {
+              "type": "keyword"
+            },
+            "scertcname": {
+              "type": "keyword"
+            },
+            "scertissuer": {
+              "type": "keyword"
+            },
+            "constraint": {
+              "type": "keyword"
+            },
+            "name": {
+              "type": "keyword"
+            },
+            "session_id": {
+              "type": "long"
+            },
+            "event_id": {
+              "type": "long"
+            },
+            "src_port": {
+              "type": "long"
+            },
+            "dst_port": {
+              "type": "long"
+            },
+            "src_int": {
+              "type": "keyword"
+            },
+            "dst_int": {
+              "type": "keyword"
+            },
+            "policy_id": {
+              "type": "long"
+            },
+            "voip_proto": {
+              "type": "keyword"
+            },
+            "kind": {
+              "type": "keyword"
+            },
+            "status": {
+              "type": "keyword"
+            },
+            "duration": {
+              "type": "long"
+            },
+            "dir": {
+              "type": "keyword"
+            },
+            "call_id": {
+              "type": "keyword"
+            },
+            "logsrc": {
+              "type": "keyword"
+            },
+            "reason": {
+              "type": "keyword"
+            },
+            "message_type": {
+              "type": "keyword"
+            },
+            "request_name": {
+              "type": "keyword"
+            },
+            "malform_desc": {
+              "type": "keyword"
+            },
+            "malform_data": {
+              "type": "long"
+            },
+            "line": {
+              "type": "keyword"
+            },
+            "column": {
+              "type": "long"
+            },
+            "locip": {
+              "type": "ip"
+            },
+            "phone": {
+              "type": "keyword"
+            },
+            "locport": {
+              "type": "long"
+            },
+            "remip": {
+              "type": "ip"
+            },
+            "remport": {
+              "type": "long"
+            },
+            "qclass": {
+              "type": "keyword"
+            },
+            "qname": {
+              "type": "keyword"
+            },
+            "qtype": {
+              "type": "keyword"
+            },
+            "qtypeval": {
+              "type": "long"
+            },
+            "srcmac": {
+              "type": "keyword"
+            },
+            "xid": {
+              "type": "long"
+            },
+            "botnetdomain": {
+              "type": "keyword"
+            },
+            "botnetip": {
+              "type": "ip"
+            },
+            "domainfilteridx": {
+              "type": "long"
+            },
+            "domainfilterlist": {
+              "type": "keyword"
+            },
+            "exchange": {
+              "type": "keyword"
+            },
+            "ipaddr": {
+              "type": "keyword"
+            },
+            "rcode": {
+              "type": "long"
+            },
+            "sscname": {
+              "type": "keyword"
+            },
+            "translationid": {
+              "type": "long"
+            },
+            "ftlkintf": {
+              "type": "keyword"
+            },
+            "rcvdpkt": {
+              "type": "long"
+            },
+            "switchid": {
+              "type": "keyword"
+            },
+            "infection": {
+              "type": "keyword"
+            },
+            "violations": {
+              "type": "keyword"
+            },
+            "virusid": {
+              "type": "keyword"
+            },
+            "channeltype": {
+              "type": "keyword"
+            },
+            "command": {
+              "type": "keyword"
+            },
+            "hostkeystatus": {
+              "type": "keyword"
+            },
+            "login": {
+              "type": "keyword"
+            },
+            "authalgo": {
+              "type": "keyword"
+            },
+            "cipher": {
+              "type": "keyword"
+            },
+            "eventsubtype": {
+              "type": "keyword"
+            },
+            "kxcurve": {
+              "type": "keyword"
+            },
+            "kxproto": {
+              "type": "keyword"
+            },
+            "sni": {
+              "type": "keyword"
+            },
+            "tlsver": {
+              "type": "keyword"
+            },
+            "certhash": {
+              "type": "keyword"
+            },
+            "cn": {
+              "type": "keyword"
+            },
+            "issuer": {
+              "type": "keyword"
+            },
+            "keyalgo": {
+              "type": "keyword"
+            },
+            "keysize": {
+              "type": "long"
+            },
+            "notafter": {
+              "type": "keyword"
+            },
+            "notbefore": {
+              "type": "keyword"
+            },
+            "san": {
+              "type": "keyword"
+            },
+            "ski": {
+              "type": "keyword"
+            },
+            "sn": {
+              "type": "keyword"
+            },
+            "handshake": {
+              "type": "keyword"
+            },
+            "mitm": {
+              "type": "keyword"
+            },
+            "certdesc": {
+              "type": "keyword"
+            },
+            "matchfilename": {
+              "type": "keyword"
+            },
+            "matchfiletype": {
+              "type": "keyword"
+            },
+            "pathname": {
+              "type": "keyword"
+            },
+            "sharename": {
+              "type": "keyword"
+            },
+            "analyticscksum": {
+              "type": "keyword"
+            },
+            "analyticssubmit": {
+              "type": "keyword"
+            },
+            "cdrcontent": {
+              "type": "keyword"
+            },
+            "checksum": {
+              "type": "keyword"
+            },
+            "contentdisarmed": {
+              "type": "keyword"
+            },
+            "dtype": {
+              "type": "keyword"
+            },
+            "filehash": {
+              "type": "keyword"
+            },
+            "filehashsrc": {
+              "type": "keyword"
+            },
+            "icbaction": {
+              "type": "keyword"
+            },
+            "icbconfidence": {
+              "type": "keyword"
+            },
+            "icbfileid": {
+              "type": "keyword"
+            },
+            "icbfiletype": {
+              "type": "keyword"
+            },
+            "icbseverity": {
+              "type": "keyword"
+            },
+            "icbverdict": {
+              "type": "keyword"
+            },
+            "quarskip": {
+              "type": "keyword"
+            },
+            "virus": {
+              "type": "keyword"
+            },
+            "viruscat": {
+              "type": "keyword"
+            },
+            "filefilter": {
+              "type": "keyword"
+            },
+            "switchproto": {
+              "type": "keyword"
+            },
+            "fsaverdict": {
+              "type": "keyword"
+            },
+            "activitycategory": {
+              "type": "keyword"
+            },
+            "saasapp": {
+              "type": "keyword"
+            },
+            "useractivity": {
+              "type": "keyword"
+            },
+            "videodesc": {
+              "type": "keyword"
+            },
+            "videotitle": {
+              "type": "keyword"
+            },
+            "ruleid": {
+              "type": "long"
+            },
+            "rulename": {
+              "type": "keyword"
+            },
+            "operation": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  },
+  "_meta": {
+    "description": "Fortigate utm logs mapping for version 7.4",
+    "version": "7.4"
+  }
+}

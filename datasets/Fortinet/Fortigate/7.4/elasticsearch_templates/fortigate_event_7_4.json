@@ -1,0 +1,1118 @@
+{
+  "template": {
+    "mappings": {
+      "properties": {
+        "fgt": {
+          "type": "object",
+          "properties": {
+            "date": {
+              "type": "keyword"
+            },
+            "time": {
+              "type": "keyword"
+            },
+            "logid": {
+              "type": "keyword"
+            },
+            "type": {
+              "type": "keyword"
+            },
+            "subtype": {
+              "type": "keyword"
+            },
+            "level": {
+              "type": "keyword"
+            },
+            "devid": {
+              "type": "keyword"
+            },
+            "vd": {
+              "type": "keyword"
+            },
+            "eventtime": {
+              "type": "long"
+            },
+            "tz": {
+              "type": "keyword"
+            },
+            "logdesc": {
+              "type": "keyword"
+            },
+            "user": {
+              "type": "keyword"
+            },
+            "ui": {
+              "type": "keyword"
+            },
+            "action": {
+              "type": "keyword"
+            },
+            "status": {
+              "type": "keyword"
+            },
+            "msg": {
+              "type": "keyword"
+            },
+            "count": {
+              "type": "long"
+            },
+            "service": {
+              "type": "keyword"
+            },
+            "proto": {
+              "type": "long"
+            },
+            "vrf": {
+              "type": "long"
+            },
+            "srcip": {
+              "type": "ip"
+            },
+            "srcport": {
+              "type": "long"
+            },
+            "nat": {
+              "type": "ip"
+            },
+            "dstip": {
+              "type": "ip"
+            },
+            "dstport": {
+              "type": "long"
+            },
+            "file": {
+              "type": "keyword"
+            },
+            "filesize": {
+              "type": "long"
+            },
+            "datarange": {
+              "type": "keyword"
+            },
+            "reporttype": {
+              "type": "keyword"
+            },
+            "processtime": {
+              "type": "long"
+            },
+            "trace_id": {
+              "type": "keyword"
+            },
+            "intf": {
+              "type": "keyword"
+            },
+            "error": {
+              "type": "keyword"
+            },
+            "server": {
+              "type": "keyword"
+            },
+            "port": {
+              "type": "long"
+            },
+            "mac": {
+              "type": "keyword"
+            },
+            "ip": {
+              "type": "ip"
+            },
+            "vendor": {
+              "type": "keyword"
+            },
+            "product": {
+              "type": "keyword"
+            },
+            "model": {
+              "type": "keyword"
+            },
+            "versionmin": {
+              "type": "keyword"
+            },
+            "versionmax": {
+              "type": "keyword"
+            },
+            "vulnresult": {
+              "type": "keyword"
+            },
+            "vulncnt": {
+              "type": "long"
+            },
+            "daemon": {
+              "type": "keyword"
+            },
+            "pid": {
+              "type": "long"
+            },
+            "session_id": {
+              "type": "long"
+            },
+            "limit": {
+              "type": "long"
+            },
+            "severity": {
+              "type": "keyword"
+            },
+            "name": {
+              "type": "keyword"
+            },
+            "process": {
+              "type": "keyword"
+            },
+            "reason": {
+              "type": "keyword"
+            },
+            "conserve": {
+              "type": "keyword"
+            },
+            "total": {
+              "type": "long"
+            },
+            "used": {
+              "type": "long"
+            },
+            "red": {
+              "type": "keyword"
+            },
+            "green": {
+              "type": "keyword"
+            },
+            "saddr": {
+              "type": "keyword"
+            },
+            "poolname": {
+              "type": "keyword"
+            },
+            "portbegin": {
+              "type": "long"
+            },
+            "portend": {
+              "type": "long"
+            },
+            "authserver": {
+              "type": "keyword"
+            },
+            "duration": {
+              "type": "long"
+            },
+            "sn": {
+              "type": "keyword"
+            },
+            "path": {
+              "type": "keyword"
+            },
+            "oldsn": {
+              "type": "keyword"
+            },
+            "direction": {
+              "type": "keyword"
+            },
+            "scope": {
+              "type": "keyword"
+            },
+            "desc": {
+              "type": "keyword"
+            },
+            "interface": {
+              "type": "keyword"
+            },
+            "version": {
+              "type": "keyword"
+            },
+            "upgradedevice": {
+              "type": "keyword"
+            },
+            "localdevcount": {
+              "type": "long"
+            },
+            "failuredev": {
+              "type": "keyword"
+            },
+            "fams_pause": {
+              "type": "long"
+            },
+            "unit": {
+              "type": "long"
+            },
+            "cert": {
+              "type": "keyword"
+            },
+            "informationsource": {
+              "type": "keyword"
+            },
+            "new_status": {
+              "type": "keyword"
+            },
+            "profile": {
+              "type": "keyword"
+            },
+            "hostname": {
+              "type": "keyword"
+            },
+            "host": {
+              "type": "keyword"
+            },
+            "old_status": {
+              "type": "keyword"
+            },
+            "mode": {
+              "type": "keyword"
+            },
+            "src_int": {
+              "type": "keyword"
+            },
+            "dst_int": {
+              "type": "keyword"
+            },
+            "dir": {
+              "type": "keyword"
+            },
+            "probeproto": {
+              "type": "keyword"
+            },
+            "eventtype": {
+              "type": "keyword"
+            },
+            "healthcheck": {
+              "type": "keyword"
+            },
+            "slatargetid": {
+              "type": "long"
+            },
+            "oldvalue": {
+              "type": "keyword"
+            },
+            "newvalue": {
+              "type": "keyword"
+            },
+            "member": {
+              "type": "keyword"
+            },
+            "serviceid": {
+              "type": "long"
+            },
+            "numpassmember": {
+              "type": "long"
+            },
+            "latency": {
+              "type": "keyword"
+            },
+            "jitter": {
+              "type": "keyword"
+            },
+            "packetloss": {
+              "type": "keyword"
+            },
+            "moscodec": {
+              "type": "keyword"
+            },
+            "mosvalue": {
+              "type": "keyword"
+            },
+            "inbandwidthavailable": {
+              "type": "keyword"
+            },
+            "outbandwidthavailable": {
+              "type": "keyword"
+            },
+            "bibandwidthavailable": {
+              "type": "keyword"
+            },
+            "inbandwidthused": {
+              "type": "keyword"
+            },
+            "outbandwidthused": {
+              "type": "keyword"
+            },
+            "bibandwidthused": {
+              "type": "keyword"
+            },
+            "slamap": {
+              "type": "keyword"
+            },
+            "neighbor": {
+              "type": "keyword"
+            },
+            "app": {
+              "type": "keyword"
+            },
+            "appid": {
+              "type": "long"
+            },
+            "serverresponsetime": {
+              "type": "keyword"
+            },
+            "networktransfertime": {
+              "type": "keyword"
+            },
+            "apperror": {
+              "type": "keyword"
+            },
+            "timestamp": {
+              "type": "keyword"
+            },
+            "speedtestserver": {
+              "type": "keyword"
+            },
+            "upbandwidthmeasured": {
+              "type": "keyword"
+            },
+            "downbandwidthmeasured": {
+              "type": "keyword"
+            },
+            "tunnelid": {
+              "type": "long"
+            },
+            "tunneltype": {
+              "type": "keyword"
+            },
+            "remip": {
+              "type": "ip"
+            },
+            "tunnelip": {
+              "type": "ip"
+            },
+            "group": {
+              "type": "keyword"
+            },
+            "dhcp_msg": {
+              "type": "keyword"
+            },
+            "lease": {
+              "type": "long"
+            },
+            "ddnsserver": {
+              "type": "ip"
+            },
+            "fqdn": {
+              "type": "keyword"
+            },
+            "duid": {
+              "type": "keyword"
+            },
+            "iaid": {
+              "type": "long"
+            },
+            "local": {
+              "type": "ip"
+            },
+            "remote": {
+              "type": "ip"
+            },
+            "assigned": {
+              "type": "ip"
+            },
+            "gateway": {
+              "type": "ip"
+            },
+            "mtu": {
+              "type": "long"
+            },
+            "community": {
+              "type": "keyword"
+            },
+            "method": {
+              "type": "keyword"
+            },
+            "state": {
+              "type": "keyword"
+            },
+            "log": {
+              "type": "keyword"
+            },
+            "module": {
+              "type": "keyword"
+            },
+            "submodule": {
+              "type": "keyword"
+            },
+            "field": {
+              "type": "keyword"
+            },
+            "passwd": {
+              "type": "keyword"
+            },
+            "crl": {
+              "type": "keyword"
+            },
+            "seq": {
+              "type": "keyword"
+            },
+            "dintf": {
+              "type": "keyword"
+            },
+            "daddr": {
+              "type": "keyword"
+            },
+            "act": {
+              "type": "keyword"
+            },
+            "iptype": {
+              "type": "keyword"
+            },
+            "serialno": {
+              "type": "keyword"
+            },
+            "alarmid": {
+              "type": "long"
+            },
+            "groupid": {
+              "type": "long"
+            },
+            "acktime": {
+              "type": "keyword"
+            },
+            "old_value": {
+              "type": "keyword"
+            },
+            "new_value": {
+              "type": "keyword"
+            },
+            "hash": {
+              "type": "keyword"
+            },
+            "addr": {
+              "type": "keyword"
+            },
+            "cfgtid": {
+              "type": "long"
+            },
+            "cfgpath": {
+              "type": "keyword"
+            },
+            "cfgobj": {
+              "type": "keyword"
+            },
+            "cfgattr": {
+              "type": "keyword"
+            },
+            "locip": {
+              "type": "ip"
+            },
+            "remport": {
+              "type": "long"
+            },
+            "locport": {
+              "type": "long"
+            },
+            "outintf": {
+              "type": "keyword"
+            },
+            "srccountry": {
+              "type": "keyword"
+            },
+            "cookies": {
+              "type": "keyword"
+            },
+            "useralt": {
+              "type": "keyword"
+            },
+            "xauthuser": {
+              "type": "keyword"
+            },
+            "xauthgroup": {
+              "type": "keyword"
+            },
+            "assignip": {
+              "type": "ip"
+            },
+            "vpntunnel": {
+              "type": "keyword"
+            },
+            "result": {
+              "type": "keyword"
+            },
+            "peer_notif": {
+              "type": "keyword"
+            },
+            "fctuid": {
+              "type": "keyword"
+            },
+            "advpnsc": {
+              "type": "long"
+            },
+            "role": {
+              "type": "keyword"
+            },
+            "esptransform": {
+              "type": "keyword"
+            },
+            "espauth": {
+              "type": "keyword"
+            },
+            "init": {
+              "type": "keyword"
+            },
+            "exch": {
+              "type": "keyword"
+            },
+            "stage": {
+              "type": "long"
+            },
+            "error_num": {
+              "type": "keyword"
+            },
+            "spi": {
+              "type": "keyword"
+            },
+            "in_spi": {
+              "type": "keyword"
+            },
+            "out_spi": {
+              "type": "keyword"
+            },
+            "sentbyte": {
+              "type": "long"
+            },
+            "rcvdbyte": {
+              "type": "long"
+            },
+            "nextstat": {
+              "type": "long"
+            },
+            "phase2_name": {
+              "type": "keyword"
+            },
+            "vcluster": {
+              "type": "long"
+            },
+            "from_vcluster": {
+              "type": "long"
+            },
+            "to_vcluster": {
+              "type": "long"
+            },
+            "vdname": {
+              "type": "keyword"
+            },
+            "ha_role": {
+              "type": "keyword"
+            },
+            "vcluster_state": {
+              "type": "keyword"
+            },
+            "vcluster_member": {
+              "type": "long"
+            },
+            "ha_group": {
+              "type": "long"
+            },
+            "devintfname": {
+              "type": "keyword"
+            },
+            "sync_type": {
+              "type": "keyword"
+            },
+            "sync_status": {
+              "type": "keyword"
+            },
+            "activity": {
+              "type": "keyword"
+            },
+            "ha-prio": {
+              "type": "long"
+            },
+            "authproto": {
+              "type": "keyword"
+            },
+            "carrier_ep": {
+              "type": "keyword"
+            },
+            "rsso_key": {
+              "type": "keyword"
+            },
+            "acct_stat": {
+              "type": "keyword"
+            },
+            "dst_host": {
+              "type": "keyword"
+            },
+            "cpu": {
+              "type": "long"
+            },
+            "mem": {
+              "type": "long"
+            },
+            "totalsession": {
+              "type": "long"
+            },
+            "disk": {
+              "type": "long"
+            },
+            "bandwidth": {
+              "type": "keyword"
+            },
+            "setuprate": {
+              "type": "long"
+            },
+            "disklograte": {
+              "type": "long"
+            },
+            "fazlograte": {
+              "type": "long"
+            },
+            "freediskstorage": {
+              "type": "long"
+            },
+            "sysuptime": {
+              "type": "long"
+            },
+            "waninfo": {
+              "type": "keyword"
+            },
+            "core": {
+              "type": "long"
+            },
+            "fwserver_name": {
+              "type": "keyword"
+            },
+            "addr_type": {
+              "type": "keyword"
+            },
+            "servername": {
+              "type": "keyword"
+            },
+            "serveraddr": {
+              "type": "keyword"
+            },
+            "cert-type": {
+              "type": "keyword"
+            },
+            "policyid": {
+              "type": "long"
+            },
+            "authid": {
+              "type": "keyword"
+            },
+            "adgroup": {
+              "type": "keyword"
+            },
+            "initiator": {
+              "type": "keyword"
+            },
+            "expiry": {
+              "type": "keyword"
+            },
+            "oldwprof": {
+              "type": "keyword"
+            },
+            "category": {
+              "type": "long"
+            },
+            "url": {
+              "type": "keyword"
+            },
+            "agent": {
+              "type": "keyword"
+            },
+            "stamac": {
+              "type": "keyword"
+            },
+            "ssid": {
+              "type": "keyword"
+            },
+            "bssid": {
+              "type": "keyword"
+            },
+            "aptype": {
+              "type": "long"
+            },
+            "rate": {
+              "type": "long"
+            },
+            "radioband": {
+              "type": "keyword"
+            },
+            "channel": {
+              "type": "long"
+            },
+            "manuf": {
+              "type": "keyword"
+            },
+            "security": {
+              "type": "keyword"
+            },
+            "encryption": {
+              "type": "keyword"
+            },
+            "signal": {
+              "type": "long"
+            },
+            "noise": {
+              "type": "long"
+            },
+            "live": {
+              "type": "long"
+            },
+            "age": {
+              "type": "long"
+            },
+            "onwire": {
+              "type": "keyword"
+            },
+            "detectionmethod": {
+              "type": "keyword"
+            },
+            "apscan": {
+              "type": "keyword"
+            },
+            "sndetected": {
+              "type": "keyword"
+            },
+            "radioiddetected": {
+              "type": "long"
+            },
+            "stacount": {
+              "type": "long"
+            },
+            "snclosest": {
+              "type": "keyword"
+            },
+            "radioidclosest": {
+              "type": "long"
+            },
+            "apstatus": {
+              "type": "long"
+            },
+            "ap": {
+              "type": "keyword"
+            },
+            "meshmode": {
+              "type": "keyword"
+            },
+            "snmeshparent": {
+              "type": "keyword"
+            },
+            "vap": {
+              "type": "keyword"
+            },
+            "radioid": {
+              "type": "long"
+            },
+            "snr": {
+              "type": "long"
+            },
+            "mpsk": {
+              "type": "keyword"
+            },
+            "configcountry": {
+              "type": "keyword"
+            },
+            "opercountry": {
+              "type": "keyword"
+            },
+            "cfgtxpower": {
+              "type": "long"
+            },
+            "opertxpower": {
+              "type": "long"
+            },
+            "slctdrmamode": {
+              "type": "keyword"
+            },
+            "operdrmamode": {
+              "type": "keyword"
+            },
+            "threattype": {
+              "type": "keyword"
+            },
+            "rssi": {
+              "type": "long"
+            },
+            "frametype": {
+              "type": "keyword"
+            },
+            "ds": {
+              "type": "keyword"
+            },
+            "encrypt": {
+              "type": "long"
+            },
+            "tamac": {
+              "type": "keyword"
+            },
+            "invalidmac": {
+              "type": "keyword"
+            },
+            "weakwepiv": {
+              "type": "keyword"
+            },
+            "eapoltype": {
+              "type": "keyword"
+            },
+            "eapolcnt": {
+              "type": "long"
+            },
+            "mgmtcnt": {
+              "type": "long"
+            },
+            "remotewtptime": {
+              "type": "keyword"
+            },
+            "source_mac": {
+              "type": "keyword"
+            },
+            "client_addr": {
+              "type": "keyword"
+            },
+            "xid": {
+              "type": "long"
+            },
+            "vapmode": {
+              "type": "keyword"
+            },
+            "addrgrp": {
+              "type": "keyword"
+            },
+            "banned_src": {
+              "type": "keyword"
+            },
+            "banned_rule": {
+              "type": "keyword"
+            },
+            "admin": {
+              "type": "keyword"
+            },
+            "slot": {
+              "type": "long"
+            },
+            "chassisid": {
+              "type": "long"
+            },
+            "oldslot": {
+              "type": "long"
+            },
+            "oldchassisid": {
+              "type": "long"
+            },
+            "newslot": {
+              "type": "long"
+            },
+            "newchassisid": {
+              "type": "long"
+            },
+            "newchannel": {
+              "type": "long"
+            },
+            "oldchannel": {
+              "type": "long"
+            },
+            "license_limit": {
+              "type": "keyword"
+            },
+            "used_for_type": {
+              "type": "long"
+            },
+            "connection_type": {
+              "type": "keyword"
+            },
+            "scantime": {
+              "type": "long"
+            },
+            "srcname": {
+              "type": "keyword"
+            },
+            "srcmac": {
+              "type": "keyword"
+            },
+            "devtype": {
+              "type": "keyword"
+            },
+            "vulnid": {
+              "type": "long"
+            },
+            "vulnname": {
+              "type": "keyword"
+            },
+            "vulncat": {
+              "type": "keyword"
+            },
+            "cveid": {
+              "type": "keyword"
+            },
+            "vendorurl": {
+              "type": "keyword"
+            },
+            "fctemssn": {
+              "type": "keyword"
+            },
+            "fctemsname": {
+              "type": "keyword"
+            },
+            "httpcode": {
+              "type": "long"
+            },
+            "wscode": {
+              "type": "long"
+            },
+            "vip": {
+              "type": "keyword"
+            },
+            "monitor-name": {
+              "type": "keyword"
+            },
+            "monitor-type": {
+              "type": "keyword"
+            },
+            "stitch": {
+              "type": "keyword"
+            },
+            "trigger": {
+              "type": "keyword"
+            },
+            "stitchaction": {
+              "type": "keyword"
+            },
+            "from": {
+              "type": "keyword"
+            },
+            "remotetunnelid": {
+              "type": "long"
+            },
+            "wanout": {
+              "type": "long"
+            },
+            "wanin": {
+              "type": "long"
+            },
+            "serial": {
+              "type": "long"
+            },
+            "authgrp": {
+              "type": "keyword"
+            },
+            "peer": {
+              "type": "keyword"
+            },
+            "app-type": {
+              "type": "keyword"
+            },
+            "auditid": {
+              "type": "long"
+            },
+            "audittime": {
+              "type": "long"
+            },
+            "auditscore": {
+              "type": "keyword"
+            },
+            "auditreporttype": {
+              "type": "keyword"
+            },
+            "criticalcount": {
+              "type": "long"
+            },
+            "highcount": {
+              "type": "long"
+            },
+            "mediumcount": {
+              "type": "long"
+            },
+            "lowcount": {
+              "type": "long"
+            },
+            "passedcount": {
+              "type": "long"
+            },
+            "protocol": {
+              "type": "keyword"
+            },
+            "cldobjid": {
+              "type": "keyword"
+            },
+            "netid": {
+              "type": "keyword"
+            },
+            "filename": {
+              "type": "keyword"
+            },
+            "extension": {
+              "type": "keyword"
+            },
+            "ticket": {
+              "type": "keyword"
+            },
+            "srcintfrole": {
+              "type": "keyword"
+            },
+            "dstintfrole": {
+              "type": "keyword"
+            },
+            "domainctrlip": {
+              "type": "ip"
+            },
+            "domainctrlname": {
+              "type": "keyword"
+            },
+            "domainctrldomain": {
+              "type": "keyword"
+            },
+            "domainctrlusername": {
+              "type": "keyword"
+            },
+            "domainctrlauthstate": {
+              "type": "long"
+            },
+            "domainctrlauthtype": {
+              "type": "long"
+            },
+            "domainctrlprotocoltype": {
+              "type": "long"
+            },
+            "snprev": {
+              "type": "keyword"
+            },
+            "switchmirrorsession": {
+              "type": "keyword"
+            },
+            "switchautoip": {
+              "type": "ip"
+            },
+            "switchinterface": {
+              "type": "keyword"
+            },
+            "vlan": {
+              "type": "long"
+            },
+            "switchtrunkinterface": {
+              "type": "keyword"
+            },
+            "switchphysicalport": {
+              "type": "keyword"
+            },
+            "switchsysteminterface": {
+              "type": "keyword"
+            },
+            "switchtrunk": {
+              "type": "keyword"
+            },
+            "switchl2count": {
+              "type": "long"
+            },
+            "switchl2capacity": {
+              "type": "long"
+            },
+            "switchaclid": {
+              "type": "long"
+            },
+            "requesttype": {
+              "type": "keyword"
+            },
+            "connector": {
+              "type": "keyword"
+            },
+            "modem": {
+              "type": "keyword"
+            },
+            "simslot": {
+              "type": "keyword"
+            }
+          }
+        }
+      }
+    }
+  },
+  "_meta": {
+    "description": "Fortigate event logs mapping for version 7.4",
+    "version": "7.4"
+  }
+}
