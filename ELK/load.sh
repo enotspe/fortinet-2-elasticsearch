@@ -5,6 +5,14 @@
 # All variables can be overridden by environment variables with the same name
 # ============================================================================
 
+#export ES_URL="https://prod-es.example.com:9200"
+#export ES_USERNAME="admin"
+#export ES_PASSWORD="secret123"
+#export LOAD_COMPONENT="false"
+
+#./load.sh  # Primera ejecución
+#./load.sh  # Segunda ejecución con los mismos valores
+
 # Elasticsearch connection settings
 ES_URL="${ES_URL:-https://localhost:9200}"
 
