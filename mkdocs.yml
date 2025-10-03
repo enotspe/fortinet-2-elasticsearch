@@ -36,8 +36,8 @@ theme:
     - search.suggest
     - content.code.copy
     - content.code.annotate
-    - content.action.edit  # Add edit button
-    - content.action.view  # Add view source button
+    #- content.action.edit  # Add edit button
+    #- content.action.view  # Add view source button
     - toc.follow
     - toc.integrate  # Integrates TOC into left sidebar
 
