@@ -42,6 +42,8 @@ jobs:
         run: |
           pip install mkdocs-material
           pip install pymdown-extensions
+          pip install mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-minify-plugin
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

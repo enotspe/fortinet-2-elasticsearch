@@ -71,7 +71,7 @@ Choose and configure a syslog collector to receive logs from Fortigate and send 
 
 Once installation is complete:
 
-1. Import the provided [Kibana dashboards](../dashboards.md)
+1. Import the provided [Kibana dashboards](../dashboards/index.md)
 2. Configure dashboard controls in Kibana settings
 3. Start monitoring your Fortinet logs! 🕺💃
 

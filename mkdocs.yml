@@ -44,11 +44,12 @@ theme:
 plugins:
   - search:
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: timeago
-  - minify:
-      minify_html: true
+  # TODO: Install these plugins in GitHub Actions
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: timeago
+  # - minify:
+  #     minify_html: true
   # Consider adding:
   # - tags  # If you want to add tags to pages
   # - awesome-pages  # For easier nav organization
@@ -92,14 +93,13 @@ nav:
     - installation/index.md
     - Fortigate Setup: installation/fortigate.md
     - Elastic Stack: installation/elastic.md
+    - Syslog Collectors: installation/collectors.md
     - Vector: installation/vector.md
     - Victoria Logs: installation/victoria.md
   - Dashboards:
     - dashboards/index.md
   - Datasets: datasets.md
-  - Troubleshooting: troubleshooting.md
   - Contributing: contributing.md
-
 
 extra:
   social:
