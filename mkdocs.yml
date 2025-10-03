@@ -1,10 +1,11 @@
 site_name: FortiDragon Documentation
-site_description: Fortinet logs to Elasticsearch integration
+site_description: Fortinet logs to Elasticsearch
 site_author: FortiDragon Team
 site_url: https://enotspe.github.io/fortinet-2-elasticsearch/
 
 repo_name: enotspe/fortinet-2-elasticsearch
 repo_url: https://github.com/enotspe/fortinet-2-elasticsearch
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -24,25 +25,39 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
+    # REMOVED: navigation.tabs and navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
     - navigation.top
+    - navigation.indexes  # Allows section index pages
     - search.highlight
     - search.share
+    - search.suggest
     - content.code.copy
     - content.code.annotate
+    - content.action.edit  # Add edit button
+    - content.action.view  # Add view source button
+    - toc.follow
+    - toc.integrate  # Integrates TOC into left sidebar
 
 plugins:
-  - search
-#  - git-revision-date-localized:
-#      enable_creation_date: true
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - minify:
+      minify_html: true
+  # Consider adding:
+  # - tags  # If you want to add tags to pages
+  # - awesome-pages  # For easier nav organization
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences:
@@ -59,17 +74,38 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+      permalink_title: Link to this section
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys  # For keyboard shortcuts
+  - pymdownx.mark  # For highlighting text
+  - pymdownx.critic  # For showing changes
+  - footnotes
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
 
 nav:
   - Home: index.md
   - Installation:
-    - Overview: installation/index.md
+    - installation/index.md
     - Fortigate Setup: installation/fortigate.md
     - Elastic Stack: installation/elastic.md
-    - Syslog Collectors: installation/collectors.md
-  - Configuration:
     - Vector: configuration/vector.md
     - Victoria Logs: configuration/victoria.md
-  - Dashboards: dashboards.md
+  - Dashboards:
+    - dashboards/index.md
+    - Available Dashboards: dashboards/available.md
+    - Custom Dashboards: dashboards/custom.md
   - Datasets: datasets.md
+  - Troubleshooting: troubleshooting.md
   - Contributing: contributing.md
+  - FAQ: faq.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/enotspe/fortinet-2-elasticsearch
+  version:
+    provider: mike  # Optional: for versioning
