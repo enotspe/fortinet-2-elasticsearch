@@ -92,16 +92,14 @@ nav:
     - installation/index.md
     - Fortigate Setup: installation/fortigate.md
     - Elastic Stack: installation/elastic.md
-    - Vector: configuration/vector.md
-    - Victoria Logs: configuration/victoria.md
+    - Vector: installation/vector.md
+    - Victoria Logs: installation/victoria.md
   - Dashboards:
     - dashboards/index.md
-    - Available Dashboards: dashboards/available.md
-    - Custom Dashboards: dashboards/custom.md
   - Datasets: datasets.md
   - Troubleshooting: troubleshooting.md
   - Contributing: contributing.md
-  - FAQ: faq.md
+
 
 extra:
   social:
