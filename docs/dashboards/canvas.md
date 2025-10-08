@@ -1,6 +1,6 @@
-# The Blank Canvas
+# Designer's Dilemma
 
-Facing Designer's Dilemma
+The Blank Canvas
 ---
 
 
@@ -19,40 +19,25 @@ The final measure of success isn't visual dazzle—it's usability. Does your das
 
 ltimately, the data speaks for itself. It guides you, shows you the way. The insights begin to emerge organically, revealing themselves like constellations in the night sky. You are merely a messenger, a storyteller—a conduit through which the data takes form and consciousness. It expresses itself through you, becoming an entity that transcends its own graphical representation, something greater than the sum of its numbers and charts. Your role is simply to let it breathe, to give it voice, to allow its truth to manifest.
 
-
-
-<div class="glightbox-gallery" markdown>
-
-  ![draft1](../assets/making_of/draft1.jpeg)
-  ![draft2](../assets/making_of/draft2.jpeg)
-  ![draft3](../assets/making_of/draft3.jpeg)
-  ![draft4](../assets/making_of/draft4.jpeg)
-  ![draft5](../assets/making_of/draft5.jpeg)
-  ![draft6](../assets/making_of/draft6.jpeg)
-  ![draft7](../assets/making_of/draft7.jpeg)
-  ![draft8](../assets/making_of/draft8.jpeg)
-  
-</div>
-
 The rest is just details.
 
 
 <div class="carousel-wrapper">
   <div class="main-image-container">
-    <img id="mainImage" src="../assets/making_of/draft1.jpeg" alt="Main draft">
+    <img id="mainImage" src="../../assets/making_of/draft1.jpeg" alt="Main draft">
     <button class="nav-btn prev" onclick="navigate(-1)">❮</button>
     <button class="nav-btn next" onclick="navigate(1)">❯</button>
   </div>
   
   <div class="thumbnails">
-    <img src="../assets/making_of/draft1.jpeg" class="thumb active" onclick="showImage(0)">
-    <img src="../assets/making_of/draft2.jpeg" class="thumb" onclick="showImage(1)">
-    <img src="../assets/making_of/draft3.jpeg" class="thumb" onclick="showImage(2)">
-    <img src="../assets/making_of/draft4.jpeg" class="thumb" onclick="showImage(3)">
-    <img src="../assets/making_of/draft5.jpeg" class="thumb" onclick="showImage(4)">
-    <img src="../assets/making_of/draft6.jpeg" class="thumb" onclick="showImage(5)">
-    <img src="../assets/making_of/draft7.jpeg" class="thumb" onclick="showImage(6)">
-    <img src="../assets/making_of/draft8.jpeg" class="thumb" onclick="showImage(7)">
+    <img src="../../assets/making_of/draft1.jpeg" class="thumb active" onclick="showImage(0)">
+    <img src="../../assets/making_of/draft2.jpeg" class="thumb" onclick="showImage(1)">
+    <img src="../../assets/making_of/draft3.jpeg" class="thumb" onclick="showImage(2)">
+    <img src="../../assets/making_of/draft4.jpeg" class="thumb" onclick="showImage(3)">
+    <img src="../../assets/making_of/draft5.jpeg" class="thumb" onclick="showImage(4)">
+    <img src="../../assets/making_of/draft6.jpeg" class="thumb" onclick="showImage(5)">
+    <img src="../../assets/making_of/draft7.jpeg" class="thumb" onclick="showImage(6)">
+    <img src="../../assets/making_of/draft8.jpeg" class="thumb" onclick="showImage(7)">
   </div>
 </div>
 
@@ -126,14 +111,14 @@ The rest is just details.
 
 <script>
 const images = [
-  '../assets/making_of/draft1.jpeg',
-  '../assets/making_of/draft2.jpeg',
-  '../assets/making_of/draft3.jpeg',
-  '../assets/making_of/draft4.jpeg',
-  '../assets/making_of/draft5.jpeg',
-  '../assets/making_of/draft6.jpeg',
-  '../assets/making_of/draft7.jpeg',
-  '../assets/making_of/draft8.jpeg'
+  '../../assets/making_of/draft1.jpeg',
+  '../../assets/making_of/draft2.jpeg',
+  '../../assets/making_of/draft3.jpeg',
+  '../../assets/making_of/draft4.jpeg',
+  '../../assets/making_of/draft5.jpeg',
+  '../../assets/making_of/draft6.jpeg',
+  '../../assets/making_of/draft7.jpeg',
+  '../../assets/making_of/draft8.jpeg'
 ];
 
 let currentIndex = 0;
