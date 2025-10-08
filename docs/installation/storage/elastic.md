@@ -140,5 +140,5 @@ curl -X GET "localhost:9200/_ilm/policy/logs-fortinet*"
 Once Elasticsearch is configured:
 
 
-2. [Configure Vector or Elastic Agent](vector.md)
+2. [Configure Vector or Elastic Agent](../ingest/vector.md)
 3. Start sending logs from Fortigate!

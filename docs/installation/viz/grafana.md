@@ -1,3 +1,3 @@
 # Grafana
 
-Import Grafana dashboards from [here](../grafana)
+Import Grafana dashboards from here

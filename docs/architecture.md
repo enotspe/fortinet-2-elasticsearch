@@ -1,6 +1,6 @@
 # Architecture
 
-![Archiecture](../assets/architecture.png)
+![Archiecture](assets/architecture.png)
 
 We have a modular architecture, each layer is independent from each other. So, what technology should you choose at each layer????
 

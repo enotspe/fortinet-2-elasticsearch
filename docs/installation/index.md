@@ -4,8 +4,8 @@ Let's get this party on!!! 🤩
 
 FortiDragon installation involves setting up three main components:
 
-1. **[Fortigate Configuration](fortigate.md)** - Configure your Fortigate firewall to send syslog data
-2. **[Elastic Stack Setup](elastic.md)** - Install and configure Elasticsearch components  
+1. **[Fortigate Configuration](datasource/fortigate.md)** - Configure your Fortigate firewall to send syslog data
+2. **[Elastic Stack Setup](storage/elastic.md)** - Install and configure Elasticsearch components  
 
 
 ## Architecture Overview
@@ -37,7 +37,7 @@ graph TB
 ### Step 1: Fortigate Configuration
 Configure your Fortigate firewall to send syslog data using RFC5424 format to your collector.
 
-[→ Configure Fortigate](fortigate.md)
+[→ Configure Fortigate](datasource/fortigate.md)
 
 ### Step 2: Elastic Stack Setup
 Use our automated script to install all Elasticsearch components including:
@@ -46,7 +46,7 @@ Use our automated script to install all Elasticsearch components including:
 - ILM policies
 - Component templates
 
-[→ Set up Elastic Stack](elastic.md)
+[→ Set up Elastic Stack](storage/elastic.md)
 
 ### Step 3: Syslog Collector
 Choose and configure a syslog collector to receive logs from Fortigate and send them to Elasticsearch:
@@ -61,7 +61,7 @@ Choose and configure a syslog collector to receive logs from Fortigate and send 
 
 Once installation is complete:
 
-1. Import the provided [Kibana dashboards](../dashboards/index.md)
+1. Import the provided [Kibana dashboards](viz/kibana.md)
 2. Configure dashboard controls in Kibana settings
 3. Start monitoring your Fortinet logs! 🕺💃
 

@@ -172,6 +172,6 @@ After configuration, verify that logs are being sent:
 
 Once Vector is configured:
 
-1. [Set up your Elastic Stack](elastic.md)
+1. [Set up your Elastic Stack](../storage/elastic.md)
 
 3. Start receiving and analyzing logs!
