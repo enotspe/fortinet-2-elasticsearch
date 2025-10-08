@@ -6,7 +6,7 @@ FortiDragon installation involves setting up three main components:
 
 1. **[Fortigate Configuration](fortigate.md)** - Configure your Fortigate firewall to send syslog data
 2. **[Elastic Stack Setup](elastic.md)** - Install and configure Elasticsearch components  
-3. **[Syslog Collectors](collectors.md)** - Set up collectors to receive and forward syslog data
+
 
 ## Architecture Overview
 
@@ -55,17 +55,7 @@ Choose and configure a syslog collector to receive logs from Fortigate and send 
 - **Rsyslog** (Traditional Unix syslog)
 - **Syslog-ng** (Advanced syslog daemon)
 
-[→ Configure Collectors](collectors.md)
 
-## Performance Considerations
-
-!!! warning "High Volume Environments"
-    Firewalls are very chatty! For high-volume environments, consider:
-    
-    - Tuning collector buffer sizes
-    - Optimizing Elasticsearch output for throughput
-    - Monitoring for dropped UDP packets
-    - Using dedicated hardware for collectors
 
 ## Next Steps
 

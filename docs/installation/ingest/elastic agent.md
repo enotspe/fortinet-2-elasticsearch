@@ -1,0 +1,83 @@
+# Elastic Agent
+
+
+!!! warning "DEPRECATED"
+    Do not deploy Elastic Agent
+    
+    **Deploy Vector instead**
+
+1. [Install Elastic Agent](https://www.elastic.co/guide/en/fleet/current/elastic-agent-installation.html) either [Fleet-managed](https://www.elastic.co/guide/en/fleet/current/install-fleet-managed-elastic-agent.html) or [standalone](https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html)
+
+2. Create an Agent Policy
+![create_policy](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/create_policy.png)
+
+3. Add Integration
+![add_integration](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/add_integration.png)
+
+4. Select Custom UDP Logs
+![custom_udp_logs](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/custom_udp_logs.png)
+
+5. Configure Custom UDP Logs integration
+![integration_parameters](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/integration_parameters.png)
+
+6. Make sure to add your own private networks under custom configurations. It is recommended to add your own public facing IP address scope as well.
+
+7. Save Integration
+
+8. Deploy you policy.
+- If you deployed Fleet-managed agent, just [apply your new policy to your agent](https://www.elastic.co/guide/en/fleet/current/agent-policy.html#apply-a-policy).
+
+- If you deployed standalone agent, [take your generated policy](https://www.elastic.co/guide/en/fleet/current/create-standalone-agent-policy.html) and modify your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) accordinly.
+
+You should end up with something like:
+
+```
+  - id: udp-udp-af7f0dce-57c0-498f-bc09-96ba51fd76a4
+    name: fortinet.fortigate-1
+    revision: 1
+    type: udp
+    use_output: default
+    meta:
+      package:
+        name: udp
+        version: 1.19.1
+    data_stream:
+      namespace: default
+    package_policy_id: af7f0dce-57c0-498f-bc09-96ba51fd76a4
+    streams:
+      - id: udp-udp.generic-af7f0dce-57c0-498f-bc09-96ba51fd76a4
+        data_stream:
+          dataset: fortinet.fortigate
+        host: '0.0.0.0:5140'
+        pipeline: logs-fortinet.fortigate
+        max_message_size: 50KiB
+        tags:
+          - preserve_original_event
+        processors:
+          - copy_fields:
+              fields:
+                - from: message
+                  to: event.original
+          - syslog:
+              field: message
+        fields_under_root: true
+        fields:
+          internal_networks:
+            - private
+            - loopback
+            - link_local_unicast
+            - link_local_multicast
+```
+
+9. Performance tunning settings
+
+Firewalls are very chatty, so it may overwhelm buffers on your syslog collector, leading to dropping logs. Modify your `Elasticsearch output settings` for `Optimized for throughput`.
+
+- If you deployed Fleet-managed agent, modify your Elaticsearch output `Perfomance Tunnig` setting for [`Throughput`](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings) directly under your [output configuration](https://www.elastic.co/guide/en/fleet/current/fleet-settings.html#output-settings).
+- If you deployed standalone agent, modify your Elaticsearch output preset setting for [`throughput`](https://www.elastic.co/guide/en/fleet/current/elasticsearch-output.html#output-elasticsearch-performance-tuning-settings) on your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) directly.
+
+Depending on your Events per Second (EPS) volume, you may need to increase performance tuning settings even further.
+
+- Run `watch -d "column -t cat /proc/net/snmp | grep -w Udp"` on your Elastic Agent host to check if you are dropping any logs.
+
+**Hopefully you should be dancing with your logs by now.** 🕺💃

@@ -23,7 +23,7 @@ sources:
     #address: 0.0.0.0:${FORTIMAIL_SYSLOG_UDP_PORT:-6140}
     #mode: "udp"
     type: "socket"
-    address: 0.0.0.0:${FORTIMAIL_SYSLOG_UDP_PORT:-6140}
+    address: 0.0.0.0:${FORTIMAIL_SYSLOG_UDP_PORT:-5150}
     mode: "udp"
 
 

@@ -1,4 +1,4 @@
-# Victoria Logs Configuration
+# Victoria Logs
 
 Victoria Logs is a high-performance log management system that can be integrated with FortiDragon.
 
@@ -9,10 +9,12 @@ Victoria Logs is a high-performance log management system that can be integrated
 Set version, architecture and OS:
 
 ```bash
-# Check for releases https://github.com/VictoriaMetrics/VictoriaMetrics/releases
-VICTORIALOGS_VERSION=1.22.2
+# Check for latest release of Victoria Logs
+VICTORIALOGS_VERSION=$(curl --silent "https://api.github.com/repos/VictoriaMetrics/VictoriaLogs/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+# Choose your architecture
 # amd64 arm64 386
 VICTORIALOGS_ARCH=amd64
+# Choose your S.O.
 # darwin freebsd linux openbsd windows
 VICTORIALOGS_SO=linux
 ```
@@ -22,7 +24,7 @@ VICTORIALOGS_SO=linux
 Download binary:
 
 ```bash
-curl -L -O https://github.com/VictoriaMetrics/VictoriaMetrics/releases/download/v$VICTORIALOGS_VERSION-victorialogs/victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION-victorialogs.tar.gz
+curl -L -O https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v$VICTORIALOGS_VERSION-victorialogs/victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION-victorialogs.tar.gz
 tar xzf victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION-victorialogs.tar.gz
 ```
 
@@ -40,6 +42,18 @@ Create victorialogs user:
 sudo useradd -s /usr/sbin/nologin victorialogs
 ```
 
+Change ownership to victorialogs user:
+
+```bash
+sudo chown victorialogs:victorialogs /usr/local/bin/victoria-logs-prod
+```
+
+In case you run SELlinux, change SELlinux permission:
+
+```bash
+sudo restorecon -v /usr/local/bin/victoria-logs-prod
+```
+
 Create victorialogs data directory:
 
 ```bash
@@ -48,7 +62,7 @@ sudo mkdir -p /var/lib/victoria-logs-data && sudo chown -R victorialogs:victoria
 
 ### Service Configuration
 
-Create victorialogs service:
+Create `victorialogs` service:
 
 ```bash
 sudo vim /etc/systemd/system/victorialogs.service
@@ -65,7 +79,7 @@ After=network.target
 Type=simple
 User=victorialogs
 Group=victorialogs
-ExecStart=/usr/local/bin/victoria-logs-prod -storageDataPath=/var/lib/victoria-logs-data -search.maxQueryDuration=60s -retentionPeriod=365d -retention.maxDiskSpaceUsageBytes=800GiB
+ExecStart=/usr/local/bin/victoria-logs-prod -storageDataPath=/var/lib/victoria-logs-data -search.maxQueryDuration=600s -search.maxQueueDuration=600s -retentionPeriod=365d -retention.maxDiskUsagePercent=80
 SyslogIdentifier=victorialogs
 Restart=always
 
@@ -85,10 +99,20 @@ Note that `-retention*` parameters control lifecycle of ingested logs:
 
 ```bash
 -retentionPeriod=365d
--retention.maxDiskSpaceUsageBytes=800GiB
+-retention.maxDiskUsagePercent=80
+```
+Adjust these values based on your storage requirements and retention policies.
+
+### Query Configuration
+
+Note that `-search*` parameters control query execution:
+
+```bash
+-search.maxQueryDuration=600s 
+-search.maxQueueDuration=600s
 ```
 
-Adjust these values based on your storage requirements and retention policies.
+[Victoria Logs flags](https://docs.victoriametrics.com/victorialogs/#list-of-command-line-flags)
 
 ### Start Service
 
@@ -121,36 +145,5 @@ Check logs:
 sudo journalctl -u victorialogs -f
 ```
 
-## Integration with FortiDragon
-
-To integrate Victoria Logs with FortiDragon, you can:
-
-1. **Use Vector** as a collector to send logs to both Elasticsearch and Victoria Logs
-2. **Configure dual output** in your syslog collector
-3. **Set up log forwarding** from Elasticsearch to Victoria Logs
-
-Example Vector configuration for dual output:
-
-```yaml
-sinks:
-  elasticsearch:
-    type: elasticsearch
-    # ... elasticsearch config
-  
-  victoria:
-    type: http
-    uri: "http://localhost:9428/insert/jsonline"
-    method: post
-    # ... victoria logs config
-```
-
-## Performance Tuning
-
-For high-volume environments, consider:
-
-- Adjusting `-search.maxQueryDuration`
-- Increasing memory limits
-- Using SSD storage for better performance
-- Monitoring disk usage and retention policies
 
 Refer to the [Victoria Logs documentation](https://docs.victoriametrics.com/VictoriaLogs/) for detailed configuration options.

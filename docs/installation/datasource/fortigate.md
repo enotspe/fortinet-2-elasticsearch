@@ -1,4 +1,4 @@
-# Fortigate Configuration
+# Fortigate
 
 This guide covers how to configure your Fortigate firewall to send syslog data to FortiDragon.
 
@@ -85,55 +85,28 @@ end
 
 After configuration, verify that logs are being sent:
 
-1. **Check Fortigate logs**:
-   ```bash
-   diagnose log test
-   ```
-
-2. **Monitor network traffic**:
+1. **Monitor network traffic**:
    ```bash
    # On your collector host
    sudo tcpdump -i any port 5140
    ```
 
-3. **Check syslog status**:
-   ```bash
-   get log syslogd setting
-   ```
 
 ## Troubleshooting
 
-### Common Issues
 
 | Problem | Solution |
 |---------|----------|
 | No logs received | Check firewall rules between Fortigate and collector |
-| Invalid hostname errors | Use hyphens instead of underscores in hostnames |
+| You do receive packets, but see no logs ingested | Use hyphens instead of underscores in hostnames |
 | Truncated logs | Switch to reliable syslog or reduce log verbosity |
-| High CPU usage | Reduce logging frequency or filter log types |
+| Logs Drops | Increase buffers |
 
-### Log Types
-
-FortiDragon processes different types of Fortigate logs:
-
-- **Traffic**: Connection and session logs
-- **UTM**: Security events (AV, IPS, Web Filter, etc.)
-- **Event**: System and administrative events
-
-You can filter specific log types if needed:
-
-```bash
-config log syslogd filter
-    set traffic enable
-    set utm enable
-    set event enable
-end
-```
 
 ## Next Steps
 
 Once Fortigate is configured:
 
 1. [Set up your Elastic Stack](elastic.md)
-2. [Configure a syslog collector](collectors.md)
+
 3. Start receiving and analyzing logs!

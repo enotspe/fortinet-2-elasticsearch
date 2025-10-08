@@ -39,11 +39,11 @@ theme:
     #- content.action.edit  # Add edit button
     #- content.action.view  # Add view source button
     - toc.follow
-    - toc.integrate  # Integrates TOC into left sidebar
+    #- toc.integrate  # Integrates TOC into left sidebar
 
 plugins:
-  - search:
-      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - search
+  #    separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # TODO: Install these plugins in GitHub Actions
   # - git-revision-date-localized:
   #     enable_creation_date: true
@@ -52,9 +52,12 @@ plugins:
   #     minify_html: true
   # Consider adding:
   # - tags  # If you want to add tags to pages
-  # - awesome-pages  # For easier nav organization
+  - awesome-pages  # For easier nav organization
+  - glightbox
+
 
 markdown_extensions:
+  - pymdownx.tilde
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -87,19 +90,19 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 
-nav:
-  - Home: index.md
-  - Installation:
-    - installation/index.md
-    - Fortigate Setup: installation/fortigate.md
-    - Elastic Stack: installation/elastic.md
-    - Syslog Collectors: installation/collectors.md
-    - Vector: installation/vector.md
-    - Victoria Logs: installation/victoria.md
-  - Dashboards:
-    - dashboards/index.md
-  - Datasets: datasets.md
-  - Contributing: contributing.md
+#nav:
+#  - Home: index.md
+#  - Installation:
+#    - installation/index.md
+#    - Fortigate Setup: installation/fortigate.md
+#    - Elastic Stack: installation/elastic.md
+#    - Syslog Collectors: installation/collectors.md
+#    - Vector: installation/vector.md
+#    - Victoria Logs: installation/victoria.md
+#  - Dashboards:
+#    - dashboards/index.md
+#  - Datasets: datasets.md
+#  - Contributing: contributing.md
 
 extra:
   social:

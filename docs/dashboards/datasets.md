@@ -48,4 +48,8 @@ The datasets are automatically processed when you run the installation scripts. 
 2. **Index patterns** for Kibana visualization
 3. **Field enrichment** rules for better data analysis
 
-For more details on installation, see the [Installation Guide](installation/index.md).
+For more details on installation, see the [Installation Guide](../installation/index.md).
+
+docs/installation/index.md
+
+/home/dragon/fortinet-2-elasticsearch/docs/installation/index.md

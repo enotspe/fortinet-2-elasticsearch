@@ -45,6 +45,7 @@ jobs:
           pip install mkdocs-git-revision-date-localized-plugin
           pip install mkdocs-minify-plugin
           pip install mkdocs-awesome-pages-plugin
+          pip install mkdocs-glightbox
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

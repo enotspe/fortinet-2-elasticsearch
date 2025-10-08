@@ -1,16 +1,12 @@
-# Elastic Stack Setup
+# Elasticsearch
 
-FortiDragon provides an automated script to set up all necessary Elasticsearch components.
-
-## Quick Setup Script
-
-We got a script!!!! 🎉
+We got a script!!!! 🎉 FortiDragon provides an automated script to set up all necessary Elasticsearch components.
 
 ### Prerequisites
 
 - Elasticsearch cluster running
 - Access to Elasticsearch with appropriate permissions
-- Curl or similar HTTP client
+- Curl
 
 ### Installation Steps
 
@@ -25,16 +21,16 @@ We got a script!!!! 🎉
    chmod +x ELK/load.sh
    ```
 
-3. **Run the installation script**:
+3. **Modify variables according to your environment**:
+Either on
+    1. Script itslelf (`# CONFIGURATION SECTION`)
+    2. Via environment variables
+
+4. **Run the installation script**:
    ```bash
    cd ELK
    ./load.sh
    ```
-
-4. **Follow the interactive prompts** to configure:
-   - Elasticsearch endpoint
-   - Authentication credentials
-   - Index settings
 
 ## What Gets Installed
 
@@ -68,56 +64,8 @@ Automated lifecycle management for:
 - Cold phase: 90 days
 - Delete phase: 365 days
 
-## Manual Installation
 
-If you prefer manual installation or need to customize settings:
 
-### 1. Index Templates
-
-```bash
-# Create component templates first
-curl -X PUT "localhost:9200/_component_template/ecs-transforms" \
-  -H "Content-Type: application/json" \
-  -d @component_templates/ecs-transforms.json
-
-# Create index templates
-curl -X PUT "localhost:9200/_index_template/logs-fortinet.fortigate" \
-  -H "Content-Type: application/json" \
-  -d @index_templates/logs-fortinet.fortigate.json
-```
-
-### 2. Ingest Pipelines
-
-```bash
-curl -X PUT "localhost:9200/_ingest/pipeline/logs-fortinet.fortigate" \
-  -H "Content-Type: application/json" \
-  -d @ingest_pipelines/logs-fortinet.fortigate.json
-```
-
-### 3. ILM Policies
-
-```bash
-curl -X PUT "localhost:9200/_ilm/policy/logs-fortinet.fortigate" \
-  -H "Content-Type: application/json" \
-  -d @ilm/logs-fortinet.fortigate.json
-```
-
-## Kibana Dashboards
-
-After setting up Elasticsearch components:
-
-1. **Navigate to Kibana**: Go to Management → Stack Management → Saved Objects
-2. **Import dashboards**: Click "Import" and select the dashboard files from the `kibana/` directory
-3. **Enable dashboard controls**: Go to Management → Kibana Advanced Settings → Presentation Labs → Enable dashboard controls
-
-### Available Dashboards
-
-- **Fortigate Traffic Analysis** - Network traffic monitoring
-- **Fortigate UTM Events** - Security events and threats
-- **Fortigate System Events** - Administrative and system logs
-- **FortiClient Monitoring** - Endpoint security logs
-- **FortiEDR Analysis** - Advanced threat detection
-- **FortiMail Security** - Email security events
 
 ## Performance Tuning
 
@@ -176,10 +124,21 @@ curl -X GET "localhost:9200/_ingest/pipeline/logs-fortinet*"
 curl -X GET "localhost:9200/_ilm/policy/logs-fortinet*"
 ```
 
+
+## Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| No logs received | Check firewall rules between Fortigate and collector |
+| You do receive packets, but see no logs ingested | Use hyphens instead of underscores in hostnames |
+| Truncated logs | Switch to reliable syslog or reduce log verbosity |
+| Logs Drops | Increase buffers |
+
+
 ## Next Steps
 
 Once Elasticsearch is configured:
 
-1. [Set up your syslog collector](collectors.md)
-2. [Configure Vector or Elastic Agent](collectors.md)
+
+2. [Configure Vector or Elastic Agent](vector.md)
 3. Start sending logs from Fortigate!
