@@ -1,37 +1,40 @@
 # Elastic Agent
 
-
 !!! warning "DEPRECATED"
-    Do not deploy Elastic Agent
+    ❌ Do not deploy Elastic Agent
     
-    **Deploy Vector instead**
+    ✅ **Deploy Vector instead**
 
+## Install Elastic Agent 
+    
 1. [Install Elastic Agent](https://www.elastic.co/guide/en/fleet/current/elastic-agent-installation.html) either [Fleet-managed](https://www.elastic.co/guide/en/fleet/current/install-fleet-managed-elastic-agent.html) or [standalone](https://www.elastic.co/guide/en/fleet/current/install-standalone-elastic-agent.html)
 
+## Create Policy
+
 2. Create an Agent Policy
-![create_policy](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/create_policy.png)
+![create_policy](../../../assets/elastic_agent/create_policy.png)
 
 3. Add Integration
-![add_integration](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/add_integration.png)
+![add_integration](../../../assets/elastic_agent/add_integration.png)
 
 4. Select Custom UDP Logs
-![custom_udp_logs](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/custom_udp_logs.png)
+![custom_udp_logs](../../../assets/elastic_agent/custom_udp_logs.png)
 
 5. Configure Custom UDP Logs integration
-![integration_parameters](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/images/integration_parameters.png)
+![integration_parameters](../../../assets/elastic_agent/integration_parameters.png)
 
 6. Make sure to add your own private networks under custom configurations. It is recommended to add your own public facing IP address scope as well.
 
 7. Save Integration
 
-8. Deploy you policy.
+## Deploy you policy.
 - If you deployed Fleet-managed agent, just [apply your new policy to your agent](https://www.elastic.co/guide/en/fleet/current/agent-policy.html#apply-a-policy).
 
 - If you deployed standalone agent, [take your generated policy](https://www.elastic.co/guide/en/fleet/current/create-standalone-agent-policy.html) and modify your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) accordinly.
 
 You should end up with something like:
 
-```
+```yaml
   - id: udp-udp-af7f0dce-57c0-498f-bc09-96ba51fd76a4
     name: fortinet.fortigate-1
     revision: 1
@@ -69,9 +72,11 @@ You should end up with something like:
             - link_local_multicast
 ```
 
-9. Performance tunning settings
+## Performance tunning settings
 
-Firewalls are very chatty, so it may overwhelm buffers on your syslog collector, leading to dropping logs. Modify your `Elasticsearch output settings` for `Optimized for throughput`.
+Firewalls are very chatty, so it may overflow UDP buffers on your host leading to dropping logs. 
+
+Modify your `Elasticsearch output settings` for `Optimized for throughput`.
 
 - If you deployed Fleet-managed agent, modify your Elaticsearch output `Perfomance Tunnig` setting for [`Throughput`](https://www.elastic.co/guide/en/fleet/current/es-output-settings.html#es-output-settings-performance-tuning-settings) directly under your [output configuration](https://www.elastic.co/guide/en/fleet/current/fleet-settings.html#output-settings).
 - If you deployed standalone agent, modify your Elaticsearch output preset setting for [`throughput`](https://www.elastic.co/guide/en/fleet/current/elasticsearch-output.html#output-elasticsearch-performance-tuning-settings) on your [elastic-agent.yml](https://www.elastic.co/guide/en/fleet/current/installation-layout.html) directly.

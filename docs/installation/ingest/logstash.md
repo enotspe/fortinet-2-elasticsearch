@@ -2,29 +2,26 @@
 
 
 !!! warning "DEPRECATED"
-    Do not deploy Logstash
+    ❌ Do not deploy Logstash
     
-    **Deploy Vector instead**
+    ✅ **Deploy Vector instead**
     
-
+## Installation
 1. [Install Logstash](https://www.elastic.co/guide/en/logstash/current/installing-logstash.html)
 
 2. A good idea would be to setup your ES password as a [secret](https://www.elastic.co/guide/en/logstash/current/keystore.html#add-keys-to-keystore)
 
-3. Logstash Hostname **OPTIONAL**
-
-  Add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
-
-```
+3. Set Logstash hostname  
+!!! info "OPTIONAL"
+    ℹ️ Optional config. Very useful if you run several logstash instances
+Add HOSTNAME="myhostname" to /etc/default/logstash when running logstash as a service
+```bash
 echo HOSTNAME=\""$HOSTNAME"\" | sudo tee  -a /etc/default/logstash
 ```
-
-  It is very useful if you run several logstash instances.
-
 4. Install tld filter plugin (You should do it every time you upgrade logstash version as well)
-```
-    cd /usr/share/logstash
-    sudo bin/logstash-plugin install logstash-filter-tld
+```bash
+cd /usr/share/logstash
+sudo bin/logstash-plugin install logstash-filter-tld
 ```
 5. Copy [pipelines.yml](https://github.com/enotspe/fortinet-2-elasticsearch/blob/master/logstash/pipelines.yml) to your logstash folder.
 6. Copy [conf.d](https://github.com/enotspe/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder.

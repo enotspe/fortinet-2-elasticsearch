@@ -2,9 +2,9 @@
 
 Victoria Logs is a high-performance log management system that can be integrated with FortiDragon.
 
-## Installation as systemd Service
+Installation as Systemd Service
 
-### Prerequisites
+## Download
 
 Set version, architecture and OS:
 
@@ -19,51 +19,55 @@ VICTORIALOGS_ARCH=amd64
 VICTORIALOGS_SO=linux
 ```
 
-### Download and Install
-
 Download binary:
-
 ```bash
 curl -L -O https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v$VICTORIALOGS_VERSION-victorialogs/victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION-victorialogs.tar.gz
 tar xzf victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION-victorialogs.tar.gz
 ```
+
+!!! info "UPGRADES"
+    ℹ️ Repeat this step for upgrading Victoria Logs version
+
+## Install
 
 Move binary to `/usr/local/bin`:
 
 ```bash
 sudo mv victoria-logs-prod /usr/local/bin
 ```
+!!! info "UPGRADES"
+    ℹ️ Repeat this step for upgrading Victoria Logs version
+    
+## System Setup
 
-### System Setup
-
-Create victorialogs user:
-
+### Create VictoriaLogs user
 ```bash
 sudo useradd -s /usr/sbin/nologin victorialogs
 ```
 
-Change ownership to victorialogs user:
-
+### Change ownership
 ```bash
 sudo chown victorialogs:victorialogs /usr/local/bin/victoria-logs-prod
 ```
-
+!!! info "UPGRADES"
+    ℹ️ Repeat this step for upgrading Victoria Logs version
+    
+### SELlinux permission:
 In case you run SELlinux, change SELlinux permission:
-
 ```bash
 sudo restorecon -v /usr/local/bin/victoria-logs-prod
 ```
-
-Create victorialogs data directory:
-
+!!! info "UPGRADES"
+    ℹ️ Repeat this step for upgrading Victoria Logs version
+    
+### Create VictoriaVogs data directory
 ```bash
 sudo mkdir -p /var/lib/victoria-logs-data && sudo chown -R victorialogs:victorialogs /var/lib/victoria-logs-data
 ```
 
-### Service Configuration
+## Service Configuration
 
 Create `victorialogs` service:
-
 ```bash
 sudo vim /etc/systemd/system/victorialogs.service
 ```
@@ -79,7 +83,13 @@ After=network.target
 Type=simple
 User=victorialogs
 Group=victorialogs
-ExecStart=/usr/local/bin/victoria-logs-prod -storageDataPath=/var/lib/victoria-logs-data -search.maxQueryDuration=600s -search.maxQueueDuration=600s -retentionPeriod=365d -retention.maxDiskUsagePercent=80
+ExecStart=/usr/local/bin/victoria-logs-prod \
+-storageDataPath=/var/lib/victoria-logs-data \
+-search.maxQueryDuration=600s \
+-search.maxQueueDuration=600s \
+-retentionPeriod=365d \
+-retention.maxDiskUsagePercent=80 \
+#-retention.maxDiskSpaceUsageBytes=800GiB
 SyslogIdentifier=victorialogs
 Restart=always
 
@@ -97,11 +107,15 @@ WantedBy=multi-user.target
 
 Note that `-retention*` parameters control lifecycle of ingested logs:
 
-```bash
+```ini
 -retentionPeriod=365d
 -retention.maxDiskUsagePercent=80
+#-retention.maxDiskSpaceUsageBytes=800GiB
 ```
 Adjust these values based on your storage requirements and retention policies.
+
+!!! warning "Important"
+    ⚔️ `-retention.maxDiskSpaceUsageBytes` and `-retention.maxDiskUsagePercent` flags are mutually exclusive. VictoriaLogs will refuse to start if both flags are set simultaneously.
 
 ### Query Configuration
 
@@ -112,9 +126,9 @@ Note that `-search*` parameters control query execution:
 -search.maxQueueDuration=600s
 ```
 
-[Victoria Logs flags](https://docs.victoriametrics.com/victorialogs/#list-of-command-line-flags)
+See full options for [Victoria Logs flags](https://docs.victoriametrics.com/victorialogs/#list-of-command-line-flags)
 
-### Start Service
+## Start Service
 
 Start and enable the service:
 

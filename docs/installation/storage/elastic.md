@@ -1,6 +1,8 @@
 # Elasticsearch
 
-We got a script!!!! 🎉 FortiDragon provides an automated script to set up all necessary Elasticsearch components.
+We got a script!!!! 🎉 
+
+FortiDragon provides an automated script to set up all necessary Elasticsearch components.
 
 ### Prerequisites
 
@@ -45,8 +47,9 @@ The script automatically creates:
 - `logs-fortinet.fortimail`
 
 ### Component Templates
-- ECS field mappings and transforms
-- ILM policy configurations
+- ECS field mappings
+- Fortinet specific mappings
+- Referencing ILM policies
 - Index settings (refresh intervals, field limits, etc.)
 
 ### Ingest Pipelines
@@ -58,13 +61,13 @@ The script automatically creates:
 - `logs-fortinet.fortiadc` - FortiADC log processing
 
 ### ILM Policies
-Automated lifecycle management for:
-- Hot phase: 7 days
-- Warm phase: 30 days  
-- Cold phase: 90 days
-- Delete phase: 365 days
-
-
+Automated lifecycle management for each datastream type:
+- `logs-fortinet.fortigate.traffic`
+- `logs-fortinet.fortigate.utm` 
+- `logs-fortinet.fortigate.event`
+- `logs-fortinet.forticlient`
+- `logs-fortinet.fortiedr`
+- `logs-fortinet.fortimail`
 
 
 ## Performance Tuning
