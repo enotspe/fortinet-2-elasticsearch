@@ -61,7 +61,7 @@ Here is where we shine! No other paid or free tool has such an in depth analysis
 ### 3. **Quick Setup**
 Detailed instructions for seting up. We are also security engineers, not data scientits. We understand you might not be familiar with tools like Elastic, Grafana or Victoria Logs (we also strugged as well), so we have made it super simple to spin up.
 
-## Quick Start
+## Installation
 
 Ready to get started? Check out our [Installation Guide](installation/index.md) to begin your FortiDragon journey!
 
