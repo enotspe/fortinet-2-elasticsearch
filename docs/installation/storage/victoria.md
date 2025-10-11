@@ -1,8 +1,10 @@
 # Victoria Logs
 
-Victoria Logs is a high-performance log management system that can be integrated with FortiDragon.
+[Victoria Logs](https://docs.victoriametrics.com/victorialogs/) is a high-performance log management system.
 
-Installation as Systemd Service
+## Installation as a service
+There are many ways for [installing](https://docs.victoriametrics.com/victorialogs/quickstart/#how-to-install-and-run-victorialogs) Victoria Logs. Normally, for a Linux environment, you may want to install it as a service.
+
 
 ## Download
 
@@ -159,5 +161,21 @@ Check logs:
 sudo journalctl -u victorialogs -f
 ```
 
-
 Refer to the [Victoria Logs documentation](https://docs.victoriametrics.com/VictoriaLogs/) for detailed configuration options.
+
+
+## Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+|  |  |
+
+
+## Next Steps
+
+Once Elasticsearch is configured:
+
+
+1. [Configure Vector](../ingest/vector.md)
+2. [Start sending logs from Fortigate!](../datasource/fortigate.md)
+3. [Load Grafana dashboards](../viz/grafana.md)

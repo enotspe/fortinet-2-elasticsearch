@@ -108,6 +108,16 @@ Add environment variables:
 INTERNAL_NETWORKS=["10.0.0.0/8","172.16.0.0/12","192.168.0.0/16","fc00::/7"]
 ```
 
+## Sinks
+
+Vector can send logs to multiple [storages](https://vector.dev/docs/reference/configuration/sinks/)
+
+Configuration files have set all [supported](../../architecture.md) sinks. 
+
+!!! warning "Sinks"
+    Comment out the ones you will not use to avoid errors
+
+
 ## Advanced Configuration
 
 For production deployments, take into account every sink has a section that overrides Vector default values for [buffering](https://vector.dev/docs/architecture/buffering-model/) trying to mimic `Optimized for Throughput` Elastic Agent [settings](https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings). Vector works really well with defaults. Don't use this section unless you really need to fine-tune yor ingest. 
@@ -151,7 +161,7 @@ Refer to the [Vector documentation](https://vector.dev/docs/) for detailed confi
 
 After configuration, verify that logs are being sent:
 
-1. **Monitor network traffic**:
+1. Monitor network traffic:
    ```bash
    # On your collector host
    sudo tcpdump -i any port 5140
@@ -164,7 +174,6 @@ After configuration, verify that logs are being sent:
 |---------|----------|
 | No logs received | Check firewall rules between Fortigate and collector |
 | You do receive packets, but see no logs ingested | Use hyphens instead of underscores in hostnames |
-| Truncated logs | Switch to reliable syslog or reduce log verbosity |
 | Logs Drops | Increase buffers |
 
 
@@ -172,6 +181,8 @@ After configuration, verify that logs are being sent:
 
 Once Vector is configured:
 
-1. [Set up your Elastic Stack](../storage/elastic.md)
+1. [Set up Victoria Logs](../storage/victoria.md)
+2. Or [Set up Elasticsearch](../storage/elastic.md)
 
-3. Start receiving and analyzing logs!
+!!! info "Storage"
+    Victoria Logs is recommended over Elasticsearch
