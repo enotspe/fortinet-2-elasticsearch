@@ -12,16 +12,16 @@
 ## Create Policy
 
 2. Create an Agent Policy
-![create_policy](../../../assets/elastic_agent/create_policy.png)
+![create_policy](../../assets/elastic_agent/create_policy.png)
 
 3. Add Integration
-![add_integration](../../../assets/elastic_agent/add_integration.png)
+![add_integration](../../assets/elastic_agent/add_integration.png)
 
 4. Select Custom UDP Logs
-![custom_udp_logs](../../../assets/elastic_agent/custom_udp_logs.png)
+![custom_udp_logs](../../assets/elastic_agent/custom_udp_logs.png)
 
 5. Configure Custom UDP Logs integration
-![integration_parameters](../../../assets/elastic_agent/integration_parameters.png)
+![integration_parameters](../../assets/elastic_agent/integration_parameters.png)
 
 6. Make sure to add your own private networks under custom configurations. It is recommended to add your own public facing IP address scope as well.
 
