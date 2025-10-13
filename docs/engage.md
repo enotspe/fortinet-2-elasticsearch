@@ -10,9 +10,23 @@ Feel free to ask about anything on the channel, not only project related, but Fo
 
 If FortiDragon has helped you, consider:
 
-- 💰 [Making a donation](https://www.paypal.com/paypalme/fortidragon). You are already saving a lot of money by using FortiDragon!
-- ⭐ Starring the repository
-- 📢 Sharing with others who might benefit
+If FortiDragon helps you:
+
+- 💰 [Make a donation](https://www.paypal.com/paypalme/fortidragon). You are already saving a lot of money by using FortiDragon!
+- ⭐ [Star the repository](https://github.com/enotspe/fortinet-2-elasticsearch)
+- 📢 Share with colleagues
+- 🤝 [Contribute](#areas-for-contribution)
+
+
+## Areas for Contribution
+
+- **New Ideas**: We welcome any crazy suggestions
+- **Parsers**: Help improve or add new Vector parsers
+- **Dashboards**: Create new Grafana/Kibana dashboards or improve existing ones
+- **Documentation**: Improve or expand documentation
+- **Bug Fixes**: Fix reported issues
+- **Report Issues**: Report bugs or errors
+- **Performance**: Optimize general performance
 
 ## Reporting Issues
 
@@ -24,16 +38,6 @@ If you find a bug or have a feature request:
    - Steps to reproduce (for bugs)
    - Expected vs actual behavior
    - Your environment details (Fortinet / Palo Alto versions, Elastic Stack / Victoria Logs version, etc.)
-
-
-## Areas for Contribution
-
-- **New Ideas**: We welcome any crazy suggestions
-- **Parsers**: Help improve or add new Vector parsers
-- **Dashboards**: Create new Grafana/Kibana dashboards or improve existing ones
-- **Documentation**: Improve or expand documentation
-- **Bug Fixes**: Fix reported issues
-- **Performance**: Optimize general performance
 
 ## Code Contributions
 

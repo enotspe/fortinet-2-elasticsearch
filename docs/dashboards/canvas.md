@@ -1,7 +1,4 @@
-# Designer's Dilemma
-
-The Blank Canvas
----
+# Blank Canvas
 
 
 There's a peculiar moment of paralysis that strikes when you create a dashboard — that infinite white space staring back at you, cursor blinking expectantly, waiting for your first move. It's a feeling any artist knows intimately: the blank canvas syndrome.

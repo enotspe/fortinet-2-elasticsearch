@@ -179,3 +179,7 @@ Once Elasticsearch is configured:
 1. [Configure Vector](../ingest/vector.md)
 2. [Start sending logs from Fortigate!](../datasource/fortigate.md)
 3. [Load Grafana dashboards](../viz/grafana.md)
+
+## Extra Bonus !!!
+
+Consider deploying Victoria Logs [MCP](https://github.com/VictoriaMetrics-Community/mcp-victorialogs) server 😱🤖✨

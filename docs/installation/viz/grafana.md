@@ -41,6 +41,8 @@ Currently, v2 Dashboards can not be uploaded to [Dashbaords page](https://grafan
 !!! warning "v2 Dynamic Dashboards"
     If the feature flag for dynamic dashboards is enabled, once an existing dashboard is migrated to a dynamic dashboard and using schema v2, it can’t be [migrated back](https://grafana.com/whats-new/2025-05-05-dashboard-v2-schema-and-dynamic-dashboards/)
 
+**Hopefully you should be dancing with your logs by now.** 🕺💃
+
 Enjoy!
 
 ## Elasticsearch

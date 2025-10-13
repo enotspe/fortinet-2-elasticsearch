@@ -72,6 +72,11 @@ You should end up with something like:
             - link_local_multicast
 ```
 
+!!! warning "Ingest Pipelines"
+    Ingest Pipelines are not loaded by default with our [script](../storage/elastic.md/#set-load)
+    
+    Make sure to set `LOAD_INGEST_PIPELINES` to `true`
+
 ## Performance tunning settings
 
 Firewalls are very chatty, so it may overflow UDP buffers on your host leading to dropping logs. 
@@ -85,4 +90,4 @@ Depending on your Events per Second (EPS) volume, you may need to increase perfo
 
 - Run `watch -d "column -t cat /proc/net/snmp | grep -w Udp"` on your Elastic Agent host to check if you are dropping any logs.
 
-**Hopefully you should be dancing with your logs by now.** 🕺💃
+

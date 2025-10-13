@@ -1,7 +1,7 @@
 # Home
 
 <div align="center">
-    <img src="assets/logo_with_name_small.jpg" alt="FortiDragon" />
+    <img src="assets/logos/logo_with_name_small.jpg" alt="FortiDragon" />
 </div>
 
 Welcome to **FortiDragon**! 
@@ -19,47 +19,137 @@ We actually use FortiDragon on our day to day operations for threat hunting, so 
 Lets build some ground together and make sure this prohect is right for you.
 
 ### What you need to have
-- A firewall
-- A firewall that produces logs
-- A firewall that produces logs, and you want to make a report
-- A firewall that produces logs, and you want to make a report, and a human is actually going to read it
-- A firewall that produces logs, and you want to make a report, and a human is actually going to read it and take some action.
+- A firewall 🔥
+- A firewall that produces logs 🔥🪵
+- A firewall that produces logs, and you want to make a report 🔥🪵📔
+- A firewall that produces logs, and you want to make a report, and a human is actually going to read it 🔥🪵📔🥸
+- A firewall that produces logs, and you want to make a report, and a human is actually going to read it and take some action. 🔥🪵📔🥸🎬
 
 ### What you **DO NOT** need to have
 More important than what you need is what you dont need.
 
-- Money
+- Money💰🚫
 
 If you feel related to the previous statements, we got you covered.
 
 If you are Splunk, QRadar, or [Elastic Serverless](https://www.elastic.co/pricing/serverless-search) users, you are welcome to stay and make a [contribution](engage.md#support-the-project) to support FortiDragon. You will get more value out of your 💵 here.
 
-## Challenge
+## The Challenge
 
-Firewall logs are unique beast. They are on the most chatty elements on your infraestructure generating high volumens of logs. That is pretty obvious because they concentrate all the connections from all your network in one system. 
+Firewall logs are a unique beast. They're among the chattiest elements in your infrastructure, generating massive volumes of data. This makes perfect sense—your firewall sits at the chokepoint, seeing every single connection attempt from every device on your network. It's the ultimate network voyeur. 🔍
 
-However, each log provides very low information. Each log itself is almost irrelevant. The real value comes when you aggregate all the logs to find hidden behaivors.
+But here's the paradox: **each individual log is almost worthless**.
 
-Let's imagine this situation:
-You got an IP that performs a DNS resolution to some external IP adrress. That log itself do not indicate malicious activity.
-But if in a hour span, you see that IP doing DNS resolutions to a thousand different IPs. That is pretty weird behaivor because noramlly you only have configured 2 DNS servers for resolution. Such pattern can indicate a [C2C connection](https://attack.mitre.org/techniques/T1071/004/) or [Data Exfiltration](https://attack.mitre.org/techniques/T1048/003/).
+A single firewall log tells you almost nothing useful. "Host A connected to Host B on port 443. Status: allowed." So what? That's just... another Tuesday. One log entry is just worthless on a sea of data.
 
-The point is that every single DNS resolution is not relevant itself, just when you aggregate them is when you can see the full picture and spot an anomalus pattern.
+The real value emerges only when you aggregate logs to reveal hidden behavioral patterns.
 
-That is why it is important to log all connections. And that is why it is unqique challenge. Integrating your firewalls to current SIEMs solutions can make them explote in storage, and get you broke in the process. 
+### The Slow Port Scanner
 
-## Key Benefits
+Consider this situation
 
-### 1. **Ingestion**
-- **Full field parsing**: Extracts all fields and values from Fortinet and Palo Alto logs.
-- **ECS Naming Standardization**: Translates fields to [Elastic Common Schema (ECS)](https://www.elastic.co/guide/en/ecs/current/index.html) for consistent field naming.
+**Single log entry:**
+
+10.0.8.15 → 192.168.1.50:445 | TCP SYN | DENIED
+
+Looks like: A workstation tried to access SMB on another host. Maybe a misconfiguration? No big deal.
+
+**Aggregated over 24 hours:**
+
+10.0.8.15 scanned 2,847 different internal IPs
+Ports targeted: 22, 23, 445, 3389, 5900
+Success rate: 0%
+Pattern: Sequential IP scan, 1 attempt every 30 seconds
+
+**This is:** A compromised workstation performing slow reconnaissance to avoid detection. Traditional port scanners are noisy (thousands of attempts per second). This attacker is patient, spreading the scan over 24 hours to hide in normal network traffic.
+
+**Without full logs?** You'd see maybe 5-10 scattered connection attempts. Looks random. Pattern invisible.
+
+Missing some logs, and that behavioral pattern becomes invisible. The malware hides in your sampling gaps. The reconnaissance blends into the noise. The credential stuffing looks like innocent typos.
+
+This is why you **must log everything**. Thre are no "safe" connections, no irrelevant traffic. Just log UTM type logs is not serious. You dont need a SIEM to tell you that there was a hit on the IPS engine, you need a data analytics plataform to uncover correlations hidden on regular events.
+
+
+## SIEM Cost Trap
+
+Here's where traditional SIEMs fail spectacularly.
+
+Most organizations face this brutal choice:
+Option A: Log everything → Go bankrupt from SIEM costs 💸
+Option B: Sample/filter logs → Miss threats hiding in the gaps 🕳️
+
+**The dirty secret of enterprise security:** Most companies choose Option B.
+
+They implement "intelligent sampling" (translation: we can't afford to log everything). They filter out "noise" (translation: we're hoping the important stuff makes it through). They set retention policies measured in days, not months (translation: we're praying nothing bad happened last week).
+
+And then they wonder why advanced threats dwell in their networks for an average of 200+ days before detection.
+
+**You can't find patterns you can't see.** 
+
+When you drop logs to save money, you're not just losing data points—you're losing context. You're losing the ability to:
+
+- Correlate events across time windows
+- Establish behavioral baselines
+- Detect slow-burn attacks
+- Perform historical threat hunting
+- Conduct forensic investigations
+
+Splunk charges per GB ingested. Elastic Serverless makes you cry when you see the bill. QRadar... let's not even go there. These platforms were built for diverse log types across your entire infrastructure. Firewall logs? They're just a checkbox on the datasheet. An afterthought.
+
+**Nobody optimized for the firewall use case.**
+
+Until now.
+
+## FortiDragon Difference
+
+We had one core constraint: **No money.** 💰🚫
+
+And that constraint forced creativity.
+
+We couldn't throw budget at the problem. We had to get smart about:
+
+- **Storage efficiency** - Choosing databases optimized for log workloads (Victoria Logs)
+- **Parsing performance** - Using Vector instead of resource-heavy Java-based tools
+- **Cost-effective scaling** - Object storage, compression, smart retention
+- **Query optimization** - Engines built for aggregation, not just search
+
+The result? **You can log everything without going broke.**
+
+No sampling. No filtering. **Full visibility. Full context. Full behavioral analysis.**
+
+But we didn't stop there. Storing high volumes of logs efficiently was just the first step. *"Now that we have all the data, how do we actually use it?"*
+
+That's when the real work began.
+
+### 1. **Deep Ingestion**
+- **Full field parsing**: Extracts ALL fields and values from Fortinet and Palo Alto logs—not just the "important" ones
+- **ECS Naming Standardization**: Translates fields to [Elastic Common Schema (ECS)](https://www.elastic.co/guide/en/ecs/current/index.html) for consistent field naming across platforms
 - **Enrichment**: Enhances log data with additional contextual information.
 
-### 2. **Analytics**
-Here is where we shine! No other paid or free tool has such an in depth analysis of Fortinet logs. FortiDragon provides deep visibility into your network traffic. With comprehensive dashboards for threat hunting, you can easily monitor firewalls logs in real-time and perform long term analysis. 
 
-### 3. **Quick Setup**
-Detailed instructions for seting up. We are also security engineers, not data scientits. We understand you might not be familiar with tools like Elastic, Grafana or Victoria Logs (we also strugged as well), so we have made it super simple to spin up.
+### 2. **Unmatched Analytics**
+**Here is where we shine!** 
+
+It's difficult to explain what "deep visibility" or "in-depth analysis" actually mean until you see it. We could list features like "comprehensive dashboards" or "real-time monitoring," but those are just marketing buzzwords that every vendor claims.
+
+**The truth?** You'll understand it once you use our dashboards.
+
+We're not a generic SIEM that happens to support firewall logs. We're a firewall log analytics platform that happens to be better than any SIEM. No other paid or free tool has such in-depth analysis of firewall logs. 
+
+Don't take our word for it. [Install it](installation/index.md) and see for yourself. 🐉
+
+### 3. **Security Engineer Friendly**
+We are security engineers, not data scientists. We understand you might not be familiar with tools like Elasticsearch, Grafana, or Victoria Logs (we struggled too!). 
+
+That's why we made it **super simple** to spin up:
+
+- **One-script installation** for Elasticsearch components
+- **Pre-configured Vector pipelines** ready to go
+- **Production-ready dashboards** on day one
+- **Clear documentation** written by practitioners, for practitioners
+- **No vendor lock-in** - use what works for your environment
+
+**You need it all. And now you got it.** 🐉
 
 ## Installation
 
@@ -73,3 +163,14 @@ Logstash pipelines and Elasticsearch config [@hoat23](https://github.com/hoat23)
 Dataset analysis, Kibana and Grafana dashboards, Vector pipelines, Victoria Logs [@enotspe](https://github.com/enotspe) 🐉
 
 Current maintenance [@enotspe](https://github.com/enotspe) 🐉
+
+---
+
+## Support the Project
+
+If FortiDragon helps you:
+
+- 💰 [Make a donation](https://www.paypal.com/paypalme/fortidragon). You are already saving a lot of money by using FortiDragon!
+- ⭐ [Star the repository](https://github.com/enotspe/fortinet-2-elasticsearch)
+- 📢 Share with colleagues
+- 🤝 [Contribute](engage.md/#areas-for-contribution)

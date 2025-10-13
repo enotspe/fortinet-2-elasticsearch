@@ -31,7 +31,8 @@ These are the supported platforms:
 | Language          | Good              | Limited to Elastic functions. Can not make comments on the code. | Great. It even has a playground. Very detailed logging for errors. |
 | **Conclusion**    | Migrated to Vector | Migrated to Vector | **Current depevelopment and maintance** |
 
-We have a clear winner here: **Vector!**
+!!! success "Our Recommendation"
+    **Use Vector** - It's fast, flexible, and powerfull. We've migrated from Logstash and Elastic Agent to Vector.
 
 ## Storage
 
@@ -51,8 +52,24 @@ We have a clear winner here: **Vector!**
 | Roadmap | [Object Storage](https://docs.victoriametrics.com/victorialogs/roadmap/). Looks promising! | - | - | Sold to Datadog | Kafka, Iceberg. [Looks promising](https://www.youtube.com/watch?v=LWDeIHfAC9A)! | - |
 | **Conclusion** | **Great**! | **RAM eater**  | **Too expensive** | **It was promising, but got discontinued** | **No analytics, very complicated and slow .. for [now](https://www.youtube.com/watch?v=LWDeIHfAC9A)** | **Want to test it** |
 
-**VictoriaLogs** is on a very sweet spot of simplicity, performance and query power. And has a very actively depevelopment and suport from VictoriaMetrics team.
 
+**Why Victoria Logs Wins:**
+- 🚀 Blazing fast (Go-based)
+- 💰 Cost-effective
+- 🎯 Super simple to set up and maintain
+- 🔍 Powerful LogsQL query language
+- 📈 Great support and active development
+- 🎁 Object storage support coming soon!
+
+**When to Choose Elasticsearch:**
+- You already have an ELK stack
+- You need ES|QL for complex queries
+- You want to use Kibana's specifoc features
+- You need specific Elasticsearch integrations
+
+!!! success "Chef's Recommendation"
+    **Use Victoria Logs** - It's the sweet spot of simplicity, performance, and query power. Plus, it's actively developed with a great roadmap!
+    
 ## Visualization
 
 |                   | Kibana            | Grafana           | 
@@ -69,4 +86,8 @@ We have a clear winner here: **Vector!**
 | Reports | Yes. Paid | Yes. Paid | 
 | **Conclusion**    | Will keep suppoting it | **Current depevelopment and maintance** |
 
-We have a clear winner here: **Grafana!**
+!!! success "Chef's Recommendation"
+    - **Using Victoria Logs?** → Use Grafana
+    - **Using Elasticsearch?** → Use Kibana
+    
+    
