@@ -1,0 +1,44 @@
+# Core Values
+
+Because good dashboards don’t just look good — they make sense.
+Here’s what we actually care about (and what we wish others did too):
+
+## Simplicity & Transparency
+
+No one should need a PhD in query language to read a chart.
+
+We keep queries simple, filters visible, and logic obvious.
+
+If someone new can’t understand what they’re looking at, we’ve failed (and yes, we’ll fix it).
+
+If you ever had to debug a [Fortianalyzer query](https://docs.fortinet.com/document/fortianalyzer/7.6.4/administration-guide/175391/sql-query-functions) (like we had 😭) you will agree on why this is so important.
+
+## Consistent UI
+
+Every dashboard looks and feels the same. 
+
+Noone should start "investigating" the dashobard itself, trying to find where things are. 
+
+Consistency isn't boring. It's respectful of people's cognitive load. And their retinas.
+
+## Top-to-Bottom Importance
+
+Arrange your dashboard like you're writing a security incident report, not a mystery novel. We don't need the dramatic reveal at the bottom.
+
+- **Top**: The metrics that would make you check Slack at 2 AM
+- **Middle**: Important context and trends
+- **Bottom**: Nice-to-know details and that one graph your manager asked for eight months ago
+
+___
+
+All feel like revolutionary concepts really now, but they are actually just common sense.
+
+We don’t build dashboards to impress — we build them to empower.
+
+**Clarity beats complexity.**
+
+**Consistency beats chaos.**
+
+And when in doubt, **simplify.**
+
+Because the best dashboards don’t make noise — they tell the truth.

@@ -48,9 +48,9 @@ Instead of creating an exception for `10.0.5.42` on rule X because "`10.0.5.42` 
 - Which networks are for guests
 - Which assets are critical
 
-Then **ALL rules** automatically understand this context. No more whack-a-mole exception management. No more rules that break when you change infrastructure.
-
 Imagine plugging your [CMDB](https://www.atlassian.com/itsm/it-asset-management/cmdb) directly into your log analytics. 
+
+Then **ALL rules** automatically understand this context. No more whack-a-mole exception management. No more rules that break when you change infrastructure.
 
 ### 2. **Entities**
 
@@ -108,7 +108,7 @@ This isn't a rule. It's a pipeline. It adapts. It learns. It doesn't require you
 
 ### 6. **Anomalous ≠ Malicious**
 
-OK, now we have confidence that `10.0.5.42` is behaving weirdly. But anomalous doesn't mean malicious.
+OK, now we have confidence that `10.0.5.42` is behaving weirdly. But anomalous doesn't always equals malicious.
 
 **What do we do next?** We pivot to relationships.
 
@@ -130,7 +130,7 @@ That's the vision. That's where we're going. 🐉
 
 We must enter the rabbit hole of data science: **entities, feature extraction, aggregations, streaming analytics, behavioral baselines, anomaly detection** all in real-time.
 
-### Phase 1: Data Lake Foundation ⚙️
+### Phase 1: Data Lake Foundation
 
 **Status:** Planning
 
@@ -148,7 +148,7 @@ This foundation enables us to:
 - Query across petabytes of historical data without breaking the bank
 - Build entity relationships at scale
 
-### Phase 2: Machine Learning Pipeline 🤖
+### Phase 2: Machine Learning Pipeline
 
 **Status:** Research
 
@@ -163,7 +163,7 @@ Raw data lakes are worthless without intelligence on top.
 
 The goal: **No more manual threshold tuning.** The system learns what's normal for your environment and adapts.
 
-### Phase 3: Agentic AI for Blue Team 🤖🛡️
+### Phase 3: Agentic AI for Blue Team
 
 **Status:** Dreaming (but seriously researching)
 
@@ -181,7 +181,7 @@ Integration with:
 - **TheHive** - Case management for incident tracking
 - **Timesketch** - Timeline analysis for forensic investigation
 
-## Continuous Evolution 🔄
+## Continuous Evolution
 
 We have not forget our day to day, we want to continuous improve what we have already built:
 
