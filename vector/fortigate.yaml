@@ -228,6 +228,20 @@ transforms:
         .network.direction = "unknown"
       }
 
+      # url
+      .url.original = .fgt.url
+      .url.domain = to_string(.fgt.hostname) ?? ""
+      .url |= parse_url(.fgt.url) ?? {}
+
+      if !is_nullish(.url.domain) {
+        #domain = to_string(.url.domain) ?? ""
+        if !is_ipv4(.url.domain) && !is_ipv6(.url.domain) {
+          etld_url = parse_etld(.url.domain, plus_parts: 1) ?? {}
+          .url.registered_domain = etld_url.etld_plus
+          .url.top_level_domain = etld_url.etld
+        }
+      }
+
       # rule
       .rule.id = .fgt.policyid
       .rule.name = .fgt.policyname
@@ -238,6 +252,10 @@ transforms:
       
       # session
       .session.id = .fgt.sessionid
+
+      # http
+      .http.request.method = string(.fgt.httpmethod) ?? null
+      .http.response.status_code = .fgt.statuscode
 
       # user_agent
       .user_agent = parse_user_agent(.fgt.agent) ?? null
@@ -357,6 +375,10 @@ transforms:
       # observer
       .observer.egress.interface.name = string(.fgt.dstintf) ??  string(.fgt.dst_int) ?? null #VoIP uses dst_int instead of dstintf
       .observer.ingress.interface.name = string(.fgt.srcintf) ??  string(.fgt.src_int) ?? null #VoIP uses src_int instead of srcintf
+      
+      .observer.egress.zone.name = string(.fgt.dstzone) ?? null
+      .observer.ingress.zone.name = string(.fgt.srczone) ?? null
+      
 
       # rule
       .rule.id = string(.fgt.policyid) ?? string(.fgt.policy_id) ?? null # VoIP uses policy_id instead of policyid
