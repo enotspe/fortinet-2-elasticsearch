@@ -186,6 +186,9 @@ transforms:
       .observer.egress.interface.name = .fgt.dstintf
       .observer.ingress.interface.name = .fgt.srcintf
 
+      .observer.egress.zone.name = string(.fgt.dstzone) ?? null
+      .observer.ingress.zone.name = string(.fgt.srczone) ?? null
+
       #network
       .network.bytes = to_int( string(.source.bytes) ?? "nonum" ) + to_int( string(.destination.bytes) ?? "nonum" ) ?? null
       .network.packets = to_int( string(.source.packets) ?? "nonum" ) + to_int( string(.destination.packets) ?? "nonum" ) ?? null
@@ -256,6 +259,7 @@ transforms:
       # http
       .http.request.method = string(.fgt.httpmethod) ?? null
       .http.response.status_code = .fgt.statuscode
+      .http.request.referrer = .fgt.referralurl
 
       # user_agent
       .user_agent = parse_user_agent(.fgt.agent) ?? null
