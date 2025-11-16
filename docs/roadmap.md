@@ -10,11 +10,11 @@ So far, we've built the foundation: raw logs that are **parsed, normalized, and 
 
 **But we're just getting started.**
 
-## Alert Fatigue
-
 The next logical step? Alerts, right? 
 
 **Wrong.**
+
+## Alert Fatigue
 
 Let's be real: throwing countless detection rules to generate countless alerts is just not serious. Our day-to-day as blue teamers is dealing with false positives 99% of the time. We don't want more of that sh*t!!!
 
@@ -28,7 +28,7 @@ We need to think fundamentally different.
 
 The problem isn't that we lack rules — we have too many.
 
-The problem isn't that we lack data — we're drowning in it.
+The problem isn't that we lack detections — we're drowning in it.
 
 The problem is that **traditional rule-based detection doesn't scale** to the complexity and volume of modern network traffic.
 

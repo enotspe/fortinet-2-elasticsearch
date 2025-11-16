@@ -406,13 +406,17 @@ transforms:
 
       # url
       .url.original = .fgt.url
-      .url.domain = .fgt.hostname
+      .url.domain = to_string(.fgt.hostname) ?? ""
       .url |= parse_url(.fgt.url) ?? {}
 
-      etld_url = parse_etld(.url.domain, plus_parts: 1) ?? {}
-      .url.registered_domain = etld_url.etld_plus
-      .url.top_level_domain = etld_url.etld
-
+      if !is_nullish(.url.domain) {
+        #domain = to_string(.url.domain) ?? ""
+        if !is_ipv4(.url.domain) && !is_ipv6(.url.domain) {
+          etld_url = parse_etld(.url.domain, plus_parts: 1) ?? {}
+          .url.registered_domain = etld_url.etld_plus
+          .url.top_level_domain = etld_url.etld
+        }
+      }
 
       # session.id
       .session.id = string(.fgt.sessionid) ?? string(.fgt.session_id) ?? null # VoIP uses session_id instead of sessionid
