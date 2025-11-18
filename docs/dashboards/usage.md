@@ -4,6 +4,12 @@ Hopefully, our dashboards are very intuitive to use. They are intended for provi
 
 We tried to make dashboards look alike, not matter the vendor or dataset, so we provide a coherent user experience.
 
+- Top Metrics
+- [Main Variable](#action)
+- [Dimensions](#source-destination)
+
+Let's go through our **Traffic Dashboard**:
+
 ## Segmentation
 
 We have segmented the analysis by `network.direction`
@@ -14,9 +20,12 @@ It is completely different if we have an attack in a connection coming from the 
 
 Inside each direction, the analysis is done by a particular parameter: 
 
-- Sessions (connections): We make the assumption that `1 log = 1 connection`. It is not 100% accurate, but a good approximation that is cheap to calculate. For 100% accuracy, we will have to calculate `unique count of session.id` which is very resource expensive.
+- Sessions (connections)
+
+    We make the assumption that `1 log = 1 connection`. It is not 100% accurate, but a good approximation that is cheap to calculate. For 100% accuracy, we will have to calculate `unique count of session.id` which is very resource expensive.
+
 - Bytes
-- [Risk score](https://docs.fortinet.com/document/fortigate/7.2.0/administration-guide/903511/threat-weight) (Only on Fortinet dashboard)
+- [Risk score](https://docs.fortinet.com/document/fortigate/7.2.0/administration-guide/903511/threat-weight) - Only on Fortinet dashboard
 
 ## Action
 
