@@ -18,14 +18,15 @@ We actually use FortiDragon on our day to day operations for threat hunting, so 
 
 Lets build some ground together and make sure this prohect is right for you.
 
-### What you need to have
+### What you need
 - A firewall 🔥
 - A firewall that produces logs 🔥🪵
 - A firewall that produces logs, and you want to make a report 🔥🪵📔
 - A firewall that produces logs, and you want to make a report, and a human is actually going to read it 🔥🪵📔🥸
 - A firewall that produces logs, and you want to make a report, and a human is actually going to read it and take some action. 🔥🪵📔🥸🎬
 
-### What you **DO NOT** need to have
+### What you **DO NOT** need
+
 More important than what you need is what you dont need.
 
 - Money💰🚫
