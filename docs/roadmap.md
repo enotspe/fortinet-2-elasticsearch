@@ -195,7 +195,7 @@ It is time to birng the Machine Learning power to the game to help us find annom
 
 This isn't a rule. It doesn't require you to update thresholds every time your network changes.
 
-### 6. **Anomalous ≠ Malicious**
+### **Anomalous ≠ Malicious**
 
 OK, now we have confidence that `10.0.5.42` is behaving weirdly. But anomalous doesn't always equals malicious.
 
@@ -227,6 +227,7 @@ We must enter the rabbit hole of data science: **dimensional data modeling, feat
 We're currently ingesting directly from Vector to storage. This works great for analysis, but limits our ability to do complex real-time processing.
 
 **Next:**
+
 - **Kafka** - Stream processing backbone for real-time log ingestion
 - **Flink** - Stream processing engine for real-time aggregations and enrichment
 - **Apache Iceberg** - Open table format on S3 for massive-scale analytics
@@ -245,6 +246,7 @@ This foundation enables us to:
 Raw data lakes are worthless without intelligence on top.
 
 **Building:**
+
 - **Clustering** - Automatically group similar behaviors to detect new threat patterns
 - **Feature Extraction** - Multi-dimensional risk calculation based on behavioral baselines
 - **Correlation** - Automatic event correlation using graph traversal and temporal analysis
@@ -306,15 +308,17 @@ We have not forget our day to day, we want to continuous improve what we have al
 ## Why This Matters
 
 The traditional approach to security tooling is:
+
 1. Vendor sells you a black box
 2. You feed it data
 3. It generates alerts based on their rules
 4. You drown in false positives
 5. You blame the tool
 6. Vendor sells you another black box that "uses AI"
-7. Repeat
+7. Rinse and Repeat
 
 **We're building the alternative:**
+
 - Open source and transparent
 - Built by practitioners who feel your pain
 - Designed for firewall logs specifically, but expandable to other security sources
