@@ -13,9 +13,9 @@ Where to start? what direction to take? what path to follow? Not [trivial](canva
 
 First, you need to understand your [data](datasets.md):
 
-*What structure does it have?*
+*What fields does it have?*
 
-*How is it organized?*
+*How is it structured?*
 
 *What information does it provide?*
 
