@@ -15,19 +15,17 @@ If you ever had to debug a [Fortianalyzer query](https://docs.fortinet.com/docum
 
 ## Consistent UI
 
-Every dashboard looks and feels the same. 
+Every dashboard looks and feels the same.
 
-Noone should start "investigating" the dashobard itself, trying to find where things are. 
+Noone should start "investigating" the dashobard itself, trying to find where things are.
 
 Consistency isn't boring. It's respectful of people's cognitive load. And their retinas.
 
 ## Top-to-Bottom Importance
 
-Arrange your dashboard like you're writing a security incident report, not a mystery novel. We don't need the dramatic reveal at the bottom.
-
-- **Top**: The metrics that would make you check Slack at 2 AM
-- **Middle**: Important context and trends
-- **Bottom**: Nice-to-know details and that one graph your manager asked for eight months ago
+- **Top**: Core metrics
+- **Middle**: Main fields
+- **Bottom**: Detailed information
 
 ___
 
@@ -39,6 +37,6 @@ We don’t build dashboards to impress — we build them to empower.
 
 **Consistency beats chaos.**
 
-And when in doubt, **simplify.**
+**And when in doubt, simplify.**
 
-Because the best dashboards don’t make noise — they tell the truth.
+Because the best dashboards don’t make noise — they reveal insights

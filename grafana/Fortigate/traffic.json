@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "mavrxjd",
-    "generation": 105,
+    "generation": 107,
     "creationTimestamp": "2025-09-18T03:06:19Z",
     "labels": {},
     "annotations": {}
@@ -469,7 +469,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -656,7 +656,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -1637,7 +1637,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -19352,7 +19352,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -19467,7 +19467,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -19937,7 +19937,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -20113,7 +20113,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -20305,7 +20305,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -20497,7 +20497,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -20689,7 +20689,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -20914,7 +20914,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -21622,7 +21622,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -21798,7 +21798,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -21990,7 +21990,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -22182,7 +22182,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -22374,7 +22374,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -22599,7 +22599,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -22809,7 +22809,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw}\n| network.transport_port:*\n| stats by (network.transport_port,fgt.utmaction) count() results \n| sort by (results) desc \n| limit 35",
+                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw}\n| network.transport_port:*\n| stats by (network.transport_port,fgt.utmaction) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -23160,7 +23160,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       }

@@ -70,15 +70,15 @@ Add environment variables:
 
 ```bash
 ### Sources ###
-#FORTIGATE_SYSLOG_UDP_PORT=6140
-#FORTIGATE_SYSLOG_TCP_PORT=6140
+#FORTIGATE_SYSLOG_UDP_PORT=5140
+#FORTIGATE_SYSLOG_TCP_PORT=5140
 
-#PANOS_SYSLOG_UDP_PORT=5140
+#PANOS_SYSLOG_UDP_PORT=6140
 
 #FORTIMAIL_SYSLOG_UDP_PORT=5150
 
 #FORTIWEB_SYSLOG_TCP_PORT=5160
-#FORTIAPPSEC_SYSLOG_UDP_PORT=6160
+#FORTIAPPSEC_SYSLOG_UDP_PORT=5161
 
 #FORTIEDR_SYSLOG_UDP_PORT=5180
 
@@ -112,16 +112,19 @@ INTERNAL_NETWORKS=["10.0.0.0/8","172.16.0.0/12","192.168.0.0/16","fc00::/7"]
 
 ## Sinks
 
-Vector can send logs to multiple [storages](https://vector.dev/docs/reference/configuration/sinks/)
+Vector can send logs to multiple [sinks](https://vector.dev/docs/reference/configuration/sinks/)
 
-Configuration files have set all [supported](../../architecture.md/#storage) sinks. 
+Configuration files have set all supported [storages](../../architecture.md/#storage).
 
 !!! warning "Sinks"
     Comment in the ones you will use
 
     Comment out the ones you will not use
 
-By default, [Victoria Logs](../storage/victoria.md) is enabled and [Elasticsearch](../storage/elasticsearch.md) is disabled.
+!!! warning "Sinks"
+    ✅ By default, [Victoria Logs](../storage/victoria.md) is enabled
+
+    ❌ By default, [Elasticsearch](../storage/elasticsearch.md) is disabled.
 
 ```yaml
 sinks:
@@ -159,10 +162,9 @@ sinks:
 #    ...
 ```
 
-
 ## Advanced Configuration
 
-For production deployments, take into account every sink has a section that overrides Vector default values for [buffering](https://vector.dev/docs/architecture/buffering-model/) trying to mimic `Optimized for Throughput` Elastic Agent [settings](https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings). Vector works really well with defaults. Don't use this section unless you really need to fine-tune yor ingest. 
+For production deployments, take into account every sink has a section that overrides Vector default values for [buffering](https://vector.dev/docs/architecture/buffering-model/) trying to mimic `Optimized for Throughput` Elastic Agent [settings](https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings). Vector works really well with defaults. Don't use this section unless you really need to fine-tune yor ingest.
 
 ```yaml
     buffer:
@@ -195,25 +197,24 @@ We have included 2 files for monitoring Vector itself.
 
 and `vector_monitoring.yaml` scrapes metrics and logs. Logs are sent to Loki because it has a [free tier](https://grafana.com/pricing/#logs) which is enough for most cases.
 
-
 Refer to the [Vector documentation](https://vector.dev/docs/) for detailed configuration options.
-
 
 ## Troubleshooting
 
 After configuration, verify that logs are being received:
 
 1. Monitor network traffic:
+
    ```bash
    # On your Vector host
-   sudo tcpdump -i any port 6140
+   sudo tcpdump -i any port 5140
    ```
 
 2. [Troubleshoot](https://vector.dev/guides/level-up/troubleshooting/) Vector:
+
    ```bash
    sudo journalctl -fu vector
    ```
-
 
 ## Next Steps
 
@@ -224,4 +225,3 @@ Once Vector is configured:
 2. Import dashboards in [Grafana](../viz/grafana.md) or [Kibana](../viz/kibana.md)
 
 3. Start dancing with your logs!
-

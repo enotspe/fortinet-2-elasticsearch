@@ -2,7 +2,7 @@
 
 This guide covers how to configure your Fortigate firewall to send syslog data to FortiDragon.
 
-## Basic Syslog Configuration
+## Syslog Configuration
 
 Configure syslog using RFC5424 format (recommended):
 
@@ -17,13 +17,15 @@ end
 
 !!! warning "Firewall Naming Convention"
     When using syslog RFC5424 format, be careful with your firewall hostname:
-    
+
     - ❌ `MY_FIREWALL_SITEA` will **NOT** work
     - ✅ `MY-FIREWALL-SITEA` will work
     
     Use hyphens instead of underscores in hostnames.
 
-## Extended Logging (Optional)
+## Optional Configurations
+
+### Extended Logging
 
 Enable extended logging on webfilter for more detailed information:
 
@@ -38,11 +40,11 @@ end
 
 !!! info "Extended Log Limitations"
     You may get a warning about changing to reliable syslogd. Remember:
-    
+
     - **Reliable Syslog servers**: Full rawdata field of 20KB
     - **Other devices** (disk, FortiAnalyzer, UDP): Maximum 2KB total log length
 
-## SD-WAN Performance Logging (Optional)
+### SD-WAN Performance Logging
 
 To collect metrics about SD-WAN Performance SLAs, configure health-check logging:
 
@@ -64,7 +66,7 @@ config health-check
 end
 ```
 
-## Custom Fields (Optional)
+### Custom Fields
 
 You can inject custom fields into Fortigate's syslog for additional context:
 
@@ -85,21 +87,17 @@ end
 
 After configuration, verify that logs are being sent:
 
-1. **Monitor network traffic**:
    ```bash
-   # On your collector host
+   # On your collector host (Vector)
    sudo tcpdump -i any port 5140
    ```
 
-
 ## Troubleshooting
-
 
 | Problem | Solution |
 |---------|----------|
 | No logs received | Check firewall rules between Fortigate and collector |
 | You do receive packets, but see no logs ingested | Use hyphens instead of underscores in hostname |
-
 
 ## Next Steps
 

@@ -1,14 +1,34 @@
 # Usage
 
-Hopefully, our dashboards are very intuitive to use. They are intended for providing full visibility, not for a high-level view. They are intended for SOC analyst to use on threat hunting activities, fine tunning firewall policies, or any other activity that requires going deep into your data.
+Hopefully, our dashboards are very [intuitive](values.md) to use.
+
+They are intended for SOC analyst to use on threat hunting activities, fine tunning firewall policies, or any other activity that requires going deep into your data.
 
 We tried to make dashboards look alike, not matter the vendor or dataset, so we provide a coherent user experience.
 
 - Top Metrics
-- [Main Variable](#action)
-- [Dimensions](#source-destination)
+- [Main Fields](#action)
+- [Detailed Dimensions Information](#source-destination)
 
-Let's go through our **Traffic Dashboard**:
+Let's go through our **Traffic Dashboard**
+
+![Fortigate](../assets/dashboards/[Grafana] Fortigate full.png)
+![Palo Alto](../assets/dashboards/[Grafana] Palo Alto full.png)
+
+## Navigation and Filtering
+
+We expose all filters than affect the data displayed on the dashboard. This way, you can navigate and filter the data as you please.
+
+![Navigation](../assets/dashboards/[Grafana] Fortigate Navigation Filters.png)
+
+We have also have a navigation bar to move between the different dashboards of the dataset:
+
+| Fortinet | Palo Alto |
+|---------|---------|
+| Ingest | Performance |
+| Traffic | Traffic |
+| UTM | Threat |
+| Event |  |
 
 ## Segmentation
 
@@ -18,13 +38,13 @@ We have segmented the analysis by `network.direction`
 
 It is completely different if we have an attack in a connection coming from the internet than if an IP inside our servers network generated it.
 
-Inside each direction, the analysis is done by a particular parameter: 
+Inside each direction, the analysis is done by a particular parameter:
 
 - Sessions (connections)
 
     We make the assumption that `1 log = 1 connection`. It is not 100% accurate, but a good approximation that is cheap to calculate. For 100% accuracy, we will have to calculate `unique count of session.id` which is very resource expensive.
 
-- Bytes
+- Bytes (soon in Palo Alto)
 - [Risk score](https://docs.fortinet.com/document/fortigate/7.2.0/administration-guide/903511/threat-weight) - Only on Fortinet dashboard
 
 ## Action
@@ -33,7 +53,7 @@ Why do you buy a firewall in the first place??? **To block!**
 
 Understanding what **action** your firewall took for each connection is the most relevant piece of information for security analysis. Every investigation starts here: "What did the firewall do?"
 
-However, each firewall vendor has a different approach on how to understand *action* and what do they mean by it. 
+However, each firewall vendor has a different approach on how to understand *action* and what do they mean by it.
 
 It is a mixture of:
 
@@ -44,7 +64,6 @@ It is a mixture of:
 |Fortigate|Palo Alto|
 |---------|---------|
 | <ul><li>`action`: action taken by firewall policy, or if accepted, it refers to how the connection was ended.</li><li>`utmaction`: action took by the UTM engine, in case connection triggered at least of them.</li></ul>|<ul><li>`threat/content_type`: action took by the security engine.</li><li>`action`: action taken by firewall policy.</li><li>`session_end_reason`: why the session ended.</li></ul>|
-
 
 ### Fortigate
 
@@ -77,13 +96,13 @@ Fortinet offers a lot information about IP, besides just the IP address. We have
     IP address, /24 network, NATed IP and [IP Reputation](https://docs.fortinet.com/document/fortigate/7.6.4/administration-guide/68937/ip-reputation-filtering)
 ![Source](../assets/dashboards/[Grafana] Fortigate Source Destination.png)
 
-
 - User
 
     We explore `user` and its derivations.
 ![Source2](../assets/dashboards/[Grafana] Fortigate Source Destination 2.png)
 
 ### Palo Alto
+
 ![Source](../assets/dashboards/[Grafana] Palo Alto Source Destination.png)
 
 ## Service | Application

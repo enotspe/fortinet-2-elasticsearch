@@ -3,8 +3,8 @@
 [Victoria Logs](https://docs.victoriametrics.com/victorialogs/) is a high-performance log management system.
 
 ## Installation as a service
-There are many ways for [installing](https://docs.victoriametrics.com/victorialogs/quickstart/#how-to-install-and-run-victorialogs) Victoria Logs. Normally, for a Linux environment, you may want to install it as a service.
 
+There are many ways for [installing](https://docs.victoriametrics.com/victorialogs/quickstart/#how-to-install-and-run-victorialogs) Victoria Logs. Normally, for a Linux environment, you may want to install it as a service.
 
 ## Download
 
@@ -22,6 +22,7 @@ VICTORIALOGS_SO=linux
 ```
 
 Download binary:
+
 ```bash
 curl -L -O https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v$VICTORIALOGS_VERSION-victorialogs/victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION-victorialogs.tar.gz
 tar xzf victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION-victorialogs.tar.gz
@@ -37,32 +38,40 @@ Move binary to `/usr/local/bin`:
 ```bash
 sudo mv victoria-logs-prod /usr/local/bin
 ```
+
 !!! info "UPGRADES"
     ℹ️ Repeat this step for upgrading Victoria Logs version
-    
+
 ## System Setup
 
 ### Create VictoriaLogs user
+
 ```bash
 sudo useradd -s /usr/sbin/nologin victorialogs
 ```
 
 ### Change ownership
+
 ```bash
 sudo chown victorialogs:victorialogs /usr/local/bin/victoria-logs-prod
 ```
+
 !!! info "UPGRADES"
     ℹ️ Repeat this step for upgrading Victoria Logs version
-    
-### SELlinux permission:
+
+### SELlinux permission
+
 In case you run SELlinux, change SELlinux permission:
+
 ```bash
 sudo restorecon -v /usr/local/bin/victoria-logs-prod
 ```
+
 !!! info "UPGRADES"
     ℹ️ Repeat this step for upgrading Victoria Logs version
-    
+
 ### Create VictoriaVogs data directory
+
 ```bash
 sudo mkdir -p /var/lib/victoria-logs-data && sudo chown -R victorialogs:victorialogs /var/lib/victoria-logs-data
 ```
@@ -70,6 +79,7 @@ sudo mkdir -p /var/lib/victoria-logs-data && sudo chown -R victorialogs:victoria
 ## Service Configuration
 
 Create `victorialogs` service:
+
 ```bash
 sudo vim /etc/systemd/system/victorialogs.service
 ```
@@ -114,11 +124,12 @@ Note that `-retention*` parameters control lifecycle of ingested logs:
 -retention.maxDiskUsagePercent=80
 #-retention.maxDiskSpaceUsageBytes=800GiB
 ```
+
 Adjust these values based on your storage requirements and retention policies.
 
 !!! warning "Important"
-    ⚔️ `-retention.maxDiskSpaceUsageBytes` and `-retention.maxDiskUsagePercent` flags are mutually exclusive. 
-    
+    ⚔️ `-retention.maxDiskSpaceUsageBytes` and `-retention.maxDiskUsagePercent` flags are mutually exclusive.
+
     **VictoriaLogs will refuse to start if both flags are set simultaneously.**
 
 ### Query Configuration
@@ -165,7 +176,6 @@ sudo journalctl -u victorialogs -f
 
 Refer to the [Victoria Logs documentation](https://docs.victoriametrics.com/VictoriaLogs/) for detailed configuration options.
 
-
 ## Next Steps
 
 Once Victoria Logs is configured:
@@ -174,6 +184,6 @@ Once Victoria Logs is configured:
 
 2. Start dancing with your logs!
 
-## Extra Bonus !!!
+## Extra Bonus
 
 Consider deploying Victoria Logs [MCP](https://github.com/VictoriaMetrics-Community/mcp-victorialogs) server 😱🤖✨
