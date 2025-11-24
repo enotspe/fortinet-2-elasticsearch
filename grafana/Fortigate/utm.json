@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "manfvw5",
-    "generation": 174,
+    "generation": 207,
     "creationTimestamp": "2025-06-20T02:58:42Z",
     "labels": {},
     "annotations": {}
@@ -50,7 +50,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.viruscat:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n  AND fgt.viruscat:*\n    | top 10 (fgt.viruscat)\n    | keep fgt.viruscat\n  )\n  | by (fgt.viruscat) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.viruscat:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | fgt.viruscat:*\n  | top 10 (fgt.viruscat)\n  | keep fgt.viruscat\n  )\n| by (fgt.viruscat) count() results",
                         "legendFormat": "{{fgt.viruscat}}",
                         "queryType": "statsRange"
                       },
@@ -142,7 +142,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -165,7 +165,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND file.name:*\n| stats by (file.name,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| file.name:*\n| stats by (file.name,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -375,7 +375,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -398,7 +398,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.virus:*\n| stats by (fgt.virus,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.virus:*\n| stats by (fgt.virus,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -608,7 +608,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -631,7 +631,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.viruscat:*\n| stats by (fgt.viruscat,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.viruscat:*\n| stats by (fgt.viruscat,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -841,7 +841,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -864,7 +864,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.quarskip:*\n| stats by (fgt.quarskip,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.quarskip:*\n| stats by (fgt.quarskip,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1074,7 +1074,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -1097,7 +1097,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.dtype:*\n| stats by (fgt.dtype,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.dtype:*\n| stats by (fgt.dtype,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1307,7 +1307,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -1330,7 +1330,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.attack:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n  AND fgt.attack:*\n    | top 10 (fgt.attack)\n    | keep fgt.attack\n  )\n  | by (fgt.attack) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.attack:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  AND fgt.attack:*\n    | top 10 (fgt.attack)\n    | keep fgt.attack\n  )\n  | by (fgt.attack) count() results",
                         "legendFormat": "{{fgt.attack}}",
                         "queryType": "statsRange"
                       },
@@ -1423,7 +1423,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -1446,7 +1446,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.severity:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n  AND fgt.severity:*\n    | top 10 (fgt.severity)\n    | keep fgt.severity\n  )\n  | by (fgt.severity) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.severity:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | fgt.severity:*\n  | top 10 (fgt.severity)\n  | keep fgt.severity\n  )\n| by (fgt.severity) count() results",
                         "legendFormat": "{{fgt.severity}}",
                         "queryType": "statsRange"
                       },
@@ -1539,7 +1539,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -1562,7 +1562,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.attack:*\n| stats by (fgt.attack,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.attack:*\n| stats by (fgt.attack,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1773,7 +1773,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -1796,7 +1796,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND dns.resolved_ip:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\n  AND fgt.action:($action) AND $Logsql AND $crscore\n  AND dns.resolved_ip:*\n    | top 10 (dns.resolved_ip)\n    | keep dns.resolved_ip\n  )\n  | unroll dns.resolved_ip\n  | by (dns.resolved_ip) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND dns.resolved_ip:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | dns.resolved_ip:*\n  | top 10 (dns.resolved_ip)\n  | keep dns.resolved_ip\n  )\n| unroll dns.resolved_ip\n| by (dns.resolved_ip) count() results",
                         "legendFormat": "{{dns.resolved_ip}}",
                         "queryType": "statsRange"
                       },
@@ -1889,7 +1889,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -1912,7 +1912,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND dns.question.registered_domain:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n    | top 10 (dns.question.registered_domain)\n    | keep dns.question.registered_domain\n  )\n  | by (dns.question.registered_domain) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND dns.question.registered_domain:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n    | top 10 (dns.question.registered_domain)\n    | keep dns.question.registered_domain\n  )\n  | by (dns.question.registered_domain) count() results",
                         "legendFormat": "{{dns.question.registered_domain}}",
                         "queryType": "statsRange"
                       },
@@ -2005,7 +2005,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -2028,7 +2028,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND dns.resolved_ip:*\n| unroll dns.resolved_ip\n| stats by (dns.resolved_ip,fgt.action) count() results\n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND dns.resolved_ip:*\n| unroll dns.resolved_ip\n| stats by (dns.resolved_ip,fgt.action) count() results\n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2239,7 +2239,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -2262,7 +2262,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND dns.question.type:*\n| stats by (dns.question.type,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND dns.question.type:*\n| stats by (dns.question.type,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2335,11 +2335,11 @@
                     {
                       "targetBlank": false,
                       "title": "Filter for 🔍",
-                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=fgt.qtype%7C%3D%7C${__data.fields[0]}"
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=dns.question.type%7C%3D%7C${__data.fields[0]}"
                     },
                     {
                       "title": "Filter out 🔍",
-                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=fgt.qtype%7C%21%3D%7C${__data.fields[0]}"
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=dns.question.type%7C%21%3D%7C${__data.fields[0]}"
                     }
                   ],
                   "thresholds": {
@@ -2473,7 +2473,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -2496,7 +2496,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND http.request.method:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n  AND http.request.method:*\n    | top 10 (http.request.method)\n    | keep http.request.method\n  )\n  | by (http.request.method) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND http.request.method:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  AND http.request.method:*\n    | top 10 (http.request.method)\n    | keep http.request.method\n  )\n  | by (http.request.method) count() results",
                         "legendFormat": "{{http.request.method}}",
                         "queryType": "statsRange"
                       },
@@ -2589,7 +2589,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2612,7 +2612,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (http.request.method,fgt.action) count(http.request.method) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (http.request.method,fgt.action) count(http.request.method) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2823,7 +2823,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2846,7 +2846,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (url.registered_domain,fgt.action) count(url.registered_domain) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (url.registered_domain,fgt.action) count(url.registered_domain) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2938,8 +2938,7 @@
                         "value": 80
                       }
                     ]
-                  },
-                  "unit": "sishort"
+                  }
                 },
                 "overrides": [
                   {
@@ -3031,6 +3030,18 @@
                         }
                       }
                     ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byType",
+                      "options": "number"
+                    },
+                    "properties": [
+                      {
+                        "id": "unit",
+                        "value": "sishort"
+                      }
+                    ]
                   }
                 ]
               },
@@ -3057,7 +3068,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -3080,7 +3091,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND url.registered_domain:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\n  AND fgt.action:($action) AND $Logsql AND $crscore\n  | url.registered_domain:*\n  | top 10 (url.registered_domain)\n  | keep url.registered_domain\n  )\n  | by (url.registered_domain) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND url.registered_domain:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | url.registered_domain:*\n  | top 10 (url.registered_domain)\n  | keep url.registered_domain\n  )\n| by (url.registered_domain) count() results",
                         "legendFormat": "{{url.registered_domain}}",
                         "queryType": "statsRange"
                       },
@@ -3173,7 +3184,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -3196,7 +3207,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.catdesc,fgt.action) count(fgt.catdesc) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.catdesc,fgt.action) count(fgt.catdesc) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3407,7 +3418,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -3430,7 +3441,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND url.registered_domain:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\n  AND fgt.action:($action) AND $Logsql AND $crscore\n  | url.registered_domain:*\n  | top 10 (url.registered_domain)\n  | keep url.registered_domain\n  )\n  | by (url.registered_domain) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND url.registered_domain:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | url.registered_domain:*\n  | top 10 (url.registered_domain)\n  | keep url.registered_domain\n  )\n| by (url.registered_domain) count() results",
                         "legendFormat": "{{url.registered_domain}}",
                         "queryType": "statsRange"
                       },
@@ -3523,7 +3534,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -3546,7 +3557,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (url.registered_domain,fgt.action) count(url.registered_domain) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (url.registered_domain,fgt.action) count(url.registered_domain) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3757,7 +3768,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -3780,7 +3791,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.severity,fgt.action) count(fgt.severity) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.severity,fgt.action) count(fgt.severity) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3991,7 +4002,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -4014,7 +4025,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.matchfilename:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\n  AND fgt.action:($action) AND $Logsql AND $crscore\n  | fgt.matchfilename:*\n  | top 10 (fgt.matchfilename)\n  | keep fgt.matchfilename\n  )\n  | by (fgt.matchfilename) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.matchfilename:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | fgt.matchfilename:*\n  | top 10 (fgt.matchfilename)\n  | keep fgt.matchfilename\n  )\n| by (fgt.matchfilename) count() results",
                         "legendFormat": "{{fgt.matchfilename}}",
                         "queryType": "statsRange"
                       },
@@ -4107,7 +4118,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -4130,7 +4141,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.matchfilename,fgt.action) count(fgt.matchfilename) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.matchfilename,fgt.action) count(fgt.matchfilename) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4341,7 +4352,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -4364,7 +4375,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.matchfiletype,fgt.action) count(fgt.matchfiletype) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.matchfiletype,fgt.action) count(fgt.matchfiletype) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4575,7 +4586,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -4598,7 +4609,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.matchfiletype:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\n  AND fgt.action:($action) AND $Logsql AND $crscore\n  | fgt.matchfiletype:*\n  | top 10 (fgt.matchfiletype)\n  | keep fgt.matchfiletype\n  )\n  | by (fgt.matchfiletype) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.matchfiletype:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | fgt.matchfiletype:*\n  | top 10 (fgt.matchfiletype)\n  | keep fgt.matchfiletype\n  )\n| by (fgt.matchfiletype) count() results",
                         "legendFormat": "{{fgt.matchfiletype}}",
                         "queryType": "statsRange"
                       },
@@ -4691,7 +4702,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -4714,7 +4725,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| fgt.user:*\n| stats by (fgt.user,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.user:*\n| stats by (fgt.user,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4953,7 +4964,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| fgt.unauthuser:*\n| stats by (fgt.unauthuser,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.unauthuser:*\n| stats by (fgt.unauthuser,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5192,7 +5203,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| fgt.dstuser:*\n| stats by (fgt.dstuser,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.dstuser:*\n| stats by (fgt.dstuser,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5431,7 +5442,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| fgt.dstunauthuser:*\n| stats by (fgt.dstunauthuser,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.dstunauthuser:*\n| stats by (fgt.dstunauthuser,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5670,7 +5681,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| fgt.authserver:*\n| stats by (fgt.authserver,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.authserver:*\n| stats by (fgt.authserver,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5909,7 +5920,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| fgt.unauthusersource:*\n| stats by (fgt.unauthusersource,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.unauthusersource:*\n| stats by (fgt.unauthusersource,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -6148,7 +6159,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| fgt.dstauthserver:*\n| stats by (fgt.dstauthserver,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.dstauthserver:*\n| stats by (fgt.dstauthserver,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -6387,7 +6398,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| fgt.dstunauthusersource:*\n| stats by (fgt.dstunauthusersource,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.dstunauthusersource:*\n| stats by (fgt.dstunauthusersource,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -6607,229 +6618,6 @@
           }
         }
       },
-      "panel-144": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (source.ip:/24,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
-                        "queryType": "stats"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": [
-                {
-                  "kind": "joinByLabels",
-                  "spec": {
-                    "id": "joinByLabels",
-                    "options": {
-                      "value": "__name__"
-                    }
-                  }
-                },
-                {
-                  "kind": "groupingToMatrix",
-                  "spec": {
-                    "id": "groupingToMatrix",
-                    "options": {
-                      "columnField": "fgt.action",
-                      "rowField": "source.ip",
-                      "valueField": "results"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "description": "",
-          "id": 144,
-          "links": [],
-          "title": "source.ip /24",
-          "transparent": true,
-          "vizConfig": {
-            "group": "barchart",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "fixed"
-                  },
-                  "custom": {
-                    "axisBorderShow": false,
-                    "axisCenteredZero": false,
-                    "axisColorMode": "text",
-                    "axisLabel": "",
-                    "axisPlacement": "auto",
-                    "fillOpacity": 80,
-                    "gradientMode": "none",
-                    "hideFrom": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": false
-                    },
-                    "lineWidth": 1,
-                    "scaleDistribution": {
-                      "type": "linear"
-                    },
-                    "thresholdsStyle": {
-                      "mode": "off"
-                    }
-                  },
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  },
-                  "unit": "sishort"
-                },
-                "overrides": [
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "pass"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-blue",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "passthrough"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-blue",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "permit"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-blue",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "block"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-red",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "blocked"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-red",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "dropped"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-red",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              "options": {
-                "barRadius": 0,
-                "barWidth": 0.97,
-                "fullHighlight": false,
-                "groupWidth": 0.7,
-                "legend": {
-                  "calcs": [],
-                  "displayMode": "list",
-                  "placement": "bottom",
-                  "showLegend": true
-                },
-                "orientation": "horizontal",
-                "showValue": "auto",
-                "stacking": "normal",
-                "tooltip": {
-                  "hideZeros": false,
-                  "mode": "multi",
-                  "sort": "desc"
-                },
-                "xTickLabelRotation": 0,
-                "xTickLabelSpacing": 0
-              }
-            },
-            "version": "12.2.0-17610496912"
-          }
-        }
-      },
       "panel-145": {
         "kind": "Panel",
         "spec": {
@@ -6849,7 +6637,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (dns.question.registered_domain,fgt.action) count(dns.question.registered_domain) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (dns.question.registered_domain,fgt.action) count(dns.question.registered_domain) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -7060,7 +6848,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -7083,7 +6871,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (dns.question.name,fgt.action) count(dns.question.name) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (dns.question.name,fgt.action) count(dns.question.name) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -7294,7 +7082,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -7317,7 +7105,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.catdesc,fgt.action) count(fgt.catdesc) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.catdesc,fgt.action) count(fgt.catdesc) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -7528,7 +7316,829 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
+          }
+        }
+      },
+      "panel-148": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.fsaverdict:*\n| stats by (fgt.fsaverdict,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                },
+                {
+                  "kind": "groupingToMatrix",
+                  "spec": {
+                    "id": "groupingToMatrix",
+                    "options": {
+                      "columnField": "fgt.action",
+                      "rowField": "fgt.fsaverdict",
+                      "valueField": "results"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 148,
+          "links": [],
+          "title": "fgt.fsaverdict",
+          "vizConfig": {
+            "group": "barchart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "fixed"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 80,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "links": [
+                    {
+                      "targetBlank": false,
+                      "title": "Filter for 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=fgt.fsaverdict%7C%3D%7C${__data.fields[0]}"
+                    },
+                    {
+                      "title": "Filter out 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=fgt.fsaverdict%7C%21%3D%7C${__data.fields[0]}"
+                    }
+                  ],
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "pass"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "passthrough"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "permit"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "block"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "blocked"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "dropped"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "options": {
+                "barRadius": 0,
+                "barWidth": 0.97,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "orientation": "horizontal",
+                "showValue": "auto",
+                "stacking": "normal",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+              }
+            },
+            "version": "12.4.0-19174562009.patch2"
+          }
+        }
+      },
+      "panel-149": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (source.ip:/24,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                },
+                {
+                  "kind": "groupingToMatrix",
+                  "spec": {
+                    "id": "groupingToMatrix",
+                    "options": {
+                      "columnField": "fgt.action",
+                      "rowField": "source.ip",
+                      "valueField": "results"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 149,
+          "links": [],
+          "title": "source.ip /24",
+          "transparent": true,
+          "vizConfig": {
+            "group": "barchart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "fixed"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 80,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "pass"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "passthrough"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "permit"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "block"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "blocked"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "dropped"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "options": {
+                "barRadius": 0,
+                "barWidth": 0.97,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "orientation": "horizontal",
+                "showValue": "auto",
+                "stacking": "normal",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+              }
+            },
+            "version": "12.4.0-19174562009.patch2"
+          }
+        }
+      },
+      "panel-150": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.eventsubtype,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                },
+                {
+                  "kind": "groupingToMatrix",
+                  "spec": {
+                    "id": "groupingToMatrix",
+                    "options": {
+                      "columnField": "fgt.action",
+                      "rowField": "fgt.eventsubtype",
+                      "valueField": "results"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 150,
+          "links": [],
+          "title": "fgt.eventsubtype",
+          "transparent": true,
+          "vizConfig": {
+            "group": "barchart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "fixed"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 80,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "links": [
+                    {
+                      "targetBlank": false,
+                      "title": "Filter for 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=fgt.eventsubtype%7C%3D%7C${__data.fields[0]}"
+                    },
+                    {
+                      "title": "Filter out 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=fgt.eventsubtype%7C%21%3D%7C${__data.fields[0]}"
+                    }
+                  ],
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "pass"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "passthrough"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "permit"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "block"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "blocked"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "dropped"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "options": {
+                "barRadius": 0,
+                "barWidth": 0.97,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "orientation": "horizontal",
+                "showValue": "auto",
+                "stacking": "normal",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+              }
+            },
+            "version": "12.4.0-19174562009.patch3"
+          }
+        }
+      },
+      "panel-151": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (rule.id,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                },
+                {
+                  "kind": "groupingToMatrix",
+                  "spec": {
+                    "id": "groupingToMatrix",
+                    "options": {
+                      "columnField": "log.syslog.hostname",
+                      "rowField": "rule.id",
+                      "valueField": "results"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 151,
+          "links": [],
+          "title": "rule.id by log.syslog.hostname",
+          "transparent": true,
+          "vizConfig": {
+            "group": "barchart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 80,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": []
+              },
+              "options": {
+                "barRadius": 0,
+                "barWidth": 0.97,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "orientation": "horizontal",
+                "showValue": "auto",
+                "stacking": "normal",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+              }
+            },
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -7551,7 +8161,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND NOT fgt.srccountry:Reserved \n| stats by (fgt.srccountry) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| NOT fgt.srccountry:Reserved \n| stats by (fgt.srccountry) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -7571,7 +8181,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND NOT fgt.dstcountry:Reserved \n| stats by (fgt.dstcountry) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| NOT fgt.dstcountry:Reserved \n| stats by (fgt.dstcountry) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -7699,7 +8309,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -7722,7 +8332,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND NOT fgt.srccountry:Reserved \n| stats by (fgt.srccountry) count() results \n| sort by (results) desc \n| limit 5",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| NOT fgt.srccountry:Reserved\n| fgt.srccountry:* \n| stats by (fgt.srccountry) count() results \n| sort by (results) desc \n| limit 5",
                         "legendFormat": "{{fgt.srccountry}}",
                         "queryType": "stats"
                       },
@@ -7783,7 +8393,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -7806,7 +8416,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND NOT fgt.dstcountry:Reserved \n| stats by (fgt.dstcountry) count() results \n| sort by (results) desc \n| limit 5",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| NOT fgt.dstcountry:Reserved\n| fgt.dstcountry:* \n| stats by (fgt.dstcountry) count() results \n| sort by (results) desc \n| limit 5",
                         "legendFormat": "{{fgt.dstcountry}}",
                         "queryType": "stats"
                       },
@@ -7867,7 +8477,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -7890,7 +8500,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats count() total_logs, count_uniq(source.ip) unique_source.ip, count_uniq(destination.ip) unique_destination.ip, count_uniq(network.transport_port) unique_network.transport_port, count_uniq(url.registered_domain) unique_url.registered_domain",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats count() total_logs, count_uniq(session.id) unique_session.id, count_uniq(source.ip) unique_source.ip, count_uniq(destination.ip) unique_destination.ip, count_uniq(network.transport_port) unique_network.transport_port, count_uniq(url.registered_domain) unique_url.registered_domain",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -7952,7 +8562,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -7975,7 +8585,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.eventtype) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.eventtype) count() results",
                         "legendFormat": "{{fgt.eventtype}}",
                         "queryType": "statsRange"
                       },
@@ -8159,7 +8769,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -8182,7 +8792,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.msg,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.msg,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -8393,7 +9003,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -8416,7 +9026,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.profile,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.profile,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -8525,7 +9135,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -8548,7 +9158,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND user_agent.original:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n  AND user_agent.original:*\n    | top 10 (user_agent.original)\n    | keep user_agent.original\n  )\n  | by (user_agent.original) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND user_agent.original:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  AND user_agent.original:*\n    | top 10 (user_agent.original)\n    | keep user_agent.original\n  )\n  | by (user_agent.original) count() results",
                         "legendFormat": "{{user_agent.original}}",
                         "queryType": "statsRange"
                       },
@@ -8641,7 +9251,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -8664,7 +9274,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.catdesc:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n  AND fgt.catdesc:*\n    | top 10 (fgt.catdesc)\n    | keep fgt.catdesc\n  )\n  | by (fgt.catdesc) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.catdesc:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | fgt.catdesc:*\n  | top 10 (fgt.catdesc)\n  | keep fgt.catdesc\n  )\n| by (fgt.catdesc) count() results",
                         "legendFormat": "{{fgt.catdesc}}",
                         "queryType": "statsRange"
                       },
@@ -8757,7 +9367,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -8780,7 +9390,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (user_agent.original,fgt.action) count(user_agent.original) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (user_agent.original,fgt.action) count(user_agent.original) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -8991,7 +9601,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -9014,7 +9624,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND source.ip:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n    | top 10 (source.ip)\n    | keep source.ip\n  )\n  | by (source.ip) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| source.ip:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | top 10 (source.ip)\n  | keep source.ip\n  )\n| by (source.ip) count() results",
                         "legendFormat": "{{source.ip}}",
                         "queryType": "statsRange"
                       },
@@ -9107,7 +9717,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -9130,7 +9740,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND destination.ip:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n    | top 10 (destination.ip)\n    | keep destination.ip\n  )\n  | by (destination.ip) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| destination.ip:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | top 10 (destination.ip)\n  | keep destination.ip\n  )\n| by (destination.ip) count() results",
                         "legendFormat": "{{destination.ip}}",
                         "queryType": "statsRange"
                       },
@@ -9223,7 +9833,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -9246,7 +9856,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (source.ip,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (source.ip,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -9462,7 +10072,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -9485,7 +10095,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (destination.ip,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (destination.ip,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -9567,7 +10177,7 @@
                     {
                       "targetBlank": true,
                       "title": "Virus Total 🦠",
-                      "url": "https://www.virustotal.com/gui/ip-address/${__data.fields[0}"
+                      "url": "https://www.virustotal.com/gui/ip-address/${__data.fields[0]}"
                     }
                   ],
                   "thresholds": {
@@ -9701,7 +10311,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -9724,7 +10334,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (destination.ip:/24,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (destination.ip:/24,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -9924,7 +10534,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -9947,7 +10557,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (source.ip,fgt.action) count_uniq(destination.ip) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (source.ip,fgt.action) count_uniq(destination.ip) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -10163,7 +10773,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -10186,7 +10796,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (source.ip,fgt.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (source.ip,fgt.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -10402,7 +11012,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -10425,7 +11035,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (destination.ip,fgt.action) count_uniq(source.ip) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (destination.ip,fgt.action) count_uniq(source.ip) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -10641,7 +11251,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -10664,7 +11274,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (destination.ip,fgt.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (destination.ip,fgt.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -10880,7 +11490,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -10903,7 +11513,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.applist,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.applist,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -11012,7 +11622,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -11035,7 +11645,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=$type,fgt.subtype=$subtype,network.direction in (${direction:doublequote})} \nAND fgt.action:($action) AND $Logsql AND $crscore\nAND network.application:in(\n  _stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=$type,fgt.subtype=$subtype,network.direction in (${direction:doublequote})} \nAND fgt.action:($action) AND $Logsql AND $crscore\n    | top 10 (network.application)\n    | keep network.application\n  )\n  | by (network.application) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| network.application:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | top 10 (network.application)\n  | keep network.application\n  )\n| by (network.application) count() results",
                         "legendFormat": "{{network.application}}",
                         "queryType": "statsRange"
                       },
@@ -11127,7 +11737,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -11150,7 +11760,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=$type,fgt.subtype=$subtype,network.direction in (${direction:doublequote})} \nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.appcat:in(\n  _stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=$type,fgt.subtype=$subtype,network.direction in (${direction:doublequote})} \nAND fgt.action:($action) AND $Logsql AND $crscore\n    | top 10 (fgt.appcat)\n    | keep fgt.appcat\n  )\n  | by (fgt.appcat) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.appcat:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | top 10 (fgt.appcat)\n  | keep fgt.appcat\n  )\n| by (fgt.appcat) count() results",
                         "legendFormat": "{{fgt.appcat}}",
                         "queryType": "statsRange"
                       },
@@ -11242,7 +11852,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -11265,7 +11875,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=$type,fgt.subtype=$subtype,network.direction in (${direction:doublequote})} \nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (network.application,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (network.application,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -11475,7 +12085,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -11498,7 +12108,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=$type,fgt.subtype=$subtype,network.direction in (${direction:doublequote})} \nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.service,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.service,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -11708,7 +12318,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -11731,7 +12341,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=$type,fgt.subtype=$subtype,network.direction in (${direction:doublequote})} \nAND fgt.action:($action) AND $Logsql AND $crscore\n| stats by (fgt.appcat,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| stats by (fgt.appcat,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -11941,7 +12551,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -11964,7 +12574,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=$type,fgt.subtype=$subtype,network.direction in (${direction:doublequote})} \nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.apprisk:*\n| stats by (fgt.apprisk,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\nAND fgt.apprisk:*\n| stats by (fgt.apprisk,fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -12174,7 +12784,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -12197,7 +12807,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND file.name:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n  AND file.name:*\n    | top 10 (file.name)\n    | keep file.name\n  )\n  | by (file.name) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| file.name:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | file.name:*\n  | top 10 (file.name)\n  | keep file.name\n  )\n| by (file.name) count() results",
                         "legendFormat": "{{file.name}}",
                         "queryType": "statsRange"
                       },
@@ -12289,7 +12899,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       },
@@ -12312,7 +12922,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\nAND fgt.virus:in(\n  _stream: {fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in ($firewall),fgt.vd in ($vdom),network.direction in (${direction:doublequote})}\nAND fgt.action:($action) AND $Logsql AND $crscore\n  AND fgt.virus:*\n    | top 10 (fgt.virus)\n    | keep fgt.virus\n  )\n  | by (fgt.virus) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n| fgt.virus:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),network.direction in (${direction:doublequote})}\n  | fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND ${crscore:raw}\n  | fgt.virus:*\n  | top 10 (fgt.virus)\n  | keep fgt.virus\n  )\n| by (fgt.virus) count() results",
                         "legendFormat": "{{fgt.virus}}",
                         "queryType": "statsRange"
                       },
@@ -12404,7 +13014,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch2"
           }
         }
       }
@@ -12430,6 +13040,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -12456,6 +13067,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "RowsLayout",
                                     "spec": {
@@ -12463,6 +13075,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -12488,6 +13101,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -12499,6 +13113,32 @@
                                                       "element": {
                                                         "kind": "ElementReference",
                                                         "name": "panel-73"
+                                                      }
+                                                    }
+                                                  },
+                                                  {
+                                                    "kind": "AutoGridLayoutItem",
+                                                    "spec": {
+                                                      "conditionalRendering": {
+                                                        "kind": "ConditionalRenderingGroup",
+                                                        "spec": {
+                                                          "condition": "and",
+                                                          "items": [
+                                                            {
+                                                              "kind": "ConditionalRenderingVariable",
+                                                              "spec": {
+                                                                "operator": "equals",
+                                                                "value": "ssl",
+                                                                "variable": "subtype"
+                                                              }
+                                                            }
+                                                          ],
+                                                          "visibility": "show"
+                                                        }
+                                                      },
+                                                      "element": {
+                                                        "kind": "ElementReference",
+                                                        "name": "panel-150"
                                                       }
                                                     }
                                                   },
@@ -12553,9 +13193,18 @@
                                                         "name": "panel-91"
                                                       }
                                                     }
+                                                  },
+                                                  {
+                                                    "kind": "AutoGridLayoutItem",
+                                                    "spec": {
+                                                      "element": {
+                                                        "kind": "ElementReference",
+                                                        "name": "panel-151"
+                                                      }
+                                                    }
                                                   }
                                                 ],
-                                                "maxColumnCount": 3,
+                                                "maxColumnCount": 4,
                                                 "rowHeightMode": "standard"
                                               }
                                             },
@@ -12616,6 +13265,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "RowsLayout",
                                     "spec": {
@@ -12623,6 +13273,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -12658,6 +13309,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "TabsLayout",
                                               "spec": {
@@ -12676,6 +13328,15 @@
                                                                 "element": {
                                                                   "kind": "ElementReference",
                                                                   "name": "panel-83"
+                                                                }
+                                                              }
+                                                            },
+                                                            {
+                                                              "kind": "AutoGridLayoutItem",
+                                                              "spec": {
+                                                                "element": {
+                                                                  "kind": "ElementReference",
+                                                                  "name": "panel-149"
                                                                 }
                                                               }
                                                             },
@@ -12730,15 +13391,6 @@
                                                                 "element": {
                                                                   "kind": "ElementReference",
                                                                   "name": "panel-90"
-                                                                }
-                                                              }
-                                                            },
-                                                            {
-                                                              "kind": "AutoGridLayoutItem",
-                                                              "spec": {
-                                                                "element": {
-                                                                  "kind": "ElementReference",
-                                                                  "name": "panel-144"
                                                                 }
                                                               }
                                                             }
@@ -12855,6 +13507,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "conditionalRendering": {
                                     "kind": "ConditionalRenderingGroup",
                                     "spec": {
@@ -12881,6 +13534,14 @@
                                           "spec": {
                                             "operator": "equals",
                                             "value": "file-filter",
+                                            "variable": "subtype"
+                                          }
+                                        },
+                                        {
+                                          "kind": "ConditionalRenderingVariable",
+                                          "spec": {
+                                            "operator": "equals",
+                                            "value": "ssl",
                                             "variable": "subtype"
                                           }
                                         }
@@ -12977,6 +13638,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "conditionalRendering": {
                                     "kind": "ConditionalRenderingGroup",
                                     "spec": {
@@ -13001,6 +13663,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13036,6 +13699,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13095,6 +13759,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "conditionalRendering": {
                                     "kind": "ConditionalRenderingGroup",
                                     "spec": {
@@ -13119,6 +13784,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13162,6 +13828,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13211,10 +13878,20 @@
                                                         "name": "panel-105"
                                                       }
                                                     }
+                                                  },
+                                                  {
+                                                    "kind": "AutoGridLayoutItem",
+                                                    "spec": {
+                                                      "element": {
+                                                        "kind": "ElementReference",
+                                                        "name": "panel-148"
+                                                      }
+                                                    }
                                                   }
                                                 ],
-                                                "maxColumnCount": 6,
-                                                "rowHeightMode": "standard"
+                                                "maxColumnCount": 3,
+                                                "rowHeight": 260,
+                                                "rowHeightMode": "custom"
                                               }
                                             },
                                             "title": ""
@@ -13229,6 +13906,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "conditionalRendering": {
                                     "kind": "ConditionalRenderingGroup",
                                     "spec": {
@@ -13253,6 +13931,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13297,6 +13976,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13347,6 +14027,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "conditionalRendering": {
                                     "kind": "ConditionalRenderingGroup",
                                     "spec": {
@@ -13371,6 +14052,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13406,6 +14088,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13450,6 +14133,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -13491,6 +14175,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "conditionalRendering": {
                                     "kind": "ConditionalRenderingGroup",
                                     "spec": {

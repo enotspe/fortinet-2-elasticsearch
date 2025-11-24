@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "madbs2d",
-    "generation": 45,
+    "generation": 52,
     "creationTimestamp": "2025-06-20T22:41:43Z",
     "labels": {},
     "annotations": {}
@@ -50,7 +50,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| fgt.cfgtid:*\n| stats by (fgt.action) count() results",
                         "legendFormat": "{{fgt.action}}",
                         "queryType": "statsRange"
                       },
@@ -102,6 +102,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -142,7 +143,7 @@
                 }
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -165,7 +166,8 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| fgt.cfgtid:*",
+                        "maxLines": 3000,
                         "queryType": "instant"
                       },
                       "version": "v0"
@@ -232,6 +234,9 @@
                     "cellOptions": {
                       "type": "auto"
                     },
+                    "footer": {
+                      "reducers": []
+                    },
                     "inspect": false
                   },
                   "thresholds": {
@@ -252,24 +257,16 @@
               },
               "options": {
                 "cellHeight": "sm",
-                "footer": {
-                  "countRows": false,
-                  "fields": "",
-                  "reducer": [
-                    "sum"
-                  ],
-                  "show": false
-                },
                 "showHeader": true,
                 "sortBy": [
                   {
-                    "desc": true,
+                    "desc": false,
                     "displayName": "Time"
                   }
                 ]
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -292,7 +289,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| fgt.cfgtid:*\n| stats by (fgt.action) count() results \n| sort by (results) desc \n| limit 10",
                         "legendFormat": "{{fgt.action}}",
                         "queryType": "stats"
                       },
@@ -346,6 +343,7 @@
                   "fields": "",
                   "values": true
                 },
+                "sort": "desc",
                 "tooltip": {
                   "hideZeros": false,
                   "mode": "multi",
@@ -353,7 +351,7 @@
                 }
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -376,7 +374,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,fgt.user) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| fgt.cfgtid:*\n| stats by (fgt.action,fgt.user) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -485,7 +483,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -508,7 +506,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,fgt.cfgpath) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| fgt.cfgtid:*\n| stats by (fgt.action,fgt.cfgpath) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -617,7 +615,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -640,7 +638,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.mem) avg_mem",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.mem) avg_mem",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -705,7 +703,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -728,7 +726,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats by (fgt.action,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| fgt.cfgtid:*\n| stats by (fgt.action,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -837,7 +835,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -847,7 +845,21 @@
           "data": {
             "kind": "QueryGroup",
             "spec": {
-              "queries": [],
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "group": "",
+                      "kind": "DataQuery",
+                      "spec": {},
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
               "queryOptions": {},
               "transformations": []
             }
@@ -918,7 +930,7 @@
                 "mode": "markdown"
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -941,7 +953,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.method:*\n| stats by (fgt.logdesc,fgt.method) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.method:*\n| stats by (fgt.logdesc,fgt.method) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1111,7 +1123,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1134,7 +1146,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc,fgt.reason) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\n| stats by (fgt.logdesc,fgt.reason) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1304,7 +1316,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1327,7 +1339,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\n| stats by (fgt.logdesc,log.syslog.hostname) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1471,6 +1483,29 @@
                         }
                       }
                     ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byNames",
+                      "options": {
+                        "mode": "exclude",
+                        "names": [
+                          "Admin login failed"
+                        ],
+                        "prefix": "All except:",
+                        "readOnly": true
+                      }
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.hideFrom",
+                        "value": {
+                          "legend": false,
+                          "tooltip": true,
+                          "viz": true
+                        }
+                      }
+                    ]
                   }
                 ]
               },
@@ -1497,7 +1532,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1520,7 +1555,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.mem) avg_mem",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.mem) avg_mem",
                         "queryType": "statsRange"
                       },
                       "version": "v0"
@@ -1615,7 +1650,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -1638,7 +1673,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.srcip) unique_fgt.srcip, count_uniq(fgt.user) successful_login_user",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.srcip) unique_fgt.srcip, count_uniq(fgt.user) successful_login_user",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1700,7 +1735,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1723,7 +1758,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n  AND fgt.user:*\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\n  AND fgt.user:*\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "statsRange"
                       },
@@ -1775,6 +1810,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1815,7 +1851,7 @@
                 }
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1838,7 +1874,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n  AND fgt.logdesc:\"Admin login successful\"\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\n  AND fgt.logdesc:\"Admin login successful\"\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "statsRange"
                       },
@@ -1890,6 +1926,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1930,7 +1967,7 @@
                 }
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1953,7 +1990,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.user:*\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.user:*\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2108,6 +2145,29 @@
                         }
                       }
                     ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byNames",
+                      "options": {
+                        "mode": "exclude",
+                        "names": [
+                          "Admin login failed"
+                        ],
+                        "prefix": "All except:",
+                        "readOnly": true
+                      }
+                    },
+                    "properties": [
+                      {
+                        "id": "custom.hideFrom",
+                        "value": {
+                          "legend": false,
+                          "tooltip": true,
+                          "viz": true
+                        }
+                      }
+                    ]
                   }
                 ]
               },
@@ -2134,7 +2194,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2157,7 +2217,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.cpu) avg_cpu",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.cpu) avg_cpu",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2223,7 +2283,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.1.0-88106"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2246,7 +2306,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.ui:*\n| stats by (fgt.ui,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.ui:*\n| stats by (fgt.ui,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2427,7 +2487,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2450,7 +2510,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.logdesc:\"Admin login successful\"\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.logdesc:\"Admin login successful\"\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2631,7 +2691,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2654,7 +2714,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\nAND fgt.logdesc:\"Admin login successful\"\n| stats by (fgt.ui,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.logdesc:\"Admin login successful\"\n| stats by (fgt.ui,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2835,7 +2895,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2858,7 +2918,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND $Logsql\n| stats by (fgt.logdesc) count() results",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\n| stats by (fgt.logdesc) count() results",
                         "legendFormat": "{{fgt.logdesc}}",
                         "queryType": "statsRange"
                       },
@@ -2910,6 +2970,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -3011,7 +3072,7 @@
                 }
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -3034,7 +3095,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.cpu) avg_cpu",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.cpu) avg_cpu",
                         "queryType": "statsRange"
                       },
                       "version": "v0"
@@ -3084,6 +3145,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -3128,7 +3190,7 @@
                 }
               }
             },
-            "version": "12.1.0-88106"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -3151,7 +3213,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.totalsession) avg_concurrent_sessions\n#| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.totalsession) avg_concurrent_sessions\n#| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3212,7 +3274,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.1.0-88106"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -3235,7 +3297,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| $Logsql\n| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
                         "queryType": "statsRange"
                       },
                       "version": "v0"
@@ -3285,6 +3347,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -3338,7 +3401,7 @@
                 }
               }
             },
-            "version": "12.1.0-88106"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -3361,7 +3424,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.cfgtid:* AND $Logsql\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.cfgpath) unique_cfgpath",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| fgt.cfgtid:*\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.cfgpath) unique_cfgpath",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3423,7 +3486,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       }
@@ -3450,6 +3513,8 @@
                                 "kind": "RowsLayoutRow",
                                 "spec": {
                                   "collapse": false,
+                                  "fillScreen": false,
+                                  "hideHeader": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -3469,7 +3534,7 @@
                                           }
                                         }
                                       ],
-                                      "maxColumnCount": 2,
+                                      "maxColumnCount": 3,
                                       "rowHeightMode": "short"
                                     }
                                   },
@@ -3479,6 +3544,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -3700,6 +3766,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "RowsLayout",
                           "spec": {
@@ -3707,6 +3774,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -3831,6 +3899,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -3865,6 +3934,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -3890,6 +3960,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -3992,6 +4063,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -4150,10 +4222,10 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-24h",
+      "from": "2025-08-01T05:00:00.000Z",
       "hideTimepicker": false,
       "timezone": "America/Lima",
-      "to": "now"
+      "to": "2025-09-01T04:59:59.000Z"
     },
     "title": "System [FortiOS] v2",
     "variables": [

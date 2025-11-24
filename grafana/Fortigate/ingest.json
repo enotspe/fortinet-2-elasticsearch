@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "mawpjs6",
-    "generation": 19,
+    "generation": 29,
     "creationTimestamp": "2025-06-13T20:08:32Z",
     "labels": {},
     "annotations": {}
@@ -50,7 +50,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| $Logsql\n| stats count() total_logs, count_uniq(log.syslog.hostname) unique_firewall, count_uniq(fgt.vd) unique_vdom, count_uniq(fgt.type) unique_type, count_uniq(fgt.subtype) unique_subtype",
+                        "expr": "_stream: {observer.vendor=\"Fortinet\",observer.type=firewall,log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| ${Logsql:raw}\n| stats count() total_logs, count_uniq(log.syslog.hostname) unique_firewall, count_uniq(fgt.vd) unique_vdom, count_uniq(fgt.type) unique_type, count_uniq(fgt.subtype) unique_subtype",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -112,7 +112,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -135,7 +135,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| $Logsql\n#| stats by (log.syslog.hostname) count() results\n|  by (log.syslog.hostname) rate()",
+                        "expr": "_stream: {observer.vendor=\"Fortinet\",observer.type=firewall,log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| ${Logsql:raw}\n#| stats by (log.syslog.hostname) count() results\n|  by (log.syslog.hostname) rate()",
                         "legendFormat": "{{log.syslog.hostname}}",
                         "queryType": "statsRange"
                       },
@@ -228,7 +228,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -251,7 +251,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| $Logsql\n| stats by (log.syslog.hostname) count() results",
+                        "expr": "_stream: {observer.vendor=\"Fortinet\",observer.type=firewall,log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| ${Logsql:raw}\n| stats by (log.syslog.hostname) count() results",
                         "legendFormat": "{{log.syslog.hostname}}",
                         "queryType": "statsRange"
                       },
@@ -343,7 +343,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -366,7 +366,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| $Logsql\n#| stats by (fgt.type) count() results\n|  by (fgt.type) rate()",
+                        "expr": "_stream: {observer.vendor=\"Fortinet\",observer.type=firewall,log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| ${Logsql:raw}\n#| stats by (fgt.type) count() results\n|  by (fgt.type) rate()",
                         "legendFormat": "{{fgt.type}}",
                         "queryType": "statsRange"
                       },
@@ -459,7 +459,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -482,7 +482,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| $Logsql\n| stats by (fgt.type,fgt.subtype) count() results \n| sort by (results) desc \n",
+                        "expr": "_stream: {observer.vendor=\"Fortinet\",observer.type=firewall,log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| ${Logsql:raw}\n| stats by (fgt.type,fgt.subtype) count() results \n| sort by (results) desc \n",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -591,7 +591,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -614,7 +614,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| $Logsql\n| stats by (log.syslog.hostname,network.direction) count() results \n| sort by (results) desc",
+                        "expr": "_stream: {observer.vendor=\"Fortinet\",observer.type=firewall,log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| ${Logsql:raw}\n| stats by (log.syslog.hostname,network.direction) count() results \n| sort by (results) desc",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -723,7 +723,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -746,7 +746,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| $Logsql\n| stats by (log.syslog.hostname,fgt.vd) count() results \n| sort by (results) desc",
+                        "expr": "_stream: {observer.vendor=\"Fortinet\",observer.type=firewall,log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| ${Logsql:raw}\n| stats by (log.syslog.hostname,fgt.vd) count() results \n| sort by (results) desc",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -855,7 +855,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -878,7 +878,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream: {log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| $Logsql\n| stats by (log.syslog.hostname,fgt.type) count() results \n| sort by (results) desc",
+                        "expr": "_stream: {observer.vendor=\"Fortinet\",observer.type=firewall,log.syslog.hostname in(${firewall:doublequote}),fgt.vd in(${vdom:doublequote}),fgt.type in(${type:doublequote}),fgt.subtype in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| ${Logsql:raw}\n| stats by (log.syslog.hostname,fgt.type) count() results \n| sort by (results) desc",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -987,7 +987,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       }
@@ -999,6 +999,7 @@
           {
             "kind": "RowsLayoutRow",
             "spec": {
+              "collapse": false,
               "hideHeader": false,
               "layout": {
                 "kind": "AutoGridLayout",
@@ -1026,6 +1027,7 @@
           {
             "kind": "RowsLayoutRow",
             "spec": {
+              "collapse": false,
               "layout": {
                 "kind": "AutoGridLayout",
                 "spec": {
@@ -1052,6 +1054,7 @@
           {
             "kind": "RowsLayoutRow",
             "spec": {
+              "collapse": false,
               "layout": {
                 "kind": "AutoGridLayout",
                 "spec": {
@@ -1283,7 +1286,7 @@
             "text": "",
             "value": ""
           },
-          "definition": "{fgt.type in(*)}",
+          "definition": "{observer.vendor=\"Fortinet\",observer.type=firewall,fgt.type in(*)}",
           "hide": "dontHide",
           "includeAll": true,
           "multi": true,
@@ -1298,7 +1301,7 @@
             "spec": {
               "field": "log.syslog.hostname",
               "limit": 25,
-              "query": "{fgt.type in(*)}",
+              "query": "{observer.vendor=\"Fortinet\",observer.type=firewall,fgt.type in(*)}",
               "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
               "type": "fieldValue"
             },
@@ -1349,36 +1352,31 @@
       {
         "kind": "CustomVariable",
         "spec": {
+          "allValue": "*",
           "allowCustomValue": true,
           "current": {
-            "text": [
-              "traffic",
-              "utm",
-              "event"
-            ],
+            "text": "All",
             "value": [
-              "traffic",
-              "utm",
-              "event"
+              "$__all"
             ]
           },
           "hide": "dontHide",
-          "includeAll": false,
+          "includeAll": true,
           "multi": true,
           "name": "type",
           "options": [
             {
-              "selected": true,
+              "selected": false,
               "text": "traffic",
               "value": "traffic"
             },
             {
-              "selected": true,
+              "selected": false,
               "text": "utm",
               "value": "utm"
             },
             {
-              "selected": true,
+              "selected": false,
               "text": "event",
               "value": "event"
             }

@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "ma9cn4k",
-    "generation": 14,
+    "generation": 27,
     "creationTimestamp": "2025-06-14T01:22:21Z",
     "labels": {},
     "annotations": {}
@@ -49,7 +49,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"tunnel-down\" AND $Logsql\n| stats by (fgt.user) sum(fgt.duration) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"tunnel-down\"\n| stats by (fgt.user) sum(fgt.duration) results \n| sort by (results) desc \n| limit 10",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "stats"
                       },
@@ -194,6 +194,17 @@
                         }
                       }
                     ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byType",
+                      "options": "string"
+                    },
+                    "properties": [
+                      {
+                        "id": "unit"
+                      }
+                    ]
                   }
                 ]
               },
@@ -221,7 +232,439 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
+          }
+        }
+      },
+      "panel-101": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"tunnel-up\"\n| NOT fgt.srccountry:Reserved \n| stats by (fgt.srccountry) count() results \n| sort by (results) desc \n| limit 10",
+                        "legendFormat": "",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "srccountry"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 101,
+          "links": [],
+          "title": "",
+          "vizConfig": {
+            "group": "geomap",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "thresholds"
+                  },
+                  "custom": {
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": []
+              },
+              "options": {
+                "basemap": {
+                  "config": {},
+                  "name": "Layer 0",
+                  "noRepeat": false,
+                  "type": "default"
+                },
+                "controls": {
+                  "mouseWheelZoom": true,
+                  "showAttribution": true,
+                  "showDebug": false,
+                  "showMeasure": false,
+                  "showScale": false,
+                  "showZoom": true
+                },
+                "layers": [
+                  {
+                    "config": {
+                      "blur": 15,
+                      "radius": 10,
+                      "weight": {
+                        "field": "Value",
+                        "fixed": 1,
+                        "max": 1,
+                        "min": 0
+                      }
+                    },
+                    "location": {
+                      "lookup": "fgt.srccountry",
+                      "mode": "lookup"
+                    },
+                    "name": "srcountry",
+                    "tooltip": true,
+                    "type": "heatmap"
+                  }
+                ],
+                "tooltip": {
+                  "mode": "details"
+                },
+                "view": {
+                  "allLayers": true,
+                  "id": "zero",
+                  "lat": 0,
+                  "lon": 0,
+                  "noRepeat": false,
+                  "zoom": 1
+                }
+              }
+            },
+            "version": "12.4.0-19378664917"
+          }
+        }
+      },
+      "panel-102": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"tunnel-up\"\n| fgt.srccountry:* AND NOT fgt.srccountry:Reserved \n| stats by (fgt.srccountry) count() results \n| sort by (results) desc \n| limit 20",
+                        "legendFormat": "{{fgt.srccountry}}",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "srccountry"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 102,
+          "links": [],
+          "title": "fgt.srscountry",
+          "vizConfig": {
+            "group": "piechart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    }
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": []
+              },
+              "options": {
+                "legend": {
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true
+                },
+                "pieType": "pie",
+                "reduceOptions": {
+                  "calcs": [
+                    "lastNotNull"
+                  ],
+                  "fields": "",
+                  "values": true
+                },
+                "sort": "desc",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                }
+              }
+            },
+            "version": "12.4.0-19378664917"
+          }
+        }
+      },
+      "panel-103": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"ssl-login-fail\"\n| NOT fgt.srccountry:Reserved \n| stats by (fgt.srccountry) count() results \n| sort by (results) desc \n| limit 10",
+                        "legendFormat": "",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "srccountry"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 103,
+          "links": [],
+          "title": "",
+          "vizConfig": {
+            "group": "geomap",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "thresholds"
+                  },
+                  "custom": {
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    }
+                  },
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": []
+              },
+              "options": {
+                "basemap": {
+                  "config": {},
+                  "name": "Layer 0",
+                  "noRepeat": false,
+                  "type": "default"
+                },
+                "controls": {
+                  "mouseWheelZoom": true,
+                  "showAttribution": true,
+                  "showDebug": false,
+                  "showMeasure": false,
+                  "showScale": false,
+                  "showZoom": true
+                },
+                "layers": [
+                  {
+                    "config": {
+                      "blur": 15,
+                      "radius": 10,
+                      "weight": {
+                        "field": "Value",
+                        "fixed": 1,
+                        "max": 1,
+                        "min": 0
+                      }
+                    },
+                    "location": {
+                      "lookup": "fgt.srccountry",
+                      "mode": "lookup"
+                    },
+                    "name": "srcountry",
+                    "tooltip": true,
+                    "type": "heatmap"
+                  }
+                ],
+                "tooltip": {
+                  "mode": "details"
+                },
+                "view": {
+                  "allLayers": true,
+                  "id": "zero",
+                  "lat": 0,
+                  "lon": 0,
+                  "noRepeat": false,
+                  "zoom": 1
+                }
+              }
+            },
+            "version": "12.4.0-19174562009.patch3"
+          }
+        }
+      },
+      "panel-104": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"ssl-login-fail\"\n| fgt.srccountry:* AND NOT fgt.srccountry:Reserved \n| stats by (fgt.srccountry) count() results \n| sort by (results) desc \n| limit 5",
+                        "legendFormat": "{{fgt.srccountry}}",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "srccountry"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 104,
+          "links": [],
+          "title": "fgt.srscountry",
+          "vizConfig": {
+            "group": "piechart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    }
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": []
+              },
+              "options": {
+                "legend": {
+                  "displayMode": "list",
+                  "placement": "right",
+                  "showLegend": true
+                },
+                "pieType": "pie",
+                "reduceOptions": {
+                  "calcs": [
+                    "lastNotNull"
+                  ],
+                  "fields": "",
+                  "values": true
+                },
+                "sort": "desc",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                }
+              }
+            },
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -244,7 +687,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"ssl-login-fail\" AND $Logsql\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.tunneltype:in(${tunneltype:doublequote})\n  AND fgt.action:\"ssl-login-fail\" AND $Logsql\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"ssl-login-fail\"\n| fgt.user:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  | fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n  | fgt.action:\"ssl-login-fail\"\n  | top 10 (fgt.user)\n  | keep fgt.user\n  )\n| by (fgt.user) count() results",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "statsRange"
                       },
@@ -296,6 +739,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -336,92 +780,7 @@
                 }
               }
             },
-            "version": "12.1.0-16426244399"
-          }
-        }
-      },
-      "panel-86": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote}) AND $Logsql\nAND fgt.action:\"tunnel-up\"\n| stats  count() results",
-                        "queryType": "statsRange"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": []
-            }
-          },
-          "description": "",
-          "id": 86,
-          "links": [],
-          "title": "success login by hour",
-          "transparent": true,
-          "vizConfig": {
-            "group": "marcusolsson-hourly-heatmap-panel",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "thresholds"
-                  },
-                  "custom": {
-                    "calculation": "sum",
-                    "colorPalette": "interpolateSpectral",
-                    "colorSpace": "rgb",
-                    "groupBy": 60,
-                    "invertPalette": true,
-                    "nullValueColor": "rgb(155, 155, 155)"
-                  },
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  },
-                  "unit": "sishort"
-                },
-                "overrides": []
-              },
-              "options": {
-                "from": "0",
-                "legendGradientQuality": "high",
-                "showCellBorder": false,
-                "showLegend": false,
-                "showTooltip": true,
-                "showValueIndicator": false,
-                "to": "0"
-              }
-            },
-            "version": "2.0.1"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -444,7 +803,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"ssl-login-fail\" AND $Logsql\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"ssl-login-fail\"\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -599,6 +958,17 @@
                         }
                       }
                     ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byType",
+                      "options": "string"
+                    },
+                    "properties": [
+                      {
+                        "id": "unit"
+                      }
+                    ]
                   }
                 ]
               },
@@ -625,7 +995,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -648,7 +1018,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"ssl-login-fail\" AND $Logsql\n| stats by (fgt.reason,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"ssl-login-fail\"\n| stats by (fgt.reason,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -829,7 +1199,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-16426244399"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -852,7 +1222,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote}) AND $Logsql\n| stats by (fgt.logdesc) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| stats by (fgt.logdesc) count() results",
                         "legendFormat": "{{fgt.logdesc}}",
                         "queryType": "statsRange"
                       },
@@ -1006,7 +1376,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -1029,7 +1399,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"tunnel-up\" AND $Logsql\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"tunnel-up\"\n| stats by (fgt.user,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1210,7 +1580,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -1233,7 +1603,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"tunnel-up\" AND $Logsql\n| stats by (fgt.remip,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"tunnel-up\"\n| stats by (fgt.remip,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1414,7 +1784,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -1437,7 +1807,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"tunnel-down\" AND $Logsql\n| stats by (fgt.reason,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"tunnel-down\"\n| stats by (fgt.reason,fgt.logdesc) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1618,7 +1988,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -1641,7 +2011,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"tunnel-up\" AND $Logsql\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.tunneltype:in(${tunneltype:doublequote})\n  AND fgt.action:\"tunnel-up\" AND $Logsql\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"tunnel-up\"\n| fgt.user:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  | fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n  | fgt.action:\"tunnel-up\"\n  | top 10 (fgt.user)\n  | keep fgt.user\n  )\n| by (fgt.user) count() results",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "statsRange"
                       },
@@ -1734,7 +2104,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -1757,7 +2127,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote})\nAND fgt.action:\"tunnel-stats\" AND $Logsql\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.tunneltype:in(${tunneltype:doublequote})\n  AND fgt.action:\"tunnel-stats\" AND $Logsql\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| fgt.action:\"tunnel-stats\"\n| fgt.user:in(\n  _stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  | fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n  | fgt.action:\"tunnel-stats\"\n  | top 10 (fgt.user)\n  | keep fgt.user\n  )\n| by (fgt.user) count() results",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "statsRange"
                       },
@@ -1850,7 +2220,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -1873,7 +2243,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote}) AND $Logsql\n| stats count() results",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw}\n| stats count() total_logs, count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.remip) unique_fgt.remip",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1888,91 +2258,6 @@
           },
           "description": "",
           "id": 97,
-          "links": [],
-          "title": "Total Logs",
-          "transparent": true,
-          "vizConfig": {
-            "group": "stat",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "fixed"
-                  },
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  },
-                  "unit": "sishort"
-                },
-                "overrides": []
-              },
-              "options": {
-                "colorMode": "none",
-                "graphMode": "area",
-                "justifyMode": "auto",
-                "orientation": "auto",
-                "percentChangeColorMode": "standard",
-                "reduceOptions": {
-                  "calcs": [
-                    "lastNotNull"
-                  ],
-                  "fields": "",
-                  "values": false
-                },
-                "showPercentChange": false,
-                "textMode": "auto",
-                "wideLayout": true
-              }
-            },
-            "version": "12.2.0-17610496912"
-          }
-        }
-      },
-      "panel-98": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote}) AND $Logsql\n| count_uniq(fgt.user) unique_fgt.user, count_uniq(fgt.remip) unique_fgt.remip",
-                        "queryType": "stats"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": []
-            }
-          },
-          "description": "",
-          "id": 98,
           "links": [],
           "title": "",
           "transparent": true,
@@ -2005,7 +2290,7 @@
               "options": {
                 "colorMode": "none",
                 "graphMode": "area",
-                "justifyMode": "auto",
+                "justifyMode": "center",
                 "orientation": "auto",
                 "percentChangeColorMode": "standard",
                 "reduceOptions": {
@@ -2020,7 +2305,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -2043,7 +2328,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.tunneltype:in(${tunneltype:doublequote}) AND $Logsql AND fgt.logdesc:\"SSL VPN tunnel up\"\n| count_uniq(fgt.user) successful_login_user",
+                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| fgt.tunneltype:in(${tunneltype:doublequote}) AND ${Logsql:raw} AND fgt.logdesc:\"SSL VPN tunnel up\"\n| count_uniq(fgt.user) successful_login_user",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2090,7 +2375,7 @@
               "options": {
                 "colorMode": "none",
                 "graphMode": "area",
-                "justifyMode": "auto",
+                "justifyMode": "center",
                 "orientation": "auto",
                 "percentChangeColorMode": "standard",
                 "reduceOptions": {
@@ -2105,7 +2390,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19378664917"
           }
         }
       }
@@ -2137,21 +2422,12 @@
                       "spec": {
                         "element": {
                           "kind": "ElementReference",
-                          "name": "panel-98"
-                        }
-                      }
-                    },
-                    {
-                      "kind": "AutoGridLayoutItem",
-                      "spec": {
-                        "element": {
-                          "kind": "ElementReference",
                           "name": "panel-99"
                         }
                       }
                     }
                   ],
-                  "maxColumnCount": 4,
+                  "maxColumnCount": 2,
                   "rowHeight": 100,
                   "rowHeightMode": "custom"
                 }
@@ -2208,7 +2484,16 @@
                                 "spec": {
                                   "element": {
                                     "kind": "ElementReference",
-                                    "name": "panel-86"
+                                    "name": "panel-101"
+                                  }
+                                }
+                              },
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-102"
                                   }
                                 }
                               }
@@ -2223,6 +2508,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -2258,6 +2544,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -2335,6 +2622,41 @@
                                 "spec": {
                                   "element": {
                                     "kind": "ElementReference",
+                                    "name": "panel-103"
+                                  }
+                                }
+                              },
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-104"
+                                  }
+                                }
+                              }
+                            ],
+                            "maxColumnCount": 3,
+                            "rowHeightMode": "standard"
+                          }
+                        },
+                        "title": ""
+                      }
+                    },
+                    {
+                      "kind": "RowsLayoutRow",
+                      "spec": {
+                        "collapse": false,
+                        "layout": {
+                          "kind": "AutoGridLayout",
+                          "spec": {
+                            "columnWidthMode": "standard",
+                            "items": [
+                              {
+                                "kind": "AutoGridLayoutItem",
+                                "spec": {
+                                  "element": {
+                                    "kind": "ElementReference",
                                     "name": "panel-80"
                                   }
                                 }
@@ -2351,6 +2673,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
