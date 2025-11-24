@@ -219,7 +219,7 @@ After configuration, verify that logs are being received:
 
 Once Vector is configured:
 
-1. Set up [Victoria Logs](../storage/victoria.md) or [Elasticsearch](../storage/elastic.md)
+1. Set up [Victoria Logs](../storage/victoria.md) or [Elasticsearch](../storage/elasticsearch.md)
 
 2. Import dashboards in [Grafana](../viz/grafana.md) or [Kibana](../viz/kibana.md)
 

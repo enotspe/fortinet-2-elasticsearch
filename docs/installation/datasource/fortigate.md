@@ -107,7 +107,7 @@ Once Fortigate is configured:
 
 1. [Install Vector](../ingest/vector.md)
 
-2. Set up [Victoria Logs](../storage/victoria.md) or [Elasticsearch](../storage/elastic.md)
+2. Set up [Victoria Logs](../storage/victoria.md) or [Elasticsearch](../storage/elasticsearch.md)
 
 3. Import dashboards in [Grafana](../viz/grafana.md) or [Kibana](../viz/kibana.md)
 

@@ -73,7 +73,7 @@ You should end up with something like:
 ```
 
 !!! warning "Ingest Pipelines"
-    Ingest Pipelines are not loaded by default with our [script](../storage/elastic.md/#set-load)
+    Ingest Pipelines are not loaded by default with our [script](../storage/elasticsearch.md/#set-load)
     
     Make sure to set `LOAD_INGEST_PIPELINES` to `true`
 
@@ -93,7 +93,7 @@ Depending on your Events per Second (EPS) volume, you may need to increase perfo
 
 ## Next Steps
 
-1. Set up [Elasticsearch](../storage/elastic.md)
+1. Set up [Elasticsearch](../storage/elasticsearch.md)
 
 2. Import dashboards in [Kibana](../viz/kibana.md)
 

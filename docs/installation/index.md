@@ -38,7 +38,7 @@ The ingestion layer receives syslog data, parses it, enriches it, and forwards i
 |------|--------|-------|
 | **Vector** | ✅ **Recommended** | [→ Setup Guide](ingest/vector.md) |
 | Logstash | ❌ Deprecated | [→ Setup Guide](ingest/logstash.md) |
-| Elastic Agent | ❌ Deprecated |  [→ Setup Guide](ingest/elastic%20agent.md) |
+| Elastic Agent | ❌ Deprecated |  [→ Setup Guide](ingest/elastic-agent.md) |
 
 !!! success "Chef's Choice"
     **Use Vector**
@@ -59,7 +59,7 @@ Choose where to store your parsed logs for analysis.
 | Platform | Status | Guide | 
 |----------|-------|----------------|
 | **Victoria Logs** |  ✅ **Recommended** | [→ Setup Guide](storage/victoria.md) | 
-| **Elasticsearch** | 👴🏻 Supported | [→ Setup Guide](storage/elastic.md) | 
+| **Elasticsearch** | 👴🏻 Supported | [→ Setup Guide](storage/elasticsearch.md) | 
 
 !!! success "Chef's Choice"
     **Use Victoria Logs**
@@ -113,7 +113,7 @@ Choose your path based on your needs:
 
 1. [Configure Fortigate](datasource/fortigate.md) → Syslog to Vector
 2. [Install Vector](ingest/vector.md) → Parse and enrich logs
-3. [Configure Elasticsearch](storage/elastic.md) → Use existing cluster
+3. [Configure Elasticsearch](storage/elasticsearch.md) → Use existing cluster
 4. [Setup Kibana](viz/kibana.md) → Import dashboards
 
 **Time to first dashboard:** ~45 minutes

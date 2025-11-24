@@ -33,7 +33,7 @@ More important than what you need is what you dont need.
 
 If you feel related to the previous statements, we got you covered.
 
-If you are Splunk, QRadar, or [Elastic Serverless](https://www.elastic.co/pricing/serverless-search) users, you are welcome to stay and make a [contribution](engage.md#support-the-project) to support FortiDragon. You will get more value out of your 💵 here.
+If you are Splunk, QRadar, or [Elastic Serverless](https://www.elastic.co/pricing/serverless-search) users, you are welcome to stay and make a [contribution](engage.md#help-us-grow) to support FortiDragon. You will get more value out of your 💵 here.
 
 ## The Challenge
 

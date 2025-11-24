@@ -88,7 +88,7 @@ Elasticseach has a "statical" approach to datastream definition because we have 
 
 ## Next Steps
 
-1. Set up [Elasticsearch](../storage/elastic.md)
+1. Set up [Elasticsearch](../storage/elasticsearch.md)
 
 2. Import dashboards in [Kibana](../viz/kibana.md)
 
