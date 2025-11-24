@@ -1,6 +1,6 @@
 site_name: FortiDragon Documentation
-site_description: Fortinet logs to Elasticsearch
-site_author: FortiDragon Team
+site_description: Network security logs analytics
+site_author: Dragon
 site_url: https://enotspe.github.io/fortinet-2-elasticsearch/
 
 repo_name: enotspe/fortinet-2-elasticsearch
@@ -10,6 +10,7 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
+
     # Palette toggle for light mode
     - scheme: default
       primary: indigo
@@ -25,12 +26,14 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    # REMOVED: navigation.tabs and navigation.tabs.sticky
-    - navigation.sections
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.sections
     - navigation.expand
     - navigation.path
+    #- navigation.prune
     - navigation.top
-    - navigation.indexes  # Allows section index pages
+    - navigation.indexes
     - search.highlight
     - search.share
     - search.suggest
@@ -71,21 +74,21 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-  - admonition
   - pymdownx.details
-  - attr_list
-  - md_in_html
   - pymdownx.blocks.caption
-  - tables
-  - toc:
-      permalink: true
-      permalink_title: Link to this section
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.keys  # For keyboard shortcuts
   - pymdownx.mark  # For highlighting text
   - pymdownx.critic  # For showing changes
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Link to this section
   - footnotes
   - def_list
   #- glightbox
@@ -94,17 +97,29 @@ markdown_extensions:
 
 #nav:
 #  - Home: index.md
+#  - Engage: engage.md
+#  - Architecture: architecture.md
+#  - Roadmap: roadmap.md
 #  - Installation:
 #    - installation/index.md
-#    - Fortigate Setup: installation/fortigate.md
-#    - Elastic Stack: installation/elastic.md
-#    - Syslog Collectors: installation/collectors.md
-#    - Vector: installation/vector.md
-#    - Victoria Logs: installation/victoria.md
+#    - Datasource: 
+#     - Fortigate: installation/datasource/fortigate.md
+#    - Ingest: 
+#     - Vector: installation/ingest/vector.md
+#     - Elastic Agent: installation/ingest/elastic-agent.md
+#     - Logstash: installation/ingest/logstash.md
+#    - Storage: 
+#     - Victoria Logs: installation/storage/victoria.md
+#     - Elasticsearch: installation/storage/elasticsearch.md
+#    - Visualization: 
+#     - Grafana: installation/viz/grafana.md
+#     - Kibana: installation/viz/kibana.md
 #  - Dashboards:
 #    - dashboards/index.md
-#  - Datasets: datasets.md
-#  - Contributing: contributing.md
+#    - Canvas: dashboards/canvas.md
+#    - Values: dashboards/values.md
+#    - Datasets: dashboards/datasets.md
+#    - Usage: dashboards/usage.md
 
 extra:
   social:

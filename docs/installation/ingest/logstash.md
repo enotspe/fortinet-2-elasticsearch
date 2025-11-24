@@ -1,6 +1,5 @@
 # Logstash
 
-
 !!! warning "DEPRECATED"
     ‚ùå Do not deploy Logstash
     
@@ -86,3 +85,11 @@ Output is based on index strategy, which is crucial for large ingestion cases ü
 In our experience, `type=traffic` generates lots of logs, while `type=event` very few. Even inside `type=traffic` you might have that most of your logs have `action=denied`, so you may want to split them even further. Splitting into several datastreams allows to assign different ILMs policies and also will be faster for searching.
 
 Elasticseach has a "statical" approach to datastream definition because we have to somehow map our strategy to the datastream fields. If we would like to add a couple of fields to our splitting decision, like `action` and `source.locality`, we would need to insert those fields into `data_stream.dataset` and we might impact index template and ILM. Surely if we want to benefit from a faster searching on those fields we would need to change their mapping to `constant_keyword`. We don't know in advance how our data is distributed, and even if we knew, that might change on the future.
+
+## Next Steps
+
+1. Set up [Elasticsearch](../storage/elastic.md)
+
+2. Import dashboards in [Kibana](../viz/kibana.md)
+
+3. Start dancing with your logs!

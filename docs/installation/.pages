@@ -1,0 +1,5 @@
+arrange:
+  - datasource
+  - ingest
+  - storage
+  - viz

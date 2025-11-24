@@ -1,14 +1,12 @@
 # Engage
 
-## Community
+## Community and Support
 
 Join our community on [Discord](https://discord.gg/9qn4enV) 🤓.
 
-Feel free to ask about anything on the channel, not only project related, but Fortinet, Palo Alt, networking, threat hunting, etc.
+Feel free to ask about anything on the channel: support, questions, ideas, not only project related, but Fortinet, Palo Alto, networking, threat hunting, etc.
 
-## Support the Project
-
-If FortiDragon has helped you, consider:
+## Help Us Grow
 
 If FortiDragon helps you:
 
@@ -17,6 +15,16 @@ If FortiDragon helps you:
 - 📢 Share with colleagues
 - 🤝 [Contribute](#areas-for-contribution)
 
+## Reporting Issues
+
+If you find a bug or have a feature request:
+
+1. Check if the issue already exists in our [GitHub Issues](https://github.com/enotspe/fortinet-2-elasticsearch/issues)
+2. If not, create a new issue with:
+   - Clear description of the problem or feature
+   - Steps to reproduce (for bugs)
+   - Expected vs actual behavior
+   - Your environment details (Fortinet / Palo Alto version, Elastic Stack / Victoria Logs version, etc.)
 
 ## Areas for Contribution
 
@@ -28,36 +36,24 @@ If FortiDragon helps you:
 - **Report Issues**: Report bugs or errors
 - **Performance**: Optimize general performance
 
-## Reporting Issues
-
-If you find a bug or have a feature request:
-
-1. Check if the issue already exists in our [GitHub Issues](https://github.com/enotspe/fortinet-2-elasticsearch/issues)
-2. If not, create a new issue with:
-   - Clear description of the problem or feature
-   - Steps to reproduce (for bugs)
-   - Expected vs actual behavior
-   - Your environment details (Fortinet / Palo Alto versions, Elastic Stack / Victoria Logs version, etc.)
-
 ## Code Contributions
 
-1. **Fork the repository**
+1. Fork the repository
    ```bash
    git clone https://github.com/enotspe/fortinet-2-elasticsearch.git
    cd fortinet-2-elasticsearch
    ```
 
-2. **Create a feature branch**
+2. Create a feature branch
    ```bash
    git checkout -b feature/your-feature-name
    ```
 
-3. **Make your changes**
-    - Follow existing code style and conventions
+3. Make your changes
     - Add documentation for new features
     - Test your changes thoroughly
 
-4. **Submit a Pull Request**
+4. Submit a Pull Request
     - Provide a clear description of your changes
     - Reference any related issues
     - Include screenshots for UI changes

@@ -117,7 +117,9 @@ Note that `-retention*` parameters control lifecycle of ingested logs:
 Adjust these values based on your storage requirements and retention policies.
 
 !!! warning "Important"
-    ⚔️ `-retention.maxDiskSpaceUsageBytes` and `-retention.maxDiskUsagePercent` flags are mutually exclusive. VictoriaLogs will refuse to start if both flags are set simultaneously.
+    ⚔️ `-retention.maxDiskSpaceUsageBytes` and `-retention.maxDiskUsagePercent` flags are mutually exclusive. 
+    
+    **VictoriaLogs will refuse to start if both flags are set simultaneously.**
 
 ### Query Configuration
 
@@ -130,7 +132,7 @@ Note that `-search*` parameters control query execution:
 
 See full options for [Victoria Logs flags](https://docs.victoriametrics.com/victorialogs/#list-of-command-line-flags)
 
-## Start Service
+### Start Service
 
 Start and enable the service:
 
@@ -141,7 +143,7 @@ sudo systemctl start victorialogs
 sudo systemctl status victorialogs
 ```
 
-### Verification
+## Troubleshooting
 
 Check version:
 
@@ -164,21 +166,13 @@ sudo journalctl -u victorialogs -f
 Refer to the [Victoria Logs documentation](https://docs.victoriametrics.com/VictoriaLogs/) for detailed configuration options.
 
 
-## Troubleshooting
-
-| Problem | Solution |
-|---------|----------|
-|  |  |
-
-
 ## Next Steps
 
-Once Elasticsearch is configured:
+Once Victoria Logs is configured:
 
+1. Import dashboards in [Grafana](../viz/grafana.md)
 
-1. [Configure Vector](../ingest/vector.md)
-2. [Start sending logs from Fortigate!](../datasource/fortigate.md)
-3. [Load Grafana dashboards](../viz/grafana.md)
+2. Start dancing with your logs!
 
 ## Extra Bonus !!!
 

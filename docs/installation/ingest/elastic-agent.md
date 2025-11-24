@@ -91,3 +91,10 @@ Depending on your Events per Second (EPS) volume, you may need to increase perfo
 - Run `watch -d "column -t cat /proc/net/snmp | grep -w Udp"` on your Elastic Agent host to check if you are dropping any logs.
 
 
+## Next Steps
+
+1. Set up [Elasticsearch](../storage/elastic.md)
+
+2. Import dashboards in [Kibana](../viz/kibana.md)
+
+3. Start dancing with your logs!

@@ -1,6 +1,6 @@
 # Grafana
 
-There are many way for [installing](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) Grafana, or you can just use [Grafana Cloud](https://grafana.com/products/cloud/) which is [free](https://grafana.com/pricing/?pg=prod-cloud&plcmt=pricing-details#grafana) up to 3 users.
+There are many ways for [installing](https://grafana.com/docs/grafana/latest/setup-grafana/installation/) Grafana, or you can just use [Grafana Cloud](https://grafana.com/products/cloud/) which has a [free](https://grafana.com/pricing/?pg=prod-cloud&plcmt=pricing-details#grafana) tier.
 
 ## Victoria Logs
 
@@ -16,13 +16,13 @@ grafana-cli plugins install victoriametrics-logs-datasource
 
 ### Configure Datasource Plugin
 
-Go to [**Home > Connections > Datasources**](https://grafana.com/docs/grafana/latest/datasources/) and click the **Add data source** button in the upper right
+Go to [**Home > Connections > Datasources**](https://grafana.com/docs/grafana/latest/datasources/) and click the **Add data source** button in the upper right.
 
-Select **VictoriaLogs**
+Select **VictoriaLogs**.
 
-Fill `URL` (and other relevant parameters)
+Fill `URL` (and other relevant parameters).
 
-Save and Test
+Click **Save and Test** button.
 
 ## Import Dashbaords
 

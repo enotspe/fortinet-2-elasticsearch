@@ -1,0 +1,4 @@
+title: Visualization
+arrange:
+  - grafana.md
+  - kibana.md

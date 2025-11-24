@@ -98,15 +98,17 @@ After configuration, verify that logs are being sent:
 | Problem | Solution |
 |---------|----------|
 | No logs received | Check firewall rules between Fortigate and collector |
-| You do receive packets, but see no logs ingested | Use hyphens instead of underscores in hostnames |
-| Truncated logs | Switch to reliable syslog or reduce log verbosity |
-| Logs Drops | Increase buffers |
+| You do receive packets, but see no logs ingested | Use hyphens instead of underscores in hostname |
 
 
 ## Next Steps
 
 Once Fortigate is configured:
 
-1. [Set up your Elastic Stack](../storage/elastic.md)
+1. [Install Vector](../ingest/vector.md)
 
-3. Start receiving and analyzing logs!
+2. Set up [Victoria Logs](../storage/victoria.md) or [Elasticsearch](../storage/elastic.md)
+
+3. Import dashboards in [Grafana](../viz/grafana.md) or [Kibana](../viz/kibana.md)
+
+4. Start dancing with your logs!

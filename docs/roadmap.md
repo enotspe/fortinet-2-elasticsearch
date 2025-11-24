@@ -30,7 +30,13 @@ The problem isn't that we lack rules — we have too many.
 
 The problem isn't that we lack detections — we're drowning in it.
 
-The problem is that **traditional rule-based detection doesn't apply** to the complexity and volume of modern network traffic. A rule like "if X happens, then alert" really does not make any sense for network logs because **each individual log is almost worthless**.
+The problem is that **traditional rule-based detection doesn't apply** to the information and volume of network traffic. 
+
+A rule like 
+
+*"if X happens, then alert"*
+
+really does not make any sense for network logs because **each individual log is almost worthless**.
 
 As we discussed previously on [The Challenge](index.md#the-challenge), we need to see the whole forest, not an specific tree. We need systems that understand context, learn baselines, and surface truly anomalous behavior.
 
@@ -40,16 +46,18 @@ As we discussed previously on [The Challenge](index.md#the-challenge), we need t
 
 ### **The new ~~5~~ 4-tupple**
 
-Firewall [datasets](https://github.com/enotspe/fortinet-2-elasticsearch/tree/main/datasets/Fortinet/Fortigate/7.6/unique_fields) contain over 200 fields. We can't pivot on them all.
+Firewall [datasets](https://github.com/enotspe/fortinet-2-elasticsearch/tree/main/datasets/Fortinet/Fortigate/7.6/unique_fields) contain over 200 fields. We can't pivot on all of them.
 
-We need to choose **core anchors** that become the foundation for our analysis. These are our **dimensions**:
+We need to choose **core anchors** that become the foundation for our analysis.
+
+These are our **dimensions**:
 
 ![new 4 tupple](assets/4tupple.png)
 
-- **Source IPs** 
-- **Destination IPs** 
-- **Services** (Protocol/Destination Port)
-- **Applications** 
+- **Source IP** 
+- **Destination IP** 
+- **Service** (Protocol/Destination Port)
+- **Application** 
 
 Every query, every visualization, every anomaly detection model — they all orbit around these core entities.
 
@@ -78,9 +86,9 @@ We need to fed with **context** our **dimensions**, then **ALL rules** automatic
 
 ### **Facts: Aggregated Security Metrics**
 
-Attackers can not hide the network. Even encrypted traffic still leaves a trace.
+Attackers can not hide the network. Even encrypted traffic leaves a trace.
 
-**What is really *behaivor* in the first place?** It is when you put 2 together 2 or more events (logs) to somehow find some insight that would not be possible to spot by just observing each event independently.
+**What is really *behavior* in the first place?** It is when you put together 2 or more events (logs) to somehow find some insight that would not be possible to spot by just observing each event independently.
 
 Sounds cool! But how can we leverage this concept on the context of network traffic? 
 
@@ -104,9 +112,9 @@ If we keep track of this metric for a particular source IP, we might never see a
 
 - Connections per source IP over time windows for SMB traffic
 
-We might see that this traffic spike out on a particular date.
+We might see that this traffic spike out on a particular moment in time.
 
-We did not see it when using the first metric because most of the traffic for this particular source IP was HTTP, SMB was just a small portion of the overall traffic, but still very important to spot that an exfiltration connections started.
+We did not see it when using the first metric because most of the traffic for this particular source IP was HTTP, SMB was just a small portion of the overall traffic, but still very important to spot that a data exfiltration connection started.
 
 The metrics we define will have to be coherent with baselines we know we can contrast them against. We know how SMB works and behaves, makes sense to synthesize a metric for it, but TCP/28943 has absolutely no meaning, therefore it makes no sense to slice that traffic. 
 
@@ -149,7 +157,7 @@ Grain: "One source IP's behavior in a 1-hour window"
 - 0.18s average duration - Quick probes, not real communication
 - Only 12 repeated connections out of 312 total (300 unique)
 
-**Same raw data. Same source IP. Same 1-minute snapshot showing 5 IPs. Completely different story.**
+**Same raw data. Same source IP. Completely different story.**
 
 If `10.0.5.42` was legitimately communicating:
 
@@ -205,15 +213,13 @@ This isn't a rule. It doesn't require you to update thresholds every time your n
 
 OK, now we have confidence that `10.0.5.42` is behaving weirdly. But anomalous doesn't always equals malicious.
 
-**What do we do next?** We pivot to relationships.
+**What do we do next?** The final piece of the puzzle is understanding the **relationships** between dimensions.
 
 If `10.0.5.42` connected to `10.0.5.43`, and `10.0.5.43` is **also** doing weird things, and `10.0.5.43` then connected to `10.0.5.44`, and `10.0.5.44` is **also** anomalous... now we have a **pattern**.
 
 **This is lateral movement. This is propagation. This is a real threat.**
 
 False positives don't stand over time. False positives don't cascade across dimensions. False positives are usually isolated.
-
-The final piece of the puzzle is understanding the **relationships** between dimensions.
 
 **Going from anomalous to malicious** it's not about a single indicator. It's about the story that emerges when you connect the dots.
 
@@ -224,7 +230,7 @@ That's the vision. That's where we're going. 🐉
 
 ## Technical Roadmap
 
-We must enter the rabbit hole of data science: **dimensional data modeling, feature extraction, aggregations, streaming analytics, behavioral baselines, anomaly detection** all in real-time.
+We must enter the rabbit hole of data science: **dimensional data modeling, aggregations, streaming analytics, behavioral baselines, feature extraction, anomaly detection** all in real-time.
 
 ### Phase 1: Data Lake Foundation
 
@@ -308,7 +314,7 @@ Integration with:
 We have not forget our day to day, we want to continuous improve what we have already built:
 
 - **More data sources** - Palo Alto Cortex, Vicarius, Windows Sysmon
-- **More dashboards** - Maybe a summary dashboard for your CISO who likes to do threat hunting in power point.
+- **More dashboards** - Maybe a summary dashboard for your CISO who likes to do threat hunting in Power Point.
 - **More storages** - Test GreptimeDB
 - **More simplicity** - Curated Helm Charts / Terraforms for deploying for production.
 
@@ -343,8 +349,8 @@ Honestly? We don't know.
 
 **Progress:** Slow but steady. Rome wasn't built in a day, and neither is the future of firewall log analytics. 🐉
 
-We're a [solo](engage.md#support-the-project) team working on this in our spare time because we're tired of the current state of security tooling. Some of these features might take months. Some might take years. Some might prove to be dead ends.
+We're a [solo](engage.md#help-us-grow) team working on this in our spare time because we're tired of the current state of security tooling. Some of these features might take months. Some might take years. Some might prove to be dead ends.
 
 But we're committed to the journey. Every commit gets us closer. Every contributor accelerates the timeline. Every user who deploys FortiDragon validates that this problem is worth solving.
 
-**Want to make it go faster?** [Contribute](engage.md), [sponsor](engage.md#support-the-project), or just spread the word. 🚀
+**Want to make it go faster?** [Engage](engage.md), [help us grow](engage.md#help-us-grow), or just spread the word. 🚀

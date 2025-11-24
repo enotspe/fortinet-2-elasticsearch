@@ -1,4 +1,4 @@
-# Installation Overview
+# Installation
 
 Let's get this party started! 🤩
 
@@ -18,18 +18,15 @@ Follow these steps in order:
 
 ## 1. Data Sources
 
-Configure your firewall (or others) to send syslog data in RFC5424 format.
-
 | Platform | Status | Guide |
 |----------|--------|-------|
 | **Fortigate** | ✅ Fully Supported | [→ Setup Guide](datasource/fortigate.md) |
 | **FortiEDR** | ✅ Supported | [→ Setup Guide](https://docs.fortinet.com/document/fortiedr/7.2.0/administration-guide/109591/syslog) |
 | **FortiMail** | ✅ Supported | [→ Setup Guide](https://docs.fortinet.com/document/fortimail/7.6.3/administration-guide/332364/configuring-logging#logging_2063907032_1949484) |
 | **FortiWeb / FortiAppSec** | ✅ Supported | [→ Setup Guide](https://docs.fortinet.com/document/fortiappsec-cloud/25.2.0/user-guide/681595/log-settings#SysLog) |
-| **Palo Alto PAN-OS** | ✅ Supported | [→ Setup Guide](https://docs.paloaltonetworks.com/pan-os/11-1/pan-os-admin/monitoring/use-syslog-for-monitoring/configure-syslog-monitoring) |
+| **Palo Alto PAN-OS** | ✅ Fully Supported | [→ Setup Guide](https://docs.paloaltonetworks.com/pan-os/11-1/pan-os-admin/monitoring/use-syslog-for-monitoring/configure-syslog-monitoring) |
 
 **Next:** After configuring your firewall, proceed to install the ingestion layer.
-
 
 
 ## 2. Ingestion
@@ -44,7 +41,11 @@ The ingestion layer receives syslog data, parses it, enriches it, and forwards i
 | Elastic Agent | ❌ Deprecated |  [→ Setup Guide](ingest/elastic%20agent.md) |
 
 !!! success "Chef's Choice"
-    **Use Vector** - It's fast, flexible, and powerfull. We've migrated from Logstash and Elastic Agent to Vector.
+    **Use Vector**
+    
+    It's fast, flexible, and powerfull.
+    
+    We've migrated from Logstash and Elastic Agent to Vector.
 
 **Next:** After installing Vector, set up your storage backend.
 
@@ -61,7 +62,11 @@ Choose where to store your parsed logs for analysis.
 | **Elasticsearch** | 👴🏻 Supported | [→ Setup Guide](storage/elastic.md) | 
 
 !!! success "Chef's Choice"
-    **Use Victoria Logs** - It's the sweet spot of simplicity, performance, and query power. Plus, it's actively developed with a great roadmap!
+    **Use Victoria Logs**
+    
+    It's the sweet spot of simplicity, performance, and query power.
+    
+    It's actively developed with a great roadmap!
 
 
 **Next:** After setting up storage, configure your visualization layer.
@@ -80,8 +85,9 @@ Import pre-built dashboards to start analyzing your firewall logs immediately.
 
 
 !!! success "Chef's Choice"
-    - **Using Victoria Logs?** → Use Grafana
-    - **Using Elasticsearch?** → Use Kibana
+    **Using Victoria Logs?** → Use Grafana
+    
+    **Using Elasticsearch?** → Use Kibana
 
 **Next:** Import dashboards and start threat hunting!
 
@@ -134,16 +140,6 @@ After completing installation, you'll have:
 - 🐛 **Report Issues:** [GitHub Issues](https://github.com/enotspe/fortinet-2-elasticsearch/issues)
 - 🗺️ **Future Plans:** [Roadmap](../roadmap.md)
 
----
-
-## Support the Project
-
-If FortiDragon helps you:
-
-- 💰 [Make a donation](https://www.paypal.com/paypalme/fortidragon). You are already saving a lot of money by using FortiDragon!
-- ⭐ [Star the repository](https://github.com/enotspe/fortinet-2-elasticsearch)
-- 📢 Share with colleagues
-- 🤝 [Contribute](../engage.md/#areas-for-contribution)
 
 
 

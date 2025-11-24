@@ -45,9 +45,7 @@ A single firewall log tells you almost nothing useful. "Host A connected to Host
 
 The real value emerges only when you aggregate logs to reveal hidden behavioral patterns.
 
-### The Slow Port Scanner
-
-Consider this situation
+Consider this situation:
 
 **Single log entry:**
 
@@ -116,30 +114,28 @@ We couldn't throw budget at the problem. We had to get smart about:
 
 The result? **You can log everything without going broke.**
 
-No sampling. No filtering. **Full visibility. Full context. Full behavioral analysis.**
+### **Ingestion**
+- **Log everything**: No sampling. No filtering. **Full visibility. Full context. Full behavioral analysis.**
+- **Parse everything**: Parse **ALL fields** and values from Fortinet and Palo Alto logs — not just the "important" ones
+- **ECS Naming Standardization**: Translates fields to [Elastic Common Schema (ECS)](https://www.elastic.co/guide/en/ecs/current/index.html) for consistent field naming across platforms
+- **Enrichment**: Enhances log data with additional contextual information.
 
 But we didn't stop there. Storing high volumes of logs efficiently was just the first step. *"Now that we have all the data, how do we actually use it?"*
 
 That's when the real work began.
 
-### 1. **Deep Ingestion**
-- **Full field parsing**: Extracts ALL fields and values from Fortinet and Palo Alto logs—not just the "important" ones
-- **ECS Naming Standardization**: Translates fields to [Elastic Common Schema (ECS)](https://www.elastic.co/guide/en/ecs/current/index.html) for consistent field naming across platforms
-- **Enrichment**: Enhances log data with additional contextual information.
-
-
-### 2. **Unmatched Analytics**
+### **Unmatched Analytics**
 **Here is where we shine!** 
 
 It's difficult to explain what "deep visibility" or "in-depth analysis" actually mean until you see it. We could list features like "comprehensive dashboards" or "real-time monitoring," but those are just marketing buzzwords that every vendor claims.
 
-**The truth?** You'll understand it once you use our dashboards.
+**The truth?** You'll understand it once you use our [dashboards](dashboards/usage.md).
 
 We're not a generic SIEM that happens to support firewall logs. We're a firewall log analytics platform that happens to be better than any SIEM. No other paid or free tool has such in-depth analysis of firewall logs. 
 
 Don't take our word for it. [Install it](installation/index.md) and see for yourself. 🐉
 
-### 3. **Security Engineer Friendly**
+### **Security Engineer Friendly**
 We are security engineers, not data scientists. We understand you might not be familiar with tools like Elasticsearch, Grafana, or Victoria Logs (we struggled too!). 
 
 That's why we made it **super simple** to spin up:
@@ -163,7 +159,7 @@ Logstash pipelines and Elasticsearch config [@hoat23](https://github.com/hoat23)
 
 Dataset analysis, Kibana and Grafana dashboards, Vector pipelines, Victoria Logs [@enotspe](https://github.com/enotspe) 🐉
 
-Current maintenance [@enotspe](https://github.com/enotspe) 🐉
+Current maintenance and development [@enotspe](https://github.com/enotspe) 🐉
 
 ---
 

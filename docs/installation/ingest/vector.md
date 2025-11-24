@@ -52,11 +52,13 @@ sudo systemctl restart vector
 
 ## Environment Variables
 
-FortiDragon Vector config files uses envioremental variables for passing specific values for your setup. All variables have defaults values in the config files, only `INTERNAL_NETWORKS` must be set.
+FortiDragon Vector config files uses envioremental variables for passing specific values for your setup. All variables have defaults values in the config files.
+
+`INTERNAL_NETWORKS` is the only variable that must be set.
 
 `INTERNAL_NETWORKS` is used for infering `network.direction` of connections.
 
-`INTERNAL_NETWORKS` must have your local private network scopes as well as your public facing network scopes.
+`INTERNAL_NETWORKS` must have your local private network addresses scopes as well as your public facing network addresses scopes.
 
 Create environment variables for Vector config:
 
@@ -112,10 +114,50 @@ INTERNAL_NETWORKS=["10.0.0.0/8","172.16.0.0/12","192.168.0.0/16","fc00::/7"]
 
 Vector can send logs to multiple [storages](https://vector.dev/docs/reference/configuration/sinks/)
 
-Configuration files have set all [supported](../../architecture.md) sinks. 
+Configuration files have set all [supported](../../architecture.md/#storage) sinks. 
 
 !!! warning "Sinks"
-    Comment out the ones you will not use to avoid errors
+    Comment in the ones you will use
+
+    Comment out the ones you will not use
+
+By default, [Victoria Logs](../storage/victoria.md) is enabled and [Elasticsearch](../storage/elasticsearch.md) is disabled.
+
+```yaml
+sinks:
+  vlogs_fortigate_traffic:
+    inputs:
+      - remap_traffic
+    type: elasticsearch
+    endpoints:
+      - ${VICTORIA_LOGS_ENDPOINT:-http://localhost:9428}/insert/elasticsearch/
+    ...
+
+  vlogs_fortigate:
+    inputs:
+      #- remap_traffic
+      - remap_utm
+      - remap_event
+      - route._unmatched
+    type: elasticsearch
+    endpoints:
+      - ${VICTORIA_LOGS_ENDPOINT:-http://localhost:9428}/insert/elasticsearch/
+    ...
+
+#  elastic_fortigate:
+#    type: elasticsearch
+#    inputs:
+#      - remap_traffic
+#      - remap_utm
+#      - remap_event
+#    auth:
+#      strategy: "basic"
+#      user: "${ELASTICSEARCH_USER:-elastic}"
+#      password: "${ELASTICSEARCH_PASS:-myelasticsearchpassword}"
+#    endpoints:
+#      - ${ELASTICSEARCH_ENDPOINT:-https://localhost:9200}
+#    ...
+```
 
 
 ## Advanced Configuration
@@ -157,32 +199,29 @@ and `vector_monitoring.yaml` scrapes metrics and logs. Logs are sent to Loki bec
 Refer to the [Vector documentation](https://vector.dev/docs/) for detailed configuration options.
 
 
-## Verification
+## Troubleshooting
 
-After configuration, verify that logs are being sent:
+After configuration, verify that logs are being received:
 
 1. Monitor network traffic:
    ```bash
-   # On your collector host
-   sudo tcpdump -i any port 5140
+   # On your Vector host
+   sudo tcpdump -i any port 6140
    ```
 
-## Troubleshooting
-
-
-| Problem | Solution |
-|---------|----------|
-| No logs received | Check firewall rules between Fortigate and collector |
-| You do receive packets, but see no logs ingested | Use hyphens instead of underscores in hostnames |
-| Logs Drops | Increase buffers |
+2. [Troubleshoot](https://vector.dev/guides/level-up/troubleshooting/) Vector:
+   ```bash
+   sudo journalctl -fu vector
+   ```
 
 
 ## Next Steps
 
 Once Vector is configured:
 
-1. [Set up Victoria Logs](../storage/victoria.md)
-2. Or [Set up Elasticsearch](../storage/elastic.md)
+1. Set up [Victoria Logs](../storage/victoria.md) or [Elasticsearch](../storage/elastic.md)
 
-!!! info "Storage"
-    Victoria Logs is recommended over Elasticsearch
+2. Import dashboards in [Grafana](../viz/grafana.md) or [Kibana](../viz/kibana.md)
+
+3. Start dancing with your logs!
+

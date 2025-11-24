@@ -147,19 +147,12 @@ Elasticsearch can manage data lifecycle either via:
 !!! info "ILM Policy"
     Use them when you **do** have a [data tiered](https://www.elastic.co/docs/manage-data/lifecycle/data-tiers) architecture
     
-## Troubleshooting
-
-| Problem | Solution |
-|---------|----------|
-|  |  |
 
 
 ## Next Steps
 
 Once Elasticsearch is configured:
 
+1. Import dashboards in [Kibana](../viz/kibana.md)
 
-1. [Configure Vector](../ingest/vector.md)
-2. [Start sending logs from Fortigate!](../datasource/fortigate.md)
-3. [Load Kibana dashboards](../viz/kibana.md)
-
+2. Start dancing with your logs!
