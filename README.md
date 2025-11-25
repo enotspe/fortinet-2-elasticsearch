@@ -4,7 +4,7 @@
   <h1>FortiDragon</h1>
   <p><strong>The Best Analytics Platform for Firewall Logs</strong></p>
 
-  [![Discord](https://img.shields.io/discord/9qn4enV?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/9qn4enV)
+  [![Discord](https://img.shields.io/discord/753104553846505552?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/9qn4enV)
   [![GitHub stars](https://img.shields.io/github/stars/enotspe/fortinet-2-elasticsearch?style=social)](https://github.com/enotspe/fortinet-2-elasticsearch/stargazers)
   [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://enotspe.github.io/fortinet-2-elasticsearch/)
   [![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
