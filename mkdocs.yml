@@ -1,5 +1,5 @@
 site_name: FortiDragon Documentation
-site_description: Network security logs analytics
+site_description: Network Security Logs Analytics
 site_author: Dragon
 site_url: https://enotspe.github.io/fortinet-2-elasticsearch/
 
@@ -9,21 +9,34 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  icon:
+    logo: fontawesome/solid/dragon
+
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
     # Palette toggle for light mode
-    - scheme: default
-      primary: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
       accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+
     # Palette toggle for dark mode
-    - scheme: slate
-      primary: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: Switch to system preference
+
   features:
     #- navigation.tabs
     #- navigation.tabs.sticky
@@ -32,7 +45,9 @@ theme:
     - navigation.path
     #- navigation.prune
     - navigation.top
+    - navigation.footer
     - navigation.indexes
+    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
@@ -46,15 +61,15 @@ theme:
 plugins:
   - search
   #    separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  # TODO: Install these plugins in GitHub Actions
-  # - git-revision-date-localized:
-  #     enable_creation_date: true
-  #     type: timeago
-  # - minify:
-  #     minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+  - minify:
+      minify_html: true
   # Consider adding:
   # - tags  # If you want to add tags to pages
   - awesome-pages # For easier nav organization
+  - social
   - glightbox:
       #touchNavigation: true
       loop: true
@@ -96,6 +111,8 @@ markdown_extensions:
   - pymdownx.keys # For keyboard shortcuts
   - pymdownx.mark # For highlighting text
   - pymdownx.critic # For showing changes
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - admonition
   - attr_list
   - md_in_html
@@ -105,8 +122,6 @@ markdown_extensions:
       permalink_title: Link to this section
   - footnotes
   - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
 
 #nav:
 #  - Home: index.md
@@ -135,8 +150,18 @@ markdown_extensions:
 #    - Usage: dashboards/usage.md
 
 extra:
+  #generator: false # Hide "Made with Material for MkDocs" notice on the footer
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/enotspe/fortinet-2-elasticsearch
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/9qn4enV
   version:
     provider: mike # Optional: for versioning
+#  consent:
+#    title: Cookie consent
+#    description: >-
+#      We use cookies to recognize your repeated visits and preferences, as well
+#      as to measure the effectiveness of our documentation and whether users
+#      find what they're searching for. With your consent, you're helping us to
+#      make our documentation better.

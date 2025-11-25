@@ -9,7 +9,7 @@ Configure syslog using RFC5424 format (recommended):
 ```bash
 config log syslogd setting
     set status enable
-    set server "elastic_agent_IP"
+    set server <collector_ip>
     set port 5140
     set format rfc5424
 end
@@ -85,10 +85,9 @@ end
 
 ## Verification
 
-After configuration, verify that logs are being sent:
+After configuration, verify that logs are being sent on your collector host (Vector):
 
    ```bash
-   # On your collector host (Vector)
    sudo tcpdump -i any port 5140
    ```
 

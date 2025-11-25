@@ -1,0 +1,20 @@
+{
+  "assets/images/social/architecture.png": "43ca05f280629af0bd29ddd22900c928a94da520",
+  "assets/images/social/dashboards/canvas.png": "2f3a8e349ce539564f74e5388896718376894545",
+  "assets/images/social/dashboards/datasets.png": "db962acbd5c0d79cc8fab333173b0dd8852cd636",
+  "assets/images/social/dashboards/index.png": "033ebe8d82f36782733266e2bfa11f46f8ba1f8a",
+  "assets/images/social/dashboards/usage.png": "f98654cdd792a19d3e18dfa830bbb048a0188070",
+  "assets/images/social/dashboards/values.png": "62e6bcbbe6f0bfd1d36aeb6c5827fa809b785314",
+  "assets/images/social/engage.png": "8d3c181a605ac38dddccb6bf654e9120cc0afdea",
+  "assets/images/social/index.png": "a534775b3d50c819f7323823cb3aad593ab26c48",
+  "assets/images/social/installation/datasource/fortigate.png": "12c341526932d6e5ca72b6fd36787ed4bf2d339f",
+  "assets/images/social/installation/index.png": "cd6395da6b86fc848003f690410c5ef75cb88dbf",
+  "assets/images/social/installation/ingest/elastic-agent.png": "3a913c56560ba0541666b6b1f1f12d6355173dee",
+  "assets/images/social/installation/ingest/logstash.png": "02de3a02365349429e04ff04c5833dbb951f23d8",
+  "assets/images/social/installation/ingest/vector.png": "bd1f4fb48e5299a711ceed580bec3320df627da6",
+  "assets/images/social/installation/storage/elasticsearch.png": "b2e71e83622881990710d324a4fac2186894954b",
+  "assets/images/social/installation/storage/victoria.png": "8ba2551564d7f99e6124c427f69ccf6cd9306a92",
+  "assets/images/social/installation/viz/grafana.png": "ff6dbd4c7db7eaaaacec59aba29519509885c19f",
+  "assets/images/social/installation/viz/kibana.png": "43a79741a44669c1df95294238f577e7c678312e",
+  "assets/images/social/roadmap.png": "0aee6655fe26ed4695c3117190ebd0471ed5ff2f"
+}

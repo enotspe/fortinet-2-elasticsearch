@@ -2,9 +2,9 @@ name: Deploy MkDocs to GitHub Pages
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
@@ -28,7 +28,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Cache dependencies
         uses: actions/cache@v4
@@ -46,6 +46,7 @@ jobs:
           pip install mkdocs-minify-plugin
           pip install mkdocs-awesome-pages-plugin
           pip install mkdocs-glightbox
+          pip install "mkdocs-material[imaging]"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
