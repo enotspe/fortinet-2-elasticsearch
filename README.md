@@ -4,15 +4,16 @@
   <h1>FortiDragon</h1>
   <h2><strong>The Best Analytics Platform for Firewall Logs</strong></h2>
 
-  [![Discord](https://img.shields.io/discord/753104553846505552?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/9qn4enV)
-  [![GitHub stars](https://img.shields.io/github/stars/enotspe/fortinet-2-elasticsearch?style=social)](https://github.com/enotspe/fortinet-2-elasticsearch/stargazers)
-  [![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
-  
   <h3>
     <a href="https://enotspe.github.io/fortinet-2-elasticsearch/">📚 Full Documentation</a> •
     <a href="https://enotspe.github.io/fortinet-2-elasticsearch/installation/">🚀 Installation</a> •
     <a href="https://enotspe.github.io/fortinet-2-elasticsearch/roadmap/">🛣️ Roadmap</a>
   </h3>
+  
+  [![Discord](https://img.shields.io/discord/753104553846505552?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/9qn4enV)
+  [![GitHub stars](https://img.shields.io/github/stars/enotspe/fortinet-2-elasticsearch?style=social)](https://github.com/enotspe/fortinet-2-elasticsearch/stargazers)
+  [![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
+  
 </div>
 
 ---
@@ -23,7 +24,9 @@ Tired of expensive SIEMs that don't understand firewall logs?
 
 **FortiDragon** is a full-featured analytics platform that transforms Fortinet (FortiGate, FortiEDR, FortiMail, FortiWeb) and Palo Alto PAN-OS logs into actionable threat intelligence without breaking the bank.
 
-After 10+ years fighting with overpriced SIEMs that treat firewall logs as an afterthought, we built the platform we always needed. **No sampling. No filtering. Full visibility. Full behavioral analysis.**
+After 10+ years fighting with overpriced SIEMs that treat firewall logs as an leftover checkbox in a datasheet, we built the platform we always needed.
+
+**No sampling. No filtering. Full visibility. Full behavioral analysis.**
 
 ### 💰 The Problem We Solve
 
@@ -130,13 +133,13 @@ You're already saving thousands on SIEM costs. Consider giving back:
 
 ### Storage Backends
 
-- ✅ Victoria Logs (recommended for cost)
+- ✅ Victoria Logs (recommended)
 - ✅ Elasticsearch
 
 ### Visualization
 
+- ✅ Grafana (recommended)
 - ✅ Kibana
-- ✅ Grafana
 
 ## 📜 License
 
