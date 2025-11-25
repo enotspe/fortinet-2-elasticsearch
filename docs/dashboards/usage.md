@@ -12,8 +12,8 @@ We tried to make dashboards look alike, not matter the vendor or dataset, so we 
 
 Let's go through our **Traffic Dashboard**
 
-![Fortigate](../assets/dashboards/[Grafana] Fortigate full.png)
-![Palo Alto](../assets/dashboards/[Grafana] Palo Alto full.png)
+![Fortigate](../assets/dashboards/[Grafana] Fortigate full.png){width="350px" data-gallery="dashboards-gallery" data-title="Fortigate Traffic Dashboard"}
+![Palo Alto](../assets/dashboards/[Grafana] Palo Alto full.png){width="350px" data-gallery="dashboards-gallery" data-title="Palo Alto Traffic Dashboard"}
 
 ## Navigation and Filtering
 
@@ -69,13 +69,13 @@ It is a mixture of:
 
 We combine the analysis of both `action` and `utmaction` in a timeline, percentage, and absolute fashion. As well as dissecting `utmaction` into the UTM engines that influence it.
 
-![Action](../assets/dashboards/[Grafana] Fortigate Action.png)
+![Action](../assets/dashboards/[Grafana] Fortigate Action.png){data-gallery="action-gallery" data-title="Fortigate Action"}
 
 ### Palo Alto
 
 We explore the relation between `threat/content_type`, `action` and `session_end_reason` on a [Sankey Diagram](https://grafana.com/grafana/plugins/netsage-sankey-panel/).
 
-![Action](../assets/dashboards/[Grafana] Palo Alto Action.png)
+![Action](../assets/dashboards/[Grafana] Palo Alto Action.png){data-gallery="action-gallery" data-title="Palo Alto Action"}
 
 ## Source | Destination
 
@@ -94,16 +94,16 @@ Fortinet offers a lot information about IP, besides just the IP address. We have
 - IP
 
     IP address, /24 network, NATed IP and [IP Reputation](https://docs.fortinet.com/document/fortigate/7.6.4/administration-guide/68937/ip-reputation-filtering)
-![Source](../assets/dashboards/[Grafana] Fortigate Source Destination.png)
+![Source](../assets/dashboards/[Grafana] Fortigate Source Destination.png){data-gallery="source-destination-gallery" data-title="Fortigate Source Destination - IP"}
 
 - User
 
     We explore `user` and its derivations.
-![Source2](../assets/dashboards/[Grafana] Fortigate Source Destination 2.png)
+![Source2](../assets/dashboards/[Grafana] Fortigate Source Destination 2.png){data-gallery="source-destination-gallery" data-title="Fortigate Source Destination - User"}
 
 ### Palo Alto
 
-![Source](../assets/dashboards/[Grafana] Palo Alto Source Destination.png)
+![Source](../assets/dashboards/[Grafana] Palo Alto Source Destination.png){data-gallery="source-destination-gallery" data-title="Palo Alto Source Destination"}
 
 ## Service | Application
 
@@ -115,9 +115,9 @@ However, on Fortinet, `service` gets the value of what you defined on `Policy an
 
 As we can not have 100% certainty that `tcp/443` = `https`. We have defined a new field: `network.transport_port`
 
-![Service](../assets/dashboards/[Grafana] Fortigate Service Application.png)
+![Service](../assets/dashboards/[Grafana] Fortigate Service Application.png){data-gallery="service-application-gallery" data-title="Fortigate Service Application"}
 
 ### Palo Alto
 
 Palo Alto does not provide `service` field, so we also defined: `network.transport_port`
-![Service](../assets/dashboards/[Grafana] Palo Alto Service Application.png)
+![Service](../assets/dashboards/[Grafana] Palo Alto Service Application.png){data-gallery="service-application-gallery" data-title="Palo Alto Service Application"}

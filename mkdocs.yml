@@ -10,7 +10,6 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
-
     # Palette toggle for light mode
     - scheme: default
       primary: indigo
@@ -55,9 +54,24 @@ plugins:
   #     minify_html: true
   # Consider adding:
   # - tags  # If you want to add tags to pages
-  - awesome-pages  # For easier nav organization
-  - glightbox
-
+  - awesome-pages # For easier nav organization
+  - glightbox:
+      #touchNavigation: true
+      loop: true
+      #effect: zoom
+      #slide_effect: slide
+      #width: 100%
+      #height: auto
+      #zoomable: true
+      #draggable: true
+      #skip_classes:
+      #  - custom-skip-class-name
+      #auto_themed: false
+      #auto_caption: false
+      #caption_position: bottom
+      #background: white
+      #shadow: true
+      #manual: false
 
 markdown_extensions:
   - pymdownx.tilde
@@ -79,9 +93,9 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.keys  # For keyboard shortcuts
-  - pymdownx.mark  # For highlighting text
-  - pymdownx.critic  # For showing changes
+  - pymdownx.keys # For keyboard shortcuts
+  - pymdownx.mark # For highlighting text
+  - pymdownx.critic # For showing changes
   - admonition
   - attr_list
   - md_in_html
@@ -91,7 +105,6 @@ markdown_extensions:
       permalink_title: Link to this section
   - footnotes
   - def_list
-  #- glightbox
   - pymdownx.tasklist:
       custom_checkbox: true
 
@@ -102,16 +115,16 @@ markdown_extensions:
 #  - Roadmap: roadmap.md
 #  - Installation:
 #    - installation/index.md
-#    - Datasource: 
+#    - Datasource:
 #     - Fortigate: installation/datasource/fortigate.md
-#    - Ingest: 
+#    - Ingest:
 #     - Vector: installation/ingest/vector.md
 #     - Elastic Agent: installation/ingest/elastic-agent.md
 #     - Logstash: installation/ingest/logstash.md
-#    - Storage: 
+#    - Storage:
 #     - Victoria Logs: installation/storage/victoria.md
 #     - Elasticsearch: installation/storage/elasticsearch.md
-#    - Visualization: 
+#    - Visualization:
 #     - Grafana: installation/viz/grafana.md
 #     - Kibana: installation/viz/kibana.md
 #  - Dashboards:
@@ -126,4 +139,4 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/enotspe/fortinet-2-elasticsearch
   version:
-    provider: mike  # Optional: for versioning
+    provider: mike # Optional: for versioning
