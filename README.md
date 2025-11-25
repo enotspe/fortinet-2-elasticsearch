@@ -80,9 +80,12 @@ All detailed documentation has moved to our dedicated documentation site:
 ## 🎨 Dashboard Preview
 
 <div align="center">
-  <img src="docs/assets/dashboards/[Grafana] Fortigate full.png" alt="Dashboard Navigation" width="800"/>
+  <img src="docs/assets/dashboards/%5BGrafana%5D%20Fortigate%20full.png" alt="Dashboard" width="800"/>
   <p><em>Navigate seamlessly through traffic, UTM, and event dashboards</em></p>
 </div>
+
+docs/assets/dashboards/[Grafana] Fortigate full.png
+<https://github.com/enotspe/fortinet-2-elasticsearch/blob/main/docs/assets/dashboards/%5BGrafana%5D%20Fortigate%20full.png>
 
 ## 🌟 Why FortiDragon?
 
@@ -122,6 +125,12 @@ You're already saving thousands on SIEM costs. Consider giving back:
 - ✅ Fortinet FortiWeb / FortiAppSec
 - ✅ Palo Alto PAN-OS
 
+### Ingestion
+
+- ✅ Vector (recommended)
+- ⚠️ Elastic Agent (deprecated)
+- ⚠️ Logstash (deprecated)
+
 ### Storage Backends
 
 - ✅ Victoria Logs (recommended for cost)
@@ -131,12 +140,6 @@ You're already saving thousands on SIEM costs. Consider giving back:
 
 - ✅ Kibana
 - ✅ Grafana
-
-### Ingestion
-
-- ✅ Vector (recommended)
-- ⚠️ Elastic Agent (deprecated)
-- ⚠️ Logstash (deprecated)
 
 ## 📜 License
 
