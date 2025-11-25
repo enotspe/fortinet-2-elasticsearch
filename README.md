@@ -2,7 +2,7 @@
   <img src="docs/assets/logos/logo_with_name_small.jpg" alt="FortiDragon Logo" />
 
   <h1>FortiDragon</h1>
-  <p><strong>The Best Analytics Platform for Firewall Logs</strong></p>
+  <h2><strong>The Best Analytics Platform for Firewall Logs</strong></h2>
 
   [![Discord](https://img.shields.io/discord/753104553846505552?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/9qn4enV)
   [![GitHub stars](https://img.shields.io/github/stars/enotspe/fortinet-2-elasticsearch?style=social)](https://github.com/enotspe/fortinet-2-elasticsearch/stargazers)
@@ -80,7 +80,7 @@ All detailed documentation has moved to our dedicated documentation site:
 ## 🎨 Dashboard Preview
 
 <div align="center">
-  <img src="docs/assets/dashboards/%5BGrafana%5D%20Fortigate%20full.png" alt="Dashboard" width="400"/>
+  <img src="docs/assets/dashboards/%5BGrafana%5D%20Fortigate%20full.png" alt="Dashboard" width="500"/>
   <p><em>Navigate seamlessly through traffic, UTM, and event dashboards</em></p>
 </div>
 
