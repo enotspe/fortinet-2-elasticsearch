@@ -103,6 +103,28 @@ config log setting
 end
 ```
 
+### Log REST API events
+
+To enable REST API events logging in the CLI:
+
+```bash
+config log setting
+    set rest-api-set enable
+    set rest-api-get enable
+end
+```
+
+### Generate unique user name for anonymized logs
+
+To encrypt the user name for logs in the GUI:
+
+```bash
+config log setting
+    set user-anonymize enable
+    set anonymization-hash "random"
+end
+```
+
 ## Verification
 
 After configuration, verify that logs are being sent on your collector host (Vector):
