@@ -6,7 +6,7 @@ There are many ways for [installing](https://grafana.com/docs/grafana/latest/set
 
 ### Install Datasource Plugin
 
-Install [VictoriaLogs datasource plugin](https://grafana.com/grafana/plugins/victoriametrics-logs-datasource/?tab=installation) just by selecting it udner [**Administration > Plugins and data > Plugins**](https://grafana.com/docs/grafana/latest/administration/plugin-management/#browse-plugins) in Grfana Cloud.
+Install [VictoriaLogs datasource plugin](https://grafana.com/grafana/plugins/victoriametrics-logs-datasource/?tab=installation) just by selecting it under [**Administration > Plugins and data > Plugins**](https://grafana.com/docs/grafana/latest/administration/plugin-management/#browse-plugins) in Grafana Cloud.
 
 Or via [`grafana cli`](https://grafana.com/docs/grafana/latest/administration/cli/) on a local deployment:
 
@@ -23,6 +23,26 @@ Select **VictoriaLogs**.
 Fill `URL` and other relevant parameters.
 
 Click **Save and Test** button.
+
+### Install Sankey Panel
+
+Install [Sankey Panel](https://grafana.com/grafana/plugins/netsage-sankey-panel/) just by selecting it under [**Administration > Plugins and data > Plugins**](https://grafana.com/docs/grafana/latest/administration/plugin-management/#browse-plugins) in Grafana Cloud.
+
+Or via [`grafana cli`](https://grafana.com/docs/grafana/latest/administration/cli/) on a local deployment:
+
+```
+grafana-cli plugins install netsage-sankey-panel
+```
+
+### Install ESnet Chord
+
+Install [ESnet Chord](https://grafana.com/grafana/plugins/esnet-chord-panel/) just by selecting it under [**Administration > Plugins and data > Plugins**](https://grafana.com/docs/grafana/latest/administration/plugin-management/#browse-plugins) in Grafana Cloud.
+
+Or via [`grafana cli`](https://grafana.com/docs/grafana/latest/administration/cli/) on a local deployment:
+
+```
+grafana-cli plugins install esnet-chord-panel
+```
 
 ## Import Dashboards
 

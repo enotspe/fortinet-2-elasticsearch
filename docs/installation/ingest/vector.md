@@ -210,7 +210,15 @@ After configuration, verify that logs are being received:
    sudo tcpdump -i any port 5140
    ```
 
-2. [Troubleshoot](https://vector.dev/guides/level-up/troubleshooting/) Vector:
+2. Make sure you have enabled firewall incomming rules for your Vector ports:
+
+   ```bash
+   # On your Vector host
+   sudo firewall-cmd --zone=public --permanent --add-port=5140/udp
+   sudo firewall-cmd --reload
+   ```
+
+3. [Troubleshoot](https://vector.dev/guides/level-up/troubleshooting/) Vector:
 
    ```bash
    sudo journalctl -fu vector

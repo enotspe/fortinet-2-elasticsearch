@@ -83,6 +83,26 @@ config log setting
 end
 ```
 
+### Log CLI debug commands
+
+In addition to execute and config commands, show, get, and diagnose commands are recorded in the system event logs.
+
+```bash
+config system global
+    set cli-audit-log enable
+end
+```
+
+### Include zone fields in logs
+
+The srczone and dstzone fields can be enabled in logs using the following command:
+
+```bash
+config log setting
+    set zone-name enable
+end
+```
+
 ## Verification
 
 After configuration, verify that logs are being sent on your collector host (Vector):
