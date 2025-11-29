@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "madbs2d",
-    "generation": 52,
+    "generation": 58,
     "creationTimestamp": "2025-06-20T22:41:43Z",
     "labels": {},
     "annotations": {}
@@ -143,7 +143,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -266,7 +266,7 @@
                 ]
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -351,7 +351,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -483,7 +483,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -615,95 +615,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
-          }
-        }
-      },
-      "panel-2": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.mem) avg_mem",
-                        "queryType": "stats"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": []
-            }
-          },
-          "description": "",
-          "id": 2,
-          "links": [],
-          "title": "$firewall",
-          "vizConfig": {
-            "group": "stat",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "thresholds"
-                  },
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "orange",
-                        "value": 70
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  },
-                  "unit": "percent"
-                },
-                "overrides": []
-              },
-              "options": {
-                "colorMode": "value",
-                "graphMode": "area",
-                "justifyMode": "auto",
-                "orientation": "auto",
-                "percentChangeColorMode": "standard",
-                "reduceOptions": {
-                  "calcs": [
-                    "lastNotNull"
-                  ],
-                  "fields": "",
-                  "values": false
-                },
-                "showPercentChange": false,
-                "textMode": "auto",
-                "wideLayout": true
-              }
-            },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -835,7 +747,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -930,7 +842,7 @@
                 "mode": "markdown"
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1123,7 +1035,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1316,7 +1228,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1532,7 +1444,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1571,7 +1483,7 @@
           "description": "",
           "id": 3,
           "links": [],
-          "title": "$firewall",
+          "title": "mem",
           "vizConfig": {
             "group": "timeseries",
             "kind": "VizConfig",
@@ -1650,7 +1562,7 @@
                 }
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1735,7 +1647,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1851,7 +1763,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1874,7 +1786,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\n  AND fgt.logdesc:\"Admin login successful\"\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
+                        "expr": "_stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\nAND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\nAND fgt.logdesc:\"Admin login successful\"\nAND fgt.user:in(\n  _stream:{fgt.type=$type,fgt.subtype=$subtype,log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n  AND fgt.logid:in(0100032001,0100032002,0100032003,0100032005,0100032006,0100032007,0100032021,0100032024,0100032053,0100032054,0100032561,0100032570) AND ${Logsql:raw}\n  AND fgt.logdesc:\"Admin login successful\"\n    | top 10 (fgt.user)\n    | keep fgt.user\n  )\n  | by (fgt.user) count() results",
                         "legendFormat": "{{fgt.user}}",
                         "queryType": "statsRange"
                       },
@@ -1967,7 +1879,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2194,96 +2106,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
-          }
-        }
-      },
-      "panel-4": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.cpu) avg_cpu",
-                        "queryType": "stats"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": []
-            }
-          },
-          "description": "",
-          "id": 4,
-          "links": [],
-          "title": "$firewall",
-          "vizConfig": {
-            "group": "stat",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "thresholds"
-                  },
-                  "decimals": 2,
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "orange",
-                        "value": 80
-                      },
-                      {
-                        "color": "red",
-                        "value": 90
-                      }
-                    ]
-                  },
-                  "unit": "percent"
-                },
-                "overrides": []
-              },
-              "options": {
-                "colorMode": "value",
-                "graphMode": "area",
-                "justifyMode": "auto",
-                "orientation": "auto",
-                "percentChangeColorMode": "standard",
-                "reduceOptions": {
-                  "calcs": [
-                    "lastNotNull"
-                  ],
-                  "fields": "",
-                  "values": false
-                },
-                "showPercentChange": false,
-                "textMode": "auto",
-                "wideLayout": true
-              }
-            },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2487,7 +2310,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2691,7 +2514,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2895,7 +2718,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3072,11 +2895,11 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
-      "panel-5": {
+      "panel-44": {
         "kind": "Panel",
         "spec": {
           "data": {
@@ -3109,9 +2932,9 @@
             }
           },
           "description": "",
-          "id": 5,
+          "id": 44,
           "links": [],
-          "title": "$firewall",
+          "title": "cpu",
           "vizConfig": {
             "group": "timeseries",
             "kind": "VizConfig",
@@ -3190,95 +3013,11 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
-      "panel-6": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote})}\n| ${Logsql:raw}\n| avg(fgt.totalsession) avg_concurrent_sessions\n#| avg(fgt.totalsession) avg_concurrent_sessions, avg(fgt.setuprate) avg_setup-rate",
-                        "queryType": "stats"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": []
-            }
-          },
-          "description": "",
-          "id": 6,
-          "links": [],
-          "title": "$firewall",
-          "vizConfig": {
-            "group": "stat",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "fixed"
-                  },
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  },
-                  "unit": "sishort"
-                },
-                "overrides": []
-              },
-              "options": {
-                "colorMode": "value",
-                "graphMode": "area",
-                "justifyMode": "auto",
-                "orientation": "auto",
-                "percentChangeColorMode": "standard",
-                "reduceOptions": {
-                  "calcs": [
-                    "lastNotNull"
-                  ],
-                  "fields": "",
-                  "values": false
-                },
-                "showPercentChange": false,
-                "textMode": "value_and_name",
-                "wideLayout": true
-              }
-            },
-            "version": "12.4.0-19174562009.patch3"
-          }
-        }
-      },
-      "panel-7": {
+      "panel-46": {
         "kind": "Panel",
         "spec": {
           "data": {
@@ -3311,9 +3050,9 @@
             }
           },
           "description": "",
-          "id": 7,
+          "id": 46,
           "links": [],
-          "title": "$firewall",
+          "title": "sessions",
           "vizConfig": {
             "group": "timeseries",
             "kind": "VizConfig",
@@ -3401,7 +3140,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3486,7 +3225,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.4.0-19174562009.patch3"
+            "version": "12.4.0-19508498046"
           }
         }
       }
@@ -3499,228 +3238,55 @@
             "kind": "TabsLayoutTab",
             "spec": {
               "layout": {
-                "kind": "TabsLayout",
+                "kind": "RowsLayout",
                 "spec": {
-                  "tabs": [
+                  "rows": [
                     {
-                      "kind": "TabsLayoutTab",
+                      "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
-                          "kind": "RowsLayout",
+                          "kind": "AutoGridLayout",
                           "spec": {
-                            "rows": [
+                            "columnWidthMode": "standard",
+                            "items": [
                               {
-                                "kind": "RowsLayoutRow",
+                                "kind": "AutoGridLayoutItem",
                                 "spec": {
-                                  "collapse": false,
-                                  "fillScreen": false,
-                                  "hideHeader": false,
-                                  "layout": {
-                                    "kind": "AutoGridLayout",
-                                    "spec": {
-                                      "columnWidthMode": "standard",
-                                      "items": [
-                                        {
-                                          "kind": "AutoGridLayoutItem",
-                                          "spec": {
-                                            "element": {
-                                              "kind": "ElementReference",
-                                              "name": "panel-2"
-                                            },
-                                            "repeat": {
-                                              "mode": "variable",
-                                              "value": "firewall"
-                                            }
-                                          }
-                                        }
-                                      ],
-                                      "maxColumnCount": 3,
-                                      "rowHeightMode": "short"
-                                    }
-                                  },
-                                  "title": "Metric"
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-3"
+                                  }
                                 }
                               },
                               {
-                                "kind": "RowsLayoutRow",
+                                "kind": "AutoGridLayoutItem",
                                 "spec": {
-                                  "collapse": false,
-                                  "layout": {
-                                    "kind": "AutoGridLayout",
-                                    "spec": {
-                                      "columnWidthMode": "standard",
-                                      "items": [
-                                        {
-                                          "kind": "AutoGridLayoutItem",
-                                          "spec": {
-                                            "element": {
-                                              "kind": "ElementReference",
-                                              "name": "panel-3"
-                                            },
-                                            "repeat": {
-                                              "mode": "variable",
-                                              "value": "firewall"
-                                            }
-                                          }
-                                        }
-                                      ],
-                                      "maxColumnCount": 3,
-                                      "rowHeightMode": "standard"
-                                    }
-                                  },
-                                  "title": "Timeserie"
-                                }
-                              }
-                            ]
-                          }
-                        },
-                        "title": "Memory"
-                      }
-                    },
-                    {
-                      "kind": "TabsLayoutTab",
-                      "spec": {
-                        "layout": {
-                          "kind": "RowsLayout",
-                          "spec": {
-                            "rows": [
-                              {
-                                "kind": "RowsLayoutRow",
-                                "spec": {
-                                  "collapse": false,
-                                  "layout": {
-                                    "kind": "AutoGridLayout",
-                                    "spec": {
-                                      "columnWidthMode": "standard",
-                                      "items": [
-                                        {
-                                          "kind": "AutoGridLayoutItem",
-                                          "spec": {
-                                            "element": {
-                                              "kind": "ElementReference",
-                                              "name": "panel-4"
-                                            },
-                                            "repeat": {
-                                              "mode": "variable",
-                                              "value": "firewall"
-                                            }
-                                          }
-                                        }
-                                      ],
-                                      "maxColumnCount": 3,
-                                      "rowHeightMode": "short"
-                                    }
-                                  },
-                                  "title": ""
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-44"
+                                  }
                                 }
                               },
                               {
-                                "kind": "RowsLayoutRow",
+                                "kind": "AutoGridLayoutItem",
                                 "spec": {
-                                  "collapse": false,
-                                  "layout": {
-                                    "kind": "AutoGridLayout",
-                                    "spec": {
-                                      "columnWidthMode": "standard",
-                                      "items": [
-                                        {
-                                          "kind": "AutoGridLayoutItem",
-                                          "spec": {
-                                            "element": {
-                                              "kind": "ElementReference",
-                                              "name": "panel-5"
-                                            },
-                                            "repeat": {
-                                              "mode": "variable",
-                                              "value": "firewall"
-                                            }
-                                          }
-                                        }
-                                      ],
-                                      "maxColumnCount": 3,
-                                      "rowHeightMode": "standard"
-                                    }
-                                  },
-                                  "title": ""
+                                  "element": {
+                                    "kind": "ElementReference",
+                                    "name": "panel-46"
+                                  }
                                 }
                               }
-                            ]
+                            ],
+                            "maxColumnCount": 3,
+                            "rowHeightMode": "standard"
                           }
                         },
-                        "title": "CPU"
-                      }
-                    },
-                    {
-                      "kind": "TabsLayoutTab",
-                      "spec": {
-                        "layout": {
-                          "kind": "RowsLayout",
-                          "spec": {
-                            "rows": [
-                              {
-                                "kind": "RowsLayoutRow",
-                                "spec": {
-                                  "collapse": false,
-                                  "layout": {
-                                    "kind": "AutoGridLayout",
-                                    "spec": {
-                                      "columnWidthMode": "standard",
-                                      "items": [
-                                        {
-                                          "kind": "AutoGridLayoutItem",
-                                          "spec": {
-                                            "element": {
-                                              "kind": "ElementReference",
-                                              "name": "panel-6"
-                                            },
-                                            "repeat": {
-                                              "mode": "variable",
-                                              "value": "firewall"
-                                            }
-                                          }
-                                        }
-                                      ],
-                                      "maxColumnCount": 3,
-                                      "rowHeightMode": "short"
-                                    }
-                                  },
-                                  "title": ""
-                                }
-                              },
-                              {
-                                "kind": "RowsLayoutRow",
-                                "spec": {
-                                  "collapse": false,
-                                  "layout": {
-                                    "kind": "AutoGridLayout",
-                                    "spec": {
-                                      "columnWidthMode": "standard",
-                                      "items": [
-                                        {
-                                          "kind": "AutoGridLayoutItem",
-                                          "spec": {
-                                            "element": {
-                                              "kind": "ElementReference",
-                                              "name": "panel-7"
-                                            },
-                                            "repeat": {
-                                              "mode": "variable",
-                                              "value": "firewall"
-                                            }
-                                          }
-                                        }
-                                      ],
-                                      "maxColumnCount": 3,
-                                      "rowHeightMode": "standard"
-                                    }
-                                  },
-                                  "title": ""
-                                }
-                              }
-                            ]
-                          }
+                        "repeat": {
+                          "mode": "variable",
+                          "value": "firewall"
                         },
-                        "title": "Sessions"
+                        "title": "$firewall"
                       }
                     }
                   ]
@@ -4222,10 +3788,10 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "2025-08-01T05:00:00.000Z",
+      "from": "now-24h",
       "hideTimepicker": false,
       "timezone": "America/Lima",
-      "to": "2025-09-01T04:59:59.000Z"
+      "to": "now"
     },
     "title": "System [FortiOS] v2",
     "variables": [

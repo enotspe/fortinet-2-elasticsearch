@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "mas8hw4",
-    "generation": 57,
+    "generation": 63,
     "creationTimestamp": "2025-06-02T19:54:30Z",
     "labels": {},
     "annotations": {}
@@ -50,7 +50,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| count() total_logs, count_uniq(fwb.main_type) unique_main_type, count_uniq(fwb.sub_type) unique_sub_type, count_uniq(fwb.app_name) unique_app_name",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| count() total_logs, count_uniq(fwb.main_type) unique_main_type, count_uniq(fwb.sub_type) unique_sub_type, count_uniq(fwb.app_name) unique_app_name",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -116,7 +116,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -139,7 +139,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}",
                         "queryType": "instant"
                       },
                       "version": "v0"
@@ -325,7 +325,7 @@
                 "showHeader": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -348,7 +348,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\nAND source.ip:in(\n  _stream:{fwb.cat=attack}\n  | fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n  | $Logsql\n  | top 10 (source.ip)\n  | keep source.ip\n  )\n  | by (source.ip) count() results",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| source.ip:in(\n  _stream:{fwb.cat=attack}\n  | fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n  | ${Logsql:raw}\n  | top 10 (source.ip)\n  | keep source.ip\n  )\n| by (source.ip) count() results",
                         "legendFormat": "{{source.ip}}",
                         "queryType": "statsRange"
                       },
@@ -441,7 +441,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -464,7 +464,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\nAND url.domain:in(\n  _stream:{fwb.cat=attack}\n  | fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n  | $Logsql\n    | top 10 (url.domain)\n    | keep url.domain\n  )\n  | by (url.domain) count() results",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| url.domain:in(\n  _stream:{fwb.cat=attack}\n  | fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n  | ${Logsql:raw}\n  | top 10 (url.domain)\n  | keep url.domain\n  )\n| by (url.domain) count() results",
                         "legendFormat": "{{url.domain}}",
                         "queryType": "statsRange"
                       },
@@ -557,7 +557,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -580,7 +580,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (source.ip,fwb.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (source.ip,fwb.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -766,7 +766,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -789,7 +789,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.srccountry,fwb.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.srccountry,fwb.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -970,7 +970,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -993,7 +993,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.service,fwb.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.service,fwb.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1174,7 +1174,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1197,7 +1197,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.sub_type,fwb.action) count() results \n| sort by (results) desc",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.sub_type,fwb.action) count() results \n| sort by (results) desc",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1378,7 +1378,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1401,7 +1401,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.threat_level,fwb.action) count() results \n| sort by (results) desc",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.threat_level,fwb.action) count() results \n| sort by (results) desc",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1582,7 +1582,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1605,7 +1605,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.main_type,fwb.action) count() results \n| sort by (results) desc",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.main_type,fwb.action) count() results \n| sort by (results) desc",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1786,7 +1786,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1809,7 +1809,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.app_name) count() results \n| sort by (results) desc",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.app_name) count() results \n| sort by (results) desc",
                         "legendFormat": "{{fwb.app_name}}",
                         "queryType": "statsRange"
                       },
@@ -1889,7 +1889,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1912,7 +1912,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.main_type) count() results",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.main_type) count() results",
                         "legendFormat": "{{fwb.main_type}}",
                         "queryType": "statsRange"
                       },
@@ -2008,7 +2008,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2031,7 +2031,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.app_name,fwb.threat_level,fwb.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.app_name,fwb.threat_level,fwb.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2135,7 +2135,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.main_type,fwb.sub_type) count() results \n| sort by (results) desc",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.main_type,fwb.sub_type) count() results \n| sort by (results) desc",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2243,7 +2243,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2266,7 +2266,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:(${main_type:doublequote}) AND fwb.sub_type:(${sub_type:doublequote}) AND fwb.app_name:(${app_name:doublequote}) AND fwb.action:(${action:doublequote}) AND fwb.threat_level:(${threat_level:doublequote})\n| $Logsql\n| stats by (fwb.sub_type) count() results",
+                        "expr": "_stream:{fwb.cat=attack}\n| fwb.main_type:in(${main_type:doublequote}) AND fwb.sub_type:in(${sub_type:doublequote}) AND fwb.app_name:in(${app_name:doublequote}) AND fwb.action:in(${action:doublequote}) AND fwb.threat_level:in(${threat_level:doublequote})\n| ${Logsql:raw}\n| stats by (fwb.sub_type) count() results",
                         "legendFormat": "{{fwb.sub_type}}",
                         "queryType": "statsRange"
                       },
@@ -2361,7 +2361,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       }
@@ -2411,6 +2411,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -2445,6 +2446,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -2496,6 +2498,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -2531,6 +2534,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -2601,6 +2605,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {

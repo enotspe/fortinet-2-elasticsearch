@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "man5bz8",
-    "generation": 86,
+    "generation": 98,
     "creationTimestamp": "2025-09-16T02:58:13Z",
     "labels": {},
     "annotations": {}
@@ -50,7 +50,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (fedr.Country) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (fedr.Country) count() results \n| sort by (results) desc \n| limit 10",
                         "legendFormat": "",
                         "queryType": "stats"
                       },
@@ -160,7 +160,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -183,7 +183,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (fedr.Classification) count() results",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (fedr.Classification) count() results",
                         "legendFormat": "{{fedr.Classification}}",
                         "queryType": "statsRange"
                       },
@@ -366,7 +366,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -389,7 +389,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (fedr.Action) count() results",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (fedr.Action) count() results",
                         "legendFormat": "{{fedr.Action}}",
                         "queryType": "statsRange"
                       },
@@ -511,7 +511,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -534,7 +534,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (host.name,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (host.name,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -698,7 +698,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -721,7 +721,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\nAND host.name:in(\n  _stream:{\"fedr.Message Type\" in (${type:doublequote})}\n  | fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n  \n    | top 10 (host.name)\n    | keep host.name\n  )\n  | by (host.name) count() results",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \nAND host.name:in(\n  _stream:{\"fedr.Message Type\" in (${type:doublequote})}\n  | fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}\n  \n    | top 10 (host.name)\n    | keep host.name\n  )\n  | by (host.name) count() results",
                         "legendFormat": "{{host.name}}",
                         "queryType": "statsRange"
                       },
@@ -813,7 +813,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -836,7 +836,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (host.user.name,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (host.user.name,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1000,7 +1000,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -1023,7 +1023,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\nAND host.user.name:in(\n  _stream:{\"fedr.Message Type\" in (${type:doublequote})}\n  | fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n  AND host.user.name:*\n    | top 10 (host.user.name)\n    | keep host.user.name\n  )\n  | by (host.user.name) count() results",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \nAND host.user.name:in(\n  _stream:{\"fedr.Message Type\" in (${type:doublequote})}\n  | fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}\n  AND host.user.name:*\n    | top 10 (host.user.name)\n    | keep host.user.name\n  )\n  | by (host.user.name) count() results",
                         "legendFormat": "{{host.user.name}}",
                         "queryType": "statsRange"
                       },
@@ -1115,7 +1115,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -1138,7 +1138,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (\"fedr.Threat Name\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (\"fedr.Threat Name\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1302,7 +1302,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -1325,7 +1325,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (\"fedr.Threat Family\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (\"fedr.Threat Family\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1489,7 +1489,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -1512,7 +1512,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (fedr.Action,fedr.Severity) count() results \n| sort by (results) desc",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (fedr.Action,fedr.Severity) count() results \n| sort by (results) desc",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1710,7 +1710,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1733,7 +1733,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (fedr.Classification,fedr.Severity) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (fedr.Classification,fedr.Severity) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1928,7 +1928,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1951,7 +1951,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (\"fedr.Threat Type\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (\"fedr.Threat Type\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2115,194 +2115,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
-          }
-        }
-      },
-      "panel-155": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (host.os.name,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
-                        "queryType": "stats"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": [
-                {
-                  "kind": "joinByLabels",
-                  "spec": {
-                    "id": "joinByLabels",
-                    "options": {
-                      "value": "__name__"
-                    }
-                  }
-                },
-                {
-                  "kind": "groupingToMatrix",
-                  "spec": {
-                    "id": "groupingToMatrix",
-                    "options": {
-                      "columnField": "fedr.Action",
-                      "rowField": "host.os.name",
-                      "valueField": "results"
-                    }
-                  }
-                },
-                {
-                  "kind": "organize",
-                  "spec": {
-                    "id": "organize",
-                    "options": {
-                      "excludeByName": {},
-                      "includeByName": {},
-                      "indexByName": {},
-                      "renameByName": {
-                        "Value": "no utm"
-                      }
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "description": "",
-          "id": 155,
-          "links": [],
-          "title": "host.os.name",
-          "vizConfig": {
-            "group": "barchart",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "fixed"
-                  },
-                  "custom": {
-                    "axisBorderShow": false,
-                    "axisCenteredZero": false,
-                    "axisColorMode": "text",
-                    "axisLabel": "",
-                    "axisPlacement": "auto",
-                    "fillOpacity": 80,
-                    "gradientMode": "none",
-                    "hideFrom": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": false
-                    },
-                    "lineWidth": 1,
-                    "scaleDistribution": {
-                      "type": "linear"
-                    },
-                    "thresholdsStyle": {
-                      "mode": "off"
-                    }
-                  },
-                  "links": [
-                    {
-                      "targetBlank": false,
-                      "title": "Filter for 🔍",
-                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=host.os.name%7C%3D%7C${__data.fields[0]}"
-                    },
-                    {
-                      "title": "Filter out 🔍",
-                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=host.os.name%7C%21%3D%7C${__data.fields[0]}"
-                    }
-                  ],
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  },
-                  "unit": "sishort"
-                },
-                "overrides": [
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "Logged"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-blue",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "Blocked"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-red",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              "options": {
-                "barRadius": 0,
-                "barWidth": 0.97,
-                "fullHighlight": false,
-                "groupWidth": 0.7,
-                "legend": {
-                  "calcs": [],
-                  "displayMode": "list",
-                  "placement": "bottom",
-                  "showLegend": true
-                },
-                "orientation": "horizontal",
-                "showValue": "auto",
-                "stacking": "normal",
-                "tooltip": {
-                  "hideZeros": false,
-                  "mode": "multi",
-                  "sort": "desc"
-                },
-                "xTickLabelRotation": 0,
-                "xTickLabelSpacing": 0
-              }
-            },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -2325,7 +2138,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\nAND process.name:in(\n  _stream:{\"fedr.Message Type\" in (${type:doublequote})}\n  | fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n  AND process.name:*\n    | top 10 (process.name)\n    | keep process.name\n  )\n  | by (process.name) count() results",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \nAND process.name:in(\n  _stream:{\"fedr.Message Type\" in (${type:doublequote})}\n  | fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}\n  AND process.name:*\n    | top 10 (process.name)\n    | keep process.name\n  )\n  | by (process.name) count() results",
                         "legendFormat": "{{process.name}}",
                         "queryType": "statsRange"
                       },
@@ -2417,7 +2230,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -2440,7 +2253,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (process.name,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (process.name,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2604,7 +2417,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -2627,7 +2440,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (process.type,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (process.type,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2791,7 +2604,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -2814,7 +2627,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (process.executable,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (process.executable,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2978,7 +2791,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -3001,7 +2814,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (process.hash.md5,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (process.hash.md5,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3169,7 +2982,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -3192,7 +3005,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| unroll process.command_line\n| stats by (process.command_line,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| unroll process.command_line\n| stats by (process.command_line,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3356,7 +3169,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -3379,7 +3192,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| unroll fedr.Target\n| stats by (fedr.Target,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| unroll fedr.Target\n| stats by (fedr.Target,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3543,7 +3356,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -3566,7 +3379,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (fedr.Script,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (fedr.Script,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3730,7 +3543,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -3753,7 +3566,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (\"fedr.Script Path\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (\"fedr.Script Path\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3917,7 +3730,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -3940,7 +3753,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (source.ip,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (source.ip,fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4104,7 +3917,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -4127,7 +3940,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| unroll \"fedr.MITRE techniques\"\n| stats by (\"fedr.MITRE techniques\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| unroll \"fedr.MITRE techniques\"\n| stats by (\"fedr.MITRE techniques\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4291,7 +4104,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -4314,7 +4127,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| unroll rule.name\n| stats by (rule.name,fedr.Severity) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| unroll rule.name\n| stats by (rule.name,fedr.Severity) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4509,7 +4322,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -4532,7 +4345,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (host.name,fedr.Action) count_uniq(process.name) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (host.name,fedr.Action) count_uniq(process.name) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4696,7 +4509,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -4719,7 +4532,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (host.name,fedr.Action) count_uniq(\"fedr.Event ID\") results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (host.name,fedr.Action) count_uniq(\"fedr.Event ID\") results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4883,7 +4696,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -4906,7 +4719,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (host.name,fedr.Action) count_uniq(\"fedr.Threat Name\") results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (host.name,fedr.Action) count_uniq(\"fedr.Threat Name\") results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5070,7 +4883,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -5093,7 +4906,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (host.name,fedr.Action) count_uniq(\"fedr.MITRE techniques\") results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (host.name,fedr.Action) count_uniq(\"fedr.MITRE techniques\") results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5257,7 +5070,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -5280,7 +5093,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (process.name,fedr.Action) count_uniq(host.name) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (process.name,fedr.Action) count_uniq(host.name) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5444,7 +5257,194 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch4"
+          }
+        }
+      },
+      "panel-186": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (\"fedr.Collector Group\",fedr.Action) count() results \n| sort by (results) desc \n| limit 10",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                },
+                {
+                  "kind": "groupingToMatrix",
+                  "spec": {
+                    "id": "groupingToMatrix",
+                    "options": {
+                      "columnField": "fedr.Action",
+                      "rowField": "fedr.Collector Group",
+                      "valueField": "results"
+                    }
+                  }
+                },
+                {
+                  "kind": "organize",
+                  "spec": {
+                    "id": "organize",
+                    "options": {
+                      "excludeByName": {},
+                      "includeByName": {},
+                      "indexByName": {},
+                      "renameByName": {
+                        "Value": "no utm"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 186,
+          "links": [],
+          "title": "fedr.Collector Group",
+          "vizConfig": {
+            "group": "barchart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "fixed"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 80,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "links": [
+                    {
+                      "targetBlank": false,
+                      "title": "Filter for 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=\"fedr.Collector Group\"%7C%3D%7C${__data.fields[0]}"
+                    },
+                    {
+                      "title": "Filter out 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=\"fedr.Collector Group\"%7C%21%3D%7C${__data.fields[0]}"
+                    }
+                  ],
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": [
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Logged"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-blue",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "matcher": {
+                      "id": "byName",
+                      "options": "Blocked"
+                    },
+                    "properties": [
+                      {
+                        "id": "color",
+                        "value": {
+                          "fixedColor": "dark-red",
+                          "mode": "fixed"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "options": {
+                "barRadius": 0,
+                "barWidth": 0.97,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "orientation": "horizontal",
+                "showValue": "auto",
+                "stacking": "normal",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+              }
+            },
+            "version": "12.4.0-19174562009.patch4"
           }
         }
       },
@@ -5467,7 +5467,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats by (fedr.Country) count() results \n| sort by (results) desc \n| limit 5",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}  \n| stats by (fedr.Country) count() results \n| sort by (results) desc \n| limit 5",
                         "legendFormat": "{{fedr.Country}}",
                         "queryType": "stats"
                       },
@@ -5527,7 +5527,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -5550,7 +5550,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:(${classification:doublequote}) AND fedr.Action:(${action:doublequote}) AND fedr.Severity:(${severity:doublequote}) AND $Logsql\n| stats count() total_logs, count_uniq(host.name) unique_host.name, count_uniq(host.user.name) unique_host.user.name, count_uniq(process.name) unique_process.name, count_uniq(\"fedr.MITRE techniques\") unique_Mitre_Tecniques",
+                        "expr": "_stream:{\"fedr.Message Type\" in (${type:doublequote})}\n| fedr.Classification:in(${classification:doublequote}) AND fedr.Action:in(${action:doublequote}) AND fedr.Severity:in(${severity:doublequote}) AND ${Logsql:raw}\n| stats count() total_logs, count_uniq(host.name) unique_host.name, count_uniq(host.user.name) unique_host.user.name, count_uniq(process.name) unique_process.name, count_uniq(\"fedr.MITRE techniques\") unique_Mitre_Tecniques",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5611,7 +5611,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       }
@@ -5657,6 +5657,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "RowsLayout",
                           "spec": {
@@ -5691,6 +5692,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -5735,6 +5737,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -5846,6 +5849,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -5865,7 +5869,7 @@
                                           "spec": {
                                             "element": {
                                               "kind": "ElementReference",
-                                              "name": "panel-155"
+                                              "name": "panel-139"
                                             }
                                           }
                                         },
@@ -5874,7 +5878,7 @@
                                           "spec": {
                                             "element": {
                                               "kind": "ElementReference",
-                                              "name": "panel-139"
+                                              "name": "panel-186"
                                             }
                                           }
                                         },
@@ -5976,6 +5980,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -6088,6 +6093,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -6132,6 +6138,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -6170,76 +6177,7 @@
         ]
       }
     },
-    "links": [
-      {
-        "asDropdown": true,
-        "icon": "external link",
-        "includeVars": false,
-        "keepTime": true,
-        "tags": [
-          "fortinet",
-          "fortigate",
-          "ingest",
-          "template"
-        ],
-        "targetBlank": false,
-        "title": "Ingest",
-        "tooltip": "",
-        "type": "dashboards",
-        "url": ""
-      },
-      {
-        "asDropdown": true,
-        "icon": "external link",
-        "includeVars": false,
-        "keepTime": true,
-        "tags": [
-          "traffic",
-          "fortigate",
-          "fortinet",
-          "template"
-        ],
-        "targetBlank": false,
-        "title": "Traffic",
-        "tooltip": "",
-        "type": "dashboards",
-        "url": ""
-      },
-      {
-        "asDropdown": true,
-        "icon": "external link",
-        "includeVars": false,
-        "keepTime": true,
-        "tags": [
-          "utm",
-          "fortinet",
-          "fortigate",
-          "template"
-        ],
-        "targetBlank": false,
-        "title": "UTM",
-        "tooltip": "",
-        "type": "dashboards",
-        "url": ""
-      },
-      {
-        "asDropdown": true,
-        "icon": "external link",
-        "includeVars": false,
-        "keepTime": true,
-        "tags": [
-          "event",
-          "fortigate",
-          "fortinet",
-          "template"
-        ],
-        "targetBlank": false,
-        "title": "Event",
-        "tooltip": "",
-        "type": "dashboards",
-        "url": ""
-      }
-    ],
+    "links": [],
     "liveNow": false,
     "preload": false,
     "tags": [

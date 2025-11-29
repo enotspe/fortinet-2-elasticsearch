@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "mazgmth",
-    "generation": 85,
+    "generation": 103,
     "creationTimestamp": "2025-06-19T04:06:13Z",
     "labels": {},
     "annotations": {}
@@ -50,7 +50,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.source_country) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.source_country) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -70,7 +70,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.destination_country) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.destination_country) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -193,11 +193,12 @@
                   "id": "zero",
                   "lat": 0,
                   "lon": 0,
+                  "noRepeat": false,
                   "zoom": 1
                 }
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -220,7 +221,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND network.application:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (network.application)\n    | keep network.application\n  )\n  | by (network.application) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND network.application:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n    | top 10 (network.application)\n    | keep network.application\n  )\n  | by (network.application) count() results",
                         "legendFormat": "{{network.application}}",
                         "queryType": "statsRange"
                       },
@@ -272,6 +273,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -312,7 +314,7 @@
                 }
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -335,7 +337,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND panos.application_category:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (panos.application_category)\n    | keep panos.application_category\n  )\n  | by (panos.application_category) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND panos.application_category:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n    | top 10 (panos.application_category)\n    | keep panos.application_category\n  )\n  | by (panos.application_category) count() results",
                         "legendFormat": "{{panos.application_category}}",
                         "queryType": "statsRange"
                       },
@@ -387,6 +389,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -427,7 +430,7 @@
                 }
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -450,7 +453,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (network.transport_port,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (network.transport_port,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -676,7 +679,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -699,7 +702,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (network.application,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (network.application,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -925,7 +928,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -948,7 +951,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND panos.application_container:* \n| stats by (panos.application_container,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND panos.application_container:* \n| stats by (panos.application_container,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1174,7 +1177,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1197,7 +1200,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_category,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.application_category,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1423,7 +1426,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1446,7 +1449,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_subcategory,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.application_subcategory,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1672,221 +1675,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
-          }
-        }
-      },
-      "panel-108": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [],
-              "queryOptions": {},
-              "transformations": []
-            }
-          },
-          "description": "",
-          "id": 108,
-          "links": [],
-          "title": "threat/content_type of traffic log",
-          "transparent": true,
-          "vizConfig": {
-            "group": "text",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {},
-                "overrides": []
-              },
-              "options": {
-                "code": {
-                  "language": "plaintext",
-                  "showLineNumbers": false,
-                  "showMiniMap": false
-                },
-                "content": "- **Start—session** started\n- **End—session** ended\n- **Drop—session** dropped before the application is identified and there is no rule that allows the session.\n- **Deny—session** dropped after the application is identified and there is a rule to block or no rule that allows the session.",
-                "mode": "markdown"
-              }
-            },
-            "version": "12.2.0-17610496912"
-          }
-        }
-      },
-      "panel-109": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type) count() results",
-                        "legendFormat": "{{panos.threat/content_type}}",
-                        "queryType": "statsRange"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": []
-            }
-          },
-          "description": "",
-          "id": 109,
-          "links": [],
-          "title": "panos.threat/content_type %",
-          "transparent": true,
-          "vizConfig": {
-            "group": "timeseries",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "fixed"
-                  },
-                  "custom": {
-                    "axisBorderShow": false,
-                    "axisCenteredZero": false,
-                    "axisColorMode": "text",
-                    "axisLabel": "",
-                    "axisPlacement": "auto",
-                    "barAlignment": 0,
-                    "barWidthFactor": 0.6,
-                    "drawStyle": "bars",
-                    "fillOpacity": 0,
-                    "gradientMode": "none",
-                    "hideFrom": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": false
-                    },
-                    "insertNulls": false,
-                    "lineInterpolation": "linear",
-                    "lineWidth": 1,
-                    "pointSize": 5,
-                    "scaleDistribution": {
-                      "type": "linear"
-                    },
-                    "showPoints": "auto",
-                    "showValues": false,
-                    "spanNulls": false,
-                    "stacking": {
-                      "group": "A",
-                      "mode": "percent"
-                    },
-                    "thresholdsStyle": {
-                      "mode": "off"
-                    }
-                  },
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  }
-                },
-                "overrides": [
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "deny"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "semi-dark-red",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "drop"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "gray",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "end"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "semi-dark-blue",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "start"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "semi-dark-green",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              "options": {
-                "legend": {
-                  "calcs": [],
-                  "displayMode": "list",
-                  "placement": "right",
-                  "showLegend": true
-                },
-                "tooltip": {
-                  "hideZeros": false,
-                  "mode": "multi",
-                  "sort": "desc"
-                }
-              }
-            },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1909,7 +1698,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.action,panos.session_end_reason) count() results \n| sort by (results) desc \n#| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.threat/content_type,panos.action,panos.session_end_reason) count() results \n| sort by (results) desc \n#| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2070,376 +1859,6 @@
           }
         }
       },
-      "panel-114": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.action) count() results \n| sort by (results) desc",
-                        "queryType": "stats"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": [
-                {
-                  "kind": "joinByLabels",
-                  "spec": {
-                    "id": "joinByLabels",
-                    "options": {
-                      "value": "__name__"
-                    }
-                  }
-                },
-                {
-                  "kind": "groupingToMatrix",
-                  "spec": {
-                    "id": "groupingToMatrix",
-                    "options": {
-                      "columnField": "panos.action",
-                      "rowField": "panos.threat/content_type",
-                      "valueField": "results"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "description": "",
-          "id": 114,
-          "links": [],
-          "title": "panos.threat/content_type by panos.action",
-          "transparent": true,
-          "vizConfig": {
-            "group": "barchart",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "fixed"
-                  },
-                  "custom": {
-                    "axisBorderShow": false,
-                    "axisCenteredZero": false,
-                    "axisColorMode": "text",
-                    "axisLabel": "",
-                    "axisPlacement": "auto",
-                    "fillOpacity": 80,
-                    "gradientMode": "none",
-                    "hideFrom": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": false
-                    },
-                    "lineWidth": 1,
-                    "scaleDistribution": {
-                      "type": "linear"
-                    },
-                    "thresholdsStyle": {
-                      "mode": "off"
-                    }
-                  },
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  },
-                  "unit": "sishort"
-                },
-                "overrides": [
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "allow"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-blue",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "deny"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-red",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "drop"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "gray",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "drop-ICMP"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-gray",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "reset-both"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "orange",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "reset-client"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "dark-orange",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "reset server"
-                    },
-                    "properties": [
-                      {
-                        "id": "color",
-                        "value": {
-                          "fixedColor": "light-orange",
-                          "mode": "fixed"
-                        }
-                      }
-                    ]
-                  }
-                ]
-              },
-              "options": {
-                "barRadius": 0,
-                "barWidth": 0.97,
-                "fullHighlight": false,
-                "groupWidth": 0.7,
-                "legend": {
-                  "calcs": [],
-                  "displayMode": "list",
-                  "placement": "right",
-                  "showLegend": true
-                },
-                "orientation": "auto",
-                "showValue": "auto",
-                "stacking": "normal",
-                "tooltip": {
-                  "hideZeros": false,
-                  "mode": "multi",
-                  "sort": "desc"
-                },
-                "xTickLabelRotation": 0,
-                "xTickLabelSpacing": 0
-              }
-            },
-            "version": "12.1.0-89256.patch1-89350"
-          }
-        }
-      },
-      "panel-115": {
-        "kind": "Panel",
-        "spec": {
-          "data": {
-            "kind": "QueryGroup",
-            "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "hidden": false,
-                    "query": {
-                      "datasource": {
-                        "name": "${datasource}"
-                      },
-                      "group": "victoriametrics-logs-datasource",
-                      "kind": "DataQuery",
-                      "spec": {
-                        "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type,panos.session_end_reason) count() results \n| sort by (results) desc \n#| limit 10",
-                        "queryType": "stats"
-                      },
-                      "version": "v0"
-                    },
-                    "refId": "A"
-                  }
-                }
-              ],
-              "queryOptions": {},
-              "transformations": [
-                {
-                  "kind": "joinByLabels",
-                  "spec": {
-                    "id": "joinByLabels",
-                    "options": {
-                      "value": "__name__"
-                    }
-                  }
-                },
-                {
-                  "kind": "groupingToMatrix",
-                  "spec": {
-                    "id": "groupingToMatrix",
-                    "options": {
-                      "columnField": "panos.session_end_reason",
-                      "rowField": "panos.threat/content_type",
-                      "valueField": "results"
-                    }
-                  }
-                }
-              ]
-            }
-          },
-          "description": "",
-          "id": 115,
-          "links": [],
-          "title": "panos.threat/content_type by panos.session_end_reason",
-          "transparent": true,
-          "vizConfig": {
-            "group": "barchart",
-            "kind": "VizConfig",
-            "spec": {
-              "fieldConfig": {
-                "defaults": {
-                  "color": {
-                    "mode": "palette-classic"
-                  },
-                  "custom": {
-                    "axisBorderShow": false,
-                    "axisCenteredZero": false,
-                    "axisColorMode": "text",
-                    "axisLabel": "",
-                    "axisPlacement": "auto",
-                    "fillOpacity": 80,
-                    "gradientMode": "none",
-                    "hideFrom": {
-                      "legend": false,
-                      "tooltip": false,
-                      "viz": false
-                    },
-                    "lineWidth": 1,
-                    "scaleDistribution": {
-                      "type": "linear"
-                    },
-                    "thresholdsStyle": {
-                      "mode": "off"
-                    }
-                  },
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
-                  },
-                  "unit": "sishort"
-                },
-                "overrides": []
-              },
-              "options": {
-                "barRadius": 0,
-                "barWidth": 0.97,
-                "fullHighlight": false,
-                "groupWidth": 0.7,
-                "legend": {
-                  "calcs": [],
-                  "displayMode": "list",
-                  "placement": "right",
-                  "showLegend": true
-                },
-                "orientation": "vertical",
-                "showValue": "auto",
-                "stacking": "normal",
-                "tooltip": {
-                  "hideZeros": false,
-                  "mode": "multi",
-                  "sort": "desc"
-                },
-                "xTickLabelRotation": 0,
-                "xTickLabelSpacing": 0
-              }
-            },
-            "version": "12.1.0-89256.patch1-89350"
-          }
-        }
-      },
       "panel-116": {
         "kind": "Panel",
         "spec": {
@@ -2459,7 +1878,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.source_country) count() results \n| sort by (results) desc \n| limit 5",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.source_country) count() results \n| sort by (results) desc \n| limit 5",
                         "legendFormat": "{{panos.source_country}}",
                         "queryType": "stats"
                       },
@@ -2522,6 +1941,7 @@
                   "fields": "",
                   "values": true
                 },
+                "sort": "desc",
                 "tooltip": {
                   "hideZeros": false,
                   "mode": "multi",
@@ -2529,7 +1949,7 @@
                 }
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2552,7 +1972,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.destination_country) count() results \n| sort by (results) desc \n| limit 5",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.destination_country) count() results \n| sort by (results) desc \n| limit 5",
                         "legendFormat": "{{panos.destination_country}}",
                         "queryType": "stats"
                       },
@@ -2615,6 +2035,7 @@
                   "fields": "",
                   "values": true
                 },
+                "sort": "desc",
                 "tooltip": {
                   "hideZeros": false,
                   "mode": "multi",
@@ -2622,7 +2043,7 @@
                 }
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2645,7 +2066,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (observer.ingress.zone.name,observer.egress.zone.name) count() results \n| sort by (results) desc \n| limit 50",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (observer.ingress.zone.name,observer.egress.zone.name) count() results \n| sort by (results) desc \n| limit 20",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2674,37 +2095,29 @@
           "title": "observer.ingress.zone.name by observer.egress.zone.name",
           "transparent": true,
           "vizConfig": {
-            "group": "marcusolsson-treemap-panel",
+            "group": "esnet-chord-panel",
             "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
+                  "color": {
+                    "mode": "palette-classic"
                   },
                   "unit": "sishort"
                 },
                 "overrides": []
               },
               "options": {
-                "colorByField": "results",
-                "groupByField": "observer.egress.zone.name",
-                "sizeField": "results",
-                "textField": "observer.ingress.zone.name",
-                "tiling": "treemapSquarify"
+                "colorBySource": true,
+                "labelSize": 12,
+                "pointLength": 10,
+                "sourceField": "observer.ingress.zone.name",
+                "targetField": "observer.egress.zone.name",
+                "txtLength": 100,
+                "valueField": "results"
               }
             },
-            "version": "2.1.1"
+            "version": "1.0.5"
           }
         }
       },
@@ -2727,7 +2140,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (observer.ingress.interface.name,observer.egress.interface.name) count() results \n| sort by (results) desc \n| limit 50",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (observer.ingress.interface.name,observer.egress.interface.name) count() results \n| sort by (results) desc \n| limit 20",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2756,37 +2169,29 @@
           "title": "observer.ingress.interface.name by observer.egress.interface.name",
           "transparent": true,
           "vizConfig": {
-            "group": "marcusolsson-treemap-panel",
+            "group": "esnet-chord-panel",
             "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "color": "green",
-                        "value": 0
-                      },
-                      {
-                        "color": "red",
-                        "value": 80
-                      }
-                    ]
+                  "color": {
+                    "mode": "palette-classic"
                   },
                   "unit": "sishort"
                 },
                 "overrides": []
               },
               "options": {
-                "colorByField": "results",
-                "groupByField": "observer.egress.interface.name",
-                "sizeField": "results",
-                "textField": "observer.ingress.interface.name",
-                "tiling": "treemapSquarify"
+                "colorBySource": true,
+                "labelSize": 12,
+                "pointLength": 10,
+                "sourceField": "observer.ingress.interface.name",
+                "targetField": "observer.egress.interface.name",
+                "txtLength": 100,
+                "valueField": "results"
               }
             },
-            "version": "2.1.1"
+            "version": "1.0.5"
           }
         }
       },
@@ -2809,7 +2214,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.application_technology,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.application_technology,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3035,7 +2440,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3058,7 +2463,433 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (rule.name,panos.device_name) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (rule.name,panos.threat/content_type) count() results \n| sort by (results) desc \n| limit 10",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                },
+                {
+                  "kind": "groupingToMatrix",
+                  "spec": {
+                    "id": "groupingToMatrix",
+                    "options": {
+                      "columnField": "panos.threat/content_type",
+                      "rowField": "rule.name",
+                      "valueField": "results"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 122,
+          "links": [],
+          "title": "panos.threat/content_type by panos.device_name",
+          "transparent": true,
+          "vizConfig": {
+            "group": "barchart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 80,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "links": [
+                    {
+                      "title": "Fitler for 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=rule.name%7C%3D%7C${__data.fields[0]}"
+                    },
+                    {
+                      "title": "Filter out 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=rule.name%7C%21%3D%7C${__data.fields[0]}"
+                    }
+                  ],
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": []
+              },
+              "options": {
+                "barRadius": 0,
+                "barWidth": 0.97,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "orientation": "horizontal",
+                "showValue": "auto",
+                "stacking": "normal",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+              }
+            },
+            "version": "12.4.0-19508498046"
+          }
+        }
+      },
+      "panel-123": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (rule.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                },
+                {
+                  "kind": "groupingToMatrix",
+                  "spec": {
+                    "id": "groupingToMatrix",
+                    "options": {
+                      "columnField": "panos.action",
+                      "rowField": "rule.name",
+                      "valueField": "results"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 123,
+          "links": [],
+          "title": "panos.action by panos.device_name",
+          "transparent": true,
+          "vizConfig": {
+            "group": "barchart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 80,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "links": [
+                    {
+                      "title": "Fitler for 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=rule.name%7C%3D%7C${__data.fields[0]}"
+                    },
+                    {
+                      "title": "Filter out 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=rule.name%7C%21%3D%7C${__data.fields[0]}"
+                    }
+                  ],
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": []
+              },
+              "options": {
+                "barRadius": 0,
+                "barWidth": 0.97,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "orientation": "horizontal",
+                "showValue": "auto",
+                "stacking": "normal",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+              }
+            },
+            "version": "12.4.0-19508498046"
+          }
+        }
+      },
+      "panel-124": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (rule.name,panos.session_end_reason) count() results \n| sort by (results) desc \n| limit 10",
+                        "queryType": "stats"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": [
+                {
+                  "kind": "joinByLabels",
+                  "spec": {
+                    "id": "joinByLabels",
+                    "options": {
+                      "value": "__name__"
+                    }
+                  }
+                },
+                {
+                  "kind": "groupingToMatrix",
+                  "spec": {
+                    "id": "groupingToMatrix",
+                    "options": {
+                      "columnField": "panos.session_end_reason",
+                      "rowField": "rule.name",
+                      "valueField": "results"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "description": "",
+          "id": 124,
+          "links": [],
+          "title": "panos.session_end_reason by panos.device_name",
+          "transparent": true,
+          "vizConfig": {
+            "group": "barchart",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {
+                  "color": {
+                    "mode": "palette-classic"
+                  },
+                  "custom": {
+                    "axisBorderShow": false,
+                    "axisCenteredZero": false,
+                    "axisColorMode": "text",
+                    "axisLabel": "",
+                    "axisPlacement": "auto",
+                    "fillOpacity": 80,
+                    "gradientMode": "none",
+                    "hideFrom": {
+                      "legend": false,
+                      "tooltip": false,
+                      "viz": false
+                    },
+                    "lineWidth": 1,
+                    "scaleDistribution": {
+                      "type": "linear"
+                    },
+                    "thresholdsStyle": {
+                      "mode": "off"
+                    }
+                  },
+                  "links": [
+                    {
+                      "title": "Fitler for 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=rule.name%7C%3D%7C${__data.fields[0]}"
+                    },
+                    {
+                      "title": "Filter out 🔍",
+                      "url": "/d/${__dashboard.uid}/${__dashboard.slug}?${__all_variables}&var-Filters=rule.name%7C%21%3D%7C${__data.fields[0]}"
+                    }
+                  ],
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "sishort"
+                },
+                "overrides": []
+              },
+              "options": {
+                "barRadius": 0,
+                "barWidth": 0.97,
+                "fullHighlight": false,
+                "groupWidth": 0.7,
+                "legend": {
+                  "calcs": [],
+                  "displayMode": "list",
+                  "placement": "bottom",
+                  "showLegend": true
+                },
+                "orientation": "horizontal",
+                "showValue": "auto",
+                "stacking": "normal",
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "desc"
+                },
+                "xTickLabelRotation": 0,
+                "xTickLabelSpacing": 0
+              }
+            },
+            "version": "12.4.0-19508498046"
+          }
+        }
+      },
+      "panel-125": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "${datasource}"
+                      },
+                      "group": "victoriametrics-logs-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "editorMode": "code",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (rule.name,panos.device_name) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3093,7 +2924,7 @@
             }
           },
           "description": "",
-          "id": 122,
+          "id": 125,
           "links": [],
           "title": "rule.name by panos.device_name",
           "transparent": true,
@@ -3177,7 +3008,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3200,7 +3031,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\nAND panos.action:($action) AND $Logsql\n| stats count() total_logs, count_uniq(source.ip) unique_source.ip, count_uniq(destination.ip) unique_destination.ip, count_uniq(network.transport_port) unique_service, count_uniq(network.application) unique_application",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction in(${direction:doublequote})}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats count() total_logs, count_uniq(session.id) unique_session.id, count_uniq(source.ip) unique_source.ip, count_uniq(destination.ip) unique_destination.ip, count_uniq(network.transport_port) unique_service, count_uniq(network.application) unique_application",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3262,7 +3093,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3285,7 +3116,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (panos.threat/content_type) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (panos.threat/content_type) count() results",
                         "legendFormat": "{{panos.threat/content_type}}",
                         "queryType": "statsRange"
                       },
@@ -3439,7 +3270,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3462,7 +3293,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.ip:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (source.ip)\n    | keep source.ip\n  )\n  | by (source.ip) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND source.ip:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n    | top 10 (source.ip)\n    | keep source.ip\n  )\n  | by (source.ip) count() results",
                         "legendFormat": "{{source.ip}}",
                         "queryType": "statsRange"
                       },
@@ -3514,6 +3345,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -3554,7 +3386,7 @@
                 }
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3577,7 +3409,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.ip:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (destination.ip)\n    | keep destination.ip\n  )\n  | by (destination.ip) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND destination.ip:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n    | top 10 (destination.ip)\n    | keep destination.ip\n  )\n  | by (destination.ip) count() results",
                         "legendFormat": "{{destination.ip}}",
                         "queryType": "statsRange"
                       },
@@ -3629,6 +3461,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -3669,7 +3502,7 @@
                 }
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3692,7 +3525,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (source.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -3923,7 +3756,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3946,7 +3779,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip:/24,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (source.ip:/24,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4161,7 +3994,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -4184,7 +4017,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.nat.ip:*\n| stats by (source.nat.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND source.nat.ip:*\n| stats by (source.nat.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4415,7 +4248,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -4438,7 +4271,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (destination.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4669,7 +4502,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -4692,7 +4525,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip:/24,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (destination.ip:/24,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4907,7 +4740,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -4930,7 +4763,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.nat.ip:*\n| stats by (destination.nat.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND destination.nat.ip:*\n| stats by (destination.nat.ip,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5161,7 +4994,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -5184,7 +5017,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count_uniq(destination.ip) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (source.ip,panos.action) count_uniq(destination.ip) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5415,7 +5248,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -5438,7 +5271,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (source.ip,panos.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (source.ip,panos.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5669,7 +5502,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -5692,7 +5525,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count_uniq(source.ip) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (destination.ip,panos.action) count_uniq(source.ip) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -5923,7 +5756,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -5946,7 +5779,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n| stats by (destination.ip,panos.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (destination.ip,panos.action) count_uniq(network.transport_port) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -6177,7 +6010,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -6200,7 +6033,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND source.user.name:*\n| stats by (source.user.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND source.user.name:*\n| stats by (source.user.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -6426,7 +6259,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -6449,7 +6282,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND destination.user.name:*\n| stats by (destination.user.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND destination.user.name:*\n| stats by (destination.user.name,panos.action) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -6675,7 +6508,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -6698,7 +6531,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\nAND network.transport_port:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\nAND panos.action:($action) AND $Logsql\n    | top 10 (network.transport_port)\n    | keep network.transport_port\n  )\n  | by (network.transport_port) count() results",
+                        "expr": "_stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\nAND network.transport_port:in(\n  _stream:{panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote}),panos.type=${type:doublequote},panos.threat/content_type in(${subtype:doublequote}),network.direction=${direction:doublequote}}\n| panos.action:in(${action:doublequote}) AND ${Logsql:raw}\n    | top 10 (network.transport_port)\n    | keep network.transport_port\n  )\n  | by (network.transport_port) count() results",
                         "legendFormat": "{{network.transport_port}}",
                         "queryType": "statsRange"
                       },
@@ -6750,6 +6583,7 @@
                       "type": "linear"
                     },
                     "showPoints": "auto",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -6790,7 +6624,7 @@
                 }
               }
             },
-            "version": "12.1.0-89256.patch1-89350"
+            "version": "12.4.0-19508498046"
           }
         }
       }
@@ -6816,6 +6650,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -6842,6 +6677,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "RowsLayout",
                                     "spec": {
@@ -6849,6 +6685,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -6875,41 +6712,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
-                                            "layout": {
-                                              "kind": "AutoGridLayout",
-                                              "spec": {
-                                                "columnWidthMode": "standard",
-                                                "items": [
-                                                  {
-                                                    "kind": "AutoGridLayoutItem",
-                                                    "spec": {
-                                                      "element": {
-                                                        "kind": "ElementReference",
-                                                        "name": "panel-108"
-                                                      }
-                                                    }
-                                                  },
-                                                  {
-                                                    "kind": "AutoGridLayoutItem",
-                                                    "spec": {
-                                                      "element": {
-                                                        "kind": "ElementReference",
-                                                        "name": "panel-109"
-                                                      }
-                                                    }
-                                                  }
-                                                ],
-                                                "maxColumnCount": 3,
-                                                "rowHeight": 240,
-                                                "rowHeightMode": "custom"
-                                              }
-                                            },
-                                            "title": ""
-                                          }
-                                        },
-                                        {
-                                          "kind": "RowsLayoutRow",
-                                          "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -6926,50 +6729,7 @@
                                                   }
                                                 ],
                                                 "maxColumnCount": 3,
-                                                "rowHeightMode": "standard"
-                                              }
-                                            },
-                                            "title": ""
-                                          }
-                                        },
-                                        {
-                                          "kind": "RowsLayoutRow",
-                                          "spec": {
-                                            "layout": {
-                                              "kind": "AutoGridLayout",
-                                              "spec": {
-                                                "columnWidthMode": "standard",
-                                                "items": [
-                                                  {
-                                                    "kind": "AutoGridLayoutItem",
-                                                    "spec": {
-                                                      "element": {
-                                                        "kind": "ElementReference",
-                                                        "name": "panel-114"
-                                                      }
-                                                    }
-                                                  },
-                                                  {
-                                                    "kind": "AutoGridLayoutItem",
-                                                    "spec": {
-                                                      "element": {
-                                                        "kind": "ElementReference",
-                                                        "name": "panel-115"
-                                                      }
-                                                    }
-                                                  },
-                                                  {
-                                                    "kind": "AutoGridLayoutItem",
-                                                    "spec": {
-                                                      "element": {
-                                                        "kind": "ElementReference",
-                                                        "name": "panel-122"
-                                                      }
-                                                    }
-                                                  }
-                                                ],
-                                                "maxColumnCount": 3,
-                                                "rowHeightMode": "standard"
+                                                "rowHeightMode": "tall"
                                               }
                                             },
                                             "title": ""
@@ -6984,6 +6744,60 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
+                                  "layout": {
+                                    "kind": "AutoGridLayout",
+                                    "spec": {
+                                      "columnWidthMode": "narrow",
+                                      "items": [
+                                        {
+                                          "kind": "AutoGridLayoutItem",
+                                          "spec": {
+                                            "element": {
+                                              "kind": "ElementReference",
+                                              "name": "panel-122"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "kind": "AutoGridLayoutItem",
+                                          "spec": {
+                                            "element": {
+                                              "kind": "ElementReference",
+                                              "name": "panel-123"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "kind": "AutoGridLayoutItem",
+                                          "spec": {
+                                            "element": {
+                                              "kind": "ElementReference",
+                                              "name": "panel-124"
+                                            }
+                                          }
+                                        },
+                                        {
+                                          "kind": "AutoGridLayoutItem",
+                                          "spec": {
+                                            "element": {
+                                              "kind": "ElementReference",
+                                              "name": "panel-125"
+                                            }
+                                          }
+                                        }
+                                      ],
+                                      "maxColumnCount": 4,
+                                      "rowHeightMode": "standard"
+                                    }
+                                  },
+                                  "title": "Rule"
+                                }
+                              },
+                              {
+                                "kind": "RowsLayoutRow",
+                                "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -7054,7 +6868,7 @@
                                         }
                                       ],
                                       "maxColumnCount": 3,
-                                      "rowHeightMode": "standard"
+                                      "rowHeightMode": "tall"
                                     }
                                   },
                                   "title": "Interfaces / Zones"
@@ -7063,6 +6877,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "RowsLayout",
                                     "spec": {
@@ -7070,6 +6885,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -7105,6 +6921,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -7236,6 +7053,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "RowsLayout",
                                     "spec": {
@@ -7243,6 +7061,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -7287,6 +7106,7 @@
                                         {
                                           "kind": "RowsLayoutRow",
                                           "spec": {
+                                            "collapse": false,
                                             "layout": {
                                               "kind": "AutoGridLayout",
                                               "spec": {
@@ -7364,17 +7184,17 @@
                             ]
                           }
                         },
-                        "repeat": {
-                          "mode": "variable",
-                          "value": "direction"
-                        },
-                        "title": "$direction"
+                        "title": "sessions"
                       }
                     }
                   ]
                 }
               },
-              "title": "Sessions"
+              "repeat": {
+                "mode": "variable",
+                "value": "direction"
+              },
+              "title": "$direction"
             }
           }
         ]
@@ -7458,7 +7278,7 @@
       "fiscalYearStartMonth": 0,
       "from": "now-15m",
       "hideTimepicker": false,
-      "timezone": "America/Lima=true",
+      "timezone": "browser",
       "to": "now"
     },
     "title": "Traffic [PAN-OS] v2",
@@ -7594,43 +7414,6 @@
         }
       },
       {
-        "kind": "QueryVariable",
-        "spec": {
-          "allValue": "*",
-          "allowCustomValue": true,
-          "current": {
-            "text": "",
-            "value": ""
-          },
-          "definition": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote})}",
-          "hide": "dontHide",
-          "includeAll": true,
-          "label": "threat/content_type",
-          "multi": true,
-          "name": "subtype",
-          "options": [],
-          "query": {
-            "datasource": {
-              "name": "${datasource}"
-            },
-            "group": "victoriametrics-logs-datasource",
-            "kind": "DataQuery",
-            "spec": {
-              "field": "panos.threat/content_type",
-              "limit": 25,
-              "query": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote})}",
-              "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
-              "type": "fieldValue"
-            },
-            "version": "v0"
-          },
-          "refresh": "onDashboardLoad",
-          "regex": "",
-          "skipUrlSync": false,
-          "sort": "disabled"
-        }
-      },
-      {
         "kind": "CustomVariable",
         "spec": {
           "allValue": "*",
@@ -7667,6 +7450,43 @@
           ],
           "query": "outbound,inbound,internal,external",
           "skipUrlSync": false
+        }
+      },
+      {
+        "kind": "QueryVariable",
+        "spec": {
+          "allValue": "*",
+          "allowCustomValue": true,
+          "current": {
+            "text": "",
+            "value": ""
+          },
+          "definition": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote})}",
+          "hide": "dontHide",
+          "includeAll": true,
+          "label": "threat/content_type",
+          "multi": true,
+          "name": "subtype",
+          "options": [],
+          "query": {
+            "datasource": {
+              "name": "${datasource}"
+            },
+            "group": "victoriametrics-logs-datasource",
+            "kind": "DataQuery",
+            "spec": {
+              "field": "panos.threat/content_type",
+              "limit": 25,
+              "query": "_stream: {panos.type=$type,panos.device_name in(${firewall:doublequote}),panos.virtual_system in(${virtual_system:doublequote})}",
+              "refId": "VictoriaLogsVariableQueryEditor-VariableQuery",
+              "type": "fieldValue"
+            },
+            "version": "v0"
+          },
+          "refresh": "onDashboardLoad",
+          "regex": "",
+          "skipUrlSync": false,
+          "sort": "disabled"
         }
       },
       {

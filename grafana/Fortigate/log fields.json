@@ -1,0 +1,561 @@
+{
+    "apiVersion": "dashboard.grafana.app/v2beta1",
+    "kind": "Dashboard",
+    "metadata": {
+        "name": "mah8cq4",
+        "generation": 5,
+        "creationTimestamp": "2025-11-25T17:24:16Z",
+        "labels": {},
+        "annotations": {}
+    },
+    "spec": {
+        "annotations": [
+            {
+                "kind": "AnnotationQuery",
+                "spec": {
+                    "builtIn": true,
+                    "enable": true,
+                    "hide": true,
+                    "iconColor": "rgba(0, 211, 255, 1)",
+                    "name": "Annotations & Alerts",
+                    "query": {
+                        "group": "grafana",
+                        "kind": "DataQuery",
+                        "spec": {},
+                        "version": "v0"
+                    }
+                }
+            }
+        ],
+        "cursorSync": "Off",
+        "description": "",
+        "editable": true,
+        "elements": {
+            "panel-1": {
+                "kind": "Panel",
+                "spec": {
+                    "data": {
+                        "kind": "QueryGroup",
+                        "spec": {
+                            "queries": [
+                                {
+                                    "kind": "PanelQuery",
+                                    "spec": {
+                                        "hidden": false,
+                                        "query": {
+                                            "group": "yesoreyeram-infinity-datasource",
+                                            "kind": "DataQuery",
+                                            "spec": {
+                                                "columns": [],
+                                                "filters": [],
+                                                "format": "table",
+                                                "global_query_id": "",
+                                                "parser": "backend",
+                                                "root_selector": "",
+                                                "source": "url",
+                                                "type": "csv",
+                                                "url": "https://raw.githubusercontent.com/enotspe/fortinet-2-elasticsearch/refs/heads/main/datasets/Fortinet/Fortigate/7.6/unique_fields/unique_log_fields_data_types_traffic_7_6.csv",
+                                                "url_options": {
+                                                    "data": "",
+                                                    "method": "GET"
+                                                }
+                                            },
+                                            "version": "v0"
+                                        },
+                                        "refId": "A"
+                                    }
+                                }
+                            ],
+                            "queryOptions": {},
+                            "transformations": [
+                                {
+                                    "kind": "organize",
+                                    "spec": {
+                                        "id": "organize",
+                                        "options": {
+                                            "excludeByName": {},
+                                            "includeByName": {},
+                                            "indexByName": {
+                                                "Data Type": 1,
+                                                "Log Field Name": 0
+                                            },
+                                            "renameByName": {}
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "description": "",
+                    "id": 1,
+                    "links": [],
+                    "title": "",
+                    "transparent": true,
+                    "vizConfig": {
+                        "group": "table",
+                        "kind": "VizConfig",
+                        "spec": {
+                            "fieldConfig": {
+                                "defaults": {
+                                    "color": {
+                                        "mode": "thresholds"
+                                    },
+                                    "custom": {
+                                        "align": "auto",
+                                        "cellOptions": {
+                                            "type": "auto"
+                                        },
+                                        "filterable": true,
+                                        "footer": {
+                                            "reducers": [
+                                                "count"
+                                            ]
+                                        },
+                                        "inspect": false
+                                    },
+                                    "thresholds": {
+                                        "mode": "absolute",
+                                        "steps": [
+                                            {
+                                                "color": "green",
+                                                "value": 0
+                                            },
+                                            {
+                                                "color": "red",
+                                                "value": 80
+                                            }
+                                        ]
+                                    }
+                                },
+                                "overrides": []
+                            },
+                            "options": {
+                                "cellHeight": "sm",
+                                "showHeader": true,
+                                "sortBy": [
+                                    {
+                                        "desc": false,
+                                        "displayName": "Log Field Name"
+                                    }
+                                ]
+                            }
+                        },
+                        "version": "12.4.0-19508498046"
+                    }
+                }
+            },
+            "panel-2": {
+                "kind": "Panel",
+                "spec": {
+                    "data": {
+                        "kind": "QueryGroup",
+                        "spec": {
+                            "queries": [
+                                {
+                                    "kind": "PanelQuery",
+                                    "spec": {
+                                        "hidden": false,
+                                        "query": {
+                                            "group": "yesoreyeram-infinity-datasource",
+                                            "kind": "DataQuery",
+                                            "spec": {
+                                                "columns": [],
+                                                "filters": [],
+                                                "format": "table",
+                                                "global_query_id": "",
+                                                "parser": "backend",
+                                                "root_selector": "",
+                                                "source": "url",
+                                                "type": "csv",
+                                                "url": "https://raw.githubusercontent.com/enotspe/fortinet-2-elasticsearch/refs/heads/main/datasets/Fortinet/Fortigate/7.6/unique_fields/unique_log_fields_data_types_utm_7_6.csv",
+                                                "url_options": {
+                                                    "data": "",
+                                                    "method": "GET"
+                                                }
+                                            },
+                                            "version": "v0"
+                                        },
+                                        "refId": "A"
+                                    }
+                                }
+                            ],
+                            "queryOptions": {},
+                            "transformations": [
+                                {
+                                    "kind": "organize",
+                                    "spec": {
+                                        "id": "organize",
+                                        "options": {
+                                            "excludeByName": {},
+                                            "includeByName": {},
+                                            "indexByName": {
+                                                "Data Type": 1,
+                                                "Log Field Name": 0
+                                            },
+                                            "renameByName": {}
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "description": "",
+                    "id": 2,
+                    "links": [],
+                    "title": "",
+                    "transparent": true,
+                    "vizConfig": {
+                        "group": "table",
+                        "kind": "VizConfig",
+                        "spec": {
+                            "fieldConfig": {
+                                "defaults": {
+                                    "color": {
+                                        "mode": "thresholds"
+                                    },
+                                    "custom": {
+                                        "align": "auto",
+                                        "cellOptions": {
+                                            "type": "auto"
+                                        },
+                                        "filterable": true,
+                                        "footer": {
+                                            "reducers": [
+                                                "count"
+                                            ]
+                                        },
+                                        "inspect": false
+                                    },
+                                    "thresholds": {
+                                        "mode": "absolute",
+                                        "steps": [
+                                            {
+                                                "color": "green",
+                                                "value": 0
+                                            },
+                                            {
+                                                "color": "red",
+                                                "value": 80
+                                            }
+                                        ]
+                                    }
+                                },
+                                "overrides": []
+                            },
+                            "options": {
+                                "cellHeight": "sm",
+                                "showHeader": true,
+                                "sortBy": [
+                                    {
+                                        "desc": false,
+                                        "displayName": "Log Field Name"
+                                    }
+                                ]
+                            }
+                        },
+                        "version": "12.4.0-19508498046"
+                    }
+                }
+            },
+            "panel-3": {
+                "kind": "Panel",
+                "spec": {
+                    "data": {
+                        "kind": "QueryGroup",
+                        "spec": {
+                            "queries": [
+                                {
+                                    "kind": "PanelQuery",
+                                    "spec": {
+                                        "hidden": false,
+                                        "query": {
+                                            "group": "yesoreyeram-infinity-datasource",
+                                            "kind": "DataQuery",
+                                            "spec": {
+                                                "columns": [],
+                                                "filters": [],
+                                                "format": "table",
+                                                "global_query_id": "",
+                                                "parser": "backend",
+                                                "root_selector": "",
+                                                "source": "url",
+                                                "type": "csv",
+                                                "url": "https://raw.githubusercontent.com/enotspe/fortinet-2-elasticsearch/refs/heads/main/datasets/Fortinet/Fortigate/7.6/unique_fields/unique_log_fields_data_types_event_7_6.csv",
+                                                "url_options": {
+                                                    "data": "",
+                                                    "method": "GET"
+                                                }
+                                            },
+                                            "version": "v0"
+                                        },
+                                        "refId": "A"
+                                    }
+                                }
+                            ],
+                            "queryOptions": {},
+                            "transformations": [
+                                {
+                                    "kind": "organize",
+                                    "spec": {
+                                        "id": "organize",
+                                        "options": {
+                                            "excludeByName": {},
+                                            "includeByName": {},
+                                            "indexByName": {
+                                                "Data Type": 1,
+                                                "Log Field Name": 0
+                                            },
+                                            "renameByName": {}
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "description": "",
+                    "id": 3,
+                    "links": [],
+                    "title": "",
+                    "transparent": true,
+                    "vizConfig": {
+                        "group": "table",
+                        "kind": "VizConfig",
+                        "spec": {
+                            "fieldConfig": {
+                                "defaults": {
+                                    "color": {
+                                        "mode": "thresholds"
+                                    },
+                                    "custom": {
+                                        "align": "auto",
+                                        "cellOptions": {
+                                            "type": "auto"
+                                        },
+                                        "filterable": true,
+                                        "footer": {
+                                            "reducers": [
+                                                "count"
+                                            ]
+                                        },
+                                        "inspect": false
+                                    },
+                                    "thresholds": {
+                                        "mode": "absolute",
+                                        "steps": [
+                                            {
+                                                "color": "green",
+                                                "value": 0
+                                            },
+                                            {
+                                                "color": "red",
+                                                "value": 80
+                                            }
+                                        ]
+                                    }
+                                },
+                                "overrides": []
+                            },
+                            "options": {
+                                "cellHeight": "sm",
+                                "showHeader": true,
+                                "sortBy": [
+                                    {
+                                        "desc": false,
+                                        "displayName": "Log Field Name"
+                                    }
+                                ]
+                            }
+                        },
+                        "version": "12.4.0-19508498046"
+                    }
+                }
+            }
+        },
+        "layout": {
+            "kind": "TabsLayout",
+            "spec": {
+                "tabs": [
+                    {
+                        "kind": "TabsLayoutTab",
+                        "spec": {
+                            "layout": {
+                                "kind": "AutoGridLayout",
+                                "spec": {
+                                    "columnWidthMode": "standard",
+                                    "fillScreen": true,
+                                    "items": [
+                                        {
+                                            "kind": "AutoGridLayoutItem",
+                                            "spec": {
+                                                "element": {
+                                                    "kind": "ElementReference",
+                                                    "name": "panel-1"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "maxColumnCount": 3,
+                                    "rowHeightMode": "tall"
+                                }
+                            },
+                            "title": "traffic"
+                        }
+                    },
+                    {
+                        "kind": "TabsLayoutTab",
+                        "spec": {
+                            "layout": {
+                                "kind": "AutoGridLayout",
+                                "spec": {
+                                    "columnWidthMode": "standard",
+                                    "fillScreen": true,
+                                    "items": [
+                                        {
+                                            "kind": "AutoGridLayoutItem",
+                                            "spec": {
+                                                "element": {
+                                                    "kind": "ElementReference",
+                                                    "name": "panel-2"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "maxColumnCount": 3,
+                                    "rowHeightMode": "standard"
+                                }
+                            },
+                            "title": "utm"
+                        }
+                    },
+                    {
+                        "kind": "TabsLayoutTab",
+                        "spec": {
+                            "layout": {
+                                "kind": "AutoGridLayout",
+                                "spec": {
+                                    "columnWidthMode": "standard",
+                                    "fillScreen": true,
+                                    "items": [
+                                        {
+                                            "kind": "AutoGridLayoutItem",
+                                            "spec": {
+                                                "element": {
+                                                    "kind": "ElementReference",
+                                                    "name": "panel-3"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "maxColumnCount": 3,
+                                    "rowHeightMode": "standard"
+                                }
+                            },
+                            "title": "event"
+                        }
+                    }
+                ]
+            }
+        },
+        "links": [
+            {
+                "asDropdown": true,
+                "icon": "external link",
+                "includeVars": false,
+                "keepTime": true,
+                "tags": [
+                    "fortinet",
+                    "fortigate",
+                    "template",
+                    "ingest"
+                ],
+                "targetBlank": false,
+                "title": "Ingest",
+                "tooltip": "",
+                "type": "dashboards",
+                "url": ""
+            },
+            {
+                "asDropdown": true,
+                "icon": "external link",
+                "includeVars": false,
+                "keepTime": true,
+                "tags": [
+                    "traffic",
+                    "fortinet",
+                    "fortigate",
+                    "template"
+                ],
+                "targetBlank": false,
+                "title": "Traffic",
+                "tooltip": "",
+                "type": "dashboards",
+                "url": ""
+            },
+            {
+                "asDropdown": true,
+                "icon": "external link",
+                "includeVars": false,
+                "keepTime": true,
+                "tags": [
+                    "utm",
+                    "fortinet",
+                    "fortigate",
+                    "template"
+                ],
+                "targetBlank": false,
+                "title": "UTM",
+                "tooltip": "",
+                "type": "dashboards",
+                "url": ""
+            },
+            {
+                "asDropdown": true,
+                "icon": "external link",
+                "includeVars": false,
+                "keepTime": true,
+                "tags": [
+                    "event",
+                    "fortigate",
+                    "fortinet",
+                    "template"
+                ],
+                "targetBlank": false,
+                "title": "Event",
+                "tooltip": "",
+                "type": "dashboards",
+                "url": ""
+            }
+        ],
+        "liveNow": false,
+        "preload": false,
+        "tags": [
+            "fortinet",
+            "fortigate",
+            "ingest",
+            "template"
+        ],
+        "timeSettings": {
+            "autoRefresh": "",
+            "autoRefreshIntervals": [
+                "5s",
+                "10s",
+                "30s",
+                "1m",
+                "5m",
+                "15m",
+                "30m",
+                "1h",
+                "2h",
+                "1d"
+            ],
+            "fiscalYearStartMonth": 0,
+            "from": "now-24h",
+            "hideTimepicker": false,
+            "timezone": "America/Lima",
+            "to": "now"
+        },
+        "title": "Log Fields [FortiOS]",
+        "variables": []
+    },
+    "status": {}
+}

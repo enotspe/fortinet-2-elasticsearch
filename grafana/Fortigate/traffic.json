@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "mavrxjd",
-    "generation": 107,
+    "generation": 117,
     "creationTimestamp": "2025-09-18T03:06:19Z",
     "labels": {},
     "annotations": {}
@@ -199,7 +199,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -282,7 +282,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -832,7 +832,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1049,7 +1049,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1191,7 +1191,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1214,8 +1214,8 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (fgt.utmaction) count() results",
-                        "legendFormat": "",
+                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw}\n| format if (fgt.utmaction:'') \"no utm\" as fgt.utmaction\n| stats by (fgt.utmaction) count() results",
+                        "legendFormat": "{{fgt.utmaction}}",
                         "queryType": "statsRange"
                       },
                       "version": "v0"
@@ -1294,7 +1294,7 @@
                   {
                     "matcher": {
                       "id": "byName",
-                      "options": "results{fgt.utmaction=\"allow\"}"
+                      "options": "allow"
                     },
                     "properties": [
                       {
@@ -1313,7 +1313,7 @@
                   {
                     "matcher": {
                       "id": "byName",
-                      "options": "results{fgt.utmaction=\"block\"}"
+                      "options": "block"
                     },
                     "properties": [
                       {
@@ -1326,18 +1326,6 @@
                       {
                         "id": "displayName",
                         "value": "block"
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "results{fgt.utmaction=\"\"}"
-                    },
-                    "properties": [
-                      {
-                        "id": "displayName",
-                        "value": "no utm"
                       }
                     ]
                   }
@@ -1357,7 +1345,7 @@
                 }
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1408,7 +1396,7 @@
                 "mode": "markdown"
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1522,7 +1510,7 @@
                 }
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -3506,7 +3494,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -3634,7 +3622,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -3685,7 +3673,7 @@
                 "mode": "markdown"
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -3800,7 +3788,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -3976,7 +3964,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -4193,7 +4181,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -4335,7 +4323,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -4507,7 +4495,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -4590,7 +4578,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -4673,7 +4661,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -4696,7 +4684,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND network.bytes:*\n| stats by (fgt.srcintf,fgt.dstintf) sum(network.bytes) results \n| sort by (results) desc \n| limit 20",
+                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND network.bytes:*\n| stats by (fgt.srcintf,fgt.dstintf) sum(network.bytes) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -4715,6 +4703,22 @@
                       "value": "__name__"
                     }
                   }
+                },
+                {
+                  "kind": "organize",
+                  "spec": {
+                    "id": "organize",
+                    "options": {
+                      "excludeByName": {},
+                      "includeByName": {},
+                      "indexByName": {
+                        "fgt.dstintf": 1,
+                        "fgt.srcintf": 0,
+                        "results": 2
+                      },
+                      "renameByName": {}
+                    }
+                  }
                 }
               ]
             }
@@ -4724,11 +4728,14 @@
           "links": [],
           "title": "fgt.srcintf by fgt.dstintf",
           "vizConfig": {
-            "group": "marcusolsson-treemap-panel",
+            "group": "netsage-sankey-panel",
             "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
+                  "color": {
+                    "mode": "thresholds"
+                  },
                   "thresholds": {
                     "mode": "absolute",
                     "steps": [
@@ -4747,13 +4754,16 @@
                 "overrides": []
               },
               "options": {
-                "groupByField": "fgt.dstintf",
-                "sizeField": "results",
-                "textField": "fgt.srcintf",
-                "tiling": "treemapSquarify"
+                "color": "blue",
+                "iteration": 7,
+                "labelSize": 14,
+                "monochrome": false,
+                "nodeColor": "grey",
+                "nodePadding": 30,
+                "nodeWidth": 30
               }
             },
-            "version": "2.1.1"
+            "version": "1.1.4"
           }
         }
       },
@@ -4868,7 +4878,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -4999,7 +5009,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -5191,7 +5201,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -5367,7 +5377,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -5559,7 +5569,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -5751,7 +5761,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -5927,7 +5937,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -6119,7 +6129,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -6311,7 +6321,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -6503,7 +6513,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -6728,7 +6738,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -6920,7 +6930,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -7112,7 +7122,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -7337,7 +7347,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -9762,7 +9772,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -9877,7 +9887,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -9992,7 +10002,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -10179,7 +10189,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -10366,7 +10376,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -10553,7 +10563,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -10740,7 +10750,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -10824,7 +10834,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -10847,8 +10857,8 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND fgt.crscore:*\n#AND fgt.utmaction:*\n| stats by (fgt.utmaction) sum(fgt.crscore) results",
-                        "legendFormat": "",
+                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND fgt.crscore:*\n| format if (fgt.utmaction:'') \"no utm\" as fgt.utmaction\n| stats by (fgt.utmaction) sum(fgt.crscore) results",
+                        "legendFormat": "{{fgt.utmaction}}",
                         "queryType": "statsRange"
                       },
                       "version": "v0"
@@ -10927,7 +10937,7 @@
                   {
                     "matcher": {
                       "id": "byName",
-                      "options": "results{fgt.utmaction=\"allow\"}"
+                      "options": "allow"
                     },
                     "properties": [
                       {
@@ -10946,7 +10956,7 @@
                   {
                     "matcher": {
                       "id": "byName",
-                      "options": "results{fgt.utmaction=\"block\"}"
+                      "options": "block"
                     },
                     "properties": [
                       {
@@ -10959,18 +10969,6 @@
                       {
                         "id": "displayName",
                         "value": "block"
-                      }
-                    ]
-                  },
-                  {
-                    "matcher": {
-                      "id": "byName",
-                      "options": "results{fgt.utmaction=\"\"}"
-                    },
-                    "properties": [
-                      {
-                        "id": "displayName",
-                        "value": "no utm"
                       }
                     ]
                   }
@@ -10990,7 +10988,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -11041,7 +11039,7 @@
                 "mode": "markdown"
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -11155,7 +11153,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -11331,7 +11329,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -11548,7 +11546,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -11690,7 +11688,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -11862,7 +11860,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -11945,7 +11943,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -12028,7 +12026,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -12051,7 +12049,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND fgt.crscore:*\n| stats by (fgt.srcintf,fgt.dstintf) sum(fgt.crscore) results \n| sort by (results) desc \n| limit 20",
+                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw} AND fgt.crscore:*\n| stats by (fgt.srcintf,fgt.dstintf) sum(fgt.crscore) results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -12070,6 +12068,22 @@
                       "value": "__name__"
                     }
                   }
+                },
+                {
+                  "kind": "organize",
+                  "spec": {
+                    "id": "organize",
+                    "options": {
+                      "excludeByName": {},
+                      "includeByName": {},
+                      "indexByName": {
+                        "fgt.dstintf": 1,
+                        "fgt.srcintf": 0,
+                        "results": 2
+                      },
+                      "renameByName": {}
+                    }
+                  }
                 }
               ]
             }
@@ -12079,11 +12093,14 @@
           "links": [],
           "title": "fgt.srcintf by fgt.dstintf",
           "vizConfig": {
-            "group": "marcusolsson-treemap-panel",
+            "group": "netsage-sankey-panel",
             "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
+                  "color": {
+                    "mode": "thresholds"
+                  },
                   "thresholds": {
                     "mode": "absolute",
                     "steps": [
@@ -12101,13 +12118,16 @@
                 "overrides": []
               },
               "options": {
-                "groupByField": "fgt.dstintf",
-                "sizeField": "results",
-                "textField": "fgt.srcintf",
-                "tiling": "treemapSquarify"
+                "color": "blue",
+                "iteration": 7,
+                "labelSize": 14,
+                "monochrome": false,
+                "nodeColor": "grey",
+                "nodePadding": 30,
+                "nodeWidth": 30
               }
             },
-            "version": "2.1.1"
+            "version": "1.1.4"
           }
         }
       },
@@ -12222,7 +12242,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -12353,7 +12373,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -12545,7 +12565,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -12721,7 +12741,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -12913,7 +12933,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -13105,7 +13125,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -13281,7 +13301,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -13473,7 +13493,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -13665,7 +13685,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -13748,7 +13768,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -13940,7 +13960,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -14165,7 +14185,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -14357,7 +14377,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -14549,7 +14569,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -14774,7 +14794,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -17199,7 +17219,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -17314,7 +17334,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -17429,7 +17449,7 @@
                 }
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -17616,7 +17636,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -17803,7 +17823,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -17990,7 +18010,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -18177,7 +18197,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -18359,7 +18379,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -18541,7 +18561,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -18715,7 +18735,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -18889,7 +18909,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -19063,7 +19083,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -19237,7 +19257,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.4.0-19174562009.patch4"
+            "version": "12.4.0-19378664917"
           }
         }
       },
@@ -19551,7 +19571,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.4.0-19378664917"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -19574,7 +19594,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (fgt.srcintf,fgt.dstintf) count() results \n| sort by (results) desc \n| limit 20",
+                        "expr": "_stream:{log.syslog.hostname in (${firewall:doublequote}),fgt.vd in (${vdom:doublequote}),fgt.type=${type:doublequote},fgt.subtype=${subtype:doublequote},fgt.policytype=${policytype:doublequote},network.direction in (${direction:doublequote}),fgt.logid!=0000000020}\n| fgt.action:in(${action:doublequote}) AND ${Logsql:raw}\n| stats by (fgt.srcintf,fgt.dstintf) count() results \n| sort by (results) desc \n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -19593,6 +19613,22 @@
                       "value": "__name__"
                     }
                   }
+                },
+                {
+                  "kind": "organize",
+                  "spec": {
+                    "id": "organize",
+                    "options": {
+                      "excludeByName": {},
+                      "includeByName": {},
+                      "indexByName": {
+                        "fgt.dstintf": 1,
+                        "fgt.srcintf": 0,
+                        "results": 2
+                      },
+                      "renameByName": {}
+                    }
+                  }
                 }
               ]
             }
@@ -19602,11 +19638,14 @@
           "links": [],
           "title": "fgt.srcintf by fgt.dstintf",
           "vizConfig": {
-            "group": "marcusolsson-treemap-panel",
+            "group": "netsage-sankey-panel",
             "kind": "VizConfig",
             "spec": {
               "fieldConfig": {
                 "defaults": {
+                  "color": {
+                    "mode": "thresholds"
+                  },
                   "thresholds": {
                     "mode": "absolute",
                     "steps": [
@@ -19624,13 +19663,16 @@
                 "overrides": []
               },
               "options": {
-                "groupByField": "fgt.dstintf",
-                "sizeField": "results",
-                "textField": "fgt.srcintf",
-                "tiling": "treemapSquarify"
+                "color": "blue",
+                "iteration": 7,
+                "labelSize": 14,
+                "monochrome": false,
+                "nodeColor": "grey",
+                "nodePadding": 30,
+                "nodeWidth": 30
               }
             },
-            "version": "2.1.1"
+            "version": "1.1.4"
           }
         }
       },
@@ -23351,7 +23393,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
-                                  "collapse": true,
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -23386,8 +23428,7 @@
                                         }
                                       ],
                                       "maxColumnCount": 3,
-                                      "rowHeight": 240,
-                                      "rowHeightMode": "custom"
+                                      "rowHeightMode": "standard"
                                     }
                                   },
                                   "title": "Geo"
@@ -23396,7 +23437,7 @@
                               {
                                 "kind": "RowsLayoutRow",
                                 "spec": {
-                                  "collapse": true,
+                                  "collapse": false,
                                   "layout": {
                                     "kind": "AutoGridLayout",
                                     "spec": {
@@ -23413,7 +23454,7 @@
                                         }
                                       ],
                                       "maxColumnCount": 3,
-                                      "rowHeightMode": "standard"
+                                      "rowHeightMode": "tall"
                                     }
                                   },
                                   "title": "Interfaces"
@@ -24062,8 +24103,7 @@
                                         }
                                       ],
                                       "maxColumnCount": 3,
-                                      "rowHeight": 240,
-                                      "rowHeightMode": "custom"
+                                      "rowHeightMode": "standard"
                                     }
                                   },
                                   "title": "Geo"
@@ -24089,7 +24129,7 @@
                                         }
                                       ],
                                       "maxColumnCount": 3,
-                                      "rowHeightMode": "standard"
+                                      "rowHeightMode": "tall"
                                     }
                                   },
                                   "title": "Interfaces"
@@ -24738,8 +24778,7 @@
                                         }
                                       ],
                                       "maxColumnCount": 3,
-                                      "rowHeight": 240,
-                                      "rowHeightMode": "custom"
+                                      "rowHeightMode": "standard"
                                     }
                                   },
                                   "title": "Geo"
@@ -24765,7 +24804,7 @@
                                         }
                                       ],
                                       "maxColumnCount": 3,
-                                      "rowHeightMode": "standard"
+                                      "rowHeightMode": "tall"
                                     }
                                   },
                                   "title": "Interfaces"
@@ -25310,7 +25349,7 @@
         "1d"
       ],
       "fiscalYearStartMonth": 0,
-      "from": "now-1h",
+      "from": "now-24h",
       "hideTimepicker": false,
       "timezone": "America/Lima",
       "to": "now"

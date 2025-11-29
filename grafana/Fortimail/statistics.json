@@ -3,7 +3,7 @@
   "kind": "Dashboard",
   "metadata": {
     "name": "maxzfvt",
-    "generation": 55,
+    "generation": 60,
     "creationTimestamp": "2025-06-16T17:17:27Z",
     "labels": {},
     "annotations": {}
@@ -50,7 +50,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| $Logsql\n| count() total_logs, count_uniq(fml.to) unique_to, count_uniq(fml.from) unique_from",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| ${Logsql:raw}\n| count() total_logs, count_uniq(fml.to) unique_to, count_uniq(fml.from) unique_from",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -116,7 +116,7 @@
                 "wideLayout": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -139,7 +139,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.to:*\n| $Logsql\n| stats by (fml.to,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.to:*\n| ${Logsql:raw}\n| stats by (fml.to,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -298,7 +298,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -321,7 +321,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| $Logsql\n| stats by (fml.classifier) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| ${Logsql:raw}\n| stats by (fml.classifier) count() results",
                         "legendFormat": "{{fml.classifier}}",
                         "queryType": "statsRange"
                       },
@@ -417,7 +417,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -440,7 +440,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| $Logsql",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| ${Logsql:raw}",
                         "key": "Q-0395fc4c-3095-429e-b675-ef6ac51838a9-0",
                         "queryType": "instant"
                       },
@@ -543,7 +543,7 @@
                 "showHeader": true
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -566,7 +566,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.to:*\n| $Logsql\n| stats by (fml.to,fml.classifier) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.to:*\n| ${Logsql:raw}\n| stats by (fml.to,fml.classifier) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -725,7 +725,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -748,7 +748,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.from:*\n| $Logsql\n| stats by (fml.from,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.from:*\n| ${Logsql:raw}\n| stats by (fml.from,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -907,7 +907,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -930,7 +930,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.from:*\n| $Logsql\n| stats by (fml.from,fml.classifier) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.from:*\n| ${Logsql:raw}\n| stats by (fml.from,fml.classifier) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1089,7 +1089,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1112,7 +1112,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.virus:*\n| $Logsql\n| stats by (fml.virus,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.virus:*\n| ${Logsql:raw}\n| stats by (fml.virus,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1271,7 +1271,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1294,7 +1294,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.virus:*\n| $Logsql\n| stats by (fml.virus,fml.classifier) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.virus:*\n| ${Logsql:raw}\n| stats by (fml.virus,fml.classifier) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1453,7 +1453,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1476,7 +1476,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.client_name:*\n| $Logsql\n| stats by (fml.client_name,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.client_name:*\n| ${Logsql:raw}\n| stats by (fml.client_name,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1635,7 +1635,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1658,7 +1658,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.client_name:*\n| $Logsql\n| stats by (fml.client_name,fml.classifier) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.client_name:*\n| ${Logsql:raw}\n| stats by (fml.client_name,fml.classifier) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -1817,7 +1817,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -1840,7 +1840,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| NOT fml.classifier:in(\"Domain Safe\",\"System Safe\")\n\n| $Logsql\n| stats by (fml.classifier) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| NOT fml.classifier:in(\"Domain Safe\",\"System Safe\")\n\n| ${Logsql:raw}\n| stats by (fml.classifier) count() results",
                         "legendFormat": "{{fml.classifier}}",
                         "queryType": "stats"
                       },
@@ -1904,7 +1904,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -1927,7 +1927,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"Access Control-Discard\",\"Access Control-Relay Denied\",\"Attachment Filter\",\"Banned Word\",\"Behavior Analysis\",\"Bounce Verification\",\"Dictionary Filter\",\"Domain Block\",\"FortiGuard AntiSpam\",\"FortiGuard AntiSpam-IP\",\"FortiGuard WebFilter\",\"Header Analysis\",\"Heuristic\",\"Image Spam\",\"Newsletter\",\"Newsletter Suspicious\",\"SPF Failure\",\"Sender Alignment\",\"Sender Reputation\",\"Session Domain\",\"Session Limit\",\"System Block\",\"User Block\")\n\n| $Logsql\n| stats by (fml.classifier) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"Access Control-Discard\",\"Access Control-Relay Denied\",\"Attachment Filter\",\"Banned Word\",\"Behavior Analysis\",\"Bounce Verification\",\"Dictionary Filter\",\"Domain Block\",\"FortiGuard AntiSpam\",\"FortiGuard AntiSpam-IP\",\"FortiGuard WebFilter\",\"Header Analysis\",\"Heuristic\",\"Image Spam\",\"Newsletter\",\"Newsletter Suspicious\",\"SPF Failure\",\"Sender Alignment\",\"Sender Reputation\",\"Session Domain\",\"Session Limit\",\"System Block\",\"User Block\")\n\n| ${Logsql:raw}\n| stats by (fml.classifier) count() results",
                         "legendFormat": "{{fml.classifier}}",
                         "queryType": "stats"
                       },
@@ -1991,7 +1991,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2014,7 +2014,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"SPF Check\",\"System Safe\",\"Domain Safe\",\"Not Spam\",\"User Safe\")\n\n| $Logsql\n| stats by (fml.classifier) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"SPF Check\",\"System Safe\",\"Domain Safe\",\"Not Spam\",\"User Safe\")\n\n| ${Logsql:raw}\n| stats by (fml.classifier) count() results",
                         "legendFormat": "{{fml.classifier}}",
                         "queryType": "stats"
                       },
@@ -2090,7 +2090,7 @@
                 "valueMode": "color"
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2113,7 +2113,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"Access Control-Discard\",\"Access Control-Relay Denied\",\"Attachment Filter\",\"Banned Word\",\"Behavior Analysis\",\"Bounce Verification\",\"Dictionary Filter\",\"Domain Block\",\"FortiGuard AntiSpam\",\"FortiGuard AntiSpam-IP\",\"FortiGuard WebFilter\",\"Header Analysis\",\"Heuristic\",\"Image Spam\",\"Newsletter\",\"Newsletter Suspicious\",\"SPF Failure\",\"Sender Alignment\",\"Sender Reputation\",\"Session Domain\",\"Session Limit\",\"System Block\",\"User Block\")\n\n| $Logsql\n| stats by (fml.classifier) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"Access Control-Discard\",\"Access Control-Relay Denied\",\"Attachment Filter\",\"Banned Word\",\"Behavior Analysis\",\"Bounce Verification\",\"Dictionary Filter\",\"Domain Block\",\"FortiGuard AntiSpam\",\"FortiGuard AntiSpam-IP\",\"FortiGuard WebFilter\",\"Header Analysis\",\"Heuristic\",\"Image Spam\",\"Newsletter\",\"Newsletter Suspicious\",\"SPF Failure\",\"Sender Alignment\",\"Sender Reputation\",\"Session Domain\",\"Session Limit\",\"System Block\",\"User Block\")\n\n| ${Logsql:raw}\n| stats by (fml.classifier) count() results",
                         "legendFormat": "{{fml.classifier}}",
                         "queryType": "stats"
                       },
@@ -2189,7 +2189,7 @@
                 "valueMode": "color"
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2212,7 +2212,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"FortiSandbox File\",\"Malware Outbreak\",\"Virus Outbreak\",\"Virus Signature\")\n\n| $Logsql\n| stats by (fml.classifier) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"FortiSandbox File\",\"Malware Outbreak\",\"Virus Outbreak\",\"Virus Signature\")\n\n| ${Logsql:raw}\n| stats by (fml.classifier) count() results",
                         "legendFormat": "{{fml.classifier}}",
                         "queryType": "stats"
                       },
@@ -2275,7 +2275,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2298,7 +2298,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"FortiSandbox File\",\"Malware Outbreak\",\"Virus Outbreak\",\"Virus Signature\")\n\n| $Logsql\n| stats by (fml.classifier) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:in(\"FortiSandbox File\",\"Malware Outbreak\",\"Virus Outbreak\",\"Virus Signature\")\n\n| ${Logsql:raw}\n| stats by (fml.classifier) count() results",
                         "legendFormat": "{{fml.classifier}}",
                         "queryType": "stats"
                       },
@@ -2374,7 +2374,7 @@
                 "valueMode": "color"
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       },
@@ -2397,7 +2397,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.from:*\n| fml.classifier:in(\"Access Control-Discard\",\"Access Control-Relay Denied\",\"Attachment Filter\",\"Banned Word\",\"Behavior Analysis\",\"Bounce Verification\",\"Dictionary Filter\",\"Domain Block\",\"FortiGuard AntiSpam\",\"FortiGuard AntiSpam-IP\",\"FortiGuard WebFilter\",\"Header Analysis\",\"Heuristic\",\"Image Spam\",\"Newsletter\",\"Newsletter Suspicious\",\"SPF Failure\",\"Sender Alignment\",\"Sender Reputation\",\"Session Domain\",\"Session Limit\",\"System Block\",\"User Block\")\n\n\n| $Logsql\n| stats by (fml.from,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.from:*\n| fml.classifier:in(\"Access Control-Discard\",\"Access Control-Relay Denied\",\"Attachment Filter\",\"Banned Word\",\"Behavior Analysis\",\"Bounce Verification\",\"Dictionary Filter\",\"Domain Block\",\"FortiGuard AntiSpam\",\"FortiGuard AntiSpam-IP\",\"FortiGuard WebFilter\",\"Header Analysis\",\"Heuristic\",\"Image Spam\",\"Newsletter\",\"Newsletter Suspicious\",\"SPF Failure\",\"Sender Alignment\",\"Sender Reputation\",\"Session Domain\",\"Session Limit\",\"System Block\",\"User Block\")\n\n\n| ${Logsql:raw}\n| stats by (fml.from,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2556,7 +2556,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2579,7 +2579,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\r\n| fml.disposition:(${disposition:doublequote})\r\n| fml.direction:(${direction:doublequote})\r\n| fml.classifier:(${classifier:doublequote})\r\n| $Logsql\r\n| stats by (fml.direction) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\r\n| fml.disposition:(${disposition:doublequote})\r\n| fml.direction:(${direction:doublequote})\r\n| fml.classifier:(${classifier:doublequote})\r\n| ${Logsql:raw}\r\n| stats by (fml.direction) count() results",
                         "legendFormat": "{{fml.direction}}",
                         "queryType": "stats"
                       },
@@ -2664,7 +2664,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| fml.to:*\n| fml.classifier:in(\"FortiSandbox File\",\"Malware Outbreak\",\"Virus Outbreak\",\"Virus Signature\")\n\n| $Logsql\n| stats by (fml.to,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| fml.to:*\n| fml.classifier:in(\"FortiSandbox File\",\"Malware Outbreak\",\"Virus Outbreak\",\"Virus Signature\")\n\n| ${Logsql:raw}\n| stats by (fml.to,fml.disposition) count() results \n| sort by (results) desc\n| limit 10",
                         "queryType": "stats"
                       },
                       "version": "v0"
@@ -2823,7 +2823,7 @@
                 "xTickLabelSpacing": 0
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2846,7 +2846,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| $Logsql\n| fml.from:in(\n  _stream:{fml.type in (${type:doublequote})}\n  | fml.disposition:(${disposition:doublequote})\n  | fml.direction:(${direction:doublequote})\n  | fml.classifier:(${classifier:doublequote})\n  | $Logsql\n  | fml.from:*\n  | top 10 (fml.from)\n  | keep fml.from\n  )\n| by (fml.from) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| ${Logsql:raw}\n| fml.from:in(\n  _stream:{fml.type in (${type:doublequote})}\n  | fml.disposition:(${disposition:doublequote})\n  | fml.direction:(${direction:doublequote})\n  | fml.classifier:(${classifier:doublequote})\n  | ${Logsql:raw}\n  | fml.from:*\n  | top 10 (fml.from)\n  | keep fml.from\n  )\n| by (fml.from) count() results",
                         "legendFormat": "{{fml.from}}",
                         "queryType": "statsRange"
                       },
@@ -2939,7 +2939,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -2962,7 +2962,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| $Logsql\n| fml.to:in(\n  _stream:{fml.type in (${type:doublequote})}\n  | fml.disposition:(${disposition:doublequote})\n  | fml.direction:(${direction:doublequote})\n  | fml.classifier:(${classifier:doublequote})\n  | $Logsql\n  | fml.to:*\n  | top 10 (fml.to)\n  | keep fml.to\n  )\n| by (fml.to) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| ${Logsql:raw}\n| fml.to:in(\n  _stream:{fml.type in (${type:doublequote})}\n  | fml.disposition:(${disposition:doublequote})\n  | fml.direction:(${direction:doublequote})\n  | fml.classifier:(${classifier:doublequote})\n  | ${Logsql:raw}\n  | fml.to:*\n  | top 10 (fml.to)\n  | keep fml.to\n  )\n| by (fml.to) count() results",
                         "legendFormat": "{{fml.to}}",
                         "queryType": "statsRange"
                       },
@@ -3055,7 +3055,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19174562009.patch3"
           }
         }
       },
@@ -3078,7 +3078,7 @@
                       "kind": "DataQuery",
                       "spec": {
                         "editorMode": "code",
-                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:(${disposition:doublequote})\n| fml.direction:(${direction:doublequote})\n| fml.classifier:(${classifier:doublequote})\n| $Logsql\n| stats by (fml.disposition) count() results",
+                        "expr": "_stream:{fml.type in (${type:doublequote})}\n| fml.disposition:in(${disposition:doublequote})\n| fml.direction:in(${direction:doublequote})\n| fml.classifier:in(${classifier:doublequote})\n| ${Logsql:raw}\n| stats by (fml.disposition) count() results",
                         "legendFormat": "{{fml.disposition}}",
                         "queryType": "statsRange"
                       },
@@ -3174,7 +3174,7 @@
                 }
               }
             },
-            "version": "12.2.0-17610496912"
+            "version": "12.4.0-19508498046"
           }
         }
       }
@@ -3224,6 +3224,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -3344,6 +3345,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -3378,6 +3380,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
@@ -3484,6 +3487,7 @@
                     {
                       "kind": "RowsLayoutRow",
                       "spec": {
+                        "collapse": false,
                         "layout": {
                           "kind": "AutoGridLayout",
                           "spec": {
