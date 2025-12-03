@@ -8,7 +8,7 @@ There are many ways for [installing Vector](https://vector.dev/docs/setup/instal
 
 ## Load multiple confif files
 
-We have split Vector config files by plattaform, so FortiDragon Vector directory should look like:
+We have split Vector config [files](https://github.com/enotspe/fortinet-2-elasticsearch/tree/main/vector) by plattaform, so FortiDragon Vector directory should look like:
 
 ```
 /etc/vector/
