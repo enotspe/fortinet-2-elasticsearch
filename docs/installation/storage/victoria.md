@@ -4,7 +4,7 @@
 
 ## Installation as a service
 
-There are many ways for [installing](https://docs.victoriametrics.com/victorialogs/quickstart/#how-to-install-and-run-victorialogs) Victoria Logs. Normally, for a Linux environment, you may want to install it as a service.
+There are many ways for [installing](https://docs.victoriametrics.com/victorialogs/quickstart/#how-to-install-and-run-victorialogs) Victoria Logs. Normally, for a Linux environment, you may want to install it as a service. Based on how VictoriaMetrics is deployed as [binary](https://docs.victoriametrics.com/victoriametrics/quick-start/#starting-vm-single-from-a-binary), we have come up with this guide:
 
 ## Download
 
@@ -70,7 +70,7 @@ sudo restorecon -v /usr/local/bin/victoria-logs-prod
 !!! info "UPGRADES"
     ℹ️ Repeat this step for upgrading Victoria Logs version
 
-### Create VictoriaVogs data directory
+### Create VictoriaLogs data directory
 
 ```bash
 sudo mkdir -p /var/lib/victoria-logs-data && sudo chown -R victorialogs:victorialogs /var/lib/victoria-logs-data
