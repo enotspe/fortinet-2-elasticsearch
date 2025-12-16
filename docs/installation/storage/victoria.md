@@ -24,8 +24,8 @@ VICTORIALOGS_SO=linux
 Download binary:
 
 ```bash
-curl -L -O https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/v$VICTORIALOGS_VERSION/victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION.tar.gz
-tar xzf victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-v$VICTORIALOGS_VERSION.tar.gz
+curl -L -O https://github.com/VictoriaMetrics/VictoriaLogs/releases/download/$VICTORIALOGS_VERSION/victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-$VICTORIALOGS_VERSION.tar.gz
+tar xzf victoria-logs-$VICTORIALOGS_SO-$VICTORIALOGS_ARCH-$VICTORIALOGS_VERSION.tar.gz
 ```
 
 !!! info "UPGRADES"
