@@ -48,7 +48,7 @@ grafana-cli plugins install esnet-chord-panel
 
 [Import](https://grafana.com/docs/grafana/latest/dashboards/build-dashboards/import-dashboards/#import-a-dashboard) Grafana dashboards from [here](https://github.com/enotspe/fortinet-2-elasticsearch/tree/main/grafana)
 
-Currently, v2 Dashboards can not be uploaded to [Dashbaords page](https://grafana.com/grafana/dashboards/).
+Currently, v2 Dashboards can not be uploaded to [Dashboards page](https://grafana.com/grafana/dashboards/).
 
 !!! warning "v2 Dynamic Dashboards"
     Make sure you [enable](https://grafana.com/docs/grafana/latest/observability-as-code/provision-resources/git-sync-setup/#enable-required-feature-toggles) on your instance [v2 Dynamic Dashboards](https://grafana.com/docs/grafana/latest/observability-as-code/schema-v2/)
