@@ -24,7 +24,17 @@ Fill `URL` and other relevant parameters.
 
 Click **Save and Test** button.
 
-### Install Sankey Panel
+## Configure Infinity Datasource
+
+Go to [**Home > Connections > Datasources**](https://grafana.com/docs/grafana/latest/datasources/) and click the **Add data source** button in the upper right.
+
+Select **Infinity**.
+
+Go to `Security`. Fill `Allowed hosts` with `https://raw.githubusercontent.com/enotspe/fortinet-2-elasticsearch/`.
+
+Click **Save and Test** button.
+
+## Install Sankey Panel
 
 Install [Sankey Panel](https://grafana.com/grafana/plugins/netsage-sankey-panel/) just by selecting it under [**Administration > Plugins and data > Plugins**](https://grafana.com/docs/grafana/latest/administration/plugin-management/#browse-plugins) in Grafana Cloud.
 
@@ -34,7 +44,7 @@ Or via [`grafana cli`](https://grafana.com/docs/grafana/latest/administration/cl
 grafana-cli plugins install netsage-sankey-panel
 ```
 
-### Install ESnet Chord
+## Install ESnet Chord
 
 Install [ESnet Chord](https://grafana.com/grafana/plugins/esnet-chord-panel/) just by selecting it under [**Administration > Plugins and data > Plugins**](https://grafana.com/docs/grafana/latest/administration/plugin-management/#browse-plugins) in Grafana Cloud.
 
