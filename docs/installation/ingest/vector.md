@@ -162,7 +162,7 @@ sinks:
 #    ...
 ```
 
-## Advanced Configuration
+## Vector Buffering
 
 For production deployments, take into account every sink has a section that overrides Vector default values for [buffering](https://vector.dev/docs/architecture/buffering-model/) trying to mimic `Optimized for Throughput` Elastic Agent [settings](https://www.elastic.co/docs/reference/fleet/es-output-settings#es-output-settings-performance-tuning-settings). Vector works really well with defaults. Don't use this section unless you really need to fine-tune yor ingest.
 
@@ -175,6 +175,35 @@ For production deployments, take into account every sink has a section that over
       #max_bytes:
       max_events: 1600 # default 1000
       timeout_secs: 5 # default 1
+```
+
+## OS Buffering
+
+You can monitor UDP buffer usage with:
+
+```bash
+watch -d "cat /proc/net/snmp | column -t | grep -w Udp"
+```
+
+If you have errors or are dropping packets, you should increase the buffer size.
+
+Add to /etc/sysctl.conf or /etc/sysctl.d/99-network-tuning.conf:
+
+```ini
+# UDP receive buffer tuning for high-volume logging
+net.core.rmem_max = 134217728 # 128MB
+net.core.rmem_default = 16777216 # 16MB
+net.core.netdev_max_backlog = 5000
+
+# Optional: increase write buffers too if you're forwarding logs
+net.core.wmem_max = 134217728 # 128MB
+net.core.wmem_default = 16777216 # 16MB
+```
+
+Then:
+
+```bash
+sudo sysctl -p`
 ```
 
 ## Monitoring
