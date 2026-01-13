@@ -187,7 +187,7 @@ watch -d "cat /proc/net/snmp | column -t | grep -w Udp"
 
 If you have errors or are dropping packets, you should increase the buffer size.
 
-Add to /etc/sysctl.conf or /etc/sysctl.d/99-network-tuning.conf:
+Add to `/etc/sysctl.conf` or `/etc/sysctl.d/99-network-tuning.conf`:
 
 ```ini
 # UDP receive buffer tuning for high-volume logging
@@ -203,7 +203,7 @@ net.core.wmem_default = 16777216 # 16MB
 Then:
 
 ```bash
-sudo sysctl -p`
+sudo sysctl -p
 ```
 
 ## Monitoring
