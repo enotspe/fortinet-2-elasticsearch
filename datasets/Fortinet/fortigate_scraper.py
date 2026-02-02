@@ -18,7 +18,7 @@ from urllib.parse import urljoin, urlparse
 import re
 import logging
 import yaml
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Any
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -350,7 +350,7 @@ class FortiGateLogScraper:
         logger.warning(f"No suitable table or metadata found for {logid}")
         return None
 
-    def scrape_version(self, version: str) -> int:
+    def scrape_version(self, version: str) -> Dict[str, Any]:
         """
         Scrape all log tables for a specific FortiOS version
 
@@ -358,9 +358,14 @@ class FortiGateLogScraper:
             version: FortiOS version
 
         Returns:
-            Number of successfully processed LOGIDs
+            Dictionary with 'successful' count and 'failed' list of (version, logid, reason) tuples
         """
         logger.info(f"Starting scrape for FortiOS version {version}")
+
+        result = {
+            'successful': 0,
+            'failed': []
+        }
 
         # Create version-specific directory structure
         major_version_dir, minor_version_dir = self.get_version_directories(version)
@@ -372,44 +377,47 @@ class FortiGateLogScraper:
 
         if not soup:
             logger.error(f"Failed to fetch main page for version {version}")
-            return 0
+            return result
 
         # Extract all LOGID links from the main page
         logid_links = self.extract_logid_links(soup, version_url)
 
         if not logid_links:
             logger.warning(f"No LOGID links found for version {version}")
-            return 0
+            return result
 
         logger.info(f"Found {len(logid_links)} LOGID links for version {version}")
 
         # Process each LOGID and save immediately
-        successful_count = 0
-
         for logid_description, url in logid_links.items():
             logger.info(f"Processing LOGID: {logid_description}")
 
             logid_soup = self.get_page_content(url)
             if not logid_soup:
+                result['failed'].append((version, logid_description, 'fetch_failed'))
                 continue
 
             df = self.extract_log_table(logid_soup, logid_description)
-            if df is not None:
-                df['Version'] = version
+            if df is None:
+                result['failed'].append((version, logid_description, 'no_table_found'))
+                continue
 
-                # Save immediately to CSV in the minor version directory
-                safe_logid = re.sub(r'[^\w\-_\.]', '_', str(logid_description))
-                filename = f"{safe_logid}.csv"
-                filepath = os.path.join(minor_version_dir, filename)
+            df['Version'] = version
 
-                try:
-                    df.to_csv(filepath, index=False)
-                    logger.info(f"Saved {len(df)} rows to {filepath}")
-                    successful_count += 1
-                except Exception as e:
-                    logger.error(f"Error saving {filepath}: {e}")
+            # Save immediately to CSV in the minor version directory
+            safe_logid = re.sub(r'[^\w\-_\.]', '_', str(logid_description))
+            filename = f"{safe_logid}.csv"
+            filepath = os.path.join(minor_version_dir, filename)
 
-        return successful_count
+            try:
+                df.to_csv(filepath, index=False)
+                logger.info(f"Saved {len(df)} rows to {filepath}")
+                result['successful'] += 1
+            except Exception as e:
+                logger.error(f"Error saving {filepath}: {e}")
+                result['failed'].append((version, logid_description, f'save_failed: {e}'))
+
+        return result
 
     # Method removed - saving is now done immediately in scrape_version()
 
@@ -446,13 +454,16 @@ class FortiGateLogScraper:
             logger.info("=" * 60)
             return
 
-        total_processed = 0
+        total_successful = 0
+        all_failed = []
+
         for version in versions_to_scrape:
             try:
                 logger.info(f"Processing version {version}")
-                successful_count = self.scrape_version(version)
-                total_processed += successful_count
-                logger.info(f"Completed version {version} - {successful_count} LOGIDs processed")
+                result = self.scrape_version(version)
+                total_successful += result['successful']
+                all_failed.extend(result['failed'])
+                logger.info(f"Completed version {version} - {result['successful']} LOGIDs processed, {len(result['failed'])} failed")
 
                 # Brief pause between versions
                 time.sleep(2)
@@ -461,7 +472,29 @@ class FortiGateLogScraper:
                 logger.error(f"Error processing version {version}: {e}")
                 continue
 
-        logger.info(f"Scraping completed! Total LOGIDs processed: {total_processed}")
+        # Output final statistics
+        total_failed = len(all_failed)
+        total_attempted = total_successful + total_failed
+
+        logger.info("=" * 60)
+        logger.info("SCRAPING SUMMARY")
+        logger.info("=" * 60)
+        logger.info(f"Total LOGIDs attempted: {total_attempted}")
+        logger.info(f"Successful: {total_successful}")
+        logger.info(f"Failed: {total_failed}")
+
+        if total_attempted > 0:
+            success_rate = (total_successful / total_attempted) * 100
+            logger.info(f"Success rate: {success_rate:.1f}%")
+
+        if all_failed:
+            logger.info("")
+            logger.info("FAILED LOGIDs:")
+            logger.info("-" * 60)
+            for version, logid, reason in all_failed:
+                logger.info(f"  Version: {version} | LOGID: {logid} | Reason: {reason}")
+
+        logger.info("=" * 60)
 
 def main():
     """Main execution function"""

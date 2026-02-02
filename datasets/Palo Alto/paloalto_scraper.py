@@ -251,7 +251,8 @@ class PaloAltoLogScraper:
             else:
                 new_items.append(item)  # Keep original (e.g., FUTURE_USE)
 
-        return ",".join(new_items)
+        # Enclose each item in double quotes for CSV format
+        return ",".join(f'"{item}"' for item in new_items)
 
     def _get_cell_text_with_formatting(self, cell) -> str:
         """
