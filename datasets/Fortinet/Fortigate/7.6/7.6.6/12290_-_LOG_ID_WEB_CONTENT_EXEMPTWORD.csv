@@ -1,0 +1,73 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint16,3,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+vd,Virtual domain name,string,32,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+user,User name,string,256,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+url,The URL address,string,512,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+unauthusersource,Unauthenticated user source,string,66,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+unauthuser,Unauthenticated user,string,66,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+tz,Time Zone,string,5,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+type,Log type,string,16,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+trueclntip,True-Client-IP HTTP header,ip,39,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+transid,,uint32,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+to,MMS-only - From/To headers from the email,string,512,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+time,Time,string,8,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+subtype,Log subtype,string,20,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srczone,,string,32,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srcuuid,,string,37,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srcport,Source Port,uint16,5,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srcname,,string,64,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srcmac,,string,17,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srcip,Source IP,ip,39,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srcintf,Source Interface,string,32,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srcdomain,,string,255,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+srccountry,,string,64,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+sessionid,Session ID,uint32,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+service,Service name,string,36,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+sentbyte,Sent Bytes,uint64,20,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+reqtype,Request type,string,8,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+referralurl,Referrer URI,string,512,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+rcvdbyte,Received Bytes,uint64,20,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+proto,Protocol number,uint8,3,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+profilegroup,,string,48,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+profile,Web Filter profile name,string,64,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+poluuid,,string,37,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+policytype,,string,24,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+policymode,,string,8,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+policyid,Policy ID,uint32,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+msg,Log message,string,512,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+logid,Log ID,string,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+level,Log Level,string,11,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+keyword,Keyword used for search,string,512,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+initiator,The initiator user for override,string,64,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+httpmethod,,string,20,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+hostname,The host name of a URL,string,256,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+group,User group name,string,512,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+from,MMS-only - From/To headers from the email,string,128,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+forwardedfor,X-Forwarded-For HTTP header,string,128,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+fctuid,FortiClient UID,string,32,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+eventtype,Web Filter event type,string,32,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+eventtime,Web Filter event time,uint64,20,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstzone,,string,32,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstuuid,,string,37,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstuser,,string,256,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstport,Destination Port,uint16,5,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstip,Destination IP,ip,39,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstintf,Destination Interface,string,32,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstcountry,,string,64,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+dstauthserver,,string,64,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+direction,Direction of the web traffic,string,8,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+devid,Device ID,string,16,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+date,Date,string,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+crscore,Client Reputation Score,uint32,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+crlevel,Client Reputation level,string,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+craction,Client Reputation Action,uint32,10,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+contenttype,Content Type from HTTP header,string,64,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+banword,Banned word,string,128,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+authserver,Authentication server for the user,string,64,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,12290 - LOG_ID_WEB_CONTENT_EXEMPTWORD,12290,LOG_ID_WEB_CONTENT_EXEMPTWORD,Web content exempt word found,Webfilter,content,Notice,7.6.6

@@ -1,0 +1,92 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual Routing Forwarding,uint16,3,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+vd,Virtual domain name,string,32,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+user,User name,string,256,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+usecase,,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+url,The URL address,string,512,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+unauthusersource,Unauthenticated user source,string,66,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+unauthuser,Unauthenticated user,string,66,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+tz,,string,5,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+type,Log type,string,16,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+trueclntip,True-Client-IP,ip,39,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+transid,,uint32,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+time,Time,string,8,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+subtype,Log subtype,string,20,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+srczone,,string,32,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+srcport,Source Port,uint16,5,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+srcip,Source IP,ip,39,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+srcintf,Source Interface,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+srcdomain,,string,255,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+srccountry,,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+sessionid,Session ID,uint32,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+service,Service name,string,80,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+scertissuer,server certificate issuer,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+scertcname,server certificate name,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+referralurl,,string,512,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+rawdataid,,string,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+psrcport,,uint16,5,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+proto,Protocol number,uint8,3,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+prompt,,string,512,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+profiletype,Profile Type,string,36,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+profilegroup,,string,48,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+profile,,string,36,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+poluuid,,string,37,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+policytype,,string,24,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+policymode,,string,8,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+policyid,Policy ID,uint32,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+pdstport,,uint16,5,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+parameters,,string,512,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+msg,Log message,string,512,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+model,,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+messageid,,string,256,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+logid,Log ID,string,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+level,Log level,string,11,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+incidentserialno,Incident serial number,uint32,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+icmptype,,string,6,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+icmpid,,string,8,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+icmpcode,,string,6,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+httpmethod,,string,20,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+hostname,The host name of a URL,string,256,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+group,User group name,string,512,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+forwardedfor,Forwarded For,string,128,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+filesize,File size in bytes,uint64,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+filename,File name,string,256,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+fctuid,FortiClient User ID,string,32,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+eventtype,App Control Event Type,string,32,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+eventtime,Event Time,uint64,20,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dstzone,,string,32,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dstuser,,string,256,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dstport,Destination Port,uint16,5,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dstip,Destination IP,ip,39,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dstintf,Destination Interface,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dstcountry,,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dstauthserver,,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+direction,Direction of the packets,string,8,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+devid,Deivce ID,string,16,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+dcgeo,,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+date,Date,string,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+crscore,Client Reputation Score,uint32,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+crlevel,Client Reputation Level,string,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+craction,Client Reputation Action,uint32,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+clouduser,User login ID detected by the Deep Application Control feature,string,256,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+cloudgenai,,string,1024,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+clouddevice,,string,256,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+cloudaction,Action performed by cloud application,string,32,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+ccertissuer,,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+authserver,Authentication server for the user,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+apprisk,Application risk level,string,16,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+applist,Application Control profile name,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+appid,Application ID,uint32,10,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+appcat,Application category name,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+app,Application name,string,96,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+aiuser,,string,64,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+agent,,string,1024,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28736 - LOGID_APP_CTRL_PORT_ENF,28736,LOGID_APP_CTRL_PORT_ENF,Application control port enforcement,APP-CTRL,port-violation,Warning,7.6.5

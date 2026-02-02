@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+pid,Process ID,uint32,10,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+daemon,Daemon Name,string,32,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+msg,Log Message,string,4096,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+action,Policy Action,string,65,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+logdesc,Log Description,string,4096,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+tz,Time zone,string,5,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+eventtime,Event time,uint64,20,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+vd,Virtual Domain Name,string,32,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+devid,Device ID,string,16,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+level,Log Level,string,11,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+subtype,Log Subtype,string,20,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+type,Log Type,string,16,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+logid,Log ID,string,10,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+time,Time,string,8,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5
+date,Date,string,10,20208 - LOG_ID_ZOMBIE_DAEMON_CLEANUP,20208,LOG_ID_ZOMBIE_DAEMON_CLEANUP,Zombie daemon cleanup,Event,system,Information,7.6.5

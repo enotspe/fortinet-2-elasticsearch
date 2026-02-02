@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+addrgrp,,string,36,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+msg,Log Message,string,4096,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+action,Policy Action,string,65,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+logdesc,Log Description,string,4096,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+tz,Time zone,string,5,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+eventtime,Event time,uint64,20,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+vd,Virtual Domain Name,string,32,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+devid,Device ID,string,16,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+level,Log Level,string,11,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+subtype,Log Subtype,string,20,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+type,Log Type,string,16,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+logid,Log ID,string,10,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+time,Time,string,8,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9
+date,Date,string,10,43684 - LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,43684,LOG_ID_EVENT_WIRELESS_ADDRGRP_DUPLICATE_MAC,Wireless addrgrp duplicate mac,Event,wireless,Notice,7.4.9

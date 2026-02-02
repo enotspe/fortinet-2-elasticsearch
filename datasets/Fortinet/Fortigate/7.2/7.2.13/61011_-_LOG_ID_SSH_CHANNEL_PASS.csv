@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual Domain Name,string,32,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+user,User name for authentication,string,256,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+unauthusersource,Unauthenticated User Source,string,66,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+unauthuser,Unauthenticated User,string,66,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+tz,Time zone,string,5,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+type,Log type,string,16,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+time,Time,string,8,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+subtype,Log subtype,string,20,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+srcuuid,,string,37,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+srcport,Source Port,uint16,5,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+srcip,Source IP,ip,39,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+srcintf,Source Interface,string,32,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+srcdomain,,string,255,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+srccountry,,string,64,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+severity,Severity level of shell command,string,8,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+sessionid,Session ID,uint32,10,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+proto,Protocol number,uint8,3,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+profile,Full profile name,string,64,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+policytype,,string,24,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+policyid,Policy ID,uint32,10,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+login,SSH login Name,string,128,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+logid,Log ID,string,10,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+level,Log level,string,11,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+hostkeystatus,,string,15,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+group,Group name for authentication,string,512,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+fctuid,FortiClient UID,string,32,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+eventtype,Event Type,string,32,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+eventtime,Event time,uint64,20,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+dstuuid,,string,37,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+dstuser,,string,256,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+dstport,Destination Port,uint16,5,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+dstip,Destination IP,ip,39,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+dstintf,Destination Interface,string,32,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+dstcountry,,string,64,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+direction,Direction of session,string,4096,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+devid,Device ID,string,16,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+date,Date,string,10,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+command,Shell command,string,256,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+channeltype,"Type of Channel:
+ x11, shell, exec, tcp-fprward, tun-forward, sftp. scp",string,15,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13
+action,"The status of the ssh-channel:
+ passthrough - channel is allowed
+ blocked - channel is blocked",string,17,61011 - LOG_ID_SSH_CHANNEL_PASS,61011,LOG_ID_SSH_CHANNEL_PASS,SSH channel is detected,SSH,ssh-channel,Notice,7.2.13

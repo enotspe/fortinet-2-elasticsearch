@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+cert,Certificate,string,36,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+msg,Log Message,string,4096,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+status,Status,string,23,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+action,Policy Action,string,65,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+user,User name of authenticated user,string,256,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+logdesc,Log Description,string,4096,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+tz,Time zone,string,5,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+eventtime,Event time,uint64,20,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+vd,Virtual Domain Name,string,32,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+devid,Device ID,string,16,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+level,Log Level,string,11,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+subtype,Log Subtype,string,20,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+type,Log Type,string,16,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+logid,Log ID,string,10,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+time,Time,string,8,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9
+date,Date,string,10,22207 - LOG_ID_CERT_EXPIRE_WARNING,22207,LOG_ID_CERT_EXPIRE_WARNING,Certificate will expire soon,Event,system,Warning,7.4.9

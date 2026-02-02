@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+interface,Interface,string,32,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+msg,Log Message,string,4096,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+logdesc,Log Description,string,4096,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+tz,Time zone,string,5,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+eventtime,Event time,uint64,20,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+vd,Virtual Domain Name,string,32,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+devid,Device ID,string,16,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+level,Log Level,string,11,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+subtype,Log Subtype,string,20,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+type,Log Type,string,16,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+logid,Log ID,string,10,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+time,Time,string,8,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13
+date,Date,string,10,26006 - LOG_ID_DHCP_LEASE_USAGE_FULL,26006,LOG_ID_DHCP_LEASE_USAGE_FULL,DHCP lease usage full,Event,system,Warning,7.2.13

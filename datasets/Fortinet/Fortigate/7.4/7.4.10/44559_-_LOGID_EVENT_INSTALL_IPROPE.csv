@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+logdesc,Log Description,string,4096,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+tz,Time zone,string,5,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+eventtime,Event time,uint64,20,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+vd,Virtual Domain Name,string,32,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+devid,Device ID,string,16,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+level,Log Level,string,11,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+subtype,Log Subtype,string,20,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+type,Log Type,string,16,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+logid,Log ID,string,10,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+time,Time,string,8,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10
+date,Date,string,10,44559 - LOGID_EVENT_INSTALL_IPROPE,44559,LOGID_EVENT_INSTALL_IPROPE,Firewall policy installation,Event,system,Information,7.4.10

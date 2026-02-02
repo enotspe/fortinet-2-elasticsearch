@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+logdesc,Log Description,string,4096,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+tz,Time zone,string,5,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+eventtime,Event time,uint64,20,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+vd,Virtual Domain Name,string,32,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+devid,Device ID,string,16,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+level,Log Level,string,11,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+subtype,Log Subtype,string,20,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+type,Log Type,string,16,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+logid,Log ID,string,10,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+time,Time,string,8,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10
+date,Date,string,10,53406 - LOG_ID_2GB_CSF_UPGRADE,53406,LOG_ID_2GB_CSF_UPGRADE,Security Fabric settings changed during upgrade,Event,system,Information,7.4.10

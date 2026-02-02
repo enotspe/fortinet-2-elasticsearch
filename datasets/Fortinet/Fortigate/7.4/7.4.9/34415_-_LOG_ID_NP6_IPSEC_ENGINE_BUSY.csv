@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+logdesc,Log Description,string,4096,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+tz,Time zone,string,5,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+eventtime,Event time,uint64,20,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+vd,Virtual Domain Name,string,32,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+devid,Device ID,string,16,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+level,Log Level,string,11,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+subtype,Log Subtype,string,20,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+type,Log Type,string,16,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+logid,Log ID,string,10,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+time,Time,string,8,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9
+date,Date,string,10,34415 - LOG_ID_NP6_IPSEC_ENGINE_BUSY,34415,LOG_ID_NP6_IPSEC_ENGINE_BUSY,NP6 IPsec engine is busy,Event,system,Information,7.4.9

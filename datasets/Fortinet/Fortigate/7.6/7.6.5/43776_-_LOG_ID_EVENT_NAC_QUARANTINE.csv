@@ -1,0 +1,30 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+admin,Administrator,string,64,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+banned_rule,NAC quarantine Banned Rule Name,string,80,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+banned_src,NAC quarantine Banned Source IP,string,16,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+policyid,Policy ID,uint32,10,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+group,User group Name,string,512,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+dst_int,Destination Interface,string,64,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+src_int,Source Interface,string,64,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+profile,Profile Name,string,64,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+duration,Duration,uint32,10,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+dstport,Destination Protocol Port,uint16,5,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+dstip,Destination IP,ip,39,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+srcport,Source port,uint16,5,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+srcip,Source IP,ip,39,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+proto,Protocol Number,uint8,3,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+service,Name of Service,string,64,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+msg,Log Message,string,4096,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+action,Policy Action,string,65,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+user,User name of authenticated user,string,256,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+logdesc,Log Description,string,4096,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+tz,Time zone,string,5,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+eventtime,Event time,uint64,20,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+vd,Virtual Domain Name,string,32,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+devid,Device ID,string,16,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+level,Log Level,string,11,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+subtype,Log Subtype,string,20,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+type,Log Type,string,16,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+logid,Log ID,string,10,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+time,Time,string,8,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5
+date,Date,string,10,43776 - LOG_ID_EVENT_NAC_QUARANTINE,43776,LOG_ID_EVENT_NAC_QUARANTINE,NAC quarantine,Event,system,Notice,7.6.5

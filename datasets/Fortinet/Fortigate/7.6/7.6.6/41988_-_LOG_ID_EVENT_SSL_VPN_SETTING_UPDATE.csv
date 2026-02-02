@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+ui,User Interface,string,64,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+msg,Log Message,string,4096,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+user,User name of authenticated user,string,256,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+action,Policy Action,string,65,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+logdesc,Log Description,string,4096,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+tz,Time zone,string,5,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+eventtime,Event time,uint64,20,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+vd,Virtual Domain Name,string,32,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+devid,Device ID,string,16,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+level,Log Level,string,11,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+subtype,Log Subtype,string,20,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+type,Log Type,string,16,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+logid,Log ID,string,10,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+time,Time,string,8,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6
+date,Date,string,10,41988 - LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,41988,LOG_ID_EVENT_SSL_VPN_SETTING_UPDATE,SSL setting changed,Event,vpn,Information,7.6.6

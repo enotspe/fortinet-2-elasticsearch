@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+modem,,string,3,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+mode,Mode,string,32,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+msg,Log Message,string,4096,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+logdesc,Log Description,string,4096,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+tz,Time zone,string,5,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+eventtime,Event time,uint64,20,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+vd,Virtual Domain Name,string,32,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+devid,Device ID,string,16,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+level,Log Level,string,11,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+subtype,Log Subtype,string,20,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+type,Log Type,string,16,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+logid,Log ID,string,10,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+time,Time,string,8,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10
+date,Date,string,10,46713 - LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,46713,LOG_ID_INTERNAL_5G_MODEM_SIGNAL_MODE,5G modem signal mode changed,Event,system,Information,7.4.10

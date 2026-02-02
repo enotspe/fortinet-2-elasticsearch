@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+desc,Description,string,128,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+reason,Reason,string,256,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+msg,Log Message,string,4096,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+logdesc,Log Description,string,4096,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+tz,Time zone,string,5,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+eventtime,Event time,uint64,20,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+vd,Virtual Domain Name,string,32,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+devid,Device ID,string,16,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+level,Log Level,string,11,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+subtype,Log Subtype,string,20,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+type,Log Type,string,16,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+logid,Log ID,string,10,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+time,Time,string,8,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13
+date,Date,string,10,47004 - LOG_ID_FILE_HASH_EMS_LIST_LOAD,47004,LOG_ID_FILE_HASH_EMS_LIST_LOAD,EMS file-hash list loaded,Event,system,Notice,7.2.13

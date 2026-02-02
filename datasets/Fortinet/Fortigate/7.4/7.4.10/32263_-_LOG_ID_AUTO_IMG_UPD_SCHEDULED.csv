@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+user,User name of authenticated user,string,256,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+logdesc,Log Description,string,4096,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+tz,Time zone,string,5,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+eventtime,Event time,uint64,20,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+vd,Virtual Domain Name,string,32,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+devid,Device ID,string,16,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+level,Log Level,string,11,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+subtype,Log Subtype,string,20,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+type,Log Type,string,16,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+logid,Log ID,string,10,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+time,Time,string,8,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10
+date,Date,string,10,32263 - LOG_ID_AUTO_IMG_UPD_SCHEDULED,32263,LOG_ID_AUTO_IMG_UPD_SCHEDULED,Automatic firmware upgrade schedule changed,Event,system,Notice,7.4.10

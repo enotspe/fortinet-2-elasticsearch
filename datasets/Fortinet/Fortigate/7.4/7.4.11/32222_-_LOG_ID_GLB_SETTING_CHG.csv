@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+new_value,New Virtual Domain Name,string,128,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+old_value,Original Virtual Domain name,string,128,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+field,NTP date-time field,string,32,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+msg,Log Message,string,4096,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+action,Policy Action,string,65,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+ui,User Interface,string,64,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+user,User name of authenticated user,string,256,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+logdesc,Log Description,string,4096,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+tz,Time zone,string,5,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+eventtime,Event time,uint64,20,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+vd,Virtual Domain Name,string,32,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+devid,Device ID,string,16,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+level,Log Level,string,11,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+subtype,Log Subtype,string,20,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+type,Log Type,string,16,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+logid,Log ID,string,10,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+time,Time,string,8,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11
+date,Date,string,10,32222 - LOG_ID_GLB_SETTING_CHG,32222,LOG_ID_GLB_SETTING_CHG,Global setting changed,Event,system,Notice,7.4.11

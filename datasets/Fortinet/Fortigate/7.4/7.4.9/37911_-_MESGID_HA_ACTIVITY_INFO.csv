@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+ha-prio,HA Priority,uint8,3,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+ip,,ip,39,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+activity,HA activity message,string,128,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+msg,Log Message,string,4096,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+logdesc,Log Description,string,4096,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+tz,Time zone,string,5,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+eventtime,Event time,uint64,20,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+vd,Virtual Domain Name,string,32,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+devid,Device ID,string,16,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+level,Log Level,string,11,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+subtype,Log Subtype,string,20,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+type,Log Type,string,16,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+logid,Log ID,string,10,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+time,Time,string,8,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9
+date,Date,string,10,37911 - MESGID_HA_ACTIVITY_INFO,37911,MESGID_HA_ACTIVITY_INFO,Device set as HA master information,Event,ha,Information,7.4.9

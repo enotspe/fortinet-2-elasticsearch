@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+duration,Duration,uint32,10,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+count,Number of Packets,uint32,10,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+msg,Log Message,string,4096,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+logdesc,Log Description,string,4096,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+tz,Time zone,string,5,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+eventtime,Event time,uint64,20,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+vd,Virtual Domain Name,string,32,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+devid,Device ID,string,16,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+level,Log Level,string,11,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+subtype,Log Subtype,string,20,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+type,Log Type,string,16,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+logid,Log ID,string,10,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+time,Time,string,8,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11
+date,Date,string,10,38658 - LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,38658,LOGID_EVENT_RAD_RPT_CTX_NOT_FOUND,RADIUS profile CTX not found summary,Event,user,Notice,7.4.11

@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+reason,Reason,string,256,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+server,Server IP Address,string,64,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+msg,Log Message,string,4096,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+action,Policy Action,string,65,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+logdesc,Log Description,string,4096,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+tz,Time zone,string,5,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+eventtime,Event time,uint64,20,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+vd,Virtual Domain Name,string,32,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+devid,Device ID,string,16,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+level,Log Level,string,11,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+subtype,Log Subtype,string,20,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+type,Log Type,string,16,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+logid,Log ID,string,10,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+time,Time,string,8,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10
+date,Date,string,10,22913 - LOG_ID_FDS_SRV_DISCON,22913,LOG_ID_FDS_SRV_DISCON,FortiGate Cloud server disconnected,Event,system,Notice,7.4.10

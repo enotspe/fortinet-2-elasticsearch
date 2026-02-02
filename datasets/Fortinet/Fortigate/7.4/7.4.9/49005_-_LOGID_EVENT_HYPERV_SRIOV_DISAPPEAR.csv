@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+logdesc,Log Description,string,4096,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+tz,Time zone,string,5,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+eventtime,Event time,uint64,20,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+vd,Virtual Domain Name,string,32,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+devid,Device ID,string,16,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+level,Log Level,string,11,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+subtype,Log Subtype,string,20,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+type,Log Type,string,16,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+logid,Log ID,string,10,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+time,Time,string,8,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9
+date,Date,string,10,49005 - LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,49005,LOGID_EVENT_HYPERV_SRIOV_DISAPPEAR,Hyper-V SR-IOV VF secondary is hot unplugged,Event,system,Information,7.4.9

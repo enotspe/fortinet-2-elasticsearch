@@ -1,0 +1,112 @@
+Field Name,Variable Name,Description
+Receive Time (receive_time or cef-formatted-receive_time),receive_time,"Month, Day and time the log was received at the management plane."
+Serial Number (serial),serial,Serial number of the firewall that generated the log.
+Type (type),type,Specifies the type of log; value is GTP.
+Threat/Content Type (subtype),subtype,"Subtype of traffic log; values are start, end, drop, and deny
+
+Start—session started
+
+End—session ended
+
+Drop—session dropped before the application is identified and there is no rule that allows the session.
+
+Deny—session dropped after the application is identified and there is a rule to block or no rule that allows the session."
+Generated Time (time_generated or cef-formatted-time_generated),time_generated,Time the log was generated on the dataplane.
+Source Address (src),src,Source IP address of packets in the session.
+Destination Address (dst),dst,Destination IP address of packets in the session.
+Rule Name (rule),rule,Name of the Security policy rule in effect on the session.
+Application (app),app,Tunneling protocol used in the session.
+Virtual System (vsys),vsys,Virtual System associated with the session.
+Source Zone (from),from,Source zone of packets in the session.
+Destination Zone (to),to,Destination zone of packets in the session.
+Inbound Interface (inbound_if),inbound_if,Interface that the session was sourced from.
+Outbound Interface (outbound_if),outbound_if,Interface that the session was destined to.
+Log Action (logset),logset,Log Forwarding Profile that was applied to the session.
+Session ID (sessionid),sessionid,Session ID of the session being logged.
+Source Port (sport),sport,Source port utilized by the session.
+Destination Port (dport),dport,Destination port utilized by the session.
+IP Protocol (proto),proto,IP protocol associated with the session.
+Action (action),action,"Action taken for the session; possible values are:
+allow—session was allowed by policy
+deny—session was denied by policy"
+GTP Event Type (event_type),event_type,Defines event triggered by a GTP message when checks in GTP protection profile are applied to the GTP traffic. Also triggered by the start or end of a GTP session.
+MSISDN (msisdn),msisdn,"Service identity associated with the mobile subscriber composed of a Country Code, National Destination Code and a Subscriber. Consists of decimal digits (0-9) only with a maximum of 15 digits."
+Access Point Name (apn),apn,Reference to a Packet Data Network Data Gateway (PGW)/ Gateway GPRS Support Node in a mobile network. Composed of a mandatory APN Network Identifier and an optional APN Operator Identifier.
+Radio Access Technology (rat),rat,"Type of technology used for radio access. For example, EUTRAN, WLAN, Virtual, HSPA Evolution, GAN and GERAN."
+GTP Message Type (msg_type),msg_type,Indicates the GTP message type.
+End IP Address (end_ip_adr),end_ip_adr,IP address of a mobile subscriber allocated by a PGW/GGSN.
+Tunnel Endpoint Identifier1 (teid1),teid1,Identifies the GTP tunnel in the network node. TEID1 is the first TEID in the GTP message.
+Tunnel Endpoint Identifier2 (teid2),teid2,Identifies the GTP tunnel in the network node. TEID2 is the second TEID in the GTP message.
+GTP Interface (gtp_interface),gtp_interface,3GPP interface from which a GTP message is received.
+GTP Cause (cause_code),cause_code,GTP cause value in logs responses which contain an Information Element that provides information about acceptance or rejection of GTP requests by a network node.
+Severity (severity),severity,"Severity associated with the event; values are informational, low, medium, high, critical."
+Serving Network MCC (mcc),mcc,Mobile country code of serving core network operator.
+Serving Network MNC (mnc),mnc,Mobile network code of serving core network operator.
+Area Code (area_code),area_code,Area within a Public Land Mobile Network (PLMN).
+Cell ID (cell_id),cell_id,Base station within an area code.
+GTP Event Code (event_code),event_code,Event code describing the GTP event.
+Source Location (srcloc),srcloc,Source country or Internal region for private addresses; maximum length is 32 bytes.
+Destination Location (dstloc),dstloc,Destination country or Internal region for private addresses; maximum length is 32 bytes.
+Tunnel ID/IMSI (imsi),imsi,International Mobile Subscriber Identity (IMSI) is a unique number allocated to each mobile subscriber in the GSM/UMTS/EPS system. IMSI shall consist of decimal digits (0 through 9) only and maximum number of digits allowed are 15.
+Monitor Tag/IMEI (imei),imei,International Mobile Equipment Identity (IMEI) is a unique 15 or 16 digit number allocated to each mobile station equipment.
+Start Time (start),start,Time of session start.
+Elapsed Time (elapsed),elapsed,Elapsed time of the session.
+Tunnel Inspection Rule(tunnel_insp_rule),,Name of the tunnel inspection rule matching the cleartext tunnel traffic
+Remote User IP (remote_user_ip),remote_user_ip,IPv4 or IPv6 address used by a remote user.
+Remote User ID (remote_user_id),remote_user_id,"IMSI identity of a remote user, and if available, one IMEI identity and/or one MSISDN identity."
+UUID for rule (rule_uuid),rule_uuid,Universally Unique ID for rule.
+PCAP ID (pcap_id),pcap_id,Unique packet capture ID that is used to locate the pcap file saved on the firewall.
+High Resolution Timestamp (high_res_timestamp),high_res_timestamp,"Time in milliseconds the log was received at the management plane.
+The format for this new field is YYYY-MM-DDThh:ss:sssTZD:
+
+YYYY—Four digit year
+
+MM—Two-digit month
+
+DD—Two-digit day of the month (01 through 31)
+
+T—Indicator for the beginning of the timestamp
+
+hh—Two-digit hour using 24-hour time (00 through 23)
+
+mm—Two-digit minute (00 through 59)
+
+ss—Two-digit second (00 through 60)
+
+sss—One or more digits for millisecond
+
+TZD—Time zone designator (+hh:mm or -hh:mm)
+
+
+The High Resolution Timestamp is supported for logs received from managed firewalls running PAN-OS 11.1 and later releases. Logs received from managed firewalls running PAN-OS 9.1 and earlier releases display a 1969-12-31T16:00:00:000-8:00 timestamp regardless of when the log was received."
+A Slice Service Type (nsdsai_sst),nsdsai_sst,The A Slice Service Type of the Network Slice ID.
+A Slice Differentiator (nsdsai_sd),nsdsai_sd,The A Slice Differentiator of the Network Slice ID.
+Application Subcategory (subcategory_of_app),subcategory_of_app,The application subcategory specified in the application configuration properties.
+Application Category (category_of_app),category_of_app,"The application category specified in the application configuration properties. Values are:
+
+business-systems
+
+collaboration
+
+general-internet
+
+media
+
+networking
+
+saas"
+Application Technology (technology_of_app),technology_of_app,"The application technology specified in the application configuration properties. Values are:
+
+browser-based
+
+client-server
+
+network-protocol
+
+peer-to-peer"
+Application Risk (risk_of_app),risk_of_app,Risk level associated with the application (1=lowest to 5=highest).
+Application Characteristic (characteristic_of_app),characteristic_of_app,Comma-separated list of applicable characteristic of the application
+Application Container (container_of_app),container_of_app,The parent application for an application.
+Application SaaS (is_saas_of_app),is_saas_of_app,Displays 1 if a SaaS application or 0 if not a SaaS application.
+Application Sanctioned State (sanctioned_state_of_app),sanctioned_state_of_app,Displays 1 if application is sanctioned or 0 if application is not sanctioned.
+Application Subcategory (subcategory_of_app),subcategory_of_app,The application subcategory specified in the application configuration properties.

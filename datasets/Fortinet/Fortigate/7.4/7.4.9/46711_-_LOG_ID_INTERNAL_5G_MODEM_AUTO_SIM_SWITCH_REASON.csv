@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+modem,,string,3,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+reason,Reason,string,256,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+msg,Log Message,string,4096,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+logdesc,Log Description,string,4096,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+tz,Time zone,string,5,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+eventtime,Event time,uint64,20,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+vd,Virtual Domain Name,string,32,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+devid,Device ID,string,16,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+level,Log Level,string,11,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+subtype,Log Subtype,string,20,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+type,Log Type,string,16,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+logid,Log ID,string,10,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+time,Time,string,8,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9
+date,Date,string,10,46711 - LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,46711,LOG_ID_INTERNAL_5G_MODEM_AUTO_SIM_SWITCH_REASON,5G modem auto sim switch triggered,Event,system,Information,7.4.9

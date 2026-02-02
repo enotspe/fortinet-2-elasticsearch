@@ -1,0 +1,49 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+version,Version,uint32,64,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+vd,Virtual Domain Name,string,32,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+upteid,,uint32,10,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+ulimnc,,uint16,3,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+ulimcc,,uint16,3,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+uli,User Location Information,string,120,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+ugsn6,,ip,39,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+u-gsn,User Plane GSN,ip,39,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+tz,Time zone,string,5,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+type,Log Type,string,16,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+tunnel-idx,"Tunnel serial number, internally assigned",uint32,10,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+to6,,ip,39,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+to,To,ip,512,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+timeoutdelete,,uint8,3,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+time,Time,string,8,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+subtype,Log Subtype,string,20,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+status,Status,string,23,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+srcport,Source Port,uint16,5,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+seqnum,GTP packet sequence number,uint32,10,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+selection,"APN selection, which is one IE in gtp packet",string,14,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+rat-type,Radio Access Technology type,string,7,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+rai,Routing Area Identifier,string,32,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+profile,Profile Name,string,64,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+nsapi,Netscape Server Application Programming Interface,uint8,3,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+msisdn,Mobile Subscriber Integrated Services Digital Network-Number (telephone # to a SIM card),string,16,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+msgtypename,,string,50,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+msg-type,Message Type,uint8,3,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+logid,Log ID,string,10,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+linked-nsapi,Linked Netscape Server Application Programming Interface,uint8,3,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+level,Log Level,string,11,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+imsi,International mobile subscriber ID,string,16,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+imei-sv,IMEI(International Mobile Equipment Identity) Software Version,string,32,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+ietype,Malformed GTP IE number,uint8,3,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+headerteid,Tunnel Endpoint ID Header,uint32,10,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+from6,,ip,39,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+from,From,ip,128,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+eventtime,Event time line,uint64,20,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+endusraddress6,,ip,39,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+end-usr-address,End user IP Address,ip,39,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+dtlexp,Detailed Explanation,string,64,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+dstport,Destination Port,uint16,5,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+devid,Device ID,string,16,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+deny_cause,Deny Cause,string,25,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+date,Date,string,10,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+cpteid,Control Plane teid (either downlink or uplink),uint32,10,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+cgsn6,,ip,39,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+c-gsn,Control Plane GSN,ip,39,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9
+apn,Access Point Name,string,128,41219 - LOGID_GTP_STATE_INVALID,41219,LOGID_GTP_STATE_INVALID,GTP state invalid,GTP,gtp-all,Information,7.4.9

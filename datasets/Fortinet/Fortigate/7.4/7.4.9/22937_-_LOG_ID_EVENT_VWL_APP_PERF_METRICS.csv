@@ -1,0 +1,24 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+timestamp,,string,24,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+apperror,,string,24,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+networktransfertime,,string,24,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+serverresponsetime,,string,24,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+appid,,uint32,10,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+app,,string,80,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+packetloss,,string,24,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+jitter,,string,24,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+latency,,string,24,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+msg,Log Message,string,4096,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+interface,Interface,string,32,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+eventtype,,string,48,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+logdesc,Log Description,string,4096,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+tz,Time zone,string,5,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+eventtime,Event time,uint64,20,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+vd,Virtual Domain Name,string,32,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+devid,Device ID,string,16,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+level,Log Level,string,11,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+subtype,Log Subtype,string,20,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+type,Log Type,string,16,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+logid,Log ID,string,10,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+time,Time,string,8,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9
+date,Date,string,10,22937 - LOG_ID_EVENT_VWL_APP_PERF_METRICS,22937,LOG_ID_EVENT_VWL_APP_PERF_METRICS,SD-WAN application performance metrics via FortiMonitor,Event,sdwan,Information,7.4.9

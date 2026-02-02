@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+status,Status,string,23,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+ui,User Interface,string,64,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+user,User name of authenticated user,string,256,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+logdesc,Log Description,string,4096,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+tz,Time zone,string,5,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+eventtime,Event time,uint64,20,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+vd,Virtual Domain Name,string,32,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+devid,Device ID,string,16,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+level,Log Level,string,11,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+subtype,Log Subtype,string,20,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+type,Log Type,string,16,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+logid,Log ID,string,10,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+time,Time,string,8,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9
+date,Date,string,10,20008 - LOG_ID_POLICY6_TOO_BIG,20008,LOG_ID_POLICY6_TOO_BIG,IPv6 policy too big for installation,Event,system,Critical,7.4.9

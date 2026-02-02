@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+status,Status,string,23,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+msg,Log Message,string,4096,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+action,Policy Action,string,65,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+logdesc,Log Description,string,4096,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+tz,Time zone,string,5,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+eventtime,Event time,uint64,20,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+vd,Virtual Domain Name,string,32,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+devid,Device ID,string,16,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+level,Log Level,string,11,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+subtype,Log Subtype,string,20,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+type,Log Type,string,16,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+logid,Log ID,string,10,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+time,Time,string,8,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9
+date,Date,string,10,40034 - LOG_ID_PPTP_START,40034,LOG_ID_PPTP_START,PPTP daemon started,Event,vpn,Notice,7.4.9

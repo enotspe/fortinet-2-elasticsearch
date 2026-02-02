@@ -1,4 +1,4 @@
 ecs/
 site/
+.cache/
 CLAUDE.md
-mkdocs.yml

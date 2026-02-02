@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+status,Status,string,23,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+action,Policy Action,string,65,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+ui,User Interface,string,64,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+user,User name of authenticated user,string,256,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+logdesc,Log Description,string,4096,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+tz,Time zone,string,5,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+eventtime,Event time,uint64,20,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+vd,Virtual Domain Name,string,32,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+devid,Device ID,string,16,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+level,Log Level,string,11,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+subtype,Log Subtype,string,20,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+type,Log Type,string,16,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+logid,Log ID,string,10,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+time,Time,string,8,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5
+date,Date,string,10,32211 - LOG_ID_UPLOAD_REVISION,32211,LOG_ID_UPLOAD_REVISION,Revision uploaded to flash disk,Event,system,Notice,7.6.5

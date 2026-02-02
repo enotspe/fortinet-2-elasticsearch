@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+logdesc,Log Description,string,4096,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+tz,Time zone,string,5,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+eventtime,Event time,uint64,20,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+vd,Virtual Domain Name,string,32,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+devid,Device ID,string,16,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+level,Log Level,string,11,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+subtype,Log Subtype,string,20,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+type,Log Type,string,16,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+logid,Log ID,string,10,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+time,Time,string,8,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5
+date,Date,string,10,45134 - LOG_ID_EC_SHM_ENDPOINT_UPDATE,45134,LOG_ID_EC_SHM_ENDPOINT_UPDATE,Endpoint ZTNA information has been updated,Event,endpoint,Information,7.6.5

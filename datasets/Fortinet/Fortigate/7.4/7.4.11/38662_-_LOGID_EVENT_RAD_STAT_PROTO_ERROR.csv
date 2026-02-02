@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+acct_stat,Accounting state (RADIUS),string,14,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+rsso_key,RADIUS SSO attribute value,string,64,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+carrier_ep,The FortiOS Carrier end-point identification,string,64,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+reason,Reason,string,256,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+srcip,Source IP,ip,39,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+msg,Log Message,string,4096,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+logdesc,Log Description,string,4096,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+tz,Time zone,string,5,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+eventtime,Event time,uint64,20,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+vd,Virtual Domain Name,string,32,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+devid,Device ID,string,16,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+level,Log Level,string,11,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+subtype,Log Subtype,string,20,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+type,Log Type,string,16,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+logid,Log ID,string,10,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+time,Time,string,8,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11
+date,Date,string,10,38662 - LOGID_EVENT_RAD_STAT_PROTO_ERROR,38662,LOGID_EVENT_RAD_STAT_PROTO_ERROR,RADIUS accounting protocol error,Event,user,Notice,7.4.11

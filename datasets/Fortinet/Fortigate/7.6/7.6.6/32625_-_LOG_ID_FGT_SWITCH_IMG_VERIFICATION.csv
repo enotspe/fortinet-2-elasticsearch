@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,,string,4096,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+ui,,string,64,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+user,,string,256,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+logdesc,,string,4096,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+tz,,string,5,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+eventtime,,uint64,20,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+vd,,string,32,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+devid,,string,16,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+level,,string,11,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+subtype,,string,20,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+type,,string,16,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+logid,,string,10,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+time,,string,8,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6
+date,,string,10,32625 - LOG_ID_FGT_SWITCH_IMG_VERIFICATION,32625,LOG_ID_FGT_SWITCH_IMG_VERIFICATION,Fortilink Switch image verification,Event,switch-controller,Information,7.6.6

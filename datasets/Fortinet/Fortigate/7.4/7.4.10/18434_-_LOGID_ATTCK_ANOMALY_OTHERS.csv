@@ -1,0 +1,44 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint8,3,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+vd,Virtual Domain Name,string,32,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+user,User,string,256,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+unauthusersource,Unauthenticated user source,string,66,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+unauthuser,Unauthenticated user,string,66,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+tz,Time zone,string,5,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+type,Log Type,string,16,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+time,Time,string,8,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+subtype,Log Subtype,string,20,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+srcport,Source Port,uint16,5,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+srcip,Source IP,ip,39,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+srcintf,Source Interface,string,64,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+srcdomain,,string,255,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+srccountry,Country name for Source IP,string,64,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+severity,Severity,string,8,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+sessionid,Session ID,uint32,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+service,Name of Service,string,80,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+ref,Reference,string,4096,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+proto,Protocol,uint8,3,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+policytype,Policy type,string,24,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+policyid,Policy ID,uint32,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+msg,Log Message,string,518,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+logid,Log ID,string,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+level,Log Level,string,11,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+group,User Group Name,string,512,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+fctuid,FortiClient UID,string,32,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+eventtype,Event Type,string,32,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+eventtime,Time when detection occured,uint64,20,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+dstport,Destination Port,uint16,5,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+dstip,Destination IP,ip,39,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+dstintf,Destination Interface,string,64,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+dstcountry,,string,64,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+devid,Deivce ID,string,16,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+date,Date,string,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+crscore,Client Reputation Score,uint32,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+crlevel,Client Reputation Level,string,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+craction,Client Reputation Action,uint32,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+count,Count,uint32,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+attackid,Attack ID,uint32,10,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+attack,Attack,string,256,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10
+action,Action,string,16,18434 - LOGID_ATTCK_ANOMALY_OTHERS,18434,LOGID_ATTCK_ANOMALY_OTHERS,Attack detected by other anomaly,Anomaly,anomaly,Alert,7.4.10

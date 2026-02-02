@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+httpcode,,uint16,3,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+url,URL,string,512,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+fctemsname,,string,36,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+fctemssn,,string,16,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+msg,Log Message,string,4096,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+logdesc,Log Description,string,4096,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+tz,Time zone,string,5,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+eventtime,Event time,uint64,20,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+vd,Virtual Domain Name,string,32,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+devid,Device ID,string,16,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+level,Log Level,string,11,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+subtype,Log Subtype,string,20,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+type,Log Type,string,16,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+logid,Log ID,string,10,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+time,Time,string,8,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9
+date,Date,string,10,45128 - LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,45128,LOG_ID_EC_EMS_REST_API_NEW_SUCCESS,EMS REST API recovered from an error,Event,endpoint,Information,7.4.9

@@ -1,0 +1,28 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+rss,,uint32,16,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+durationtotal,,string,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+endtime,,uint64,16,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+starttime,,uint64,16,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+memchange,,int32,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+subtask,,string,256,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+task,,uint16,5,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+membytes,,uint64,16,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+totalsession,Total Number of Sessions,uint32,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+passedcount,,int32,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+lowcount,,int32,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+mediumcount,,int32,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+highcount,,int32,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+criticalcount,,int32,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+auditreporttype,,string,20,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+audittime,,uint64,20,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+logdesc,Log Description,string,4096,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+tz,Time zone,string,5,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+eventtime,Event time,uint64,20,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+vd,Virtual Domain Name,string,32,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+devid,Device ID,string,16,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+level,Log Level,string,11,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+subtype,Log Subtype,string,20,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+type,Log Type,string,16,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+logid,Log ID,string,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+time,Time,string,8,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5
+date,Date,string,10,47401 - LOG_ID_WEB_SVC_RESTART,47401,LOG_ID_WEB_SVC_RESTART,Daemon web-svc has restarted,Event,web-svc,Information,7.6.5

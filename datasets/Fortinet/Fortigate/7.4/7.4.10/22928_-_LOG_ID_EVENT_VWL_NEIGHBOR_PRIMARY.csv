@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+newvalue,,string,32,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+oldvalue,,string,32,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+eventtype,,string,48,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+logdesc,Log Description,string,4096,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+tz,Time zone,string,5,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+eventtime,Event time,uint64,20,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+vd,Virtual Domain Name,string,32,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+devid,Device ID,string,16,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+level,Log Level,string,11,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+subtype,Log Subtype,string,20,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+type,Log Type,string,16,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+logid,Log ID,string,10,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+time,Time,string,8,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10
+date,Date,string,10,22928 - LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,22928,LOG_ID_EVENT_VWL_NEIGHBOR_PRIMARY,SD-WAN Neighbor primary,Event,sdwan,Notice,7.4.10

@@ -1,0 +1,19 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+iaid,DHCPv6 Identity Association Identifier,uint32,10,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+duid,DHCPv6 unique identifier,string,128,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+lease,DHCP lease time,uint32,10,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+dhcp_msg,DHCP Message,string,4096,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+interface,Interface,string,32,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+ip,,ip,39,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+msg,Log Message,string,4096,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+logdesc,Log Description,string,4096,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+tz,Time zone,string,5,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+eventtime,Event time,uint64,20,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+vd,Virtual Domain Name,string,32,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+devid,Device ID,string,16,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+level,Log Level,string,11,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+subtype,Log Subtype,string,20,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+type,Log Type,string,16,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+logid,Log ID,string,10,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+time,Time,string,8,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6
+date,Date,string,10,26012 - LOG_ID_DHCPV6_RELEASE,26012,LOG_ID_DHCPV6_RELEASE,DHCPv6 Release log,Event,system,Information,7.6.6

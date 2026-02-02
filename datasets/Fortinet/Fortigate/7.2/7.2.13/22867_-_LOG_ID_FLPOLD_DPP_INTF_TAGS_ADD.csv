@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+name,,string,128,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+sn,,string,64,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+msg,,string,4096,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+action,,string,65,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+ui,,string,64,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+user,,string,256,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+logdesc,,string,4096,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+tz,,string,5,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+eventtime,,uint64,20,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+vd,,string,32,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+devid,,string,16,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+level,,string,11,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+subtype,,string,20,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+type,,string,16,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+logid,,string,10,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+time,,string,8,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13
+date,,string,10,22867 - LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,22867,LOG_ID_FLPOLD_DPP_INTF_TAGS_ADD,DPP interface tags add,Event,switch-controller,Information,7.2.13

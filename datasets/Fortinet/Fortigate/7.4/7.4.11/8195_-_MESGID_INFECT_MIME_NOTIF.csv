@@ -1,0 +1,92 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint8,3,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+virusid,Virus ID (unique virus identifier),uint32,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+viruscat,,string,32,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+virus,Virus Name,string,128,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+vd,VDOM name,string,32,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+user,Username (authentication),string,256,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+url,The URL address,string,512,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+unauthusersource,,string,66,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+unauthuser,,string,66,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+tz,Time Zone,string,5,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+type,Log type,string,16,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+trueclntip,,ip,39,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+time,Time,string,8,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+subtype,Subtype of the virus log,string,20,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+subservice,,string,16,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+subject,,string,256,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+srcuuid,,string,37,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+srcport,Source Port,uint16,5,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+srcip,Source IP Address,ip,39,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+srcintf,Source Interface,string,32,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+srcdomain,,string,255,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+srccountry,,string,64,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+sharename,,string,256,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+sessionid,Session ID,uint32,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+service,Proxy service which scanned this traffic,string,5,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+sender,Email address from the SMTP envelope,string,128,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+referralurl,,string,512,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+ref,The URL of the FortiGuard IPS database entry for the attack,string,512,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+recipient,Email addresses from the SMTP envelope,string,512,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+rawdata,,string,20480,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+quarskip,Quarantine skip explanation,string,46,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+psrcport,,uint16,5,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+proto,Protocol number,uint8,3,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+profile,The name of the profile that was used to detect and take action,string,64,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+poluuid,,string,37,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+policytype,,string,24,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+policymode,,string,8,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+policyid,Policy ID,uint32,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+pdstport,,uint16,5,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+pathname,,string,256,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+msg,Log message,string,4096,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+logid,Log ID,string,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+level,Log level,string,11,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+icbverdict,,string,5,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+icbseverity,,string,11,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+icbfiletype,,string,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+icbfileid,,string,65,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+icbconfidence,,string,6,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+icbaction,,string,7,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+httpmethod,,string,20,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+group,Group name (authentication),string,512,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+forwardedfor,,string,128,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+filetype,File type,string,16,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+filename,File name,string,256,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+filehashsrc,Used by Outbreak Prevention External Hash: external source that provided the hash signature,string,32,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+filehash,Used by Outbreak Prevention External Hash: the hash signature used in the detection,string,64,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+fctuid,Forticlient user ID,string,32,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+eventtype,Event type of AV,string,32,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+eventtime,Time when detection occured,uint64,20,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dtype,Data type for virus category,string,32,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dstuuid,,string,37,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dstuser,,string,256,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dstport,Destination Port,uint16,5,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dstip,Destination IP Address,ip,39,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dstintf,Destination Interface,string,32,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dstcountry,,string,64,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+dstauthserver,,string,64,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+direction,Message/packets direction,string,8,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+devid,,string,16,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+date,Date,string,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+crscore,Threat Weight Score,uint32,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+crlevel,Threat Weight Level,string,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+craction,Threat Weight action,uint32,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+contentdisarmed,"Content Disarm action- eg. disarmed, detected",string,13,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+checksum,The checksum of the scanned file,string,16,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+cdrcontent,,string,256,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+cc,,string,512,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+authserver,Server used to authenticate the involved user,string,64,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+attachment,,string,3,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+analyticssubmit,The flag for analytics submission,string,10,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+analyticscksum,The checksum of the file submitted for analytics,string,64,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11
+action,"The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis",string,18,8195 - MESGID_INFECT_MIME_NOTIF,8195,MESGID_INFECT_MIME_NOTIF,MIME header infected and passed,Virus,infected,Notice,7.4.11

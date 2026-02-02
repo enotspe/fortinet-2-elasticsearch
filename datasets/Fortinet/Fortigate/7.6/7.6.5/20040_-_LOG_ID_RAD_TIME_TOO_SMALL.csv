@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+logdesc,Log Description,string,4096,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+tz,Time zone,string,5,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+eventtime,Event time,uint64,20,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+vd,Virtual Domain Name,string,32,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+devid,Device ID,string,16,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+level,Log Level,string,11,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+subtype,Log Subtype,string,20,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+type,Log Type,string,16,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+logid,Log ID,string,10,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+time,Time,string,8,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5
+date,Date,string,10,20040 - LOG_ID_RAD_TIME_TOO_SMALL,20040,LOG_ID_RAD_TIME_TOO_SMALL,RADVD AdvReachableTime too small,Event,system,Critical,7.6.5

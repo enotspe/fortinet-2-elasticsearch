@@ -1,0 +1,60 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+srcmac,,string,17,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+ethertype,,uint16,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+dstmac,,string,17,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+usecase,,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+trueclntip,True-Client-IP,ip,39,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+srczone,,string,32,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+scertissuer,server certificate issuer,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+scertcname,server certificate name,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+rawdataid,,string,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+prompt,,string,512,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+poluuid,,string,37,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+policytype,,string,24,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+policymode,,string,8,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+parameters,,string,512,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+msg,Log message,string,512,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+model,,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+forwardedfor,Forwarded For,string,128,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+filename,File name,string,256,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+dstzone,,string,32,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+dcgeo,,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+crscore,Client Reputation Score,uint32,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+crlevel,Client Reputation Level,string,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+craction,Client Reputation Action,uint32,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+clouduser,User login ID detected by the Deep Application Control feature,string,256,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+cloudgenai,,string,1024,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+clouddevice,,string,256,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+ccertissuer,,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+apprisk,Application risk level,string,16,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+appid,Application ID,uint32,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+aiuser,,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+vrf,Virtual Routing Forwarding,uint16,3,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+vd,Virtual domain name,string,32,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+tz,,string,5,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+type,Log type,string,16,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+time,Time,string,8,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+subtype,Log subtype,string,20,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+srcintf,Source Interface,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+profiletype,Profile Type,string,36,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+profilegroup,,string,48,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+profile,,string,36,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+policyid,Policy ID,uint32,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+logid,Log ID,string,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+level,Log level,string,11,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+eventtype,App Control Event Type,string,32,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+eventtime,Event Time,uint64,20,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+dstintf,Destination Interface,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+devid,Deivce ID,string,16,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+date,Date,string,10,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+appcat,Application category name,string,64,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+app,Application name,string,96,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28738 - LOGID_APP_CTRL_DETECT_L2,28738,LOGID_APP_CTRL_DETECT_L2,Ethernet protocols detection,APP-CTRL,signature,Warning,7.6.5

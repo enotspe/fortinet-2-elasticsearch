@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vip,Virtual IP,string,80,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+port,Port Number,uint16,5,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+server,Server IP Address,string,64,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+msg,Log Message,string,4096,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+status,Status,string,23,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+action,Policy Action,string,65,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+logdesc,Log Description,string,4096,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+tz,Time zone,string,5,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+eventtime,Event time,uint64,20,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+vd,Virtual Domain Name,string,32,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+devid,Device ID,string,16,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+level,Log Level,string,11,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+subtype,Log Subtype,string,20,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+type,Log Type,string,16,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+logid,Log ID,string,10,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+time,Time,string,8,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9
+date,Date,string,10,46004 - LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,46004,LOG_ID_VIP_REAL_SVR_ENT_HOLDDOWN,VIP real server entered hold-down,Event,system,Notice,7.4.9

@@ -1,0 +1,45 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint8,3,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+videotitle,,string,512,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+videoinfosource,,string,10,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+videoid,,string,512,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+videodesc,,string,64,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+videochannelid,,string,512,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+videocategoryname,,string,256,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+videocategoryid,,uint32,10,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+vd,,string,32,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+user,,string,256,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+url,,string,512,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+tz,,string,5,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+type,,string,16,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+time,,string,8,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+subtype,,string,20,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+srcport,,uint16,5,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+srcip,,ip,39,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+srcintfrole,,string,10,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+srcintf,,string,32,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+sessionid,,uint32,10,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+service,,string,36,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+referralurl,Referrer URI,string,512,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+proto,,uint8,3,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+profile,,string,64,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+poluuid,,string,37,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+policytype,,string,24,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+policyid,,uint32,10,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+msg,,string,512,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+logid,,string,10,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+level,,string,11,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+httpmethod,,string,20,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+hostname,,string,256,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+group,,string,512,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+eventtype,,string,32,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+eventtime,,uint64,20,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+dstuser,,string,256,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+dstport,,uint16,5,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+dstip,,ip,39,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+dstintfrole,,string,10,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+dstintf,,string,32,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+devid,,string,16,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+date,,string,10,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11
+action,,string,11,13729 - LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,13729,LOG_ID_VIDEOFILTER_DESCRIPTION_MONITOR,Video description is monitored,Webfilter,videofilter-description,Notice,7.4.11

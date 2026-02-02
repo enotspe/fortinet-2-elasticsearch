@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+trace_id,,string,32,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+proto,Protocol Number,uint8,3,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+msg,Log Message,string,4096,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+status,Status,string,23,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+logdesc,Log Description,string,4096,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+tz,Time zone,string,5,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+eventtime,Event time,uint64,20,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+vd,Virtual Domain Name,string,32,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+devid,Device ID,string,16,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+level,Log Level,string,11,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+subtype,Log Subtype,string,20,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+type,Log Type,string,16,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+logid,Log ID,string,10,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+time,Time,string,8,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6
+date,Date,string,10,20085 - LOG_ID_SESSION_CLASH,20085,LOG_ID_SESSION_CLASH,Session clashed,Event,system,Information,7.6.6

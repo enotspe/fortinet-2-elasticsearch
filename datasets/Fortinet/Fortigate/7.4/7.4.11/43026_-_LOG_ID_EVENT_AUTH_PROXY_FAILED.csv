@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+authid,,string,36,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+group,User group Name,string,512,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+dstip,Destination IP,ip,39,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+reason,Reason,string,256,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+srcip,Source IP,ip,39,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+msg,Log Message,string,4096,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+status,Status,string,23,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+action,Policy Action,string,65,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+authproto,The protocol that initiated the authentication,string,512,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+user,User name of authenticated user,string,256,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+logdesc,Log Description,string,4096,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+tz,Time zone,string,5,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+eventtime,Event time,uint64,20,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+vd,Virtual Domain Name,string,32,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+devid,Device ID,string,16,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+level,Log Level,string,11,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+subtype,Log Subtype,string,20,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+type,Log Type,string,16,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+logid,Log ID,string,10,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+time,Time,string,8,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11
+date,Date,string,10,43026 - LOG_ID_EVENT_AUTH_PROXY_FAILED,43026,LOG_ID_EVENT_AUTH_PROXY_FAILED,Explicit proxy authentication failed,Event,user,Notice,7.4.11

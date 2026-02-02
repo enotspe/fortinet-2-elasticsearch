@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+newvalue,,string,32,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+oldvalue,,string,32,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+eventtype,,string,48,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+logdesc,Log Description,string,4096,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+tz,Time zone,string,5,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+eventtime,Event time,uint64,20,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+vd,Virtual Domain Name,string,32,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+devid,Device ID,string,16,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+level,Log Level,string,11,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+subtype,Log Subtype,string,20,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+type,Log Type,string,16,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+logid,Log ID,string,10,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+time,Time,string,8,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5
+date,Date,string,10,22929 - LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,22929,LOG_ID_EVENT_VWL_NEIGHBOR_SECONDARY,SD-WAN Neighbor secondary,Event,sdwan,Warning,7.6.5

@@ -1,0 +1,157 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+wanout,WAN outgoing traffic in bytes,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+wanoptapptype,WAN Optimization Application type,string,9,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+wanin,WAN incoming traffic in bytes,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vwpvlanid,Virtual Wire Pair vlan id,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vwlquality,Quality info of the service rule that is matched by traffic,string,320,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vwlname,,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vwlid,Virtual Wan Link (SD-WAN) service id,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vrf,Virtual router forwarding,uint8,3,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vpntype,The type of the VPN tunnel,string,14,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vip,,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+vd,Virtual domain name,string,32,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+utmaction,Security action performed by UTM,string,32,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+user,User name,string,256,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+url,URL,string,512,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+unauthusersource,The method used to detect unauthenticated user name,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+unauthuser,Unauthenticated user name,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+tz,Time zone,string,5,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+type,Log type,string,16,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+tunnelid,,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+transport,NAT Source Protocol Port,uint16,5,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+transip,NAT Source IP,ip,39,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+tranport,NAT Destination Port,uint16,5,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+tranip,NAT Destination IP,ip,39,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+trandisp,NAT translation type,string,16,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+time,Time,string,8,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+subtype,Subtype of the traffic,string,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+sslaction,Action taken by ssl-ssh-profile,string,26,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcuuid,UUID of the Source Address Object,string,37,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcthreatfeed,,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcswversion,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcssid,Source SSID,string,33,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcserver,Source server,uint8,3,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcreputation,,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcremote,,ip,39,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcregion,,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcport,Source protocol port number,uint16,5,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcname,Source name,string,256,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcmacvendor,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcmac,MAC address associated with the Source IP,string,17,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcip,Source IP address,ip,39,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcintf,Source interface name,string,32,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcinetsvc,Internet service name for the source,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srchwversion,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srchwvendor,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcfamily,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srcdomain,,string,255,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srccountry,Country name for Source IP,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+srccity,,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+snr,,int8,4,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+signal,,int8,4,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+shapingpolicyname,,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+shapingpolicyid,Shaping Policy ID,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+shapersentname,Traffic shaper name for sent traffic,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+shaperrcvdname,Traffic shaper name for received traffic,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+shaperperipname,Traffic shaper name (per IP),string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+shaperperipdropbyte,Dropped bytes per IP by shaper,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+shaperdropsentbyte,Sent bytes dropped by shaper,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+shaperdroprcvdbyte,Received bytes dropped by shaper,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+sessionid,Session ID,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+service,Name of Service,string,80,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+sentpkt,Sent Packets,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+sentdelta,Delta Sent Bytes,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+sentbyte,Sent Bytes,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+saasname,,string,80,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+replysrcintf,,string,32,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+replydstintf,,string,32,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+rcvdpkt,Received Packets,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+rcvddelta,Delta Received Bytes,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+rcvdbyte,Received Bytes,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+radioband,Radio Band,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+psrcport,,uint16,5,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+proxyapptype,,string,9,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+proto,Protocol Number,uint8,3,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+poluuid,UUID of the Firewall Policy,string,37,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+policytype,Policy type,string,24,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+policyname,Policy name,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+policymode,,string,8,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+policyid,Firewall Policy ID,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+pdstport,,uint16,5,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+osname,Name of the device's OS,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+msg,Log message,string,512,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string,17,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+masterdstmac,Destination master MAC address,string,17,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+logid,Log ID,string,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+level,Log Level,string,11,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+lanout,LAN outgoing traffic in bytes,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+lanin,LAN incoming traffic in bytes,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+identifier,,uint16,5,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+group,User group name,string,512,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+gatewayid,,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+fctuid,FortiClient UID,string,32,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+eventtime,Epoch time in nanoseconds,uint64,20,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+emsconnection,,string,8,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+duration,Duration of the session,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstuuid,UUID of the Destination Address Object,string,37,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstuser,,string,256,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstunauthusersource,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstunauthuser,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstthreatfeed,,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstswversion,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstssid,Destination SSID,string,33,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstserver,Destination Server,uint8,3,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstreputation,,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstregion,,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstport,Destination Protocol Port Number,uint16,5,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstosname,Destination OS name,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstname,Destination name,string,256,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstmac,Destination Mac Address,string,17,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstip,Destination IP Address,ip,39,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstintf,Destination Interface,string,32,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstinetsvc,Internet service name for the destination,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dsthwversion,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dsthwvendor,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstfamily,,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstdevtype,Destination Device Type,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstcountry,Country name for the destination IP,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstcity,,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+dstauthserver,,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+devtype,Device Type,string,66,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+devid,Device Serial Number,string,16,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+date,Date,string,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+crscore,Threat Weight score,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+crlevel,Threat Weight level,string,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+craction,Action performed by Threat Weight,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+comment,Customized policy comment,string,1024,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+clientdevicetags,,string,512,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+clientdeviceowner,,string,80,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+clientdevicemanageable,,string,16,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+clientdeviceid,,string,80,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+channel,WiFi Channel,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+centralnatid,central-snat-map id,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+authserver,Remote Authentication server,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+apsn,Access Point serial number,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+apprisk,Application Risk Level,string,16,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+applist,Application Control profile (name),string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+appid,Application ID,uint32,10,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+appcat,Application category,string,64,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+appact,The security action from app control,string,16,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+app,Application name,string,96,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+ap,Access Point name,string,36,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string,16,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+accessproxy,,string,80,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13
+accessctrl,,string,80,14 - LOG_ID_TRAFFIC_END_LOCAL,14,LOG_ID_TRAFFIC_END_LOCAL,Local traffic,Traffic,local,Notice,7.2.13

@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+action,Policy Action,string,65,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+ui,User Interface,string,64,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+user,User name of authenticated user,string,256,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+logdesc,Log Description,string,4096,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+tz,Time zone,string,5,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+eventtime,Event time,uint64,20,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+vd,Virtual Domain Name,string,32,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+devid,Device ID,string,16,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+level,Log Level,string,11,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+subtype,Log Subtype,string,20,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+type,Log Type,string,16,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+logid,Log ID,string,10,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+time,Time,string,8,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10
+date,Date,string,10,32261 - LOG_ID_RESTORE_SCRIPT_NOTIF,32261,LOG_ID_RESTORE_SCRIPT_NOTIF,Script restored by user,Event,system,Notice,7.4.10

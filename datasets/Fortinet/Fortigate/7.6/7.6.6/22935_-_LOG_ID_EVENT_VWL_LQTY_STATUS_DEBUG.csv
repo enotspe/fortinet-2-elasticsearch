@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+service,Name of Service,string,64,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+serviceid,,uint32,10,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+member,,string,512,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+interface,Interface,string,32,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+eventtype,,string,48,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+logdesc,Log Description,string,4096,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+tz,Time zone,string,5,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+eventtime,Event time,uint64,20,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+vd,Virtual Domain Name,string,32,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+devid,Device ID,string,16,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+level,Log Level,string,11,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+subtype,Log Subtype,string,20,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+type,Log Type,string,16,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+logid,Log ID,string,10,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+time,Time,string,8,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6
+date,Date,string,10,22935 - LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,22935,LOG_ID_EVENT_VWL_LQTY_STATUS_DEBUG,SD-WAN status debug,Event,sdwan,Debug,7.6.6

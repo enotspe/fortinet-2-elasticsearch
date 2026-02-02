@@ -1,0 +1,28 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+rss,,uint32,16,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+durationtotal,,string,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+endtime,,uint64,16,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+starttime,,uint64,16,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+memchange,,int32,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+subtask,,string,256,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+task,,uint16,5,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+membytes,,uint64,16,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+totalsession,Total Number of Sessions,uint32,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+passedcount,Security Rating result passed count,int32,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+lowcount,Security Rating result failed count for low severity,int32,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+mediumcount,Security Rating result failed count for medium severity,int32,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+highcount,Security Rating result failed count for high severity,int32,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+criticalcount,Critical level threat count,int32,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+auditreporttype,Security Rating report type,string,20,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+audittime,Security Rating time,uint64,20,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+logdesc,Log Description,string,4096,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+tz,Time zone,string,5,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+eventtime,Event time,uint64,20,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+vd,Virtual Domain Name,string,32,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+devid,Device ID,string,16,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+level,Log Level,string,11,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+subtype,Log Subtype,string,20,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+type,Log Type,string,16,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+logid,Log ID,string,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+time,Time,string,8,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5
+date,Date,string,10,52002 - LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,52002,LOG_ID_EVENT_SECURITY_AUDIT_FABRIC_RESULT,Security Rating check result,Event,security-rating,Notice,7.6.5

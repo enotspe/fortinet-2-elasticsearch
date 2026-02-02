@@ -1,0 +1,248 @@
+Field Name,Variable Name,Description
+Receive Time (receive_time or cef-formatted-receive_time),receive_time,Time the log was received at the management plane.
+Serial Number (serial),serial,Serial number of the firewall that generated the log.
+Type (type),type,Specifies the type of log; value is TRAFFIC.
+Threat/Content Type (subtype),subtype,"Subtype of traffic log; values are start, end, drop, and deny
+
+Start—session started
+
+End—session ended
+
+Drop—session dropped before the application is identified and there is no rule that allows the session.
+
+Deny—session dropped after the application is identified and there is a rule to block or no rule that allows the session."
+Generated Time (time_generated or cef-formatted-time_generated),time_generated,Time the log was generated on the dataplane.
+Source Address (src),src,Original session source IP address.
+Destination Address (dst),dst,Original session destination IP address.
+NAT Source IP (natsrc),natsrc,"If Source NAT performed, the post-NAT Source IP address."
+NAT Destination IP (natdst),natdst,"If Destination NAT performed, the post-NAT Destination IP address."
+Rule Name (rule),rule,Name of the rule that the session matched.
+Source User (srcuser),srcuser,Username of the user who initiated the session.
+Destination User (dstuser),dstuser,Username of the user to which the session was destined.
+Application (app),app,Application associated with the session.
+Virtual System (vsys),vsys,Virtual System associated with the session.
+Source Zone (from),from,Zone the session was sourced from.
+Destination Zone (to),to,Zone the session was destined to.
+Inbound Interface (inbound_if),inbound_if,Interface that the session was sourced from.
+Outbound Interface (outbound_if),outbound_if,Interface that the session was destined to.
+Log Action (logset),logset,Log Forwarding Profile that was applied to the session.
+Session ID (sessionid),sessionid,An internal numerical identifier applied to each session.
+Repeat Count (repeatcnt),repeatcnt,"Number of sessions with same Source IP, Destination IP, Application, and Subtype seen within 5 seconds."
+Source Port (sport),sport,Source port utilized by the session.
+Destination Port (dport),dport,Destination port utilized by the session.
+NAT Source Port (natsport),natsport,Post-NAT source port.
+NAT Destination Port (natdport),natdport,Post-NAT destination port.
+Flags (flags),flags,"32-bit field that provides details on session; this field can be decoded by AND-ing the values with the logged value:
+
+0x80000000—session has a packet capture (PCAP)
+
+0x40000000—option is enabled to allow a client to use multiple paths to connect to a destination host
+
+0x20000000—indicates whether a sample has been submitted for analysis using the WildFire public or private cloud channel
+
+0x10000000—enterprise credential submission by end user detected
+
+0x08000000— source for the flow is on the allow list and not subject to recon protection
+
+0x02000000—IPv6 session
+
+0x01000000—SSL session is decrypted (SSL Proxy)
+
+0x00800000—session is denied via URL filtering
+
+0x00400000—session has a NAT translation performed
+
+0x00200000—user information for the session was captured through Authentication Portal
+
+0x00100000—application traffic is on a non-standard destination port
+
+0x00080000 —X-Forwarded-For value from a proxy is in the source user field
+
+0x00040000—log corresponds to a transaction within a http proxy session (Proxy Transaction)
+
+0x00020000—Client to Server flow is subject to policy based forwarding
+
+0x00010000—Server to Client flow is subject to policy based forwarding
+
+0x00008000—session is a container page access (Container Page)
+
+0x00002000—session has a temporary match on a rule for implicit application dependency handling. Available in PAN-OS 5.0.0 and above.
+
+0x00000800—symmetric return is used to forward traffic for this session
+
+0x00000400—decrypted traffic is being sent out clear text through a mirror port
+
+0x00000100—payload of the outer tunnel is being inspected"
+IP Protocol (proto),proto,IP protocol associated with the session.
+Action (action),action,"Action taken for the session; possible values are:
+
+allow—session was allowed by policy
+
+deny—session was denied by policy
+
+drop—session was dropped silently
+
+drop ICMP—session was silently dropped with an ICMP unreachable message to the host or application
+
+reset both—session was terminated and a TCP reset is sent to both the sides of the connection
+
+reset client—session was terminated and a TCP reset is sent to the client
+
+reset server—session was terminated and a TCP reset is sent to the server"
+Bytes (bytes),bytes,Number of total bytes (transmit and receive) for the session.
+Bytes Sent (bytes_sent),bytes_sent,Number of bytes in the client-to-server direction of the session.
+Bytes Received (bytes_received),bytes_received,Number of bytes in the server-to-client direction of the session.
+Packets (packets),packets,Number of total packets (transmit and receive) for the session.
+Start Time (start),start,Time of session start.
+Elapsed Time (elapsed),elapsed,Elapsed time of the session.
+Category (category),category,URL category associated with the session (if applicable).
+Sequence Number (seqno),seqno,A 64-bit log entry identifier incremented sequentially; each log type has a unique number space.
+Action Flags (actionflags),actionflags,A bit field indicating if the log was forwarded to Panorama.
+Source Country (srcloc),srcloc,Source country or Internal region for private addresses; maximum length is 32 bytes.
+Destination Country (dstloc),dstloc,Destination country or Internal region for private addresses. Maximum length is 32 bytes.
+Packets Sent (pkts_sent),pkts_sent,Number of client-to-server packets for the session.
+Packets Received (pkts_received),pkts_received,Number of server-to-client packets for the session.
+Session End Reason (session_end_reason),session_end_reason,"The reason a session terminated. If the termination had multiple causes, this field displays only the highest priority reason. The possible session end reason values are as follows, in order of priority (where the first is highest):
+
+threat—The firewall detected a threat associated with a reset, drop, or block (IP address) action.
+
+policy-deny—The session matched a security rule with a deny or drop action.
+
+decrypt-cert-validation—The session terminated because you configured the firewall to block SSL forward proxy decryption or SSL inbound inspection when the session uses client authentication or when the session uses a server certificate with any of the following conditions: expired, untrusted issuer, unknown status, or status verification time-out. This session end reason also displays when the server certificate produces a fatal error alert of type bad_certificate, unsupported_certificate, certificate_revoked, access_denied, or no_certificate_RESERVED (SSLv3 only).
+
+decrypt-unsupport-param—The session terminated because you configured the firewall to block SSL forward proxy decryption or SSL inbound inspection when the session uses an unsupported protocol version, cipher, or SSH algorithm. This session end reason is displays when the session produces a fatal error alert of type unsupported_extension, unexpected_message, or handshake_failure.
+
+decrypt-error—The session terminated because you configured the firewall to block SSL forward proxy decryption or SSL inbound inspection when firewall resources or the hardware security module (HSM) were unavailable. This session end reason is also displayed when you configured the firewall to block SSL traffic that has SSL errors or that produced any fatal error alert other than those listed for the decrypt-cert-validation and decrypt-unsupport-param end reasons.
+
+tcp-rst-from-client—The client sent a TCP reset to the server.
+
+tcp-rst-from-server—The server sent a TCP reset to the client.
+
+resources-unavailable—The session dropped because of a system resource limitation. For example, the session could have exceeded the number of out-of-order packets allowed per flow or the global out-of-order packet queue.
+
+tcp-fin—Both hosts in the connection sent a TCP FIN message to close the session."
+Device Group Hierarchy (dg_hier_level_1 to dg_hier_level_4),dg_hier_level_1,"A sequence of identification numbers that indicate the device group’s location within a device group hierarchy. The firewall (or virtual system) generating the log includes the identification number of each ancestor in its device group hierarchy. The shared device group (level 0) is not included in this structure.
+If the log values are 12, 34, 45, 0, it means that the log was generated by a firewall (or virtual system) that belongs to device group 45, and its ancestors are 34, and 12. To view the device group names that correspond to the value 12, 34 or 45, use one of the following methods:
+API query:
+
+/api/?type=op&cmd=<show><dg-hierarchy></dg-hierarchy></show>"
+Virtual System Name (vsys_name),vsys_name,The name of the virtual system associated with the session; only valid on firewalls enabled for multiple virtual systems.
+Device Name (device_name),device_name,The hostname of the firewall on which the session was logged.
+Action Source (action_source),action_source,"Specifies whether the action taken to allow or block an application was defined in the application or in policy. The actions can be allow, deny, drop, reset- server, reset-client or reset-both for the session."
+Source VM UUID (src_uuid),src_uuid,Identifies the source universal unique identifier for a guest virtual machine in the VMware NSX environment.
+Destination VM UUID (dst_uuid),dst_uuid,Identifies the destination universal unique identifier for a guest virtual machine in the VMware NSX environment.
+Tunnel ID/IMSI (tunnelid/imsi),tunnelid/imsi,International Mobile Subscriber Identity (IMSI) is a unique number allocated to each mobile subscriber in the GSM/UMTS/EPS system. IMSI shall consist of decimal digits (0 through 9) only and maximum number of digits allowed are 15.
+Monitor Tag/IMEI (monitortag/imei),monitortag/imei,International Mobile Equipment Identity (IMEI) is a unique 15 or 16 digit number allocated to each mobile station equipment.
+Parent Session ID (parent_session_id),parent_session_id,ID of the session in which this session is tunneled. Applies to inner tunnel (if two levels of tunneling) or inside content (if one level of tunneling) only.
+Parent Start Time (parent_start_time),parent_start_time,Year/month/day hours:minutes:seconds that the parent tunnel session began.
+Tunnel Type (tunnel),tunnel,"Type of tunnel, such as GRE or IPSec."
+SCTP Association ID (assoc_id),assoc_id,Number that identifies all connections for an association between two SCTP endpoints.
+SCTP Chunks (chunks),chunks,Sum of SCTP chunks sent and received for an association.
+SCTP Chunks Sent (chunks_sent),chunks_sent,Number of SCTP chunks sent for an association.
+SCTP Chunks Received (chunks_received),chunks_received,Number of SCTP chunks received for an association.
+Rule UUID (rule_uuid),rule_uuid,The UUID that permanently identifies the rule.
+HTTP/2 Connection (http2_connection),http2_connection,"Identifies if traffic used an HTTP/2 Connection by displaying one of the following values:
+
+Parent session ID—HTTP/2 connection
+
+0—SSL session"
+App Flap Count (link_change_count),link_change_count,Number of link flaps that occurred during the session.
+Policy ID (policy_id),policy_id,Name of the SD-WAN policy.
+Link Switches (link_switches),link_switches,"Contains up to four link flap entries, with each entry containing the link name, link tag, link type, physical interface, timestamp, bytes read, bytes written, link health, and link flap cause."
+SD-WAN Cluster (sdwan_cluster),sdwan_cluster,Name of the SD-WAN cluster.
+SD-WAN Device Type (sdwan_device_type),sdwan_device_type,Type of device (hub or branch).
+SD-WAN Cluster Type (sdwan_cluster_type),sdwan_cluster_type,Type of cluster (mesh or hub-spoke).
+SD-WAN Site (sdwan_site),sdwan_site,Name of the SD-WAN site.
+Dynamic User Group Name (dynusergroup_name),dynusergroup_name,Name of the dynamic user group that contains the user who initiated the session.
+XFF Address (xff_ip),xff_ip,"The IP address of the user who requested the web page or the IP address of the next to last device that the request traversed. If the request goes through one or more proxies, load balancers, or other upstream devices, the firewall displays the IP address of the most recent device.
+
+
+Based on different appliance implementations, the XFF field may contain non-IP address values."
+Source Device Category (src_category),src_category,The category for the device that Device-ID identifies as the source of the traffic.
+Source Device Profile (src_profile),src_profile,The device profile for the device that Device-ID identifies as the source of the traffic.
+Source Device Model (src_model),src_model,The model of the device that Device-ID identifies as the source of the traffic.
+Source Device Vendor (src_vendor),src_vendor,The vendor of the device that Device-ID identifies as the source of the traffic.
+Source Device OS Family (src_osfamily),src_osfamily,The operating system type for the device that Device-ID identifies as the source of the traffic.
+Source Device OS Version (src_osversion),src_osversion,The version of the operating system for the device that Device-ID identifies as the source of the traffic.
+Source Hostname (src_host),src_host,The hostname of the device that Device-ID identifies as the source of the traffic.
+Source MAC Address (src_mac),src_mac,The MAC address for the device that Device-ID identifies as the source of the traffic.
+Destination Device Category (dst_category),dst_category,The category for the device that Device-ID identifies as the destination for the traffic.
+Destination Device Profile (dst_profile),dst_profile,The device profile for the device that Device-ID identifies as the destination for the traffic.
+Destination Device Model (dst_model),dst_model,The model of the device that Device-ID identifies as the destination for the traffic.
+Destination Device Vendor (dst_vendor),dst_vendor,The vendor of the device that Device-ID identifies as the destination for the traffic.
+Destination Device OS Family (dst_osfamily),dst_osfamily,The operating system type for the device that Device-ID identifies as the destination for the traffic.
+Destination Device OS Version (dst_osversion),dst_osversion,The version of the operating system for the device that Device-ID identifies as the destination for the traffic.
+Destination Hostname (dst_host),dst_host,The hostname of the device that Device-ID identifies as the destination for the traffic.
+Destination MAC Address (dst_mac),dst_mac,The MAC address for the device that Device-ID identifies as the destination for the traffic.
+Container ID (container_id),container_id,The container ID of the PAN-NGFW pod on the Kubernetes node where the application POD is deployed.
+POD Namespace (pod_namespace),pod_namespace,The namespace of the application POD being secured.
+POD Name (pod_name),pod_name,The application POD being secured.
+Source External Dynamic List (src_edl),src_edl,The name of the external dynamic list that contains the source IP address of the traffic.
+Destination External Dynamic List (dst_edl),dst_edl,The name of the external dynamic list that contains the destination IP address of the traffic.
+Host ID (hostid),hostid,Unique ID GlobalProtect assigns to identify the host.
+User Device Serial Number (serialnumber),serialnumber,Serial number of the user’s machine or device.
+Source Dynamic Address Group (src_dag),src_dag,Original session source dynamic address group.
+Destination Dynamic Address Group (dst_dag),dst_dag,Original destination source dynamic address group.
+Session Owner (session_owner),session_owner,The original high availability (HA) peer session owner in an HA cluster from which the session table data was synchronized upon HA failover.
+High Resolution Timestamp (high_res_timestamp),high_res_timestamp,"Time in milliseconds the log was received at the management plane.
+The format for this new field is YYYY-MM-DDThh:ss:sssTZD:
+
+YYYY—Four digit year
+
+MM—Two-digit month
+
+DD—Two-digit day of the month (01 through 31)
+
+T—Indicator for the beginning of the timestamp
+
+hh—Two-digit hour using 24-hour time (00 through 23)
+
+mm—Two-digit minute (00 through 59)
+
+ss—Two-digit second (00 through 60)
+
+sss—One or more digits for millisecond
+
+TZD—Time zone designator (+hh:mm or -hh:mm)
+
+
+The High Resolution Timestamp is supported for logs received from managed firewalls running PAN-OS 10.0 and later releases. Logs received from managed firewalls running PAN-OS 9.1 and earlier releases display a 1969-12-31T16:00:00:000-8:00 timestamp regardless of when the log was received."
+A Slice Service Type (nssai_sst),nssai_sst,The A Slice Service Type of the Network Slice ID.
+A Slice Differentiator (nssai_sd),nssai_sd,The A Slice Differentiator of the Network Slice ID.
+Application Subcategory (subcategory_of_app),subcategory_of_app,The application subcategory specified in the application configuration properties.
+Application Category (category_of_app),category_of_app,"The application category specified in the application configuration properties. Values are:
+
+business-systems
+
+collaboration
+
+general-internet
+
+media
+
+networking
+
+saas"
+Application Technology (technology_of_app),technology_of_app,"The application technology specified in the application configuration properties. Values are:
+
+browser-based
+
+client-server
+
+network-protocol
+
+peer-to-peer"
+Application Risk (risk_of_app),risk_of_app,Risk level associated with the application (1=lowest to 5=highest).
+Application Characteristic (characteristic_of_app),characteristic_of_app,Comma-separated list of applicable characteristic of the application
+Application Container (container_of_app),container_of_app,The parent application for an application.
+Tunneled Application (tunneled_app),tunneled_app,Name of the tunneled application.
+Application SaaS (is_saas_of_app),is_saas_of_app,Displays 1 if a SaaS application or 0 if not a SaaS application.
+Application Sanctioned State (sanctioned_state_of_app),sanctioned_state_of_app,Displays 1 if application is sanctioned or 0 if application is not sanctioned.
+Offloaded (offloaded),offloaded,Displays 1 if traffic flow has been offloaded or 0 if traffic flow was not offloaded.
+Flow Type (flow_type)(11.1 and later releases),flow_type,"Identifies the type of proxy used for traffic. If a proxy is used, Explicit Proxy or Transparent Proxy is displayed. If no proxy is used, NonProxyTraffic is displayed."
+Cluster Name (cluster_name)(11.1 and later releases),cluster_name,Name of the CN-Series firewall cluster.
+AI Traffic (ai_traffic)(11.1 and later releases),ai_traffic,Indicates whether the network session is being processed by AI-driven security services.
+AI Forward Error (ai_fwd_error)(11.1 and later releases),ai_fwd_error,Indicates whether an error was encountered during traffic forwarding by the AI engine.
+K8S Cluster ID (k8s_cluster_id)(11.1 and later releases),k8s_cluster_id,The unique identifier of the Kubernetes cluster that is the source of the traffic. This ID establishes a link to the related Virtual Machine (VM) UUID.
+Source Adv DevID (src_adv_dev_id)(12.1.2 and later releases),src_adv_dev_id,The unique identifier for the endpoint initiating the session. This advanced ID provides highly precise device recognition for the security policy engine. It establishes a direct link between network traffic and the comprehensive Device-ID object used for enforcement.
+Destination Adv DevID (dst_adv_dev_id)(12.1.2 and later releases),dst_adv_dev_id,The unique identifier for the endpoint receiving the session. This advanced ID provides highly precise device recognition for the security policy engine. It establishes a direct link between network traffic and the comprehensive Device-ID object used for enforcement.

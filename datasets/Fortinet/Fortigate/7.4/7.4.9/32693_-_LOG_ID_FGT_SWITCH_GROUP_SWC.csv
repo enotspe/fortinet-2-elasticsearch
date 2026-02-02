@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+cfgattr,,string,4096,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+cfgobj,,string,256,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+cfgpath,,string,128,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+cfgtid,,uint32,10,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+sn,,string,64,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+name,,string,128,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+msg,,string,4096,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+ui,,string,64,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+user,,string,256,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+logdesc,,string,4096,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+tz,,string,5,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+eventtime,,uint64,20,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+vd,,string,32,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+devid,,string,16,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+level,,string,11,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+subtype,,string,20,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+type,,string,16,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+logid,,string,10,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+time,,string,8,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9
+date,,string,10,32693 - LOG_ID_FGT_SWITCH_GROUP_SWC,32693,LOG_ID_FGT_SWITCH_GROUP_SWC,FortiSwitch switch controller,Event,switch-controller,Critical,7.4.9

@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+action,Policy Action,string,65,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+logdesc,Log Description,string,4096,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+tz,Time zone,string,5,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+eventtime,Event time,uint64,20,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+vd,Virtual Domain Name,string,32,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+devid,Device ID,string,16,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+level,Log Level,string,11,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+subtype,Log Subtype,string,20,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+type,Log Type,string,16,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+logid,Log ID,string,10,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+time,Time,string,8,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11
+date,Date,string,10,22812 - LOG_ID_SCANUNIT_AVENG_RELOAD,22812,LOG_ID_SCANUNIT_AVENG_RELOAD,Scanunit is reloading AV engine,Event,system,Notice,7.4.11

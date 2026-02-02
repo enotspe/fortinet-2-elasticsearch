@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+oldsn,Security fabric upstream FGT old serial number,string,64,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+sn,Serial Number,string,64,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+ip,,ip,39,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+msg,Log Message,string,4096,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+logdesc,Log Description,string,4096,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+tz,Time zone,string,5,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+eventtime,Event time,uint64,20,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+vd,Virtual Domain Name,string,32,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+devid,Device ID,string,16,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+level,Log Level,string,11,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+subtype,Log Subtype,string,20,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+type,Log Type,string,16,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+logid,Log ID,string,10,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+time,Time,string,8,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11
+date,Date,string,10,22035 - LOG_ID_CSF_UPSTREAM_SN_CHANGED,22035,LOG_ID_CSF_UPSTREAM_SN_CHANGED,Serial number of upstream is changed,Event,system,Warning,7.4.11

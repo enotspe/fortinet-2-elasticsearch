@@ -1,0 +1,25 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+remotewtptime,The time of AP when client trying to connect,string,32,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+radioid,The operating radio ID,uint8,3,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+vap,Virtual Access Point,string,36,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+ap,Access Point,string,36,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+sn,Serial Number,string,64,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+stamac,The MAC address of wifi station,string,17,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+encryption,The encryption type of detected rogue AP,string,12,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+security,Security,string,40,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+channel,Channel,uint8,3,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+bssid,Basic service set ID,string,17,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+ssid,WiFi Service Set ID,string,33,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+msg,Log Message,string,4096,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+action,Policy Action,string,65,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+logdesc,Log Description,string,4096,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+tz,Time zone,string,5,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+eventtime,Event time,uint64,20,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+vd,Virtual Domain Name,string,32,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+devid,Device ID,string,16,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+level,Log Level,string,11,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+subtype,Log Subtype,string,20,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+type,Log Type,string,16,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+logid,Log ID,string,10,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+time,Time,string,8,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9
+date,Date,string,10,43711 - LOG_ID_EVENT_WIRELESS_SAM_PING,43711,LOG_ID_EVENT_WIRELESS_SAM_PING,SAM ping test result,Event,wireless,Notice,7.4.9

@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+initiator,Original login user name for Fortiguard override,string,64,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+dstip,Destination IP,ip,39,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+reason,Reason,string,256,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+srcip,Source IP,ip,39,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+msg,Log Message,string,4096,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+status,Status,string,23,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+logdesc,Log Description,string,4096,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+tz,Time zone,string,5,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+eventtime,Event time,uint64,20,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+vd,Virtual Domain Name,string,32,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+devid,Device ID,string,16,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+level,Log Level,string,11,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+subtype,Log Subtype,string,20,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+type,Log Type,string,16,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+logid,Log ID,string,10,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+time,Time,string,8,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9
+date,Date,string,10,43018 - LOG_ID_EVENT_AUTH_FGOVRD_FAIL,43018,LOG_ID_EVENT_AUTH_FGOVRD_FAIL,FortiGuard override failed,Event,user,Warning,7.4.9

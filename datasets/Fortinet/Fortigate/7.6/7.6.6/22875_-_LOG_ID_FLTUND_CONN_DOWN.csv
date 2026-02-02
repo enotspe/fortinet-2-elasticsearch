@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+sn,,string,64,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+msg,,string,4096,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+ui,,string,64,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+user,,string,256,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+logdesc,,string,4096,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+tz,,string,5,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+eventtime,,uint64,20,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+vd,,string,32,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+devid,,string,16,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+level,,string,11,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+subtype,,string,20,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+type,,string,16,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+logid,,string,10,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+time,,string,8,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6
+date,,string,10,22875 - LOG_ID_FLTUND_CONN_DOWN,22875,LOG_ID_FLTUND_CONN_DOWN,Switch-controller FortilinkLite connection down,Event,switch-controller,Critical,7.6.6

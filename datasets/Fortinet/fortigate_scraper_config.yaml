@@ -1,0 +1,44 @@
+# FortiGate Log Scraper Configuration
+
+# FortiOS versions to scrape
+versions:
+  - "7.6.0"
+  - "7.6.1"
+  - "7.6.2"
+  - "7.6.3"
+  - "7.6.4"
+  - "7.6.5"
+  - "7.6.6"
+  - "7.4.0"
+  - "7.4.1"
+  - "7.4.2"
+  - "7.4.3"
+  - "7.4.4"
+  - "7.4.5"
+  - "7.4.6"
+  - "7.4.7"
+  - "7.4.8"
+  - "7.4.9"
+  - "7.4.10"
+  - "7.4.11"
+  - "7.2.0"
+  - "7.2.1"
+  - "7.2.2"
+  - "7.2.3"
+  - "7.2.4"
+  - "7.2.5"
+  - "7.2.6"
+  - "7.2.7"
+  - "7.2.8"
+  - "7.2.9"
+  - "7.2.10"
+  - "7.2.11"
+  - "7.2.12"
+  - "7.2.13"
+
+# Scraper settings
+settings:
+  base_delay: 1.0 # Base delay between requests in seconds
+  force_rescrape: false # If true, re-scrape all versions even if they already exist. If false, only scrape new versions.
+  dry_run: false # If true, only print which versions will be scraped without actually scraping them.
+  output_dir: "Fortigate" # Output directory for scraped data (defaults to current working directory if not specified)

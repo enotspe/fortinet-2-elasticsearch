@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+authid,,string,36,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+group,User group Name,string,512,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+dstip,Destination IP,ip,39,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+reason,Reason,string,256,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+srcip,Source IP,ip,39,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+msg,Log Message,string,4096,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+status,Status,string,23,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+action,Policy Action,string,65,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+authproto,The protocol that initiated the authentication,string,512,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+user,User name of authenticated user,string,256,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+logdesc,Log Description,string,4096,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+tz,Time zone,string,5,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+eventtime,Event time,uint64,20,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+vd,Virtual Domain Name,string,32,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+devid,Device ID,string,16,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+level,Log Level,string,11,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+subtype,Log Subtype,string,20,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+type,Log Type,string,16,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+logid,Log ID,string,10,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+time,Time,string,8,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13
+date,Date,string,10,43025 - LOG_ID_EVENT_AUTH_PROXY_SUCCESS,43025,LOG_ID_EVENT_AUTH_PROXY_SUCCESS,Explicit proxy authentication successful,Event,user,Notice,7.2.13

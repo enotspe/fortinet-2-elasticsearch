@@ -1,0 +1,66 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint16,3,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+vd,Virtual domain name,string,32,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+user,User name,string,256,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+url,The URL address,string,512,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+unauthusersource,Unauthenticated user source,string,66,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+unauthuser,Unauthenticated user,string,66,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+tz,Time Zone,string,5,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+type,Log type,string,16,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+trueclntip,True-Client-IP HTTP header,ip,39,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+time,Time,string,8,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+subtype,Log subtype,string,20,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srczone,,string,32,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srcuuid,,string,37,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srcport,Source Port,uint16,5,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srcname,,string,64,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srcmac,,string,17,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srcip,Source IP,ip,39,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srcintf,Source Interface,string,32,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srcdomain,,string,255,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+srccountry,,string,64,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+sessionid,Session ID,uint32,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+service,Service name,string,36,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+sentbyte,Sent Bytes,uint64,20,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+reqtype,Request type,string,8,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+referralurl,Referrer URI,string,512,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+rcvdbyte,Received Bytes,uint64,20,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+proto,Protocol number,uint8,3,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+profilegroup,,string,48,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+profile,Web Filter profile name,string,64,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+poluuid,,string,37,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+policytype,,string,24,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+policymode,,string,8,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+policyid,Policy ID,uint32,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+msg,Log message,string,512,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+logid,Log ID,string,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+level,Log Level,string,11,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+httpmethod,,string,20,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+hostname,The host name of a URL,string,256,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+group,User group name,string,512,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+forwardedfor,X-Forwarded-For HTTP header,string,128,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+fctuid,FortiClient UID,string,32,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+eventtype,Web Filter event type,string,32,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+eventtime,Web Filter event time,uint64,20,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstzone,,string,32,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstuuid,,string,37,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstuser,,string,256,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstport,Destination Port,uint16,5,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstip,Destination IP,ip,39,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstintf,Destination Interface,string,32,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstcountry,,string,64,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+dstauthserver,,string,64,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+direction,Direction of the web traffic,string,8,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+devid,Device ID,string,16,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+date,Date,string,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+crscore,Client Reputation Score,uint32,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+crlevel,Client Reputation level,string,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+craction,Client Reputation Action,uint32,10,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+authserver,Authentication server for the user,string,64,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,12556 - LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,12556,LOG_ID_URL_FILTER_SRV_CERT_ERR_PASS,SSL session ignored,Webfilter,urlfilter,Notice,7.6.5

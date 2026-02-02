@@ -1,0 +1,77 @@
+Field Name,Variable Name,Description
+Receive Time (receive_time),receive_time,The time that the log was received at the management plane.
+Serial # (serial),serial,The serial number of the firewall that generated the log.
+Type (type),type,Specifies the type of log; value is GLOBALPROTECT.
+Threat/Content Type (subtype),subtype,"Subtype of threat log. Values include the following:
+
+data—Data pattern matching a Data Filtering profile.
+
+file—File type matching a File Blocking profile.
+
+flood—Flood detected via a Zone Protection profile.
+
+packet—Packet-based attack protection triggered by a Zone Protection profile.
+
+scan—Scan detected via a Zone Protection profile.
+
+spyware —Spyware detected via an Anti-Spyware profile.
+
+url—URL filtering log.
+
+virus—Virus detected via an Antivirus profile.
+
+vulnerability —Vulnerability exploit detected via a Vulnerability Protection profile.
+
+wildfire —A WildFire verdict generated when the firewall submits a file to WildFire per a WildFire Analysis profile and a verdict (malicious, phishing, grayware, or benign, depending on what you are logging) is logged in the WildFire Submissions log.
+
+wildfire-virus—Virus detected via an Antivirus profile."
+Generate Time (time_generated),time_generated,The time that the log was generated on the dataplane.
+Virtual System (vsys),vsys,The Virtual System associated with the session.
+Event ID (eventid),eventid,A string showing the name of the event.
+Stage (stage),stage,"A string showing the stage of the connection (for example, before-login, login, or tunnel)."
+Authentication Method (auth_method),auth_method,"A string showing the authentication type, such as LDAP, RADIUS, or SAML."
+Tunnel Type (tunnel_type),tunnel_type,The type of tunnel (either SSLVPN or IPSec).
+Source User (srcuser),srcuser,The username of the user who initiated the session.
+Source Region (srcregion),srcregion,The region for the user who initiated the session.
+Machine Name (machinename),machinename,The name of the user’s machine.
+Public IP (public_ip),public_ip,The public IP address for the user who initiated the session.
+Public IPv6 (public_ipv6),public_ipv6,The public IPv6 address for the user who initiated the session.
+Private IP (private_ip),private_ip,The private IP address for the user who initiated the session.
+Private IPv6 (private_ipv6),private_ipv6,The private IPv6 address for the user who initiated the session.
+Host ID (hostid),hostid,The unique ID that GlobalProtect assigns to identify the host.
+Serial Number (serialnumber),serialnumber,The serial number of the user’s machine or device.
+Client Version (client_ver),client_ver,The client’s GlobalProtect app version.
+Client OS (client_os),client_os,"The client device’s OS type (for example, Windows or Linux)."
+Client OS Version (client_os_ver),client_os_ver,The client device’s OS version.
+Repeat Count (repeatcnt),repeatcnt,"The number of sessions with the same source IP address, destination IP address, application, and subtype that GlobalProtect has detected within the last five seconds."
+Reason (reason),reason,A string that shows the reason for the quarantine.
+Error (error),error,A string showing that error that has occurred in any event.
+Description (opaque),opaque,Additional information for any event that has occurred.
+Status (status),status,The status (success or failure) of the event.
+Location (location),location,A string showing the administrator-defined location of the GlobalProtect portal or gateway.
+Login Duration (login_duration),login_duration,"The length of time, in seconds, the user is connected to the GlobalProtect gateway from logging in to logging out."
+Connect Method (connect_method),connect_method,"A string showing the how the GlobalProtect app connects to Gateway, (for example, on-demand or user-logon."
+Error Code (error_code),error_code,An integer associated with any errors that occurred.
+Portal (portal),portal,The name of the GlobalProtect portal or gateway.
+Sequence Number (seqno),seqno,A 64-bit log entry identifier incremented sequentially; each log type has a unique number space.
+Action Flags (actionflags),actionflags,A bit field indicating if the log was forwarded to Panorama.
+Gateway Selection Method (selection_type),selection_type,"The connection method that is selected to connect to the gateway.
+
+manual—The gateway to which you want the GlobalProtect app to manually connect.
+
+preferred—The preferred gateway to which you want the GlobalProtect app to connect.
+
+auto—Automatically connect to the Best Available gateway based on the priority assigned to the gateway and the response time."
+SSL Response Time (response_time),response_time,The SSL response time of the selected gateway that is measured in milliseconds on the endpoint during tunnel setup.
+Gateway Priority (priority),priority,"The priority order of the gateway that is based on highest (1), high (2), medium (3), low (4), or lowest (5) to which the GlobalProtect app can connect."
+Attempted Gateways (attempted_gateways),attempted_gateways,"The fields that are collected for each gateway connection attempt with the gateway name, SSL response time, and priority (see Gateway Priority in a Multiple Gateway Configuration. Each field entry is separated by commas such as g82-gateway,12,3. Each gateway entry is separated by semicolons such as g83-gateway,10,2;g84-gateway,-1,1."
+Gateway Name (gateway),gateway,The name of the gateway that is specified on the portal configuration.
+Device Group Hierarchy (dg_hier_level_1 to dg_hier_level_4),dg_hier_level_1,"A sequence of identification numbers that indicate the device group’s location within a device group hierarchy. The firewall (or virtual system) generating the log includes the identification number of each ancestor in its device group hierarchy. The shared device group (level 0) is not included in this structure.
+If the log values are 12, 34, 45, 0, it means that the log was generated by a firewall (or virtual system) that belongs to device group 45, and its ancestors are 34, and 12. To view the device group names that correspond to the value 12, 34 or 45, use one of the following methods:
+API query:
+
+/api/?type=op&cmd=<show><dg-hierarchy></dg-hierarchy></show>"
+Virtual System Name (vsys_name),vsys_name,The name of the virtual system associated with the session; only valid on firewalls enabled for multiple virtual systems.
+Device Name (device_name),device_name,The hostname of the firewall on which the session was logged.
+Virtual System ID (vsys_id),vsys_id,A unique identifier for a virtual system on a Palo Alto Networks firewall.
+Cluster Name (cluster_name),cluster_name,(11.1 and later releases) Name of the CN-Series firewall cluster.

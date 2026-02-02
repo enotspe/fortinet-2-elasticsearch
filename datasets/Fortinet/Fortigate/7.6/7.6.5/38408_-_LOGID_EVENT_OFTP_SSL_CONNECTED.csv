@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+dstport,Destination Protocol Port,uint16,5,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+dstip,Destination IP,ip,39,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+msg,Log Message,string,4096,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+status,Status,string,23,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+action,Policy Action,string,65,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+logdesc,Log Description,string,4096,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+tz,Time zone,string,5,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+eventtime,Event time,uint64,20,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+vd,Virtual Domain Name,string,32,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+devid,Device ID,string,16,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+level,Log Level,string,11,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+subtype,Log Subtype,string,20,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+type,Log Type,string,16,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+logid,Log ID,string,10,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+time,Time,string,8,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5
+date,Date,string,10,38408 - LOGID_EVENT_OFTP_SSL_CONNECTED,38408,LOGID_EVENT_OFTP_SSL_CONNECTED,SSL connection established,Event,system,Information,7.6.5

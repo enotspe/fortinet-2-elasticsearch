@@ -1,0 +1,49 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,,uint16,3,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+videotitle,,string,512,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+videoinfosource,,string,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+videoid,,string,512,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+videodesc,,string,64,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+videochannelid,,string,512,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+videocategoryname,,string,256,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+videocategoryid,,uint32,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+vd,,string,32,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+user,,string,256,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+url,,string,512,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+tz,,string,5,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+type,,string,16,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+transid,Transaction ID,uint32,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+time,,string,8,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+subtype,,string,20,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+srczone,,string,32,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+srcport,,uint16,5,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+srcip,,ip,39,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+srcintfrole,,string,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+srcintf,,string,32,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+sessionid,,uint32,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+service,,string,36,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+referralurl,Referrer URI,string,512,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+proto,,uint8,3,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+profilegroup,,string,48,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+profile,,string,64,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+poluuid,,string,37,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+policytype,,string,24,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+policyid,,uint32,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+msg,,string,512,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+logid,,string,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+level,,string,11,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+httpmethod,,string,20,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+hostname,,string,256,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+group,,string,512,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+eventtype,,string,32,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+eventtime,,uint64,20,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+dstzone,,string,32,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+dstuser,,string,256,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+dstport,,uint16,5,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+dstip,,ip,39,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+dstintfrole,,string,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+dstintf,,string,32,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+devid,,string,16,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+date,,string,10,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6
+action,,string,11,13712 - LOG_ID_VIDEOFILTER_TITLE_BLOCK,13712,LOG_ID_VIDEOFILTER_TITLE_BLOCK,Video title is blocked.,Webfilter,videofilter-title,Warning,7.6.6

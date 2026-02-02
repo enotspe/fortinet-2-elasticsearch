@@ -1,0 +1,26 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+mac,MAC Address,string,17,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+server,AD server FQDN or IP,string,64,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+remotewtptime,The time of AP when client trying to connect,string,32,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+snprev,,string,36,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+trafficmode,,string,8,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+vap,Virtual Access Point,string,36,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+ap,Access Point,string,36,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+sn,Serial Number,string,64,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+stamac,The MAC address of wifi station,string,17,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+encryption,The encryption type of detected rogue AP,string,12,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+security,Security,string,40,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+ssid,WiFi Service Set ID,string,33,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+msg,Log Message,string,4096,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+action,Policy Action,string,65,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+logdesc,Log Description,string,4096,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+tz,Time zone,string,5,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+eventtime,Event time,uint64,20,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+vd,Virtual Domain Name,string,32,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+devid,Device ID,string,16,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+level,Log Level,string,11,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+subtype,Log Subtype,string,20,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+type,Log Type,string,16,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+logid,Log ID,string,10,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+time,Time,string,8,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5
+date,Date,string,10,43703 - LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,43703,LOG_ID_EVENT_WIRELESS_STA_DHCP6_RENEW,Wireless station sent DHCP6 RENEW,Event,wireless,Notice,7.6.5

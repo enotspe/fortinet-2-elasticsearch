@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+fctemsname,,string,36,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+msg,Log Message,string,4096,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+logdesc,Log Description,string,4096,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+tz,Time zone,string,5,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+eventtime,Event time,uint64,20,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+vd,Virtual Domain Name,string,32,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+devid,Device ID,string,16,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+level,Log Level,string,11,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+subtype,Log Subtype,string,20,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+type,Log Type,string,16,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+logid,Log ID,string,10,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+time,Time,string,8,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11
+date,Date,string,10,45130 - LOG_ID_EC_EMS_EMS_VERIFY_FAILED,45130,LOG_ID_EC_EMS_EMS_VERIFY_FAILED,FCEMS entry has failed to be verified,Event,endpoint,Warning,7.4.11

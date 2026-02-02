@@ -1,0 +1,39 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+nextstat,Time interval in seconds for the next statistics,uint32,10,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+rcvdbyte,Received Bytes,uint64,20,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+sentbyte,Bytes Sent,uint64,20,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+duration,Duration,uint32,10,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+xauthgroup,IPsec VPN Xauth user group name,string,128,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+xauthuser,IPsec VPN Xauth user name,string,256,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+advpnsc,,uint8,3,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+fctuid,,string,32,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+vpntunnel,IPsec VPN Tunnel Name,string,128,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+assignip,IPsec VPN tunnel assigned IP address,ip,39,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+eapauthgroup,,string,128,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+eapuser,,string,256,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+useralt,,string,256,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+cookies,Cookie,string,64,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+srccountry,,string,64,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+outintf,IPsec VPN binding interface,string,32,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+locport,Local Port,uint16,5,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+remport,Remote Port,uint16,5,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+locip,IPsec VPN local gateway IP address,ip,39,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+msg,Log Message,string,4096,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+group,User group Name,string,512,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+user,User name of authenticated user,string,256,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+tunnelip,IPsec VPN tunnel IP address,ip,39,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+remip,IPsec VPN remote gateway IP address,ip,39,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+tunneltype,IPsec VPN tunnel type,string,64,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+tunnelid,IPsec VPN tunnel ID,uint32,10,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+action,Policy Action,string,65,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+logdesc,Log Description,string,4096,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+tz,Time zone,string,5,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+eventtime,Event time,uint64,20,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+vd,Virtual Domain Name,string,32,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+devid,Device ID,string,16,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+level,Log Level,string,11,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+subtype,Log Subtype,string,20,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+type,Log Type,string,16,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+logid,Log ID,string,10,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+time,Time,string,8,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6
+date,Date,string,10,37138 - MESGID_CONN_UPDOWN,37138,MESGID_CONN_UPDOWN,IPsec connection status changed,Event,vpn,Notice,7.6.6

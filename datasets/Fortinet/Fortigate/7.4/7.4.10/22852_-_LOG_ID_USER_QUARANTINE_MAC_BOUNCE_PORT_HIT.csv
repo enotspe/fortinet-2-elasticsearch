@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+sn,,string,64,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+name,,string,128,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+msg,,string,4096,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+action,,string,65,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+ui,,string,64,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+user,,string,256,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+logdesc,,string,4096,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+tz,,string,5,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+eventtime,,uint64,20,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+vd,,string,32,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+devid,,string,16,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+level,,string,11,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+subtype,,string,20,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+type,,string,16,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+logid,,string,10,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+time,,string,8,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10
+date,,string,10,22852 - LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,22852,LOG_ID_USER_QUARANTINE_MAC_BOUNCE_PORT_HIT,User quarantine MAC bounce port hit,Event,switch-controller,Notice,7.4.10

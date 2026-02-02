@@ -1,0 +1,14 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+action,Policy Action,string,65,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+logdesc,Log Description,string,4096,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+tz,Time zone,string,5,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+eventtime,Event time,uint64,20,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+vd,Virtual Domain Name,string,32,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+devid,Device ID,string,16,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+level,Log Level,string,11,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+subtype,Log Subtype,string,20,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+type,Log Type,string,16,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+logid,Log ID,string,10,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+time,Time,string,8,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5
+date,Date,string,10,22111 - LOG_ID_PSU_ACTION_FPC_DOWN,22111,LOG_ID_PSU_ACTION_FPC_DOWN,FPC down due to PSU action,Event,system,Error,7.6.5

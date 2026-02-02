@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+devintfname,HA device interface name,string,32,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+ha_role,The HA role in the cluster,string,9,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+msg,Log Message,string,4096,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+logdesc,Log Description,string,4096,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+tz,Time zone,string,5,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+eventtime,Event time,uint64,20,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+vd,Virtual Domain Name,string,32,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+devid,Device ID,string,16,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+level,Log Level,string,11,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+subtype,Log Subtype,string,20,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+type,Log Type,string,16,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+logid,Log ID,string,10,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+time,Time,string,8,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10
+date,Date,string,10,37902 - MESGID_HBDEV_UP,37902,MESGID_HBDEV_UP,Heartbeat device interface up,Event,ha,Information,7.4.10

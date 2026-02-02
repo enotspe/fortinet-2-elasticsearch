@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+iptype,IP type,string,16,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+act,Action,string,16,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+daddr,Destination address,string,80,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+dintf,Destination interface,string,36,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+seq,,string,512,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+saddr,Source Address IP,string,80,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+msg,Log Message,string,4096,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+status,Status,string,23,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+ui,User Interface,string,64,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+user,User name of authenticated user,string,256,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+logdesc,Log Description,string,4096,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+tz,Time zone,string,5,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+eventtime,Event time,uint64,20,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+vd,Virtual Domain Name,string,32,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+devid,Device ID,string,16,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+level,Log Level,string,11,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+subtype,Log Subtype,string,20,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+type,Log Type,string,16,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+logid,Log ID,string,10,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+time,Time,string,8,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5
+date,Date,string,10,32174 - LOG_ID_DEL_IP4_LOCAL_POL,32174,LOG_ID_DEL_IP4_LOCAL_POL,IPv4 firewall local in policy deleted,Event,system,Notice,7.6.5

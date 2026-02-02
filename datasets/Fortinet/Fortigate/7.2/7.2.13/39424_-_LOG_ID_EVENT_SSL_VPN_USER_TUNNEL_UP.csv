@@ -1,0 +1,21 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+dst_host,Destination Host,string,64,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+reason,Reason,string,256,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+msg,Log Message,string,4096,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+group,User group Name,string,512,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+user,User name of authenticated user,string,256,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+remip,IPsec VPN remote gateway IP address,ip,39,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+tunneltype,IPsec VPN tunnel type,string,64,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+tunnelid,IPsec VPN tunnel ID,uint32,10,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+action,Policy Action,string,65,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+logdesc,Log Description,string,4096,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+tz,Time zone,string,5,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+eventtime,Event time,uint64,20,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+vd,Virtual Domain Name,string,32,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+devid,Device ID,string,16,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+level,Log Level,string,11,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+subtype,Log Subtype,string,20,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+type,Log Type,string,16,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+logid,Log ID,string,10,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+time,Time,string,8,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13
+date,Date,string,10,39424 - LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,39424,LOG_ID_EVENT_SSL_VPN_USER_TUNNEL_UP,SSL VPN tunnel up,Event,vpn,Information,7.2.13

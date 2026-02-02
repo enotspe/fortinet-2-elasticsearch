@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+apstatus,"Rogue AP status like unclassify(0), rogue(1), accept(2), suppress(3)",uint8,3,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+bssid,Basic service set ID,string,17,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+ssid,WiFi Service Set ID,string,33,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+msg,Log Message,string,4096,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+action,Policy Action,string,65,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+logdesc,Log Description,string,4096,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+tz,Time zone,string,5,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+eventtime,Event time,uint64,20,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+vd,Virtual Domain Name,string,32,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+devid,Device ID,string,16,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+level,Log Level,string,11,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+subtype,Log Subtype,string,20,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+type,Log Type,string,16,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+logid,Log ID,string,10,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+time,Time,string,8,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5
+date,Date,string,10,43582 - LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,43582,LOG_ID_EVENT_WIRELESS_ROGUE_CFG_UNCLASSIFIED,Rogue AP status configured as unclassified,Event,wireless,Notice,7.6.5

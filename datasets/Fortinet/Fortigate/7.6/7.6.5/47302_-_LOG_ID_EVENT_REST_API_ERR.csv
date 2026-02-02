@@ -1,0 +1,34 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+url,URL,string,512,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+status,Status,string,23,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+path,,string,512,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+method,Method,string,64,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+ui,User Interface,string,64,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+user,User name of authenticated user,string,256,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+rss,,uint32,16,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+durationtotal,,string,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+endtime,,uint64,16,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+starttime,,uint64,16,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+memchange,,int32,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+subtask,,string,256,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+task,,uint16,5,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+membytes,,uint64,16,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+totalsession,Total Number of Sessions,uint32,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+passedcount,,int32,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+lowcount,,int32,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+mediumcount,,int32,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+highcount,,int32,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+criticalcount,,int32,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+auditreporttype,,string,20,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+audittime,,uint64,20,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+logdesc,Log Description,string,4096,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+tz,Time zone,string,5,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+eventtime,Event time,uint64,20,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+vd,Virtual Domain Name,string,32,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+devid,Device ID,string,16,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+level,Log Level,string,11,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+subtype,Log Subtype,string,20,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+type,Log Type,string,16,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+logid,Log ID,string,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+time,Time,string,8,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5
+date,Date,string,10,47302 - LOG_ID_EVENT_REST_API_ERR,47302,LOG_ID_EVENT_REST_API_ERR,REST API request failed,Event,rest-api,Error,7.6.5

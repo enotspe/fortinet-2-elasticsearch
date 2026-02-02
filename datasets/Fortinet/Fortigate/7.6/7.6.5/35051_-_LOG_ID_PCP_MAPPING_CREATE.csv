@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+poolname,IP Pool Name,string,36,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+proto,Protocol Number,uint8,3,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+msg,Log Message,string,4096,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+logdesc,Log Description,string,4096,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+tz,Time zone,string,5,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+eventtime,Event time,uint64,20,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+vd,Virtual Domain Name,string,32,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+devid,Device ID,string,16,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+level,Log Level,string,11,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+subtype,Log Subtype,string,20,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+type,Log Type,string,16,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+logid,Log ID,string,10,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+time,Time,string,8,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5
+date,Date,string,10,35051 - LOG_ID_PCP_MAPPING_CREATE,35051,LOG_ID_PCP_MAPPING_CREATE,Create PCP mapping,Event,system,Information,7.6.5

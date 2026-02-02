@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,,string,4096,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+logdesc,,string,4096,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+tz,,string,5,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+eventtime,,uint64,20,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+vd,,string,32,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+devid,,string,16,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+level,,string,11,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+subtype,,string,20,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+type,,string,16,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+logid,,string,10,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+time,,string,8,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11
+date,,string,10,22900 - LOG_ID_CAPUTP_SESSION,22900,LOG_ID_CAPUTP_SESSION,CAPUTP session status,Event,switch-controller,Information,7.4.11

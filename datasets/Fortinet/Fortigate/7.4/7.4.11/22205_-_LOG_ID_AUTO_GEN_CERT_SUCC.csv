@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+name,Display Name of the Connection,string,128,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+msg,Log Message,string,4096,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+status,Status,string,23,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+action,Policy Action,string,65,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+user,User name of authenticated user,string,256,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+logdesc,Log Description,string,4096,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+tz,Time zone,string,5,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+eventtime,Event time,uint64,20,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+vd,Virtual Domain Name,string,32,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+devid,Device ID,string,16,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+level,Log Level,string,11,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+subtype,Log Subtype,string,20,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+type,Log Type,string,16,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+logid,Log ID,string,10,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+time,Time,string,8,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11
+date,Date,string,10,22205 - LOG_ID_AUTO_GEN_CERT_SUCC,22205,LOG_ID_AUTO_GEN_CERT_SUCC,Certificate succeed to auto-generate,Event,system,Information,7.4.11

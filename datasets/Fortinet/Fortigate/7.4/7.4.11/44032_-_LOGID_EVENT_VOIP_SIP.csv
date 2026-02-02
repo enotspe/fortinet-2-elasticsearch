@@ -1,0 +1,35 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+logsrc,,string,32,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+attack,,string,256,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+attackid,,uint32,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+to,Destination address,string,512,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+from,Where call was originated from,string,128,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+call_id,"Ex: call_id=""1-22011@10.6.30.11""",string,64,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+dir,Destination Interface,string,16,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+duration,Duration of the session. Ex: 180 (in seconds),uint32,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+status,"Status. Ex: status=""blocked"" , status= ""start""",string,23,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+action,"Action. Eg. block , allow",string,15,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+kind,"Kind of service. Typically it will have value ""call""",string,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+voip_proto,SIP/SCCP/MGCP/h323,string,4,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+profile,Name or number of associated VOIP profile,string,64,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+policy_id,Name of the firewall policy governing the traffic which caused the log message.,uint32,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+dst_int,Destination Interface,string,16,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+src_int,"Name of the source interface. Ex: src_int=""port1""",string,16,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+proto,Protocol number. Ex: for SIP it will be proto=17,uint8,3,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+dst_port,Destination port,uint16,5,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+dstip,Destination IP,ip,39,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+src_port,Port number of the traffic's origin. Ex: srcport=40772,uint16,5,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+srcip,IP address of the traffic's origin. Ex: srcip=10.1.100.155,ip,39,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+event_id,Unique event ID,uint32,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+epoch,Epoch,uint32,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+session_id,Session ID. Ex: session_id=232,uint32,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+tz,Time zone,string,5,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+eventtime,Time when event occured,uint64,20,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+vd,Name of the virtual domain in which the log message was recorded.,string,32,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+devid,Serial number of the device for the traffic's origin.,string,16,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+level,Log Level,string,11,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+subtype,Subtype,string,20,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+type,"Type of log. Ex: type=""utm""",string,16,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+logid,Unique Log ID,string,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+time,Hour clock when the log message was recorded.,string,8,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11
+date,"Day, month, and year when the log message was recorded.",string,10,44032 - LOGID_EVENT_VOIP_SIP,44032,LOGID_EVENT_VOIP_SIP,VoIP SIP,VoIP,voip,Information,7.4.11

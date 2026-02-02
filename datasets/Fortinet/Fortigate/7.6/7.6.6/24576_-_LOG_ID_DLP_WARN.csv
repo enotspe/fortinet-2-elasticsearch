@@ -1,0 +1,92 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual Routing Forwarding,uint16,3,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+vd,Virtual domain name,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+user,User name,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+url,The URL address,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+unauthusersource,Unauthenticated user source,string,66,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+unauthuser,Unauthenticated user,string,66,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+tz,,string,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+type,Log type,string,16,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+trueclntip,True client's IP,ip,39,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+transid,,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+to,Email address(es) from the Email Headers (IMAP/POP3/SMTP),string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+time,Time,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+subtype,Log subtype,string,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+subservice,,string,16,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+subject,The subject title of the email message,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srczone,,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srcuuid,,string,37,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srcport,Source Port,uint16,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srcname,,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srcmac,,string,17,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srcip,Source IP,ip,39,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srcintf,Source Interface,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srcdomain,,string,255,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+srccountry,,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+severity,Severity level of a DLP rule,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+sessionid,Session ID,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+service,Service name,string,36,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+sender,Email address from the SMTP envelope,string,128,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+rulename,,string,128,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+ruleid,,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+referralurl,,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+recipient,Email addresses from the SMTP envelope,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+rawdata,Raw Data,string,20480,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+psrcport,,uint16,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+proto,Protocol number,uint8,3,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+profilegroup,,string,48,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+profile,DLP profile name,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+poluuid,,string,37,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+policytype,,string,24,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+policymode,,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+policyid,Policy ID,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+pdstport,,uint16,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+messageid,,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+logid,Log ID,string,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+level,Log Level,string,11,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+infectedfiletype,Infected File Type,string,23,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+infectedfilesize,Infected File Size,uint64,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+infectedfilename,Infected File Name,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+infectedfilelevel,"Infected File Level (Critical,Warning etc)",uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+httpmethod,,string,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+hostname,The host name of a URL,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+group,User group name,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+from,Email address from the Email Headers (IMAP/POP3/SMTP),string,128,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+forwardedfor,Forwarded For,string,128,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+filtertype,DLP filter type,string,23,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+filtercat,DLP filter category,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+filetype,File type,string,23,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+filesize,File size in bytes,uint64,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+filename,File name,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+fctuid,FortiClient User ID,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+eventtype,DLP event type,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+eventtime,"Event Time, time when DLP event detected.",uint64,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+eventid,The serial number of the dlparchive file in the same epoch,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+error,,string,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+epoch,Epoch used for locating file,uint32,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstzone,,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstuuid,,string,37,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstuser,,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstport,Destination Port,uint16,5,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstip,Destination IP,ip,39,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstintf,Destination Interface,string,32,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstcountry,,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dstauthserver,,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+dlpextra,DLP extra information,string,256,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+direction,Direction of packets,string,8,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+devid,Device ID,string,16,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+date,Date,string,10,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+cc,,string,512,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+authserver,Authentication Server,string,64,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+attachment,,string,3,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6
+action,"The status of the session:
+ log-only - DLP event is detected , but NOT blocked (similar to monitor action)
+ block - Blocked
+ exempt - Allowed
+ ban - blocked (Not in used since FortiOS 5.0, replaced by blocked)
+ ban-sender - blocks all data being sent by an ip or user (Not in used since FortiOS 5.0, replaced by quarantine)
+ quarantine-ip - Blocked and band the source ip (Not in used since FortiOS 5.0)
+ quarantine-interface - Blocked and band the source interface (Not in used since FortiOS 5.0)",string,20,24576 - LOG_ID_DLP_WARN,24576,LOG_ID_DLP_WARN,Data loss detected by specified DLP sensor rule,DLP,dlp,Warning,7.6.6

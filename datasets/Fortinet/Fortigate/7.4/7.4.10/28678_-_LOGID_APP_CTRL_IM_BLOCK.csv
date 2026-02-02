@@ -1,0 +1,46 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual Routing Forwarding,uint8,3,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+vd,Virtual domain name,string,32,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+user,User name,string,256,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+unauthusersource,Unauthenticated user source,string,66,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+unauthuser,Unauthenticated user,string,66,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+tz,,string,5,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+type,Log type,string,16,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+time,Time,string,8,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+subtype,Log subtype,string,20,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+srcport,Source Port,uint16,5,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+srcip,Source IP,ip,39,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+srcintf,Source Interface,string,64,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+srcdomain,,string,255,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+srccountry,,string,64,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+sessionid,Session ID,uint32,10,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+service,Service name,string,80,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+proto,Protocol number,uint8,3,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+profiletype,Profile Type,string,36,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+profile,,string,36,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+policyid,Policy ID,uint32,10,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+logid,Log ID,string,10,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+level,Log level,string,11,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+group,User group name,string,512,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+fctuid,FortiClient User ID,string,32,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+eventtype,App Control Event Type,string,32,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+eventtime,Event Time,uint64,20,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+dstport,Destination Port,uint16,5,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+dstip,Destination IP,ip,39,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+dstintf,Destination Interface,string,64,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+dstcountry,,string,64,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+direction,Direction of the packets,string,8,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+devid,Deivce ID,string,16,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+date,Date,string,10,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+authserver,Authentication server for the user,string,64,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+applist,Application Control profile name,string,64,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+appcat,Application category name,string,64,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+app,Application name,string,96,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28678 - LOGID_APP_CTRL_IM_BLOCK,28678,LOGID_APP_CTRL_IM_BLOCK,Application control IM (blocked),APP-CTRL,signature,Information,7.4.10

@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+duration,Duration,uint32,10,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+count,Number of Packets,uint32,10,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+msg,Log Message,string,4096,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+logdesc,Log Description,string,4096,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+tz,Time zone,string,5,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+eventtime,Event time,uint64,20,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+vd,Virtual Domain Name,string,32,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+devid,Device ID,string,16,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+level,Log Level,string,11,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+subtype,Log Subtype,string,20,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+type,Log Type,string,16,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+logid,Log ID,string,10,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+time,Time,string,8,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9
+date,Date,string,10,38661 - LOGID_EVENT_RAD_RPT_OTHER,38661,LOGID_EVENT_RAD_RPT_OTHER,RADIUS endpoint block event or other event summary,Event,user,Notice,7.4.9

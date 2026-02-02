@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+serveraddr,,string,80,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+servername,,string,32,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+msg,Log Message,string,4096,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+port,Port Number,uint16,5,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+logdesc,Log Description,string,4096,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+tz,Time zone,string,5,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+eventtime,Event time,uint64,20,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+vd,Virtual Domain Name,string,32,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+devid,Device ID,string,16,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+level,Log Level,string,11,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+subtype,Log Subtype,string,20,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+type,Log Type,string,16,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+logid,Log ID,string,10,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+time,Time,string,8,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9
+date,Date,string,10,40961 - LOGID_EVENT_ICAP_REMOTE_SRV_STAT,40961,LOGID_EVENT_ICAP_REMOTE_SRV_STAT,Icap remote server stat,Event,webproxy,Notice,7.4.9

@@ -1,0 +1,22 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+iptype,IP type,string,16,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+act,Action,string,16,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+daddr,Destination address,string,80,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+dintf,Destination interface,string,36,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+seq,,string,512,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+saddr,Source Address IP,string,80,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+msg,Log Message,string,4096,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+status,Status,string,23,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+ui,User Interface,string,64,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+user,User name of authenticated user,string,256,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+logdesc,Log Description,string,4096,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+tz,Time zone,string,5,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+eventtime,Event time,uint64,20,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+vd,Virtual Domain Name,string,32,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+devid,Device ID,string,16,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+level,Log Level,string,11,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+subtype,Log Subtype,string,20,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+type,Log Type,string,16,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+logid,Log ID,string,10,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+time,Time,string,8,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11
+date,Date,string,10,32151 - LOG_ID_ADD_IP6_LOCAL_POL,32151,LOG_ID_ADD_IP6_LOCAL_POL,IPv6 firewall local in policy added,Event,system,Notice,7.4.11

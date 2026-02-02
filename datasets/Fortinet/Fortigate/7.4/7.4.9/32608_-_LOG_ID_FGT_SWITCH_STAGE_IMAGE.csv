@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+sn,,string,64,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+name,,string,128,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+msg,,string,4096,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+ui,,string,64,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+user,,string,256,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+logdesc,,string,4096,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+tz,,string,5,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+eventtime,,uint64,20,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+vd,,string,32,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+devid,,string,16,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+level,,string,11,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+subtype,,string,20,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+type,,string,16,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+logid,,string,10,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+time,,string,8,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9
+date,,string,10,32608 - LOG_ID_FGT_SWITCH_STAGE_IMAGE,32608,LOG_ID_FGT_SWITCH_STAGE_IMAGE,Image stage to FortiSwitch,Event,switch-controller,Information,7.4.9

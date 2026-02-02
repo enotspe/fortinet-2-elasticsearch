@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+logdesc,Log Description,string,4096,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+tz,Time zone,string,5,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+eventtime,Event time,uint64,20,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+vd,Virtual Domain Name,string,32,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+devid,Device ID,string,16,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+level,Log Level,string,11,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+subtype,Log Subtype,string,20,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+type,Log Type,string,16,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+logid,Log ID,string,10,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+time,Time,string,8,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10
+date,Date,string,10,44555 - LOGID_EVENT_CMDB_DEADLOCK_DETECTED,44555,LOGID_EVENT_CMDB_DEADLOCK_DETECTED,CMDB lock deadlock is detected.,Event,system,Critical,7.4.10

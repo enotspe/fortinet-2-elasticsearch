@@ -1,0 +1,45 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vd,Virtual domain name,string,32,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+user,User name,string,256,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+url,The URL address,string,512,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+tz,Time Zone,string,5,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+type,Log type,string,16,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+transid,Transaction ID,uint32,10,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+time,Time,string,8,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+subtype,Log subtype,string,20,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+srcuuid,,string,37,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+srcport,Source Port,uint16,5,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+srcip,Source IP,ip,39,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+srcintf,Source Interface,string,32,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+srccountry,,string,64,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+sessionid,Session ID,uint32,10,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+service,Service name,string,36,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+referralurl,Referrer URI,string,512,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+proto,Protocol number,uint8,3,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+profile,Web Filter profile name,string,64,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+poluuid,,string,37,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+policytype,,string,24,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+policyid,Policy ID,uint32,10,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+logid,Log ID,string,10,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+level,Log Level,string,11,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+httpmethod,,string,20,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+group,User group name,string,512,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+eventtype,Web Filter event type,string,32,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+eventtime,Web Filter event time,uint64,20,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+dstuuid,,string,37,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+dstuser,,string,256,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+dstport,Destination Port,uint16,5,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+dstip,Destination IP,ip,39,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+dstintf,Destination Interface,string,32,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+dstcountry,,string,64,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+dstauthserver,,string,64,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+devid,Device ID,string,16,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+date,Date,string,10,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+chgheaders,Change headers,string,20480,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+authserver,Authentication server for the user,string,64,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,13632 - LOGID_HTTP_HDR_CHG_REQ,13632,LOGID_HTTP_HDR_CHG_REQ,Depends on info in msg field,Webfilter,http_header_change,Notice,7.4.11

@@ -1,0 +1,18 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vip,Virtual IP,string,64,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+port,Port Number,uint16,5,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+server,Server IP Address,string,64,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+msg,Log Message,string,4096,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+status,Status,string,23,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+action,Policy Action,string,65,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+logdesc,Log Description,string,4096,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+tz,Time zone,string,5,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+eventtime,Event time,uint64,20,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+vd,Virtual Domain Name,string,32,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+devid,Device ID,string,16,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+level,Log Level,string,11,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+subtype,Log Subtype,string,20,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+type,Log Type,string,16,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+logid,Log ID,string,10,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+time,Time,string,8,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13
+date,Date,string,10,46001 - LOG_ID_VIP_REAL_SVR_DISA,46001,LOG_ID_VIP_REAL_SVR_DISA,VIP real server disabled,Event,system,Alert,7.2.13

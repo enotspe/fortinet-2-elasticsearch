@@ -1,0 +1,13 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+logdesc,Log Description,string,4096,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+tz,Time zone,string,5,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+eventtime,Event time,uint64,20,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+vd,Virtual Domain Name,string,32,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+devid,Device ID,string,16,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+level,Log Level,string,11,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+subtype,Log Subtype,string,20,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+type,Log Type,string,16,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+logid,Log ID,string,10,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+time,Time,string,8,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9
+date,Date,string,10,20138 - LOG_ID_SWOS_LIC_EXPIRE,20138,LOG_ID_SWOS_LIC_EXPIRE,FortiGuard SD-WAN Overlay as a Service license expiring,Event,system,Warning,7.4.9

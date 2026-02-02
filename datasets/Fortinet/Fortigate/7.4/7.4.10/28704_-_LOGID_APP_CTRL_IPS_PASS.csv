@@ -1,0 +1,81 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+url,The URL address,string,512,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+trueclntip,True-Client-IP,ip,39,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+scertissuer,server certificate issuer,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+scertcname,server certificate name,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+referralurl,,string,512,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+rawdataid,,string,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+psrcport,,uint16,5,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+poluuid,,string,37,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+policytype,,string,24,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+policymode,,string,8,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+pdstport,,uint16,5,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+parameters,,string,512,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+msg,Log message,string,512,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+incidentserialno,Incident serial number,uint32,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+icmptype,,string,6,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+icmpid,,string,8,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+icmpcode,,string,6,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+httpmethod,,string,20,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+hostname,The host name of a URL,string,256,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+forwardedfor,Forwarded For,string,128,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+filesize,File size in bytes,uint64,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+filename,File name,string,256,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+dstuser,,string,256,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+dstauthserver,,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+crscore,Client Reputation Score,uint32,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+crlevel,Client Reputation Level,string,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+craction,Client Reputation Action,uint32,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+clouduser,User login ID detected by the Deep Application Control feature,string,256,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+clouddevice,,string,256,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+cloudaction,Action performed by cloud application,string,32,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+ccertissuer,,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+apprisk,Application risk level,string,16,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+appid,Application ID,uint32,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+agent,,string,1024,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+vrf,Virtual Routing Forwarding,uint8,3,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+vd,Virtual domain name,string,32,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+user,User name,string,256,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+unauthusersource,Unauthenticated user source,string,66,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+unauthuser,Unauthenticated user,string,66,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+tz,,string,5,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+type,Log type,string,16,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+time,Time,string,8,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+subtype,Log subtype,string,20,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+srcport,Source Port,uint16,5,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+srcip,Source IP,ip,39,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+srcintf,Source Interface,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+srcdomain,,string,255,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+srccountry,,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+sessionid,Session ID,uint32,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+service,Service name,string,80,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+proto,Protocol number,uint8,3,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+profiletype,Profile Type,string,36,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+profile,,string,36,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+policyid,Policy ID,uint32,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+logid,Log ID,string,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+level,Log level,string,11,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+group,User group name,string,512,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+fctuid,FortiClient User ID,string,32,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+eventtype,App Control Event Type,string,32,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+eventtime,Event Time,uint64,20,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+dstport,Destination Port,uint16,5,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+dstip,Destination IP,ip,39,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+dstintf,Destination Interface,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+dstcountry,,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+direction,Direction of the packets,string,8,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+devid,Deivce ID,string,16,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+date,Date,string,10,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+authserver,Authentication server for the user,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+applist,Application Control profile name,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+appcat,Application category name,string,64,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+app,Application name,string,96,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10
+action,"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",string,16,28704 - LOGID_APP_CTRL_IPS_PASS,28704,LOGID_APP_CTRL_IPS_PASS,Application control (IPS) (pass),APP-CTRL,signature,Information,7.4.10

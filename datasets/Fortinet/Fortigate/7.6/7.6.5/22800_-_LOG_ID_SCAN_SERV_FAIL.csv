@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+mode,Mode,string,32,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+service,Name of Service,string,64,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+msg,Log Message,string,4096,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+logdesc,Log Description,string,4096,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+tz,Time zone,string,5,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+eventtime,Event time,uint64,20,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+vd,Virtual Domain Name,string,32,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+devid,Device ID,string,16,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+level,Log Level,string,11,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+subtype,Log Subtype,string,20,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+type,Log Type,string,16,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+logid,Log ID,string,10,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+time,Time,string,8,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5
+date,Date,string,10,22800 - LOG_ID_SCAN_SERV_FAIL,22800,LOG_ID_SCAN_SERV_FAIL,Scan services session failed,Event,system,Critical,7.6.5

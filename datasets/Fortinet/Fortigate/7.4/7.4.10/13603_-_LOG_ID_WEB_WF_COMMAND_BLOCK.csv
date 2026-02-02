@@ -1,0 +1,61 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+vrf,Virtual router forwarding,uint8,3,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+vd,Virtual domain name,string,32,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+user,User name,string,256,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+url,The URL address,string,512,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+unauthusersource,Unauthenticated user source,string,66,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+unauthuser,Unauthenticated user,string,66,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+tz,Time Zone,string,5,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+type,Log type,string,16,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+trueclntip,True-Client-IP HTTP header,ip,39,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+time,Time,string,8,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+subtype,Log subtype,string,20,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+srcuuid,,string,37,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+srcport,Source Port,uint16,5,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+srcip,Source IP,ip,39,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+srcintf,Source Interface,string,32,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+srcdomain,,string,255,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+srccountry,,string,64,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+sessionid,Session ID,uint32,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+service,Service name,string,36,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+sentbyte,Sent Bytes,uint64,20,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+reqtype,Request type,string,8,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+referralurl,Referrer URI,string,512,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+rcvdbyte,Received Bytes,uint64,20,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+rawdata,"Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for",string,20480,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+proto,,uint8,3,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+profile,Web Filter profile name,string,64,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+poluuid,,string,37,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+policytype,,string,24,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+policymode,,string,8,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+policyid,Policy ID,uint32,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+msg,Log message,string,512,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+logid,Log ID,string,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+level,Log Level,string,11,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+httpmethod,,string,20,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+hostname,The host name of a URL,string,256,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+group,User group name,string,512,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+forwardedfor,X-Forwarded-For HTTP header,string,128,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+fctuid,FortiClient UID,string,32,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+eventtype,Web Filter event type,string,32,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+eventtime,Web Filter event time,uint64,20,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+dstuuid,,string,37,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+dstuser,,string,256,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+dstport,Destination Port,uint16,5,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+dstip,Destination IP,ip,39,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+dstintf,Destination Interface,string,32,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+dstcountry,,string,64,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+dstauthserver,,string,64,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+direction,Direction of the web traffic,string,8,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+devid,Device ID,string,16,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+date,Date,string,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+crscore,Client Reputation Score,uint32,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+crlevel,Client Reputation level,string,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+craction,Client Reputation Action,uint32,10,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+authserver,Authentication server for the user,string,64,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+agent,"User agent - eg. agent=""Mozilla/5.0""",string,1024,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10
+action,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter",string,11,13603 - LOG_ID_WEB_WF_COMMAND_BLOCK,13603,LOG_ID_WEB_WF_COMMAND_BLOCK,Command blocked,Webfilter,webfilter_command_block,Warning,7.4.10

@@ -1,0 +1,17 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+reason,Reason,string,256,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+ap,Access Point,string,36,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+sn,Serial Number,string,64,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+msg,Log Message,string,4096,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+action,Policy Action,string,65,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+logdesc,Log Description,string,4096,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+tz,Time zone,string,5,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+eventtime,Event time,uint64,20,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+vd,Virtual Domain Name,string,32,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+devid,Device ID,string,16,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+level,Log Level,string,11,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+subtype,Log Subtype,string,20,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+type,Log Type,string,16,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+logid,Log ID,string,10,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+time,Time,string,8,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11
+date,Date,string,10,43690 - LOG_ID_EVENT_WIRELESS_APCFG_APPLY,43690,LOG_ID_EVENT_WIRELESS_APCFG_APPLY,FortiAP applies the apcfg,Event,wireless,Notice,7.4.11

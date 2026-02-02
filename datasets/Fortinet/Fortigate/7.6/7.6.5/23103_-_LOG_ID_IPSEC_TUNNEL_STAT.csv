@@ -1,0 +1,20 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+msg,Log Message,string,4096,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+group,User group Name,string,512,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+user,User name of authenticated user,string,256,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+tunnelip,IPsec VPN tunnel IP address,ip,39,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+remip,IPsec VPN remote gateway IP address,ip,39,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+tunneltype,IPsec VPN tunnel type,string,64,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+tunnelid,IPsec VPN tunnel ID,uint32,10,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+action,Policy Action,string,65,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+logdesc,Log Description,string,4096,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+tz,Time zone,string,5,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+eventtime,Event time,uint64,20,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+vd,Virtual Domain Name,string,32,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+devid,Device ID,string,16,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+level,Log Level,string,11,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+subtype,Log Subtype,string,20,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+type,Log Type,string,16,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+logid,Log ID,string,10,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+time,Time,string,8,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5
+date,Date,string,10,23103 - LOG_ID_IPSEC_TUNNEL_STAT,23103,LOG_ID_IPSEC_TUNNEL_STAT,IPsec VPN tunnel statistics,Event,vpn,Information,7.6.5

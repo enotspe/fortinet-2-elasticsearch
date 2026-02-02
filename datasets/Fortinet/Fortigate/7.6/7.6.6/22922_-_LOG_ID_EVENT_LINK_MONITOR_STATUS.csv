@@ -1,0 +1,16 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+probeproto,Link Monitor Probe Protocol,string,16,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+interface,Interface,string,32,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+name,Display Name of the Connection,string,128,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+msg,Log Message,string,4096,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+logdesc,Log Description,string,4096,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+tz,Time zone,string,5,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+eventtime,Event time,uint64,20,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+vd,Virtual Domain Name,string,32,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+devid,Device ID,string,16,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+level,Log Level,string,11,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+subtype,Log Subtype,string,20,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+type,Log Type,string,16,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+logid,Log ID,string,10,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+time,Time,string,8,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6
+date,Date,string,10,22922 - LOG_ID_EVENT_LINK_MONITOR_STATUS,22922,LOG_ID_EVENT_LINK_MONITOR_STATUS,Link monitor status,Event,system,Notice,7.6.6

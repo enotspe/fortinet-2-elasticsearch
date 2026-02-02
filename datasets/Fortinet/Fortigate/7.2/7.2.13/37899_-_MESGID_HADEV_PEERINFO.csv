@@ -1,0 +1,15 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+devintfname,HA device interface name,string,32,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+ha_role,The HA role in the cluster,string,9,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+msg,Log Message,string,4096,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+logdesc,Log Description,string,4096,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+tz,Time zone,string,5,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+eventtime,Event time,uint64,20,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+vd,Virtual Domain Name,string,32,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+devid,Device ID,string,16,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+level,Log Level,string,11,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+subtype,Log Subtype,string,20,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+type,Log Type,string,16,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+logid,Log ID,string,10,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+time,Time,string,8,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13
+date,Date,string,10,37899 - MESGID_HADEV_PEERINFO,37899,MESGID_HADEV_PEERINFO,HA device interface peer information,Event,ha,Notice,7.2.13

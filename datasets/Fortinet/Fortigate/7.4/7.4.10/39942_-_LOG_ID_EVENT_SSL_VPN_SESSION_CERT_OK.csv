@@ -1,0 +1,23 @@
+Log Field Name,Description,Data Type,Length,LOGID,Message_ID,Message_Description,Message_Meaning,Type,Category,Severity,Version
+dst_host,Destination Host,string,64,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+reason,Reason,string,256,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+fctuid,,string,32,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+srccountry,,string,64,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+msg,Log Message,string,4096,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+group,User group Name,string,512,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+user,User name of authenticated user,string,256,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+remip,IPsec VPN remote gateway IP address,ip,39,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+tunneltype,IPsec VPN tunnel type,string,64,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+tunnelid,IPsec VPN tunnel ID,uint32,10,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+action,Policy Action,string,65,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+logdesc,Log Description,string,4096,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+tz,Time zone,string,5,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+eventtime,Event time,uint64,20,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+vd,Virtual Domain Name,string,32,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+devid,Device ID,string,16,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+level,Log Level,string,11,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+subtype,Log Subtype,string,20,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+type,Log Type,string,16,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+logid,Log ID,string,10,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+time,Time,string,8,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
+date,Date,string,10,39942 - LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,39942,LOG_ID_EVENT_SSL_VPN_SESSION_CERT_OK,SSL VPN certificate OK,Event,vpn,Information,7.4.10
