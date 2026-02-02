@@ -178,7 +178,7 @@ class PaloAltoLogScraper:
         text_content = soup.get_text()
         
         # Pattern to match "Format:" followed by the comma-separated list
-        format_match = re.search(r'Format\s*:\s*([^\n]+(?:\n[^A-Z\n][^\n]+)*)', text_content, re.IGNORECASE)
+        format_match = re.search(r'Format\s*:\s*(.+?)(?:\n\s*\n|\n{2,})', text_content, re.IGNORECASE | re.DOTALL)
         
         if format_match:
             format_string = format_match.group(1).strip()
@@ -383,7 +383,7 @@ class PaloAltoLogScraper:
             except Exception as e:
                 logger.error(f"Error saving field table: {e}")
 
-        # Save format as CSV with original and transformed rows
+        # Save format file: line 1 = original, line 2 = transformed
         if format_string and field_table is not None:
             format_filename = f"{log_type['name']}_format.csv"
             format_filepath = os.path.join(version_dir, format_filename)
@@ -393,10 +393,9 @@ class PaloAltoLogScraper:
 
             try:
                 with open(format_filepath, 'w', encoding='utf-8') as f:
-                    f.write("original,transformed\n")
-                    # Quote strings to handle commas in format
-                    f.write(f'"{format_string}","{transformed}"\n')
-                logger.info(f"Saved format CSV to {format_filepath}")
+                    f.write(f"{format_string}\n")
+                    f.write(f"{transformed}\n")
+                logger.info(f"Saved format to {format_filepath}")
             except Exception as e:
                 logger.error(f"Error saving format file: {e}")
         elif format_string:
@@ -406,9 +405,8 @@ class PaloAltoLogScraper:
 
             try:
                 with open(format_filepath, 'w', encoding='utf-8') as f:
-                    f.write("original,transformed\n")
-                    f.write(f'"{format_string}",""\n')
-                logger.info(f"Saved format CSV to {format_filepath} (no transformation - field table missing)")
+                    f.write(f"{format_string}\n")
+                logger.info(f"Saved format to {format_filepath} (no transformation - field table missing)")
             except Exception as e:
                 logger.error(f"Error saving format file: {e}")
 

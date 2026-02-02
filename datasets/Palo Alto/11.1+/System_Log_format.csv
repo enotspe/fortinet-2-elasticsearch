@@ -1,2 +1,2 @@
-original,transformed
-"FUTURE_USE, Receive Time, Serial Number,","FUTURE_USE,receive_time,serial,"
+FUTURE_USE, Receive Time, Serial Number, Type, Content/Threat Type, FUTURE_USE, Generated Time, Virtual System, Event ID, Object, FUTURE_USE, FUTURE_USE, Module, Severity, Description, Sequence Number, Action Flags, Device Group Hierarchy Level 1, Device Group Hierarchy Level 2, Device Group Hierarchy Level 3, Device Group Hierarchy Level 4, Virtual System Name, Device Name, FUTURE_USE, FUTURE_USE, High Resolution Timestamp
+FUTURE_USE,receive_time,serial,type,subtype,FUTURE_USE,time_generated,vsys,eventid,object,FUTURE_USE,FUTURE_USE,module,severity,opaque,seqno,actionflags,dg_hier_level_1,dg_hier_level_2,dg_hier_level_3,dg_hier_level_4,vsys_name,device_name,FUTURE_USE,FUTURE_USE,high_res_timestamp
