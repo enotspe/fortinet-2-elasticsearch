@@ -242,7 +242,7 @@ transforms:
       .network.transport_port = to_string(.network.transport)  + "/" + to_string(.destination.port)
 
       #.network.iana_number = to_int( string(.panos.proto) ?? "nonum" ) ?? null
-      iana = get_enrichment_table_record("iana_number", { "Keyword": upcase(.network.transport) }) ?? null 
+      iana = get_enrichment_table_record("iana_number", { "Keyword": (upcase(.network.transport) ?? null ) } ) ?? null 
       .network.iana_number = to_int(iana.Decimal) ?? null
 
       ## community_id
@@ -325,7 +325,7 @@ sinks:
     query:
       _msg_field: message
       _time_field: timestamp
-      _stream_fields: observer.product,observer.type,observer.vendor,observer.name,log.syslog.hostname,panos.device_name,panos.virtual_system,panos.type,panos.threat/content_type,network.direction
+      _stream_fields: observer.product,observer.type,observer.vendor,observer.name,log.syslog.hostname,panos.device_name,panos.vsys,panos.type,panos.subtype,network.direction
     request:
       headers:
         AccountID: "0"
