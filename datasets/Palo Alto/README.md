@@ -6,6 +6,7 @@ This directory contains a web scraper for extracting Palo Alto Networks PAN-OS s
 
 - **`paloalto_scraper.py`** - Main scraper script
 - **`paloalto_scraper_config.yaml`** - Configuration file with URLs and settings
+- **`11.0/`** - Directory for PAN-OS 11.0 data (placeholder)
 - **`11.1+/`** - Directory containing scraped data for PAN-OS 11.1+
 
 ## Scraped Log Types (PAN-OS 11.1+)
@@ -34,12 +35,19 @@ The scraper extracts data for the following 17 log types:
 
 For each log type, two files are created:
 
-1. **`{LogType}_format.txt`** - Contains the comma-separated syslog format string
+1. **`{LogType}_format.csv`** - Contains the comma-separated syslog format string
    - Example: `FUTURE_USE, Receive Time, Serial Number, Type, ...`
 
 2. **`{LogType}_fields.csv`** - Contains the field descriptions table
    - Columns: `Field Name`, `Description`
    - Each row describes one field from the format string
+
+Additionally, a consolidated file is generated:
+
+3. **`panos_syslog_fields.csv`** - A unified view of all log types with fields aligned by position
+   - Each column represents a log type (Traffic, Threat, URL Filtering, etc.)
+   - Each row represents the field at that position across all log types
+   - Useful for comparing field structures and building parsers that handle multiple log types
 
 ## Usage
 
@@ -104,7 +112,7 @@ versions:
 
 ## Example Output
 
-### Traffic_Log_format.txt
+### Traffic_Log_format.csv
 
 ```
 FUTURE_USE, Receive Time, Serial Number, Type, Threat/Content Type, FUTURE_USE, Generated Time, Source Address, Destination Address, ...

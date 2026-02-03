@@ -260,3 +260,4 @@ model,string
 dcgeo,string
 cloudgenai,string
 aiuser,string
+profilegroup,string

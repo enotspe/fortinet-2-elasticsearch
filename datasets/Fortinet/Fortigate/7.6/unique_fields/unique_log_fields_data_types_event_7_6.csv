@@ -383,3 +383,11 @@ fgtcount,number
 nodecount,number
 modem,string
 simslot,string
+rss,number
+durationtotal,string
+endtime,number
+starttime,number
+memchange,number
+subtask,string
+task,number
+membytes,number

@@ -1,0 +1,180 @@
+Log Field Name,Description,Data Type
+accessctrl,,string
+accessproxy,,string
+action,"The status of the session:
+ deny - Session was denied
+ accept - Allowed Forward session
+ start - Session starts (log message was created when the session was created)
+ dns - DNS query return error
+ ip-conn - Failed connection attempts
+ close - Local-traffic session allowed
+ timeout - Allowed session was timeout
+ client-rst - Session reset by client
+ server-rst - Session reset by server",string
+agent,"User agent - eg. agent=""Mozilla/5.0""",string
+ap,Access Point name,string
+app,Application name,string
+appact,The security action from app control,string
+appcat,Application category,string
+appid,Application ID,number
+applist,Application Control profile (name),string
+apprisk,Application Risk Level,string
+apsn,Access Point serial number,string
+authserver,Remote Authentication server,string
+centralnatid,central-snat-map id,number
+channel,WiFi Channel,number
+clientcert,,string
+clientdeviceems,,string
+clientdeviceid,,string
+clientdevicemanageable,,string
+clientdeviceowner,,string
+clientdevicetags,,string
+comment,Customized policy comment,string
+countapp,Number of App Ctrl logs associated with the session,number
+countav,Number of AV logs associated with the session,number
+countcasb,,number
+countcifs,,number
+countdlp,Number of DLP logs associated with the session,number
+countdns,Number of DNS Query logs associated with the session,number
+countemail,Number of Email logs associated with the session,number
+countff,,number
+counticap,,number
+countips,Number of IPS logs associated with the session,number
+countsctpf,,number
+countssh,Number of SSH logs associated with the session,number
+countssl,,number
+countvpatch,,number
+countwaf,Number of WAF logs associated with the session,number
+countweb,Number of Web Filter logs associated with the session,number
+craction,Action performed by Threat Weight,number
+crlevel,Threat Weight level,string
+crscore,Threat Weight score,number
+date,Date,string
+devid,Device Serial Number,string
+devtype,Device Type,string
+dstauthserver,,string
+dstcity,,string
+dstcountry,Country name for the destination IP,string
+dstdevtype,Destination Device Type,string
+dstfamily,,string
+dsthwvendor,,string
+dsthwversion,,string
+dstinetsvc,Internet service name for the destination,string
+dstintf,Destination Interface,string
+dstintfrole,"Destination Interface's assigned role (LAN, WAN, etc.)",string
+dstip,Destination IP Address,ip
+dstmac,Destination Mac Address,string
+dstname,Destination name,string
+dstosname,Destination OS name,string
+dstport,Destination Protocol Port Number,number
+dstregion,,string
+dstreputation,,number
+dstserver,Destination Server,number
+dstssid,Destination SSID,string
+dstswversion,,string
+dstthreatfeed,,string
+dstunauthuser,,string
+dstunauthusersource,,string
+dstuser,,string
+dstuuid,UUID of the Destination Address Object,string
+duration,Duration of the session,number
+durationdelta,,number
+emsconnection,,string
+eventtime,Epoch time in nanoseconds,number
+fctuid,FortiClient UID,string
+fwdsrv,,string
+gatewayid,,number
+group,User group name,string
+identifier,,number
+lanin,LAN incoming traffic in bytes,number
+lanout,LAN outgoing traffic in bytes,number
+level,Log Level,string
+logid,Log ID,string
+masterdstmac,Destination master MAC address,string
+mastersrcmac,The master MAC address for a host that has multiple network interfaces,string
+msg,Log message,string
+osname,Name of the device's OS,string
+pdstport,,number
+policyid,Firewall Policy ID,number
+policymode,,string
+policyname,Policy name,string
+policytype,Policy type,string
+poluuid,UUID of the Firewall Policy,string
+proto,Protocol Number,number
+proxyapptype,,string
+psrcport,,number
+radioband,Radio Band,string
+rcvdbyte,Received Bytes,number
+rcvddelta,Delta Received Bytes,number
+rcvdpkt,Received Packets,number
+rcvdpktdelta,,number
+realserverid,,number
+replydstintf,,string
+replysrcintf,,string
+saasname,,string
+sentbyte,Sent Bytes,number
+sentdelta,Delta Sent Bytes,number
+sentpkt,Sent Packets,number
+sentpktdelta,,number
+service,Name of Service,string
+sessionid,Session ID,number
+shaperdroprcvdbyte,Received bytes dropped by shaper,number
+shaperdropsentbyte,Sent bytes dropped by shaper,number
+shaperperipdropbyte,Dropped bytes per IP by shaper,number
+shaperperipname,Traffic shaper name (per IP),string
+shaperrcvdname,Traffic shaper name for received traffic,string
+shapersentname,Traffic shaper name for sent traffic,string
+shapingpolicyid,Shaping Policy ID,number
+shapingpolicyname,,string
+signal,,number
+snr,,number
+srccity,,string
+srccountry,Country name for Source IP,string
+srcdomain,,string
+srcfamily,,string
+srchwvendor,,string
+srchwversion,,string
+srcinetsvc,Internet service name for the source,string
+srcintf,Source interface name,string
+srcintfrole,"Source Interface's assigned role (LAN, WAN, etc.)",string
+srcip,Source IP address,ip
+srcmac,MAC address associated with the Source IP,string
+srcmacvendor,,string
+srcname,Source name,string
+srcport,Source protocol port number,number
+srcregion,,string
+srcremote,,ip
+srcreputation,,number
+srcserver,Source server,number
+srcssid,Source SSID,string
+srcswversion,,string
+srcthreatfeed,,string
+srcuuid,UUID of the Source Address Object,string
+sslaction,Action taken by ssl-ssh-profile,string
+subtype,Subtype of the traffic,string
+time,Time,string
+trandisp,NAT translation type,string
+tranip,NAT Destination IP,ip
+tranport,NAT Destination Port,number
+transip,NAT Source IP,ip
+transport,NAT Source Protocol Port,number
+tunnelid,,number
+type,Log type,string
+tz,Time zone,string
+unauthuser,Unauthenticated user name,string
+unauthusersource,The method used to detect unauthenticated user name,string
+url,URL,string
+user,User name,string
+utmaction,Security action performed by UTM,string
+vd,Virtual domain name,string
+vip,,string
+vpntype,The type of the VPN tunnel,string
+vrf,Virtual router forwarding,number
+vwlid,Virtual Wan Link (SD-WAN) service id,number
+vwlname,,string
+vwlquality,Quality info of the service rule that is matched by traffic,string
+vwlservice,Application that is matched by the traffic (internet-service-app-ctrl),string
+vwpvlanid,Virtual Wire Pair vlan id,number
+wanin,WAN incoming traffic in bytes,number
+wanoptapptype,WAN Optimization Application type,string
+wanout,WAN outgoing traffic in bytes,number

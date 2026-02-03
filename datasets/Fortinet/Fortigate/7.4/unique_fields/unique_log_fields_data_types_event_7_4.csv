@@ -366,3 +366,10 @@ requesttype,string
 connector,string
 modem,string
 simslot,string
+membytes,number
+durationtotal,string
+endtime,number
+starttime,number
+rss,number
+memchange,number
+task,number
