@@ -1,0 +1,387 @@
+Log Field Name,Description,Data Type
+acct_stat,Accounting state (RADIUS),string
+acktime,Alarm Acknowledge Time,string
+act,Action,string
+action,Policy Action,string
+activity,HA activity message,string
+addr,IP Address,string
+addr_type,,string
+addrgrp,,string
+adgroup,AD Group Name of FSSO user,string
+admin,Administrator,string
+advpnsc,,number
+age,Time in seconds - time passed since last seen,number
+agent,SNMP agent,string
+alarmid,Alarm ID,number
+ap,Access Point,string
+app,,string
+app-type,,string
+apperror,,string
+appid,,number
+apscan,The name of AP to detect rogue ap,string
+apstatus,"Rogue AP status like unclassify(0), rogue(1), accept(2), suppress(3)",number
+aptype,The AP type is Ad-hoc mode or regular AP mode,number
+assigned,Assigned IP Address through PPPoE,ip
+assignip,IPsec VPN tunnel assigned IP address,ip
+auditid,Security Rating ID,number
+auditreporttype,Security Rating report type,string
+auditscore,Security Rating score,string
+audittime,Security Rating time,number
+authgrp,,string
+authid,,string
+authproto,The protocol that initiated the authentication,string
+authserver,Remote Authentication server,string
+bandwidth,Bandwidth,string
+banned_rule,NAC quarantine Banned Rule Name,string
+banned_src,NAC quarantine Banned Source IP,string
+bibandwidthavailable,,string
+bibandwidthused,,string
+bssid,Basic service set ID,string
+carrier_ep,The FortiOS Carrier end-point identification,string
+category,Log category,number
+cert,Certificate,string
+cert-type,Certification type,string
+cfgattr,Configuration attribute,string
+cfgobj,Configuration object,string
+cfgpath,Configuration path,string
+cfgtid,Config transaction id,number
+cfgtxpower,Config TX power,number
+channel,Channel,number
+chassisid,Chassis ID,number
+cldobjid,,string
+client_addr,Client address,string
+community,Community,string
+configcountry,Config Country,string
+connection_type,FortiClient Connection Type,string
+connector,,string
+conserve,Flag for Conserve Mode,string
+cookies,Cookie,string
+core,,number
+count,"Count
+
+Count of EndPoint Connections
+
+Number of Packets",number
+cpu,CPU Usage,number
+criticalcount,Critical level threat count,number
+crl,Certificate revocation lists,string
+cveid,CVE ID,string
+daddr,Destination address,string
+daemon,Daemon Name,string
+datarange,Data range for reports,string
+date,Date,string
+ddnsserver,DDNS Server,ip
+desc,Description,string
+detectionmethod,Detection Method,string
+devid,Device ID,string
+devintfname,HA device interface name,string
+devtype,Device type,string
+dhcp_msg,DHCP Message,string
+dintf,Destination interface,string
+dir,Direction,string
+direction,,string
+disk,Disk Usage,number
+disklograte,Disk Log Rate,number
+domainctrlauthstate,,number
+domainctrlauthtype,,number
+domainctrldomain,,string
+domainctrlip,,ip
+domainctrlname,,string
+domainctrlprotocoltype,,number
+domainctrlusername,,string
+downbandwidthmeasured,,string
+ds,Direction with distribution system,string
+dst_host,Destination Host,string
+dst_int,Destination Interface,string
+dstintfrole,,string
+dstip,Destination IP,ip
+dstport,Destination Protocol Port,number
+duid,DHCPv6 unique identifier,string
+duration,"Duration
+
+Duration of the last threatening packed captured from TA",number
+durationtotal,,string
+eapolcnt,The count of EAPOL packets,number
+eapoltype,The packet type of EAPOL,string
+encrypt,The packet is encrypted or not,number
+encryption,The encryption type of detected rogue AP,string
+endtime,,number
+error,Error Reason for Log Upload to Forticloud,string
+error_num,Error Number,string
+espauth,IPsec Phase2 ESP message authentication code,string
+esptransform,IPsec Phase2 ESP encryption method,string
+eventtime,Event time,number
+eventtype,,string
+exch,Type of IKE messages exchanged,string
+expiry,FortiGuard override expiry timestamp,string
+extension,,string
+failuredev,,string
+fams_pause,Fortinet Analysis and Management Service Pause,number
+fazlograte,FortiAnalyzer Logging Rate,number
+fctemsname,,string
+fctemssn,,string
+fctuid,FortiClient UID,string
+field,NTP date-time field,string
+file,Report file full path,string
+filename,,string
+filesize,Report File Size in Bytes,number
+fqdn,Fully Qualified Domain Name,string
+frametype,Frame Type,string
+freediskstorage,,number
+from,Sender Email Address for Notification,string
+from_vcluster,Source virtual cluster number,number
+fwserver_name,,string
+gateway,Gateway ip address for PPPoE status report,ip
+green,Green threshold for conserve mode,string
+group,User group Name,string
+groupid,User Group ID,number
+ha-prio,HA Priority,number
+ha_group,HA Group Number - can be 0 - 255,number
+ha_role,The HA role in the cluster,string
+hash,Hash Value of Downloaded File,string
+healthcheck,,string
+highcount,Security Rating result failed count for high severity,number
+host,,string
+hostname,Hostname,string
+httpcode,,number
+iaid,DHCPv6 Identity Association Identifier,number
+in_spi,SPI for incoming traffic,string
+inbandwidthavailable,,string
+inbandwidthused,,string
+informationsource,Information Source,string
+init,,string
+initiator,Original login user name for Fortiguard override,string
+interface,Interface,string
+intf,Interface,string
+invalidmac,Detected MAC address with invalid OUI,string
+ip,Source IP,ip
+iptype,IP type,string
+jitter,,string
+latency,,string
+lease,DHCP lease time,number
+level,Log Level,string
+license_limit,Maximum Number of FortiClients for the License,string
+limit,Virtual Domain Resource Limit,number
+live,Time in seconds,number
+local,Local IP for a PPPD Connection,ip
+localdevcount,,number
+locip,IPsec VPN local gateway IP address,ip
+locport,Local Port,number
+log,Log Name for Log Rotation,string
+logdesc,Log Description,string
+logid,Log ID,string
+lowcount,Security Rating result failed count for low severity,number
+mac,MAC Address,string
+manuf,Manufacturer name,string
+mediumcount,Security Rating result failed count for medium severity,number
+mem,Memory Usage,number
+member,,string
+membytes,,number
+memchange,,number
+meshmode,Mesh mode,string
+method,Method,string
+mgmtcnt,The number of unauthorized client flooding managemet frames,number
+mode,"IPsec VPN ID protection mode
+
+Mode",string
+model,,string
+modem,,string
+module,Configuration Module Name,string
+monitor-name,Health Monitor Type,string
+monitor-type,Health Monitor Name,string
+moscodec,,string
+mosvalue,,string
+mpsk,Multiple pre-shared keys,string
+msg,Log Message,string
+mtu,Max Transmission Unit Value,number
+name,Display Name of the Connection,string
+nat,NAT IP Address,ip
+neighbor,,string
+netid,,string
+networktransfertime,,string
+new_status,New Status,string
+new_value,New Virtual Domain Name,string
+newchannel,New Channel Number,number
+newchassisid,New Chassis ID,number
+newslot,New Slot Number,number
+newvalue,,string
+nextstat,Time interval in seconds for the next statistics,number
+noise,WiFi signal noise level,number
+numpassmember,,number
+old_status,Original Status,string
+old_value,Original Virtual Domain name,string
+oldchannel,Original Channel Number,number
+oldchassisid,Original Chassis Number,number
+oldslot,Original Slot Number,number
+oldsn,Security fabric upstream FGT old serial number,string
+oldvalue,,string
+oldwprof,Old Web Filter Profile,string
+onwire,The rogue ap is onwire or not,string
+opercountry,The name of operating country on a AP,string
+operdrmamode,,string
+opertxpower,The value of operating tx power,number
+out_spi,Out SPI,string
+outbandwidthavailable,,string
+outbandwidthused,,string
+outintf,IPsec VPN binding interface,string
+packetloss,,string
+passedcount,Security Rating result passed count,number
+passwd,Password,string
+path,,string
+peer,,string
+peer_notif,IPsec VPN Peer Notification,string
+phase2_name,Phase 2 Name,string
+pid,Process ID,number
+policyid,Policy ID,number
+poolname,IP Pool Name,string
+port,Port Number,number
+portbegin,Port Number to Begin,number
+portend,Port Number to End,number
+probeproto,Link Monitor Probe Protocol,string
+process,Process,string
+processtime,Process time for reports,number
+product,,string
+profile,Profile Name,string
+proto,Protocol Number,number
+protocol,,string
+radioband,The operating radio band,string
+radioid,The operating radio ID,number
+radioidclosest,The radio ID on the AP closest with the detected rogue ap,number
+radioiddetected,The radio ID on the AP which detected the rogue ap,number
+rate,WiFi band width rate,number
+rcvdbyte,Received Bytes,number
+reason,Reason,string
+red,,string
+remip,IPsec VPN remote gateway IP address,ip
+remote,IP Address of the PPP Remote end,ip
+remotetunnelid,,number
+remotewtptime,The time of AP when client trying to connect,string
+remport,Remote Port,number
+reporttype,Report Type,string
+requesttype,,string
+result,IPsec VPN negotiation result,string
+role,"IPsec peer role, initator or responder",string
+rss,,number
+rssi,The value of Received signal strength indicator,number
+rsso_key,RADIUS SSO attribute value,string
+saddr,Source Address IP,string
+scantime,,number
+scope,FortiGuard Override Scope,string
+security,Security,string
+sentbyte,Bytes Sent,number
+seq,Sequence,string
+serial,,number
+serialno,Serial Number,string
+server,"AD server FQDN or IP
+
+Server IP Address",string
+serveraddr,,string
+servername,,string
+serverresponsetime,,string
+service,Name of Service,string
+serviceid,,number
+session_id,Session ID,number
+setuprate,Session Setup Rate,number
+severity,Severity,string
+signal,The signal value of SSID or client,number
+simslot,,string
+slamap,,string
+slatargetid,,number
+slctdrmamode,,string
+slot,Slot Number,number
+sn,"Serial Number
+
+Serial number for login or logout events. Used to correlate login and logout events.",string
+snclosest,SN of the AP closest to the rogue AP,string
+sndetected,SN of the AP which detected the rogue AP,string
+snmeshparent,SN of the mesh parent,string
+snprev,,string
+snr,,number
+source_mac,The source MAC address of wifi station,string
+speedtestserver,,string
+spi,Security Parameter Index,string
+src_int,Source Interface,string
+srccountry,,string
+srcintfrole,,string
+srcip,Source IP,ip
+srcmac,Source MAC address,string
+srcname,Source name,string
+srcport,Source port,number
+ssid,WiFi Service Set ID,string
+stacount,The count of wifi stations,number
+stage,,number
+stamac,The MAC address of wifi station,string
+starttime,,number
+state,State,string
+status,Status,string
+stitch,Automation stitch name,string
+stitchaction,,string
+submodule,"Sub-module name. For example autoupdate is sub-module in log of ""config system autoupdate schedule""",string
+subtype,Log Subtype,string
+switchaclid,,number
+switchautoip,,ip
+switchinterface,,string
+switchl2capacity,,number
+switchl2count,,number
+switchmirrorsession,,string
+switchphysicalport,,string
+switchsysteminterface,,string
+switchtrunk,,string
+switchtrunkinterface,,string
+sync_status,The sync status with the primary,string
+sync_type,The sync type with the primary,string
+sysuptime,,number
+tamac,"The MAC address of Transmitter. If none, then Receiver",string
+task,,number
+threattype,WIDS threat type,string
+ticket,,string
+time,Time,string
+timestamp,,string
+to_vcluster,Destination virtual cluster number,number
+total,Total,number
+totalsession,Total Number of Sessions,number
+trace_id,,string
+trigger,Automation trigger name,string
+tunnelid,IPsec VPN tunnel ID,number
+tunnelip,IPsec VPN tunnel IP address,ip
+tunneltype,IPsec VPN tunnel type,string
+type,Log Type,string
+tz,Time zone,string
+ui,User Interface,string
+unit,Unit,number
+upbandwidthmeasured,,string
+upgradedevice,,string
+url,URL,string
+used,Number of Used IPs,number
+used_for_type,Connection for the type,number
+user,User name of authenticated user,string
+useralt,,string
+vap,Virtual Access Point,string
+vapmode,Virtual Access Point mode,string
+vcluster,Virtual cluster,number
+vcluster_member,Virtual cluster member,number
+vcluster_state,Virtual cluster member state,string
+vd,Virtual Domain Name,string
+vdname,Virtual Domain Name,string
+vendor,,string
+vendorurl,,string
+version,Version,string
+versionmax,,string
+versionmin,,string
+vip,Virtual IP,string
+vlan,,number
+vpntunnel,IPsec VPN Tunnel Name,string
+vrf,,number
+vulncat,Vulnerability Category,string
+vulncnt,,number
+vulnid,Vulnerability ID,number
+vulnname,Vulnerability name,string
+vulnresult,,string
+wanin,,number
+waninfo,,string
+wanout,,number
+weakwepiv,Weak Wep Initiation Vector,string
+wscode,,number
+xauthgroup,IPsec VPN Xauth user group name,string
+xauthuser,IPsec VPN Xauth user name,string
+xid,,number
