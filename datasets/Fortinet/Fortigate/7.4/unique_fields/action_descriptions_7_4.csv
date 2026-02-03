@@ -1,0 +1,30 @@
+APP-CTRL,Anomaly,DLP,DNS,IPS,SSH,Virus,VoIP,WAF,Webfilter
+"The status of the session:
+ pass - Application is allowed
+ block - Application is blocked (silent)
+ reject - Quarantine
+ reset - Application is blocked and Reset was sent
+Sometimes, there is a block page for blocking",Action,"The status of the session:
+ log-only - DLP event is detected , but NOT blocked (similar to monitor action)
+ block - Blocked
+ exempt - Allowed
+ ban - blocked (Not in used since FortiOS 5.0, replaced by blocked)
+ ban-sender - blocks all data being sent by an ip or user (Not in used since FortiOS 5.0, replaced by quarantine)
+ quarantine-ip - Blocked and band the source ip (Not in used since FortiOS 5.0)
+ quarantine-interface - Blocked and band the source interface (Not in used since FortiOS 5.0)",Security action performed by DNS filter,"Security action performed by IPS:
+ detected - Attack is detected , but NOT blocked (similar to monitor)
+ dropped - Silent packet blocked
+ reset - Blocked and respond with Reset
+ reset_client - Blocked and reset sent to the client
+ reset_server - Blocked and reset sent to the server
+ drop_session - Silent block
+ pass_session - Session allowed
+ clear_session - Session was removed /closed","The status of the ssh-channel:
+ passthrough - channel is allowed
+ blocked - channel is blocked","The status of the session:
+ blocked - Blocked infected file by AV engine
+ passthrough - Allowed by AV engine
+ monitored - Log, but do NOT block infected file
+ analytics - Submitted to Sandbox for analysis","Action. Eg. block , allow",Status of the session. Uses following definition: - Deny = blocked by firewall policy. - Start = session start log (special option to enable logging at start of a session). This means firewall allowed. - All Others = allowed by Firewall Policy and the status indicates how it was closed.,"Security action performed by WF:
+ blocked - url is blocked by webfilter
+ passthrough - url is allowed by webfilter"

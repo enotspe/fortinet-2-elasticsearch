@@ -1,0 +1,430 @@
+Log Field Name,Description,Data Type
+action,,string
+activitycategory,,string
+agent,"DLP/Virus/Webfilter: User agent - eg. agent=""Mozilla/5.0""
+
+WAF: Agent",string
+aiuser,,string
+analyticscksum,The checksum of the file submitted for analytics,string
+analyticssubmit,The flag for analytics submission,string
+antiphishdc,,string
+antiphishrule,,string
+app,Application name,string
+appcat,Application category name,string
+appid,Application ID,number
+applist,Application Control profile name,string
+apprisk,Application risk level,string
+attachment,,string
+attack,"Anomaly: Attack
+
+IPS: Attack Name",string
+attackcontext,The trigger patterns and the packet data with base64 encoding,string
+attackcontextid,Attack context ID / total,string
+attackid,Attack ID,number
+authalgo,,string
+authserver,"APP-CTRL/IPS/Webfilter: Authentication server for the user
+
+DLP/WAF: Authentication Server
+
+Virus: Server used to authenticate the involved user",string
+banword,Banned word,string
+botnetdomain,Botnet domain name,string
+botnetip,Botnet IP address,ip
+call_id,"Ex: call_id=""1-22011@10.6.30.11""",string
+cat,"DNS: DNS category ID
+
+Webfilter: Web category ID",number
+catdesc,"DNS: DNS category description
+
+Webfilter: Web category description",string
+cc,,string
+ccertissuer,,string
+cdrcontent,,string
+certdesc,,string
+certhash,,string
+channeltype,"Type of Channel:
+ x11, shell, exec, tcp-fprward, tun-forward, sftp. scp",string
+checksum,The checksum of the scanned file,string
+chgheaders,Change headers,string
+cipher,,string
+cloudaction,Action performed by cloud application,string
+clouddevice,,string
+cloudgenai,,string
+clouduser,User login ID detected by the Deep Application Control feature,string
+cn,,string
+column,Ex: column=16,number
+command,Shell command,string
+constraint,WAF HTTP protocol restrictions,string
+contentdisarmed,"Content Disarm action- eg. disarmed, detected",string
+contentencoding,,string
+contenttype,Content Type from HTTP header,string
+count,"Anomaly: Count
+
+VoIP: Session count",number
+craction,"APP-CTRL/Anomaly/Webfilter: Client Reputation Action
+
+IPS: Action performed by Threat Weight
+
+Virus: Threat Weight action",number
+crlevel,"APP-CTRL/Anomaly/IPS/Webfilter: Client Reputation level
+
+Virus: Threat Weight Level",string
+crscore,"APP-CTRL/Anomaly/IPS/Webfilter: Client Reputation Score
+
+Virus: Threat Weight Score",number
+date,"APP-CTRL/Anomaly/DLP/DNS/IPS/SSH/Virus/WAF/Webfilter: Date
+
+VoIP: Day, month, and year when the log message was recorded.",string
+dcgeo,,string
+devid,"APP-CTRL/Anomaly/IPS: Deivce ID
+
+DLP/DNS/SSH/WAF/Webfilter: Device ID
+
+VoIP: Serial number of the device for the traffic's origin.",string
+dir,Destination Interface,string
+direction,"APP-CTRL: Direction of the packets
+
+DLP: Direction of packets
+
+IPS/Virus: Message/packets direction
+
+SSH: Direction of session
+
+WAF: Direction
+
+Webfilter: Direction of the web traffic",string
+dlpextra,DLP extra information,string
+docsource,DLP fingerprint document source,string
+domainfilteridx,Domain Filter Index,number
+domainfilterlist,Domain Filter List,string
+dst_int,Destination Interface,string
+dst_port,Destination port,number
+dstauthserver,,string
+dstcountry,,string
+dstintf,Destination Interface,string
+dstintfrole,"APP-CTRL/Anomaly/DLP/IPS/SSH/Virus/WAF/Webfilter: Destination Interface's assigned role (LAN, WAN, etc.)
+
+DNS: Destination Interface Role",string
+dstip,"APP-CTRL/Anomaly/DLP/DNS/IPS/SSH/VoIP/Webfilter: Destination IP
+
+Virus/WAF: Destination IP Address",ip
+dstmac,,string
+dstport,Destination Port,number
+dstuser,,string
+dstuuid,,string
+dstzone,,string
+dtype,Data type for virus category,string
+duration,Duration of the session. Ex: 180 (in seconds),number
+echmsg,,string
+epoch,"DLP: Epoch used for locating file
+
+VoIP: Epoch",number
+error,"DNS: DNS filter service error message
+
+Webfilter: URL rating error message",string
+ethertype,,number
+event_id,Unique event ID,number
+eventid,"DLP: The serial number of the dlparchive file in the same epoch
+
+WAF: Event ID",number
+eventsubtype,,string
+eventtime,"APP-CTRL/SSH: Event Time
+
+Anomaly/IPS/Virus: Time when detection occured
+
+DLP: Event Time, time when DLP event detected.
+
+DNS: Event Timestamp
+
+VoIP: Time when event occured
+
+WAF: Event Time, Time when WAF event detected
+
+Webfilter: Web Filter event time",number
+eventtype,"APP-CTRL: App Control Event Type
+
+Anomaly/SSH/WAF: Event Type
+
+DLP: DLP event type
+
+DNS: DNS Type (DNS query/DNS response)
+
+IPS: IPS Event Type
+
+Virus: Event type of AV
+
+Webfilter: Web Filter event type",string
+exchange,Mail Exchanges from DNS response answer section,string
+fctuid,"APP-CTRL/DLP/Virus: Forticlient user ID
+
+Anomaly/IPS/SSH/WAF/Webfilter: FortiClient UID
+
+DNS: FortiClient ID",string
+filefilter,The filter used to identify the affected file,string
+filehash,Used by Outbreak Prevention External Hash: the hash signature used in the detection,string
+filehashsrc,Used by Outbreak Prevention External Hash: external source that provided the hash signature,string
+filename,File name,string
+filesize,File size in bytes,number
+filetype,File type,string
+filtercat,DLP filter category,string
+filtertype,"DLP: DLP filter type
+
+Webfilter: Filter type",string
+fortiguardresp,,string
+forwardedfor,"APP-CTRL/DLP: Forwarded For
+
+IPS/Webfilter: X-Forwarded-For HTTP header",string
+from,"DLP/Virus: Email address from the Email Headers (IMAP/POP3/SMTP)
+
+VoIP: Where call was originated from
+
+Webfilter: MMS-only - From/To headers from the email",string
+fsaverdict,"FortiSandbox Verdict returned to FortiGate after analysis (clean, low risk, med risk, high risk, malicious)",string
+ftlkintf,,string
+group,"APP-CTRL/Anomaly/DLP/DNS/IPS/WAF/Webfilter: User group name
+
+SSH: Group name for authentication
+
+Virus: Group name (authentication)",string
+handshake,,string
+hostkeystatus,,string
+hostname,The host name of a URL,string
+httpmethod,,string
+icbaction,,string
+icbconfidence,,string
+icberror,,string
+icbfileid,,string
+icbfiletype,,string
+icbseverity,,string
+icbverdict,,string
+icmpcode,"Anomaly: ICMP code
+
+IPS: Destination Port of the ICMP message",string
+icmpid,"Anomaly: ICMP ID
+
+IPS: Source port of the ICMP message",string
+icmptype,"Anomaly: ICMP Type
+
+IPS: The type of ICMP message",string
+identifier,,number
+incidentserialno,Incident serial number,number
+infectedfilelevel,"Infected File Level (Critical,Warning etc)",number
+infectedfilename,Infected File Name,string
+infectedfilesize,Infected File Size,number
+infectedfiletype,Infected File Type,string
+infection,,string
+initiator,The initiator user for override,string
+ipaddr,IP addresses from DNS response answer section,string
+issuer,,string
+itype,,string
+keyalgo,,string
+keysize,,number
+keyword,Keyword used for search,string
+kind,"Kind of service. Typically it will have value ""call""",string
+kxcurve,,string
+kxproto,,string
+level,Log Level,string
+line,SIP header line,string
+locip,Local IP,ip
+locport,Local Port,number
+logid,"APP-CTRL/Anomaly/DLP/DNS/IPS/SSH/Virus/WAF/Webfilter: Log ID
+
+VoIP: Unique Log ID",string
+login,SSH login Name,string
+logsrc,,string
+malform_data,Malformed header data,number
+malform_desc,Malformed header description,string
+matchfilename,,string
+matchfiletype,,string
+message_type,"Message Type. Ex: message_type=""request""",string
+messageid,,string
+mitm,,string
+model,,string
+msg,"APP-CTRL/Anomaly/DNS/Virus/WAF/Webfilter: Log message
+
+IPS: Log message for the attack",string
+name,Method or custom signature name,string
+notafter,,string
+notbefore,,string
+operation,,string
+parameters,,string
+pathname,,string
+pdstport,,number
+phone,Phone,string
+policy_id,Name of the firewall policy governing the traffic which caused the log message.,number
+policyid,Policy ID,number
+policymode,,string
+policytype,Policy type,string
+poluuid,,string
+profile,"DLP: DLP profile name
+
+DNS: Profile name for DNS filter
+
+IPS: Profile name for IPS
+
+SSH/WAF: Full profile name
+
+Virus: The name of the profile that was used to detect and take action
+
+VoIP: Name or number of associated VOIP profile
+
+Webfilter: Web Filter profile name",string
+profilegroup,,string
+profiletype,Profile Type,string
+prompt,,string
+proto,"APP-CTRL/DLP/DNS/IPS/SSH/Virus/Webfilter: Protocol number
+
+Anomaly/WAF: Protocol
+
+VoIP: Protocol number. Ex: for SIP it will be proto=17",number
+psrcport,,number
+qclass,Query class,string
+qname,Query domain name,string
+qtype,Query type description,string
+qtypeval,Query Type Value,number
+quarskip,Quarantine skip explanation,string
+quotaexceeded,Quota has been exceeded,string
+quotamax,Maximum quota allowed - in seconds if time-based - in bytes if traffic-based,number
+quotatype,Quota type,string
+quotaused,Quota used - in seconds if time-based - in bytes if traffic-based,number
+ratemethod,,string
+rawdata,"APP-CTRL/IPS/Webfilter: Extended logging data including HTTP method, URL, client content type, server content type, user agent, referer, x-forwarded-for
+
+DLP/WAF: Raw Data",string
+rawdataid,,string
+rcode,,number
+rcvdbyte,Received Bytes,number
+rcvdpkt,,number
+reason,"Reason. Ex: reason=""unrecognized-form""",string
+recipient,Email addresses from the SMTP envelope,string
+ref,"Anomaly: Reference
+
+IPS: URL of the FortiGuard IPS database entry for the attack.
+
+Virus: The URL of the FortiGuard IPS database entry for the attack",string
+referralurl,Referrer URI,string
+remip,Remote IP,ip
+remport,Remote Port,number
+reqtype,Request type,string
+request_name,"Name of request. Ex: request_name=""INVITE"" or ""NOTIFY""",string
+risklevel,,string
+ruleid,,number
+rulename,,string
+saasapp,,string
+san,,string
+scertcname,server certificate name,string
+scertissuer,server certificate issuer,string
+sender,Email address from the SMTP envelope,string
+sensitivity,Sensitivity for document fingerprint,string
+sentbyte,Sent Bytes,number
+service,"APP-CTRL/DLP/IPS/WAF/Webfilter: Service name
+
+Anomaly: Name of Service
+
+Virus: Proxy service which scanned this traffic",string
+session_id,Session ID. Ex: session_id=232,number
+sessionid,Session ID,number
+severity,"Anomaly/WAF: Severity
+
+DLP: Severity level of a DLP rule
+
+IPS: Severity of the attack
+
+SSH: Severity level of shell command",string
+sharename,,string
+size,,string
+ski,,string
+sn,,string
+sni,,string
+src_int,"Name of the source interface. Ex: src_int=""port1""",string
+src_port,Port number of the traffic's origin. Ex: srcport=40772,number
+srccountry,Country name for Source IP,string
+srcdomain,,string
+srcintf,Source Interface,string
+srcintfrole,"APP-CTRL/Anomaly/DLP/IPS/SSH/Virus/WAF/Webfilter: Source Interface's assigned role (LAN, WAN, etc.)
+
+DNS: Source Interface Role",string
+srcip,"APP-CTRL/Anomaly/DLP/DNS/IPS/SSH/Webfilter: Source IP
+
+Virus/WAF: Source IP Address
+
+VoIP: IP address of the traffic's origin. Ex: srcip=10.1.100.155",ip
+srcmac,MAC address associated with the Source IP,string
+srcname,,string
+srcport,Source Port,number
+srcuuid,,string
+srczone,,string
+sscname,Safe Search CNAME,string
+status,"Status. Ex: status=""blocked"" , status= ""start""",string
+subaction,,string
+subject,The subject title of the email message,string
+subservice,,string
+subtype,"APP-CTRL/Anomaly/DLP/DNS/IPS/SSH/WAF/Webfilter: Log subtype
+
+Virus: Subtype of the virus log
+
+VoIP: Subtype",string
+switchid,,string
+switchproto,,string
+tenantmatch,,string
+time,"APP-CTRL/Anomaly/DLP/DNS/IPS/SSH/Virus/WAF/Webfilter: Time
+
+VoIP: Hour clock when the log message was recorded.",string
+tlsver,,string
+to,"DLP/Virus: Email address(es) from the Email Headers (IMAP/POP3/SMTP)
+
+VoIP: Destination address
+
+Webfilter: MMS-only - From/To headers from the email",string
+transid,Transaction ID,number
+translationid,,number
+trueclntip,"APP-CTRL: True-Client-IP
+
+DLP: True client's IP
+
+IPS/Webfilter: True-Client-IP HTTP header",ip
+type,"APP-CTRL/Anomaly/DLP/DNS/IPS/SSH/Virus/WAF/Webfilter: Log type
+
+VoIP: Type of log. Ex: type=""utm""",string
+tz,Time Zone,string
+unauthuser,Unauthenticated user,string
+unauthusersource,Unauthenticated user source,string
+url,"APP-CTRL/DLP/IPS/Virus/Webfilter: The URL address
+
+WAF: URL",string
+urlfilteridx,URL filter ID,number
+urlfilterlist,URL filter list,string
+urlrisk,,number
+urlsource,URL source,string
+urltype,URL filter type,string
+usecase,,string
+user,"APP-CTRL/DLP/DNS/IPS/WAF/Webfilter: User name
+
+Anomaly: User
+
+SSH: User name for authentication
+
+Virus: Username (authentication)",string
+useractivity,,string
+vd,"APP-CTRL/Anomaly/DLP/DNS/IPS/SSH/WAF/Webfilter: Virtual domain name
+
+Virus: VDOM name
+
+VoIP: Name of the virtual domain in which the log message was recorded.",string
+videocategoryid,,number
+videocategoryname,,string
+videochannelid,,string
+videodesc,,string
+videoid,,string
+videoinfosource,,string
+videotitle,,string
+violations,,string
+virus,Virus Name,string
+viruscat,,string
+virusid,Virus ID (unique virus identifier),string
+voip_proto,SIP/SCCP/MGCP/h323,string
+vrf,"APP-CTRL/DLP: Virtual Routing Forwarding
+
+Anomaly/IPS/Webfilter: Virtual router forwarding",number
+webmailprovider,,string
+xid,Transaction ID,number
