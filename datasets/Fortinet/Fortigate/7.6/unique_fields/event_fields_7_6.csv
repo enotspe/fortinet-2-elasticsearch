@@ -56,9 +56,9 @@ connector,,string
 conserve,Flag for Conserve Mode,string
 cookies,Cookie,string
 core,,number
-count,"Count
+count,"system: Count
 
-Number of Packets",number
+user: Number of Packets",number
 cpu,CPU Usage,number
 criticalcount,Critical level threat count,number
 crl,Certificate revocation lists,string
@@ -94,9 +94,9 @@ dstintfrole,,string
 dstip,Destination IP,ip
 dstport,Destination Protocol Port,number
 duid,DHCPv6 unique identifier,string
-duration,"Duration
+duration,"endpoint/wireless: Duration of the last threatening packed captured from TA
 
-Duration of the last threatening packed captured from TA",number
+system/user/vpn: Duration",number
 durationtotal,,string
 eapauthgroup,,string
 eapolcnt,The count of EAPOL packets,number
@@ -182,9 +182,9 @@ memchange,,number
 meshmode,Mesh mode,string
 method,Method,string
 mgmtcnt,The number of unauthorized client flooding managemet frames,number
-mode,"IPsec VPN ID protection mode
+mode,"sdwan/system: Mode
 
-Mode",string
+vpn: IPsec VPN ID protection mode",string
 model,,string
 modem,,string
 module,Configuration Module Name,string
@@ -284,9 +284,9 @@ sentbyte,Bytes Sent,number
 seq,Sequence,string
 serial,,number
 serialno,Serial Number,string
-server,"AD server FQDN or IP
+server,"system: Server IP Address
 
-Server IP Address",string
+user/wireless: AD server FQDN or IP",string
 serveraddr,,string
 servername,,string
 serverresponsetime,,string
@@ -301,9 +301,9 @@ slamap,,string
 slatargetid,,number
 slctdrmamode,,string
 slot,Slot Number,number
-sn,"Serial Number
+sn,"endpoint/fortiextender/ha/system/wireless: Serial Number
 
-Serial number for login or logout events. Used to correlate login and logout events.",string
+system: Serial number for login or logout events. Used to correlate login and logout events.",string
 snclosest,SN of the AP closest to the rogue AP,string
 sndetected,SN of the AP which detected the rogue AP,string
 snmeshparent,SN of the mesh parent,string

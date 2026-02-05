@@ -54,11 +54,11 @@ connection_type,FortiClient Connection Type,string
 conserve,Flag for Conserve Mode,string
 cookies,Cookie,string
 core,,number
-count,"Count
+count,"ENDPOINT/endpoint: Count of EndPoint Connections
 
-Count of EndPoint Connections
+SYSTEM/system: Count
 
-Number of Packets",number
+USER/endpoint/user: Number of Packets",number
 cpu,CPU Usage,number
 criticalcount,Critical level threat count,number
 crl,Certificate revocation lists,string
@@ -93,9 +93,9 @@ dstintfrole,,string
 dstip,Destination IP,ip
 dstport,Destination Protocol Port,number
 duid,DHCPv6 unique identifier,string
-duration,"Duration
+duration,"SYSTEM/USER/VPN/system/user/vpn: Duration
 
-Duration of the last threatening packed captured from TA",number
+WIRELESS/wireless: Duration of the last threatening packed captured from TA",number
 eapolcnt,The count of EAPOL packets,number
 eapoltype,The packet type of EAPOL,string
 encrypt,The packet is encrypted or not,number
@@ -174,9 +174,9 @@ member,,string
 meshmode,Mesh mode,string
 method,Method,string
 mgmtcnt,The number of unauthorized client flooding managemet frames,number
-mode,"IPsec VPN ID protection mode
+mode,"SYSTEM/system: Mode
 
-Mode",string
+VPN/vpn: IPsec VPN ID protection mode",string
 module,Configuration Module Name,string
 monitor-name,Health Monitor Type,string
 monitor-type,Health Monitor Name,string
@@ -261,9 +261,9 @@ sentbyte,Bytes Sent,number
 seq,Sequence,string
 serial,Serial Number,number
 serialno,Serial Number,string
-server,"AD server FQDN or IP
+server,"SYSTEM/system: Server IP Address
 
-Server IP Address",string
+USER/WIRELESS/user/wireless: AD server FQDN or IP",string
 service,Name of Service,string
 serviceid,,number
 session_id,Session ID,number
@@ -274,9 +274,9 @@ slamap,,string
 slatargetid,,number
 slctdrmamode,,string
 slot,Slot Number,number
-sn,"Serial Number
+sn,"ENDPOINT/FORTIEXTENDER/HA/SYSTEM/WIRELESS/endpoint/fortiextender/ha/system/wireless: Serial Number
 
-Serial number for login or logout events. Used to correlate login and logout events.",string
+SYSTEM/system: Serial number for login or logout events. Used to correlate login and logout events.",string
 snclosest,SN of the AP closest to the rogue AP,string
 sndetected,SN of the AP which detected the rogue AP,string
 snmeshparent,SN of the mesh parent,string
