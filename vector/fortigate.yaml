@@ -250,14 +250,7 @@ transforms:
       }
 
       # related
-      #.related.ip = .fgt.srcip
-      #.related.ip |= .fgt.dstip
-      #.related.ip |= .fgt.transip
-      #.related.ip |= .fgt.tranip
-      #.related.ip |= .fgt.srcremote
-      #.related.ip |= .fgt.tunneldstip
-      #.related.ip |= .fgt.tunnelsrcip
-      #.related.ip |= .fgt.vipincomingip
+      .related.ip = [.fgt.srcip,.fgt.dstip,.fgt.transip,.fgt.tranip,.fgt.srcremote,.fgt.tunneldstip,.fgt.tunnelsrcip,.fgt.vipincomingip]
 
 
       # rule
@@ -398,6 +391,8 @@ transforms:
       .observer.egress.zone.name = string(.fgt.dstzone) ?? null
       .observer.ingress.zone.name = string(.fgt.srczone) ?? null
 
+      # related
+      .related.ip = [.fgt.srcip,.fgt.dstip,.fgt.botnetip,.fgt.ipaddr,.fgt.locip,.fgt.remip,.fgt.trueclntip]
 
       # rule
       .rule.id = string(.fgt.policyid) ?? string(.fgt.policy_id) ?? null # VoIP uses policy_id instead of policyid
