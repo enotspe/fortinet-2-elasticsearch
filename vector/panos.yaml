@@ -251,11 +251,15 @@ transforms:
       ## network.direction
       if ip_cidr_contains($INTERNAL_NETWORKS , .source.ip) ?? false {
           .source.isInternal = true
+      } else if includes(["private", "loopback", "link_local", "multicast", "carrier_nat"], .source.ip_type) {
+         .source.isInternal = true
       } else if !is_null(.source.ip) {
           .source.isInternal = false
       }
 
       if ip_cidr_contains($INTERNAL_NETWORKS , .destination.ip) ?? false {
+          .destination.isInternal = true
+      } else if includes(["private", "loopback", "link_local", "multicast", "carrier_nat"], .destination.ip_type) {
           .destination.isInternal = true
       } else if !is_null(.destination.ip) {
           .destination.isInternal = false
