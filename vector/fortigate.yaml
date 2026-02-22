@@ -96,8 +96,8 @@ transforms:
       .source.user.name[1] = .fgt.unauthuser
       .source.user.group.name[0] = .fgt.group
       .source.user.group.name[1] = .fgt.unauthusersource
-      .source.risk.static_score = to_int( string(.fgt.crscore) ?? "nonum" ) ?? null
-      .source.risk.static_level = .fgt.crlevel
+      .host.risk.static_score = to_int( string(.fgt.crscore) ?? "nonum" ) ?? null
+      .host.risk.static_level = .fgt.crlevel
       .source.bytes = to_int( string(.fgt.sentbyte) ?? "nonum" ) ?? null
       .source.packets = to_int( string(.fgt.sentpkt) ?? "nonum" ) ?? null
       .source.domain = .fgt.srcdomain
@@ -502,7 +502,8 @@ transforms:
       # event
       .event.timezone = .fgt.tz
       .event.code = .fgt.logid
-      .event.duration = to_int(string(.fgt.duration)?? "nonum") * 1000000000  ?? null # fortinet duration is on seconds, and ecs specifies it should be on nanoseconds
+      # fortinet duration is on seconds, and ECS specifies it should be on nanoseconds
+      .event.duration = to_int(string(.fgt.duration)?? "nonum") * 1000000000  ?? null
 
       # source
       .source.address = .fgt.saddr
