@@ -470,7 +470,7 @@ transforms:
       .tls.version = .fgt.tlsver
 
       # file
-      .file.hash.crc32 = .fgt.filehash
+      .file.hash.sha1 = .fgt.filehash
       .file.name = .fgt.filename
       .file.size = .fgt.filesize
       .file.extension = .fgt.filetype

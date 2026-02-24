@@ -277,6 +277,11 @@ transforms:
       # session
       .session.id = .panos.sessionid
 
+      # http
+      .http.response.mime_type = .panos.contenttype
+      .http.request.referrer = .panos.referer
+      .http.request.method = .panos.http_method
+
       # user_agent
       .user_agent = parse_user_agent(.panos.user_agent) ?? null
 
@@ -288,6 +293,10 @@ transforms:
       } else if panos_values_array[3] == "url" {
         .url.original = .panos.misc
       } 
+
+      # file
+      .file.type = .panos.filetype
+      .file.hash.sha256 = .panos.filedigest
 
       # delete null fields
       . = compact(.)
