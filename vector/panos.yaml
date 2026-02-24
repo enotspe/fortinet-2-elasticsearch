@@ -47,6 +47,7 @@ transforms:
       .log.syslog.version = del(.version)
       .log.logger = del(.source_type)
       .log.syslog.procid = del(.procid)
+      .log.syslog.msgid = del(.msgid)
       .log.syslog.appname = del(.appname)
 
       # For Elasticsearch
