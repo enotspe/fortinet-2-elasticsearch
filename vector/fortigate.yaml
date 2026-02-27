@@ -22,16 +22,16 @@ sources:
     address: 0.0.0.0:${FORTIGATE_SYSLOG_UDP_PORT:-6140}
     mode: "udp"
 
-enrichment_tables:
-  iana_number:
-    type: "file"
-    file:
-      path: "/etc/vector/iana_number.csv"
-      encoding:
-        type: "csv"
-    schema:
-      Decimal: "integer"
-      Keyword: "string"
+#enrichment_tables:
+#  iana_number:
+#    type: "file"
+#    file:
+#      path: "/etc/vector/iana_number.csv"
+#      encoding:
+#        type: "csv"
+#    schema:
+#      Decimal: "integer"
+#      Keyword: "string"
 
 transforms:
   remap_kv:
