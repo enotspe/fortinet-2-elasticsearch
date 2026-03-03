@@ -30,7 +30,7 @@ Go to [**Home > Connections > Datasources**](https://grafana.com/docs/grafana/la
 
 Select **Infinity**.
 
-Go to `Security`. Fill `Allowed hosts` with `https://raw.githubusercontent.com/enotspe/fortinet-2-elasticsearch/`.
+Go to `Security`. Fill `Allowed hosts` with `https://raw.githubusercontent.com/`.
 
 Click **Save and Test** button.
 
