@@ -47,13 +47,13 @@ sudo mv victoria-logs-prod /usr/local/bin
 ### Create VictoriaLogs user
 
 ```bash
-sudo useradd -s /usr/sbin/nologin victorialogs
+sudo useradd -s /usr/sbin/nologin victoria
 ```
 
 ### Change ownership
 
 ```bash
-sudo chown victorialogs:victorialogs /usr/local/bin/victoria-logs-prod
+sudo chown victoria:victoria /usr/local/bin/victoria-logs-prod
 ```
 
 !!! info "UPGRADES"
@@ -73,7 +73,7 @@ sudo restorecon -v /usr/local/bin/victoria-logs-prod
 ### Create VictoriaLogs data directory
 
 ```bash
-sudo mkdir -p /var/lib/victoria-logs-data && sudo chown -R victorialogs:victorialogs /var/lib/victoria-logs-data
+sudo mkdir -p /var/lib/victoria-logs-data && sudo chown -R victoria:victoria /var/lib/victoria-logs-data
 ```
 
 ## Service Configuration
@@ -89,30 +89,47 @@ The file should look like:
 ```ini
 [Unit]
 Description=VictoriaLogs service
-After=network.target
+#After=network.target
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=simple
-User=victorialogs
-Group=victorialogs
+User=victoria
+Group=victoria
+
+EnvironmentFile=-/etc/default/victorialogs
+
 ExecStart=/usr/local/bin/victoria-logs-prod \
--storageDataPath=/var/lib/victoria-logs-data \
--search.maxQueryDuration=600s \
--search.maxQueueDuration=600s \
--retentionPeriod=365d \
--retention.maxDiskUsagePercent=80 \
-#-retention.maxDiskSpaceUsageBytes=800GiB
+-envflag.enable
 SyslogIdentifier=victorialogs
 Restart=always
 
 PrivateTmp=yes
-ProtectHome=yes
+#ProtectHome=yes
 NoNewPrivileges=yes
 
 ProtectSystem=full
 
 [Install]
 WantedBy=multi-user.target
+```
+
+Create `/etc/default/victorialogs` file:
+
+```bash
+sudo vim /etc/default/victorialogs
+```
+
+Add the following content:
+
+```ini
+storageDataPath=/var/lib/victoria-logs-data
+search_maxQueryDuration=600s
+search_maxQueueDuration=600s
+retentionPeriod=365d
+retention_maxDiskUsagePercent=80
+#-retention.maxDiskSpaceUsageBytes=800GiB
 ```
 
 ### Retention Configuration
@@ -125,7 +142,7 @@ Note that `-retention*` parameters control lifecycle of ingested logs:
 #-retention.maxDiskSpaceUsageBytes=800GiB
 ```
 
-Adjust these values based on your storage requirements and retention policies.
+Adjust these values based on your storage capacity and retention requirements.
 
 !!! warning "Important"
     ⚔️ `-retention.maxDiskSpaceUsageBytes` and `-retention.maxDiskUsagePercent` flags are mutually exclusive.
@@ -134,12 +151,16 @@ Adjust these values based on your storage requirements and retention policies.
 
 ### Query Configuration
 
-Note that `-search*` parameters control query execution:
+Note that `-search*` parameters control query execution timeouts:
 
 ```bash
 -search.maxQueryDuration=600s 
 -search.maxQueueDuration=600s
 ```
+
+600s = 10 minutes
+
+This is a very long value, useful for running queries over large datasets. Adjust these values based on your query requirements.
 
 See full options for [Victoria Logs flags](https://docs.victoriametrics.com/victorialogs/#list-of-command-line-flags)
 
