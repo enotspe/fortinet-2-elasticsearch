@@ -64,8 +64,8 @@ transforms:
       .threat.tactic.name = .cortex.mitreTactic
       .event.action = .cortex.act
 
-      .cortex |= object_from_array([ [.cs1Label, .cs1],  [.cs2Label, .cs2],   [.cs3Label, .cs3],  [.cs4Label, .cs4],  [.cs5Label, .cs5],  [.cs6Label, .cs6] ])
-      .cortex |= object_from_array([ [.fs1Label, .fs1],  [.fs2Label, .fs2] ])
+      .cortex |= object_from_array([ [pascalcase(.cortex.cs1Label) ?? "cs1Label", .cortex.cs1],  [pascalcase(.cortex.cs2Label) ?? "cs2Label", .cortex.cs2],   [pascalcase(.cortex.cs3Label) ?? "cs3Label", .cortex.cs3],  [pascalcase(.cortex.cs4Label) ?? "cs4Label", .cortex.cs4],  [pascalcase(.cortex.cs5Label) ?? "cs5Label", .cortex.cs5],  [pascalcase(.cortex.cs6Label) ?? "cs6Label", .cortex.cs6] ])
+      .cortex |= object_from_array([ [pascalcase(.cortex.fs1Label) ?? "fs1Label", .cortex.fs1],  [pascalcase(.cortex.fs2Label) ?? "fs2Label", .cortex.fs2] ])
 
       # delete null fields
       . = compact(.)
