@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Load environment variables from .env file if present (copy .env.example to .env to get started)
+if [ -f .env ]; then
+    set -a
+    source .env
+    set +a
+fi
+
 # ============================================================================
 # CONFIGURATION SECTION - Modify these variables according to your environment
 # All variables can be overridden by environment variables with the same name

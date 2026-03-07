@@ -43,14 +43,7 @@ chmod +x load.sh
 ./load.sh
 ```
 
-Configuration is read from environment variables. The easiest way to supply them is to export the `.env` file before running:
-
-```bash
-export $(grep -v '^#' .env | xargs)
-./load.sh
-```
-
-Or pass variables inline for a one-off run:
+If a `.env` file is present, `load.sh` sources it automatically — no need to export variables beforehand. For a one-off override, pass variables inline:
 
 ```bash
 ES_URL=https://elastic.example.com:9200 AUTH_METHOD=apikey ES_API_KEY=your_key ./load.sh
