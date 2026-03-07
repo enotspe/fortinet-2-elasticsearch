@@ -60,7 +60,7 @@ ES_URL=https://elastic.example.com:9200 AUTH_METHOD=apikey ES_API_KEY=your_key .
 | Ingest pipelines | `ingest_pipelines/*.json` | `_ingest/pipeline/*` |
 | Transforms | `transforms/*.json` | `_transform/*` |
 
-Ingest pipelines and transforms are **off by default** — set `LOAD_INGEST_PIPELINES=true` / `LOAD_TRANSFORMS=true` to enable them.
+> Ingest pipelines and transforms are **off by default** because they are not used anymore. Set `LOAD_INGEST_PIPELINES=true` / `LOAD_TRANSFORMS=true` to enable them.
 
 ### Environment variables
 
@@ -82,8 +82,6 @@ Ingest pipelines and transforms are **off by default** — set `LOAD_INGEST_PIPE
 | `USE_EXISTING_ECS` | `true` | Reuse an already-cloned `ecs/` directory |
 | `CONTINUE_ON_ERROR` | `true` | Keep going if one upload fails |
 | `VERBOSE` | `false` | Print full curl request/response detail |
-
-To also load ingest pipelines (off by default), add `LOAD_INGEST_PIPELINES=true` to your `.env` or pass it inline.
 
 ### ECS handling
 
