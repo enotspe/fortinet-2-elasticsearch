@@ -108,7 +108,7 @@ python elasticsearch_mappings.py
    - `number` → `long`
 4. Writes one JSON component template per (type, version) combination under the configured output directory
 
-By default, generated files land in `index_templates/component_templates/<version>/elasticsearch_templates/`. Copy the ones you need directly into `index_templates/component_templates/` so `load.sh` picks them up.
+Generated files land directly in `index_templates/component_templates/`, ready to be picked up by `load.sh`.
 
 ### Environment variables
 

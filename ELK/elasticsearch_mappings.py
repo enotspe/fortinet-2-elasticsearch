@@ -126,7 +126,7 @@ def fetch_csv(version, log_type):
 def process_version(version, output_base):
     """Fetch CSVs for one major version and generate component templates."""
     version_suffix = version.replace(".", "_")
-    templates_folder = os.path.join(output_base, version, "elasticsearch_templates")
+    templates_folder = output_base
     os.makedirs(templates_folder, exist_ok=True)
 
     print(f"\nProcessing version {version}:")
@@ -182,7 +182,7 @@ def main():
     print(f"\n{'='*80}")
     print("Template generation complete!")
     print(f"{'='*80}")
-    print(f"\nGenerated files are in: {output_base}/<version>/elasticsearch_templates/")
+    print(f"\nGenerated files are in: {output_base}/")
 
 
 if __name__ == "__main__":
