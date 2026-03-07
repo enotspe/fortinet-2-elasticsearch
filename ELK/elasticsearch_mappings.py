@@ -156,7 +156,7 @@ def process_version(version, output_base):
 
 def main():
     """Main function to generate templates for all versions."""
-    output_base = os.environ.get("OUTPUT_DIR", "elasticsearch_templates")
+    output_base = os.environ.get("OUTPUT_DIR", "index_templates/component_templates")
 
     print("=" * 80)
     print("Elasticsearch Component Template Generator")

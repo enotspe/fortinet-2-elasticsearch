@@ -33,6 +33,8 @@
     "ecs-ecs",
     "logs-fortinet.fortigate.traffic@ilm",
     "strings_as_keyword@mappings",
+    "fortigate_traffic_7_2",
+    "fortigate_traffic_7_4",
     "fortigate_traffic_7_6",
     "auto_expand_replicas@settings",
     "refresh_interval@settings"

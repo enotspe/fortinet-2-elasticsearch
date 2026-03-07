@@ -39,6 +39,8 @@
     "strings_as_keyword@mappings",
     "auto_expand_replicas@settings",
     "refresh_interval@settings",
+    "fortigate_utm_7_2",
+    "fortigate_utm_7_4",
     "fortigate_utm_7_6",
     "ecs-event",
     "ecs-log"
