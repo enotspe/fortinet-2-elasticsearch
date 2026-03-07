@@ -2,14 +2,30 @@
 """
 Elasticsearch Component Template Generator for Fortigate Logs
 
-Reads CSV files with Log Field Names and Data Types, and generates
+Fetches unique_fields CSVs from the flores GitHub repository and generates
 Elasticsearch component templates that can be uploaded via API.
+
+Environment variables:
+  FLORES_REPO   - GitHub repo in "owner/name" format (default: enotspe/flores)
+  FLORES_BRANCH - Branch to fetch from (default: main)
 """
 
-import os
+import io
 import json
+import os
+import re
+
 import pandas as pd
-import glob
+import requests
+
+
+FLORES_REPO = os.environ.get("FLORES_REPO", "enotspe/flores")
+FLORES_BRANCH = os.environ.get("FLORES_BRANCH", "main")
+
+GITHUB_API_BASE = f"https://api.github.com/repos/{FLORES_REPO}/contents"
+RAW_BASE = f"https://raw.githubusercontent.com/{FLORES_REPO}/{FLORES_BRANCH}"
+
+VERSION_RE = re.compile(r"^\d+\.\d+$")
 
 
 def map_data_type_to_es(data_type):
@@ -84,107 +100,89 @@ def create_component_template(log_type, version, fields_df):
     return template
 
 
-def process_unique_fields_folder(unique_fields_folder, major_version, major_version_path):
-    """
-    Process all CSV files in a unique_fields folder and generate component templates.
+def discover_versions():
+    """Return list of major version strings from the flores GitHub repo."""
+    url = f"{GITHUB_API_BASE}/"
+    resp = requests.get(url, timeout=30)
+    resp.raise_for_status()
+    entries = resp.json()
+    versions = [
+        e["name"] for e in entries
+        if e["type"] == "dir" and VERSION_RE.match(e["name"])
+    ]
+    return sorted(versions)
 
-    Args:
-        unique_fields_folder: Path to the unique_fields folder
-        major_version: Major version name (e.g., '7.6')
-        major_version_path: Path to the major version folder
-    """
-    version_suffix = major_version.replace('.', '_')
 
-    # Find all relevant CSV files
-    csv_pattern = os.path.join(unique_fields_folder, f'unique_log_fields_data_types_*_{version_suffix}.csv')
-    csv_files = glob.glob(csv_pattern)
+def fetch_csv(version, log_type):
+    """Fetch a unique_fields CSV for the given version and log_type."""
+    version_suffix = version.replace(".", "_")
+    filename = f"unique_log_fields_data_types_{log_type}_{version_suffix}.csv"
+    url = f"{RAW_BASE}/{version}/unique_fields/{filename}"
+    resp = requests.get(url, timeout=30)
+    resp.raise_for_status()
+    return pd.read_csv(io.StringIO(resp.text))
 
-    if not csv_files:
-        print(f"No CSV files found in {unique_fields_folder} for version {major_version}")
-        return
 
-    print(f"\nProcessing version {major_version}:")
-    print(f"Found {len(csv_files)} CSV files")
+def process_version(version, output_base):
+    """Fetch CSVs for one major version and generate component templates."""
+    version_suffix = version.replace(".", "_")
+    templates_folder = os.path.join(output_base, version, "elasticsearch_templates")
+    os.makedirs(templates_folder, exist_ok=True)
 
-    # Create templates folder at major version level
-    templates_folder = os.path.join(major_version_path, "elasticsearch_templates")
-    if not os.path.exists(templates_folder):
-        os.makedirs(templates_folder)
+    print(f"\nProcessing version {version}:")
 
-    for csv_file in csv_files:
-        # Extract log type from filename
-        filename = os.path.basename(csv_file)
-
-        # Parse log type (traffic, event, utm)
-        if 'traffic' in filename:
-            log_type = 'traffic'
-        elif 'event' in filename:
-            log_type = 'event'
-        elif 'utm' in filename:
-            log_type = 'utm'
-        else:
-            print(f"  Skipping unknown file type: {filename}")
-            continue
-
-        # Read the CSV
+    for log_type in ("traffic", "event", "utm"):
         try:
-            df = pd.read_csv(csv_file)
+            df = fetch_csv(version, log_type)
             print(f"  Processing {log_type}: {len(df)} fields")
 
-            # Create component template
             template = create_component_template(log_type, version_suffix, df)
-
-            # Save as JSON
             template_name = f"fortigate_{log_type}_{version_suffix}"
             output_file = os.path.join(templates_folder, f"{template_name}.json")
 
-            with open(output_file, 'w', encoding='utf-8') as f:
+            with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(template, f, indent=2, ensure_ascii=False)
 
-            print(f"    ✓ Created: {output_file}")
+            print(f"    \u2713 Created: {output_file}")
 
+        except requests.HTTPError as e:
+            if e.response.status_code == 404:
+                print(f"  Skipping {log_type}: CSV not found in repo")
+            else:
+                print(f"  Error fetching {log_type}: {e}")
         except Exception as e:
-            print(f"  Error processing {csv_file}: {e}")
+            print(f"  Error processing {log_type}: {e}")
 
 
 def main():
     """Main function to generate templates for all versions."""
-    main_folder = "Fortigate"
+    output_base = os.environ.get("OUTPUT_DIR", "elasticsearch_templates")
 
-    if not os.path.exists(main_folder):
-        print(f"Error: Main folder '{main_folder}' not found!")
-        return
-
-    # Get all major version folders
-    major_versions = [d for d in os.listdir(main_folder)
-                     if os.path.isdir(os.path.join(main_folder, d))]
-
-    if not major_versions:
-        print(f"No version folders found in {main_folder}")
-        return
-
-    major_versions.sort()
-
-    print(f"{'='*80}")
+    print("=" * 80)
     print("Elasticsearch Component Template Generator")
-    print(f"{'='*80}")
-    print(f"Found major versions: {', '.join(major_versions)}")
+    print(f"Source: https://github.com/{FLORES_REPO} (branch: {FLORES_BRANCH})")
+    print("=" * 80)
 
-    # Process each major version
-    for major_version in major_versions:
-        major_version_path = os.path.join(main_folder, major_version)
-        unique_fields_folder = os.path.join(major_version_path, "unique_fields")
+    print("Discovering versions from GitHub...")
+    try:
+        versions = discover_versions()
+    except Exception as e:
+        print(f"Error fetching version list: {e}")
+        return
 
-        if not os.path.exists(unique_fields_folder):
-            print(f"\nSkipping {major_version}: No unique_fields folder found")
-            continue
+    if not versions:
+        print("No version directories found in the repository.")
+        return
 
-        process_unique_fields_folder(unique_fields_folder, major_version, major_version_path)
+    print(f"Found major versions: {', '.join(versions)}")
+
+    for version in versions:
+        process_version(version, output_base)
 
     print(f"\n{'='*80}")
     print("Template generation complete!")
     print(f"{'='*80}")
-    print("\nGenerated files are in: Fortigate/<version>/elasticsearch_templates/")
+    print(f"\nGenerated files are in: {output_base}/<version>/elasticsearch_templates/")
 
 
 if __name__ == "__main__":
