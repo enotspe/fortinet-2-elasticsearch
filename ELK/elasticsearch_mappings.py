@@ -28,33 +28,16 @@ RAW_BASE = f"https://raw.githubusercontent.com/{FLORES_REPO}/{FLORES_BRANCH}"
 VERSION_RE = re.compile(r"^\d+\.\d+$")
 
 
+_ES_TYPE_MAP = {
+    "string": {"type": "keyword"},
+    "ip":     {"type": "ip"},
+    "number": {"type": "long"},
+}
+
+
 def map_data_type_to_es(data_type):
-    """
-    Map CSV data types to Elasticsearch field types with appropriate settings.
-
-    Args:
-        data_type: Data type from CSV (string, ip, number)
-
-    Returns:
-        Dictionary with Elasticsearch field type and settings
-    """
-    if data_type.lower() == 'string':
-        return {
-            "type": "keyword"
-        }
-    elif data_type.lower() == 'ip':
-        return {
-            "type": "ip"
-        }
-    elif data_type.lower() == 'number':
-        return {
-            "type": "long"
-        }
-    else:
-        # Default to keyword
-        return {
-            "type": "keyword"
-        }
+    """Map a CSV data type to an Elasticsearch field mapping."""
+    return _ES_TYPE_MAP.get(data_type.lower(), {"type": "keyword"})
 
 
 def create_component_template(log_type, version, fields_df):
@@ -70,14 +53,10 @@ def create_component_template(log_type, version, fields_df):
         Dictionary representing the component template
     """
     # Build the properties object for fields under 'fgt'
-    fgt_properties = {}
-
-    for _, row in fields_df.iterrows():
-        field_name = row['Log Field Name']
-        data_type = row['Data Type']
-        es_field_config = map_data_type_to_es(data_type)
-
-        fgt_properties[field_name] = es_field_config
+    fgt_properties = {
+        row["Log Field Name"]: map_data_type_to_es(row["Data Type"])
+        for _, row in fields_df[["Log Field Name", "Data Type"]].iterrows()
+    }
 
     # Create the component template structure with fgt nested object
     template = {
@@ -126,8 +105,7 @@ def fetch_csv(version, log_type):
 def process_version(version, output_base):
     """Fetch CSVs for one major version and generate component templates."""
     version_suffix = version.replace(".", "_")
-    templates_folder = output_base
-    os.makedirs(templates_folder, exist_ok=True)
+    os.makedirs(output_base, exist_ok=True)
 
     print(f"\nProcessing version {version}:")
 
@@ -138,7 +116,7 @@ def process_version(version, output_base):
 
             template = create_component_template(log_type, version_suffix, df)
             template_name = f"fortigate_{log_type}_{version_suffix}"
-            output_file = os.path.join(templates_folder, f"{template_name}.json")
+            output_file = os.path.join(output_base, f"{template_name}.json")
 
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(template, f, indent=2, ensure_ascii=False)
