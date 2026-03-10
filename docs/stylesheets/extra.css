@@ -1,0 +1,187 @@
+/* ============================================================
+   FortiDragon – Custom Theme
+   Deep dark + red accent, Inter + JetBrains Mono
+   ============================================================ */
+
+/* ---------- Dark mode overrides ---------- */
+[data-md-color-scheme="slate"] {
+  /* Background layers */
+  --md-default-bg-color:          #0d1117;
+  --md-default-bg-color--light:   #161b22;
+  --md-default-bg-color--lighter: #21262d;
+  --md-default-bg-color--lightest:#30363d;
+
+  /* Foreground / text */
+  --md-default-fg-color:          #e6edf3;
+  --md-default-fg-color--light:   #c9d1d9;
+  --md-default-fg-color--lighter: #8b949e;
+  --md-default-fg-color--lightest:#6e7681;
+
+  /* Code */
+  --md-code-bg-color:  #161b22;
+  --md-code-fg-color:  #e6edf3;
+  --md-code-hl-comment-color: #8b949e;
+  --md-code-hl-string-color:  #a5d6ff;
+  --md-code-hl-number-color:  #f47067;
+  --md-code-hl-keyword-color: #ff7b72;
+  --md-code-hl-name-color:    #d2a8ff;
+
+  /* Footer */
+  --md-footer-bg-color:       #010409;
+  --md-footer-bg-color--dark: #010409;
+  --md-footer-fg-color:       #8b949e;
+  --md-footer-fg-color--light:#6e7681;
+
+  /* Sidebar */
+  --md-sidebar-width: 15rem;
+}
+
+/* ---------- Light mode refinements ---------- */
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #ffffff;
+  --md-code-bg-color:    #f6f8fa;
+}
+
+/* ---------- Typography ---------- */
+.md-typeset {
+  font-size: 0.84rem;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 2rem;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Code blocks ---------- */
+.md-typeset code {
+  border-radius: 4px;
+  font-size: 0.82em;
+  padding: 0.1em 0.35em;
+}
+
+.md-typeset pre {
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.md-typeset pre > code {
+  font-size: 0.8em;
+  padding: 0;
+}
+
+/* Subtle left border on code blocks */
+[data-md-color-scheme="slate"] .highlight {
+  border-left: 3px solid #ef4444;
+}
+
+/* ---------- Navigation sidebar ---------- */
+.md-nav__title {
+  font-weight: 600;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--lighter);
+}
+
+.md-nav__item .md-nav__link--active {
+  font-weight: 500;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #ef4444;
+}
+
+/* ---------- Header / top bar ---------- */
+.md-header {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: rgba(13, 17, 23, 0.85);
+  border-bottom: 1px solid #21262d;
+  box-shadow: none;
+}
+
+/* ---------- Search ---------- */
+[data-md-color-scheme="slate"] .md-search__input {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+}
+
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+  color: #6e7681;
+}
+
+/* ---------- Admonitions / callouts ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 6px;
+  border-left-width: 3px;
+  font-size: 0.82rem;
+}
+
+/* ---------- Tables ---------- */
+.md-typeset table:not([class]) {
+  border-radius: 6px;
+  overflow: hidden;
+  font-size: 0.8rem;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #161b22;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover {
+  background-color: #161b22;
+}
+
+/* ---------- Footer ---------- */
+.md-footer-meta {
+  font-size: 0.72rem;
+}
+
+/* ---------- Links ---------- */
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #79c0ff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: #ef4444;
+  text-decoration: none;
+}
+
+/* ---------- Scrollbar (Webkit) ---------- */
+[data-md-color-scheme="slate"] ::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb {
+  background: #30363d;
+  border-radius: 3px;
+}
+
+[data-md-color-scheme="slate"] ::-webkit-scrollbar-thumb:hover {
+  background: #6e7681;
+}

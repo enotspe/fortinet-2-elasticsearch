@@ -12,6 +12,10 @@ theme:
   icon:
     logo: fontawesome/solid/dragon
 
+  font:
+    text: Inter
+    code: JetBrains Mono
+
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -23,7 +27,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: black
-      accent: indigo
+      accent: red
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -32,7 +36,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: indigo
+      accent: red
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
@@ -148,6 +152,9 @@ markdown_extensions:
 #    - Values: dashboards/values.md
 #    - Datasets: dashboards/datasets.md
 #    - Usage: dashboards/usage.md
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
   #generator: false # Hide "Made with Material for MkDocs" notice on the footer
