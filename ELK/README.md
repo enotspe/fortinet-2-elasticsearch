@@ -89,7 +89,7 @@ On first run, `load.sh` clones `elastic/ecs` into `ELK/ecs/` and uploads the gen
 
 ## elasticsearch_mappings.py
 
-Generates the `fortigate_{type}_{version}.json` component templates by fetching field definition CSVs from the [flores](https://github.com/enotspe/flores) GitHub repository.
+Generates the `fortigate_{type}_{version}.json` component templates by fetching field definition CSVs from the [flores](https://github.com/dr4agon123/flores) GitHub repository.
 
 ```bash
 cd ELK
@@ -113,7 +113,7 @@ Generated files land directly in `index_templates/component_templates/`, ready t
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `OUTPUT_DIR` | `index_templates/component_templates` | Root output directory |
-| `FLORES_REPO` | `enotspe/flores` | GitHub repo to fetch CSVs from |
+| `FLORES_REPO` | `dr4agon123/flores` | GitHub repo to fetch CSVs from |
 | `FLORES_BRANCH` | `main` | Branch to fetch from |
 
 ### Multi-version strategy

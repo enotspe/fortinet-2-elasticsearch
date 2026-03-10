@@ -137,7 +137,7 @@ After completing installation, you'll have:
 ## Need Help?
 
 - 💬 **Community Support:** [Discord](https://discord.gg/9qn4enV)
-- 🐛 **Report Issues:** [GitHub Issues](https://github.com/enotspe/fortinet-2-elasticsearch/issues)
+- 🐛 **Report Issues:** [GitHub Issues](https://github.com/dr4agon123/fortinet-2-elasticsearch/issues)
 - 🗺️ **Future Plans:** [Roadmap](../roadmap.md)
 
 
