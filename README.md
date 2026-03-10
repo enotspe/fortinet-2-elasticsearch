@@ -5,13 +5,13 @@
   <h2><strong>The Best Analytics Platform for Firewall Logs</strong></h2>
 
   <h3>
-    <a href="https://dr4agon123.github.io/fortinet-2-elasticsearch/">📚 Full Documentation</a> •
-    <a href="https://dr4agon123.github.io/fortinet-2-elasticsearch/installation/">🚀 Installation</a> •
-    <a href="https://dr4agon123.github.io/fortinet-2-elasticsearch/roadmap/">🛣️ Roadmap</a>
+    <a href="https://dr4gon123.github.io/fortinet-2-elasticsearch/">📚 Full Documentation</a> •
+    <a href="https://dr4gon123.github.io/fortinet-2-elasticsearch/installation/">🚀 Installation</a> •
+    <a href="https://dr4gon123.github.io/fortinet-2-elasticsearch/roadmap/">🛣️ Roadmap</a>
   </h3>
   
   [![Discord](https://img.shields.io/discord/753104553846505552?color=7289da&label=Discord&logo=discord&logoColor=white)](https://discord.gg/9qn4enV)
-  [![GitHub stars](https://img.shields.io/github/stars/dr4agon123/fortinet-2-elasticsearch?style=social)](https://github.com/dr4agon123/fortinet-2-elasticsearch/stargazers)
+  [![GitHub stars](https://img.shields.io/github/stars/dr4gon123/fortinet-2-elasticsearch?style=social)](https://github.com/dr4gon123/fortinet-2-elasticsearch/stargazers)
   [![License](https://img.shields.io/badge/license-Apache--2.0-green.svg)](LICENSE)
   
 </div>
@@ -72,13 +72,13 @@ Mix and match: Every layer is swappable. Use what works for your environment.
 
 All detailed documentation has moved to our dedicated documentation site:
 
-### **[📚 https://dr4agon123.github.io/fortinet-2-elasticsearch/](https://dr4agon123.github.io/fortinet-2-elasticsearch/)**
+### **[📚 https://dr4gon123.github.io/fortinet-2-elasticsearch/](https://dr4gon123.github.io/fortinet-2-elasticsearch/)**
 
-- **[Installation Guide](https://dr4agon123.github.io/fortinet-2-elasticsearch/installation/)** - Step-by-step setup for all components
-- **[Architecture](https://dr4agon123.github.io/fortinet-2-elasticsearch/architecture/)** - How FortiDragon works under the hood
-- **[Dashboards](https://dr4agon123.github.io/fortinet-2-elasticsearch/dashboards/)** - Dashboard structure and usage
-- **[Roadmap](https://dr4agon123.github.io/fortinet-2-elasticsearch/roadmap/)** - What's next for FortiDragon
-- **[Engage](https://dr4agon123.github.io/fortinet-2-elasticsearch/engage/)** - Join the community
+- **[Installation Guide](https://dr4gon123.github.io/fortinet-2-elasticsearch/installation/)** - Step-by-step setup for all components
+- **[Architecture](https://dr4gon123.github.io/fortinet-2-elasticsearch/architecture/)** - How FortiDragon works under the hood
+- **[Dashboards](https://dr4gon123.github.io/fortinet-2-elasticsearch/dashboards/)** - Dashboard structure and usage
+- **[Roadmap](https://dr4gon123.github.io/fortinet-2-elasticsearch/roadmap/)** - What's next for FortiDragon
+- **[Engage](https://dr4gon123.github.io/fortinet-2-elasticsearch/engage/)** - Join the community
 
 ## 🎨 Dashboard Preview
 
@@ -103,17 +103,17 @@ All detailed documentation has moved to our dedicated documentation site:
 ### Get Help
 
 - 💬 [Join our Discord](https://discord.gg/9qn4enV) - Active community for questions and discussions
-- 📖 [Read the Docs](https://dr4agon123.github.io/fortinet-2-elasticsearch/) - Comprehensive guides
-- 🐛 [Report Issues](https://github.com/dr4agon123/fortinet-2-elasticsearch/issues) - Bug reports and feature requests
+- 📖 [Read the Docs](https://dr4gon123.github.io/fortinet-2-elasticsearch/) - Comprehensive guides
+- 🐛 [Report Issues](https://github.com/dr4gon123/fortinet-2-elasticsearch/issues) - Bug reports and feature requests
 
 ### Support the Project
 
 You're already saving thousands on SIEM costs. Consider giving back:
 
 - 💰 [Donate via PayPal](https://www.paypal.com/paypalme/fortidragon) - Support development
-- ⭐ [Star this repo](https://github.com/dr4agon123/fortinet-2-elasticsearch/stargazers) - Show your support
+- ⭐ [Star this repo](https://github.com/dr4gon123/fortinet-2-elasticsearch/stargazers) - Show your support
 - 📢 Share with colleagues - Spread the word
-- 🤝 [Contribute](https://dr4agon123.github.io/fortinet-2-elasticsearch/engage/#areas-for-contribution) - Code, docs, datasets
+- 🤝 [Contribute](https://dr4gon123.github.io/fortinet-2-elasticsearch/engage/#areas-for-contribution) - Code, docs, datasets
 
 ## 🗺️ Supported Platforms
 
@@ -147,6 +147,6 @@ Apache-2.0 license - See [LICENSE](LICENSE) for details
 
 ## 👥 Authors
 
-- Logstash pipelines, Elasticsearch config: [@hoat23](https://github.com/hoat23) & [@dr4agon123](https://github.com/dr4agon123)
-- Datasets, Kibana/Grafana dashboards, Vector pipelines, Victoria Logs: [@dr4agon123](https://github.com/dr4agon123)
-- Current maintenance and development: [@dr4agon123](https://github.com/dr4agon123)
+- Logstash pipelines, Elasticsearch config: [@hoat23](https://github.com/hoat23) & [@dr4gon123](https://github.com/dr4gon123)
+- Datasets, Kibana/Grafana dashboards, Vector pipelines, Victoria Logs: [@dr4gon123](https://github.com/dr4gon123)
+- Current maintenance and development: [@dr4gon123](https://github.com/dr4gon123)

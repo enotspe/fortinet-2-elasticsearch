@@ -22,8 +22,8 @@ echo HOSTNAME=\""$HOSTNAME"\" | sudo tee  -a /etc/default/logstash
 cd /usr/share/logstash
 sudo bin/logstash-plugin install logstash-filter-tld
 ```
-5. Copy [pipelines.yml](https://github.com/dr4agon123/fortinet-2-elasticsearch/blob/master/logstash/pipelines.yml) to your logstash folder.
-6. Copy [conf.d](https://github.com/dr4agon123/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder.
+5. Copy [pipelines.yml](https://github.com/dr4gon123/fortinet-2-elasticsearch/blob/master/logstash/pipelines.yml) to your logstash folder.
+6. Copy [conf.d](https://github.com/dr4gon123/fortinet-2-elasticsearch/tree/master/logstash/conf.d) content to your conf.d folder.
 7. [Start logstash](https://www.elastic.co/guide/en/logstash/current/running-logstash.html)
 
 

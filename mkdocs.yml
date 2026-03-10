@@ -1,10 +1,10 @@
 site_name: FortiDragon Documentation
 site_description: Network Security Logs Analytics
 site_author: Dragon
-site_url: https://dr4agon123.github.io/fortinet-2-elasticsearch/
+site_url: https://dr4gon123.github.io/fortinet-2-elasticsearch/
 
-repo_name: dr4agon123/fortinet-2-elasticsearch
-repo_url: https://github.com/dr4agon123/fortinet-2-elasticsearch
+repo_name: dr4gon123/fortinet-2-elasticsearch
+repo_url: https://github.com/dr4gon123/fortinet-2-elasticsearch
 edit_uri: edit/main/docs/
 
 theme:
@@ -153,7 +153,7 @@ extra:
   #generator: false # Hide "Made with Material for MkDocs" notice on the footer
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/dr4agon123/fortinet-2-elasticsearch
+      link: https://github.com/dr4gon123/fortinet-2-elasticsearch
     - icon: fontawesome/brands/discord
       link: https://discord.gg/9qn4enV
   version:

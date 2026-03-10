@@ -46,7 +46,7 @@ As we discussed previously on [The Challenge](index.md#the-challenge), we need t
 
 ### **The new ~~5~~ 4-tupple**
 
-Firewall [datasets](https://github.com/dr4agon123/fortinet-2-elasticsearch/tree/main/datasets/Fortinet/Fortigate/7.6/unique_fields) contain over 200 fields. We can't pivot on all of them.
+Firewall [datasets](https://github.com/dr4gon123/fortinet-2-elasticsearch/tree/main/datasets/Fortinet/Fortigate/7.6/unique_fields) contain over 200 fields. We can't pivot on all of them.
 
 We need to choose **core anchors** that become the foundation for our analysis.
 

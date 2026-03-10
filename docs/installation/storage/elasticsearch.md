@@ -15,7 +15,7 @@ FortiDragon provides an automated script to set up all necessary Elasticsearch c
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/dr4agon123/fortinet-2-elasticsearch.git
+   git clone https://github.com/dr4gon123/fortinet-2-elasticsearch.git
    cd fortinet-2-elasticsearch/ELK
    ```
 
